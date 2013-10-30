@@ -17,33 +17,37 @@ function parseFile($path, $baseClassName, $dummy)
     $pattern = '/if \(!class_exists\("([a-zA-Z]+)", FALSE\)\) {\s(.*?)\s}}/ms';
     preg_match_all($pattern, $code, $matches);
     $count = count($matches[0]);
-    $use = [];
     if ($count > 0) {
         for ($i = 0; $i < $count; $i++) {
             $className = $matches[1][$i];
-            if ($className == $baseClassName) {
-                continue;
-            }
-            $classCode = $matches[2][$i] . "}";
 
+            $classCode = $matches[2][$i] . "}";
+            if ($className == $baseClassName) {
+                $code = str_ireplace($matches[0][$i], $classCode, $code);
+                $result = str_ireplace("%use%", 'use Google\Api\Ads\AdWords\Lib\AdWordsSoapClient;', $dummy);
+            } else {
+                $result = str_ireplace("%use%", "", $dummy);
+            }
             file_put_contents(
-                "src/Google/Api/Ads/AdWords/v201306/common/" . $className . ".php",
-                str_ireplace("%code%", $classCode, $dummy)
+                "Google/Api/Ads/AdWords/v201306/classes/" . $className . ".php",
+                str_ireplace("%code%", $classCode, $result)
             );
-            $use[] = $className;
             $code = str_ireplace($matches[0][$i], "", $code);
         }
     }
-    foreach ($use as $className) {
-        $code = str_ireplace(
-            '/** Required classes. **/',
-            '/** Required classes. **/\nuse AdWords\v201306\common\\' . $className . ';',
-            $code
-        );
-    }
-    file_put_contents($path, $code);
+    file_put_contents($path, preg_replace("/(^[\r\n]*|[\r\n]+)[\s\t]*[\r\n]+/", "\n", $code));
+    unlink($path);
 }
 
-$dummy = file_get_contents("src/Google/Api/Ads/AdWords/v201306/common/Dummy.php");
+$dummy = file_get_contents("Dummy.php.txt");
 
-parseFile("src/Google/Api/Ads/AdWords/v201306/AdExtensionOverrideService.php", "AdExtensionOverrideService", $dummy);
+$handle = opendir('Google/Api/Ads/AdWords/v201306/');
+$files = readdir($handle);
+while (false !== ($entry = readdir($handle))) {
+    if (strpos($entry, "Service.php")) {
+        $path = "Google/Api/Ads/AdWords/v201306/" . $entry;
+        parseFile($path, str_ireplace(".php", "", $entry), $dummy);
+    }
+}
+
+//parseFile("src/Google/Api/Ads/AdWords/v201306/AdExtensionOverrideService.php", "AdExtensionOverrideService", $dummy);

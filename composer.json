@@ -26,7 +26,9 @@
 		"php": ">=5.3.0"
 	},
 	"autoload": {
-		"classmap": ["AdWords/Lib"]
+		"psr-0": {
+			"Google\\": "/"
+		}
 	},
 	"include-path": ["/"]
 }

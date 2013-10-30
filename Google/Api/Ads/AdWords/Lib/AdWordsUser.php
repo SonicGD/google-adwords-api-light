@@ -41,6 +41,7 @@ use Google\Api\Ads\Common\Lib\ValidationException;
 use Google\Api\Ads\Common\Util\ApiPropertiesUtils;
 use Google\Api\Ads\Common\Util\AuthToken;
 use Google\Api\Ads\Common\Util\Logger;
+use Google\Api\Ads\Common\Util\SimpleOAuth2Handler;
 use SoapClient;
 
 /**

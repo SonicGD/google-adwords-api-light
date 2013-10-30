@@ -31,25 +31,30 @@ namespace Google\Api\Ads\AdWords\Lib;
 
 /**
  * Useful constants for the AdWords API.
- * @package GoogleApiAdsAdWords
+ *
+ * @package    GoogleApiAdsAdWords
  * @subpackage Lib
  */
-class AdWordsConstants {
-  /**
-   * Recommended page size for most services.
-   * @var int
-   */
-  const RECOMMENDED_PAGE_SIZE = 500;
+class AdWordsConstants
+{
+    /**
+     * Recommended page size for most services.
+     *
+     * @var int
+     */
+    const RECOMMENDED_PAGE_SIZE = 500;
 
-  /**
-   * The number of micros in a dollar (or equivalent curreny unit).
-   * @var int
-   */
-  const MICROS_PER_DOLLAR = 1000000;
+    /**
+     * The number of micros in a dollar (or equivalent curreny unit).
+     *
+     * @var int
+     */
+    const MICROS_PER_DOLLAR = 1000000;
 
-  /**
-   * The number of micro degrees in a degree.
-   * @var int
-   */
-  const MICRO_DEGREES_PER_DEGREE = 1000000;
+    /**
+     * The number of micro degrees in a degree.
+     *
+     * @var int
+     */
+    const MICRO_DEGREES_PER_DEGREE = 1000000;
 }

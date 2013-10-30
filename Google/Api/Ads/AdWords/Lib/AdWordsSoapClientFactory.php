@@ -32,6 +32,7 @@ namespace Google\Api\Ads\AdWords\Lib;
 
 /** Required classes. **/
 use Exception;
+use Google\Api\Ads\Common\Lib\AdsUser;
 use Google\Api\Ads\Common\Lib\SoapClientFactory;
 
 /**
@@ -52,6 +53,8 @@ class AdWordsSoapClientFactory extends SoapClientFactory
      *                                mode
      * @param bool    $partialFailure if the service should be created in
      *                                partialFailure mode
+     *
+     * @throws \Exception
      */
     public function __construct(
         AdsUser $user,

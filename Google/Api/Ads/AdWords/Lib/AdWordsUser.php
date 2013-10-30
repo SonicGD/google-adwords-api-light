@@ -55,7 +55,6 @@ class AdWordsUser extends AdsUser
 {
 
     const OAUTH2_SCOPE = 'https://adwords.google.com/api/adwords/';
-    const OAUTH2_HANDLER_CLASS = 'SimpleOAuth2Handler';
 
     /**
      * The name of the SOAP header that represents the user agent making API
@@ -548,7 +547,7 @@ class AdWordsUser extends AdsUser
      */
     public function GetDefaultOAuth2Handler($className = null)
     {
-        $className = !empty($className) ? $className : self::OAUTH2_HANDLER_CLASS;
+        $className = !empty($className) ? $className : SimpleOAuth2Handler::className();
         return new $className($this->GetAuthServer(), self::OAUTH2_SCOPE);
     }
 

@@ -129,4 +129,9 @@ class SimpleOAuth2Handler extends OAuth2Handler
         }
         return json_decode($response, true);
     }
+
+    public static function className()
+    {
+        return __CLASS__;
+    }
 }

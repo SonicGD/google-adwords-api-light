@@ -320,7 +320,7 @@ class AdWordsUser extends AdsUser
         }
         $serviceFactory = new AdWordsSoapClientFactory($this, $version, null, null,
             null);
-        $serviceFactory->DoRequireOnce($serviceName);
+        //$serviceFactory->DoRequireOnce($serviceName);
     }
 
     /**

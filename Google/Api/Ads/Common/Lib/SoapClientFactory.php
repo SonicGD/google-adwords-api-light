@@ -94,7 +94,7 @@ abstract class SoapClientFactory
     public function GenerateSoapClient($serviceName)
     {
         if (extension_loaded('soap')) {
-            $this->DoRequireOnce($serviceName);
+            $serviceName = '\Google\Api\Ads\AdWords\\' . $this->GetVersion() . '\classes\\' . $serviceName;
             $soapClient = $this->GenerateServiceClient($serviceName);
             return $soapClient;
         } else {

@@ -672,8 +672,8 @@ abstract class AdsSoapClient extends SoapClient
         $typemaps[] = array(
             'type_ns'   => 'http://www.w3.org/2001/XMLSchema',
             'type_name' => 'long',
-            'from_xml'  => 'AdsSoapClient::TypemapLongFromXml',
-            'to_xml'    => 'AdsSoapClient::TypemapLongToXml'
+            'from_xml'  => 'Google\Api\Ads\Common\Lib\AdsSoapClient::TypemapLongFromXml',
+            'to_xml'    => 'Google\Api\Ads\Common\Lib\AdsSoapClient::TypemapLongToXml'
         );
         return $typemaps;
     }

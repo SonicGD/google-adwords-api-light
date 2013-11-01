@@ -3,64 +3,76 @@
 namespace Google\Api\Ads\AdWords\v201306\classes;
 
 
-
 /**
  * Represents a FeedItem schedule, which specifies a time interval on a given day
  * when the feed item may serve. The FeedItemSchedule times are in the account's time zone.
- * @package GoogleApiAdsAdWords
+ *
+ * @package    GoogleApiAdsAdWords
  * @subpackage v201306
  */
-class FeedItemSchedule {
-  /**
-   * @access public
-   * @var tnsDayOfWeek
-   */
-  public $dayOfWeek;
+class FeedItemSchedule
+{
+    /**
+     * @access public
+     * @var tnsDayOfWeek
+     */
+    public $dayOfWeek;
 
-  /**
-   * @access public
-   * @var integer
-   */
-  public $startHour;
+    /**
+     * @access public
+     * @var integer
+     */
+    public $startHour;
 
-  /**
-   * @access public
-   * @var tnsMinuteOfHour
-   */
-  public $startMinute;
+    /**
+     * @access public
+     * @var tnsMinuteOfHour
+     */
+    public $startMinute;
 
-  /**
-   * @access public
-   * @var integer
-   */
-  public $endHour;
+    /**
+     * @access public
+     * @var integer
+     */
+    public $endHour;
 
-  /**
-   * @access public
-   * @var tnsMinuteOfHour
-   */
-  public $endMinute;
+    /**
+     * @access public
+     * @var tnsMinuteOfHour
+     */
+    public $endMinute;
 
-  /**
-   * Gets the namesapce of this class
-   * @return the namespace of this class
-   */
-  public function getNamespace() {
-    return "https://adwords.google.com/api/adwords/cm/v201306";
-  }
+    /**
+     * Gets the namesapce of this class
+     *
+     * @return the namespace of this class
+     */
+    public function getNamespace()
+    {
+        return "https://adwords.google.com/api/adwords/cm/v201306";
+    }
 
-  /**
-   * Gets the xsi:type name of this class
-   * @return the xsi:type name of this class
-   */
-  public function getXsiTypeName() {
-    return "FeedItemSchedule";
-  }
+    /**
+     * Gets the xsi:type name of this class
+     *
+     * @return the xsi:type name of this class
+     */
+    public function getXsiTypeName()
+    {
+        return "";
+    }
 
-  public function __construct($dayOfWeek = NULL, $startHour = NULL, $startMinute = NULL, $endHour = NULL, $endMinute = NULL) {
-    $this->dayOfWeek = $dayOfWeek;
-    $this->startHour = $startHour;
-    $this->startMinute = $startMinute;
-    $this->endHour = $endHour;
-    $this->endMinute = $endMinute;
-  }}
+    public function __construct(
+        $dayOfWeek = null,
+        $startHour = null,
+        $startMinute = null,
+        $endHour = null,
+        $endMinute = null
+    ) {
+        $this->dayOfWeek = $dayOfWeek;
+        $this->startHour = $startHour;
+        $this->startMinute = $startMinute;
+        $this->endHour = $endHour;
+        $this->endMinute = $endMinute;
+    }
+}

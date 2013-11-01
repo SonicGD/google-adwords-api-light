@@ -3,44 +3,51 @@
 namespace Google\Api\Ads\AdWords\v201306\classes;
 
 
-
 /**
  * Represents the result data of a job. This contains both the results of
  * successfully processed operations as well as errors returned by failed
  * operations.
- * @package GoogleApiAdsAdWords
+ *
+ * @package    GoogleApiAdsAdWords
  * @subpackage v201306
  */
-class JobResult {
-  /**
-   * @access public
-   * @var BulkMutateResult
-   */
-  public $BulkMutateResult;
+class JobResult
+{
+    /**
+     * @access public
+     * @var BulkMutateResult
+     */
+    public $BulkMutateResult;
 
-  /**
-   * @access public
-   * @var SimpleMutateResult
-   */
-  public $SimpleMutateResult;
+    /**
+     * @access public
+     * @var SimpleMutateResult
+     */
+    public $SimpleMutateResult;
 
-  /**
-   * Gets the namesapce of this class
-   * @return the namespace of this class
-   */
-  public function getNamespace() {
-    return "https://adwords.google.com/api/adwords/cm/v201306";
-  }
+    /**
+     * Gets the namesapce of this class
+     *
+     * @return the namespace of this class
+     */
+    public function getNamespace()
+    {
+        return "https://adwords.google.com/api/adwords/cm/v201306";
+    }
 
-  /**
-   * Gets the xsi:type name of this class
-   * @return the xsi:type name of this class
-   */
-  public function getXsiTypeName() {
-    return "JobResult";
-  }
+    /**
+     * Gets the xsi:type name of this class
+     *
+     * @return the xsi:type name of this class
+     */
+    public function getXsiTypeName()
+    {
+        return "";
+    }
 
-  public function __construct($BulkMutateResult = NULL, $SimpleMutateResult = NULL) {
-    $this->BulkMutateResult = $BulkMutateResult;
-    $this->SimpleMutateResult = $SimpleMutateResult;
-  }}
+    public function __construct($BulkMutateResult = null, $SimpleMutateResult = null)
+    {
+        $this->BulkMutateResult = $BulkMutateResult;
+        $this->SimpleMutateResult = $SimpleMutateResult;
+    }
+}

@@ -616,7 +616,7 @@ if (!class_exists("Selector", false)) {
          */
         public function getXsiTypeName()
         {
-            return "Selector";
+            return "";
         }
 
         public function __construct(
@@ -679,7 +679,7 @@ if (!class_exists("Predicate", false)) {
          */
         public function getXsiTypeName()
         {
-            return "Predicate";
+            return "";
         }
 
         public function __construct($field = null, $operator = null, $values = null)
@@ -717,7 +717,7 @@ if (!class_exists("PredicateOperator", false)) {
          */
         public function getXsiTypeName()
         {
-            return "Predicate.Operator";
+            return "";
         }
 
         public function __construct()
@@ -765,7 +765,7 @@ if (!class_exists("DateRange", false)) {
          */
         public function getXsiTypeName()
         {
-            return "DateRange";
+            return "";
         }
 
         public function __construct($min = null, $max = null)
@@ -814,7 +814,7 @@ if (!class_exists("OrderBy", false)) {
          */
         public function getXsiTypeName()
         {
-            return "OrderBy";
+            return "";
         }
 
         public function __construct($field = null, $sortOrder = null)
@@ -865,7 +865,7 @@ if (!class_exists("Paging", false)) {
          */
         public function getXsiTypeName()
         {
-            return "Paging";
+            return "";
         }
 
         public function __construct($startIndex = null, $numberResults = null)
@@ -902,7 +902,7 @@ if (!class_exists("SortOrder", false)) {
          */
         public function getXsiTypeName()
         {
-            return "SortOrder";
+            return "";
         }
 
         public function __construct()
@@ -937,7 +937,7 @@ if (!class_exists("ReportDefinitionReportType", false)) {
          */
         public function getXsiTypeName()
         {
-            return "ReportDefinition.ReportType";
+            return "";
         }
 
         public function __construct()
@@ -972,7 +972,7 @@ if (!class_exists("ReportDefinitionDateRangeType", false)) {
          */
         public function getXsiTypeName()
         {
-            return "ReportDefinition.DateRangeType";
+            return "";
         }
 
         public function __construct()
@@ -1009,7 +1009,7 @@ if (!class_exists("DownloadFormat", false)) {
          */
         public function getXsiTypeName()
         {
-            return "DownloadFormat";
+            return "";
         }
 
         public function __construct()

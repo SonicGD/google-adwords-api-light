@@ -3,16 +3,15 @@
 namespace Google\Api\Ads\AdWords\v201306\classes;
 
 
-
 /**
  * A {@link SearchParameter} for {@code KEYWORD} {@link IdeaType}s that
  * specifies {@link Keyword}s that should be excluded from the results.<p>
- * 
+ *
  * The {@link KeywordMatchType} associated with these keywords is used to
  * provide various filtering strategies. For example, the excluded keyword
  * <b>"brand x player"</b> will exclude ideas from the resulting ideas as
  * described by the table below.
- * 
+ *
  * <table border="1">
  * <tr style="font-weight: bold;">
  * <th>Idea</th>
@@ -47,34 +46,42 @@ namespace Google\Api\Ads\AdWords\v201306\classes;
  * </table>
  * <p>This element is supported by following {@link IdeaType}s: KEYWORD.
  * <p>This element is supported by following {@link RequestType}s: IDEAS, STATS.
- * @package GoogleApiAdsAdWords
+ *
+ * @package    GoogleApiAdsAdWords
  * @subpackage v201306
  */
-class ExcludedKeywordSearchParameter extends SearchParameter {
-  /**
-   * @access public
-   * @var Keyword[]
-   */
-  public $keywords;
+class ExcludedKeywordSearchParameter extends SearchParameter
+{
+    /**
+     * @access public
+     * @var Keyword[]
+     */
+    public $keywords;
 
-  /**
-   * Gets the namesapce of this class
-   * @return the namespace of this class
-   */
-  public function getNamespace() {
-    return "https://adwords.google.com/api/adwords/o/v201306";
-  }
+    /**
+     * Gets the namesapce of this class
+     *
+     * @return the namespace of this class
+     */
+    public function getNamespace()
+    {
+        return "https://adwords.google.com/api/adwords/o/v201306";
+    }
 
-  /**
-   * Gets the xsi:type name of this class
-   * @return the xsi:type name of this class
-   */
-  public function getXsiTypeName() {
-    return "ExcludedKeywordSearchParameter";
-  }
+    /**
+     * Gets the xsi:type name of this class
+     *
+     * @return the xsi:type name of this class
+     */
+    public function getXsiTypeName()
+    {
+        return "";
+    }
 
-  public function __construct($keywords = NULL, $SearchParameterType = NULL) {
-    parent::__construct();
-    $this->keywords = $keywords;
-    $this->SearchParameterType = $SearchParameterType;
-  }}
+    public function __construct($keywords = null, $SearchParameterType = null)
+    {
+        parent::__construct();
+        $this->keywords = $keywords;
+        $this->SearchParameterType = $SearchParameterType;
+    }
+}

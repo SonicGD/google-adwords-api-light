@@ -3,7 +3,6 @@
 namespace Google\Api\Ads\AdWords\v201306\classes;
 
 
-
 /**
  * <p>A {@link SearchParameter} for setting the search network. Currently we
  * support two network setting options:
@@ -13,34 +12,42 @@ namespace Google\Api\Ads\AdWords\v201306\classes;
  * </ul>
  * <p>This element is supported by following {@link IdeaType}s: KEYWORD.
  * <p>This element is supported by following {@link RequestType}s: IDEAS, STATS.
- * @package GoogleApiAdsAdWords
+ *
+ * @package    GoogleApiAdsAdWords
  * @subpackage v201306
  */
-class NetworkSearchParameter extends SearchParameter {
-  /**
-   * @access public
-   * @var NetworkSetting
-   */
-  public $networkSetting;
+class NetworkSearchParameter extends SearchParameter
+{
+    /**
+     * @access public
+     * @var NetworkSetting
+     */
+    public $networkSetting;
 
-  /**
-   * Gets the namesapce of this class
-   * @return the namespace of this class
-   */
-  public function getNamespace() {
-    return "https://adwords.google.com/api/adwords/o/v201306";
-  }
+    /**
+     * Gets the namesapce of this class
+     *
+     * @return the namespace of this class
+     */
+    public function getNamespace()
+    {
+        return "https://adwords.google.com/api/adwords/o/v201306";
+    }
 
-  /**
-   * Gets the xsi:type name of this class
-   * @return the xsi:type name of this class
-   */
-  public function getXsiTypeName() {
-    return "NetworkSearchParameter";
-  }
+    /**
+     * Gets the xsi:type name of this class
+     *
+     * @return the xsi:type name of this class
+     */
+    public function getXsiTypeName()
+    {
+        return "";
+    }
 
-  public function __construct($networkSetting = NULL, $SearchParameterType = NULL) {
-    parent::__construct();
-    $this->networkSetting = $networkSetting;
-    $this->SearchParameterType = $SearchParameterType;
-  }}
+    public function __construct($networkSetting = null, $SearchParameterType = null)
+    {
+        parent::__construct();
+        $this->networkSetting = $networkSetting;
+        $this->SearchParameterType = $SearchParameterType;
+    }
+}

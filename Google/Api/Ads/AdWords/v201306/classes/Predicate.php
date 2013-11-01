@@ -3,49 +3,56 @@
 namespace Google\Api\Ads\AdWords\v201306\classes;
 
 
-
 /**
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
- * @package GoogleApiAdsAdWords
+ *
+ * @package    GoogleApiAdsAdWords
  * @subpackage v201306
  */
-class Predicate {
-  /**
-   * @access public
-   * @var string
-   */
-  public $field;
+class Predicate
+{
+    /**
+     * @access public
+     * @var string
+     */
+    public $field;
 
-  /**
-   * @access public
-   * @var tnsPredicateOperator
-   */
-  public $operator;
+    /**
+     * @access public
+     * @var tnsPredicateOperator
+     */
+    public $operator;
 
-  /**
-   * @access public
-   * @var string[]
-   */
-  public $values;
+    /**
+     * @access public
+     * @var string[]
+     */
+    public $values;
 
-  /**
-   * Gets the namesapce of this class
-   * @return the namespace of this class
-   */
-  public function getNamespace() {
-    return "https://adwords.google.com/api/adwords/cm/v201306";
-  }
+    /**
+     * Gets the namesapce of this class
+     *
+     * @return the namespace of this class
+     */
+    public function getNamespace()
+    {
+        return "https://adwords.google.com/api/adwords/cm/v201306";
+    }
 
-  /**
-   * Gets the xsi:type name of this class
-   * @return the xsi:type name of this class
-   */
-  public function getXsiTypeName() {
-    return "Predicate";
-  }
+    /**
+     * Gets the xsi:type name of this class
+     *
+     * @return the xsi:type name of this class
+     */
+    public function getXsiTypeName()
+    {
+        return "";
+    }
 
-  public function __construct($field = NULL, $operator = NULL, $values = NULL) {
-    $this->field = $field;
-    $this->operator = $operator;
-    $this->values = $values;
-  }}
+    public function __construct($field = null, $operator = null, $values = null)
+    {
+        $this->field = $field;
+        $this->operator = $operator;
+        $this->values = $values;
+    }
+}

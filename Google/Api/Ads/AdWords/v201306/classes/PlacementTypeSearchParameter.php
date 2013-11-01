@@ -3,7 +3,6 @@
 namespace Google\Api\Ads\AdWords\v201306\classes;
 
 
-
 /**
  * A {@link SearchParameter} for {@code PLACEMENT} {@link IdeaType}s
  * used to filter results based on the type of website, known as
@@ -12,34 +11,42 @@ namespace Google\Api\Ads\AdWords\v201306\classes;
  * results that only appear within mobile websites or feeds.
  * <p>This element is supported by following {@link IdeaType}s: PLACEMENT.
  * <p>This element is supported by following {@link RequestType}s: IDEAS.
- * @package GoogleApiAdsAdWords
+ *
+ * @package    GoogleApiAdsAdWords
  * @subpackage v201306
  */
-class PlacementTypeSearchParameter extends SearchParameter {
-  /**
-   * @access public
-   * @var tnsSiteConstantsPlacementType[]
-   */
-  public $placementTypes;
+class PlacementTypeSearchParameter extends SearchParameter
+{
+    /**
+     * @access public
+     * @var tnsSiteConstantsPlacementType[]
+     */
+    public $placementTypes;
 
-  /**
-   * Gets the namesapce of this class
-   * @return the namespace of this class
-   */
-  public function getNamespace() {
-    return "https://adwords.google.com/api/adwords/o/v201306";
-  }
+    /**
+     * Gets the namesapce of this class
+     *
+     * @return the namespace of this class
+     */
+    public function getNamespace()
+    {
+        return "https://adwords.google.com/api/adwords/o/v201306";
+    }
 
-  /**
-   * Gets the xsi:type name of this class
-   * @return the xsi:type name of this class
-   */
-  public function getXsiTypeName() {
-    return "PlacementTypeSearchParameter";
-  }
+    /**
+     * Gets the xsi:type name of this class
+     *
+     * @return the xsi:type name of this class
+     */
+    public function getXsiTypeName()
+    {
+        return "";
+    }
 
-  public function __construct($placementTypes = NULL, $SearchParameterType = NULL) {
-    parent::__construct();
-    $this->placementTypes = $placementTypes;
-    $this->SearchParameterType = $SearchParameterType;
-  }}
+    public function __construct($placementTypes = null, $SearchParameterType = null)
+    {
+        parent::__construct();
+        $this->placementTypes = $placementTypes;
+        $this->SearchParameterType = $SearchParameterType;
+    }
+}

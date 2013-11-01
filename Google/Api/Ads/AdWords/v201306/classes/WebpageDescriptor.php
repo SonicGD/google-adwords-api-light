@@ -3,42 +3,49 @@
 namespace Google\Api\Ads\AdWords\v201306\classes;
 
 
-
 /**
  * Basic information about a webpage.
- * @package GoogleApiAdsAdWords
+ *
+ * @package    GoogleApiAdsAdWords
  * @subpackage v201306
  */
-class WebpageDescriptor {
-  /**
-   * @access public
-   * @var string
-   */
-  public $url;
+class WebpageDescriptor
+{
+    /**
+     * @access public
+     * @var string
+     */
+    public $url;
 
-  /**
-   * @access public
-   * @var string
-   */
-  public $title;
+    /**
+     * @access public
+     * @var string
+     */
+    public $title;
 
-  /**
-   * Gets the namesapce of this class
-   * @return the namespace of this class
-   */
-  public function getNamespace() {
-    return "https://adwords.google.com/api/adwords/o/v201306";
-  }
+    /**
+     * Gets the namesapce of this class
+     *
+     * @return the namespace of this class
+     */
+    public function getNamespace()
+    {
+        return "https://adwords.google.com/api/adwords/o/v201306";
+    }
 
-  /**
-   * Gets the xsi:type name of this class
-   * @return the xsi:type name of this class
-   */
-  public function getXsiTypeName() {
-    return "WebpageDescriptor";
-  }
+    /**
+     * Gets the xsi:type name of this class
+     *
+     * @return the xsi:type name of this class
+     */
+    public function getXsiTypeName()
+    {
+        return "";
+    }
 
-  public function __construct($url = NULL, $title = NULL) {
-    $this->url = $url;
-    $this->title = $title;
-  }}
+    public function __construct($url = null, $title = null)
+    {
+        $this->url = $url;
+        $this->title = $title;
+    }
+}

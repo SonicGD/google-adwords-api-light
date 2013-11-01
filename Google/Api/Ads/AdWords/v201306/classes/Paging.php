@@ -3,48 +3,55 @@
 namespace Google\Api\Ads\AdWords\v201306\classes;
 
 
-
 /**
  * Specifies the page of results to return in the response. A page is specified
  * by the result position to start at and the maximum number of results to
  * return.
- * 
- * 
- * 
+ *
+ *
+ *
  * Represents data about a bidlandscape for an adgroup.
- * @package GoogleApiAdsAdWords
+ *
+ * @package    GoogleApiAdsAdWords
  * @subpackage v201306
  */
-class Paging {
-  /**
-   * @access public
-   * @var integer
-   */
-  public $startIndex;
+class Paging
+{
+    /**
+     * @access public
+     * @var integer
+     */
+    public $startIndex;
 
-  /**
-   * @access public
-   * @var integer
-   */
-  public $numberResults;
+    /**
+     * @access public
+     * @var integer
+     */
+    public $numberResults;
 
-  /**
-   * Gets the namesapce of this class
-   * @return the namespace of this class
-   */
-  public function getNamespace() {
-    return "https://adwords.google.com/api/adwords/cm/v201306";
-  }
+    /**
+     * Gets the namesapce of this class
+     *
+     * @return the namespace of this class
+     */
+    public function getNamespace()
+    {
+        return "https://adwords.google.com/api/adwords/cm/v201306";
+    }
 
-  /**
-   * Gets the xsi:type name of this class
-   * @return the xsi:type name of this class
-   */
-  public function getXsiTypeName() {
-    return "Paging";
-  }
+    /**
+     * Gets the xsi:type name of this class
+     *
+     * @return the xsi:type name of this class
+     */
+    public function getXsiTypeName()
+    {
+        return "";
+    }
 
-  public function __construct($startIndex = NULL, $numberResults = NULL) {
-    $this->startIndex = $startIndex;
-    $this->numberResults = $numberResults;
-  }}
+    public function __construct($startIndex = null, $numberResults = null)
+    {
+        $this->startIndex = $startIndex;
+        $this->numberResults = $numberResults;
+    }
+}

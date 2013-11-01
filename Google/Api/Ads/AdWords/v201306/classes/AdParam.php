@@ -3,7 +3,6 @@
 namespace Google\Api\Ads\AdWords\v201306\classes;
 
 
-
 /**
  * Represents an ad parameter.  Use ad parameters to update numeric values
  * (such as prices or inventory levels) in any line of a text ad, including
@@ -18,53 +17,61 @@ namespace Google\Api\Ads\AdWords\v201306\classes;
  * <li><code>criterionId</code></li>
  * <li><code>paramIndex</code></li>
  * </ul>
- * @package GoogleApiAdsAdWords
+ *
+ * @package    GoogleApiAdsAdWords
  * @subpackage v201306
  */
-class AdParam {
-  /**
-   * @access public
-   * @var integer
-   */
-  public $adGroupId;
+class AdParam
+{
+    /**
+     * @access public
+     * @var integer
+     */
+    public $adGroupId;
 
-  /**
-   * @access public
-   * @var integer
-   */
-  public $criterionId;
+    /**
+     * @access public
+     * @var integer
+     */
+    public $criterionId;
 
-  /**
-   * @access public
-   * @var string
-   */
-  public $insertionText;
+    /**
+     * @access public
+     * @var string
+     */
+    public $insertionText;
 
-  /**
-   * @access public
-   * @var integer
-   */
-  public $paramIndex;
+    /**
+     * @access public
+     * @var integer
+     */
+    public $paramIndex;
 
-  /**
-   * Gets the namesapce of this class
-   * @return the namespace of this class
-   */
-  public function getNamespace() {
-    return "https://adwords.google.com/api/adwords/cm/v201306";
-  }
+    /**
+     * Gets the namesapce of this class
+     *
+     * @return the namespace of this class
+     */
+    public function getNamespace()
+    {
+        return "https://adwords.google.com/api/adwords/cm/v201306";
+    }
 
-  /**
-   * Gets the xsi:type name of this class
-   * @return the xsi:type name of this class
-   */
-  public function getXsiTypeName() {
-    return "AdParam";
-  }
+    /**
+     * Gets the xsi:type name of this class
+     *
+     * @return the xsi:type name of this class
+     */
+    public function getXsiTypeName()
+    {
+        return "";
+    }
 
-  public function __construct($adGroupId = NULL, $criterionId = NULL, $insertionText = NULL, $paramIndex = NULL) {
-    $this->adGroupId = $adGroupId;
-    $this->criterionId = $criterionId;
-    $this->insertionText = $insertionText;
-    $this->paramIndex = $paramIndex;
-  }}
+    public function __construct($adGroupId = null, $criterionId = null, $insertionText = null, $paramIndex = null)
+    {
+        $this->adGroupId = $adGroupId;
+        $this->criterionId = $criterionId;
+        $this->insertionText = $insertionText;
+        $this->paramIndex = $paramIndex;
+    }
+}

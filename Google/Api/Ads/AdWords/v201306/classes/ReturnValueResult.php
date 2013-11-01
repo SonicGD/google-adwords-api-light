@@ -3,38 +3,45 @@
 namespace Google\Api\Ads\AdWords\v201306\classes;
 
 
-
 /**
  * Represents a success result of processing a mutate operation that returned
  * a value.
- * @package GoogleApiAdsAdWords
+ *
+ * @package    GoogleApiAdsAdWords
  * @subpackage v201306
  */
-class ReturnValueResult extends OperationResult {
-  /**
-   * @access public
-   * @var Operand
-   */
-  public $returnValue;
+class ReturnValueResult extends OperationResult
+{
+    /**
+     * @access public
+     * @var Operand
+     */
+    public $returnValue;
 
-  /**
-   * Gets the namesapce of this class
-   * @return the namespace of this class
-   */
-  public function getNamespace() {
-    return "https://adwords.google.com/api/adwords/cm/v201306";
-  }
+    /**
+     * Gets the namesapce of this class
+     *
+     * @return the namespace of this class
+     */
+    public function getNamespace()
+    {
+        return "https://adwords.google.com/api/adwords/cm/v201306";
+    }
 
-  /**
-   * Gets the xsi:type name of this class
-   * @return the xsi:type name of this class
-   */
-  public function getXsiTypeName() {
-    return "ReturnValueResult";
-  }
+    /**
+     * Gets the xsi:type name of this class
+     *
+     * @return the xsi:type name of this class
+     */
+    public function getXsiTypeName()
+    {
+        return "";
+    }
 
-  public function __construct($returnValue = NULL, $OperationResultType = NULL) {
-    parent::__construct();
-    $this->returnValue = $returnValue;
-    $this->OperationResultType = $OperationResultType;
-  }}
+    public function __construct($returnValue = null, $OperationResultType = null)
+    {
+        parent::__construct();
+        $this->returnValue = $returnValue;
+        $this->OperationResultType = $OperationResultType;
+    }
+}

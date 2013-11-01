@@ -3,50 +3,57 @@
 namespace Google\Api\Ads\AdWords\v201306\classes;
 
 
-
 /**
  * A frequency cap is the maximum number of times an ad (or some set of ads) can
  * be shown to a user over a particular time period.
- * @package GoogleApiAdsAdWords
+ *
+ * @package    GoogleApiAdsAdWords
  * @subpackage v201306
  */
-class FrequencyCap {
-  /**
-   * @access public
-   * @var integer
-   */
-  public $impressions;
+class FrequencyCap
+{
+    /**
+     * @access public
+     * @var integer
+     */
+    public $impressions;
 
-  /**
-   * @access public
-   * @var tnsTimeUnit
-   */
-  public $timeUnit;
+    /**
+     * @access public
+     * @var tnsTimeUnit
+     */
+    public $timeUnit;
 
-  /**
-   * @access public
-   * @var tnsLevel
-   */
-  public $level;
+    /**
+     * @access public
+     * @var tnsLevel
+     */
+    public $level;
 
-  /**
-   * Gets the namesapce of this class
-   * @return the namespace of this class
-   */
-  public function getNamespace() {
-    return "https://adwords.google.com/api/adwords/cm/v201306";
-  }
+    /**
+     * Gets the namesapce of this class
+     *
+     * @return the namespace of this class
+     */
+    public function getNamespace()
+    {
+        return "https://adwords.google.com/api/adwords/cm/v201306";
+    }
 
-  /**
-   * Gets the xsi:type name of this class
-   * @return the xsi:type name of this class
-   */
-  public function getXsiTypeName() {
-    return "FrequencyCap";
-  }
+    /**
+     * Gets the xsi:type name of this class
+     *
+     * @return the xsi:type name of this class
+     */
+    public function getXsiTypeName()
+    {
+        return "";
+    }
 
-  public function __construct($impressions = NULL, $timeUnit = NULL, $level = NULL) {
-    $this->impressions = $impressions;
-    $this->timeUnit = $timeUnit;
-    $this->level = $level;
-  }}
+    public function __construct($impressions = null, $timeUnit = null, $level = null)
+    {
+        $this->impressions = $impressions;
+        $this->timeUnit = $timeUnit;
+        $this->level = $level;
+    }
+}

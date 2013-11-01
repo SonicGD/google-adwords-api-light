@@ -530,7 +530,7 @@ abstract class AdsSoapClient extends SoapClient
         array $arguments,
         array $headers
     ) {
-        $addXsiTypes = false;
+        $addXsiTypes = true;
         $removeEmptyElements = false;
         $replaceReferences = false;
 

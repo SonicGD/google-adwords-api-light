@@ -23,9 +23,10 @@ class AccessReason {
    * Gets the xsi:type name of this class
    * @return the xsi:type name of this class
    */
-  public function getXsiTypeName() {
-    return "AccessReason";
-  }
+    public function getXsiTypeName()
+    {
+        return "";
+    }
 
-  public function __construct() {
+    public function __construct() {
   }}

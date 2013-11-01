@@ -3,7 +3,6 @@
 namespace Google\Api\Ads\AdWords\v201306\classes;
 
 
-
 /**
  * A {@link SearchParameter} that specifies the level of search volume expected in results,
  * and it has a direct relationship to
@@ -13,34 +12,42 @@ namespace Google\Api\Ads\AdWords\v201306\classes;
  * equivalent to having no constraint on search volume specified.
  * <p>This element is supported by following {@link IdeaType}s: KEYWORD.
  * <p>This element is supported by following {@link RequestType}s: IDEAS, STATS.
- * @package GoogleApiAdsAdWords
+ *
+ * @package    GoogleApiAdsAdWords
  * @subpackage v201306
  */
-class SearchVolumeSearchParameter extends SearchParameter {
-  /**
-   * @access public
-   * @var LongComparisonOperation
-   */
-  public $operation;
+class SearchVolumeSearchParameter extends SearchParameter
+{
+    /**
+     * @access public
+     * @var LongComparisonOperation
+     */
+    public $operation;
 
-  /**
-   * Gets the namesapce of this class
-   * @return the namespace of this class
-   */
-  public function getNamespace() {
-    return "https://adwords.google.com/api/adwords/o/v201306";
-  }
+    /**
+     * Gets the namesapce of this class
+     *
+     * @return the namespace of this class
+     */
+    public function getNamespace()
+    {
+        return "https://adwords.google.com/api/adwords/o/v201306";
+    }
 
-  /**
-   * Gets the xsi:type name of this class
-   * @return the xsi:type name of this class
-   */
-  public function getXsiTypeName() {
-    return "SearchVolumeSearchParameter";
-  }
+    /**
+     * Gets the xsi:type name of this class
+     *
+     * @return the xsi:type name of this class
+     */
+    public function getXsiTypeName()
+    {
+        return "";
+    }
 
-  public function __construct($operation = NULL, $SearchParameterType = NULL) {
-    parent::__construct();
-    $this->operation = $operation;
-    $this->SearchParameterType = $SearchParameterType;
-  }}
+    public function __construct($operation = null, $SearchParameterType = null)
+    {
+        parent::__construct();
+        $this->operation = $operation;
+        $this->SearchParameterType = $SearchParameterType;
+    }
+}

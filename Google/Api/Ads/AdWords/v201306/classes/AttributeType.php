@@ -3,7 +3,6 @@
 namespace Google\Api\Ads\AdWords\v201306\classes;
 
 
-
 /**
  * Represents the type of
  * {@link com.google.ads.api.services.common.optimization.attributes.Attribute}.
@@ -40,25 +39,33 @@ namespace Google\Api\Ads\AdWords\v201306\classes;
  * <li>{@link #PUBLISHER_DESCRIPTION}</li>
  * <li>{@link #SAMPLE_URL}</li>
  * </ul>
- * @package GoogleApiAdsAdWords
+ *
+ * @package    GoogleApiAdsAdWords
  * @subpackage v201306
  */
-class AttributeType {
-  /**
-   * Gets the namesapce of this class
-   * @return the namespace of this class
-   */
-  public function getNamespace() {
-    return "https://adwords.google.com/api/adwords/o/v201306";
-  }
+class AttributeType
+{
+    /**
+     * Gets the namesapce of this class
+     *
+     * @return the namespace of this class
+     */
+    public function getNamespace()
+    {
+        return "https://adwords.google.com/api/adwords/o/v201306";
+    }
 
-  /**
-   * Gets the xsi:type name of this class
-   * @return the xsi:type name of this class
-   */
-  public function getXsiTypeName() {
-    return "AttributeType";
-  }
+    /**
+     * Gets the xsi:type name of this class
+     *
+     * @return the xsi:type name of this class
+     */
+    public function getXsiTypeName()
+    {
+        return "";
+    }
 
-  public function __construct() {
-  }}
+    public function __construct()
+    {
+    }
+}

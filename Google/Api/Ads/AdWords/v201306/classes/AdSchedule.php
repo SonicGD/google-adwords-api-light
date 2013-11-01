@@ -3,7 +3,6 @@
 namespace Google\Api\Ads\AdWords\v201306\classes;
 
 
-
 /**
  * Represents an AdSchedule Criterion.
  * AdSchedule is specified as day and time of the week criteria to target
@@ -11,64 +10,80 @@ namespace Google\Api\Ads\AdWords\v201306\classes;
  * <p><b>Note:</b> An AdSchedule may not have more than <b>six</b> intervals
  * in a day.</p>
  * <span class="constraint AdxEnabled">This is enabled for AdX.</span>
- * @package GoogleApiAdsAdWords
+ *
+ * @package    GoogleApiAdsAdWords
  * @subpackage v201306
  */
-class AdSchedule extends Criterion {
-  /**
-   * @access public
-   * @var tnsDayOfWeek
-   */
-  public $dayOfWeek;
+class AdSchedule extends Criterion
+{
+    /**
+     * @access public
+     * @var tnsDayOfWeek
+     */
+    public $dayOfWeek;
 
-  /**
-   * @access public
-   * @var integer
-   */
-  public $startHour;
+    /**
+     * @access public
+     * @var integer
+     */
+    public $startHour;
 
-  /**
-   * @access public
-   * @var tnsMinuteOfHour
-   */
-  public $startMinute;
+    /**
+     * @access public
+     * @var tnsMinuteOfHour
+     */
+    public $startMinute;
 
-  /**
-   * @access public
-   * @var integer
-   */
-  public $endHour;
+    /**
+     * @access public
+     * @var integer
+     */
+    public $endHour;
 
-  /**
-   * @access public
-   * @var tnsMinuteOfHour
-   */
-  public $endMinute;
+    /**
+     * @access public
+     * @var tnsMinuteOfHour
+     */
+    public $endMinute;
 
-  /**
-   * Gets the namesapce of this class
-   * @return the namespace of this class
-   */
-  public function getNamespace() {
-    return "https://adwords.google.com/api/adwords/cm/v201306";
-  }
+    /**
+     * Gets the namesapce of this class
+     *
+     * @return the namespace of this class
+     */
+    public function getNamespace()
+    {
+        return "https://adwords.google.com/api/adwords/cm/v201306";
+    }
 
-  /**
-   * Gets the xsi:type name of this class
-   * @return the xsi:type name of this class
-   */
-  public function getXsiTypeName() {
-    return "AdSchedule";
-  }
+    /**
+     * Gets the xsi:type name of this class
+     *
+     * @return the xsi:type name of this class
+     */
+    public function getXsiTypeName()
+    {
+        return "";
+    }
 
-  public function __construct($dayOfWeek = NULL, $startHour = NULL, $startMinute = NULL, $endHour = NULL, $endMinute = NULL, $id = NULL, $type = NULL, $CriterionType = NULL) {
-    parent::__construct();
-    $this->dayOfWeek = $dayOfWeek;
-    $this->startHour = $startHour;
-    $this->startMinute = $startMinute;
-    $this->endHour = $endHour;
-    $this->endMinute = $endMinute;
-    $this->id = $id;
-    $this->type = $type;
-    $this->CriterionType = $CriterionType;
-  }}
+    public function __construct(
+        $dayOfWeek = null,
+        $startHour = null,
+        $startMinute = null,
+        $endHour = null,
+        $endMinute = null,
+        $id = null,
+        $type = null,
+        $CriterionType = null
+    ) {
+        parent::__construct();
+        $this->dayOfWeek = $dayOfWeek;
+        $this->startHour = $startHour;
+        $this->startMinute = $startMinute;
+        $this->endHour = $endHour;
+        $this->endMinute = $endMinute;
+        $this->id = $id;
+        $this->type = $type;
+        $this->CriterionType = $CriterionType;
+    }
+}

@@ -3,44 +3,51 @@
 namespace Google\Api\Ads\AdWords\v201306\classes;
 
 
-
 /**
  * Manual impression based bids.
- * @package GoogleApiAdsAdWords
+ *
+ * @package    GoogleApiAdsAdWords
  * @subpackage v201306
  */
-class CpmBid extends Bids {
-  /**
-   * @access public
-   * @var Money
-   */
-  public $bid;
+class CpmBid extends Bids
+{
+    /**
+     * @access public
+     * @var Money
+     */
+    public $bid;
 
-  /**
-   * @access public
-   * @var tnsBidSource
-   */
-  public $cpmBidSource;
+    /**
+     * @access public
+     * @var tnsBidSource
+     */
+    public $cpmBidSource;
 
-  /**
-   * Gets the namesapce of this class
-   * @return the namespace of this class
-   */
-  public function getNamespace() {
-    return "https://adwords.google.com/api/adwords/cm/v201306";
-  }
+    /**
+     * Gets the namesapce of this class
+     *
+     * @return the namespace of this class
+     */
+    public function getNamespace()
+    {
+        return "https://adwords.google.com/api/adwords/cm/v201306";
+    }
 
-  /**
-   * Gets the xsi:type name of this class
-   * @return the xsi:type name of this class
-   */
-  public function getXsiTypeName() {
-    return "CpmBid";
-  }
+    /**
+     * Gets the xsi:type name of this class
+     *
+     * @return the xsi:type name of this class
+     */
+    public function getXsiTypeName()
+    {
+        return "";
+    }
 
-  public function __construct($bid = NULL, $cpmBidSource = NULL, $BidsType = NULL) {
-    parent::__construct();
-    $this->bid = $bid;
-    $this->cpmBidSource = $cpmBidSource;
-    $this->BidsType = $BidsType;
-  }}
+    public function __construct($bid = null, $cpmBidSource = null, $BidsType = null)
+    {
+        parent::__construct();
+        $this->bid = $bid;
+        $this->cpmBidSource = $cpmBidSource;
+        $this->BidsType = $BidsType;
+    }
+}

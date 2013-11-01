@@ -3,43 +3,50 @@
 namespace Google\Api\Ads\AdWords\v201306\classes;
 
 
-
 /**
  * Represents a multiplier to modify a bid. The final value after
  * modification is represented by the multiplied bid value.
- * @package GoogleApiAdsAdWords
+ *
+ * @package    GoogleApiAdsAdWords
  * @subpackage v201306
  */
-class BidMultiplier {
-  /**
-   * @access public
-   * @var double
-   */
-  public $multiplier;
+class BidMultiplier
+{
+    /**
+     * @access public
+     * @var double
+     */
+    public $multiplier;
 
-  /**
-   * @access public
-   * @var Bid
-   */
-  public $multipliedBid;
+    /**
+     * @access public
+     * @var Bid
+     */
+    public $multipliedBid;
 
-  /**
-   * Gets the namesapce of this class
-   * @return the namespace of this class
-   */
-  public function getNamespace() {
-    return "https://adwords.google.com/api/adwords/cm/v201306";
-  }
+    /**
+     * Gets the namesapce of this class
+     *
+     * @return the namespace of this class
+     */
+    public function getNamespace()
+    {
+        return "https://adwords.google.com/api/adwords/cm/v201306";
+    }
 
-  /**
-   * Gets the xsi:type name of this class
-   * @return the xsi:type name of this class
-   */
-  public function getXsiTypeName() {
-    return "BidMultiplier";
-  }
+    /**
+     * Gets the xsi:type name of this class
+     *
+     * @return the xsi:type name of this class
+     */
+    public function getXsiTypeName()
+    {
+        return "";
+    }
 
-  public function __construct($multiplier = NULL, $multipliedBid = NULL) {
-    $this->multiplier = $multiplier;
-    $this->multipliedBid = $multipliedBid;
-  }}
+    public function __construct($multiplier = null, $multipliedBid = null)
+    {
+        $this->multiplier = $multiplier;
+        $this->multipliedBid = $multipliedBid;
+    }
+}

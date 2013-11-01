@@ -3,7 +3,6 @@
 namespace Google\Api\Ads\AdWords\v201306\classes;
 
 
-
 /**
  * A {@link SearchParameter} for {@code KEYWORD} {@link IdeaType}s
  * that specifies that the supplied AdGroup should be used as a seed
@@ -11,34 +10,42 @@ namespace Google\Api\Ads\AdWords\v201306\classes;
  * would be used to generate new and related keywords.
  * <p>This element is supported by following {@link IdeaType}s: KEYWORD.
  * <p>This element is supported by following {@link RequestType}s: IDEAS, STATS.
- * @package GoogleApiAdsAdWords
+ *
+ * @package    GoogleApiAdsAdWords
  * @subpackage v201306
  */
-class SeedAdGroupIdSearchParameter extends SearchParameter {
-  /**
-   * @access public
-   * @var integer
-   */
-  public $adGroupId;
+class SeedAdGroupIdSearchParameter extends SearchParameter
+{
+    /**
+     * @access public
+     * @var integer
+     */
+    public $adGroupId;
 
-  /**
-   * Gets the namesapce of this class
-   * @return the namespace of this class
-   */
-  public function getNamespace() {
-    return "https://adwords.google.com/api/adwords/o/v201306";
-  }
+    /**
+     * Gets the namesapce of this class
+     *
+     * @return the namespace of this class
+     */
+    public function getNamespace()
+    {
+        return "https://adwords.google.com/api/adwords/o/v201306";
+    }
 
-  /**
-   * Gets the xsi:type name of this class
-   * @return the xsi:type name of this class
-   */
-  public function getXsiTypeName() {
-    return "SeedAdGroupIdSearchParameter";
-  }
+    /**
+     * Gets the xsi:type name of this class
+     *
+     * @return the xsi:type name of this class
+     */
+    public function getXsiTypeName()
+    {
+        return "";
+    }
 
-  public function __construct($adGroupId = NULL, $SearchParameterType = NULL) {
-    parent::__construct();
-    $this->adGroupId = $adGroupId;
-    $this->SearchParameterType = $SearchParameterType;
-  }}
+    public function __construct($adGroupId = null, $SearchParameterType = null)
+    {
+        parent::__construct();
+        $this->adGroupId = $adGroupId;
+        $this->SearchParameterType = $SearchParameterType;
+    }
+}

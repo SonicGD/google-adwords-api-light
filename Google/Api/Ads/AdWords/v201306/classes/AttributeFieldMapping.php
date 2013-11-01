@@ -3,47 +3,54 @@
 namespace Google\Api\Ads\AdWords\v201306\classes;
 
 
-
 /**
  * Represents a mapping between a feed attribute and a placeholder field.
- * 
+ *
  * <p>For a list of feed placeholders, see
  * <a href="/adwords/api/docs/appendix/placeholders">
  * https://developers.google.com/adwords/api/docs/appendix/placeholders
  * </a></p>
- * @package GoogleApiAdsAdWords
+ *
+ * @package    GoogleApiAdsAdWords
  * @subpackage v201306
  */
-class AttributeFieldMapping {
-  /**
-   * @access public
-   * @var integer
-   */
-  public $feedAttributeId;
+class AttributeFieldMapping
+{
+    /**
+     * @access public
+     * @var integer
+     */
+    public $feedAttributeId;
 
-  /**
-   * @access public
-   * @var integer
-   */
-  public $fieldId;
+    /**
+     * @access public
+     * @var integer
+     */
+    public $fieldId;
 
-  /**
-   * Gets the namesapce of this class
-   * @return the namespace of this class
-   */
-  public function getNamespace() {
-    return "https://adwords.google.com/api/adwords/cm/v201306";
-  }
+    /**
+     * Gets the namesapce of this class
+     *
+     * @return the namespace of this class
+     */
+    public function getNamespace()
+    {
+        return "https://adwords.google.com/api/adwords/cm/v201306";
+    }
 
-  /**
-   * Gets the xsi:type name of this class
-   * @return the xsi:type name of this class
-   */
-  public function getXsiTypeName() {
-    return "AttributeFieldMapping";
-  }
+    /**
+     * Gets the xsi:type name of this class
+     *
+     * @return the xsi:type name of this class
+     */
+    public function getXsiTypeName()
+    {
+        return "";
+    }
 
-  public function __construct($feedAttributeId = NULL, $fieldId = NULL) {
-    $this->feedAttributeId = $feedAttributeId;
-    $this->fieldId = $fieldId;
-  }}
+    public function __construct($feedAttributeId = null, $fieldId = null)
+    {
+        $this->feedAttributeId = $feedAttributeId;
+        $this->fieldId = $fieldId;
+    }
+}

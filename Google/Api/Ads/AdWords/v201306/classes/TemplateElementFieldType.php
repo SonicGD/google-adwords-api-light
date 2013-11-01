@@ -28,7 +28,7 @@ class TemplateElementFieldType
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "TemplateElementField.Type";
     }
 
     public function __construct()

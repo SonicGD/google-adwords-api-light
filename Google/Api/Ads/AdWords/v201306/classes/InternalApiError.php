@@ -40,7 +40,7 @@ class InternalApiError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "InternalApiError";
     }
 
     public function __construct(

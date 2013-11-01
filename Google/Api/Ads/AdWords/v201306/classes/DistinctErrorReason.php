@@ -32,7 +32,7 @@ class DistinctErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "DistinctError.Reason";
     }
 
     public function __construct()

@@ -47,7 +47,7 @@ class ImageAd extends Ad
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ImageAd";
     }
 
     public function __construct(

@@ -33,7 +33,7 @@ class CampaignSharedSetError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CampaignSharedSetError";
     }
 
     public function __construct(

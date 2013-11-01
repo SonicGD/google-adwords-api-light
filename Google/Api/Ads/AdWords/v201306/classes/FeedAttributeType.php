@@ -28,7 +28,7 @@ class FeedAttributeType
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "FeedAttribute.Type";
     }
 
     public function __construct()

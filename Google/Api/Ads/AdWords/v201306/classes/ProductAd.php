@@ -47,7 +47,7 @@ class ProductAd extends Ad
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ProductAd";
     }
 
     public function __construct(

@@ -27,7 +27,7 @@ class MobileDeviceDeviceType
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "MobileDevice.DeviceType";
     }
 
     public function __construct()

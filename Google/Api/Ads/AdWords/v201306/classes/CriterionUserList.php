@@ -51,7 +51,7 @@ class CriterionUserList extends Criterion
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CriterionUserList";
     }
 
     public function __construct(

@@ -29,7 +29,7 @@ class FilterSpec
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "FilterSpec";
     }
 
     public function __construct()

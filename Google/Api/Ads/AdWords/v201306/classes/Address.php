@@ -70,7 +70,7 @@ class Address
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Address";
     }
 
     public function __construct(

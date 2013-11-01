@@ -34,7 +34,7 @@ class BidLandscapeAttribute extends Attribute
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "BidLandscapeAttribute";
     }
 
     public function __construct($value = null, $AttributeType = null)

@@ -47,7 +47,7 @@ class FrequencyCap
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "FrequencyCap";
     }
 
     public function __construct($impressions = null, $timeUnit = null, $level = null)

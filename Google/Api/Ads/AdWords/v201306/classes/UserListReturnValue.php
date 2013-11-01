@@ -34,7 +34,7 @@ class UserListReturnValue extends ListReturnValue
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "UserListReturnValue";
     }
 
     public function __construct($value = null, $ListReturnValueType = null)

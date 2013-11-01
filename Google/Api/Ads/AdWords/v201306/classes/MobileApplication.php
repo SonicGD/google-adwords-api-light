@@ -46,7 +46,7 @@ class MobileApplication extends Criterion
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "MobileApplication";
     }
 
     public function __construct($appId = null, $displayName = null, $id = null, $type = null, $CriterionType = null)

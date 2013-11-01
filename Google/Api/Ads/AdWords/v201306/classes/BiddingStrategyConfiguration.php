@@ -82,7 +82,7 @@ class BiddingStrategyConfiguration
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "BiddingStrategyConfiguration";
     }
 
     public function __construct(

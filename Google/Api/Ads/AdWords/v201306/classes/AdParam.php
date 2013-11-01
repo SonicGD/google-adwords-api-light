@@ -64,7 +64,7 @@ class AdParam
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdParam";
     }
 
     public function __construct($adGroupId = null, $criterionId = null, $insertionText = null, $paramIndex = null)

@@ -35,7 +35,7 @@ class AdParamOperation extends Operation
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdParamOperation";
     }
 
     public function __construct($operand = null, $operator = null, $OperationType = null)

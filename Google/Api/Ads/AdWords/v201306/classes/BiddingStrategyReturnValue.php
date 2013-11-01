@@ -34,7 +34,7 @@ class BiddingStrategyReturnValue extends ListReturnValue
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "BiddingStrategyReturnValue";
     }
 
     public function __construct($value = null, $ListReturnValueType = null)

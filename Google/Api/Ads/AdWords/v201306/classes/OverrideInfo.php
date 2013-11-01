@@ -35,7 +35,7 @@ class OverrideInfo
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "OverrideInfo";
     }
 
     public function __construct($LocationOverrideInfo = null)

@@ -125,7 +125,7 @@ class Operand
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Operand";
     }
 
     public function __construct(

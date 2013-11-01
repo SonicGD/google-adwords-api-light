@@ -28,7 +28,7 @@ class NegativeAdGroupCriterion extends AdGroupCriterion
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "NegativeAdGroupCriterion";
     }
 
     public function __construct(

@@ -28,7 +28,7 @@ class BudgetOrderRequestStatus
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "BudgetOrderRequest.Status";
     }
 
     public function __construct()

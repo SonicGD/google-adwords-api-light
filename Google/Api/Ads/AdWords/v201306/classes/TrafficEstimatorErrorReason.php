@@ -32,7 +32,7 @@ class TrafficEstimatorErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "TrafficEstimatorError.Reason";
     }
 
     public function __construct()

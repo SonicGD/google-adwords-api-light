@@ -28,7 +28,7 @@ class DisplayAdSpecActivationOption
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "DisplayAdSpec.ActivationOption";
     }
 
     public function __construct()

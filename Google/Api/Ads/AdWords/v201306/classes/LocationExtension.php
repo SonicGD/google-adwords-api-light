@@ -76,7 +76,7 @@ class LocationExtension extends AdExtension
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "LocationExtension";
     }
 
     public function __construct(

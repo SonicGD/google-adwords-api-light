@@ -32,7 +32,7 @@ class RateExceededErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "RateExceededError.Reason";
     }
 
     public function __construct()

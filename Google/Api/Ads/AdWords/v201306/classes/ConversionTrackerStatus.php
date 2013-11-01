@@ -29,7 +29,7 @@ class ConversionTrackerStatus
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ConversionTracker.Status";
     }
 
     public function __construct()

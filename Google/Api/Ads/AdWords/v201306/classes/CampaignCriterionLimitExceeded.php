@@ -34,7 +34,7 @@ class CampaignCriterionLimitExceeded extends EntityCountLimitExceeded
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CampaignCriterionLimitExceeded";
     }
 
     public function __construct(

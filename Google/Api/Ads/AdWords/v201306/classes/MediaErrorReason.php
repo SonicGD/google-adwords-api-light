@@ -28,7 +28,7 @@ class MediaErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "MediaError.Reason";
     }
 
     public function __construct()

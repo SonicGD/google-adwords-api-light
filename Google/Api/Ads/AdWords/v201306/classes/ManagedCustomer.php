@@ -76,7 +76,7 @@ class ManagedCustomer
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ManagedCustomer";
     }
 
     public function __construct(

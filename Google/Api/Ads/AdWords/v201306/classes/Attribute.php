@@ -82,7 +82,7 @@ class Attribute
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Attribute";
     }
 
     public function __construct($AttributeType = null)

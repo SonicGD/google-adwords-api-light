@@ -27,7 +27,7 @@ class NullStatsPage extends Page
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "NullStatsPage";
     }
 
     public function __construct($totalNumEntries = null, $PageType = null)

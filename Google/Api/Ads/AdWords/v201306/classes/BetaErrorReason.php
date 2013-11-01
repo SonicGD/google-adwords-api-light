@@ -27,7 +27,7 @@ class BetaErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "BetaError.Reason";
     }
 
     public function __construct()

@@ -34,7 +34,7 @@ class GeoLocationSelector
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "GeoLocationSelector";
     }
 
     public function __construct($addresses = null)

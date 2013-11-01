@@ -46,7 +46,7 @@ class DisplayType
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "DisplayType";
     }
 
     public function __construct($FlashDisplayType = null, $HtmlDisplayType = null, $ImageDisplayType = null)

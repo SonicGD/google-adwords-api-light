@@ -35,7 +35,7 @@ class AdExtensionOverridePage extends Page
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdExtensionOverridePage";
     }
 
     public function __construct($entries = null, $totalNumEntries = null, $PageType = null)

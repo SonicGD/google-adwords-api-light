@@ -34,7 +34,7 @@ class ConversionTrackerReturnValue extends ListReturnValue
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ConversionTrackerReturnValue";
     }
 
     public function __construct($value = null, $ListReturnValueType = null)

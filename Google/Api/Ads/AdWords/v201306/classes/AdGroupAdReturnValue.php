@@ -40,7 +40,7 @@ class AdGroupAdReturnValue extends ListReturnValue
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdGroupAdReturnValue";
     }
 
     public function __construct($value = null, $partialFailureErrors = null, $ListReturnValueType = null)

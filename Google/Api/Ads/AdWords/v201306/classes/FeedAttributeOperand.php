@@ -40,7 +40,7 @@ class FeedAttributeOperand extends FunctionArgumentOperand
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "FeedAttributeOperand";
     }
 
     public function __construct($feedId = null, $feedAttributeId = null, $FunctionArgumentOperandType = null)

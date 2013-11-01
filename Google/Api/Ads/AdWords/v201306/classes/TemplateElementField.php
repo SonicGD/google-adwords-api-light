@@ -52,7 +52,7 @@ class TemplateElementField
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "TemplateElementField";
     }
 
     public function __construct($name = null, $type = null, $fieldText = null, $fieldMedia = null)

@@ -34,7 +34,7 @@ class FeedMappingError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "FeedMappingError";
     }
 
     public function __construct(

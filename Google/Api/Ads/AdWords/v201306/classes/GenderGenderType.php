@@ -27,7 +27,7 @@ class GenderGenderType
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Gender.GenderType";
     }
 
     public function __construct()

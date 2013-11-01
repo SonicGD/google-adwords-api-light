@@ -54,7 +54,7 @@ class FeedItemValidationDetail
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "FeedItemValidationDetail";
     }
 
     public function __construct(

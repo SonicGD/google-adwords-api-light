@@ -28,7 +28,7 @@ class ExperimentDataStatus
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ExperimentDataStatus";
     }
 
     public function __construct()

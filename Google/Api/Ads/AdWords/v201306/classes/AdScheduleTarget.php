@@ -64,7 +64,7 @@ class AdScheduleTarget extends Target
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdScheduleTarget";
     }
 
     public function __construct(

@@ -46,7 +46,7 @@ class Language extends Criterion
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Language";
     }
 
     public function __construct($code = null, $name = null, $id = null, $type = null, $CriterionType = null)

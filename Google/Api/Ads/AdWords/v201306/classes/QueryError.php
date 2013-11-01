@@ -40,7 +40,7 @@ class QueryError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "QueryError";
     }
 
     public function __construct(

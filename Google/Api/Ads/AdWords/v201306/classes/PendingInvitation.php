@@ -52,7 +52,7 @@ class PendingInvitation
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "PendingInvitation";
     }
 
     public function __construct($manager = null, $client = null, $creationDate = null, $expirationDate = null)

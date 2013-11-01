@@ -29,7 +29,7 @@ class UserListMembershipStatus
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "UserListMembershipStatus";
     }
 
     public function __construct()

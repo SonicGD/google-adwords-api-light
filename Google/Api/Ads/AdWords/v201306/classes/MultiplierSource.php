@@ -29,7 +29,7 @@ class MultiplierSource
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "MultiplierSource";
     }
 
     public function __construct()

@@ -34,7 +34,7 @@ class CpaBid extends Bids
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CpaBid";
     }
 
     public function __construct($bid = null, $BidsType = null)

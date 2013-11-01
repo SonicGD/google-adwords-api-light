@@ -34,7 +34,7 @@ class VideoError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "VideoError";
     }
 
     public function __construct(

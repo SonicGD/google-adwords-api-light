@@ -28,7 +28,7 @@ class PagingErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "PagingError.Reason";
     }
 
     public function __construct()

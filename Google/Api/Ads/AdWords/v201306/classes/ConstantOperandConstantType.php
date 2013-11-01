@@ -28,7 +28,7 @@ class ConstantOperandConstantType
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ConstantOperand.ConstantType";
     }
 
     public function __construct()

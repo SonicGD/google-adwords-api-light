@@ -46,7 +46,7 @@ class CpcBid extends Bids
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CpcBid";
     }
 
     public function __construct($bid = null, $contentBid = null, $cpcBidSource = null, $BidsType = null)

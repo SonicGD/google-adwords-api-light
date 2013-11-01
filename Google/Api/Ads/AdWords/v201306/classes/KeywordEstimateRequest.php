@@ -46,7 +46,7 @@ class KeywordEstimateRequest extends EstimateRequest
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "KeywordEstimateRequest";
     }
 
     public function __construct($keyword = null, $maxCpc = null, $isNegative = null, $EstimateRequestType = null)

@@ -34,7 +34,7 @@ class BooleanAttribute extends Attribute
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "BooleanAttribute";
     }
 
     public function __construct($value = null, $AttributeType = null)

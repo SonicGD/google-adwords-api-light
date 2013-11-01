@@ -32,7 +32,7 @@ class SizeLimitErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "SizeLimitError.Reason";
     }
 
     public function __construct()

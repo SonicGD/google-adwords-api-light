@@ -32,7 +32,7 @@ class ReadOnlyErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ReadOnlyError.Reason";
     }
 
     public function __construct()

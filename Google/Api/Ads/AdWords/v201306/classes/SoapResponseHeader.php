@@ -62,7 +62,7 @@ class SoapResponseHeader
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "SoapResponseHeader";
     }
 
     public function __construct(

@@ -36,7 +36,7 @@ class AgeRange extends Criterion
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AgeRange";
     }
 
     public function __construct($ageRangeType = null, $id = null, $type = null, $CriterionType = null)

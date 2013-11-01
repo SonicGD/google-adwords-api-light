@@ -28,7 +28,7 @@ class ConversionOptimizerBiddingSchemeBidType
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ConversionOptimizerBiddingScheme.BidType";
     }
 
     public function __construct()

@@ -34,7 +34,7 @@ class JobError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "JobError";
     }
 
     public function __construct(

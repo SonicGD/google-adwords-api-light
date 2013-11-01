@@ -41,7 +41,7 @@ class NetworkSearchParameter extends SearchParameter
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "NetworkSearchParameter";
     }
 
     public function __construct($networkSetting = null, $SearchParameterType = null)

@@ -100,7 +100,7 @@ class BiddableAdGroupCriterion extends AdGroupCriterion
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "BiddableAdGroupCriterion";
     }
 
     public function __construct(

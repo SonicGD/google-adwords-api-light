@@ -28,7 +28,7 @@ class SharedBiddingStrategyBiddingStrategyStatus
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "SharedBiddingStrategy.BiddingStrategyStatus";
     }
 
     public function __construct()

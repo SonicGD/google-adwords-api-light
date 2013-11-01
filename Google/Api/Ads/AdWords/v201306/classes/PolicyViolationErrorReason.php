@@ -27,7 +27,7 @@ class PolicyViolationErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "PolicyViolationError.Reason";
     }
 
     public function __construct()

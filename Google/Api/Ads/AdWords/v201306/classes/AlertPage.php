@@ -35,7 +35,7 @@ class AlertPage extends NoStatsPage
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AlertPage";
     }
 
     public function __construct($entries = null, $totalNumEntries = null, $PageType = null)

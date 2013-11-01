@@ -28,7 +28,7 @@ class CampaignFeedErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CampaignFeedError.Reason";
     }
 
     public function __construct()

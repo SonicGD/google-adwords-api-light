@@ -34,7 +34,7 @@ class AdGroupBidModifierOperation extends Operation
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdGroupBidModifierOperation";
     }
 
     public function __construct($operand = null, $operator = null, $OperationType = null)

@@ -64,7 +64,7 @@ class Customer
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Customer";
     }
 
     public function __construct(

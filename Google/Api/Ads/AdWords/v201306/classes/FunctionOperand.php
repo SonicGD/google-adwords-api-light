@@ -35,7 +35,7 @@ class FunctionOperand extends FunctionArgumentOperand
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "FunctionOperand";
     }
 
     public function __construct($value = null, $FunctionArgumentOperandType = null)

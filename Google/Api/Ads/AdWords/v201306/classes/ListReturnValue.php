@@ -77,7 +77,7 @@ class ListReturnValue
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ListReturnValue";
     }
 
     public function __construct($ListReturnValueType = null)

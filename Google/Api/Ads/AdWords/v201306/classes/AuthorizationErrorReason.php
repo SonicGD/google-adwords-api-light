@@ -32,7 +32,7 @@ class AuthorizationErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AuthorizationError.Reason";
     }
 
     public function __construct()

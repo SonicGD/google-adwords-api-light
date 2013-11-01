@@ -28,7 +28,7 @@ class AlertSeverity
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AlertSeverity";
     }
 
     public function __construct()

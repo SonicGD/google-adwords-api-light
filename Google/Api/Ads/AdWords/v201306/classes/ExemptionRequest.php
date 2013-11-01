@@ -34,7 +34,7 @@ class ExemptionRequest
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ExemptionRequest";
     }
 
     public function __construct($key = null)

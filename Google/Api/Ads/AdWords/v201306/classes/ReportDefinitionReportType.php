@@ -28,7 +28,7 @@ class ReportDefinitionReportType
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ReportDefinition.ReportType";
     }
 
     public function __construct()

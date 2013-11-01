@@ -28,7 +28,7 @@ class MatchesRegexErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "MatchesRegexError.Reason";
     }
 
     public function __construct()

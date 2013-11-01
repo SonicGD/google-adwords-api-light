@@ -32,7 +32,7 @@ class RangeErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "RangeError.Reason";
     }
 
     public function __construct()

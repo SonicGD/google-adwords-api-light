@@ -70,7 +70,7 @@ class TemplateAd extends Ad
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "TemplateAd";
     }
 
     public function __construct(

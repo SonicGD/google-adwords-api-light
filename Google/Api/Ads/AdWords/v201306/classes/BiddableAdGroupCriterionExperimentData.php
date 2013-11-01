@@ -52,7 +52,7 @@ class BiddableAdGroupCriterionExperimentData
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "BiddableAdGroupCriterionExperimentData";
     }
 
     public function __construct(

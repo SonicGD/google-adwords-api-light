@@ -34,7 +34,7 @@ class BiddingTransitionError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "BiddingTransitionError";
     }
 
     public function __construct(

@@ -52,7 +52,7 @@ class ConversionTrackerStats
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ConversionTrackerStats";
     }
 
     public function __construct(

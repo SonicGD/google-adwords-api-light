@@ -72,7 +72,7 @@ class DynamicSearchAd extends Ad
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "DynamicSearchAd";
     }
 
     public function __construct(

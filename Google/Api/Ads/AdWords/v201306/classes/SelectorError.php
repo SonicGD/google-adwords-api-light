@@ -34,7 +34,7 @@ class SelectorError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "SelectorError";
     }
 
     public function __construct(

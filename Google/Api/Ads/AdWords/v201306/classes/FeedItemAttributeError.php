@@ -40,7 +40,7 @@ class FeedItemAttributeError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "FeedItemAttributeError";
     }
 
     public function __construct($feedAttributeIds = null, $validationErrorCode = null)

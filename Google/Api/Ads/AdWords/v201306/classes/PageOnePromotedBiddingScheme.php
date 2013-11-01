@@ -67,7 +67,7 @@ class PageOnePromotedBiddingScheme extends BiddingScheme
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "PageOnePromotedBiddingScheme";
     }
 
     public function __construct(

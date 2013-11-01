@@ -44,7 +44,7 @@ class AdGroupBidLandscape extends BidLandscape
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdGroupBidLandscape";
     }
 
     public function __construct(

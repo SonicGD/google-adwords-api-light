@@ -28,7 +28,7 @@ class ProximityDistanceUnits
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Proximity.DistanceUnits";
     }
 
     public function __construct()

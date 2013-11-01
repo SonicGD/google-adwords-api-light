@@ -28,7 +28,7 @@ class SystemServingStatus
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "SystemServingStatus";
     }
 
     public function __construct()

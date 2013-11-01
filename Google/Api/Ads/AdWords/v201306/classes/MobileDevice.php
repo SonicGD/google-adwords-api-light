@@ -55,7 +55,7 @@ class MobileDevice extends Criterion
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "MobileDevice";
     }
 
     public function __construct(

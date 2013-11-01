@@ -32,7 +32,7 @@ class AdxErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdxError.Reason";
     }
 
     public function __construct()

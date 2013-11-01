@@ -47,7 +47,7 @@ class DisplayAdSpec
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "DisplayAdSpec";
     }
 
     public function __construct($displayTypes = null, $activationOptions = null, $adSizeSpecs = null)

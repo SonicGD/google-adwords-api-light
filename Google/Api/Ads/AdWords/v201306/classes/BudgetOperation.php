@@ -34,7 +34,7 @@ class BudgetOperation extends Operation
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "BudgetOperation";
     }
 
     public function __construct($operand = null, $operator = null, $OperationType = null)

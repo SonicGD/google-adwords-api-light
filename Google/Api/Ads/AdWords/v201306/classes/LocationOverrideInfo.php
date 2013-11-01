@@ -40,7 +40,7 @@ class LocationOverrideInfo
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "LocationOverrideInfo";
     }
 
     public function __construct($radius = null, $radiusUnits = null)

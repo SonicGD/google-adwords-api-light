@@ -34,7 +34,7 @@ class CurrencyCodeError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CurrencyCodeError";
     }
 
     public function __construct(

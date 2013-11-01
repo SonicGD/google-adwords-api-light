@@ -28,7 +28,7 @@ class AlertType
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AlertType";
     }
 
     public function __construct()

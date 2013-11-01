@@ -38,7 +38,7 @@ class IdError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "IdError";
     }
 
     public function __construct(

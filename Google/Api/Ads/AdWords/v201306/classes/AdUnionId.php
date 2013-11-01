@@ -81,7 +81,7 @@ class AdUnionId
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdUnionId";
     }
 
     public function __construct($id = null, $AdUnionIdType = null)

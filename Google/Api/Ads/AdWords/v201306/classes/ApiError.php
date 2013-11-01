@@ -101,7 +101,7 @@ class ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ApiError";
     }
 
     public function __construct($fieldPath = null, $trigger = null, $errorString = null, $ApiErrorType = null)

@@ -94,7 +94,7 @@ class Experiment
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Experiment";
     }
 
     public function __construct(

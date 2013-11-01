@@ -39,7 +39,7 @@ class StringLengthError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "StringLengthError";
     }
 
     public function __construct(

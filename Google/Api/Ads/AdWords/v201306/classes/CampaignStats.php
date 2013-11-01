@@ -28,7 +28,7 @@ class CampaignStats extends Stats
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CampaignStats";
     }
 
     public function __construct(

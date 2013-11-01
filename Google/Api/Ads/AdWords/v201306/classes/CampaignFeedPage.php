@@ -35,7 +35,7 @@ class CampaignFeedPage extends NullStatsPage
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CampaignFeedPage";
     }
 
     public function __construct($entries = null, $totalNumEntries = null, $PageType = null)

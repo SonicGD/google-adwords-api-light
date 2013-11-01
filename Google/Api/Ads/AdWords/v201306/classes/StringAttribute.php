@@ -34,7 +34,7 @@ class StringAttribute extends Attribute
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "StringAttribute";
     }
 
     public function __construct($value = null, $AttributeType = null)

@@ -33,7 +33,7 @@ class SharedSetReturnValue extends ListReturnValue
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "SharedSetReturnValue";
     }
 
     public function __construct($value = null, $ListReturnValueType = null)

@@ -40,7 +40,7 @@ class GeoPoint
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "GeoPoint";
     }
 
     public function __construct($latitudeInMicroDegrees = null, $longitudeInMicroDegrees = null)

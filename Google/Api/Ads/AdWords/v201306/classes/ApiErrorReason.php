@@ -370,7 +370,7 @@ class ApiErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ApiErrorReason";
     }
 
     public function __construct(

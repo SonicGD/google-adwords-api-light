@@ -32,7 +32,7 @@ class NotEmptyErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "NotEmptyError.Reason";
     }
 
     public function __construct()

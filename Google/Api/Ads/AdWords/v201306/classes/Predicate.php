@@ -46,7 +46,7 @@ class Predicate
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Predicate";
     }
 
     public function __construct($field = null, $operator = null, $values = null)

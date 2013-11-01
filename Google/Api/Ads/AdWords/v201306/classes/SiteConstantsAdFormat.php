@@ -28,7 +28,7 @@ class SiteConstantsAdFormat
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "SiteConstants.AdFormat";
     }
 
     public function __construct()

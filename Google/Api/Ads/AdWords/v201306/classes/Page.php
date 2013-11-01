@@ -83,7 +83,7 @@ class Page
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Page";
     }
 
     public function __construct($totalNumEntries = null, $PageType = null)

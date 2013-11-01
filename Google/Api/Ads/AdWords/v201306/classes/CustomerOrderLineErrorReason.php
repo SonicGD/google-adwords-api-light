@@ -29,7 +29,7 @@ class CustomerOrderLineErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CustomerOrderLineError.Reason";
     }
 
     public function __construct()

@@ -47,7 +47,7 @@ class TextAd extends Ad
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "TextAd";
     }
 
     public function __construct(

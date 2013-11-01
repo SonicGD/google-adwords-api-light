@@ -62,7 +62,7 @@ class BidLandscape extends DataEntry
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "BidLandscape";
     }
 
     public function __construct(

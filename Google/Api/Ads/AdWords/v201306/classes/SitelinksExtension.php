@@ -34,7 +34,7 @@ class SitelinksExtension extends AdExtension
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "SitelinksExtension";
     }
 
     public function __construct($sitelinks = null, $id = null, $AdExtensionType = null)

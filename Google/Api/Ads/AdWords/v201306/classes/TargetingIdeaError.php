@@ -35,7 +35,7 @@ class TargetingIdeaError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "TargetingIdeaError";
     }
 
     public function __construct(

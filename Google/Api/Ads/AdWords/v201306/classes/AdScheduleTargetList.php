@@ -34,7 +34,7 @@ class AdScheduleTargetList extends TargetList
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdScheduleTargetList";
     }
 
     public function __construct($targets = null, $campaignId = null, $TargetListType = null)

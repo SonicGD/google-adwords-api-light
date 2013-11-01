@@ -33,7 +33,7 @@ class PagingError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "PagingError";
     }
 
     public function __construct(

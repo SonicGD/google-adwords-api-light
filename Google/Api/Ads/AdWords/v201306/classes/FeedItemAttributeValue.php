@@ -59,7 +59,7 @@ class FeedItemAttributeValue
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "FeedItemAttributeValue";
     }
 
     public function __construct(

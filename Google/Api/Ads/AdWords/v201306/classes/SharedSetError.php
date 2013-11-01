@@ -33,7 +33,7 @@ class SharedSetError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "SharedSetError";
     }
 
     public function __construct(

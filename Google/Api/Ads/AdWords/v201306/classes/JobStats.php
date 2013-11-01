@@ -93,7 +93,7 @@ class JobStats
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "JobStats";
     }
 
     public function __construct(

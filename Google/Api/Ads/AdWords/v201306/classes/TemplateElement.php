@@ -41,7 +41,7 @@ class TemplateElement
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "TemplateElement";
     }
 
     public function __construct($uniqueName = null, $fields = null)

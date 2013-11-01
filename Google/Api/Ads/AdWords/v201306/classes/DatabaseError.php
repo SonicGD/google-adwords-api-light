@@ -38,7 +38,7 @@ class DatabaseError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "DatabaseError";
     }
 
     public function __construct(

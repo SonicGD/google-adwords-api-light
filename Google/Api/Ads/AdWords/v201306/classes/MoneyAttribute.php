@@ -34,7 +34,7 @@ class MoneyAttribute extends Attribute
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "MoneyAttribute";
     }
 
     public function __construct($value = null, $AttributeType = null)

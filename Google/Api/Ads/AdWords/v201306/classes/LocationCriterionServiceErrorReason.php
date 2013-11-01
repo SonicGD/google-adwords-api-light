@@ -28,7 +28,7 @@ class LocationCriterionServiceErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "LocationCriterionServiceError.Reason";
     }
 
     public function __construct()

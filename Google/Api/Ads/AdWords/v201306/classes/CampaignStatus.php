@@ -28,7 +28,7 @@ class CampaignStatus
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CampaignStatus";
     }
 
     public function __construct()

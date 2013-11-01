@@ -53,7 +53,7 @@ class Webpage extends Criterion
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Webpage";
     }
 
     public function __construct(

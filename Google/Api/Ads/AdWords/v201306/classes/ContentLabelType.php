@@ -28,7 +28,7 @@ class ContentLabelType
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ContentLabelType";
     }
 
     public function __construct()

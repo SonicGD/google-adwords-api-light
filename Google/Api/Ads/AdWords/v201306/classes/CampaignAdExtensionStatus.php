@@ -28,7 +28,7 @@ class CampaignAdExtensionStatus
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CampaignAdExtension.Status";
     }
 
     public function __construct()

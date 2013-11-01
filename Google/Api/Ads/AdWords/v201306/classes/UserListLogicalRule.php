@@ -41,7 +41,7 @@ class UserListLogicalRule
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "UserListLogicalRule";
     }
 
     public function __construct($operator = null, $ruleOperands = null)

@@ -38,7 +38,7 @@ class NullError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "NullError";
     }
 
     public function __construct(

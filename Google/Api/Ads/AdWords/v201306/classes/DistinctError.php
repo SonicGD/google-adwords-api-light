@@ -38,7 +38,7 @@ class DistinctError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "DistinctError";
     }
 
     public function __construct(

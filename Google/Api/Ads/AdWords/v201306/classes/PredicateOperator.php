@@ -28,7 +28,7 @@ class PredicateOperator
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Predicate.Operator";
     }
 
     public function __construct()

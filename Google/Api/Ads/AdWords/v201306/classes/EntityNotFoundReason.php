@@ -33,7 +33,7 @@ class EntityNotFoundReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "EntityNotFound.Reason";
     }
 
     public function __construct()

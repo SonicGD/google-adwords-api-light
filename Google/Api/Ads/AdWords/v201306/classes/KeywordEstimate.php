@@ -46,7 +46,7 @@ class KeywordEstimate extends Estimate
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "KeywordEstimate";
     }
 
     public function __construct($criterionId = null, $min = null, $max = null, $EstimateType = null)

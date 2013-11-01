@@ -34,7 +34,7 @@ class AlertError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AlertError";
     }
 
     public function __construct(

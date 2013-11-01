@@ -99,7 +99,7 @@ class AdGroupCriterion
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdGroupCriterion";
     }
 
     public function __construct(

@@ -28,7 +28,7 @@ class FeedItemValidationDetailApprovalStatus
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "FeedItemValidationDetail.ApprovalStatus";
     }
 
     public function __construct()

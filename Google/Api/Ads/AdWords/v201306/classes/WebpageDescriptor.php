@@ -40,7 +40,7 @@ class WebpageDescriptor
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "WebpageDescriptor";
     }
 
     public function __construct($url = null, $title = null)

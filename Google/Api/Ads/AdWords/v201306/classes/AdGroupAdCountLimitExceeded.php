@@ -28,7 +28,7 @@ class AdGroupAdCountLimitExceeded extends EntityCountLimitExceeded
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdGroupAdCountLimitExceeded";
     }
 
     public function __construct(

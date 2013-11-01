@@ -32,7 +32,7 @@ class TextAdSpec
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "TextAdSpec";
     }
 
     public function __construct()

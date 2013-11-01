@@ -63,7 +63,7 @@ class AdSchedule extends Criterion
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdSchedule";
     }
 
     public function __construct(

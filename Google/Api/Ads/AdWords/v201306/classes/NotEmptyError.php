@@ -38,7 +38,7 @@ class NotEmptyError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "NotEmptyError";
     }
 
     public function __construct(

@@ -28,7 +28,7 @@ class DeprecatedAdType
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "DeprecatedAd.Type";
     }
 
     public function __construct()

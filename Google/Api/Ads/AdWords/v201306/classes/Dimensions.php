@@ -40,7 +40,7 @@ class Dimensions
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Dimensions";
     }
 
     public function __construct($width = null, $height = null)

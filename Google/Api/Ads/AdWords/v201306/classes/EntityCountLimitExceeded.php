@@ -63,7 +63,7 @@ class EntityCountLimitExceeded extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "EntityCountLimitExceeded";
     }
 
     public function __construct(

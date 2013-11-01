@@ -105,7 +105,7 @@ class CampaignCriterion
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CampaignCriterion";
     }
 
     public function __construct(

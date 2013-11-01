@@ -29,7 +29,7 @@ class ManualCpmBiddingScheme extends BiddingScheme
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ManualCpmBiddingScheme";
     }
 
     public function __construct($BiddingSchemeType = null)

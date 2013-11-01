@@ -28,7 +28,7 @@ class FunctionErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "FunctionError.Reason";
     }
 
     public function __construct()

@@ -42,7 +42,7 @@ class Carrier extends Criterion
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Carrier";
     }
 
     public function __construct($name = null, $countryCode = null, $id = null, $type = null, $CriterionType = null)

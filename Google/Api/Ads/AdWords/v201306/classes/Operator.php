@@ -27,7 +27,7 @@ class Operator
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Operator";
     }
 
     public function __construct()

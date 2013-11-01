@@ -32,7 +32,7 @@ class EntityCountLimitExceededReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "EntityCountLimitExceeded.Reason";
     }
 
     public function __construct()

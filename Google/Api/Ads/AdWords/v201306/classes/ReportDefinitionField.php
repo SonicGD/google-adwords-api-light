@@ -92,7 +92,7 @@ class ReportDefinitionField
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ReportDefinitionField";
     }
 
     public function __construct(

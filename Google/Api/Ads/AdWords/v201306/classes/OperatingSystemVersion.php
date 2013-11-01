@@ -54,7 +54,7 @@ class OperatingSystemVersion extends Criterion
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "OperatingSystemVersion";
     }
 
     public function __construct(

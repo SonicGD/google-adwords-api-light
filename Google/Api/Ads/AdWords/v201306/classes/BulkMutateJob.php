@@ -110,7 +110,7 @@ class BulkMutateJob extends Job
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "BulkMutateJob";
     }
 
     public function __construct(

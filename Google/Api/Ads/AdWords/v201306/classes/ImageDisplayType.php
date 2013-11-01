@@ -28,7 +28,7 @@ class ImageDisplayType
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ImageDisplayType";
     }
 
     public function __construct()

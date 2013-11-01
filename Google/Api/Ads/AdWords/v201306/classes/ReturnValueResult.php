@@ -35,7 +35,7 @@ class ReturnValueResult extends OperationResult
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ReturnValueResult";
     }
 
     public function __construct($returnValue = null, $OperationResultType = null)

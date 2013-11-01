@@ -28,7 +28,7 @@ class PlaceHolder
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "PlaceHolder";
     }
 
     public function __construct()

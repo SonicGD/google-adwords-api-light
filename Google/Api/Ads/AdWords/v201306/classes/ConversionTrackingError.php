@@ -34,7 +34,7 @@ class ConversionTrackingError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ConversionTrackingError";
     }
 
     public function __construct(

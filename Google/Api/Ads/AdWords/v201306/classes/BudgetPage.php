@@ -35,7 +35,7 @@ class BudgetPage extends Page
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "BudgetPage";
     }
 
     public function __construct($entries = null, $totalNumEntries = null, $PageType = null)

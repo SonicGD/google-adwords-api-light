@@ -79,7 +79,7 @@ class CriterionParameter
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CriterionParameter";
     }
 
     public function __construct($CriterionParameterType = null)

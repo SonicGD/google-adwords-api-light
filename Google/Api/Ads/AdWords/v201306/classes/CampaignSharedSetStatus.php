@@ -28,7 +28,7 @@ class CampaignSharedSetStatus
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CampaignSharedSet.Status";
     }
 
     public function __construct()

@@ -37,7 +37,7 @@ class CriterionBidLandscapePage extends NoStatsPage
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CriterionBidLandscapePage";
     }
 
     public function __construct($entries = null, $totalNumEntries = null, $PageType = null)

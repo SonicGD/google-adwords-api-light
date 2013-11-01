@@ -28,7 +28,7 @@ class OpportunityIdeaType
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "OpportunityIdeaType";
     }
 
     public function __construct()

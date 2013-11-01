@@ -41,7 +41,7 @@ class BidMultiplier
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "BidMultiplier";
     }
 
     public function __construct($multiplier = null, $multipliedBid = null)

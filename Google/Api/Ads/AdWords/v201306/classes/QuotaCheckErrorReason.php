@@ -33,7 +33,7 @@ class QuotaCheckErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "QuotaCheckError.Reason";
     }
 
     public function __construct()

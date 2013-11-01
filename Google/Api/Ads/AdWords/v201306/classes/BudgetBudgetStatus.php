@@ -27,7 +27,7 @@ class BudgetBudgetStatus
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Budget.BudgetStatus";
     }
 
     public function __construct()

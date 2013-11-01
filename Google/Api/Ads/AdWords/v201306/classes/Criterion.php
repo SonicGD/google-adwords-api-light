@@ -92,7 +92,7 @@ class Criterion
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Criterion";
     }
 
     public function __construct($id = null, $type = null, $CriterionType = null)

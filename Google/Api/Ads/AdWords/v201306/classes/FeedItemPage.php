@@ -34,7 +34,7 @@ class FeedItemPage extends NullStatsPage
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "FeedItemPage";
     }
 
     public function __construct($entries = null, $totalNumEntries = null, $PageType = null)

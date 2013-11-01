@@ -59,7 +59,7 @@ class CampaignFeed
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CampaignFeed";
     }
 
     public function __construct(

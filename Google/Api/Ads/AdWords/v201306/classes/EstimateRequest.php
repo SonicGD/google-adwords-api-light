@@ -75,7 +75,7 @@ class EstimateRequest
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "EstimateRequest";
     }
 
     public function __construct($EstimateRequestType = null)

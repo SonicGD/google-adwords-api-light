@@ -79,7 +79,7 @@ class PolicyViolationError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "PolicyViolationError";
     }
 
     public function __construct(

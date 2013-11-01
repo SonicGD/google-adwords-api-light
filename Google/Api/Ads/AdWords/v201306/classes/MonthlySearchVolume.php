@@ -48,7 +48,7 @@ class MonthlySearchVolume
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "MonthlySearchVolume";
     }
 
     public function __construct($year = null, $month = null, $count = null)

@@ -32,7 +32,7 @@ class NullErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "NullError.Reason";
     }
 
     public function __construct()

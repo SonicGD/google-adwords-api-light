@@ -55,7 +55,7 @@ class Vertical extends Criterion
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Vertical";
     }
 
     public function __construct(

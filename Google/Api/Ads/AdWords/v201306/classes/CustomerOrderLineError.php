@@ -34,7 +34,7 @@ class CustomerOrderLineError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CustomerOrderLineError";
     }
 
     public function __construct(

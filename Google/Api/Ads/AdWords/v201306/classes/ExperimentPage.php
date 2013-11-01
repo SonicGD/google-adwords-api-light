@@ -35,7 +35,7 @@ class ExperimentPage extends Page
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ExperimentPage";
     }
 
     public function __construct($entries = null, $totalNumEntries = null, $PageType = null)

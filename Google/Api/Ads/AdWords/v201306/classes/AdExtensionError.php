@@ -34,7 +34,7 @@ class AdExtensionError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdExtensionError";
     }
 
     public function __construct(

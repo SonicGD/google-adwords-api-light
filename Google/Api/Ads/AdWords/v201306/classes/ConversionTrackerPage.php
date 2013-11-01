@@ -35,7 +35,7 @@ class ConversionTrackerPage extends NoStatsPage
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ConversionTrackerPage";
     }
 
     public function __construct($entries = null, $totalNumEntries = null, $PageType = null)

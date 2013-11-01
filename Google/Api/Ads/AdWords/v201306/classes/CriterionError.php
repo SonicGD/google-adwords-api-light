@@ -38,7 +38,7 @@ class CriterionError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CriterionError";
     }
 
     public function __construct(

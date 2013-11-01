@@ -70,7 +70,7 @@ class AdWordsConversionTracker extends ConversionTracker
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdWordsConversionTracker";
     }
 
     public function __construct(

@@ -38,7 +38,7 @@ class SizeLimitError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "SizeLimitError";
     }
 
     public function __construct(

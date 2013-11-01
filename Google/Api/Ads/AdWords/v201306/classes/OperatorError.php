@@ -38,7 +38,7 @@ class OperatorError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "OperatorError";
     }
 
     public function __construct(

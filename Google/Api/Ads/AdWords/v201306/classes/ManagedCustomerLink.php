@@ -52,7 +52,7 @@ class ManagedCustomerLink
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ManagedCustomerLink";
     }
 
     public function __construct(

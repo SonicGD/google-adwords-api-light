@@ -32,7 +32,7 @@ class CriterionType
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Criterion.Type";
     }
 
     public function __construct()

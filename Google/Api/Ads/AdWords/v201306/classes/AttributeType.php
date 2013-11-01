@@ -62,7 +62,7 @@ class AttributeType
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AttributeType";
     }
 
     public function __construct()

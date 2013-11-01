@@ -35,7 +35,7 @@ class HtmlDisplayType
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "HtmlDisplayType";
     }
 
     public function __construct($htmlOption = null)

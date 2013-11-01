@@ -28,7 +28,7 @@ class ForwardCompatibilityErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ForwardCompatibilityError.Reason";
     }
 
     public function __construct()

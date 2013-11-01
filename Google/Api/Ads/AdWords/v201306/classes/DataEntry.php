@@ -79,7 +79,7 @@ class DataEntry
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "DataEntry";
     }
 
     public function __construct($DataEntryType = null)

@@ -82,7 +82,7 @@ class AdGroupChangeData
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdGroupChangeData";
     }
 
     public function __construct(

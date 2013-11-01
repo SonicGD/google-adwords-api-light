@@ -34,7 +34,7 @@ class AdGroupFeedError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdGroupFeedError";
     }
 
     public function __construct(

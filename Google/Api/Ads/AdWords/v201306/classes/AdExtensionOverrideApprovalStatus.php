@@ -28,7 +28,7 @@ class AdExtensionOverrideApprovalStatus
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdExtensionOverride.ApprovalStatus";
     }
 
     public function __construct()

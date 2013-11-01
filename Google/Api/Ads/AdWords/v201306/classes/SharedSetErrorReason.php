@@ -27,7 +27,7 @@ class SharedSetErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "SharedSetError.Reason";
     }
 
     public function __construct()

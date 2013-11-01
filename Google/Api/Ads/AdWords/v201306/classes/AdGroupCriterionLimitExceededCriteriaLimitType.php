@@ -32,7 +32,7 @@ class AdGroupCriterionLimitExceededCriteriaLimitType
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdGroupCriterionLimitExceeded.CriteriaLimitType";
     }
 
     public function __construct()

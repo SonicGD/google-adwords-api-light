@@ -32,7 +32,7 @@ class CriterionPolicyError extends PolicyViolationError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CriterionPolicyError";
     }
 
     public function __construct(

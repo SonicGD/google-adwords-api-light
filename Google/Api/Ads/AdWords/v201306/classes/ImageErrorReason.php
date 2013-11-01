@@ -28,7 +28,7 @@ class ImageErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ImageError.Reason";
     }
 
     public function __construct()

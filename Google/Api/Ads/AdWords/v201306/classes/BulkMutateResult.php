@@ -89,7 +89,7 @@ class BulkMutateResult
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "BulkMutateResult";
     }
 
     public function __construct($partIndex = null, $operationStreamResults = null)

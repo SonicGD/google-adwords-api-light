@@ -123,7 +123,7 @@ class ConversionTracker
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ConversionTracker";
     }
 
     public function __construct(

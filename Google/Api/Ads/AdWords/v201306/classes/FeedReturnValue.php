@@ -34,7 +34,7 @@ class FeedReturnValue extends ListReturnValue
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "FeedReturnValue";
     }
 
     public function __construct($value = null, $ListReturnValueType = null)

@@ -42,7 +42,7 @@ class KeywordMatchSetting extends Setting
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "KeywordMatchSetting";
     }
 
     public function __construct($optIn = null, $SettingType = null)

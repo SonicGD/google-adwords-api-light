@@ -28,7 +28,7 @@ class AdGroupFeedStatus
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdGroupFeed.Status";
     }
 
     public function __construct()

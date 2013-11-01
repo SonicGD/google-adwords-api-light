@@ -32,7 +32,7 @@ class StatsQueryErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "StatsQueryError.Reason";
     }
 
     public function __construct()

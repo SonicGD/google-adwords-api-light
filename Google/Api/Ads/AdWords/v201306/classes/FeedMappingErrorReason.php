@@ -28,7 +28,7 @@ class FeedMappingErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "FeedMappingError.Reason";
     }
 
     public function __construct()

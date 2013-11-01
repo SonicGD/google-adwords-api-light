@@ -34,7 +34,7 @@ class AdParamError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdParamError";
     }
 
     public function __construct(

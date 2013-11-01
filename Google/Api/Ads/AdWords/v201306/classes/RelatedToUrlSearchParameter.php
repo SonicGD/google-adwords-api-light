@@ -46,7 +46,7 @@ class RelatedToUrlSearchParameter extends SearchParameter
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "RelatedToUrlSearchParameter";
     }
 
     public function __construct($urls = null, $includeSubUrls = null, $SearchParameterType = null)

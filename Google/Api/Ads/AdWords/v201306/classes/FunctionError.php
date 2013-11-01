@@ -34,7 +34,7 @@ class FunctionError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "FunctionError";
     }
 
     public function __construct(

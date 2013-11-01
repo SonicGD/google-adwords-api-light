@@ -35,7 +35,7 @@ class CampaignCriterionPage extends Page
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CampaignCriterionPage";
     }
 
     public function __construct($entries = null, $totalNumEntries = null, $PageType = null)

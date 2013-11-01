@@ -34,7 +34,7 @@ class SettingError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "SettingError";
     }
 
     public function __construct(

@@ -70,7 +70,7 @@ class AlertQuery
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AlertQuery";
     }
 
     public function __construct(

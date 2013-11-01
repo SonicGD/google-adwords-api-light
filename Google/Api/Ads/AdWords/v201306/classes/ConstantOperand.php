@@ -58,7 +58,7 @@ class ConstantOperand extends FunctionArgumentOperand
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ConstantOperand";
     }
 
     public function __construct(

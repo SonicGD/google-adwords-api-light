@@ -45,7 +45,7 @@ class AttributeFieldMapping
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AttributeFieldMapping";
     }
 
     public function __construct($feedAttributeId = null, $fieldId = null)

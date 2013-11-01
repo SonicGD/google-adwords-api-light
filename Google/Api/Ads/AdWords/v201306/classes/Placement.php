@@ -40,7 +40,7 @@ class Placement extends Criterion
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Placement";
     }
 
     public function __construct($url = null, $id = null, $type = null, $CriterionType = null)

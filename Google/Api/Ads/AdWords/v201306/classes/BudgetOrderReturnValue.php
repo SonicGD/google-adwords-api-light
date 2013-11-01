@@ -35,7 +35,7 @@ class BudgetOrderReturnValue extends ListReturnValue
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "BudgetOrderReturnValue";
     }
 
     public function __construct($value = null, $ListReturnValueType = null)

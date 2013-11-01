@@ -28,7 +28,7 @@ class ManagedCustomerServiceErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ManagedCustomerServiceError.Reason";
     }
 
     public function __construct()

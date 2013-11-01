@@ -76,7 +76,7 @@ class Budget
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Budget";
     }
 
     public function __construct(

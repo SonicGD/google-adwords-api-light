@@ -28,7 +28,7 @@ class BudgetOrderErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "BudgetOrderError.Reason";
     }
 
     public function __construct()

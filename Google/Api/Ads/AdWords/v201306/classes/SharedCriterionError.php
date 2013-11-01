@@ -33,7 +33,7 @@ class SharedCriterionError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "SharedCriterionError";
     }
 
     public function __construct(

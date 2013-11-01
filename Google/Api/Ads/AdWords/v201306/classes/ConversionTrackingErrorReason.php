@@ -28,7 +28,7 @@ class ConversionTrackingErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ConversionTrackingError.Reason";
     }
 
     public function __construct()

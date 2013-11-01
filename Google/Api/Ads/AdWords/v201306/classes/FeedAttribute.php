@@ -54,7 +54,7 @@ class FeedAttribute
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "FeedAttribute";
     }
 
     public function __construct($id = null, $name = null, $type = null, $isPartOfKey = null)

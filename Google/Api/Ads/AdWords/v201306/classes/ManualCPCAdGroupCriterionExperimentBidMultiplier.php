@@ -41,7 +41,7 @@ class ManualCPCAdGroupCriterionExperimentBidMultiplier extends AdGroupCriterionE
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ManualCPCAdGroupCriterionExperimentBidMultiplier";
     }
 
     public function __construct(

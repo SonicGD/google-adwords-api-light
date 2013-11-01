@@ -33,7 +33,7 @@ class CollectionSizeError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CollectionSizeError";
     }
 
     public function __construct($fieldPath = null, $trigger = null, $errorString = null, $ApiErrorType = null)

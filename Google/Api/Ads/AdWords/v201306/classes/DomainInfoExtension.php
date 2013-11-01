@@ -41,7 +41,7 @@ class DomainInfoExtension extends AdExtension
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "DomainInfoExtension";
     }
 
     public function __construct($domainName = null, $languageCode = null, $id = null, $AdExtensionType = null)

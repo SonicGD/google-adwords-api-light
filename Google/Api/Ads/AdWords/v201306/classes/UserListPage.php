@@ -35,7 +35,7 @@ class UserListPage extends Page
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "UserListPage";
     }
 
     public function __construct($entries = null, $totalNumEntries = null, $PageType = null)

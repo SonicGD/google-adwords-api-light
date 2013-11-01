@@ -59,7 +59,7 @@ class Proximity extends Criterion
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Proximity";
     }
 
     public function __construct(

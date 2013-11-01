@@ -46,7 +46,7 @@ class Paging
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Paging";
     }
 
     public function __construct($startIndex = null, $numberResults = null)

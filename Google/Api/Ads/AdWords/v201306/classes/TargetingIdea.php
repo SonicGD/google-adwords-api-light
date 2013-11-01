@@ -36,7 +36,7 @@ class TargetingIdea
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "TargetingIdea";
     }
 
     public function __construct($data = null)

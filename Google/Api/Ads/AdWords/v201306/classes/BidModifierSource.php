@@ -28,7 +28,7 @@ class BidModifierSource
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "BidModifierSource";
     }
 
     public function __construct()

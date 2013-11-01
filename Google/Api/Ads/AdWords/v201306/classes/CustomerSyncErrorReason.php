@@ -29,7 +29,7 @@ class CustomerSyncErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CustomerSyncError.Reason";
     }
 
     public function __construct()

@@ -28,7 +28,7 @@ class FeedStatus
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Feed.Status";
     }
 
     public function __construct()

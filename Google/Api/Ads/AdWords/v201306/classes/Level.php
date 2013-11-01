@@ -28,7 +28,7 @@ class Level
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Level";
     }
 
     public function __construct()

@@ -34,7 +34,7 @@ class LocationCriterionServiceError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "LocationCriterionServiceError";
     }
 
     public function __construct(

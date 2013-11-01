@@ -34,7 +34,7 @@ class DoubleAttribute extends Attribute
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "DoubleAttribute";
     }
 
     public function __construct($value = null, $AttributeType = null)

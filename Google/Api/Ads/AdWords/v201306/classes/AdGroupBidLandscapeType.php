@@ -32,7 +32,7 @@ class AdGroupBidLandscapeType
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdGroupBidLandscape.Type";
     }
 
     public function __construct()

@@ -39,7 +39,7 @@ class RequestError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "RequestError";
     }
 
     public function __construct(

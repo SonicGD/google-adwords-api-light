@@ -32,7 +32,7 @@ class RejectedErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "RejectedError.Reason";
     }
 
     public function __construct()

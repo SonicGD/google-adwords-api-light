@@ -34,7 +34,7 @@ class BudgetOrderError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "BudgetOrderError";
     }
 
     public function __construct(

@@ -34,7 +34,7 @@ class TrafficEstimatorSelector
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "TrafficEstimatorSelector";
     }
 
     public function __construct($campaignEstimateRequests = null)

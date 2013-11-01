@@ -59,7 +59,7 @@ class AdGroupFeed
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdGroupFeed";
     }
 
     public function __construct(

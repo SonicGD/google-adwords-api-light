@@ -28,7 +28,7 @@ class VideoErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "VideoError.Reason";
     }
 
     public function __construct()

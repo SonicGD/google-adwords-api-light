@@ -28,7 +28,7 @@ class InvalidGeoLocation extends GeoLocation
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "InvalidGeoLocation";
     }
 
     public function __construct($geoPoint = null, $address = null, $encodedLocation = null, $GeoLocationType = null)

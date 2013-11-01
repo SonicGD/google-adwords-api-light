@@ -28,7 +28,7 @@ class FeedMappingStatus
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "FeedMapping.Status";
     }
 
     public function __construct()

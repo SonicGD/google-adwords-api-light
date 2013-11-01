@@ -35,7 +35,7 @@ class Detail
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Detail";
     }
 
     public function __construct($triggerTime = null)

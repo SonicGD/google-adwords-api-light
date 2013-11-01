@@ -64,7 +64,7 @@ class StatsEstimate
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "StatsEstimate";
     }
 
     public function __construct(

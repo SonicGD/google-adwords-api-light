@@ -28,7 +28,7 @@ class AdParamPolicyError extends PolicyViolationError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdParamPolicyError";
     }
 
     public function __construct(

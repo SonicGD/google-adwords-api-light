@@ -36,7 +36,7 @@ class Gender extends Criterion
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Gender";
     }
 
     public function __construct($genderType = null, $id = null, $type = null, $CriterionType = null)

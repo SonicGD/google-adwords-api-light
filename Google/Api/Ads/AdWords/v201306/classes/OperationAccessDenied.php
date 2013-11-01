@@ -38,7 +38,7 @@ class OperationAccessDenied extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "OperationAccessDenied";
     }
 
     public function __construct(

@@ -40,7 +40,7 @@ class MoveOperation extends Operation
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "MoveOperation";
     }
 
     public function __construct($operand = null, $oldManagerCustomerId = null, $operator = null, $OperationType = null)

@@ -76,7 +76,7 @@ class AdGroupAd
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdGroupAd";
     }
 
     public function __construct(

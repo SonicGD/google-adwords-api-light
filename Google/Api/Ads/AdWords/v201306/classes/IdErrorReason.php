@@ -32,7 +32,7 @@ class IdErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "IdError.Reason";
     }
 
     public function __construct()

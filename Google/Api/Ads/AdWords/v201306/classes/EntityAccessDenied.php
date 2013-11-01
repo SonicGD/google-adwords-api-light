@@ -38,7 +38,7 @@ class EntityAccessDenied extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "EntityAccessDenied";
     }
 
     public function __construct(

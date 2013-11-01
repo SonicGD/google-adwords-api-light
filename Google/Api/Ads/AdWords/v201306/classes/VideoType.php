@@ -29,7 +29,7 @@ class VideoType
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "VideoType";
     }
 
     public function __construct()

@@ -32,7 +32,7 @@ class LocationTargetingStatus
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "LocationTargetingStatus";
     }
 
     public function __construct()

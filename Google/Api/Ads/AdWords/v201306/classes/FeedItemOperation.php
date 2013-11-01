@@ -34,7 +34,7 @@ class FeedItemOperation extends Operation
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "FeedItemOperation";
     }
 
     public function __construct($operand = null, $operator = null, $OperationType = null)

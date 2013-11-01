@@ -71,7 +71,7 @@ class TargetingIdeaSelector
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "TargetingIdeaSelector";
     }
 
     public function __construct(

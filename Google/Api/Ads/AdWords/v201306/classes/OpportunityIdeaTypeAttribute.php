@@ -38,7 +38,7 @@ class OpportunityIdeaTypeAttribute extends Attribute
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "OpportunityIdeaTypeAttribute";
     }
 
     public function __construct($value = null, $AttributeType = null)

@@ -34,7 +34,7 @@ class AdFormatSpecListAttribute extends Attribute
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdFormatSpecListAttribute";
     }
 
     public function __construct($value = null, $AttributeType = null)

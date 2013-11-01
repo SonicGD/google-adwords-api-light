@@ -93,7 +93,7 @@ class Job
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Job";
     }
 
     public function __construct($failureReason = null, $stats = null, $billingSummary = null, $JobType = null)

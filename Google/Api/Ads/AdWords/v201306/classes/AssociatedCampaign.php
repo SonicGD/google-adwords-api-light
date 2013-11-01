@@ -52,7 +52,7 @@ class AssociatedCampaign
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AssociatedCampaign";
     }
 
     public function __construct(

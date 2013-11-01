@@ -135,7 +135,7 @@ class Media
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Media";
     }
 
     public function __construct(

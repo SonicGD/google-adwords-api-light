@@ -28,7 +28,7 @@ class CampaignAdExtensionErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CampaignAdExtensionError.Reason";
     }
 
     public function __construct()

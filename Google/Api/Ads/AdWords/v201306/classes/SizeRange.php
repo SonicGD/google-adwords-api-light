@@ -28,7 +28,7 @@ class SizeRange
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "SizeRange";
     }
 
     public function __construct()

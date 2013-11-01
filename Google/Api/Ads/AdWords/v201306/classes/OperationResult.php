@@ -75,7 +75,7 @@ class OperationResult
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "OperationResult";
     }
 
     public function __construct($OperationResultType = null)

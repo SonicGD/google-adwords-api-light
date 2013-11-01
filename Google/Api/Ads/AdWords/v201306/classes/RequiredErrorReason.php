@@ -32,7 +32,7 @@ class RequiredErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "RequiredError.Reason";
     }
 
     public function __construct()

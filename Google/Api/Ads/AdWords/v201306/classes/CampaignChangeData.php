@@ -89,7 +89,7 @@ class CampaignChangeData
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CampaignChangeData";
     }
 
     public function __construct(

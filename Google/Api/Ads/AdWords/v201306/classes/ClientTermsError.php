@@ -38,7 +38,7 @@ class ClientTermsError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ClientTermsError";
     }
 
     public function __construct(

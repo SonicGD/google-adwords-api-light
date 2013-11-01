@@ -28,7 +28,7 @@ class RichMediaAdAdAttribute
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "RichMediaAd.AdAttribute";
     }
 
     public function __construct()

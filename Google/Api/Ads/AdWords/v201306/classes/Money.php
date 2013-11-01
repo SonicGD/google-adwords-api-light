@@ -38,7 +38,7 @@ class Money extends ComparableValue
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Money";
     }
 
     public function __construct($microAmount = null, $ComparableValueType = null)

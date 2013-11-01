@@ -32,7 +32,7 @@ class OperationAccessDeniedReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "OperationAccessDenied.Reason";
     }
 
     public function __construct()

@@ -30,7 +30,7 @@ class CompetitionSearchParameterLevel
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CompetitionSearchParameter.Level";
     }
 
     public function __construct()

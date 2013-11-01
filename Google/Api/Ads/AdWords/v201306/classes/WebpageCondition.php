@@ -49,7 +49,7 @@ class WebpageCondition
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "WebpageCondition";
     }
 
     public function __construct($operand = null, $argument = null)

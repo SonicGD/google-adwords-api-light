@@ -40,7 +40,7 @@ class PlacementTypeSearchParameter extends SearchParameter
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "PlacementTypeSearchParameter";
     }
 
     public function __construct($placementTypes = null, $SearchParameterType = null)

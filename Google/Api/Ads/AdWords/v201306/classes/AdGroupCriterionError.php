@@ -38,7 +38,7 @@ class AdGroupCriterionError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdGroupCriterionError";
     }
 
     public function __construct(

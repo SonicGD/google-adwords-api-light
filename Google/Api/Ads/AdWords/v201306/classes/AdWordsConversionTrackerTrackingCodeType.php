@@ -28,7 +28,7 @@ class AdWordsConversionTrackerTrackingCodeType
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdWordsConversionTracker.TrackingCodeType";
     }
 
     public function __construct()

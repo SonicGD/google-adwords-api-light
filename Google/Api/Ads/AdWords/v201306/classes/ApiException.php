@@ -38,7 +38,7 @@ class ApiException extends ApplicationException
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ApiException";
     }
 
     public function __construct($errors = null, $message = null, $ApplicationExceptionType = null)

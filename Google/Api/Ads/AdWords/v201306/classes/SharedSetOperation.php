@@ -34,7 +34,7 @@ class SharedSetOperation extends Operation
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "SharedSetOperation";
     }
 
     public function __construct($operand = null, $operator = null, $OperationType = null)

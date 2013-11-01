@@ -34,7 +34,7 @@ class BiddingStrategyOperation extends Operation
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "BiddingStrategyOperation";
     }
 
     public function __construct($operand = null, $operator = null, $OperationType = null)

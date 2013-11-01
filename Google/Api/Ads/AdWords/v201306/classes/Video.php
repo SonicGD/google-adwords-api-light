@@ -64,7 +64,7 @@ class Video extends Media
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Video";
     }
 
     public function __construct(

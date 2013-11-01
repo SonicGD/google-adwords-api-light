@@ -28,7 +28,7 @@ class LocationExtensionSource
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "LocationExtension.Source";
     }
 
     public function __construct()

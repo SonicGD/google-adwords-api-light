@@ -47,7 +47,7 @@ class CriterionUserInterest extends Criterion
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CriterionUserInterest";
     }
 
     public function __construct(

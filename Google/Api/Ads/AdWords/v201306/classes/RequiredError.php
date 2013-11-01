@@ -38,7 +38,7 @@ class RequiredError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "RequiredError";
     }
 
     public function __construct(

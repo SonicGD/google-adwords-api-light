@@ -88,7 +88,7 @@ class JobSelector
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "JobSelector";
     }
 
     public function __construct($includeHistory = null, $includeStats = null, $JobSelectorType = null)

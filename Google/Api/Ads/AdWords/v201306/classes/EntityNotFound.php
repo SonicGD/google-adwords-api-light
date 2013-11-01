@@ -39,7 +39,7 @@ class EntityNotFound extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "EntityNotFound";
     }
 
     public function __construct(

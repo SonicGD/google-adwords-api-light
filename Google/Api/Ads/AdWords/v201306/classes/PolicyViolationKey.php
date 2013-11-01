@@ -45,7 +45,7 @@ class PolicyViolationKey
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "PolicyViolationKey";
     }
 
     public function __construct($policyName = null, $violatingText = null)

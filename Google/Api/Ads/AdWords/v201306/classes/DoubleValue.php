@@ -38,7 +38,7 @@ class DoubleValue extends NumberValue
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "DoubleValue";
     }
 
     public function __construct($number = null, $ComparableValueType = null)

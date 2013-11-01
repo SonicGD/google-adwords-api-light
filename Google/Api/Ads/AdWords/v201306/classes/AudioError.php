@@ -34,7 +34,7 @@ class AudioError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AudioError";
     }
 
     public function __construct(

@@ -34,7 +34,7 @@ class ImageError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ImageError";
     }
 
     public function __construct(

@@ -56,7 +56,7 @@ class NetworkSetting
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "NetworkSetting";
     }
 
     public function __construct(

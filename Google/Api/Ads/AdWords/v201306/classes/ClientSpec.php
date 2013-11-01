@@ -28,7 +28,7 @@ class ClientSpec
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ClientSpec";
     }
 
     public function __construct()

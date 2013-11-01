@@ -35,7 +35,7 @@ class TargetingSetting extends Setting
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "TargetingSetting";
     }
 
     public function __construct($details = null, $SettingType = null)

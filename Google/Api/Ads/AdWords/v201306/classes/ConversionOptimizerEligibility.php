@@ -40,7 +40,7 @@ class ConversionOptimizerEligibility
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ConversionOptimizerEligibility";
     }
 
     public function __construct($eligible = null, $rejectionReasons = null)

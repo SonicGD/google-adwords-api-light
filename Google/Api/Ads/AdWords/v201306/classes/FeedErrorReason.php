@@ -28,7 +28,7 @@ class FeedErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "FeedError.Reason";
     }
 
     public function __construct()

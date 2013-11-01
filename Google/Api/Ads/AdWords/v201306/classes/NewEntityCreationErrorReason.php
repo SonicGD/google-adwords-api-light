@@ -27,7 +27,7 @@ class NewEntityCreationErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "NewEntityCreationError.Reason";
     }
 
     public function __construct()

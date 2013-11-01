@@ -28,7 +28,7 @@ class BiddingStrategySource
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "BiddingStrategySource";
     }
 
     public function __construct()

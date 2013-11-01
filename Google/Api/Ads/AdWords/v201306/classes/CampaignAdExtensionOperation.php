@@ -35,7 +35,7 @@ class CampaignAdExtensionOperation extends Operation
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CampaignAdExtensionOperation";
     }
 
     public function __construct($operand = null, $operator = null, $OperationType = null)

@@ -55,7 +55,7 @@ class DisplayAdSpecAdSizeSpec
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "DisplayAdSpec.AdSizeSpec";
     }
 
     public function __construct($width = null, $height = null, $activationOptionFilter = null)

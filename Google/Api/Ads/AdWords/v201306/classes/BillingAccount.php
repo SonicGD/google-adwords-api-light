@@ -58,7 +58,7 @@ class BillingAccount
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "BillingAccount";
     }
 
     public function __construct(

@@ -28,7 +28,7 @@ class TimeUnit
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "TimeUnit";
     }
 
     public function __construct()

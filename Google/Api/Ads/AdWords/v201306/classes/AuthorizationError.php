@@ -38,7 +38,7 @@ class AuthorizationError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AuthorizationError";
     }
 
     public function __construct(

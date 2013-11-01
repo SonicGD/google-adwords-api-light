@@ -40,7 +40,7 @@ class CampaignAdExtensionReturnValue extends ListReturnValue
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CampaignAdExtensionReturnValue";
     }
 
     public function __construct($value = null, $partialFailureErrors = null, $ListReturnValueType = null)

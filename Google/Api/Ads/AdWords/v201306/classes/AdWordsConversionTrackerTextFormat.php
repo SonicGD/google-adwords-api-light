@@ -28,7 +28,7 @@ class AdWordsConversionTrackerTextFormat
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdWordsConversionTracker.TextFormat";
     }
 
     public function __construct()

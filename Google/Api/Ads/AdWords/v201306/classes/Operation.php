@@ -81,7 +81,7 @@ class Operation
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Operation";
     }
 
     public function __construct($operator = null, $OperationType = null)

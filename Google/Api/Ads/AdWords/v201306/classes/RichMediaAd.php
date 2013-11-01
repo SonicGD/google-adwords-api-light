@@ -83,7 +83,7 @@ class RichMediaAd extends Ad
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "RichMediaAd";
     }
 
     public function __construct(

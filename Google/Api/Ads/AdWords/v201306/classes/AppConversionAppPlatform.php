@@ -28,7 +28,7 @@ class AppConversionAppPlatform
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AppConversion.AppPlatform";
     }
 
     public function __construct()

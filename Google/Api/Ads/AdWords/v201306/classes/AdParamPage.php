@@ -40,7 +40,7 @@ class AdParamPage
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdParamPage";
     }
 
     public function __construct($entries = null, $totalNumEntries = null)

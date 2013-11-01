@@ -73,7 +73,7 @@ class CampaignEstimateRequest extends EstimateRequest
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CampaignEstimateRequest";
     }
 
     public function __construct(

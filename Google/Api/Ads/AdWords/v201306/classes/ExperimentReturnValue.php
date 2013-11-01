@@ -34,7 +34,7 @@ class ExperimentReturnValue extends ListReturnValue
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ExperimentReturnValue";
     }
 
     public function __construct($value = null, $ListReturnValueType = null)

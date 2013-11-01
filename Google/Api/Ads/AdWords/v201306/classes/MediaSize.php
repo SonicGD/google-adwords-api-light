@@ -28,7 +28,7 @@ class MediaSize
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Media.Size";
     }
 
     public function __construct()

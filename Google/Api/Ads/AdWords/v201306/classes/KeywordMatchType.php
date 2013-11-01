@@ -33,7 +33,7 @@ class KeywordMatchType
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "KeywordMatchType";
     }
 
     public function __construct()

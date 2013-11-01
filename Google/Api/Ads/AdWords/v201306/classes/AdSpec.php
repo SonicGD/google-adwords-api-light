@@ -48,7 +48,7 @@ class AdSpec
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdSpec";
     }
 
     public function __construct($DisplayAdSpec = null, $InStreamAdSpec = null, $TextAdSpec = null)

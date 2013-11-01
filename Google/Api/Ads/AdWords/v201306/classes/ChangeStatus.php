@@ -34,7 +34,7 @@ class ChangeStatus
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ChangeStatus";
     }
 
     public function __construct()

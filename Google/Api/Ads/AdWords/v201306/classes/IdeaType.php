@@ -29,7 +29,7 @@ class IdeaType
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "IdeaType";
     }
 
     public function __construct()

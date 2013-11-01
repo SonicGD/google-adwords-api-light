@@ -46,7 +46,7 @@ class CustomerChangeData
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CustomerChangeData";
     }
 
     public function __construct($changedCampaigns = null, $changedFeeds = null, $lastChangeTimestamp = null)

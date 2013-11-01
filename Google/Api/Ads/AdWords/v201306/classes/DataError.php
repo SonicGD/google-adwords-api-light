@@ -34,7 +34,7 @@ class DataError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "DataError";
     }
 
     public function __construct(

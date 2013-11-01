@@ -58,7 +58,7 @@ class SharedBiddingStrategy
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "SharedBiddingStrategy";
     }
 
     public function __construct($biddingScheme = null, $id = null, $name = null, $status = null, $type = null)

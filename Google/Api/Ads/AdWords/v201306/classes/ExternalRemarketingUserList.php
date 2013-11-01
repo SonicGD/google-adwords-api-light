@@ -29,7 +29,7 @@ class ExternalRemarketingUserList extends UserList
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ExternalRemarketingUserList";
     }
 
     public function __construct(

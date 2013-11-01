@@ -29,7 +29,7 @@ class BidSource
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "BidSource";
     }
 
     public function __construct()

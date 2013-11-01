@@ -41,7 +41,7 @@ class TargetingIdeaPage
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "TargetingIdeaPage";
     }
 
     public function __construct($totalNumEntries = null, $entries = null)

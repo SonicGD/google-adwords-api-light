@@ -35,7 +35,7 @@ class CampaignAdExtensionPage extends Page
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CampaignAdExtensionPage";
     }
 
     public function __construct($entries = null, $totalNumEntries = null, $PageType = null)

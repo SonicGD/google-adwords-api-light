@@ -35,7 +35,7 @@ class AdGroupFeedPage extends NullStatsPage
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdGroupFeedPage";
     }
 
     public function __construct($entries = null, $totalNumEntries = null, $PageType = null)

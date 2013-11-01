@@ -46,7 +46,7 @@ class TargetCpaBiddingScheme extends BiddingScheme
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "TargetCpaBiddingScheme";
     }
 
     public function __construct($targetCpa = null, $BiddingSchemeType = null)

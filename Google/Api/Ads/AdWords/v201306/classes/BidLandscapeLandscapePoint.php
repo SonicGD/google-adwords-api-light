@@ -69,7 +69,7 @@ class BidLandscapeLandscapePoint
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "BidLandscape.LandscapePoint";
     }
 
     public function __construct(

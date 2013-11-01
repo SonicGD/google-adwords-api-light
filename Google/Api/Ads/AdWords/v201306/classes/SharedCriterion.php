@@ -47,7 +47,7 @@ class SharedCriterion
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "SharedCriterion";
     }
 
     public function __construct($sharedSetId = null, $criterion = null, $negative = null)

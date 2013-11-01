@@ -28,7 +28,7 @@ class CurrencyCodeErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CurrencyCodeError.Reason";
     }
 
     public function __construct()

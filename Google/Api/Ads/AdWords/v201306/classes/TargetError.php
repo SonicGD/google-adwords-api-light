@@ -38,7 +38,7 @@ class TargetError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "TargetError";
     }
 
     public function __construct(

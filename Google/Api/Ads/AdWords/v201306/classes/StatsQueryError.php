@@ -38,7 +38,7 @@ class StatsQueryError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "StatsQueryError";
     }
 
     public function __construct(

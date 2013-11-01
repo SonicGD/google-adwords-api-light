@@ -77,7 +77,7 @@ class AdGroupExperimentBidMultipliers
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdGroupExperimentBidMultipliers";
     }
 
     public function __construct($AdGroupExperimentBidMultipliersType = null)

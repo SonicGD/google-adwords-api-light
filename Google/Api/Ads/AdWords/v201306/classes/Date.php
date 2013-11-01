@@ -46,7 +46,7 @@ class Date
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Date";
     }
 
     public function __construct($year = null, $month = null, $day = null)

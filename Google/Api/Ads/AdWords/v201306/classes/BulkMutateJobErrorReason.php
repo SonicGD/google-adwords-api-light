@@ -28,7 +28,7 @@ class BulkMutateJobErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "BulkMutateJobError.Reason";
     }
 
     public function __construct()

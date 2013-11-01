@@ -28,7 +28,7 @@ class NegativeCampaignCriterion extends CampaignCriterion
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "NegativeCampaignCriterion";
     }
 
     public function __construct(

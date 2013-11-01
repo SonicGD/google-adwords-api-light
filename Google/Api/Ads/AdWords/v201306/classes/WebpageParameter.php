@@ -45,7 +45,7 @@ class WebpageParameter extends CriterionParameter
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "WebpageParameter";
     }
 
     public function __construct($criterionName = null, $conditions = null, $CriterionParameterType = null)

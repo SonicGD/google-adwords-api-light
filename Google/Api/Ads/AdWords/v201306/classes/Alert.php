@@ -53,7 +53,7 @@ class Alert
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Alert";
     }
 
     public function __construct($alertSeverity = null, $alertType = null, $clientCustomerId = null, $details = null)

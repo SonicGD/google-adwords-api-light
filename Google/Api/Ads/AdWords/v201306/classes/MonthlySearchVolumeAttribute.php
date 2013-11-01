@@ -37,7 +37,7 @@ class MonthlySearchVolumeAttribute extends Attribute
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "MonthlySearchVolumeAttribute";
     }
 
     public function __construct($value = null, $AttributeType = null)

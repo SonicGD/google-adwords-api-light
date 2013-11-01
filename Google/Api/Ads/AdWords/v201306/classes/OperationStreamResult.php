@@ -34,7 +34,7 @@ class OperationStreamResult
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "OperationStreamResult";
     }
 
     public function __construct($operationResults = null)

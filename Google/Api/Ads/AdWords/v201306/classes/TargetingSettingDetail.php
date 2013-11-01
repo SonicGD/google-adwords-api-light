@@ -42,7 +42,7 @@ class TargetingSettingDetail
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "TargetingSettingDetail";
     }
 
     public function __construct($criterionTypeGroup = null, $targetAll = null)

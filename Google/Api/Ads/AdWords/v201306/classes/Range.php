@@ -40,7 +40,7 @@ class Range
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Range";
     }
 
     public function __construct($min = null, $max = null)

@@ -40,7 +40,7 @@ class PercentCpaBid extends Bids
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "PercentCpaBid";
     }
 
     public function __construct($bid = null, $percentCpaBidSource = null, $BidsType = null)

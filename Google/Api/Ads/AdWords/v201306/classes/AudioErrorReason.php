@@ -27,7 +27,7 @@ class AudioErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AudioError.Reason";
     }
 
     public function __construct()

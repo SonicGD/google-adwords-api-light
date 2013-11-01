@@ -33,7 +33,7 @@ class ClientTermsErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ClientTermsError.Reason";
     }
 
     public function __construct()

@@ -32,7 +32,7 @@ class DateErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "DateError.Reason";
     }
 
     public function __construct()

@@ -79,7 +79,7 @@ class ComparableValue
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ComparableValue";
     }
 
     public function __construct($ComparableValueType = null)

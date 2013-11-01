@@ -32,7 +32,7 @@ class AuthenticationErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AuthenticationError.Reason";
     }
 
     public function __construct()

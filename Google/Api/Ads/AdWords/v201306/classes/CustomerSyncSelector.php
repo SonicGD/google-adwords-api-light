@@ -46,7 +46,7 @@ class CustomerSyncSelector
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CustomerSyncSelector";
     }
 
     public function __construct($dateTimeRange = null, $campaignIds = null, $feedIds = null)

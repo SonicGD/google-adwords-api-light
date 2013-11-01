@@ -56,7 +56,7 @@ class AdGroupEstimateRequest extends EstimateRequest
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdGroupEstimateRequest";
     }
 
     public function __construct(

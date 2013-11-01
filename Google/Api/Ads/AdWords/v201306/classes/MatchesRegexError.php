@@ -35,7 +35,7 @@ class MatchesRegexError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "MatchesRegexError";
     }
 
     public function __construct(

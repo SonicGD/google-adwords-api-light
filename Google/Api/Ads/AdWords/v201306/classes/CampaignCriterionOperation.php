@@ -34,7 +34,7 @@ class CampaignCriterionOperation extends Operation
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CampaignCriterionOperation";
     }
 
     public function __construct($operand = null, $operator = null, $OperationType = null)

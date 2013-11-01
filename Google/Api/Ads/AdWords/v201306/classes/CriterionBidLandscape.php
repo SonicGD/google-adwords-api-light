@@ -39,7 +39,7 @@ class CriterionBidLandscape extends BidLandscape
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CriterionBidLandscape";
     }
 
     public function __construct(

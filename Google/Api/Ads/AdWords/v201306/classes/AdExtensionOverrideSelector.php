@@ -58,7 +58,7 @@ class AdExtensionOverrideSelector
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdExtensionOverrideSelector";
     }
 
     public function __construct(

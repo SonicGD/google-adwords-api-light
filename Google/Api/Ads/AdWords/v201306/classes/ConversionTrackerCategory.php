@@ -28,7 +28,7 @@ class ConversionTrackerCategory
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ConversionTracker.Category";
     }
 
     public function __construct()

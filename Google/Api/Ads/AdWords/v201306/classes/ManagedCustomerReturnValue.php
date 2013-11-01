@@ -34,7 +34,7 @@ class ManagedCustomerReturnValue
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ManagedCustomerReturnValue";
     }
 
     public function __construct($value = null)

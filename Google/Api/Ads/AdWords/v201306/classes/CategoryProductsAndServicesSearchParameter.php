@@ -39,7 +39,7 @@ class CategoryProductsAndServicesSearchParameter extends SearchParameter
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CategoryProductsAndServicesSearchParameter";
     }
 
     public function __construct($categoryId = null, $SearchParameterType = null)

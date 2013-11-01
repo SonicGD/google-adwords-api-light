@@ -28,7 +28,7 @@ class EntityIdType
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "EntityId.Type";
     }
 
     public function __construct()

@@ -35,7 +35,7 @@ class TrackingSetting extends Setting
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "TrackingSetting";
     }
 
     public function __construct($trackingUrl = null, $SettingType = null)

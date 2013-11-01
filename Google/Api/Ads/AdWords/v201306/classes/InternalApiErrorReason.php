@@ -32,7 +32,7 @@ class InternalApiErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "InternalApiError.Reason";
     }
 
     public function __construct()

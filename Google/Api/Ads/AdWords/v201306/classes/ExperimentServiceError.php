@@ -34,7 +34,7 @@ class ExperimentServiceError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ExperimentServiceError";
     }
 
     public function __construct(

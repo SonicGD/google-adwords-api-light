@@ -59,7 +59,7 @@ class FeedItemSchedule
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "FeedItemSchedule";
     }
 
     public function __construct(

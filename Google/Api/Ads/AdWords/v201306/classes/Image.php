@@ -35,7 +35,7 @@ class Image extends Media
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Image";
     }
 
     public function __construct(

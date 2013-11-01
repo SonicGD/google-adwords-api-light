@@ -28,7 +28,7 @@ class AdWordsConversionTrackerMarkupLanguage
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdWordsConversionTracker.MarkupLanguage";
     }
 
     public function __construct()

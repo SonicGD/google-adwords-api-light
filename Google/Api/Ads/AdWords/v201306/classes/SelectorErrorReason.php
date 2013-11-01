@@ -28,7 +28,7 @@ class SelectorErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "SelectorError.Reason";
     }
 
     public function __construct()

@@ -59,7 +59,7 @@ class CampaignAdExtension
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CampaignAdExtension";
     }
 
     public function __construct(

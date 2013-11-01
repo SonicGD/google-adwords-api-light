@@ -42,7 +42,7 @@ class FailureResult extends OperationResult
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "FailureResult";
     }
 
     public function __construct($cause = null, $OperationResultType = null)

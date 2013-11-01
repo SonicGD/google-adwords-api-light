@@ -45,7 +45,7 @@ class ProductCondition
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ProductCondition";
     }
 
     public function __construct($argument = null, $operand = null)

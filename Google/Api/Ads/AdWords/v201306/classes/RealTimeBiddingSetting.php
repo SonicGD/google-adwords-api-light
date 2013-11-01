@@ -35,7 +35,7 @@ class RealTimeBiddingSetting extends Setting
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "RealTimeBiddingSetting";
     }
 
     public function __construct($optIn = null, $SettingType = null)

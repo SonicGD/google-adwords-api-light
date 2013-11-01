@@ -32,7 +32,7 @@ class TargetErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "TargetError.Reason";
     }
 
     public function __construct()

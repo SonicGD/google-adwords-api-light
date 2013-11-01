@@ -34,7 +34,7 @@ class BulkMutateJobEvent extends JobEvent
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "BulkMutateJobEvent";
     }
 
     public function __construct($status = null, $dateTime = null, $JobEventType = null)

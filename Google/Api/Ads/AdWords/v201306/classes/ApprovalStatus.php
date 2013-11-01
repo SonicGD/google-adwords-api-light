@@ -29,7 +29,7 @@ class ApprovalStatus
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ApprovalStatus";
     }
 
     public function __construct()

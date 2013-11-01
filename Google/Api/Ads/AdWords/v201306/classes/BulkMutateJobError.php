@@ -34,7 +34,7 @@ class BulkMutateJobError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "BulkMutateJobError";
     }
 
     public function __construct(

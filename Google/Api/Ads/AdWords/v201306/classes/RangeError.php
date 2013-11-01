@@ -38,7 +38,7 @@ class RangeError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "RangeError";
     }
 
     public function __construct(

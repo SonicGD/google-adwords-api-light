@@ -67,7 +67,7 @@ class FeedMapping
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "FeedMapping";
     }
 
     public function __construct(

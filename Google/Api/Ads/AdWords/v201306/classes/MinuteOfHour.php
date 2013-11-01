@@ -28,7 +28,7 @@ class MinuteOfHour
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "MinuteOfHour";
     }
 
     public function __construct()

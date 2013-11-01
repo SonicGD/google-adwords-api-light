@@ -28,7 +28,7 @@ class CampaignFeedStatus
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CampaignFeed.Status";
     }
 
     public function __construct()

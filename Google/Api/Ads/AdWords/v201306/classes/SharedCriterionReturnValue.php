@@ -33,7 +33,7 @@ class SharedCriterionReturnValue extends ListReturnValue
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "SharedCriterionReturnValue";
     }
 
     public function __construct($value = null, $ListReturnValueType = null)

@@ -32,7 +32,7 @@ class AdGroupCriterionErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdGroupCriterionError.Reason";
     }
 
     public function __construct()

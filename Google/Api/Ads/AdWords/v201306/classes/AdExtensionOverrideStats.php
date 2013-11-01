@@ -28,7 +28,7 @@ class AdExtensionOverrideStats extends Stats
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdExtensionOverrideStats";
     }
 
     public function __construct(

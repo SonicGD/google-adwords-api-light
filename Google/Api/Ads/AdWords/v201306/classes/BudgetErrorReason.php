@@ -32,7 +32,7 @@ class BudgetErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "BudgetError.Reason";
     }
 
     public function __construct()

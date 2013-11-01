@@ -35,7 +35,7 @@ class ManualCpcBiddingScheme extends BiddingScheme
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ManualCpcBiddingScheme";
     }
 
     public function __construct($enhancedCpcEnabled = null, $BiddingSchemeType = null)

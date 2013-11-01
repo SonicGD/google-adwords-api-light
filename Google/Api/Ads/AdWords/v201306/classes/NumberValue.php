@@ -32,7 +32,7 @@ class NumberValue extends ComparableValue
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "NumberValue";
     }
 
     public function __construct($ComparableValueType = null)

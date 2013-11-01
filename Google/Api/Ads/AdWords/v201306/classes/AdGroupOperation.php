@@ -34,7 +34,7 @@ class AdGroupOperation extends Operation
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdGroupOperation";
     }
 
     public function __construct($operand = null, $operator = null, $OperationType = null)

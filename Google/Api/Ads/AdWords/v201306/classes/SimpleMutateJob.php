@@ -48,7 +48,7 @@ class SimpleMutateJob extends Job
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "SimpleMutateJob";
     }
 
     public function __construct(

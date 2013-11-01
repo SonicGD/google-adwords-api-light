@@ -34,7 +34,7 @@ class IncludeAdultContentSearchParameter extends SearchParameter
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "IncludeAdultContentSearchParameter";
     }
 
     public function __construct($SearchParameterType = null)

@@ -66,7 +66,7 @@ class InStreamAdInfo
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "InStreamAdInfo";
     }
 
     public function __construct(

@@ -40,7 +40,7 @@ class SimpleMutateResult
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "SimpleMutateResult";
     }
 
     public function __construct($results = null, $errors = null)

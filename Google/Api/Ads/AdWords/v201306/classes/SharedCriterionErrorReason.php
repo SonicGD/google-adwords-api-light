@@ -27,7 +27,7 @@ class SharedCriterionErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "SharedCriterionError.Reason";
     }
 
     public function __construct()

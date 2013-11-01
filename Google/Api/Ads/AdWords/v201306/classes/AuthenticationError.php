@@ -38,7 +38,7 @@ class AuthenticationError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AuthenticationError";
     }
 
     public function __construct(

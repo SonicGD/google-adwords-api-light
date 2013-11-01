@@ -28,7 +28,7 @@ class SharedSetStatus
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "SharedSet.Status";
     }
 
     public function __construct()

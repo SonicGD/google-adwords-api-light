@@ -43,7 +43,7 @@ class LanguageSearchParameter extends SearchParameter
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "LanguageSearchParameter";
     }
 
     public function __construct($languages = null, $SearchParameterType = null)

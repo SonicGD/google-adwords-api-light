@@ -28,7 +28,7 @@ class AlertErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AlertError.Reason";
     }
 
     public function __construct()

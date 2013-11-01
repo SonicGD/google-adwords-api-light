@@ -28,7 +28,7 @@ class FlashDisplayType
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "FlashDisplayType";
     }
 
     public function __construct()

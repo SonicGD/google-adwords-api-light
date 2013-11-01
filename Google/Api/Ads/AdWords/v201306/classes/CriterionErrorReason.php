@@ -32,7 +32,7 @@ class CriterionErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CriterionError.Reason";
     }
 
     public function __construct()

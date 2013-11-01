@@ -40,7 +40,7 @@ class CampaignEstimate extends Estimate
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CampaignEstimate";
     }
 
     public function __construct($campaignId = null, $adGroupEstimates = null, $EstimateType = null)

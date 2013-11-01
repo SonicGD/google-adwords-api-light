@@ -48,7 +48,7 @@ class Product extends Criterion
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Product";
     }
 
     public function __construct($conditions = null, $text = null, $id = null, $type = null, $CriterionType = null)

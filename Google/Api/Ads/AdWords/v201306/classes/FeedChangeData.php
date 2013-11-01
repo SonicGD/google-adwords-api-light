@@ -52,7 +52,7 @@ class FeedChangeData
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "FeedChangeData";
     }
 
     public function __construct(

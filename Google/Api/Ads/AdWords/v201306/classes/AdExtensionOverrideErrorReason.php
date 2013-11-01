@@ -28,7 +28,7 @@ class AdExtensionOverrideErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdExtensionOverrideError.Reason";
     }
 
     public function __construct()

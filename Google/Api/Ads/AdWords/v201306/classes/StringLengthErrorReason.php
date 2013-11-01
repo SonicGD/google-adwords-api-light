@@ -32,7 +32,7 @@ class StringLengthErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "StringLengthError.Reason";
     }
 
     public function __construct()

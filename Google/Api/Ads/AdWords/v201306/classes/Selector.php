@@ -60,7 +60,7 @@ class Selector
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Selector";
     }
 
     public function __construct($fields = null, $predicates = null, $dateRange = null, $ordering = null, $paging = null)

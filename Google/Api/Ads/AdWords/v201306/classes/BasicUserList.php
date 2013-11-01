@@ -34,7 +34,7 @@ class BasicUserList extends UserList
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "BasicUserList";
     }
 
     public function __construct(

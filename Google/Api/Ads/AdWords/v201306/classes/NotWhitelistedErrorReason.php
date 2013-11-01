@@ -32,7 +32,7 @@ class NotWhitelistedErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "NotWhitelistedError.Reason";
     }
 
     public function __construct()

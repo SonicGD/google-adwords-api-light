@@ -34,7 +34,7 @@ class CampaignCriterionError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CampaignCriterionError";
     }
 
     public function __construct(

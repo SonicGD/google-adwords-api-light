@@ -78,7 +78,7 @@ class BudgetOrderRequest
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "BudgetOrderRequest";
     }
 
     public function __construct(

@@ -28,7 +28,7 @@ class QueryErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "QueryError.Reason";
     }
 
     public function __construct()

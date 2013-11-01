@@ -35,7 +35,7 @@ class AdGroupAdPage extends Page
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdGroupAdPage";
     }
 
     public function __construct($entries = null, $totalNumEntries = null, $PageType = null)

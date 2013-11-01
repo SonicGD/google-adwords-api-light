@@ -28,7 +28,7 @@ class StatsNetwork
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Stats.Network";
     }
 
     public function __construct()

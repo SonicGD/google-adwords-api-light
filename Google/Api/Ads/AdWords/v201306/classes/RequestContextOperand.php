@@ -34,7 +34,7 @@ class RequestContextOperand extends FunctionArgumentOperand
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "RequestContextOperand";
     }
 
     public function __construct($contextType = null, $FunctionArgumentOperandType = null)

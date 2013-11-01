@@ -58,7 +58,7 @@ class Location extends Criterion
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Location";
     }
 
     public function __construct(

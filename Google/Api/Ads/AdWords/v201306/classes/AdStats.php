@@ -34,7 +34,7 @@ class AdStats extends Stats
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdStats";
     }
 
     public function __construct(

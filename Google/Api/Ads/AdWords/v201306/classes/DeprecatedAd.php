@@ -43,7 +43,7 @@ class DeprecatedAd extends Ad
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "DeprecatedAd";
     }
 
     public function __construct(

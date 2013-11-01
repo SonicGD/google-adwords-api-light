@@ -35,7 +35,7 @@ class ContentLabel extends Criterion
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ContentLabel";
     }
 
     public function __construct($contentLabelType = null, $id = null, $type = null, $CriterionType = null)

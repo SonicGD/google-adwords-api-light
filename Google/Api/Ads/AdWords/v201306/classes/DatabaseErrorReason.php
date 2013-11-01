@@ -32,7 +32,7 @@ class DatabaseErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "DatabaseError.Reason";
     }
 
     public function __construct()

@@ -38,7 +38,7 @@ class AdSpecListSearchParameter extends SearchParameter
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdSpecListSearchParameter";
     }
 
     public function __construct($adSpecs = null, $SearchParameterType = null)

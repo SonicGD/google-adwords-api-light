@@ -33,7 +33,7 @@ class SharedCriterionPage extends Page
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "SharedCriterionPage";
     }
 
     public function __construct($entries = null, $totalNumEntries = null, $PageType = null)

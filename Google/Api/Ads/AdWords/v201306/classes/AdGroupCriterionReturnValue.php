@@ -40,7 +40,7 @@ class AdGroupCriterionReturnValue extends ListReturnValue
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdGroupCriterionReturnValue";
     }
 
     public function __construct($value = null, $partialFailureErrors = null, $ListReturnValueType = null)

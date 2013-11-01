@@ -28,7 +28,7 @@ class TriggerTimeSpec
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "TriggerTimeSpec";
     }
 
     public function __construct()

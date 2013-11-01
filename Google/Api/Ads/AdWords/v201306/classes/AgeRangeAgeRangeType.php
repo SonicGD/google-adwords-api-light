@@ -28,7 +28,7 @@ class AgeRangeAgeRangeType
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AgeRange.AgeRangeType";
     }
 
     public function __construct()

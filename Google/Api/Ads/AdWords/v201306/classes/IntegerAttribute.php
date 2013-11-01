@@ -34,7 +34,7 @@ class IntegerAttribute extends Attribute
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "IntegerAttribute";
     }
 
     public function __construct($value = null, $AttributeType = null)

@@ -35,7 +35,7 @@ class ManualCPMAdGroupExperimentBidMultipliers extends AdGroupExperimentBidMulti
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ManualCPMAdGroupExperimentBidMultipliers";
     }
 
     public function __construct($maxCpmMultiplier = null, $AdGroupExperimentBidMultipliersType = null)

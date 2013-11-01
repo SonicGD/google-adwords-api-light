@@ -32,7 +32,7 @@ class OperatorErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "OperatorError.Reason";
     }
 
     public function __construct()

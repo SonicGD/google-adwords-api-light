@@ -35,7 +35,7 @@ class TrafficEstimatorError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "TrafficEstimatorError";
     }
 
     public function __construct(

@@ -28,7 +28,7 @@ class MarkupLanguageType
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "MarkupLanguageType";
     }
 
     public function __construct()

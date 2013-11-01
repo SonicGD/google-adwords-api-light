@@ -34,7 +34,7 @@ class FeedItemError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "FeedItemError";
     }
 
     public function __construct(

@@ -28,7 +28,7 @@ class QuotaErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "QuotaError.Reason";
     }
 
     public function __construct()

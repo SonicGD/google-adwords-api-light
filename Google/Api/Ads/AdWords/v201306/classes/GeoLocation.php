@@ -93,7 +93,7 @@ class GeoLocation
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "GeoLocation";
     }
 
     public function __construct($geoPoint = null, $address = null, $encodedLocation = null, $GeoLocationType = null)

@@ -34,7 +34,7 @@ class CampaignFeedReturnValue extends ListReturnValue
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CampaignFeedReturnValue";
     }
 
     public function __construct($value = null, $ListReturnValueType = null)

@@ -34,7 +34,7 @@ class MediaError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "MediaError";
     }
 
     public function __construct(

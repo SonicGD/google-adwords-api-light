@@ -33,7 +33,7 @@ class CampaignSharedSetReturnValue extends ListReturnValue
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CampaignSharedSetReturnValue";
     }
 
     public function __construct($value = null, $ListReturnValueType = null)

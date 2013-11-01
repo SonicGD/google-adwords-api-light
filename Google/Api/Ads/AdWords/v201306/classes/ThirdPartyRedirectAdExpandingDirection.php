@@ -28,7 +28,7 @@ class ThirdPartyRedirectAdExpandingDirection
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ThirdPartyRedirectAd.ExpandingDirection";
     }
 
     public function __construct()

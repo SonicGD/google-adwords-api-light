@@ -32,7 +32,7 @@ class WebpageConditionOperand
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "WebpageConditionOperand";
     }
 
     public function __construct()

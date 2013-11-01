@@ -28,7 +28,7 @@ class ConversionOptimizerEligibilityRejectionReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ConversionOptimizerEligibility.RejectionReason";
     }
 
     public function __construct()

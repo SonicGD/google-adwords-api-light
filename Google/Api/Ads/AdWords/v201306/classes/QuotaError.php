@@ -40,7 +40,7 @@ class QuotaError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "QuotaError";
     }
 
     public function __construct(

@@ -44,7 +44,7 @@ class PolicyViolationErrorPart
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "PolicyViolationError.Part";
     }
 
     public function __construct($index = null, $length = null)

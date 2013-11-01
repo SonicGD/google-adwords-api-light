@@ -28,7 +28,7 @@ class BudgetBudgetDeliveryMethod
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Budget.BudgetDeliveryMethod";
     }
 
     public function __construct()

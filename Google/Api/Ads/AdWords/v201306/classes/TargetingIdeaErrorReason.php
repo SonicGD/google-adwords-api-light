@@ -30,7 +30,7 @@ class TargetingIdeaErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "TargetingIdeaError.Reason";
     }
 
     public function __construct()

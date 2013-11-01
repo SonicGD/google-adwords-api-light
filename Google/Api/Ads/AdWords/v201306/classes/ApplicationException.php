@@ -85,7 +85,7 @@ class ApplicationException
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ApplicationException";
     }
 
     public function __construct($message = null, $ApplicationExceptionType = null)

@@ -40,7 +40,7 @@ class BulkMutateRequest
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "BulkMutateRequest";
     }
 
     public function __construct($partIndex = null, $operationStreams = null)

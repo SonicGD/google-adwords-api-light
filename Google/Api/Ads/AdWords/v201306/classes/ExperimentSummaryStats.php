@@ -47,7 +47,7 @@ class ExperimentSummaryStats
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ExperimentSummaryStats";
     }
 
     public function __construct($adGroupsCount = null, $adGroupCriteriaCount = null, $adGroupAdsCount = null)

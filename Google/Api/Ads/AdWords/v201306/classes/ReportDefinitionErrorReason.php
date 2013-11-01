@@ -29,7 +29,7 @@ class ReportDefinitionErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ReportDefinitionError.Reason";
     }
 
     public function __construct()

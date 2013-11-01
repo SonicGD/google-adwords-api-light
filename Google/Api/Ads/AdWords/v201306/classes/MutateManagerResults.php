@@ -35,7 +35,7 @@ class MutateManagerResults
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "MutateManagerResults";
     }
 
     public function __construct($links = null)

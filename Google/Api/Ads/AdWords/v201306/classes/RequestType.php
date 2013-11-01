@@ -28,7 +28,7 @@ class RequestType
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "RequestType";
     }
 
     public function __construct()

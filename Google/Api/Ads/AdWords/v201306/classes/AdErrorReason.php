@@ -28,7 +28,7 @@ class AdErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdError.Reason";
     }
 
     public function __construct()

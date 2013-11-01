@@ -65,7 +65,7 @@ class SharedSet
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "SharedSet";
     }
 
     public function __construct(

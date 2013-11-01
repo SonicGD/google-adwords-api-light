@@ -28,7 +28,7 @@ class RequestContextOperandContextType
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "RequestContextOperand.ContextType";
     }
 
     public function __construct()

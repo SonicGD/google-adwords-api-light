@@ -82,7 +82,7 @@ class AdExtension
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdExtension";
     }
 
     public function __construct($id = null, $AdExtensionType = null)

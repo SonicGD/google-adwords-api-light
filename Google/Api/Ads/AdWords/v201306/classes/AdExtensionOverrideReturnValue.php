@@ -40,7 +40,7 @@ class AdExtensionOverrideReturnValue extends ListReturnValue
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdExtensionOverrideReturnValue";
     }
 
     public function __construct($value = null, $partialFailureErrors = null, $ListReturnValueType = null)

@@ -42,7 +42,7 @@ class LogicalUserListOperand
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "LogicalUserListOperand";
     }
 
     public function __construct($UserInterest = null, $UserList = null)

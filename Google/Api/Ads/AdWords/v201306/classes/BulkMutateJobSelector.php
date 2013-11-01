@@ -40,7 +40,7 @@ class BulkMutateJobSelector extends JobSelector
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "BulkMutateJobSelector";
     }
 
     public function __construct(

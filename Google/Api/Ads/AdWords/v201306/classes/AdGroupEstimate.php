@@ -40,7 +40,7 @@ class AdGroupEstimate extends Estimate
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdGroupEstimate";
     }
 
     public function __construct($adGroupId = null, $keywordEstimates = null, $EstimateType = null)

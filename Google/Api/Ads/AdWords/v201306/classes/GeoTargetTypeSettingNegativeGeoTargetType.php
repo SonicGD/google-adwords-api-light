@@ -28,7 +28,7 @@ class GeoTargetTypeSettingNegativeGeoTargetType
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "GeoTargetTypeSetting.NegativeGeoTargetType";
     }
 
     public function __construct()

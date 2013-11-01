@@ -34,7 +34,7 @@ class UserListError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "UserListError";
     }
 
     public function __construct(

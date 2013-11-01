@@ -28,7 +28,7 @@ class DataErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "DataError.Reason";
     }
 
     public function __construct()

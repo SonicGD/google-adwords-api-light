@@ -45,7 +45,7 @@ class OAuthInfo
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "OAuthInfo";
     }
 
     public function __construct($httpMethod = null, $httpRequestUrl = null, $httpAuthorizationHeader = null)

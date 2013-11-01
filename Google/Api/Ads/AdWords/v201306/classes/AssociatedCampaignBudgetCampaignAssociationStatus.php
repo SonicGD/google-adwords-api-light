@@ -27,7 +27,7 @@ class AssociatedCampaignBudgetCampaignAssociationStatus
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AssociatedCampaign.BudgetCampaignAssociationStatus";
     }
 
     public function __construct()

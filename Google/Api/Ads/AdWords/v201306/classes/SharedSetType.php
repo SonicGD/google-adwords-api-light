@@ -28,7 +28,7 @@ class SharedSetType
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "SharedSetType";
     }
 
     public function __construct()

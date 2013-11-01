@@ -28,7 +28,7 @@ class GeoTargetTypeSettingPositiveGeoTargetType
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "GeoTargetTypeSetting.PositiveGeoTargetType";
     }
 
     public function __construct()

@@ -42,7 +42,7 @@ class BudgetOptimizerBiddingScheme extends BiddingScheme
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "BudgetOptimizerBiddingScheme";
     }
 
     public function __construct($bidCeiling = null, $enhancedCpcEnabled = null, $BiddingSchemeType = null)

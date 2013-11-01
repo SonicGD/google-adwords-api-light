@@ -51,7 +51,7 @@ class MobileImageAd extends Ad
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "MobileImageAd";
     }
 
     public function __construct(

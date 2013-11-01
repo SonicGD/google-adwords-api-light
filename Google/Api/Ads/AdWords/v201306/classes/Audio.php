@@ -46,7 +46,7 @@ class Audio extends Media
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Audio";
     }
 
     public function __construct(

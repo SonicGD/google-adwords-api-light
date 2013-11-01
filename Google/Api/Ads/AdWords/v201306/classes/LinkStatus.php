@@ -28,7 +28,7 @@ class LinkStatus
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "LinkStatus";
     }
 
     public function __construct()

@@ -40,7 +40,7 @@ class AdGroupCriterionOperation extends Operation
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdGroupCriterionOperation";
     }
 
     public function __construct($operand = null, $exemptionRequests = null, $operator = null, $OperationType = null)

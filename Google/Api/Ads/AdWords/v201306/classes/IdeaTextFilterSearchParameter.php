@@ -50,7 +50,7 @@ class IdeaTextFilterSearchParameter extends SearchParameter
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "IdeaTextFilterSearchParameter";
     }
 
     public function __construct($included = null, $excluded = null, $SearchParameterType = null)

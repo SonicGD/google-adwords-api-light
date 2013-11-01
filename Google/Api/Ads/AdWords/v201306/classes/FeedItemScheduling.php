@@ -36,7 +36,7 @@ class FeedItemScheduling
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "FeedItemScheduling";
     }
 
     public function __construct($feedItemSchedules = null)

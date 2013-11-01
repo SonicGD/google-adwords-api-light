@@ -28,7 +28,7 @@ class DayOfWeek
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "DayOfWeek";
     }
 
     public function __construct()

@@ -28,7 +28,7 @@ class CollectionSizeErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CollectionSizeError.Reason";
     }
 
     public function __construct()

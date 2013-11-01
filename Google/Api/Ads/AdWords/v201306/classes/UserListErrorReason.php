@@ -28,7 +28,7 @@ class UserListErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "UserListError.Reason";
     }
 
     public function __construct()

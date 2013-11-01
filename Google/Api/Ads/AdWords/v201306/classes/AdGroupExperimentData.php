@@ -53,7 +53,7 @@ class AdGroupExperimentData
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdGroupExperimentData";
     }
 
     public function __construct(

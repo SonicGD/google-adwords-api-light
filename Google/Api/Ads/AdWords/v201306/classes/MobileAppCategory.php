@@ -48,7 +48,7 @@ class MobileAppCategory extends Criterion
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "MobileAppCategory";
     }
 
     public function __construct(

@@ -28,7 +28,7 @@ class JobErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "JobError.Reason";
     }
 
     public function __construct()

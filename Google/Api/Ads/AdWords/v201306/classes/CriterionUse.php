@@ -28,7 +28,7 @@ class CriterionUse
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CriterionUse";
     }
 
     public function __construct()

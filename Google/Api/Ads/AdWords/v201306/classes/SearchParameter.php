@@ -120,7 +120,7 @@ class SearchParameter
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "SearchParameter";
     }
 
     public function __construct($SearchParameterType = null)

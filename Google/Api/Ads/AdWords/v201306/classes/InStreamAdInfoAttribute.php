@@ -34,7 +34,7 @@ class InStreamAdInfoAttribute extends Attribute
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "InStreamAdInfoAttribute";
     }
 
     public function __construct($value = null, $AttributeType = null)

@@ -43,7 +43,7 @@ class BillingSummary
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "BillingSummary";
     }
 
     public function __construct($numOperations = null, $numUnits = null)

@@ -47,7 +47,7 @@ class AdGroupAdExperimentData
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdGroupAdExperimentData";
     }
 
     public function __construct($experimentId = null, $experimentDeltaStatus = null, $experimentDataStatus = null)

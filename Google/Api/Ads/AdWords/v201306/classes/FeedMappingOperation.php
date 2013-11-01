@@ -34,7 +34,7 @@ class FeedMappingOperation extends Operation
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "FeedMappingOperation";
     }
 
     public function __construct($operand = null, $operator = null, $OperationType = null)

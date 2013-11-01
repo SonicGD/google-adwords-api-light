@@ -64,7 +64,7 @@ class LocationCriterion
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "LocationCriterion";
     }
 
     public function __construct(

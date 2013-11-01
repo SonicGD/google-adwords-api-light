@@ -40,7 +40,7 @@ class CustomerSyncError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CustomerSyncError";
     }
 
     public function __construct(

@@ -34,7 +34,7 @@ class FeedMappingReturnValue extends ListReturnValue
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "FeedMappingReturnValue";
     }
 
     public function __construct($value = null, $ListReturnValueType = null)

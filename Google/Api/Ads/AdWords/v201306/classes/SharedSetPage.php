@@ -33,7 +33,7 @@ class SharedSetPage extends NullStatsPage
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "SharedSetPage";
     }
 
     public function __construct($entries = null, $totalNumEntries = null, $PageType = null)

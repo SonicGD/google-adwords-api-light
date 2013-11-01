@@ -40,7 +40,7 @@ class AlertSelector
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AlertSelector";
     }
 
     public function __construct($query = null, $paging = null)

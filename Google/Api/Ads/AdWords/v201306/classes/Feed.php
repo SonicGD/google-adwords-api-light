@@ -60,7 +60,7 @@ class Feed
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Feed";
     }
 
     public function __construct($id = null, $name = null, $attributes = null, $status = null, $origin = null)

@@ -35,7 +35,7 @@ class BiddingStrategyPage extends Page
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "BiddingStrategyPage";
     }
 
     public function __construct($entries = null, $totalNumEntries = null, $PageType = null)

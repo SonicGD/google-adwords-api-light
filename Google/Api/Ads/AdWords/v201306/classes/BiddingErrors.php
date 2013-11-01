@@ -34,7 +34,7 @@ class BiddingErrors extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "BiddingErrors";
     }
 
     public function __construct(

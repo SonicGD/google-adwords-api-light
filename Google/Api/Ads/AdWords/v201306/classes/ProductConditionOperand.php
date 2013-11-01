@@ -38,7 +38,7 @@ class ProductConditionOperand
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ProductConditionOperand";
     }
 
     public function __construct($operand = null)

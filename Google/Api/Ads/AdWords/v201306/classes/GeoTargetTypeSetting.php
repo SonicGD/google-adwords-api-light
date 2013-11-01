@@ -65,7 +65,7 @@ class GeoTargetTypeSetting extends Setting
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "GeoTargetTypeSetting";
     }
 
     public function __construct($positiveGeoTargetType = null, $negativeGeoTargetType = null, $SettingType = null)

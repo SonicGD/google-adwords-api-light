@@ -34,7 +34,7 @@ class UserListOperation extends Operation
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "UserListOperation";
     }
 
     public function __construct($operand = null, $operator = null, $OperationType = null)

@@ -28,7 +28,7 @@ class UserListLogicalRuleOperator
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "UserListLogicalRule.Operator";
     }
 
     public function __construct()

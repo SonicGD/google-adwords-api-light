@@ -33,7 +33,7 @@ class LostResult extends OperationResult
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "LostResult";
     }
 
     public function __construct($OperationResultType = null)

@@ -35,7 +35,7 @@ class LongRangeAttribute extends Attribute
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "LongRangeAttribute";
     }
 
     public function __construct($value = null, $AttributeType = null)

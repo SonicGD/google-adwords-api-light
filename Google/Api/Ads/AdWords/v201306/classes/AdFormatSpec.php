@@ -35,7 +35,7 @@ class AdFormatSpec
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdFormatSpec";
     }
 
     public function __construct($format = null)

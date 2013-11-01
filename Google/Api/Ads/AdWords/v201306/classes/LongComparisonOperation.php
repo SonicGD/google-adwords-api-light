@@ -44,7 +44,7 @@ class LongComparisonOperation
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "LongComparisonOperation";
     }
 
     public function __construct($minimum = null, $maximum = null)

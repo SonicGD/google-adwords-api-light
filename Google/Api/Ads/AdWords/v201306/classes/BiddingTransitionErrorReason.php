@@ -30,7 +30,7 @@ class BiddingTransitionErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "BiddingTransitionError.Reason";
     }
 
     public function __construct()

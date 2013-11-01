@@ -41,7 +41,7 @@ class EntityId
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "EntityId";
     }
 
     public function __construct($type = null, $value = null)

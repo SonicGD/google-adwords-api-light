@@ -37,7 +37,7 @@ class RelatedToQuerySearchParameter extends SearchParameter
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "RelatedToQuerySearchParameter";
     }
 
     public function __construct($queries = null, $SearchParameterType = null)

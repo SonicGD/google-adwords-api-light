@@ -28,7 +28,7 @@ class HtmlDisplayTypeHtmlOption
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "HtmlDisplayType.HtmlOption";
     }
 
     public function __construct()

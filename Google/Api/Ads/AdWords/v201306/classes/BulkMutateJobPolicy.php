@@ -34,7 +34,7 @@ class BulkMutateJobPolicy
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "BulkMutateJobPolicy";
     }
 
     public function __construct($prerequisiteJobIds = null)

@@ -40,7 +40,7 @@ class ManagedCustomerPage extends Page
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ManagedCustomerPage";
     }
 
     public function __construct($entries = null, $links = null, $totalNumEntries = null, $PageType = null)

@@ -27,7 +27,7 @@ class CampaignSharedSetErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CampaignSharedSetError.Reason";
     }
 
     public function __construct()

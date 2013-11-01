@@ -40,7 +40,7 @@ class ManagedCustomerServiceError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ManagedCustomerServiceError";
     }
 
     public function __construct(

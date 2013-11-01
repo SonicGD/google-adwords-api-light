@@ -58,7 +58,7 @@ class AppConversion extends ConversionTracker
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AppConversion";
     }
 
     public function __construct(

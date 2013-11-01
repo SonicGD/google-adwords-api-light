@@ -153,7 +153,7 @@ class Stats
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Stats";
     }
 
     public function __construct(

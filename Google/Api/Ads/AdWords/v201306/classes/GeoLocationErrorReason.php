@@ -28,7 +28,7 @@ class GeoLocationErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "GeoLocationError.Reason";
     }
 
     public function __construct()

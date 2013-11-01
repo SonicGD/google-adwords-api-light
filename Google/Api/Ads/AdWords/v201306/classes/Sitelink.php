@@ -40,7 +40,7 @@ class Sitelink
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Sitelink";
     }
 
     public function __construct($displayText = null, $destinationUrl = null)

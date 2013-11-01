@@ -75,7 +75,7 @@ class Target
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Target";
     }
 
     public function __construct($TargetType = null)

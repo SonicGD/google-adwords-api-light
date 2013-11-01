@@ -32,7 +32,7 @@ class BiddingErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "BiddingError.Reason";
     }
 
     public function __construct()

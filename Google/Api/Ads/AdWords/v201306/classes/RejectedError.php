@@ -38,7 +38,7 @@ class RejectedError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "RejectedError";
     }
 
     public function __construct(

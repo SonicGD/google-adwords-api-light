@@ -41,7 +41,7 @@ class SearchVolumeSearchParameter extends SearchParameter
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "SearchVolumeSearchParameter";
     }
 
     public function __construct($operation = null, $SearchParameterType = null)

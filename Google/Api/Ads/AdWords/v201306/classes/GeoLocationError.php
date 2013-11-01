@@ -34,7 +34,7 @@ class GeoLocationError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "GeoLocationError";
     }
 
     public function __construct(

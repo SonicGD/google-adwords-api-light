@@ -28,7 +28,7 @@ class BiddingStrategyErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "BiddingStrategyError.Reason";
     }
 
     public function __construct()

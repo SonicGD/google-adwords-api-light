@@ -32,7 +32,7 @@ class RegionCodeErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "RegionCodeError.Reason";
     }
 
     public function __construct()

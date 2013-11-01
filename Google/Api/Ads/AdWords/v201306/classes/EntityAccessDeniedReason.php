@@ -32,7 +32,7 @@ class EntityAccessDeniedReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "EntityAccessDenied.Reason";
     }
 
     public function __construct()

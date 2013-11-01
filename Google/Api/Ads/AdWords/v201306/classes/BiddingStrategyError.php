@@ -34,7 +34,7 @@ class BiddingStrategyError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "BiddingStrategyError";
     }
 
     public function __construct(

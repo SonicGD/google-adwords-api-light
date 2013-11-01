@@ -35,7 +35,7 @@ class ReportDefinitionError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ReportDefinitionError";
     }
 
     public function __construct(

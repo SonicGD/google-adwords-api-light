@@ -39,7 +39,7 @@ class SeedAdGroupIdSearchParameter extends SearchParameter
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "SeedAdGroupIdSearchParameter";
     }
 
     public function __construct($adGroupId = null, $SearchParameterType = null)

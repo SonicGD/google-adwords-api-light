@@ -28,7 +28,7 @@ class ExperimentServiceErrorReason
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ExperimentServiceError.Reason";
     }
 
     public function __construct()

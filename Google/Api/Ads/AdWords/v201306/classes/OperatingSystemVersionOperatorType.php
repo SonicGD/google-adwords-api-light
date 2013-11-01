@@ -28,7 +28,7 @@ class OperatingSystemVersionOperatorType
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "OperatingSystemVersion.OperatorType";
     }
 
     public function __construct()

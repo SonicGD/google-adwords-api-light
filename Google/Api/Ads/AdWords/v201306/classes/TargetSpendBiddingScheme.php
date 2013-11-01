@@ -44,7 +44,7 @@ class TargetSpendBiddingScheme extends BiddingScheme
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "TargetSpendBiddingScheme";
     }
 
     public function __construct($bidCeiling = null, $spendTarget = null, $BiddingSchemeType = null)

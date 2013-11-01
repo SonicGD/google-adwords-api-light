@@ -34,7 +34,7 @@ class FeedItemDevicePreference
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "FeedItemDevicePreference";
     }
 
     public function __construct($devicePreference = null)

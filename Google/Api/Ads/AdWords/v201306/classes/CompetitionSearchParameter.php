@@ -37,7 +37,7 @@ class CompetitionSearchParameter extends SearchParameter
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CompetitionSearchParameter";
     }
 
     public function __construct($levels = null, $SearchParameterType = null)

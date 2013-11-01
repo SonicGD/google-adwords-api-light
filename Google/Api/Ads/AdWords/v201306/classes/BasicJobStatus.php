@@ -28,7 +28,7 @@ class BasicJobStatus
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "BasicJobStatus";
     }
 
     public function __construct()

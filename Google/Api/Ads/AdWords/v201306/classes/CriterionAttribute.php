@@ -34,7 +34,7 @@ class CriterionAttribute extends Attribute
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CriterionAttribute";
     }
 
     public function __construct($value = null, $AttributeType = null)

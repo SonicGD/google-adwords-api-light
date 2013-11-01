@@ -28,7 +28,7 @@ class CriterionTypeGroup
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CriterionTypeGroup";
     }
 
     public function __construct()

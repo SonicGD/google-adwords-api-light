@@ -45,7 +45,7 @@ class Keyword extends Criterion
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Keyword";
     }
 
     public function __construct($text = null, $matchType = null, $id = null, $type = null, $CriterionType = null)

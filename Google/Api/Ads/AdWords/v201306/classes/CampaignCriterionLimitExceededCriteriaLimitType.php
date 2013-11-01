@@ -27,7 +27,7 @@ class CampaignCriterionLimitExceededCriteriaLimitType
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CampaignCriterionLimitExceeded.CriteriaLimitType";
     }
 
     public function __construct()

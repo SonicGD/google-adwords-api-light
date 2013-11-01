@@ -37,7 +37,7 @@ class BatchFailureResult extends OperationResult
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "BatchFailureResult";
     }
 
     public function __construct($operationIndexInBatch = null, $OperationResultType = null)

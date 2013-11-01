@@ -40,7 +40,7 @@ class FeedItemReturnValue extends ListReturnValue
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "FeedItemReturnValue";
     }
 
     public function __construct($value = null, $partialFailureErrors = null, $ListReturnValueType = null)

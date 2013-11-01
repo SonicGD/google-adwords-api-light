@@ -75,7 +75,7 @@ class FunctionArgumentOperand
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "FunctionArgumentOperand";
     }
 
     public function __construct($FunctionArgumentOperandType = null)

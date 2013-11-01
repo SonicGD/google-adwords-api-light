@@ -34,7 +34,7 @@ class AdExtensionOverrideOperation extends Operation
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdExtensionOverrideOperation";
     }
 
     public function __construct($operand = null, $operator = null, $OperationType = null)

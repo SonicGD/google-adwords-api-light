@@ -28,7 +28,7 @@ class LocationOverrideInfoRadiusUnits
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "LocationOverrideInfo.RadiusUnits";
     }
 
     public function __construct()

@@ -94,7 +94,7 @@ class BudgetOrder
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "BudgetOrder";
     }
 
     public function __construct(

@@ -34,7 +34,7 @@ class PlacementTypeAttribute extends Attribute
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "PlacementTypeAttribute";
     }
 
     public function __construct($value = null, $AttributeType = null)

@@ -37,7 +37,7 @@ class AdGroupBidLandscapePage extends NoStatsPage
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdGroupBidLandscapePage";
     }
 
     public function __construct($entries = null, $totalNumEntries = null, $PageType = null)

@@ -38,7 +38,7 @@ class LongValue extends NumberValue
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "LongValue";
     }
 
     public function __construct($number = null, $ComparableValueType = null)

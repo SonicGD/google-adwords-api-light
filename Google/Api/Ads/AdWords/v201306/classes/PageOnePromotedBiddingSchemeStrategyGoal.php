@@ -27,7 +27,7 @@ class PageOnePromotedBiddingSchemeStrategyGoal
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "PageOnePromotedBiddingScheme.StrategyGoal";
     }
 
     public function __construct()

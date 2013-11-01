@@ -63,7 +63,7 @@ class MobileExtension extends AdExtension
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "MobileExtension";
     }
 
     public function __construct(

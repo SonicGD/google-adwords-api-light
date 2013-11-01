@@ -62,7 +62,7 @@ class InAppLinkExtension extends AdExtension
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "InAppLinkExtension";
     }
 
     public function __construct(

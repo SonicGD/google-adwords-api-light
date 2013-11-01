@@ -76,7 +76,7 @@ class FeedFunction
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Function";
     }
 
     public function __construct($operator = null, $lhsOperand = null, $rhsOperand = null)

@@ -38,7 +38,7 @@ class NotWhitelistedError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "NotWhitelistedError";
     }
 
     public function __construct(

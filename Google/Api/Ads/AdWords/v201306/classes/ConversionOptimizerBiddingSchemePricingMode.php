@@ -27,7 +27,7 @@ class ConversionOptimizerBiddingSchemePricingMode
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ConversionOptimizerBiddingScheme.PricingMode";
     }
 
     public function __construct()

@@ -46,7 +46,7 @@ class UserListConversionType
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "UserListConversionType";
     }
 
     public function __construct($id = null, $name = null, $category = null)

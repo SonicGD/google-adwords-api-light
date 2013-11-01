@@ -58,7 +58,7 @@ class LocationSyncExtension extends AdExtension
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "LocationSyncExtension";
     }
 
     public function __construct(

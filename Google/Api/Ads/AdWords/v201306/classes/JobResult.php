@@ -42,7 +42,7 @@ class JobResult
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "JobResult";
     }
 
     public function __construct($BulkMutateResult = null, $SimpleMutateResult = null)

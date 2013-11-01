@@ -40,7 +40,7 @@ class AdGroupBidModifierReturnValue extends ListReturnValue
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdGroupBidModifierReturnValue";
     }
 
     public function __construct($value = null, $partialFailureErrors = null, $ListReturnValueType = null)

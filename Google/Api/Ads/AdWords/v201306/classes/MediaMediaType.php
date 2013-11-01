@@ -28,7 +28,7 @@ class MediaMediaType
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Media.MediaType";
     }
 
     public function __construct()

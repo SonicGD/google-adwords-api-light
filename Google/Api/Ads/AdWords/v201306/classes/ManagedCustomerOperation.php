@@ -35,7 +35,7 @@ class ManagedCustomerOperation extends Operation
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ManagedCustomerOperation";
     }
 
     public function __construct($operand = null, $operator = null, $OperationType = null)

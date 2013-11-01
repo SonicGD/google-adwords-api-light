@@ -27,7 +27,7 @@ class SortOrder
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "SortOrder";
     }
 
     public function __construct()

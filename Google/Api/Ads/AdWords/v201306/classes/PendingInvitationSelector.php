@@ -40,7 +40,7 @@ class PendingInvitationSelector
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "PendingInvitationSelector";
     }
 
     public function __construct($managerCustomerIds = null, $clientCustomerIds = null)

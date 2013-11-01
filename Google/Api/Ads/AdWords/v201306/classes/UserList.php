@@ -142,7 +142,7 @@ class UserList
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "UserList";
     }
 
     public function __construct(

@@ -39,7 +39,7 @@ class DateRange
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "DateRange";
     }
 
     public function __construct($min = null, $max = null)

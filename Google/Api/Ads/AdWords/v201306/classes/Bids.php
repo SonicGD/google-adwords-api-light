@@ -75,7 +75,7 @@ class Bids
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Bids";
     }
 
     public function __construct($BidsType = null)

@@ -31,7 +31,7 @@ class UnprocessedResult extends OperationResult
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "UnprocessedResult";
     }
 
     public function __construct($OperationResultType = null)

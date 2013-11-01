@@ -56,7 +56,7 @@ class RateExceededError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "RateExceededError";
     }
 
     public function __construct(

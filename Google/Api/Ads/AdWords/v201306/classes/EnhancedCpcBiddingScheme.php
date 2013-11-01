@@ -33,7 +33,7 @@ class EnhancedCpcBiddingScheme extends BiddingScheme
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "EnhancedCpcBiddingScheme";
     }
 
     public function __construct($BiddingSchemeType = null)

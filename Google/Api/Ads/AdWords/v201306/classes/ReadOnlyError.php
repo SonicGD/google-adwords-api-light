@@ -38,7 +38,7 @@ class ReadOnlyError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ReadOnlyError";
     }
 
     public function __construct(

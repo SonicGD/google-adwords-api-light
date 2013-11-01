@@ -38,7 +38,7 @@ class DateError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "DateError";
     }
 
     public function __construct(

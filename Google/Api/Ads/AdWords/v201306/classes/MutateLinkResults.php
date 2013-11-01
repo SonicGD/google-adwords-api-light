@@ -35,7 +35,7 @@ class MutateLinkResults
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "MutateLinkResults";
     }
 
     public function __construct($links = null)

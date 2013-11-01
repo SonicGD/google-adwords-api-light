@@ -34,7 +34,7 @@ class CampaignSharedSetOperation extends Operation
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CampaignSharedSetOperation";
     }
 
     public function __construct($operand = null, $operator = null, $OperationType = null)

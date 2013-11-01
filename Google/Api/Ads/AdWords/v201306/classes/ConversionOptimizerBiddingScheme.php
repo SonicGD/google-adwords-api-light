@@ -54,7 +54,7 @@ class ConversionOptimizerBiddingScheme extends BiddingScheme
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ConversionOptimizerBiddingScheme";
     }
 
     public function __construct($pricingMode = null, $bidType = null, $BiddingSchemeType = null)

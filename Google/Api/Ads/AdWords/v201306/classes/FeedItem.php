@@ -82,7 +82,7 @@ class FeedItem
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "FeedItem";
     }
 
     public function __construct(

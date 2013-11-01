@@ -75,7 +75,7 @@ class ExcludedKeywordSearchParameter extends SearchParameter
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ExcludedKeywordSearchParameter";
     }
 
     public function __construct($keywords = null, $SearchParameterType = null)

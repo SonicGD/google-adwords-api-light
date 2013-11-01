@@ -43,7 +43,7 @@ function parseFile($path, $baseClassName, $dummy)
                 $result = str_ireplace("%use%", "", $dummy);
             }
 
-            $pattenXSI = '/getXsiTypeName\(\)\s{\s(.*?)\s}/ms';
+            /*$pattenXSI = '/getXsiTypeName\(\)\s{\s(.*?)\s}/ms';
             preg_match($pattenXSI, $classCode, $xsiMatches);
             if (count($xsiMatches)) {
                 $newXsiCode = <<<EOF
@@ -54,7 +54,7 @@ getXsiTypeName()
 EOF;
 
                 $classCode = str_ireplace($xsiMatches[0], $newXsiCode, $classCode);
-            }
+            }*/
             $newPath = "Google/Api/Ads/AdWords/v201306/classes/" . $className . ".php";
             file_put_contents(
                 $newPath,

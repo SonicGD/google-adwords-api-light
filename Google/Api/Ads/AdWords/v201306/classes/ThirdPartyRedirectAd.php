@@ -59,7 +59,7 @@ class ThirdPartyRedirectAd extends RichMediaAd
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ThirdPartyRedirectAd";
     }
 
     public function __construct(

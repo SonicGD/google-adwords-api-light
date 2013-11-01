@@ -43,7 +43,7 @@ class OperationStream
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "OperationStream";
     }
 
     public function __construct($scopingEntityId = null, $operations = null)

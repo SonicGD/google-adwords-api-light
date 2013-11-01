@@ -28,7 +28,7 @@ class InAppLinkExtensionAppStore
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "InAppLinkExtension.AppStore";
     }
 
     public function __construct()

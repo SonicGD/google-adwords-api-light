@@ -35,7 +35,7 @@ class LogicalUserList extends UserList
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "LogicalUserList";
     }
 
     public function __construct(

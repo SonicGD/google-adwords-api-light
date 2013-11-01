@@ -33,7 +33,7 @@ class NewEntityCreationError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "NewEntityCreationError";
     }
 
     public function __construct(

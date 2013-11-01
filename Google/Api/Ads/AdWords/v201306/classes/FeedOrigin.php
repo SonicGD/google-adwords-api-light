@@ -28,7 +28,7 @@ class FeedOrigin
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Feed.Origin";
     }
 
     public function __construct()

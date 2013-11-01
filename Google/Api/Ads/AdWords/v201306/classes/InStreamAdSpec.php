@@ -41,7 +41,7 @@ class InStreamAdSpec
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "InStreamAdSpec";
     }
 
     public function __construct($inStreamTypes = null, $durations = null)

@@ -29,7 +29,7 @@ class TempAdUnionId extends AdUnionId
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "TempAdUnionId";
     }
 
     public function __construct($id = null, $AdUnionIdType = null)

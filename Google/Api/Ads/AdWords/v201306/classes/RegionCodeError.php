@@ -38,7 +38,7 @@ class RegionCodeError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "RegionCodeError";
     }
 
     public function __construct(

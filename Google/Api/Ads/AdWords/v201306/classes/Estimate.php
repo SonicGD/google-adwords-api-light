@@ -75,7 +75,7 @@ class Estimate
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Estimate";
     }
 
     public function __construct($EstimateType = null)

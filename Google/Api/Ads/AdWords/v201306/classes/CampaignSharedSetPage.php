@@ -33,7 +33,7 @@ class CampaignSharedSetPage extends NullStatsPage
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CampaignSharedSetPage";
     }
 
     public function __construct($entries = null, $totalNumEntries = null, $PageType = null)

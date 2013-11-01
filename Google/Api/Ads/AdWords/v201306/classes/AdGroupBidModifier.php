@@ -59,7 +59,7 @@ class AdGroupBidModifier
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdGroupBidModifier";
     }
 
     public function __construct(

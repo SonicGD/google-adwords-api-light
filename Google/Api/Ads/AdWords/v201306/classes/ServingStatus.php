@@ -28,7 +28,7 @@ class ServingStatus
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ServingStatus";
     }
 
     public function __construct()

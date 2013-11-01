@@ -47,7 +47,7 @@ class LocationSearchParameter extends SearchParameter
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "LocationSearchParameter";
     }
 
     public function __construct($locations = null, $SearchParameterType = null)

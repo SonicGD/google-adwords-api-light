@@ -81,7 +81,7 @@ class TargetList
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "TargetList";
     }
 
     public function __construct($campaignId = null, $TargetListType = null)

@@ -52,7 +52,7 @@ class QualityInfo
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "QualityInfo";
     }
 
     public function __construct(

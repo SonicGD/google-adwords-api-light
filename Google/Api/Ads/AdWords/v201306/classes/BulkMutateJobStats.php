@@ -46,7 +46,7 @@ class BulkMutateJobStats extends JobStats
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "BulkMutateJobStats";
     }
 
     public function __construct(

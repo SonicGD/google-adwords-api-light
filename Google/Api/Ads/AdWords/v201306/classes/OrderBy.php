@@ -40,7 +40,7 @@ class OrderBy
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "OrderBy";
     }
 
     public function __construct($field = null, $sortOrder = null)

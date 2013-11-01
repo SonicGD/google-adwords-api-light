@@ -34,7 +34,7 @@ class AdGroupFeedReturnValue extends ListReturnValue
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdGroupFeedReturnValue";
     }
 
     public function __construct($value = null, $ListReturnValueType = null)

@@ -35,7 +35,7 @@ class ForwardCompatibilityError extends ApiError
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ForwardCompatibilityError";
     }
 
     public function __construct(

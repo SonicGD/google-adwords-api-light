@@ -27,7 +27,7 @@ class AssociatedCampaignCampaignStatus
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AssociatedCampaign.CampaignStatus";
     }
 
     public function __construct()

@@ -47,7 +47,7 @@ class UserInterest
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "UserInterest";
     }
 
     public function __construct($id = null, $name = null, $sizeRange = null)

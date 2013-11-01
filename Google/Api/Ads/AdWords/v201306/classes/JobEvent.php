@@ -81,7 +81,7 @@ class JobEvent
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "JobEvent";
     }
 
     public function __construct($dateTime = null, $JobEventType = null)

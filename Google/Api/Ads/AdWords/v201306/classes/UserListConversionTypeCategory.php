@@ -29,7 +29,7 @@ class UserListConversionTypeCategory
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "UserListConversionType.Category";
     }
 
     public function __construct()

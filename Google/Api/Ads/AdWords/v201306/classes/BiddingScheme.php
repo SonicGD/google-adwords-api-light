@@ -7,7 +7,7 @@ namespace Google\Api\Ads\AdWords\v201306\classes;
  * Base class for all bidding schemes.
  * <span class="constraint AdxEnabled">This is disabled for AdX.</span>
  *
- * @package    GoogleApiAdsAdWords
+ * @package GoogleApiAdsAdWords
  * @subpackage v201306
  */
 class BiddingScheme
@@ -76,11 +76,10 @@ class BiddingScheme
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "BiddingScheme";
     }
 
     public function __construct($BiddingSchemeType = null)
     {
         $this->BiddingSchemeType = $BiddingSchemeType;
-    }
-}
+  }}

@@ -34,7 +34,7 @@ class PercentCpaBiddingScheme extends BiddingScheme
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "PercentCpaBiddingScheme";
     }
 
     public function __construct($BiddingSchemeType = null)

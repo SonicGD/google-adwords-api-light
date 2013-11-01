@@ -34,7 +34,7 @@ class Bid
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Bid";
     }
 
     public function __construct($amount = null)

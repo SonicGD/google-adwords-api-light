@@ -41,7 +41,7 @@ class ManualCPCAdGroupExperimentBidMultipliers extends AdGroupExperimentBidMulti
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "ManualCPCAdGroupExperimentBidMultipliers";
     }
 
     public function __construct(

@@ -28,7 +28,7 @@ class InStreamAdSpecInStreamType
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "InStreamAdSpec.InStreamType";
     }
 
     public function __construct()

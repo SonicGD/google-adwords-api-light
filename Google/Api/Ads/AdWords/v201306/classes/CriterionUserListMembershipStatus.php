@@ -32,7 +32,7 @@ class CriterionUserListMembershipStatus
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "CriterionUserList.MembershipStatus";
     }
 
     public function __construct()

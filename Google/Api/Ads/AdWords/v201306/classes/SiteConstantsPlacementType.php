@@ -29,7 +29,7 @@ class SiteConstantsPlacementType
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "SiteConstants.PlacementType";
     }
 
     public function __construct()

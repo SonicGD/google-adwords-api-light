@@ -40,7 +40,7 @@ class EnumValuePair
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "EnumValuePair";
     }
 
     public function __construct($enumValue = null, $enumDisplayValue = null)

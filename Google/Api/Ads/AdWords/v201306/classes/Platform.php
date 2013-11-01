@@ -40,7 +40,7 @@ class Platform extends Criterion
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "Platform";
     }
 
     public function __construct($platformName = null, $id = null, $type = null, $CriterionType = null)

@@ -41,7 +41,7 @@ class MediaPage
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "MediaPage";
     }
 
     public function __construct($entries = null, $totalNumEntries = null)

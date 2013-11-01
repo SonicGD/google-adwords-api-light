@@ -34,7 +34,7 @@ class WebpageDescriptorAttribute extends Attribute
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "WebpageDescriptorAttribute";
     }
 
     public function __construct($value = null, $AttributeType = null)

@@ -28,7 +28,7 @@ class AdServingOptimizationStatus
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "AdServingOptimizationStatus";
     }
 
     public function __construct()

@@ -37,7 +37,7 @@ class IdeaTypeAttribute extends Attribute
      */
     public function getXsiTypeName()
     {
-        return "";
+        return "IdeaTypeAttribute";
     }
 
     public function __construct($value = null, $AttributeType = null)

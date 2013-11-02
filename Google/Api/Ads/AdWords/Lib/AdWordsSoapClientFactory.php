@@ -24,7 +24,7 @@
  * @copyright  2011, Google Inc. All Rights Reserved.
  * @license    http://www.apache.org/licenses/LICENSE-2.0 Apache License,
  *             Version 2.0
- * @author     Adam Rogal <api.arogal@gmail.com>
+ * @author     Adam Rogal
  * @see        SoapClientFactory
  */
 
@@ -43,6 +43,7 @@ use Google\Api\Ads\Common\Lib\SoapClientFactory;
  */
 class AdWordsSoapClientFactory extends SoapClientFactory
 {
+
     /**
      * The constructor for the AdWords API SOAP client factory.
      *
@@ -53,8 +54,6 @@ class AdWordsSoapClientFactory extends SoapClientFactory
      *                                mode
      * @param bool    $partialFailure if the service should be created in
      *                                partialFailure mode
-     *
-     * @throws \Exception
      */
     public function __construct(
         AdsUser $user,
@@ -93,3 +92,4 @@ class AdWordsSoapClientFactory extends SoapClientFactory
         );
     }
 }
+

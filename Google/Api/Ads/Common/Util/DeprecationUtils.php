@@ -39,6 +39,7 @@ use Google\Api\Ads\Common\Lib\AdsUser;
  */
 abstract class DeprecationUtils
 {
+
     /**
      * Check the AdsUser is using OAuth2 as the authorization method.
      *

@@ -1,5 +1,11 @@
 <?php
 /**
+ * Client used to retrieve authentication tokens from the Client Login API.
+ *
+ * @link       http://code.google.com/apis/accounts/docs/AuthForInstalledApps.html
+ *
+ * PHP version 5
+ *
  * Copyright 2011, Google Inc. All Rights Reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,7 +36,9 @@ namespace Google\Api\Ads\Common\Util;
 /**
  * Client used to retrieve authentication tokens from the Client Login API.
  *
- * @link http://code.google.com/apis/accounts/docs/AuthForInstalledApps.html
+ * @link       http://code.google.com/apis/accounts/docs/AuthForInstalledApps.html
+ * @package    GoogleApiAdsCommon
+ * @subpackage Util
  */
 class AuthToken
 {
@@ -63,16 +71,16 @@ class AuthToken
     /**
      * Creates a new instance of this authentication token utility class.
      *
-     * @param string    $email                  the email of the user
-     * @param string    $password               the password of the user
-     * @param string    $service                the service name
-     * @param string    $source                 the source name
-     * @param string    $accountType            the account type, defaults to 'GOOGLE'
-     * @param string    $server                 the server to make the request to, defaults
-     *                                          to 'https://www.google.com'
-     * @param string    $captchaToken           the token return with a CAPTCHA challenge
-     * @param  string   $captchaResponse        the response to a CAPTCHA challenge
-     * @param CurlUtils $curlUtils              an instance of CurlUtils
+     * @param string    $email       the email of the user
+     * @param string    $password    the password of the user
+     * @param string    $service     the service name
+     * @param string    $source      the source name
+     * @param string    $accountType the account type, defaults to 'GOOGLE'
+     * @param string    $server      the server to make the request to, defaults
+     *                               to 'https://www.google.com'
+     * @param           string       captchaToken the token return with a CAPTCHA challenge
+     * @param           string       captchaResponse the response to a CAPTCHA challenge
+     * @param CurlUtils $curlUtils   an instance of CurlUtils
      */
     function __construct(
         $email,

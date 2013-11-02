@@ -43,6 +43,7 @@ use DOMException;
  */
 class XmlUtils
 {
+
     /**
      * Gets the DOMDocument of the <var>$xml</var>.
      *
@@ -268,7 +269,6 @@ class XmlUtils
      * @param integer $errline contains the line number the error was raised at,
      *                         as an integer
      *
-     * @throws \DOMException
      * @return boolean <var>FALSE</var> if the normal error handler should
      *     continue
      */
@@ -283,3 +283,4 @@ class XmlUtils
         }
     }
 }
+

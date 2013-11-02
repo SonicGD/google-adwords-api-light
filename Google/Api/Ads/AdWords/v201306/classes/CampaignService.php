@@ -270,6 +270,6 @@ class CampaignService extends AdWordsSoapClient
         $arg = new query($query);
         $result = $this->__soapCall("query", array($arg));
         return $result->rval;
-  }
+    }
 
 }

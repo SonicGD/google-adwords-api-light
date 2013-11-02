@@ -40,6 +40,7 @@ use Exception;
  */
 abstract class OAuth2Handler
 {
+
     /**
      * The refresh buffer of 60 seconds.
      */
@@ -55,7 +56,6 @@ abstract class OAuth2Handler
      * Constructor.
      *
      * @param string $server the auth server to make OAuth2 request against
-     * @param null   $scope
      */
     public function __construct($server = null, $scope = null)
     {
@@ -73,7 +73,6 @@ abstract class OAuth2Handler
      * @param array   $params      optional array of additional parameters to include
      *                             in the URL
      *
-     * @throws OAuth2Exception
      * @return string an authorization URL to redirect the user to
      * @see https://developers.google.com/accounts/docs/OAuth2WebServer#formingtheurl
      */
@@ -255,7 +254,6 @@ abstract class OAuth2Handler
      *
      * @param array $credentials the OAuth2 credentials
      *
-     * @throws OAuth2Exception
      * @return string the credentials formatted for use in a URL
      */
     public function FormatCredentialsForUrl($credentials)
@@ -273,7 +271,6 @@ abstract class OAuth2Handler
      *
      * @param array $credentials the OAuth2 credentials
      *
-     * @throws OAuth2Exception
      * @return string the credentials formatted for use in an HTTP header
      */
     public function FormatCredentialsForHeader($credentials)
@@ -334,6 +331,9 @@ abstract class OAuth2Handler
 
 /**
  * Exception thrown when OAuth2 flow fails.
+ *
+ * @package    GoogleApiAdsCommon
+ * @subpackage Util
  */
 class OAuth2Exception extends Exception
 {
@@ -342,3 +342,4 @@ class OAuth2Exception extends Exception
         parent::__construct($message, $code);
     }
 }
+

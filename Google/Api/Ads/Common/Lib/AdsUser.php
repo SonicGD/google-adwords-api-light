@@ -1,5 +1,9 @@
 <?php
 /**
+ * User class for all API modules using the Ads API.
+ *
+ * PHP version 5
+ *
  * Copyright 2011, Google Inc. All Rights Reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,6 +37,9 @@ use SoapClient;
 
 /**
  * User class for all API modules using the Ads API.
+ *
+ * @package    GoogleApiAdsCommon
+ * @subpackage Lib
  */
 abstract class AdsUser
 {
@@ -121,7 +128,7 @@ abstract class AdsUser
         if (array_key_exists($key, $this->requestHeaderElements)) {
             return $this->requestHeaderElements[$key];
         } else {
-            return null;
+            return NULL;
         }
     }
 
@@ -328,7 +335,7 @@ abstract class AdsUser
         }
         $sslVerifyHost = $this->GetSetting($settingsIni, 'SSL', 'VERIFY_HOST');
         if (isset($sslVerifyHost)) {
-            $this->Define('SSL_VERIFY_HOST', (int)$sslVerifyHost);
+            $this->Define('SSL_VERIFY_HOST', (int) $sslVerifyHost);
         }
         $sslCaPath = $this->GetSetting($settingsIni, 'SSL', 'CA_PATH');
         if (isset($sslCaPath)) {
@@ -623,6 +630,7 @@ abstract class AdsUser
         ) {
             throw new ValidationException('refresh_token', null,
                 'Either the refresh_token or the access_token is required.');
-        }
     }
+  }
 }
+

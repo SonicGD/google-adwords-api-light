@@ -41,6 +41,7 @@ use Exception;
  */
 class AuthTokenException extends Exception
 {
+
     private $error;
     private $url;
     private $captchaToken;

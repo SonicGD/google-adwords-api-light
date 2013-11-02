@@ -6,7 +6,7 @@ namespace Google\Api\Ads\AdWords\v201306\classes;
 /**
  * Base type for AdWords campaign settings.
  *
- * @package GoogleApiAdsAdWords
+ * @package    GoogleApiAdsAdWords
  * @subpackage v201306
  */
 class Setting
@@ -81,4 +81,5 @@ class Setting
     public function __construct($SettingType = null)
     {
         $this->SettingType = $SettingType;
-  }}
+    }
+}

@@ -34,12 +34,12 @@ namespace Google\Api\Ads\Common\Lib;
 /**
  * Base class for all SOAP client factories of Ads client libraries.
  *
- * @abstract
  * @package    GoogleApiAdsCommon
  * @subpackage Lib
  */
 abstract class SoapClientFactory
 {
+
     private $user;
     private $version;
     private $server;
@@ -56,8 +56,6 @@ abstract class SoapClientFactory
      * @param string  $version     the version to generate clients for
      * @param string  $server      the server to generate clients for
      * @param string  $productName the product name (i.e. adwords)
-     *
-     * @param null    $headerOverrides
      *
      * @access protected
      */
@@ -269,3 +267,4 @@ abstract class SoapClientFactory
         return self::$COMPRESSION_KIND;
     }
 }
+

@@ -38,6 +38,7 @@ namespace Google\Api\Ads\Common\Util;
  */
 class OgnlUtils
 {
+
     /**
      * Matches either a field or an index, and ensures the required punctionation
      * between tokens.
@@ -118,3 +119,4 @@ class OgnlUtils
         }
     }
 }
+

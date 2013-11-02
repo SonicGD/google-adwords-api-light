@@ -1,8 +1,10 @@
 <?php
 /**
- * A collection of utility methods for reading API property files.
+ * A collection of utility methods for working with Namespaces.
  *
  * PHP version 5
+ *
+ * Copyright 2011, Google Inc. All Rights Reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,35 +18,36 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * @package    GoogleApiAdsCommon
+ * @package    GoogleApiAdsAdWords
  * @subpackage Util
  * @category   WebServices
+ * @copyright  2011, Google Inc. All Rights Reserved.
  * @license    http://www.apache.org/licenses/LICENSE-2.0 Apache License,
  *             Version 2.0
+ * @author     Eric Koleda
  * @author     Vincent Tsao
  */
-
-namespace Google\Api\Ads\Common\Util;
+require_once 'Google/Api/Ads/Common/Util/NamespaceHelper.php';
 
 /**
- * A collection of utility methods for reading API property files.
+ * A collection of utility methods for working with Namespaces.
  *
- * @package    GoogleApiAdsCommon
+ * @package    GoogleApiAdsAdWords
  * @subpackage Util
  */
-class ApiPropertiesUtils
+class Google_Api_Ads_AdWords_Util_NamespaceHelper
+    extends Google_Api_Ads_Common_Util_NamespaceHelper
 {
 
+    const DEFAULT_PROJECT = 'AdWords';
+
     /**
-     * Parses the specified API properties file.
+     * Construct a namespace helper.
      *
-     * @param string $propsFilePath the path to the API properties file to parse
-     *
-     * @return array the parsed properties
+     * @param Google_Api_Ads_Common_Lib_AdsUser the ads user.
      */
-    public static function ParseApiPropertiesFile($propsFilePath)
+    public function __construct($user)
     {
-        return parse_ini_file($propsFilePath);
+        parent::__construct($user, self::DEFAULT_PROJECT);
     }
 }
-

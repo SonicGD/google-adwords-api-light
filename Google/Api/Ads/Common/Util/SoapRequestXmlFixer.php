@@ -48,6 +48,7 @@ use SoapVar;
  */
 class SoapRequestXmlFixer
 {
+
     private static $XSI_NAMESPACE = 'http://www.w3.org/2001/XMLSchema-instance';
 
     private $addXsiTypes;
@@ -276,3 +277,4 @@ class SoapRequestXmlFixer
         }
     }
 }
+

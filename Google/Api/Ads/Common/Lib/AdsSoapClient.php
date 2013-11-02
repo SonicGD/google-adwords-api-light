@@ -209,8 +209,6 @@ abstract class AdsSoapClient extends SoapClient
      * @param string $action   the SOAP action
      * @param string $version  the SOAP version
      *
-     * @param int    $one_way
-     *
      * @return string the XML SOAP response
      */
     function __doRequest(
@@ -530,7 +528,7 @@ abstract class AdsSoapClient extends SoapClient
         array $arguments,
         array $headers
     ) {
-        $addXsiTypes = true;
+        $addXsiTypes = false;
         $removeEmptyElements = false;
         $replaceReferences = false;
 

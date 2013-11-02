@@ -112,8 +112,6 @@ class AdWordsUser extends AdsUser
      *                                      <var>NULL</var>, the default settings INI file will be loaded
      * @param string $authToken             the authToken to use for requests
      * @param array  $oauth2Info            the OAuth 2.0 information to use for requests
-     *
-     * @throws ValidationException
      */
     public function __construct(
         $authenticationIniPath = null,
@@ -266,7 +264,7 @@ class AdWordsUser extends AdsUser
     /**
      * Gets the service by its service name and group.
      *
-     * @param string            $serviceName    the service name
+     * @param                   $serviceName    the service name
      * @param string            $version        the version of the service to get. If
      *                                          <var>NULL</var>, then the default version will be used
      * @param string            $server         the server to make the request to. If
@@ -309,7 +307,7 @@ class AdWordsUser extends AdsUser
      * Loads the classes within a service, so they can be used before the service
      * is constructed.
      *
-     * @param string $serviceName the service name
+     * @param        $serviceName the service name
      * @param string $version     the version of the service to get. If
      *                            <var>NULL</var>, then the default version will be used
      */
@@ -570,3 +568,4 @@ class AdWordsUser extends AdsUser
         }
     }
 }
+

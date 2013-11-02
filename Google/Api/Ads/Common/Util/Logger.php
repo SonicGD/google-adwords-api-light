@@ -49,6 +49,7 @@ namespace Google\Api\Ads\Common\Util;
  */
 class Logger
 {
+
     /**
      * Logs all incomming and outgoing SOAP XML.
      *
@@ -229,8 +230,6 @@ class Logger
      *
      * @param string $logLevel     the level of the log
      * @param string $messageLevel the level of the message
-     *
-     * @return bool
      */
     private static function ShouldLog($logLevel, $messageLevel)
     {

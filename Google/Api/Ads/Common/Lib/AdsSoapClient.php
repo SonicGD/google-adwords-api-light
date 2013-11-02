@@ -210,18 +210,11 @@ abstract class AdsSoapClient extends SoapClient
         $version,
         $one_way = 0
     ) {
-        echo "\n---REQUEST----\n";
-        echo $request;
-        echo "\n-------\n";
         $this->lastRequest = $this->PrepareRequest(
             $request,
             $this->lastArguments,
             $this->lastHeaders
         );
-        echo "\n-------\n";
-        echo $this->lastRequest;
-        echo "\n-------\n";
-        var_dump($location, $action, $version);
         if (!empty($this->transportLayer)) {
             $response = $this->transportLayer->__doRequest(
                 $this->lastRequest,
@@ -263,7 +256,6 @@ abstract class AdsSoapClient extends SoapClient
     ) {
         DeprecationUtils::CheckAdsUserUsingOAuth2($this->user);
         try {
-            var_dump($function_name, $arguments, $options, $input_headers);
             $input_headers[] = $this->GenerateSoapHeader();
             $this->lastHeaders = $input_headers;
             $this->lastArguments = $arguments;

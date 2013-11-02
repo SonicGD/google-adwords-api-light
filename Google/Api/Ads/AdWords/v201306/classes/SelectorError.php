@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Represents possible error codes for {@link Selector}.
  *

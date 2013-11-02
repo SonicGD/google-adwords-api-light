@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Represents the mobile app category to be targeted.
  * <a href="/adwords/api/docs/appendix/mobileappcategories">View the complete list of

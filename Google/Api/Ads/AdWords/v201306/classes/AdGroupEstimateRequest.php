@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Represents an ad group that will be estimated. Ad groups may be all
  * new or all existing, or a mixture of new and existing. Only existing

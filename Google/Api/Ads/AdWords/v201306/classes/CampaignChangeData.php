@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Holds information about a changed campaign and any ad groups under
  * that have changed.

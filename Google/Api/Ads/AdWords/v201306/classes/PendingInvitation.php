@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Pending invitation result for the getPendingInvitations method.
  *

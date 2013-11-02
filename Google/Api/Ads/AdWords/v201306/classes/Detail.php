@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Detail refers to a single event or condition that triggered its owning {@link Alert}.
  * Multiple details can cause the same {@code Alert} to occur.

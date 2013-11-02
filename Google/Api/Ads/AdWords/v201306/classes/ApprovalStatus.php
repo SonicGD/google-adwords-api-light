@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Approval status for the criterion.
  * Note: there are more states involved but we only expose two to users.

@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * A keyword response value representing search volume for a single month. An
  * instance with a {@code null} count is valid, indicating that the information

@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Results of a {@link ManagedCustomerService#mutateLink} call which changes
  * manager/client links.

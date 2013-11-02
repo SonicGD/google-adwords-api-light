@@ -26,10 +26,7 @@
  *             Version 2.0
  * @author     Paul Matthews
  */
-
-namespace Google\Api\Ads\Common\Util;
-
-use Google\Api\Ads\Common\Lib\AdsUser;
+require_once 'Google/Api/Ads/Common/Lib/AdsUser.php';
 
 /**
  * A collection of utility methods for deprecation purposes.
@@ -39,6 +36,7 @@ use Google\Api\Ads\Common\Lib\AdsUser;
  */
 abstract class DeprecationUtils
 {
+
     /**
      * Check the AdsUser is using OAuth2 as the authorization method.
      *

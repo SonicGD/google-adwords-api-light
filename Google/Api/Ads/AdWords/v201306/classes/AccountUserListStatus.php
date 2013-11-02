@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Status in the AccountUserListStatus table. This indicates if the user list share or
  * the licensing of the userlist is still active.

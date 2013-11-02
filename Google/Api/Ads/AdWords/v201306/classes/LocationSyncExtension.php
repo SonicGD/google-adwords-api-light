@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Local business center(LBC) sync extension that ties a LBC account with a campaign.
  *

@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Represents a {@link TargetingIdea} returned by search criteria specified in
  * the {@link TargetingIdeaSelector}. Targeting ideas are keywords or placements

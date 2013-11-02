@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Represents the type of idea.
  * <span class="constraint AdxEnabled">This is disabled for AdX.</span>

@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * CampaignAdExtension service operation. <b>Note:</b> The {@code SET} operator
  * is not supported.

@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * An operation on an AdWords campaign.
  * <p class="note"><b>Note:</b> The <code>REMOVE</code> operator is not

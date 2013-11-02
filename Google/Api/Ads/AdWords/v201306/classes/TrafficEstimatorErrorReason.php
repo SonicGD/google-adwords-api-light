@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * When the request with {@code null} campaign ID in
  * {@link com.google.ads.api.services.trafficestimator.CampaignEstimateRequest}

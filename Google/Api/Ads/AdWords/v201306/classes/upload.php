@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Uploads new media. Currently, you can only upload {@link Image} files.
  *

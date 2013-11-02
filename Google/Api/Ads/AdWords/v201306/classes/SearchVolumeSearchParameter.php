@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * A {@link SearchParameter} that specifies the level of search volume expected in results,
  * and it has a direct relationship to

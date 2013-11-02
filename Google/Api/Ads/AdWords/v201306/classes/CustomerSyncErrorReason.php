@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * The request attempted to access a campaign that either does not
  * exist or belongs to a different account.

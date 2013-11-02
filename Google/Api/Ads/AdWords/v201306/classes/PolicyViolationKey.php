@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Key of the violation. The key is used for referring to a violation when
  * filing an exemption request.

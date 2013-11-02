@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * A {@code BulkMutateJob} is essentially a mixed collection of mutate
  * operations from the following AdWords API campaign management services:

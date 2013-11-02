@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Enums for the various reasons an error can be thrown as a result of
  * ClientTerms violation.

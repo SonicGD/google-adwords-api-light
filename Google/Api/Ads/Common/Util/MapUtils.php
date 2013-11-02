@@ -28,10 +28,6 @@
  * @author     Vincent Tsao
  */
 
-namespace Google\Api\Ads\Common\Util;
-
-use ReflectionMethod;
-
 /**
  * A collection of utility methods for working with maps (associative arrays).
  *
@@ -40,6 +36,7 @@ use ReflectionMethod;
  */
 class MapUtils
 {
+
     /**
      * The MapUtils class is not meant to have any instances.
      *

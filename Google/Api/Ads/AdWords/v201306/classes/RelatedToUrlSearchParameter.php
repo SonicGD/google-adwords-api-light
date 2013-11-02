@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * A {@link SearchParameter} for {@code KEYWORD} and {@code PLACEMENT}
  * {@link IdeaType}s that specifies a set of URLs that results should

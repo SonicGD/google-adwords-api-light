@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Represents an element in a template. Each template element is composed
  * of a list of fields (actual value data).

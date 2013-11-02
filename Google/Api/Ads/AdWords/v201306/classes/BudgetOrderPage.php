@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * A page of {@link BudgetOrder}s from {@link BudgetOrderService#get}
  * method.

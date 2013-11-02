@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Enums for all the reasons an error can be thrown to the user during a CustomerOrderLine mutate
  * operation.

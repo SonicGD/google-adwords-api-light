@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * VideoType enum values that are permitted for video filterable
  * creative attribute IDs.

@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * The API error base class that provides details about an error that occurred
  * while processing a service request.

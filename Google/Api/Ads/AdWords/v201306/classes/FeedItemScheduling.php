@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Represents a collection of FeedItem schedules specifying all time intervals for which
  * the feed item may serve. Any time range not covered by the specified FeedItemSchedules will

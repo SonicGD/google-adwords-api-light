@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * A mutation job, which was submitted using
  * {@link MutateJobService#mutate}, and will execute asynchronously

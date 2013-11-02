@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Data object that represents a managed customer.  Member of {@link ManagedCustomerPage}.
  *

@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Manual click based bidding where user pays per click.
  * <span class="constraint AdxEnabled">This is disabled for AdX.</span>

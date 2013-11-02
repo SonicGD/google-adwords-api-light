@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Parameter of Webpage criterion, expressed as a list of conditions, or
  * logical expressions, for targeting webpages of an advertiser's website.

@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Target Spend bidding scheme, in which Google automatically places
  * bids for the user based on their daily/monthly budget or optional

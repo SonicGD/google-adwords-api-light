@@ -1,5 +1,9 @@
 <?php
 /**
+ * A collection of utility methods for reading API property files.
+ *
+ * PHP version 5
+ *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -20,10 +24,11 @@
  * @author     Vincent Tsao
  */
 
-namespace Google\Api\Ads\Common\Util;
-
 /**
  * A collection of utility methods for reading API property files.
+ *
+ * @package    GoogleApiAdsCommon
+ * @subpackage Util
  */
 class ApiPropertiesUtils
 {
@@ -40,3 +45,4 @@ class ApiPropertiesUtils
         return parse_ini_file($propsFilePath);
     }
 }
+

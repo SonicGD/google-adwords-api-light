@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Contains a subset of campaign criteria resulting from a call to
  * {@link CampaignCriterionService#get}.

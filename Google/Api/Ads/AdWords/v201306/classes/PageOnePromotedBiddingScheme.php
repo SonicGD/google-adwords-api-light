@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Page-One Promoted bidding scheme, which sets max cpc bids to
  * target impressions on page one or page one promoted slots on google.com.

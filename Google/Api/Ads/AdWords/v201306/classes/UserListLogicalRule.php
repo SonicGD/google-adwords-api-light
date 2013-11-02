@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * A user list logical rule. A rule has a logical operator (and/or/not) and a
  * list of operands that can be user lists or user interests.

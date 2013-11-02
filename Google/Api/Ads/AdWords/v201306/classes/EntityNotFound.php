@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * An id did not correspond to an entity, or it referred to an entity which does not belong to the
  * customer.

@@ -28,8 +28,6 @@
  * @author     Vincent Tsao
  */
 
-namespace Google\Api\Ads\Common\Util;
-
 /**
  * A collection of utility methods for working with OGNL paths.
  *
@@ -38,6 +36,7 @@ namespace Google\Api\Ads\Common\Util;
  */
 class OgnlUtils
 {
+
     /**
      * Matches either a field or an index, and ensures the required punctionation
      * between tokens.
@@ -118,3 +117,4 @@ class OgnlUtils
         }
     }
 }
+

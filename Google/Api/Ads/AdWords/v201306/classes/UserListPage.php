@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Contains a list of user lists resulting from the filtering and paging of the
  * {@link UserListService#get} call.

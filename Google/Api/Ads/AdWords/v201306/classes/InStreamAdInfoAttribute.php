@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * {@link Attribute} type that contains an {@link InStreamAdInfo} value.
  *

@@ -27,8 +27,6 @@
  * @author     Eric Koleda
  */
 
-namespace Google\Api\Ads\AdWords\Lib;
-
 /**
  * Useful constants for the AdWords API.
  *
@@ -37,6 +35,7 @@ namespace Google\Api\Ads\AdWords\Lib;
  */
 class AdWordsConstants
 {
+
     /**
      * Recommended page size for most services.
      *
@@ -58,3 +57,4 @@ class AdWordsConstants
      */
     const MICRO_DEGREES_PER_DEGREE = 1000000;
 }
+

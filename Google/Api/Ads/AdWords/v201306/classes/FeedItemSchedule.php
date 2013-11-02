@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Represents a FeedItem schedule, which specifies a time interval on a given day
  * when the feed item may serve. The FeedItemSchedule times are in the account's time zone.

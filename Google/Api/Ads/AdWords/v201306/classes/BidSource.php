@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Indicate where a criterion's bid came from: criterion or the adgroup it
  * belongs to.

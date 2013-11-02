@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Represents the fields that can be used to create a ReportDefinition.
  * This class allows the user to query the list of fields applicable to a

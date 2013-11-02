@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Product targeting criteria, represents a filter for products in the
  * product feed that is defined by the advertiser. The criteria is used to

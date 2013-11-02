@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Operation for adding, updating or removing operations. For removing,
  * use SET and mark status as DELETED.

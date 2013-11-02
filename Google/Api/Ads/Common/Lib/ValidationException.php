@@ -29,10 +29,6 @@
  * @author     Vincent Tsao
  */
 
-namespace Google\Api\Ads\Common\Lib;
-
-use Exception;
-
 /**
  * Exception class for any client library validation error.
  *
@@ -82,3 +78,4 @@ class ValidationException extends Exception
         return $this->trigger;
     }
 }
+

@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Represents the mobile application to be targeted.
  * <span class="constraint AdxEnabled">This is enabled for AdX.</span>

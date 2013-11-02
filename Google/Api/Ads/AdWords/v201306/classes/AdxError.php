@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  *

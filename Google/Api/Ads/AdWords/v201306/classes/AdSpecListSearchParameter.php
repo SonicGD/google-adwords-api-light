@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * A {@link SearchParameter} for {@code PLACEMENT} {@link IdeaType}s used to
  * filter the results by the list of {@link AdSpec}s. See {@link AdSpec}

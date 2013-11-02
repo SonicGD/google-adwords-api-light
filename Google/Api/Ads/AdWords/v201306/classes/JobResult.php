@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Represents the result data of a job. This contains both the results of
  * successfully processed operations as well as errors returned by failed

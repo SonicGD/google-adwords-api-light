@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Criterion for targeting webpages of an advertiser's website. The
  * website domain name is specified at the campaign level.

@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Denotes whether the bid multiplier is derived from the adgroup
  * or the criterion

@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Represents a page of {@link AdGroupAd}s resulting from the query done by
  * {@link AdGroupAdService}.

@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Bidding strategies store shared bidding configuration data and are account-level objects.
  *

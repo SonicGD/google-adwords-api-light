@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Represents a particular interest based vertical to be targeted.
  * User interest may be used for defining logical user lists.

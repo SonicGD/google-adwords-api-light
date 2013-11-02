@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * <p>A {@link SearchParameter} for setting the search network. Currently we
  * support two network setting options:

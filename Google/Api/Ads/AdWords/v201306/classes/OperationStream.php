@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * A stream of AdWords API mutate operations that must be performed serially.
  * Further, this operation stream must be processed serially with all other

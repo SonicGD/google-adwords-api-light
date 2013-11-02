@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * {@link Attribute}s encompass the core information about a particular
  * {@link com.google.ads.api.services.targetingideas.TargetingIdea}. Some

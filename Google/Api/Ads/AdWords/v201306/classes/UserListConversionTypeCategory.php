@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * User can create only BOOMERANG_EVENT conversion types. For all other types
  * UserListService service will return OTHER.

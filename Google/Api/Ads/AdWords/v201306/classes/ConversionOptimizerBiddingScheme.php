@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Conversion optimizer bidding strategy helps you maximize your return on investment
  * (ROI) by automatically getting you the most possible conversions for your budget.

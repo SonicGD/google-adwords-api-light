@@ -30,8 +30,6 @@
  * @author     Vincent Tsao
  */
 
-namespace Google\Api\Ads\Common\Util;
-
 /**
  * A collection of utility methods for working with choices. Choices are
  * objects which contain many fields, but any time only one of which will
@@ -42,6 +40,7 @@ namespace Google\Api\Ads\Common\Util;
  */
 class ChoiceUtils
 {
+
     /**
      * The ChoiceUtils class is not meant to have any instances.
      *

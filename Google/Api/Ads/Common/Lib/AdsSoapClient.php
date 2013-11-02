@@ -30,20 +30,12 @@
  * @author     Eric Koleda
  * @author     Vincent Tsao
  */
-
-namespace Google\Api\Ads\Common\Lib;
-
-use DOMDocument;
-use DOMException;
-use Google\Api\Ads\Common\Util\DeprecationUtils;
-use Google\Api\Ads\Common\Util\Logger;
-use Google\Api\Ads\Common\Util\MapUtils;
-use Google\Api\Ads\Common\Util\SoapRequestXmlFixer;
-use Google\Api\Ads\Common\Util\XmlUtils;
-use ReflectionClass;
-use SoapClient;
-use SoapFault;
-use SoapHeader;
+require_once 'Google/Api/Ads/Common/Lib/AdsUser.php';
+require_once 'Google/Api/Ads/Common/Util/Logger.php';
+require_once 'Google/Api/Ads/Common/Util/MapUtils.php';
+require_once 'Google/Api/Ads/Common/Util/SoapRequestXmlFixer.php';
+require_once 'Google/Api/Ads/Common/Util/XmlUtils.php';
+require_once 'Google/Api/Ads/Common/Util/DeprecationUtils.php';
 
 /**
  * An extension of the {@link SoapClient} class intended to prepare
@@ -209,8 +201,6 @@ abstract class AdsSoapClient extends SoapClient
      * @param string $action   the SOAP action
      * @param string $version  the SOAP version
      *
-     * @param int    $one_way
-     *
      * @return string the XML SOAP response
      */
     function __doRequest(
@@ -220,12 +210,18 @@ abstract class AdsSoapClient extends SoapClient
         $version,
         $one_way = 0
     ) {
+        echo "\n---REQUEST----\n";
+        echo $request;
+        echo "\n-------\n";
         $this->lastRequest = $this->PrepareRequest(
             $request,
             $this->lastArguments,
             $this->lastHeaders
         );
-
+        echo "\n-------\n";
+        echo $this->lastRequest;
+        echo "\n-------\n";
+        var_dump($location, $action, $version);
         if (!empty($this->transportLayer)) {
             $response = $this->transportLayer->__doRequest(
                 $this->lastRequest,
@@ -267,6 +263,7 @@ abstract class AdsSoapClient extends SoapClient
     ) {
         DeprecationUtils::CheckAdsUserUsingOAuth2($this->user);
         try {
+            var_dump($function_name, $arguments, $options, $input_headers);
             $input_headers[] = $this->GenerateSoapHeader();
             $this->lastHeaders = $input_headers;
             $this->lastArguments = $arguments;
@@ -530,7 +527,7 @@ abstract class AdsSoapClient extends SoapClient
         array $arguments,
         array $headers
     ) {
-        $addXsiTypes = true;
+        $addXsiTypes = false;
         $removeEmptyElements = false;
         $replaceReferences = false;
 
@@ -672,8 +669,8 @@ abstract class AdsSoapClient extends SoapClient
         $typemaps[] = array(
             'type_ns'   => 'http://www.w3.org/2001/XMLSchema',
             'type_name' => 'long',
-            'from_xml'  => 'Google\Api\Ads\Common\Lib\AdsSoapClient::TypemapLongFromXml',
-            'to_xml'    => 'Google\Api\Ads\Common\Lib\AdsSoapClient::TypemapLongToXml'
+            'from_xml'  => 'AdsSoapClient::TypemapLongFromXml',
+            'to_xml'    => 'AdsSoapClient::TypemapLongToXml'
         );
         return $typemaps;
     }

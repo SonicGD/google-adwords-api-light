@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Specification for an ad size. This specification allows customization by
  * display options for more fine-grained control over returns, so that

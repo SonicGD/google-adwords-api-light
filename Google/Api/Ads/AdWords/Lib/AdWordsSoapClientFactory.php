@@ -24,16 +24,11 @@
  * @copyright  2011, Google Inc. All Rights Reserved.
  * @license    http://www.apache.org/licenses/LICENSE-2.0 Apache License,
  *             Version 2.0
- * @author     Adam Rogal <api.arogal@gmail.com>
+ * @author     Adam Rogal
  * @see        SoapClientFactory
  */
-
-namespace Google\Api\Ads\AdWords\Lib;
-
-/** Required classes. **/
-use Exception;
-use Google\Api\Ads\Common\Lib\AdsUser;
-use Google\Api\Ads\Common\Lib\SoapClientFactory;
+require_once dirname(__FILE__) . '/../../Common/Lib/AdsUser.php';
+require_once dirname(__FILE__) . '/../../Common/Lib/SoapClientFactory.php';
 
 /**
  * Factory class for SOAP clients for the AdWords API.
@@ -43,6 +38,7 @@ use Google\Api\Ads\Common\Lib\SoapClientFactory;
  */
 class AdWordsSoapClientFactory extends SoapClientFactory
 {
+
     /**
      * The constructor for the AdWords API SOAP client factory.
      *
@@ -53,8 +49,6 @@ class AdWordsSoapClientFactory extends SoapClientFactory
      *                                mode
      * @param bool    $partialFailure if the service should be created in
      *                                partialFailure mode
-     *
-     * @throws \Exception
      */
     public function __construct(
         AdsUser $user,
@@ -82,14 +76,8 @@ class AdWordsSoapClientFactory extends SoapClientFactory
      */
     public function DoRequireOnce($serviceName)
     {
-        require_once implode(
-            "/",
-            array(
-                dirname(__FILE__),
-                '..',
-                $this->GetVersion(),
-                $serviceName . '.php'
-            )
-        );
+        //require_once implode("/", array(dirname(__FILE__), '..',
+        //    $this->GetVersion(), $serviceName . '.php'));
     }
 }
+

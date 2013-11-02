@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Represents a product ad (known as a <a href=
  * "//support.google.com/adwords/bin/answer.py?answer=2456103">product

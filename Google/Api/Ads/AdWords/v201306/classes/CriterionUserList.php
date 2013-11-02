@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * UserList - represents a user list that is defined by the advertiser to be targeted.
  * <span class="constraint AdxEnabled">This is enabled for AdX.</span>

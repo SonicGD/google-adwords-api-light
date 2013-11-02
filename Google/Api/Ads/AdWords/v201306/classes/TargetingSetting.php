@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Setting for targeting related features.
  * This is applicable at Campaign and AdGroup level.

@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Abstract class representing an reply to an {@link EstimateRequest}.
  *

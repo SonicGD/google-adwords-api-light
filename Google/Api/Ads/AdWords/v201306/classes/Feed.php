@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * A Feed identifies a source of data and its schema. The data for the Feed can either be
  * user-entered via the FeedItemService or system-generated, in which case the data is provided

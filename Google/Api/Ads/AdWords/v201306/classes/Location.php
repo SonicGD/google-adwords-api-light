@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Represents Location criterion.
  * <p>A criterion of this type can only be created using an ID. A criterion of this type can be either targeted or excluded.

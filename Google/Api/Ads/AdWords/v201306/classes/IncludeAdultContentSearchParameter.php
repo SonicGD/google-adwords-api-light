@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * {@link SearchParameter} that specifies whether adult content should be
  * returned.<p>

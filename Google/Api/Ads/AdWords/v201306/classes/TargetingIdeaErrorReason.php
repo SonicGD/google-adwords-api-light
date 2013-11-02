@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * An enumeration of
  * {@link com.google.ads.api.services.targetingideas.TargetingIdeaService}

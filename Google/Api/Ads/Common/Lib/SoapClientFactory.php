@@ -28,18 +28,17 @@
  * @author     Eric Koleda
  * @author     Vincent Tsao
  */
-
-namespace Google\Api\Ads\Common\Lib;
+require_once 'Google/Api/Ads/Common/Lib/AdsUser.php';
 
 /**
  * Base class for all SOAP client factories of Ads client libraries.
  *
- * @abstract
  * @package    GoogleApiAdsCommon
  * @subpackage Lib
  */
 abstract class SoapClientFactory
 {
+
     private $user;
     private $version;
     private $server;
@@ -56,8 +55,6 @@ abstract class SoapClientFactory
      * @param string  $version     the version to generate clients for
      * @param string  $server      the server to generate clients for
      * @param string  $productName the product name (i.e. adwords)
-     *
-     * @param null    $headerOverrides
      *
      * @access protected
      */
@@ -94,7 +91,7 @@ abstract class SoapClientFactory
     public function GenerateSoapClient($serviceName)
     {
         if (extension_loaded('soap')) {
-            $serviceName = '\Google\Api\Ads\AdWords\\' . $this->GetVersion() . '\classes\\' . $serviceName;
+            $this->DoRequireOnce($serviceName);
             $soapClient = $this->GenerateServiceClient($serviceName);
             return $soapClient;
         } else {
@@ -269,3 +266,4 @@ abstract class SoapClientFactory
         return self::$COMPRESSION_KIND;
     }
 }
+

@@ -28,12 +28,7 @@
  * @author     Eric Koleda
  * @author     Vincent Tsao
  */
-
-namespace Google\Api\Ads\Common\Util;
-
-use DOMDocument;
-use DOMElement;
-use DOMException;
+require_once 'Google/Api/Ads/Common/Util/MapUtils.php';
 
 /**
  * A collection of utility methods for working with XML.
@@ -43,6 +38,7 @@ use DOMException;
  */
 class XmlUtils
 {
+
     /**
      * Gets the DOMDocument of the <var>$xml</var>.
      *
@@ -250,10 +246,12 @@ class XmlUtils
             } else {
                 return sprintf('%.0f', $object);
             }
-        } else if (is_bool($object)) {
-            return $object ? 'true' : 'false';
         } else {
-            return strval($object);
+            if (is_bool($object)) {
+                return $object ? 'true' : 'false';
+            } else {
+                return strval($object);
+            }
         }
     }
 
@@ -268,7 +266,6 @@ class XmlUtils
      * @param integer $errline contains the line number the error was raised at,
      *                         as an integer
      *
-     * @throws \DOMException
      * @return boolean <var>FALSE</var> if the normal error handler should
      *     continue
      */
@@ -283,3 +280,4 @@ class XmlUtils
         }
     }
 }
+

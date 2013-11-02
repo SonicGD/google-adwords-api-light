@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Results of a {@link ManagedCustomerService#mutateManager} call, which moves client customers to
  * new managers.

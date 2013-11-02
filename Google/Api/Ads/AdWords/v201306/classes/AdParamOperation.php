@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Represents an operation on an {@link AdParam}. The supported operators
  * are {@code SET} and {@code REMOVE}.

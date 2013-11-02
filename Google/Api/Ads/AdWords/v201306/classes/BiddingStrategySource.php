@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Indicates where bidding strategy came from: campaign, adgroup or criterion.
  *

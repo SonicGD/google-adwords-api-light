@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * <span class="constraint ContentsDistinct">This field must contain distinct elements.</span>
  * <span class="constraint ContentsNotNull">This field must not contain {@code null} elements.</span>

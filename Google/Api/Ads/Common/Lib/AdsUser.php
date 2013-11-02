@@ -1,5 +1,9 @@
 <?php
 /**
+ * User class for all API modules using the Ads API.
+ *
+ * PHP version 5
+ *
  * Copyright 2011, Google Inc. All Rights Reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,15 +28,16 @@
  * @author     Eric Koleda
  * @author     Vincent Tsao
  */
-
-namespace Google\Api\Ads\Common\Lib;
-
-use Google\Api\Ads\Common\Util\Logger;
-use Google\Api\Ads\Common\Util\OAuth2Handler;
-use SoapClient;
+require_once 'Google/Api/Ads/Common/Util/Logger.php';
+require_once 'Google/Api/Ads/Common/Util/SimpleOAuth2Handler.php';
+require_once 'Google/Api/Ads/Common/Lib/SoapClientFactory.php';
+require_once 'Google/Api/Ads/Common/Lib/ValidationException.php';
 
 /**
  * User class for all API modules using the Ads API.
+ *
+ * @package    GoogleApiAdsCommon
+ * @subpackage Lib
  */
 abstract class AdsUser
 {
@@ -626,3 +631,4 @@ abstract class AdsUser
         }
     }
 }
+

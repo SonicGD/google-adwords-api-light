@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Represents a <a href=
  * "//www.google.com/adwords/displaynetwork/plan-creative-campaigns/display-ad-builder.html"

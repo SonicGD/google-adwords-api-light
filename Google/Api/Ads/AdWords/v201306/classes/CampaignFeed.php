@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * CampaignFeeds are used to link a feed to a campaign using a matching function,
  * making the feed's feed items available in the campaign's ads for substitution.

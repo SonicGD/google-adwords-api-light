@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Represents a failure result for a mutate operation that was applied in a
  * transactional batch. It does not imply that the corresponding operation

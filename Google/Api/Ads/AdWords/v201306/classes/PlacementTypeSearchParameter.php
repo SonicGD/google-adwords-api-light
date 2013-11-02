@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * A {@link SearchParameter} for {@code PLACEMENT} {@link IdeaType}s
  * used to filter results based on the type of website, known as

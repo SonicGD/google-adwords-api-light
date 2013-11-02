@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Targets list abstract class (a list of a given type of targets along with their campaign ID).
  *

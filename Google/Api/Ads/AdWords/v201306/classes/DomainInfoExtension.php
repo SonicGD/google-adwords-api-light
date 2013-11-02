@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Domain extension, which adds domain info to ads.
  * <span class="constraint Beta">This is a beta feature.</span>

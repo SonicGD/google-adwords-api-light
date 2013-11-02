@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Contains a subset of {@link Alert}s resulting from the filtering and paging,
  * returned by {@link AlertService#get(AlertSelector)}.

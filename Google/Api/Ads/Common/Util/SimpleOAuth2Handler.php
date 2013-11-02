@@ -1,5 +1,9 @@
 <?php
 /**
+ * A simple OAuth 2.0 handler.
+ *
+ * PHP version 5
+ *
  * Copyright 2011, Google Inc. All Rights Reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,11 +27,14 @@
  * @author     Eric Koleda
  * @author     Vincent Tsao
  */
-
-namespace Google\Api\Ads\Common\Util;
+require_once 'Google/Api/Ads/Common/Util/OAuth2Handler.php';
+require_once 'Google/Api/Ads/Common/Util/CurlUtils.php';
 
 /**
  * A simple OAuth 2.0 handler.
+ *
+ * @package    GoogleApiAdsCommon
+ * @subpackage Util
  */
 class SimpleOAuth2Handler extends OAuth2Handler
 {
@@ -109,7 +116,6 @@ class SimpleOAuth2Handler extends OAuth2Handler
      * @param string $url    the URL to make the request to
      * @param array  $params the parameters to include in the POST body
      *
-     * @throws OAuth2Exception
      * @return OAuthToken the returned token
      */
     protected function MakeRequest($url, $params)
@@ -128,10 +134,5 @@ class SimpleOAuth2Handler extends OAuth2Handler
             throw new OAuth2Exception($response, $httpCode);
         }
         return json_decode($response, true);
-    }
-
-    public static function className()
-    {
-        return __CLASS__;
     }
 }

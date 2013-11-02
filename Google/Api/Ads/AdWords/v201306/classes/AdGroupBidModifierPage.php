@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Contains a subset of adgroup bid modifiers resulting from a call to
  * {@link AdGroupBidModifierService#get}.

@@ -29,15 +29,7 @@
  * @author     Eric Koleda
  * @author     Vincent Tsao
  */
-
-namespace Google\Api\Ads\Common\Util;
-
-use DOMElement;
-use DOMNode;
-use DOMNodeList;
-use DOMXPath;
-use SoapHeader;
-use SoapVar;
+require_once 'Google/Api/Ads/Common/Util/XmlUtils.php';
 
 /**
  * The SOAP XML request fixer used to fix some inconsistencies among the
@@ -48,6 +40,7 @@ use SoapVar;
  */
 class SoapRequestXmlFixer
 {
+
     private static $XSI_NAMESPACE = 'http://www.w3.org/2001/XMLSchema-instance';
 
     private $addXsiTypes;
@@ -276,3 +269,4 @@ class SoapRequestXmlFixer
         }
     }
 }
+

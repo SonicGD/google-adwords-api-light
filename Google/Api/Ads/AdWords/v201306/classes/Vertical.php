@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Use verticals to target or exclude placements in the Google Display Network
  * based on the category into which the placement falls (for example, "Pets &amp;

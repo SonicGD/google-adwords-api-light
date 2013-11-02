@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * A FeedMapping represents a mapping between feed attributes in a specific feed
  * and placeholder fields for a specific placeholder type. This will tell the

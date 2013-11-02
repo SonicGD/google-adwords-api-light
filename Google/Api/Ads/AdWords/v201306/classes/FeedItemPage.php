@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Contains a subset of feed items resulting from a {@link FeedItemService#get} call.
  *

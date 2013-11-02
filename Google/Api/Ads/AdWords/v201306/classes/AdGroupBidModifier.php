@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Represents an adgroup level bid modifier override for campaign level criterion
  * bid modifier values.

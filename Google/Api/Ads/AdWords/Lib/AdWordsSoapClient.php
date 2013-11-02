@@ -24,25 +24,20 @@
  * @copyright  2011, Google Inc. All Rights Reserved.
  * @license    http://www.apache.org/licenses/LICENSE-2.0 Apache License,
  *             Version 2.0
- * @author     Adam Rogal <api.arogal@gmail.com>
+ * @author     Adam Rogal
  * @see        AdsSoapClient
  */
-
-namespace Google\Api\Ads\AdWords\Lib;
-
-use DOMException;
-use Google\Api\Ads\Common\Lib\AdsSoapClient;
-use Google\Api\Ads\Common\Lib\AdsUser;
-use SoapHeader;
+require_once dirname(__FILE__) . '/../../Common/Lib/AdsSoapClient.php';
 
 /**
  * An extension of the {@link AdsSoapClient} for the AdWords API.
  *
- * @package    GoogleApiAdsAdWords
+ * @package GoogleApiAdsAdWords
  * @subpackage Lib
  */
 class AdWordsSoapClient extends AdsSoapClient
 {
+
     /**
      * Constructor for the AdWords API SOAP client.
      *
@@ -113,7 +108,7 @@ class AdWordsSoapClient extends AdsSoapClient
             $headerObject->$var = $this->GetHeaderValue($var);
         }
         return new SoapHeader($this->serviceNamespace, 'RequestHeader',
-            $headerObject, false);
+            $headerObject, FALSE);
     }
 
     /**
@@ -251,5 +246,6 @@ class AdWordsSoapClient extends AdsSoapClient
         . $this->GetLastUnits() . ' server=' . $this->GetServer()
         . ' isFault=' . ($this->IsFault() ? 'true' : 'false')
         . ' faultMessage=' . $this->GetLastFaultMessage();
-    }
+  }
 }
+

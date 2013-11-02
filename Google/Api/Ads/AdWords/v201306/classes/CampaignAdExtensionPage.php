@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Represents a page of {@link CampaignAdExtension}s resulting from the query
  * done by {@link CampaignAdExtensionService}.

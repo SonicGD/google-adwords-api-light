@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Data associated with an advertiser experiment for this {@link BiddableAdGroupCriterion}.
  *

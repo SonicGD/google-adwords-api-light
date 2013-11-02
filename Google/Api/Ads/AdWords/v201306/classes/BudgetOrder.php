@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * A {@link BudgetOrder} links an account wide budget with a {@link BillingAccount}.
  *

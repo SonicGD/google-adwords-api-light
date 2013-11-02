@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Contains a subset of {@link TargetingIdea}s from the search criteria
  * specified by a {@link TargetingIdeaSelector}.

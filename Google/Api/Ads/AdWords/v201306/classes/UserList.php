@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Represents a UserList object that is sent over the wire.
  * This is a list of users an account may target.

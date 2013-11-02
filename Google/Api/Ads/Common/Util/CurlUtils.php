@@ -1,5 +1,9 @@
 <?php
 /**
+ * A collection of utility methods for working with cURL.
+ *
+ * PHP version 5
+ *
  * Copyright 2011, Google Inc. All Rights Reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,10 +28,11 @@
  * @author     Vincent Tsao
  */
 
-namespace Google\Api\Ads\Common\Util;
-
 /**
  * A collection of utility methods for working with cURL.
+ *
+ * @package    GoogleApiAdsCommon
+ * @subpackage Util
  */
 class CurlUtils
 {

@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Represents a feed item's value for a particular feed attribute. A feed item's value is
  * composed of a collection of these attribute values.

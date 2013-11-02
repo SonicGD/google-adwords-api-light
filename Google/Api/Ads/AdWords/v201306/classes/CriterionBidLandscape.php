@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * The bid landscape for a criterion.  A bid landscape estimates how a
  * a criterion will perform based on different bid amounts.

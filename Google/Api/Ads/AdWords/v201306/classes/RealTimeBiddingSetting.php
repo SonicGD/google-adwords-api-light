@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Settings for Real-Time Bidding, a feature only available for campaigns
  * targeting the Ad Exchange network.

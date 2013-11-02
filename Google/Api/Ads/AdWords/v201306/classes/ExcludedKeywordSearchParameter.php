@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * A {@link SearchParameter} for {@code KEYWORD} {@link IdeaType}s that
  * specifies {@link Keyword}s that should be excluded from the results.<p>

@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * AccessReason in the AccountUserListStatus table. This indicates the way the userlist is
  * related to a user.

@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Manual impression based bidding where user pays per thousand impressions.
  * <span class="constraint AdxEnabled">This is enabled for AdX.</span>

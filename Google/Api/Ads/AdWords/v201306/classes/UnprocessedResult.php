@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Indicates that the mutate operation was not processed. This could result
  * if the job was aborted by the back-end workflow because the developer's API

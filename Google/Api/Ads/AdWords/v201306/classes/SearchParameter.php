@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * A set of {@link SearchParameter}s are supplied to the
  * {@link com.google.ads.api.services.targetingideas.TargetingIdeaSelector}

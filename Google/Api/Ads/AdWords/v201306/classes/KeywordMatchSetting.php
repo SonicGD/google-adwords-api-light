@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Improved exact and phrase match option includes misspellings, plurals,
  * and other close variants of your keywords.

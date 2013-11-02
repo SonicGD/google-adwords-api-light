@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Represents a function where its operator is applied to its argument operands
  * resulting in a return value. It has the form

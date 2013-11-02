@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Conditions to filter the products defined in product feed for targeting.
  * The condition is defined as operand=argument.

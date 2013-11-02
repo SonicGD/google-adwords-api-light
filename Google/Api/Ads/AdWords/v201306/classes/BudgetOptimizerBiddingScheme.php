@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * In budget optimizer, Google automatically places bids for the user based on
  * their daily/monthly budget.

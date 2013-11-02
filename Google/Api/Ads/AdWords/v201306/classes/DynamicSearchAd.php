@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Represents a dynamic search ad. This ad will have its headline and
  * destination URL auto-generated at serving time according to domain name

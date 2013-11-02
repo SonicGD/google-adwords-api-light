@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Data associated with rich media extension attributes.
  * <span class="constraint AdxEnabled">This is enabled for AdX.</span>

@@ -31,18 +31,12 @@
  * @author     Paul Matthews
  * @see        AdsUser
  */
-
-namespace Google\Api\Ads\AdWords\Lib;
-
-use Google\Api\Ads\AdWords\Util\ReportUtils;
-use Google\Api\Ads\Common\Lib\AdsUser;
-use Google\Api\Ads\Common\Lib\SoapClientFactory;
-use Google\Api\Ads\Common\Lib\ValidationException;
-use Google\Api\Ads\Common\Util\ApiPropertiesUtils;
-use Google\Api\Ads\Common\Util\AuthToken;
-use Google\Api\Ads\Common\Util\Logger;
-use Google\Api\Ads\Common\Util\SimpleOAuth2Handler;
-use SoapClient;
+require_once dirname(__FILE__) . '/../../Common/Lib/AdsUser.php';
+require_once dirname(__FILE__) . '/../../Common/Util/ApiPropertiesUtils.php';
+require_once dirname(__FILE__) . '/../../Common/Util/AuthToken.php';
+require_once dirname(__FILE__) . '/../Util/ReportUtils.php';
+require_once 'AdWordsSoapClientFactory.php';
+require_once 'AdWordsConstants.php';
 
 /**
  * User class for the AdWords API to create SOAP clients to the available API
@@ -55,6 +49,7 @@ class AdWordsUser extends AdsUser
 {
 
     const OAUTH2_SCOPE = 'https://adwords.google.com/api/adwords/';
+    const OAUTH2_HANDLER_CLASS = 'SimpleOAuth2Handler';
 
     /**
      * The name of the SOAP header that represents the user agent making API
@@ -112,8 +107,6 @@ class AdWordsUser extends AdsUser
      *                                      <var>NULL</var>, the default settings INI file will be loaded
      * @param string $authToken             the authToken to use for requests
      * @param array  $oauth2Info            the OAuth 2.0 information to use for requests
-     *
-     * @throws ValidationException
      */
     public function __construct(
         $authenticationIniPath = null,
@@ -266,7 +259,7 @@ class AdWordsUser extends AdsUser
     /**
      * Gets the service by its service name and group.
      *
-     * @param string            $serviceName    the service name
+     * @param                   $serviceName    the service name
      * @param string            $version        the version of the service to get. If
      *                                          <var>NULL</var>, then the default version will be used
      * @param string            $server         the server to make the request to. If
@@ -309,7 +302,7 @@ class AdWordsUser extends AdsUser
      * Loads the classes within a service, so they can be used before the service
      * is constructed.
      *
-     * @param string $serviceName the service name
+     * @param        $serviceName the service name
      * @param string $version     the version of the service to get. If
      *                            <var>NULL</var>, then the default version will be used
      */
@@ -320,7 +313,7 @@ class AdWordsUser extends AdsUser
         }
         $serviceFactory = new AdWordsSoapClientFactory($this, $version, null, null,
             null);
-        //$serviceFactory->DoRequireOnce($serviceName);
+        $serviceFactory->DoRequireOnce($serviceName);
     }
 
     /**
@@ -547,7 +540,7 @@ class AdWordsUser extends AdsUser
      */
     public function GetDefaultOAuth2Handler($className = null)
     {
-        $className = !empty($className) ? $className : SimpleOAuth2Handler::className();
+        $className = !empty($className) ? $className : self::OAUTH2_HANDLER_CLASS;
         return new $className($this->GetAuthServer(), self::OAUTH2_SCOPE);
     }
 
@@ -570,3 +563,4 @@ class AdWordsUser extends AdsUser
         }
     }
 }
+

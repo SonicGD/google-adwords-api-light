@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * The result of a call to AdGroupFeedService#get. Contains a list of
  * associations between ad groups and feeds.

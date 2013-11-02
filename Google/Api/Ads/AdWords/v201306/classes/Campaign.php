@@ -1,12 +1,9 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Data representing an AdWords campaign.
  *
- * @package GoogleApiAdsAdWords
+ * @package    GoogleApiAdsAdWords
  * @subpackage v201306
  */
 class Campaign
@@ -161,4 +158,5 @@ class Campaign
         $this->biddingStrategyConfiguration = $biddingStrategyConfiguration;
         $this->forwardCompatibilityMap = $forwardCompatibilityMap;
         $this->enhanced = $enhanced;
-  }}
+    }
+}

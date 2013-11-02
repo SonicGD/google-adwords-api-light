@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Describes how a result set of alerts should be filtered based on the triggering account's
  * ability to manage clients.

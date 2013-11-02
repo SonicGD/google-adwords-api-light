@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Eligibility data for Campaign to transition to Conversion Optimizer
  *

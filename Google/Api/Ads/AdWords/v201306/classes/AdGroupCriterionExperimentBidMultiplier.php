@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Bid multiplier used to modify the bid of a criterion while running
  * an experiment.

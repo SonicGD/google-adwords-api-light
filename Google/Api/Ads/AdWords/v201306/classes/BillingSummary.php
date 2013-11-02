@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Represents the billing summary of the job that provides the overall cost of
  * the job's operations, i.e., for the work done <i>by</i> the job. This

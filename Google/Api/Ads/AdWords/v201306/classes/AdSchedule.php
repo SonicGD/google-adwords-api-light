@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Represents an AdSchedule Criterion.
  * AdSchedule is specified as day and time of the week criteria to target

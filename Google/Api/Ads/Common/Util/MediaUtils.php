@@ -30,8 +30,6 @@
  * @author     Vincent Tsao
  */
 
-namespace Google\Api\Ads\Common\Util;
-
 /**
  * A utility class to handle data of media assets (such as image, SWF,
  * or video files).
@@ -41,6 +39,7 @@ namespace Google\Api\Ads\Common\Util;
  */
 class MediaUtils
 {
+
     /**
      * The MediaUtils class is not meant to have any instances.
      *

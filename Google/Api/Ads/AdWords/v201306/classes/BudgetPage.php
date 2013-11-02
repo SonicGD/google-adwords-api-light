@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Contains a list of budgets resulting from the filtering and paging of
  * {@link BudgetService#get} call.

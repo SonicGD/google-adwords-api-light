@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Minutes in an hour.  Currently only 0, 15, 30, and 45 are supported
  *

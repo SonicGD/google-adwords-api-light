@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Placement request/response object which provides details about display
  * ad types, options, and other available configuration variables.

@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Contains a subset of campaign resulting from the filtering and paging of the
  * {@link com.google.ads.api.services.campaignmgmt.campaign.CampaignService#get} call.

@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Contains a list of bidding strategies resulting from the filtering and paging
  * of {@link BiddingStrategy#get} call.

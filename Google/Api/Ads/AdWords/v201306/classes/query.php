@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
  *

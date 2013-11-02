@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Base class for AdExtension objects. An AdExtension is an extension to
  * an existing ad or metadata that will process into an extension.

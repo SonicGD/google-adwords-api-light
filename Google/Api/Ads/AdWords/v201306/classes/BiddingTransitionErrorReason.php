@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Reason for bidding transition error.
  * It is used by capability service as denial reasons, for bidding transition

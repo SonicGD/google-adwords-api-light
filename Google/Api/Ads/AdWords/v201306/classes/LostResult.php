@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Represents the result of processing an individual mutate operation that
  * however failed to get durably saved despite the service's best efforts.

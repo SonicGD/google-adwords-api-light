@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Match type of a keyword. i.e. the way we match a keyword string with
  * search queries.

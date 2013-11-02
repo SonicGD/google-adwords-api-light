@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Operation for moving ManagedCustomer links. See {@link ManagedCustomerService#mutateManager}.
  *

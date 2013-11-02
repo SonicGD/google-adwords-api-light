@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Bidding strategy is available for enhanced campaign only.
  * <span class="constraint Beta">This is a beta feature.</span>

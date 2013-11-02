@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * A ForwardComptibilityError represents possible errors when using the forwardCompatibilityMap
  * in some of the common services.

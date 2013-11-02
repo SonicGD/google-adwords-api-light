@@ -29,10 +29,6 @@
  * @author     Vincent Tsao
  */
 
-namespace Google\Api\Ads\Common\Util;
-
-use Exception;
-
 /**
  * Exception class for any AuthToken (ClientLogin) error.
  *
@@ -41,6 +37,7 @@ use Exception;
  */
 class AuthTokenException extends Exception
 {
+
     private $error;
     private $url;
     private $captchaToken;

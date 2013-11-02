@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Represents a multiplier to modify a bid. The final value after
  * modification is represented by the multiplied bid value.

@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Indicates that this instance is a subtype of ListReturnValue.
  * Although this field is returned in the response, it is ignored on input

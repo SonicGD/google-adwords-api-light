@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * {@link Attribute} type that contains a list of {@link MonthlySearchVolume}
  * values. The list contains the past 12 {@link MonthlySearchVolume}s

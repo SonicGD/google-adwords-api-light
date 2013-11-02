@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * A {@link SearchParameter} for {@code KEYWORD} {@link IdeaType}s that
  * sets a keyword category that all search results should belong to.

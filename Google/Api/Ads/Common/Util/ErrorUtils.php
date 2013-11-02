@@ -28,11 +28,6 @@
  * @author     Vincent Tsao
  */
 
-namespace Google\Api\Ads\Common\Util;
-
-use SoapFault;
-use SoapVar;
-
 /**
  * A collection of utility methods for working with errors.
  *
@@ -41,6 +36,7 @@ use SoapVar;
  */
 class ErrorUtils
 {
+
     private static $API_EXCEPTION_FIELD_NAME = 'ApiExceptionFault';
     private static $OPERATION_INDEX_OGNL_REGEX = '/^operations\[(\d+)\]/';
 

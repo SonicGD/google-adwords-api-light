@@ -1,5 +1,9 @@
 <?php
 /**
+ * A collection of utility methods for working with reports.
+ *
+ * PHP version 5
+ *
  * Copyright 2011, Google Inc. All Rights Reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,20 +24,19 @@
  * @copyright  2011, Google Inc. All Rights Reserved.
  * @license    http://www.apache.org/licenses/LICENSE-2.0 Apache License,
  *             Version 2.0
- * @author     Eric Koleda <api.ekoleda@gmail.com>
- * @author     Vincent Tsao <api.vtsao@gmail.com>
+ * @author     Eric Koleda
+ * @author     Vincent Tsao
  */
-
-namespace Google\Api\Ads\AdWords\Util;
-
-use Exception;
-use Google\Api\Ads\AdWords\Lib\AdWordsUser;
-use Google\Api\Ads\Common\Util\CurlUtils;
-use Google\Api\Ads\Common\Util\Logger;
-use Google\Api\Ads\Common\Util\XmlUtils;
+require_once dirname(__FILE__) . '/../Lib/AdWordsUser.php';
+require_once dirname(__FILE__) . '/../../Common/Util/CurlUtils.php';
+require_once dirname(__FILE__) . '/../../Common/Util/Logger.php';
+require_once dirname(__FILE__) . '/../../Common/Util/XmlUtils.php';
 
 /**
  * A collection of utility methods for working with reports.
+ *
+ * @package    GoogleApiAdsAdWords
+ * @subpackage Util
  */
 class ReportUtils
 {
@@ -148,8 +151,6 @@ class ReportUtils
      * @param array  $params  the parameters to pass in the request
      * @param string $path    the optional path to download the report to
      *
-     * @throws ReportDownloadException
-     * @throws null
      * @return mixed if path isn't specified the contents of the report,
      *     otherwise the size in bytes of the downloaded report
      */
@@ -333,7 +334,6 @@ class ReportUtils
      * @param string $reportQuery  the report query, as string
      * @param string $reportFormat the format to request report in, as string
      *
-     * @throws ReportDownloadException
      * @return array the parameters
      */
     private static function GetQueryParams($reportQuery, $reportFormat)
@@ -353,7 +353,6 @@ class ReportUtils
      * @param string      $url     the URL the request will be made to
      * @param array       $options the options for the download
      *
-     * @throws ReportDownloadException
      * @return array and array of strings, which are header names and values
      */
     private static function GetHeaders($user, $url, array $options = null)
@@ -519,7 +518,7 @@ if (!class_exists("ReportDefinition", false)) {
         /**
          * Gets the namesapce of this class
          *
-         * @return string the namespace of this class
+         * @return the namespace of this class
          */
         public function getNamespace()
         {
@@ -529,7 +528,7 @@ if (!class_exists("ReportDefinition", false)) {
         /**
          * Gets the xsi:type name of this class
          *
-         * @return string the xsi:type name of this class
+         * @return the xsi:type name of this class
          */
         public function getXsiTypeName()
         {
@@ -602,7 +601,7 @@ if (!class_exists("Selector", false)) {
         /**
          * Gets the namesapce of this class
          *
-         * @return string the namespace of this class
+         * @return the namespace of this class
          */
         public function getNamespace()
         {
@@ -612,11 +611,11 @@ if (!class_exists("Selector", false)) {
         /**
          * Gets the xsi:type name of this class
          *
-         * @return string the xsi:type name of this class
+         * @return the xsi:type name of this class
          */
         public function getXsiTypeName()
         {
-            return "";
+            return "Selector";
         }
 
         public function __construct(
@@ -665,7 +664,7 @@ if (!class_exists("Predicate", false)) {
         /**
          * Gets the namesapce of this class
          *
-         * @return string the namespace of this class
+         * @return the namespace of this class
          */
         public function getNamespace()
         {
@@ -675,11 +674,11 @@ if (!class_exists("Predicate", false)) {
         /**
          * Gets the xsi:type name of this class
          *
-         * @return string the xsi:type name of this class
+         * @return the xsi:type name of this class
          */
         public function getXsiTypeName()
         {
-            return "";
+            return "Predicate";
         }
 
         public function __construct($field = null, $operator = null, $values = null)
@@ -703,7 +702,7 @@ if (!class_exists("PredicateOperator", false)) {
         /**
          * Gets the namesapce of this class
          *
-         * @return string the namespace of this class
+         * @return the namespace of this class
          */
         public function getNamespace()
         {
@@ -713,11 +712,11 @@ if (!class_exists("PredicateOperator", false)) {
         /**
          * Gets the xsi:type name of this class
          *
-         * @return string the xsi:type name of this class
+         * @return the xsi:type name of this class
          */
         public function getXsiTypeName()
         {
-            return "";
+            return "Predicate.Operator";
         }
 
         public function __construct()
@@ -751,7 +750,7 @@ if (!class_exists("DateRange", false)) {
         /**
          * Gets the namesapce of this class
          *
-         * @return string the namespace of this class
+         * @return the namespace of this class
          */
         public function getNamespace()
         {
@@ -761,11 +760,11 @@ if (!class_exists("DateRange", false)) {
         /**
          * Gets the xsi:type name of this class
          *
-         * @return string the xsi:type name of this class
+         * @return the xsi:type name of this class
          */
         public function getXsiTypeName()
         {
-            return "";
+            return "DateRange";
         }
 
         public function __construct($min = null, $max = null)
@@ -800,7 +799,7 @@ if (!class_exists("OrderBy", false)) {
         /**
          * Gets the namesapce of this class
          *
-         * @return string the namespace of this class
+         * @return the namespace of this class
          */
         public function getNamespace()
         {
@@ -810,11 +809,11 @@ if (!class_exists("OrderBy", false)) {
         /**
          * Gets the xsi:type name of this class
          *
-         * @return string the xsi:type name of this class
+         * @return the xsi:type name of this class
          */
         public function getXsiTypeName()
         {
-            return "";
+            return "OrderBy";
         }
 
         public function __construct($field = null, $sortOrder = null)
@@ -851,7 +850,7 @@ if (!class_exists("Paging", false)) {
         /**
          * Gets the namesapce of this class
          *
-         * @return string the namespace of this class
+         * @return the namespace of this class
          */
         public function getNamespace()
         {
@@ -861,11 +860,11 @@ if (!class_exists("Paging", false)) {
         /**
          * Gets the xsi:type name of this class
          *
-         * @return string the xsi:type name of this class
+         * @return the xsi:type name of this class
          */
         public function getXsiTypeName()
         {
-            return "";
+            return "Paging";
         }
 
         public function __construct($startIndex = null, $numberResults = null)
@@ -888,7 +887,7 @@ if (!class_exists("SortOrder", false)) {
         /**
          * Gets the namesapce of this class
          *
-         * @return string the namespace of this class
+         * @return the namespace of this class
          */
         public function getNamespace()
         {
@@ -898,11 +897,11 @@ if (!class_exists("SortOrder", false)) {
         /**
          * Gets the xsi:type name of this class
          *
-         * @return string the xsi:type name of this class
+         * @return the xsi:type name of this class
          */
         public function getXsiTypeName()
         {
-            return "";
+            return "SortOrder";
         }
 
         public function __construct()
@@ -923,7 +922,7 @@ if (!class_exists("ReportDefinitionReportType", false)) {
         /**
          * Gets the namesapce of this class
          *
-         * @return string the namespace of this class
+         * @return the namespace of this class
          */
         public function getNamespace()
         {
@@ -933,11 +932,11 @@ if (!class_exists("ReportDefinitionReportType", false)) {
         /**
          * Gets the xsi:type name of this class
          *
-         * @return string the xsi:type name of this class
+         * @return the xsi:type name of this class
          */
         public function getXsiTypeName()
         {
-            return "";
+            return "ReportDefinition.ReportType";
         }
 
         public function __construct()
@@ -958,7 +957,7 @@ if (!class_exists("ReportDefinitionDateRangeType", false)) {
         /**
          * Gets the namesapce of this class
          *
-         * @return string the namespace of this class
+         * @return the namespace of this class
          */
         public function getNamespace()
         {
@@ -968,11 +967,11 @@ if (!class_exists("ReportDefinitionDateRangeType", false)) {
         /**
          * Gets the xsi:type name of this class
          *
-         * @return string the xsi:type name of this class
+         * @return the xsi:type name of this class
          */
         public function getXsiTypeName()
         {
-            return "";
+            return "ReportDefinition.DateRangeType";
         }
 
         public function __construct()
@@ -995,7 +994,7 @@ if (!class_exists("DownloadFormat", false)) {
         /**
          * Gets the namesapce of this class
          *
-         * @return string the namespace of this class
+         * @return the namespace of this class
          */
         public function getNamespace()
         {
@@ -1005,11 +1004,11 @@ if (!class_exists("DownloadFormat", false)) {
         /**
          * Gets the xsi:type name of this class
          *
-         * @return string the xsi:type name of this class
+         * @return the xsi:type name of this class
          */
         public function getXsiTypeName()
         {
-            return "";
+            return "DownloadFormat";
         }
 
         public function __construct()
@@ -1020,3 +1019,4 @@ if (!class_exists("DownloadFormat", false)) {
         }
     }
 }
+

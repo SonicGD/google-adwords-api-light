@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * Represents an ad level ad extension override. An ad extension override
  * specifies the ad extension that must be used if the ad is served with

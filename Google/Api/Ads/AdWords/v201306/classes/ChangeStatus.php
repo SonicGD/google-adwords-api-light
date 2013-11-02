@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * An enum used to classify the types of changes that have been made to
  * an adgroup/campaign during a specified date range.  This only refers

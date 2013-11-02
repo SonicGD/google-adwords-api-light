@@ -28,8 +28,6 @@
  * @author     Vincent Tsao
  */
 
-namespace Google\Api\Ads\Common\Util;
-
 /**
  * A collection of utility methods for working with URLs.
  *
@@ -38,6 +36,7 @@ namespace Google\Api\Ads\Common\Util;
  */
 class UrlUtils
 {
+
     /**
      * The UrlUtils class is not meant to have any instances.
      *
@@ -88,3 +87,4 @@ class UrlUtils
         }
     }
 }
+

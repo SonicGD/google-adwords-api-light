@@ -1,8 +1,5 @@
 <?php
 
-namespace Google\Api\Ads\AdWords\v201306\classes;
-
-
 /**
  * A placement request and response value indicating the type of site or other medium
  * (for example, a web page, in a feed, in a video) where ads will appear.

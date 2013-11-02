@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Manual impression based bidding where user pays per thousand impressions.
  * <span class="constraint AdxEnabled">This is enabled for AdX.</span>

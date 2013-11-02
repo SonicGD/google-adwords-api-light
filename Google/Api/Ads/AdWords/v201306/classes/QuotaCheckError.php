@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Encapsulates the errors thrown during developer quota checks.
  *

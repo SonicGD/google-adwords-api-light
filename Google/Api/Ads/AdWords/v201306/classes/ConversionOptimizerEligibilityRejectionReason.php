@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Campaign is not active
  *

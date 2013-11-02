@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * An interface for a logical user list operand. A logical user list is a
  * combination of logical rules. Each rule is defined as a logical operator and

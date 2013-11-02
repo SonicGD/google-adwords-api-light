@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * The current status of an Ad.
  *

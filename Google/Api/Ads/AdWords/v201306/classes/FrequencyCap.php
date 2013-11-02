@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * A frequency cap is the maximum number of times an ad (or some set of ads) can
  * be shown to a user over a particular time period.

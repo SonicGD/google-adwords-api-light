@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Class representing a location with its geographic coordinates.
  *

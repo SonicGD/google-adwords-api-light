@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Reason for bidding transition error.
  * It is used by capability service as denial reasons, for bidding transition

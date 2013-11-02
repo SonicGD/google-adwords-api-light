@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Points to a substring within an ad field or criterion.
  *

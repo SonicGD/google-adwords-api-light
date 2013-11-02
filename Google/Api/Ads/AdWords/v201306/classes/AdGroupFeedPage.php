@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * The result of a call to AdGroupFeedService#get. Contains a list of
  * associations between ad groups and feeds.

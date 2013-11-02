@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Contains a subset of campaign criteria resulting from a call to
  * {@link CampaignCriterionService#get}.

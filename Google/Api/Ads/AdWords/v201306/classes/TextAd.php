@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Represents a TextAd.
  * <span class="constraint AdxEnabled">This is disabled for AdX when it is contained within Operators: ADD, SET.</span>

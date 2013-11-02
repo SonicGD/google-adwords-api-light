@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Represents possible error codes for {@link Selector}.
  *

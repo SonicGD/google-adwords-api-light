@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * The result of processing an {@link OperationStream}.
  *

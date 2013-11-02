@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Errors encountered when trying to authorize a user.
  *

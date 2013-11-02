@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Base class for AdExtension objects. An AdExtension is an extension to
  * an existing ad or metadata that will process into an extension.

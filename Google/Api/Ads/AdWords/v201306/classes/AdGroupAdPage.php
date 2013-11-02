@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Represents a page of {@link AdGroupAd}s resulting from the query done by
  * {@link AdGroupAdService}.

@@ -1,5 +1,8 @@
 <?php
 
+require_once('FeedItemService.require.php');
+
+
 /**
  * FeedItemService
  *

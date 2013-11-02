@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Enumerates possible sources for bid modifier.
  *

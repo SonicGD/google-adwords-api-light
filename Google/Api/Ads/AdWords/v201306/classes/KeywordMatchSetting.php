@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Improved exact and phrase match option includes misspellings, plurals,
  * and other close variants of your keywords.

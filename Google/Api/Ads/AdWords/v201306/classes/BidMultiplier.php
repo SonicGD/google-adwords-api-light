@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Represents a multiplier to modify a bid. The final value after
  * modification is represented by the multiplied bid value.

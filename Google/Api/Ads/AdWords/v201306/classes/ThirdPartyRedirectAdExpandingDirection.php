@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Allowed expanding directions for ads that are expandable.
  *

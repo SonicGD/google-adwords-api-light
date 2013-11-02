@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
  *

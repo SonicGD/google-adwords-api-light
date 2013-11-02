@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Errors caused by invalid usage of FeedMappingService
  *

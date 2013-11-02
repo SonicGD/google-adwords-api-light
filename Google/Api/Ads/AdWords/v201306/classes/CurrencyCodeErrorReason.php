@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Encodes the reason (cause) of a particular {@link CurrencyCodeError}.
  *

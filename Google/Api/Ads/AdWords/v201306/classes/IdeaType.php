@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Represents the type of idea.
  * <span class="constraint AdxEnabled">This is disabled for AdX.</span>

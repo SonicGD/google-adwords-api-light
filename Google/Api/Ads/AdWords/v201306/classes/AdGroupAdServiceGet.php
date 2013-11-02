@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * <span class="constraint Required">This field is required and should not be {@code null}.</span>
  *
@@ -9,9 +11,9 @@
  *
  * @param serviceSelector The selector specifying the {@link AdGroupAd}s to return.
  *
- * @return The page containing the AdGroupAds that meet the criteria specified by the selector.
+*@return The page containing the AdGroupAds that meet the criteria specified by the selector.
  * @throws ApiException when there is at least one error with the request.
- * @package    GoogleApiAdsAdWords
+ * @package GoogleApiAdsAdWords
  * @subpackage v201306
  */
 class AdGroupAdServiceGet
@@ -45,5 +47,4 @@ class AdGroupAdServiceGet
     public function __construct($serviceSelector = null)
     {
         $this->serviceSelector = $serviceSelector;
-    }
-}
+  }}

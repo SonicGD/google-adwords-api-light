@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Contains results of traffic estimation request.
  *

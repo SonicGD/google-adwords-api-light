@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Returns details of the authorized customer.
  *

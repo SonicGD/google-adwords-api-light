@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Statistics about an ad or criterion within an ad group or campaign.
  *

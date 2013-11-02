@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Represents a success result of processing a mutate operation that returned
  * a value.

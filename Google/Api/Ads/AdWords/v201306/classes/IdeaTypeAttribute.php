@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * {@link Attribute} type that contains an {@link IdeaType} value. For example,
  * if a {@link com.google.ads.api.services.targetingideas.TargetingIdea}

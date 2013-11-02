@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * A negative criterion in an adgroup.
  *

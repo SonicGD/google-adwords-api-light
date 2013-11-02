@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Represents the type of opportunity.
  *

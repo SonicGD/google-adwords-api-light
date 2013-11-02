@@ -1,5 +1,8 @@
 <?php
 
+require_once('CampaignSharedSetService.require.php');
+
+
 /**
  * CampaignSharedSetService
  *

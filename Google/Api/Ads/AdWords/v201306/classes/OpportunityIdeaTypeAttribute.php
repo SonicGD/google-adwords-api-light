@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * {@link Attribute} type that contains an {@link OpportunityIdeaType} value.
  * For example, if a

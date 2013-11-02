@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Error to indicate that too many negative criteria added to some campaign.
  *

@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Errors due to the use of unsupported operations.
  *

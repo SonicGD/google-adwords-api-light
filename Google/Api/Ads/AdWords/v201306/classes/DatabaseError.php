@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Errors that are thrown due to a database access problem.
  *

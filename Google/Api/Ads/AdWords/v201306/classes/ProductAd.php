@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Represents a product ad (known as a <a href=
  * "//support.google.com/adwords/bin/answer.py?answer=2456103">product

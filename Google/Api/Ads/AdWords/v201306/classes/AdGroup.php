@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Represents an ad group.
  *

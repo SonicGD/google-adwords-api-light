@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Controls the markup language in which the snippet will be written.
  *

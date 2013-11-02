@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Represents an element in a template. Each template element is composed
  * of a list of fields (actual value data).

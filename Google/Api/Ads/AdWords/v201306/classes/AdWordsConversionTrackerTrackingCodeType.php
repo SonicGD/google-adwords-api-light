@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Type of snippet code to generate.
  *

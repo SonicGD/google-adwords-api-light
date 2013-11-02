@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Signals that an entity count limit was exceeded for some level.
  * For example, too many criteria for a campaign.

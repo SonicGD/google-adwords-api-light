@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * The types of constant operands.
  *

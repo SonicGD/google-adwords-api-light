@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Abstract class representing an reply to an {@link EstimateRequest}.
  *

@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Returns all the open/active BillingAccounts associated with the current
  * manager.

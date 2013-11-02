@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Denotes whether the bid multiplier is derived from the adgroup
  * or the criterion

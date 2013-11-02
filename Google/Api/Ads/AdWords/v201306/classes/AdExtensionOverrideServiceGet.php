@@ -1,14 +1,16 @@
 <?php
 
+
+
 /**
  * Returns a list of AdExtensionOverrides based on an
  * AdExtensionOverrideSelector.
  *
- * @param selector The selector specifying the query.
+*@param selector The selector specifying the query.
  *
- * @return The page containing the AdExtensionOverride which meet the
+*@return The page containing the AdExtensionOverride which meet the
  * criteria specified by the selector.
- * @package    GoogleApiAdsAdWords
+ * @package GoogleApiAdsAdWords
  * @subpackage v201306
  */
 class AdExtensionOverrideServiceGet
@@ -42,5 +44,4 @@ class AdExtensionOverrideServiceGet
     public function __construct($selector = null)
     {
         $this->selector = $selector;
-    }
-}
+  }}

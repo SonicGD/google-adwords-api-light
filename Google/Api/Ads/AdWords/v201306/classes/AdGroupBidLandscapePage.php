@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Contains a subset of {@link AdGroupBidLandscape} objects resulting from the
  * filtering and paging of

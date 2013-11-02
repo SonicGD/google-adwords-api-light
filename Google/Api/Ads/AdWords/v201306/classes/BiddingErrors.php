@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Represents error codes for bidding strategy entities.
  *

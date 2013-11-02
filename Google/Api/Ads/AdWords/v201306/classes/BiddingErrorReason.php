@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Reason for bidding error.
  *

@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Errors associated with violation of a NOT NULL check.
  *

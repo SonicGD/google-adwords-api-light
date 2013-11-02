@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * An enumeration of
  * {@link com.google.ads.api.services.targetingideas.TargetingIdeaService}

@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Base error class for the
  * {@link com.google.ads.api.services.targetingideas.TargetingIdeaService}.

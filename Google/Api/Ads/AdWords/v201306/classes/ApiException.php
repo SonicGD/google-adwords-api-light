@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Exception class for holding a list of service errors.
  *

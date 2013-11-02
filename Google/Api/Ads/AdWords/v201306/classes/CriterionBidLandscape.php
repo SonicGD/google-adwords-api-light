@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * The bid landscape for a criterion.  A bid landscape estimates how a
  * a criterion will perform based on different bid amounts.

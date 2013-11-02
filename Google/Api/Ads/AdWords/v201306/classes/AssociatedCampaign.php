@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * This class represents a campaign which is or was linked to the parent budget object.
  *

@@ -1,5 +1,8 @@
 <?php
 
+require_once('CampaignService.require.php');
+
+
 /**
  * CampaignService
  *
@@ -266,6 +269,6 @@ class CampaignService extends AdWordsSoapClient
         $arg = new query($query);
         $result = $this->__soapCall("query", array($arg));
         return $result->rval;
-    }
+  }
 
 }

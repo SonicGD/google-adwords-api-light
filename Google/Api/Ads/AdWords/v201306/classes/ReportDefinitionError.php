@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Encapsulates the errors that can be thrown during {@link ReportDefinition}
  * mutate operation.

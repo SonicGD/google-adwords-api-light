@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * The image is not valid.
  *

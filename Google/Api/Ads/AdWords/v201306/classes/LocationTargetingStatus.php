@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Enum that represents the different Targeting Status values for a Location criterion.
  *

@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Indicate where a criterion's bid came from: criterion or the adgroup it
  * belongs to.

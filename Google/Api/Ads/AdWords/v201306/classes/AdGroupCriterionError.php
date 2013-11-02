@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Base error class for Ad Group Criterion Service.
  *

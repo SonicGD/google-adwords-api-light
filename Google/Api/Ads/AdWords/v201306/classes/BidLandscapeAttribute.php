@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * {@link Attribute} type that contains a {@link BidLandscape} value.
  *

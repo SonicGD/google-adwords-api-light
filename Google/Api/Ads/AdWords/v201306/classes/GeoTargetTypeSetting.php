@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Represents a collection of settings related to ads geotargeting.
  *

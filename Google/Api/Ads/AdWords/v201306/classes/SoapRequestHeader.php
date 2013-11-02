@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Defines the required and optional elements within the header of a SOAP request.
  *

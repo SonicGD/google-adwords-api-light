@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Indicates where bidding strategy came from: campaign, adgroup or criterion.
  *

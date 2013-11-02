@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Base interface for types of display ads.
  *

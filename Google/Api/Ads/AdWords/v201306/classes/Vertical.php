@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Use verticals to target or exclude placements in the Google Display Network
  * based on the category into which the placement falls (for example, "Pets &amp;

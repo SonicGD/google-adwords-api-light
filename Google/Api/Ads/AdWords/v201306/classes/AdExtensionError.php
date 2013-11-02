@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * AdExtension errors.
  *

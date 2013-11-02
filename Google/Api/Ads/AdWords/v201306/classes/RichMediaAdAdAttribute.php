@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * A set of attributes that describe the rich media ad capabilities.
  *

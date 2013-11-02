@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Errors corresponding with violation of a NOT EMPTY check.
  *

@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Bidding transition errors.
  *

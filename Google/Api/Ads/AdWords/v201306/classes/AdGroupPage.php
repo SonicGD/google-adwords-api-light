@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Contains a subset of adgroup resulting from the filtering and paging of the
  * {@link com.google.ads.api.services.campaignmgmt.adgroup.AdGroupService#get} call

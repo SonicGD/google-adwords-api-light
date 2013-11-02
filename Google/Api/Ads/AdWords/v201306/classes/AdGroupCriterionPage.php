@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Contains a subset of adgroup criteria resulting from a
  * {@link AdGroupCriterionService#get} call.

@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Base class for all bidding schemes.
  * <span class="constraint AdxEnabled">This is disabled for AdX.</span>

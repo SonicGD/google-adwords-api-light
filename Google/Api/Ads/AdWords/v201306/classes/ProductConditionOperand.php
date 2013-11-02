@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Attribute for the product condition.
  *

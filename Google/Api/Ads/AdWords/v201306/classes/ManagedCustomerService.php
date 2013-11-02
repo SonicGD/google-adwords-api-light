@@ -1,5 +1,8 @@
 <?php
 
+require_once('ManagedCustomerService.require.php');
+
+
 /**
  * ManagedCustomerService
  *

@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Domain extension, which adds domain info to ads.
  * <span class="constraint Beta">This is a beta feature.</span>

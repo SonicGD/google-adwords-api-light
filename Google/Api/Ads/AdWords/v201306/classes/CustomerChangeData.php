@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Holds information about changes to a customer
  *

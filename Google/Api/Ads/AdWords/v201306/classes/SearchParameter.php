@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * A set of {@link SearchParameter}s are supplied to the
  * {@link com.google.ads.api.services.targetingideas.TargetingIdeaSelector}

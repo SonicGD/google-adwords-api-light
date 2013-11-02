@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * A {@link SearchParameter} for {@code KEYWORD} {@link IdeaType}s used to
  * filter the results by the amount of competition (eg: LOW, MEDIUM, HIGH).

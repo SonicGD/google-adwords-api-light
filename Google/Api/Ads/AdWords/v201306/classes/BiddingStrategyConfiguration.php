@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Encapsulates the information about bids and bidding strategies.
  *

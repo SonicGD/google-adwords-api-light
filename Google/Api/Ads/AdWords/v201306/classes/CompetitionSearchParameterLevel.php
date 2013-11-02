@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * An enumeration of possible values to be used in conjunction with the
  * {@link CompetitionSearchParameter} to specify the granularity of

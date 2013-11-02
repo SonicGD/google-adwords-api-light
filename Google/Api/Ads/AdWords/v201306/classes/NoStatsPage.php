@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Base class for Get results for a page of entities that do not use statistics.
  *

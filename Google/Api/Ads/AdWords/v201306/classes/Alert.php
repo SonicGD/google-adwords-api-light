@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Alert for a single client. Triggering events are grouped by {@link AlertType} into the same alert
  * with multiple {@link Details}.

@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * The API error base class that provides details about an error that occurred
  * while processing a service request.

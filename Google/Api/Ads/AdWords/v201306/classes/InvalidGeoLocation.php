@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Invalid GeoLocation object.
  *

@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Represents a failure result for a mutate operation that was applied in a
  * transactional batch. It does not imply that the corresponding operation

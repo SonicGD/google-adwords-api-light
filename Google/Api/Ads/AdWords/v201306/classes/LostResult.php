@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Represents the result of processing an individual mutate operation that
  * however failed to get durably saved despite the service's best efforts.

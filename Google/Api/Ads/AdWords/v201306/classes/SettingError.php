@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Indicates a problem with campaign settings.
  *

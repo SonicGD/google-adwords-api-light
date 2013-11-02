@@ -1,5 +1,8 @@
 <?php
 
+require_once('BiddingStrategyService.require.php');
+
+
 /**
  * BiddingStrategyService
  *

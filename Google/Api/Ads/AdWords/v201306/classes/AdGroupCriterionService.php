@@ -1,5 +1,8 @@
 <?php
 
+require_once('AdGroupCriterionService.require.php');
+
+
 /**
  * AdGroupCriterionService
  *

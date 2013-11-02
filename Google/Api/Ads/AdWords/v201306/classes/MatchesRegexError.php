@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Errors associated with a given string not matching the provided
  * regular expression.

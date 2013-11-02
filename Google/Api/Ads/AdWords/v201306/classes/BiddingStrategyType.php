@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * The bidding strategy type.
  *

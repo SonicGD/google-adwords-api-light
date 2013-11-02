@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * The reasons for the adgroup service error.
  *

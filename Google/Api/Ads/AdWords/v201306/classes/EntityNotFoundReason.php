@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * The specified id refered to an entity which either doesn't exist or is not accessible to the
  * customer. e.g. campaign belongs to another customer.

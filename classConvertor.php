@@ -11,6 +11,7 @@
 
 function parseFile($path, $baseClassName, $dummy)
 {
+    $require = [];
     $code = file_get_contents($path);
     //$pattern = '/if \(\!class_exists\(\"([a-zA-Z]+)\", FALSE\)\) \{(.*)\}\}/um';
     $pattern = '/if \(!class_exists\("([a-zA-Z]+)", FALSE\)\) {\s(.*?)\s}}/ms';
@@ -22,15 +23,33 @@ function parseFile($path, $baseClassName, $dummy)
 
             $classCode = $matches[2][$i] . "}";
 
+            if ($className == $baseClassName) {
+                $result = str_ireplace(
+                    "%require%",
+                    "require_once('" . $className . ".require.php');" . PHP_EOL,
+                    $dummy
+                );
+            } else {
+                $result = str_ireplace("%require%", "", $dummy);
+                $require[] = $className;
+            }
             $newPath = "Google/Api/Ads/AdWords/v201306/classes/" . $className . ".php";
             file_put_contents(
                 $newPath,
-                str_ireplace("%code%", $classCode, $dummy)
+                str_ireplace("%code%", $classCode, $result)
             );
 
             //$code = str_ireplace($matches[0][$i], "", $code);
         }
     }
+    $requireCode = "";
+    foreach ($require as $className) {
+        $requireCode .= "require_once('" . $className . ".php');" . PHP_EOL;
+    }
+    file_put_contents(
+        "Google/Api/Ads/AdWords/v201306/classes/" . $baseClassName . ".require.php",
+        "<?php" . PHP_EOL . $requireCode
+    );
     //unlink($path);
 }
 

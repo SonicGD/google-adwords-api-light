@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Results of a {@link ManagedCustomerService#mutateLink} call which changes
  * manager/client links.

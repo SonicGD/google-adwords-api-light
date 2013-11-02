@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Interface for ad specifications to implement. See individual spec
  * documentation for more details on how to use each type, and

@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Querying criteria for getting alerts.
  *

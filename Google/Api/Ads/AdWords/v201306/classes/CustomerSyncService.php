@@ -1,5 +1,8 @@
 <?php
 
+require_once('CustomerSyncService.require.php');
+
+
 /**
  * CustomerSyncService
  *

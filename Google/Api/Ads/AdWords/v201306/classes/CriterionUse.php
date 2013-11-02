@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * The way a criterion is used - biddable or negative.
  *

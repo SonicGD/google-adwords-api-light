@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Returns a list of all language criteria.
  *

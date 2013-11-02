@@ -1,5 +1,8 @@
 <?php
 
+require_once('CampaignAdExtensionService.require.php');
+
+
 /**
  * CampaignAdExtensionService
  *

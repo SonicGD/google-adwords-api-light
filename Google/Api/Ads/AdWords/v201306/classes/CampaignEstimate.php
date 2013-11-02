@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Represents the estimate results for a single campaign.
  *

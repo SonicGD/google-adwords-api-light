@@ -1,5 +1,8 @@
 <?php
 
+require_once('TrafficEstimatorService.require.php');
+
+
 /**
  * TrafficEstimatorService
  *
@@ -171,6 +174,6 @@ class TrafficEstimatorService extends AdWordsSoapClient
         $arg = new TrafficEstimatorServiceGet($selector);
         $result = $this->__soapCall("get", array($arg));
         return $result->rval;
-    }
+  }
 
 }

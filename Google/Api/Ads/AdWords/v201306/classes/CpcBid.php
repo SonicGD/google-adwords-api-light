@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Manual click based bids.
  *

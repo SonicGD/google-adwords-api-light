@@ -1,5 +1,8 @@
 <?php
 
+require_once('GeoLocationService.require.php');
+
+
 /**
  * GeoLocationService
  *

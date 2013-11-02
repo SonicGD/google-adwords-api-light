@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Describes how a result set of alerts should be filtered based on the triggering account's
  * ability to manage clients.

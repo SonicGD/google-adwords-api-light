@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Represents CustomerSyncService specific errors
  *

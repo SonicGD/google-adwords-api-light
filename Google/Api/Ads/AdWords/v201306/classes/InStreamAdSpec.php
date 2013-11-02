@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Placement request/response object which provides details about instream
  * ad types, options, and other available configuration variables.

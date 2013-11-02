@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Bidding strategies store shared bidding configuration data and are account-level objects.
  *

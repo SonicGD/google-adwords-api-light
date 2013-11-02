@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Represents data about a bid landscape for an ad group or criterion.
  *

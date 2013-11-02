@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * The base class of all ad types. To update basic ad fields,
  * you can construct an {@code Ad} object (instead of

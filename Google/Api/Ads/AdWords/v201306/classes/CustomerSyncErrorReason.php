@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * The request attempted to access a campaign that either does not
  * exist or belongs to a different account.

@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Represents a Mobile Device Criterion.
  * <p>A criterion of this type can only be created using an ID. A criterion of this type is only targetable.

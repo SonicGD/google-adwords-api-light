@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Contains a list of bidding strategies resulting from the filtering and paging
  * of {@link BiddingStrategy#get} call.

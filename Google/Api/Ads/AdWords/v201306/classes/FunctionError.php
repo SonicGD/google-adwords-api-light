@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Errors that indicate issues with the function.
  *

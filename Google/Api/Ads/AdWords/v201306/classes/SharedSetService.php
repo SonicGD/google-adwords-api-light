@@ -1,5 +1,8 @@
 <?php
 
+require_once('SharedSetService.require.php');
+
+
 /**
  * SharedSetService
  *

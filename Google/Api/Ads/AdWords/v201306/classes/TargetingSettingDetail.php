@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Specifies if criteria of this type group should be used to restrict
  * targeting, or if ads can serve anywhere and criteria are only used in

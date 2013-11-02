@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Represents a criterion in an ad group, used with AdGroupCriterionService.
  *

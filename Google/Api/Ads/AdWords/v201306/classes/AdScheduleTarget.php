@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Immutable structure to hold an ad schedule target.
  *

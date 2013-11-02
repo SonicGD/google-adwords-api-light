@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Percentage CPA based bidding scheme attributes where user pays a percent of conversions.
  * This bidding strategy is available only to some advertisers.

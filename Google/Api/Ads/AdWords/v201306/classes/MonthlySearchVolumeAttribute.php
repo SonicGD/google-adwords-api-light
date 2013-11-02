@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * {@link Attribute} type that contains a list of {@link MonthlySearchVolume}
  * values. The list contains the past 12 {@link MonthlySearchVolume}s

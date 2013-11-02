@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Represents data that encapsulates a location criterion.
  *

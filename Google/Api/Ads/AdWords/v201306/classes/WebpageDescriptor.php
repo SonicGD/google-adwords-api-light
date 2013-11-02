@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Basic information about a webpage.
  *

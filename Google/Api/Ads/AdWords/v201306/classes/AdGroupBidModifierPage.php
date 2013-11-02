@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Contains a subset of adgroup bid modifiers resulting from a call to
  * {@link AdGroupBidModifierService#get}.

@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * {@link SearchParameter} that specifies whether adult content should be
  * returned.<p>

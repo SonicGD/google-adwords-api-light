@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * A QueryError represents possible errors for query parsing and execution.
  *

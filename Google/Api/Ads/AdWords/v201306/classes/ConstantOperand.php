@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * A constant operand in a matching function.
  *

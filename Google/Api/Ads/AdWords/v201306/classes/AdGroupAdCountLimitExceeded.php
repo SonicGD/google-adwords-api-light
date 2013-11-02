@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Indicates too many ads were added/enabled under the specified adgroup.
  *

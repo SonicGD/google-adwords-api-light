@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Approval status of the CampaignAdExtension.
  *

@@ -1,5 +1,8 @@
 <?php
 
+require_once('AdGroupFeedService.require.php');
+
+
 /**
  * AdGroupFeedService
  *

@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Generic operation (add, remove and set) for campaign criteria.
  *

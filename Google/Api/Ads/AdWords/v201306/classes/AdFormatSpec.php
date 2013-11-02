@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * A placement response object which provides information about one of the ad formats
  * supported by a placement.

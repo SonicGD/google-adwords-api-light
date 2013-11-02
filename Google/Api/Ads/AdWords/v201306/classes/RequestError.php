@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Encapsulates the generic errors thrown when there's an error with user
  * request.

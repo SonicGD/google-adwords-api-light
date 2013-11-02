@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * A biddable (positive) criterion in an adgroup.
  *

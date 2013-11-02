@@ -1,5 +1,8 @@
 <?php
 
+require_once('AlertService.require.php');
+
+
 /**
  * AlertService
  *

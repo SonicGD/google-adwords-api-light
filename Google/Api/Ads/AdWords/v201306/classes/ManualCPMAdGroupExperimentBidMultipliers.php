@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Adgroup level bid multipliers used in manual CPM bidding strategy.
  * <span class="constraint AdxEnabled">This is disabled for AdX.</span>

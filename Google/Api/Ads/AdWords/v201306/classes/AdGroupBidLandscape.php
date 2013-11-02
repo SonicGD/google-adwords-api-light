@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Represents data about a bidlandscape for an adgroup.
  *

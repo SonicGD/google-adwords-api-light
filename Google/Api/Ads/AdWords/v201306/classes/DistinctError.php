@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Errors related to distinct ids or content.
  *

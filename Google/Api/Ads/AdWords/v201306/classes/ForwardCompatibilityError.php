@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * A ForwardComptibilityError represents possible errors when using the forwardCompatibilityMap
  * in some of the common services.

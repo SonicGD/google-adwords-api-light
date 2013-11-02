@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Customer is not whitelisted for new billing.
  *

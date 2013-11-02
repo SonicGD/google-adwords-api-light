@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Error class used for reporting criteria related errors.
  *

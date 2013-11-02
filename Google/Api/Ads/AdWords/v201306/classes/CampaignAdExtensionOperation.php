@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * CampaignAdExtension service operation. <b>Note:</b> The {@code SET} operator
  * is not supported.

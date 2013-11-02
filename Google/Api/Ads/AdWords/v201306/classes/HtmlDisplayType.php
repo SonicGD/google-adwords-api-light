@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * HTML-specific options for display ads are contained within
  * this class.

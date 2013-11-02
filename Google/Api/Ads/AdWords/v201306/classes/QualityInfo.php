@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Container for criterion quality information.
  *

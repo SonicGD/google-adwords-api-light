@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * AdGroupCriterion level bid multiplier used in manual CPC bidding strategies.
  * <span class="constraint AdxEnabled">This is disabled for AdX.</span>

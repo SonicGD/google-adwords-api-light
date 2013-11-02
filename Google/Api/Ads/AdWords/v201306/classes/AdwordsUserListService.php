@@ -1,5 +1,8 @@
 <?php
 
+require_once('AdwordsUserListService.require.php');
+
+
 /**
  * AdwordsUserListService
  *

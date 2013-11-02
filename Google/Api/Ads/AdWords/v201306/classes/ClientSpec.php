@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Specification of which managed accounts a client manager is interested in.
  *

@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Represents a mobile ad.
  *

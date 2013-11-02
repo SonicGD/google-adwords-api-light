@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * A {@link SearchParameter} for {@code KEYWORD} {@link IdeaType}s
  * that specifies that the supplied AdGroup should be used as a seed

@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Operand value of {@link WebpageCondition}.
  *

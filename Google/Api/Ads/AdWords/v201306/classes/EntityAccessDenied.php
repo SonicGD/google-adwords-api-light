@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Reports permission problems trying to access an entity.
  *

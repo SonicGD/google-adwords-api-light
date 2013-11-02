@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Abstract class representing a request to estimate stats.
  *

@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Operation (add, remove and set) on adgroup criteria.
  *

@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * A {@link SearchParameter} for a query of {@code String}s.
  * <p>This search parameter can be used in bulk keyword requests through the {@link com.google.ads.api.services.targetingideas.TargetingIdeaService#getBulkKeywordIdeas(TargetingIdeaSelector)} method.

@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Operators that can be used in functions.
  *

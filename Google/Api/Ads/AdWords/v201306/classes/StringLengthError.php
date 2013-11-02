@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Errors associated with the length of the given string being
  * out of bounds.

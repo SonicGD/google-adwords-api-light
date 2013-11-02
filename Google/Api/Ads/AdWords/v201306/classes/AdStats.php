@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Represents stats specific to Ads.
  *

@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Specified by user to pause or unpause a criterion.
  *

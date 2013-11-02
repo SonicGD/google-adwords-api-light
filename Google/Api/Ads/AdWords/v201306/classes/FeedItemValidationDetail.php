@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Contains offline-validation and approval results for a given FeedItem and FeedMapping. Each
  * validation detail indicates any issues found on the feed item when used in the context

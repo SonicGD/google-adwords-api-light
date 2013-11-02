@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Error due to user not accepting the AdWords terms of service.
  *

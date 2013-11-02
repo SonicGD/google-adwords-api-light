@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Error class for errors associated with parsing image data.
  *

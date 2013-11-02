@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Type of an alert.
  *

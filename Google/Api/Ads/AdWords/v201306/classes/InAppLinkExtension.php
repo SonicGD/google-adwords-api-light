@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * <p>This extension is useful for advertisers who wish to provide users with a
  * link that points to the advertiser's mobile application in addition to their

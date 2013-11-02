@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Activation options. Describes the ad's activated mode.
  *

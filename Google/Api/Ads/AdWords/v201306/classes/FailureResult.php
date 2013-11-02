@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Represents a failure result for an individual mutate operation.
  *

@@ -1,5 +1,8 @@
 <?php
 
+require_once('AdGroupBidModifierService.require.php');
+
+
 /**
  * AdGroupBidModifierService
  *

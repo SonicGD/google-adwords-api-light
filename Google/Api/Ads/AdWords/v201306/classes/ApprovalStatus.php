@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Approval status for the criterion.
  * Note: there are more states involved but we only expose two to users.

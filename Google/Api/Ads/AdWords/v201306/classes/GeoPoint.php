@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Specifies a geo location with the supplied latitude/longitude.
  *

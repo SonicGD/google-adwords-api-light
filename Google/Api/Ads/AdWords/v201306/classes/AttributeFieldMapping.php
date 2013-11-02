@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Represents a mapping between a feed attribute and a placeholder field.
  *

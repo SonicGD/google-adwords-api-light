@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Represents a set of stats for a traffic estimate.
  *

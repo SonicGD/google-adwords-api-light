@@ -1,5 +1,8 @@
 <?php
 
+require_once('AdGroupAdService.require.php');
+
+
 /**
  * AdGroupAdService
  *
@@ -267,6 +270,6 @@ class AdGroupAdService extends AdWordsSoapClient
         $arg = new query($query);
         $result = $this->__soapCall("query", array($arg));
         return $result->rval;
-    }
+  }
 
 }

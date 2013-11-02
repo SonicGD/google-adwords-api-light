@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Used to specify the type of {@code AdGroupLandscape}
  *

@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Specification for a text ad. Currently there are no customizable
  * options on text ads, but the presence of a {@code TextAdSpec} in a

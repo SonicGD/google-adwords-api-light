@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Contains a subset of {@link CriterionBidLandscapePage} objects resulting from the
  * filtering and paging of

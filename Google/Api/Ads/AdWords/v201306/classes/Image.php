@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Encapsulates an Image media. For {@code SET},{@code REMOVE} operations in
  * MediaService, use {@code mediaId}.

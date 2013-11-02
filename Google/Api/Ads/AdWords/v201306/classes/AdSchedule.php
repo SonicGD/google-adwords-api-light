@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Represents an AdSchedule Criterion.
  * AdSchedule is specified as day and time of the week criteria to target

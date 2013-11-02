@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Signals that too many criteria were added to some ad group.
  *

@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * {@link DisplayType} implementation for images.
  *

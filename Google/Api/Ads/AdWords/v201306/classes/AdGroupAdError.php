@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Error information for AdGroupAdService.
  *

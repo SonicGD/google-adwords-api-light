@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * The reasons for errors when querying for stats.
  *

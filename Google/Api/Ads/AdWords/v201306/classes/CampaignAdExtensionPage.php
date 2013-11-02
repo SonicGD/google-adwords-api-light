@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Represents a page of {@link CampaignAdExtension}s resulting from the query
  * done by {@link CampaignAdExtensionService}.

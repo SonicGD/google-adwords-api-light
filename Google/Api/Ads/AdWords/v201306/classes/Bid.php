@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Represents a bid of a certain amount.
  *

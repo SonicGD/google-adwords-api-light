@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * A {@link SearchParameter} for both {@code PLACEMENT} and {@code KEYWORD}
  * {@link IdeaType}s used to indicate the locations being targeted. This can

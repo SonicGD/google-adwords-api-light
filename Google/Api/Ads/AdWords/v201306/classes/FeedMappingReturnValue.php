@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * The result of a call to {@link FeedMappingService#mutate}.
  *

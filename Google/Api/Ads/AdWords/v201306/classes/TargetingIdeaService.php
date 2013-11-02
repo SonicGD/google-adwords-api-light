@@ -1,5 +1,8 @@
 <?php
 
+require_once('TargetingIdeaService.require.php');
+
+
 /**
  * TargetingIdeaService
  *

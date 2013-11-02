@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Pending invitation result for the getPendingInvitations method.
  *

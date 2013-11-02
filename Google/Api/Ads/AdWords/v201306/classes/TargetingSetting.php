@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Setting for targeting related features.
  * This is applicable at Campaign and AdGroup level.

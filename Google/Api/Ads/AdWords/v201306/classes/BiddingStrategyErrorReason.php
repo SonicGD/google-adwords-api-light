@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Each bidding strategy must have a unique name.
  *

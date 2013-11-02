@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * AdGroupFeeds are used to link a feed to an adgroup using a matching function,
  * making the feed's feed items available in the adgroup's ads for substitution.

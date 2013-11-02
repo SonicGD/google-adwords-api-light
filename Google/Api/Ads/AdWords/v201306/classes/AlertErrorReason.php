@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * The possible reasons for an {@link AlertError} to occur.
  *

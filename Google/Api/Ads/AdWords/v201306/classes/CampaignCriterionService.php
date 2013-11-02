@@ -1,5 +1,8 @@
 <?php
 
+require_once('CampaignCriterionService.require.php');
+
+
 /**
  * CampaignCriterionService
  *

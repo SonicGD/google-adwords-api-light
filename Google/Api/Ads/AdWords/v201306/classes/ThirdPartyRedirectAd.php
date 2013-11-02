@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Data associated with rich media extension attributes.
  * <span class="constraint AdxEnabled">This is enabled for AdX.</span>

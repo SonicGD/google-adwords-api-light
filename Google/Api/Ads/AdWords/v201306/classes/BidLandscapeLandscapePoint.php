@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * A set of estimates for a criterion's performance for a specific bid
  * amount.

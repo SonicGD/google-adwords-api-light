@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Severity of an alert, represented as a "color".
  *

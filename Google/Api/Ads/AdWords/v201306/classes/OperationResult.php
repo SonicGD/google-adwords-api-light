@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Represents the result of an individual mutate operation.
  *

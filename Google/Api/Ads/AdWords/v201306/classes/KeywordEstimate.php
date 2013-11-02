@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Represents the traffic estimate result for a single keyword.
  *

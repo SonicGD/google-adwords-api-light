@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Base error class for
  * {@link com.google.ads.api.services.trafficestimator.TrafficEstimatorService}.

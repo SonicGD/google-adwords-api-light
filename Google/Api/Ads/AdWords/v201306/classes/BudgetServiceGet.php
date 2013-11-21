@@ -30,7 +30,7 @@ class BudgetServiceGet
      */
     public function getNamespace()
     {
-        return "https://adwords.google.com/api/adwords/cm/v201302";
+        return "https://adwords.google.com/api/adwords/cm/v201306";
     }
 
     /**

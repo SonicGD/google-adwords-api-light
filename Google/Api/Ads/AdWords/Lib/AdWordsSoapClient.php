@@ -103,12 +103,16 @@ class AdWordsSoapClient extends AdsSoapClient
      */
     protected function GenerateSoapHeader()
     {
-        $headerObject = $this->Create('SoapHeader');
+        $soapHeaderClassName = 'SoapHeader';
+        if ($this->serviceName === 'PromotionService') {
+            $soapHeaderClassName = 'ExpressSoapHeader';
+        }
+        $headerObject = $this->Create($soapHeaderClassName);
         foreach (get_object_vars($headerObject) as $var => $value) {
             $headerObject->$var = $this->GetHeaderValue($var);
         }
         return new SoapHeader($this->serviceNamespace, 'RequestHeader',
-            $headerObject, FALSE);
+            $headerObject, false);
     }
 
     /**
@@ -246,6 +250,6 @@ class AdWordsSoapClient extends AdsSoapClient
         . $this->GetLastUnits() . ' server=' . $this->GetServer()
         . ' isFault=' . ($this->IsFault() ? 'true' : 'false')
         . ' faultMessage=' . $this->GetLastFaultMessage();
-  }
+    }
 }
 

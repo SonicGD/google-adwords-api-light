@@ -59,6 +59,8 @@ class AdWordsUser extends AdsUser
      */
     const USER_AGENT_HEADER_NAME = 'userAgent';
 
+    const DEFAULT_USER_AGENT = 'INSERT_COMPANY_NAME_HERE';
+
     private $libVersion;
     private $libName;
 
@@ -126,8 +128,13 @@ class AdWordsUser extends AdsUser
             dirname(__FILE__) . '/build.ini',
             false
         );
+        $buildIniCommon = parse_ini_file(
+            dirname(__FILE__) .
+            '/../../Common/Lib/build.ini',
+            false
+        );
         $this->libName = $buildIniAw['LIB_NAME'];
-        $this->libVersion = $buildIniAw['LIB_VERSION'];
+        $this->libVersion = $buildIniCommon['LIB_VERSION'];
 
         $apiProps = ApiPropertiesUtils::ParseApiPropertiesFile(
             dirname(__FILE__) .
@@ -319,7 +326,7 @@ class AdWordsUser extends AdsUser
     /**
      * Regenerates the authentication token and sets it for this user.
      *
-     * @param string $server the sever to retrieve the token from
+     * @param string $server the server to retrieve the token from
      *
      * @return string the newly generated auth token
      */
@@ -420,6 +427,24 @@ class AdWordsUser extends AdsUser
     }
 
     /**
+     * Gets the AdWords Express business ID required for AdWords Express
+     * PromotionService
+     */
+    public function GetExpressBusinessId()
+    {
+        return $this->GetHeaderValue('expressBusinessId');
+    }
+
+    /**
+     * Sets the AdWords Express business ID required for AdWords Express
+     * PromotionService
+     */
+    public function SetExpressBusinessId($businessId)
+    {
+        $this->SetHeaderValue('expressBusinessId', $businessId);
+    }
+
+    /**
      * Gets the raw user agent for this user.
      *
      * @return string The raw user agent.
@@ -505,7 +530,7 @@ class AdWordsUser extends AdsUser
         if ($this->GetOAuth2Info() !== null) {
             parent::ValidateOAuth2Info();
         } else {
-            if ($this->GetAuthToken() == null) {
+            if ($this->GetAuthToken() === null) {
                 if (!isset($this->email)) {
                     throw new ValidationException('email', null,
                         'email is required and cannot be NULL.');
@@ -520,12 +545,19 @@ class AdWordsUser extends AdsUser
             }
         }
 
-        if ($this->GetUserAgent() == null) {
+        if ($this->GetUserAgent() === null
+            || trim($this->GetUserAgent()) === ''
+            || strpos($this->GetUserAgent(), self::DEFAULT_USER_AGENT) !== false
+        ) {
             throw new ValidationException('userAgent', null,
-                'userAgent is required and cannot be NULL.');
+                sprintf(
+                    "The property userAgent is required and cannot be "
+                    . "NULL, the empty string, or the default [%s]",
+                    self::DEFAULT_USER_AGENT
+                ));
         }
 
-        if ($this->GetDeveloperToken() == null) {
+        if ($this->GetDeveloperToken() === null) {
             throw new ValidationException('developerToken', null,
                 'developerToken is required and cannot be NULL.');
         }

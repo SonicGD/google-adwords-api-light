@@ -177,7 +177,7 @@ abstract class AdsSoapClient extends SoapClient
      *
      * @access protected
      */
-    protected function __construct(
+    public function __construct(
         $wsdl,
         array $options,
         AdsUser $user,

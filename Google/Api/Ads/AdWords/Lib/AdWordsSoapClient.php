@@ -32,7 +32,7 @@ require_once dirname(__FILE__) . '/../../Common/Lib/AdsSoapClient.php';
 /**
  * An extension of the {@link AdsSoapClient} for the AdWords API.
  *
- * @package GoogleApiAdsAdWords
+ * @package    GoogleApiAdsAdWords
  * @subpackage Lib
  */
 class AdWordsSoapClient extends AdsSoapClient
@@ -111,8 +111,10 @@ class AdWordsSoapClient extends AdsSoapClient
         foreach (get_object_vars($headerObject) as $var => $value) {
             $headerObject->$var = $this->GetHeaderValue($var);
         }
-        return new SoapHeader($this->serviceNamespace, 'RequestHeader',
-            $headerObject, false);
+        return new SoapHeader(
+            $this->serviceNamespace, 'RequestHeader',
+            $headerObject, false
+        );
     }
 
     /**

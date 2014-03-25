@@ -34,6 +34,7 @@
 require_once dirname(__FILE__) . '/../../Common/Lib/AdsUser.php';
 require_once dirname(__FILE__) . '/../../Common/Util/ApiPropertiesUtils.php';
 require_once dirname(__FILE__) . '/../../Common/Util/AuthToken.php';
+require_once dirname(__FILE__) . '/../../Common/Util/DeprecationUtils.php';
 require_once dirname(__FILE__) . '/../Util/ReportUtils.php';
 require_once 'AdWordsSoapClientFactory.php';
 require_once 'AdWordsConstants.php';
@@ -50,6 +51,7 @@ class AdWordsUser extends AdsUser
 
     const OAUTH2_SCOPE = 'https://adwords.google.com/api/adwords/';
     const OAUTH2_HANDLER_CLASS = 'SimpleOAuth2Handler';
+    const FINAL_CLIENT_LOGIN_VERSION = "v201309";
 
     /**
      * The name of the SOAP header that represents the user agent making API
@@ -191,9 +193,11 @@ class AdWordsUser extends AdsUser
 
         $clientId = $this->GetAuthVarValue(null, 'clientId', $authenticationIni);
         if ($clientId !== null) {
-            throw new ValidationException('clientId', $clientId,
+            throw new ValidationException(
+                'clientId', $clientId,
                 'The authentication key "clientId" has been changed to'
-                . ' "clientCustomerId", please use that instead.');
+                . ' "clientCustomerId", please use that instead.'
+            );
         }
 
         $this->SetEmail($email);
@@ -279,6 +283,7 @@ class AdWordsUser extends AdsUser
      *                                          partialFailure mode
      *
      * @return SoapClient the instantiated service
+     * @throws ServiceException if an error occurred when getting the service
      */
     public function GetService(
         $serviceName,
@@ -298,9 +303,17 @@ class AdWordsUser extends AdsUser
                 $server = $this->GetDefaultServer();
             }
 
-            $serviceFactory = new AdWordsSoapClientFactory($this, $version, $server,
-                $validateOnly, $partialFailure);
+            $serviceFactory = new AdWordsSoapClientFactory(
+                $this, $version, $server,
+                $validateOnly, $partialFailure
+            );
         }
+
+        DeprecationUtils::CheckUsingClientLoginWithUnsupportedVersion(
+            $this,
+            self::FINAL_CLIENT_LOGIN_VERSION,
+            $version
+        );
 
         return parent::GetServiceSoapClient($serviceName, $serviceFactory);
     }
@@ -318,8 +331,10 @@ class AdWordsUser extends AdsUser
         if (!isset($version)) {
             $version = $this->GetDefaultVersion();
         }
-        $serviceFactory = new AdWordsSoapClientFactory($this, $version, null, null,
-            null);
+        $serviceFactory = new AdWordsSoapClientFactory(
+            $this, $version, null, null,
+            null
+        );
         $serviceFactory->DoRequireOnce($serviceName);
     }
 
@@ -335,8 +350,10 @@ class AdWordsUser extends AdsUser
         if (!isset($server)) {
             $server = $this->GetAuthServer();
         }
-        $authTokenClient = new AuthToken($this->email, $this->password, 'adwords',
-            $this->GetClientLibraryUserAgent(), 'GOOGLE', $server);
+        $authTokenClient = new AuthToken(
+            $this->email, $this->password, 'adwords',
+            $this->GetClientLibraryUserAgent(), 'GOOGLE', $server
+        );
         $authToken = $authTokenClient->GetAuthToken();
         $this->SetAuthToken($authToken);
         return $authToken;
@@ -532,13 +549,17 @@ class AdWordsUser extends AdsUser
         } else {
             if ($this->GetAuthToken() === null) {
                 if (!isset($this->email)) {
-                    throw new ValidationException('email', null,
-                        'email is required and cannot be NULL.');
+                    throw new ValidationException(
+                        'email', null,
+                        'email is required and cannot be NULL.'
+                    );
                 }
 
                 if (!isset($this->password)) {
-                    throw new ValidationException('password', null,
-                        'password is required and cannot be NULL.');
+                    throw new ValidationException(
+                        'password', null,
+                        'password is required and cannot be NULL.'
+                    );
                 }
                 // Generate an authToken.
                 $this->RegenerateAuthToken();
@@ -549,17 +570,21 @@ class AdWordsUser extends AdsUser
             || trim($this->GetUserAgent()) === ''
             || strpos($this->GetUserAgent(), self::DEFAULT_USER_AGENT) !== false
         ) {
-            throw new ValidationException('userAgent', null,
+            throw new ValidationException(
+                'userAgent', null,
                 sprintf(
                     "The property userAgent is required and cannot be "
                     . "NULL, the empty string, or the default [%s]",
                     self::DEFAULT_USER_AGENT
-                ));
+                )
+            );
         }
 
         if ($this->GetDeveloperToken() === null) {
-            throw new ValidationException('developerToken', null,
-                'developerToken is required and cannot be NULL.');
+            throw new ValidationException(
+                'developerToken', null,
+                'developerToken is required and cannot be NULL.'
+            );
         }
     }
 

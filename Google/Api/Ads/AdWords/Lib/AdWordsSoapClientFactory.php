@@ -58,8 +58,10 @@ class AdWordsSoapClientFactory extends SoapClientFactory
         $partialFailure
     ) {
         if ($version >= 'v201109' && $user->GetHeaderValue('clientEmail') != null) {
-            throw new Exception('The header "clientEmail" is not compatible with '
-                . 'versions v201109 and later. Use clientCustomerId instead.');
+            throw new Exception(
+                'The header "clientEmail" is not compatible with '
+                . 'versions v201109 and later. Use clientCustomerId instead.'
+            );
         }
         $headerOverrides = array();
         if (isset($validateOnly) || isset($partialFailure)) {

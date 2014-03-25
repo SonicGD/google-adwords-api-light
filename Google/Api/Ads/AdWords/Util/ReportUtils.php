@@ -29,6 +29,7 @@
  */
 require_once dirname(__FILE__) . '/../Lib/AdWordsUser.php';
 require_once dirname(__FILE__) . '/../../Common/Util/CurlUtils.php';
+require_once dirname(__FILE__) . '/../../Common/Util/DeprecationUtils.php';
 require_once dirname(__FILE__) . '/../../Common/Util/Logger.php';
 require_once dirname(__FILE__) . '/../../Common/Util/XmlUtils.php';
 require_once "ReportUtils.require.php";
@@ -322,8 +323,10 @@ class ReportUtils
                 $document->formatOutput = true;
                 $params['__rdxml'] = XmlUtils::GetXmlFromDom($document);
             } else {
-                throw new ReportDownloadException('Invalid report definition type: '
-                    . $reportDefinition);
+                throw new ReportDownloadException(
+                    'Invalid report definition type: '
+                    . $reportDefinition
+                );
             }
         }
         return $params;
@@ -370,6 +373,11 @@ class ReportUtils
             $user->SetOAuth2Info($oAuth2Info);
             $authHeader = $oAuth2Handler->FormatCredentialsForHeader($oAuth2Info);
         } else {
+            DeprecationUtils::CheckUsingClientLoginWithUnsupportedVersion(
+                $user,
+                AdWordsUser::FINAL_CLIENT_LOGIN_VERSION,
+                $version
+            );
             $authHeader = sprintf(self::CLIENT_LOGIN_FORMAT, $user->GetAuthToken());
         }
         $headers['Authorization'] = $authHeader;
@@ -385,8 +393,10 @@ class ReportUtils
             if ($version < 'v201109' && isset($email)) {
                 $headers['clientEmail'] = $email;
             } else {
-                throw new ReportDownloadException('The client customer ID must be '
-                    . 'specified for report downloads.');
+                throw new ReportDownloadException(
+                    'The client customer ID must be '
+                    . 'specified for report downloads.'
+                );
             }
         }
         // Flags.

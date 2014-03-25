@@ -215,6 +215,7 @@ abstract class AdsSoapClient extends SoapClient
             $this->lastArguments,
             $this->lastHeaders
         );
+
         if (!empty($this->transportLayer)) {
             $response = $this->transportLayer->__doRequest(
                 $this->lastRequest,
@@ -254,7 +255,7 @@ abstract class AdsSoapClient extends SoapClient
         $input_headers = null,
         &$output_headers = null
     ) {
-        DeprecationUtils::CheckAdsUserUsingOAuth2($this->user);
+        DeprecationUtils::CheckUsingClientLogin($this->user);
         try {
             $input_headers[] = $this->GenerateSoapHeader();
             $this->lastHeaders = $input_headers;
@@ -540,8 +541,10 @@ abstract class AdsSoapClient extends SoapClient
         $replaceReferences = version_compare(PHP_VERSION, '5.2.2', '>=');
 
         if ($addXsiTypes || $removeEmptyElements || $replaceReferences) {
-            $fixer = new SoapRequestXmlFixer($addXsiTypes, $removeEmptyElements,
-                $replaceReferences);
+            $fixer = new SoapRequestXmlFixer(
+                $addXsiTypes, $removeEmptyElements,
+                $replaceReferences
+            );
             return $fixer->FixXml($request, $arguments, $headers);
         } else {
             // Empty string is appended to "save" the XML from being deleted.

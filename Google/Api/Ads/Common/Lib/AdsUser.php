@@ -594,7 +594,10 @@ abstract class AdsUser
             sprintf(
                 "%s (%s)",
                 $applicationName,
-                implode(', ', $this->GetAllClientLibraryUserAgentParts())
+                implode(
+                    ', ',
+                    $this->GetAllClientLibraryUserAgentParts()
+                )
             )
         );
     }
@@ -619,15 +622,19 @@ abstract class AdsUser
         $requiredFields = array('client_id', 'client_secret');
         foreach ($requiredFields as $field) {
             if (empty($this->oauth2Info[$field])) {
-                throw new ValidationException($field, null,
-                    sprintf('%s is required.', $field));
+                throw new ValidationException(
+                    $field, null,
+                    sprintf('%s is required.', $field)
+                );
             }
         }
         if (empty($this->oauth2Info['access_token'])
             && empty($this->oauth2Info['refresh_token'])
         ) {
-            throw new ValidationException('refresh_token', null,
-                'Either the refresh_token or the access_token is required.');
+            throw new ValidationException(
+                'refresh_token', null,
+                'Either the refresh_token or the access_token is required.'
+            );
         }
     }
 }

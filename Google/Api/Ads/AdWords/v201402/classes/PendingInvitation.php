@@ -1,61 +1,67 @@
 <?php
 
 
-
 /**
  * Pending invitation result for the getPendingInvitations method.
- * @package Google_Api_Ads_AdWords_v201402
+ *
+ * @package    Google_Api_Ads_AdWords_v201402
  * @subpackage v201402
  */
-class PendingInvitation {
+class PendingInvitation
+{
 
-  const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/mcm/v201402";
-  const XSI_TYPE = "PendingInvitation";
+    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/mcm/v201402";
+    const XSI_TYPE = "PendingInvitation";
 
-  /**
-   * @access public
-   * @var ManagedCustomer
-   */
-  public $manager;
+    /**
+     * @access public
+     * @var ManagedCustomer
+     */
+    public $manager;
 
-  /**
-   * @access public
-   * @var ManagedCustomer
-   */
-  public $client;
+    /**
+     * @access public
+     * @var ManagedCustomer
+     */
+    public $client;
 
-  /**
-   * @access public
-   * @var string
-   */
-  public $creationDate;
+    /**
+     * @access public
+     * @var string
+     */
+    public $creationDate;
 
-  /**
-   * @access public
-   * @var string
-   */
-  public $expirationDate;
+    /**
+     * @access public
+     * @var string
+     */
+    public $expirationDate;
 
-  /**
-   * Gets the namesapce of this class
-   * @return the namespace of this class
-   */
-  public function getNamespace() {
-    return self::WSDL_NAMESPACE;
-  }
+    /**
+     * Gets the namesapce of this class
+     *
+     * @return the namespace of this class
+     */
+    public function getNamespace()
+    {
+        return self::WSDL_NAMESPACE;
+    }
 
-  /**
-   * Gets the xsi:type name of this class
-   * @return the xsi:type name of this class
-   */
-  public function getXsiTypeName() {
-    return self::XSI_TYPE;
-  }
+    /**
+     * Gets the xsi:type name of this class
+     *
+     * @return the xsi:type name of this class
+     */
+    public function getXsiTypeName()
+    {
+        return self::XSI_TYPE;
+    }
 
-  public function __construct($manager = null, $client = null, $creationDate = null, $expirationDate = null) {
-    $this->manager = $manager;
-    $this->client = $client;
-    $this->creationDate = $creationDate;
-    $this->expirationDate = $expirationDate;
-  }
+    public function __construct($manager = null, $client = null, $creationDate = null, $expirationDate = null)
+    {
+        $this->manager = $manager;
+        $this->client = $client;
+        $this->creationDate = $creationDate;
+        $this->expirationDate = $expirationDate;
+    }
 }

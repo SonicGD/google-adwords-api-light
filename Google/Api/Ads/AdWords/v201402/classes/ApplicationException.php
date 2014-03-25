@@ -1,83 +1,96 @@
 <?php
 
 
-
 /**
  * Base class for exceptions.
- * 
- * 
- * 
+ *
+ *
+ *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
- * @package Google_Api_Ads_AdWords_v201402
+ *
+ * @package    Google_Api_Ads_AdWords_v201402
  * @subpackage v201402
  */
-class ApplicationException {
+class ApplicationException
+{
 
-  const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201402";
-  const XSI_TYPE = "ApplicationException";
+    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201402";
+    const XSI_TYPE = "ApplicationException";
 
-  /**
-   * @access public
-   * @var string
-   */
-  public $message;
+    /**
+     * @access public
+     * @var string
+     */
+    public $message;
 
-  /**
-   * @access public
-   * @var string
-   */
-  public $ApplicationExceptionType;
-  private $_parameterMap = array(
-    "ApplicationException.Type" => "ApplicationExceptionType",
-  );
+    /**
+     * @access public
+     * @var string
+     */
+    public $ApplicationExceptionType;
+    private $_parameterMap = array(
+        "ApplicationException.Type" => "ApplicationExceptionType",
+    );
 
-  /**
-   * Provided for setting non-php-standard named variables
-   * @param $var Variable name to set
-   * @param $value Value to set
-   */
-  public function __set($var, $value) {
-    $this->{$this->_parameterMap[$var]} = $value;
-  }
-
-  /**
-   * Provided for getting non-php-standard named variables
-   * @param $var Variable name to get
-   * @return mixed Variable value
-   */
-  public function __get($var) {
-    if (!isset($this->_parameterMap[$var])) {
-      return null;
+    /**
+     * Provided for setting non-php-standard named variables
+     *
+     * @param $var   Variable name to set
+     * @param $value Value to set
+     */
+    public function __set($var, $value)
+    {
+        $this->{$this->_parameterMap[$var]} = $value;
     }
-    return $this->{$this->_parameterMap[$var]};
-  }
 
-  /**
-   * Provided for getting non-php-standard named variables
-   * @return array parameter map
-   */
-  protected function getParameterMap() {
-    return $this->_parameterMap;
-  }
+    /**
+     * Provided for getting non-php-standard named variables
+     *
+     * @param $var Variable name to get
+     *
+     * @return mixed Variable value
+     */
+    public function __get($var)
+    {
+        if (!isset($this->_parameterMap[$var])) {
+            return null;
+        }
+        return $this->{$this->_parameterMap[$var]};
+    }
 
-  /**
-   * Gets the namesapce of this class
-   * @return the namespace of this class
-   */
-  public function getNamespace() {
-    return self::WSDL_NAMESPACE;
-  }
+    /**
+     * Provided for getting non-php-standard named variables
+     *
+     * @return array parameter map
+     */
+    protected function getParameterMap()
+    {
+        return $this->_parameterMap;
+    }
 
-  /**
-   * Gets the xsi:type name of this class
-   * @return the xsi:type name of this class
-   */
-  public function getXsiTypeName() {
-    return self::XSI_TYPE;
-  }
+    /**
+     * Gets the namesapce of this class
+     *
+     * @return the namespace of this class
+     */
+    public function getNamespace()
+    {
+        return self::WSDL_NAMESPACE;
+    }
 
-  public function __construct($message = null, $ApplicationExceptionType = null) {
-    $this->message = $message;
-    $this->ApplicationExceptionType = $ApplicationExceptionType;
-  }
+    /**
+     * Gets the xsi:type name of this class
+     *
+     * @return the xsi:type name of this class
+     */
+    public function getXsiTypeName()
+    {
+        return self::XSI_TYPE;
+    }
+
+    public function __construct($message = null, $ApplicationExceptionType = null)
+    {
+        $this->message = $message;
+        $this->ApplicationExceptionType = $ApplicationExceptionType;
+    }
 }

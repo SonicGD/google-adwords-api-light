@@ -1,7 +1,6 @@
 <?php
 
 
-
 /**
  * Represents an ad parameter.  Use ad parameters to update numeric values
  * (such as prices or inventory levels) in any line of a text ad, including
@@ -16,58 +15,65 @@
  * <li><code>criterionId</code></li>
  * <li><code>paramIndex</code></li>
  * </ul>
- * @package Google_Api_Ads_AdWords_v201402
+ *
+ * @package    Google_Api_Ads_AdWords_v201402
  * @subpackage v201402
  */
-class AdParam {
+class AdParam
+{
 
-  const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201402";
-  const XSI_TYPE = "AdParam";
+    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201402";
+    const XSI_TYPE = "AdParam";
 
-  /**
-   * @access public
-   * @var integer
-   */
-  public $adGroupId;
+    /**
+     * @access public
+     * @var integer
+     */
+    public $adGroupId;
 
-  /**
-   * @access public
-   * @var integer
-   */
-  public $criterionId;
+    /**
+     * @access public
+     * @var integer
+     */
+    public $criterionId;
 
-  /**
-   * @access public
-   * @var string
-   */
-  public $insertionText;
+    /**
+     * @access public
+     * @var string
+     */
+    public $insertionText;
 
-  /**
-   * @access public
-   * @var integer
-   */
-  public $paramIndex;
+    /**
+     * @access public
+     * @var integer
+     */
+    public $paramIndex;
 
-  /**
-   * Gets the namesapce of this class
-   * @return the namespace of this class
-   */
-  public function getNamespace() {
-    return self::WSDL_NAMESPACE;
-  }
+    /**
+     * Gets the namesapce of this class
+     *
+     * @return the namespace of this class
+     */
+    public function getNamespace()
+    {
+        return self::WSDL_NAMESPACE;
+    }
 
-  /**
-   * Gets the xsi:type name of this class
-   * @return the xsi:type name of this class
-   */
-  public function getXsiTypeName() {
-    return self::XSI_TYPE;
-  }
+    /**
+     * Gets the xsi:type name of this class
+     *
+     * @return the xsi:type name of this class
+     */
+    public function getXsiTypeName()
+    {
+        return self::XSI_TYPE;
+    }
 
-  public function __construct($adGroupId = null, $criterionId = null, $insertionText = null, $paramIndex = null) {
-    $this->adGroupId = $adGroupId;
-    $this->criterionId = $criterionId;
-    $this->insertionText = $insertionText;
-    $this->paramIndex = $paramIndex;
-  }
+    public function __construct($adGroupId = null, $criterionId = null, $insertionText = null, $paramIndex = null)
+    {
+        $this->adGroupId = $adGroupId;
+        $this->criterionId = $criterionId;
+        $this->insertionText = $insertionText;
+        $this->paramIndex = $paramIndex;
+    }
 }

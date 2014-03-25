@@ -1,13 +1,12 @@
 <?php
 
 
-
 /**
  * A set of {@link SearchParameter}s are supplied to the
  * {@link com.google.ads.api.services.targetingideas.TargetingIdeaSelector}
  * to specify how the user wants to filter the set of all possible
  * {@link com.google.ads.api.services.targetingideas.TargetingIdea}s.
- * 
+ *
  * There is a {@link SearchParameter} for all types of inputs.
  * {@link SearchParameter}s can conceptually be broken down into two types.
  * <ul>
@@ -20,7 +19,7 @@
  * on {@link com.google.ads.api.services.targetingideas.attributes.Attribute}
  * related information (eg. {@link CompetitionSearchParameter}, etc.).</li>
  * </ul><p>
- * 
+ *
  * A request should only contain one instance of each {@link SearchParameter}
  * <p>One or more of the following {@link SearchParameter}s are required:<br/>
  * <ul><li>{@link CategoryProductsAndServicesSearchParameter}</li>
@@ -54,69 +53,83 @@
  * <li>{@link RelatedToQuerySearchParameter}</li>
  * <li>{@link RelatedToUrlSearchParameter}</li>
  * </ul><p>
- * @package Google_Api_Ads_AdWords_v201402
+ *
+ * @package    Google_Api_Ads_AdWords_v201402
  * @subpackage v201402
  */
-class SearchParameter {
+class SearchParameter
+{
 
-  const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201402";
-  const XSI_TYPE = "SearchParameter";
+    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201402";
+    const XSI_TYPE = "SearchParameter";
 
-  /**
-   * @access public
-   * @var string
-   */
-  public $SearchParameterType;
-  private $_parameterMap = array(
-    "SearchParameter.Type" => "SearchParameterType",
-  );
+    /**
+     * @access public
+     * @var string
+     */
+    public $SearchParameterType;
+    private $_parameterMap = array(
+        "SearchParameter.Type" => "SearchParameterType",
+    );
 
-  /**
-   * Provided for setting non-php-standard named variables
-   * @param $var Variable name to set
-   * @param $value Value to set
-   */
-  public function __set($var, $value) {
-    $this->{$this->_parameterMap[$var]} = $value;
-  }
-
-  /**
-   * Provided for getting non-php-standard named variables
-   * @param $var Variable name to get
-   * @return mixed Variable value
-   */
-  public function __get($var) {
-    if (!isset($this->_parameterMap[$var])) {
-      return null;
+    /**
+     * Provided for setting non-php-standard named variables
+     *
+     * @param $var   Variable name to set
+     * @param $value Value to set
+     */
+    public function __set($var, $value)
+    {
+        $this->{$this->_parameterMap[$var]} = $value;
     }
-    return $this->{$this->_parameterMap[$var]};
-  }
 
-  /**
-   * Provided for getting non-php-standard named variables
-   * @return array parameter map
-   */
-  protected function getParameterMap() {
-    return $this->_parameterMap;
-  }
+    /**
+     * Provided for getting non-php-standard named variables
+     *
+     * @param $var Variable name to get
+     *
+     * @return mixed Variable value
+     */
+    public function __get($var)
+    {
+        if (!isset($this->_parameterMap[$var])) {
+            return null;
+        }
+        return $this->{$this->_parameterMap[$var]};
+    }
 
-  /**
-   * Gets the namesapce of this class
-   * @return the namespace of this class
-   */
-  public function getNamespace() {
-    return self::WSDL_NAMESPACE;
-  }
+    /**
+     * Provided for getting non-php-standard named variables
+     *
+     * @return array parameter map
+     */
+    protected function getParameterMap()
+    {
+        return $this->_parameterMap;
+    }
 
-  /**
-   * Gets the xsi:type name of this class
-   * @return the xsi:type name of this class
-   */
-  public function getXsiTypeName() {
-    return self::XSI_TYPE;
-  }
+    /**
+     * Gets the namesapce of this class
+     *
+     * @return the namespace of this class
+     */
+    public function getNamespace()
+    {
+        return self::WSDL_NAMESPACE;
+    }
 
-  public function __construct($SearchParameterType = null) {
-    $this->SearchParameterType = $SearchParameterType;
-  }
+    /**
+     * Gets the xsi:type name of this class
+     *
+     * @return the xsi:type name of this class
+     */
+    public function getXsiTypeName()
+    {
+        return self::XSI_TYPE;
+    }
+
+    public function __construct($SearchParameterType = null)
+    {
+        $this->SearchParameterType = $SearchParameterType;
+    }
 }

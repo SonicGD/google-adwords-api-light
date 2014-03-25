@@ -1,10 +1,9 @@
 <?php
 
 
-
 /**
  * Represents a mobile ad.
- * 
+ *
  * <p>
  * A mobile ad can contain a click-to-call phone number, a link to a website,
  * or both.  You specify which features you want by setting certain fields, as
@@ -17,7 +16,7 @@
  * <a href="//support.google.com/adwords/bin/answer.py?answer=2472720">
  * Create a mobile ad</a>.
  * </p>
- * 
+ *
  * <table summary="" style="clear: none">
  * <tr> <th scope="col"> Click-to-call </th>
  * <th scope="col"> Website       </th>
@@ -54,85 +53,104 @@
  * </td></tr>
  * </table>
  * <span class="constraint AdxEnabled">This is disabled for AdX when it is contained within Operators: ADD, SET.</span>
- * @package Google_Api_Ads_AdWords_v201402
+ *
+ * @package    Google_Api_Ads_AdWords_v201402
  * @subpackage v201402
  */
-class MobileAd extends Ad {
+class MobileAd extends Ad
+{
 
-  const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201402";
-  const XSI_TYPE = "MobileAd";
+    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201402";
+    const XSI_TYPE = "MobileAd";
 
-  /**
-   * @access public
-   * @var string
-   */
-  public $headline;
+    /**
+     * @access public
+     * @var string
+     */
+    public $headline;
 
-  /**
-   * @access public
-   * @var string
-   */
-  public $description;
+    /**
+     * @access public
+     * @var string
+     */
+    public $description;
 
-  /**
-   * @access public
-   * @var tnsMarkupLanguageType[]
-   */
-  public $markupLanguages;
+    /**
+     * @access public
+     * @var tnsMarkupLanguageType[]
+     */
+    public $markupLanguages;
 
-  /**
-   * @access public
-   * @var string[]
-   */
-  public $mobileCarriers;
+    /**
+     * @access public
+     * @var string[]
+     */
+    public $mobileCarriers;
 
-  /**
-   * @access public
-   * @var string
-   */
-  public $businessName;
+    /**
+     * @access public
+     * @var string
+     */
+    public $businessName;
 
-  /**
-   * @access public
-   * @var string
-   */
-  public $countryCode;
+    /**
+     * @access public
+     * @var string
+     */
+    public $countryCode;
 
-  /**
-   * @access public
-   * @var string
-   */
-  public $phoneNumber;
+    /**
+     * @access public
+     * @var string
+     */
+    public $phoneNumber;
 
-  /**
-   * Gets the namesapce of this class
-   * @return the namespace of this class
-   */
-  public function getNamespace() {
-    return self::WSDL_NAMESPACE;
-  }
+    /**
+     * Gets the namesapce of this class
+     *
+     * @return the namespace of this class
+     */
+    public function getNamespace()
+    {
+        return self::WSDL_NAMESPACE;
+    }
 
-  /**
-   * Gets the xsi:type name of this class
-   * @return the xsi:type name of this class
-   */
-  public function getXsiTypeName() {
-    return self::XSI_TYPE;
-  }
+    /**
+     * Gets the xsi:type name of this class
+     *
+     * @return the xsi:type name of this class
+     */
+    public function getXsiTypeName()
+    {
+        return self::XSI_TYPE;
+    }
 
-  public function __construct($headline = null, $description = null, $markupLanguages = null, $mobileCarriers = null, $businessName = null, $countryCode = null, $phoneNumber = null, $id = null, $url = null, $displayUrl = null, $devicePreference = null, $AdType = null) {
-    parent::__construct();
-    $this->headline = $headline;
-    $this->description = $description;
-    $this->markupLanguages = $markupLanguages;
-    $this->mobileCarriers = $mobileCarriers;
-    $this->businessName = $businessName;
-    $this->countryCode = $countryCode;
-    $this->phoneNumber = $phoneNumber;
-    $this->id = $id;
-    $this->url = $url;
-    $this->displayUrl = $displayUrl;
-    $this->devicePreference = $devicePreference;
-    $this->AdType = $AdType;
-  }
+    public function __construct(
+        $headline = null,
+        $description = null,
+        $markupLanguages = null,
+        $mobileCarriers = null,
+        $businessName = null,
+        $countryCode = null,
+        $phoneNumber = null,
+        $id = null,
+        $url = null,
+        $displayUrl = null,
+        $devicePreference = null,
+        $AdType = null
+    ) {
+        parent::__construct();
+        $this->headline = $headline;
+        $this->description = $description;
+        $this->markupLanguages = $markupLanguages;
+        $this->mobileCarriers = $mobileCarriers;
+        $this->businessName = $businessName;
+        $this->countryCode = $countryCode;
+        $this->phoneNumber = $phoneNumber;
+        $this->id = $id;
+        $this->url = $url;
+        $this->displayUrl = $displayUrl;
+        $this->devicePreference = $devicePreference;
+        $this->AdType = $AdType;
+    }
 }

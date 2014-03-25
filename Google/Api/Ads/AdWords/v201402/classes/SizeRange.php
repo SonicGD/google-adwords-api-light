@@ -1,33 +1,39 @@
 <?php
 
 
-
 /**
  * Size range in terms of number of users of a UserList/UserInterest.
- * @package Google_Api_Ads_AdWords_v201402
+ *
+ * @package    Google_Api_Ads_AdWords_v201402
  * @subpackage v201402
  */
-class SizeRange {
+class SizeRange
+{
 
-  const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/rm/v201402";
-  const XSI_TYPE = "SizeRange";
+    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/rm/v201402";
+    const XSI_TYPE = "SizeRange";
 
-  /**
-   * Gets the namesapce of this class
-   * @return the namespace of this class
-   */
-  public function getNamespace() {
-    return self::WSDL_NAMESPACE;
-  }
+    /**
+     * Gets the namesapce of this class
+     *
+     * @return the namespace of this class
+     */
+    public function getNamespace()
+    {
+        return self::WSDL_NAMESPACE;
+    }
 
-  /**
-   * Gets the xsi:type name of this class
-   * @return the xsi:type name of this class
-   */
-  public function getXsiTypeName() {
-    return self::XSI_TYPE;
-  }
+    /**
+     * Gets the xsi:type name of this class
+     *
+     * @return the xsi:type name of this class
+     */
+    public function getXsiTypeName()
+    {
+        return self::XSI_TYPE;
+    }
 
-  public function __construct() {
-  }
+    public function __construct()
+    {
+    }
 }

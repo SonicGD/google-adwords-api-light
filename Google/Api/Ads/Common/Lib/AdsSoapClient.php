@@ -69,7 +69,7 @@ abstract class AdsSoapClient extends nusoap_client
      * @var array the header values
      * @access protected
      */
-    protected $headers;
+    protected $headers = [];
 
     /**
      * The name of the service this client is accessing.

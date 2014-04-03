@@ -21,7 +21,7 @@ class GeoLocationService extends AdWordsSoapClient
      *
      * @var string
      */
-    public static $endpoint = "https://adwords.google.com/api/adwords/cm/v201402/GeoLocationService";
+    public $endpoint = "https://adwords.google.com/api/adwords/cm/v201402/GeoLocationService";
     /**
      * Default class map for wsdl=>php
      *

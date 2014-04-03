@@ -21,7 +21,7 @@ class CustomerSyncService extends AdWordsSoapClient
      *
      * @var string
      */
-    public static $endpoint = "https://adwords.google.com/api/adwords/ch/v201402/CustomerSyncService";
+    public $endpoint = "https://adwords.google.com/api/adwords/ch/v201402/CustomerSyncService";
     /**
      * Default class map for wsdl=>php
      *

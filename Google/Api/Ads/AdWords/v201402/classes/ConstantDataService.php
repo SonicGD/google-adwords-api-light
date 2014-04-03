@@ -21,7 +21,7 @@ class ConstantDataService extends AdWordsSoapClient
      *
      * @var string
      */
-    public static $endpoint = "https://adwords.google.com/api/adwords/cm/v201402/ConstantDataService";
+    public $endpoint = "https://adwords.google.com/api/adwords/cm/v201402/ConstantDataService";
     /**
      * Default class map for wsdl=>php
      *

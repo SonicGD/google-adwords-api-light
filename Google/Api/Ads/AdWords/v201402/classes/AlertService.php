@@ -21,7 +21,7 @@ class AlertService extends AdWordsSoapClient
      *
      * @var string
      */
-    public static $endpoint = "https://adwords.google.com/api/adwords/mcm/v201402/AlertService";
+    public $endpoint = "https://adwords.google.com/api/adwords/mcm/v201402/AlertService";
     /**
      * Default class map for wsdl=>php
      *

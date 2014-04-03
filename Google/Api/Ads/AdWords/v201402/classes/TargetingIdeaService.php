@@ -21,7 +21,7 @@ class TargetingIdeaService extends AdWordsSoapClient
      *
      * @var string
      */
-    public static $endpoint = "https://adwords.google.com/api/adwords/o/v201402/TargetingIdeaService";
+    public $endpoint = "https://adwords.google.com/api/adwords/o/v201402/TargetingIdeaService";
     /**
      * Default class map for wsdl=>php
      *

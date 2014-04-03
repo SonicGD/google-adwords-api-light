@@ -21,7 +21,7 @@ class ExpressBusinessService extends AdWordsSoapClient
      *
      * @var string
      */
-    public static $endpoint = "https://adwords.google.com/api/adwords/express/v201402/ExpressBusinessService";
+    public $endpoint = "https://adwords.google.com/api/adwords/express/v201402/ExpressBusinessService";
     /**
      * Default class map for wsdl=>php
      *

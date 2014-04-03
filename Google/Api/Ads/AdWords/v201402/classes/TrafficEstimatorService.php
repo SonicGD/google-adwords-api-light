@@ -21,7 +21,7 @@ class TrafficEstimatorService extends AdWordsSoapClient
      *
      * @var string
      */
-    public static $endpoint = "https://adwords.google.com/api/adwords/o/v201402/TrafficEstimatorService";
+    public $endpoint = "https://adwords.google.com/api/adwords/o/v201402/TrafficEstimatorService";
     /**
      * Default class map for wsdl=>php
      *

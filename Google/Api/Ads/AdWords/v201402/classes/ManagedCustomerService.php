@@ -21,7 +21,7 @@ class ManagedCustomerService extends AdWordsSoapClient
      *
      * @var string
      */
-    public static $endpoint = "https://adwords.google.com/api/adwords/mcm/v201402/ManagedCustomerService";
+    public $endpoint = "https://adwords.google.com/api/adwords/mcm/v201402/ManagedCustomerService";
     /**
      * Default class map for wsdl=>php
      *

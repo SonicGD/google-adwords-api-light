@@ -21,7 +21,7 @@ class BudgetOrderService extends AdWordsSoapClient
      *
      * @var string
      */
-    public static $endpoint = "https://adwords.google.com/api/adwords/billing/v201402/BudgetOrderService";
+    public $endpoint = "https://adwords.google.com/api/adwords/billing/v201402/BudgetOrderService";
     /**
      * Default class map for wsdl=>php
      *

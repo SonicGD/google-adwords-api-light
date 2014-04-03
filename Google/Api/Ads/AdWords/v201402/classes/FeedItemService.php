@@ -21,7 +21,7 @@ class FeedItemService extends AdWordsSoapClient
      *
      * @var string
      */
-    public static $endpoint = "https://adwords.google.com/api/adwords/cm/v201402/FeedItemService";
+    public $endpoint = "https://adwords.google.com/api/adwords/cm/v201402/FeedItemService";
     /**
      * Default class map for wsdl=>php
      *

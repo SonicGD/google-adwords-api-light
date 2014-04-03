@@ -21,7 +21,7 @@ class OfflineConversionFeedService extends AdWordsSoapClient
      *
      * @var string
      */
-    public static $endpoint = "https://adwords.google.com/api/adwords/cm/v201402/OfflineConversionFeedService";
+    public $endpoint = "https://adwords.google.com/api/adwords/cm/v201402/OfflineConversionFeedService";
     /**
      * Default class map for wsdl=>php
      *

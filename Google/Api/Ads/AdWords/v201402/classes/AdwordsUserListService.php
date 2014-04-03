@@ -21,7 +21,7 @@ class AdwordsUserListService extends AdWordsSoapClient
      *
      * @var string
      */
-    public static $endpoint = "https://adwords.google.com/api/adwords/rm/v201402/AdwordsUserListService";
+    public $endpoint = "https://adwords.google.com/api/adwords/rm/v201402/AdwordsUserListService";
     /**
      * Default class map for wsdl=>php
      *

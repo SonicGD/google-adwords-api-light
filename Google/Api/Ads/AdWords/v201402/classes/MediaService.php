@@ -21,7 +21,7 @@ class MediaService extends AdWordsSoapClient
      *
      * @var string
      */
-    public static $endpoint = "https://adwords.google.com/api/adwords/cm/v201402/MediaService";
+    public $endpoint = "https://adwords.google.com/api/adwords/cm/v201402/MediaService";
     /**
      * Default class map for wsdl=>php
      *

@@ -21,7 +21,7 @@ class CampaignService extends AdWordsSoapClient
      *
      * @var string
      */
-    public static $endpoint = "https://adwords.google.com/api/adwords/cm/v201402/CampaignService";
+    public $endpoint = "https://adwords.google.com/api/adwords/cm/v201402/CampaignService";
     /**
      * Default class map for wsdl=>php
      *

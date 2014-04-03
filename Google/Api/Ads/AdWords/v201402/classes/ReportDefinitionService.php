@@ -21,7 +21,7 @@ class ReportDefinitionService extends AdWordsSoapClient
      *
      * @var string
      */
-    public static $endpoint = "https://adwords.google.com/api/adwords/cm/v201402/ReportDefinitionService";
+    public $endpoint = "https://adwords.google.com/api/adwords/cm/v201402/ReportDefinitionService";
     /**
      * Default class map for wsdl=>php
      *

@@ -21,7 +21,7 @@ class LocationCriterionService extends AdWordsSoapClient
      *
      * @var string
      */
-    public static $endpoint = "https://adwords.google.com/api/adwords/cm/v201402/LocationCriterionService";
+    public $endpoint = "https://adwords.google.com/api/adwords/cm/v201402/LocationCriterionService";
     /**
      * Default class map for wsdl=>php
      *

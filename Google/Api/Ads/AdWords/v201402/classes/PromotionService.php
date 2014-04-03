@@ -21,7 +21,7 @@ class PromotionService extends AdWordsSoapClient
      *
      * @var string
      */
-    public static $endpoint = "https://adwords.google.com/api/adwords/express/v201402/PromotionService";
+    public $endpoint = "https://adwords.google.com/api/adwords/express/v201402/PromotionService";
     /**
      * Default class map for wsdl=>php
      *

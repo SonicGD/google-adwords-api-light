@@ -21,7 +21,7 @@ class ExperimentService extends AdWordsSoapClient
      *
      * @var string
      */
-    public static $endpoint = "https://adwords.google.com/api/adwords/cm/v201402/ExperimentService";
+    public $endpoint = "https://adwords.google.com/api/adwords/cm/v201402/ExperimentService";
     /**
      * Default class map for wsdl=>php
      *

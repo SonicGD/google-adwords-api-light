@@ -21,7 +21,7 @@ class AdGroupService extends AdWordsSoapClient
      *
      * @var string
      */
-    public static $endpoint = "https://adwords.google.com/api/adwords/cm/v201402/AdGroupService";
+    public $endpoint = "https://adwords.google.com/api/adwords/cm/v201402/AdGroupService";
     /**
      * Default class map for wsdl=>php
      *

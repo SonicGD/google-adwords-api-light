@@ -166,24 +166,36 @@ abstract class SoapClientFactory
 
         $options['stream_context'] = stream_context_create($contextOptions);
 
+        /**
+         * @var nusoap_client $soapClient
+         */
         $soapClient = new $serviceName($wsdl, $options, $this->GetAdsUser());
-        $soapClient->__setLocation($location);
+        $soapClient->endpoint = $location;
 
         // Copy headers from user.
+        $headers = [];
         foreach ($this->GetAdsUser()->GetHeaderNames() as $key) {
-            $soapClient->SetHeaderValue(
-                $key,
-                $this->GetAdsUser()->GetHeaderValue($key)
-            );
+            $headers[$key] =
+                $this->GetAdsUser()->GetHeaderValue($key);
+
         }
 
         // Copy headers from overrides.
         if (isset($this->headerOverrides)) {
             foreach ($this->headerOverrides as $key => $value) {
-                $soapClient->SetHeaderValue($key, $value);
+                $headers[$key] = $value;
             }
         }
+        $hdrStrng = "<tns:RequestHeader>";
 
+        foreach ($headers as $name => $value) {
+            if ($value == "") {
+                continue;
+            }
+            $hdrStrng .= "<tns:" . $name . ">" . $value . "</tns:" . $name . ">";
+        }
+        $hdrStrng .= "</tns:RequestHeader>";
+        $soapClient->setHeaders($hdrStrng);
         return $soapClient;
     }
 

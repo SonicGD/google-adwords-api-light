@@ -45,7 +45,7 @@ require_once 'Google/Api/Ads/Common/Util/DeprecationUtils.php';
  * @package    GoogleApiAdsCommon
  * @subpackage Lib
  */
-abstract class AdsSoapClient extends SoapClient
+abstract class AdsSoapClient extends nusoap_client
 {
     /**
      * The SoapClient options used to construct this class.
@@ -184,12 +184,15 @@ abstract class AdsSoapClient extends SoapClient
         $serviceName,
         $serviceNamespace
     ) {
+        parent::nusoap_client($wsdl, true, $options);
         $this->user = $user;
         $this->serviceName = $serviceName;
         $this->serviceNamespace = $serviceNamespace;
         $options['typemap'] = $this->GetTypemaps();
         $this->options = $options;
-        parent::__construct($wsdl, $options);
+        $this->debugLevel = 1;
+        $this->soap_defencoding = "utf-8";
+        $this->decode_utf8 = false;
     }
 
     /**
@@ -260,23 +263,32 @@ abstract class AdsSoapClient extends SoapClient
             $input_headers[] = $this->GenerateSoapHeader();
             $this->lastHeaders = $input_headers;
             $this->lastArguments = $arguments;
-            $response = parent::__soapCall(
+            $oAuth2Info = $this->user->GetOAuth2Info();
+            $oAuth2Handler = $this->user->GetOAuth2Handler();
+            if (!empty($oAuth2Info)) {
+                $oAuth2Info = $oAuth2Handler->GetOrRefreshAccessToken($oAuth2Info);
+                $this->user->SetOAuth2Info($oAuth2Info);
+                $oauth2Parameters = $oAuth2Handler->FormatCredentialsForUrl($oAuth2Info);
+                $this->forceEndpoint = $this->endpoint . '?' . $oauth2Parameters;
+            }
+
+            $response = parent::call(
                 $function_name,
                 $arguments,
-                $options,
-                $input_headers,
-                $output_headers
+                $this->serviceNamespace
             );
+            var_dump($response);
+            die();
             $this->ProcessResponse(
                 $this->lastRequest,
-                $this->__getLastResponse(),
+                $this->lastResponse,
                 $function_name
             );
             return $response;
         } catch (SoapFault $e) {
             $this->ProcessResponse(
                 $this->lastRequest,
-                $this->__getLastResponse(),
+                $this->lastResponse,
                 $function_name,
                 $e
             );
@@ -347,9 +359,9 @@ abstract class AdsSoapClient extends SoapClient
     {
         $message = sprintf(
             "%s\n\n%s\n\n%s\n\n%s\n",
-            trim($this->__getLastRequestHeaders()),
+            trim($this->requestHeaders),
             XmlUtils::PrettyPrint($this->lastRequest),
-            trim($this->__getLastResponseHeaders()),
+            trim($this->requestHeaders),
             XmlUtils::PrettyPrint($this->lastResponse)
         );
         Logger::log(Logger::$SOAP_XML_LOG, $message, $level);
@@ -395,7 +407,7 @@ abstract class AdsSoapClient extends SoapClient
     {
         preg_match(
             '/^.*Host:\\s(.*)Connection:.*$/s',
-            $this->__getLastRequestHeaders(),
+            $this->requestHeaders,
             $hostMatches
         );
         if (sizeof($hostMatches) >= 2) {

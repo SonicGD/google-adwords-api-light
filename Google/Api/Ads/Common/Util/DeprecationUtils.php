@@ -34,8 +34,7 @@ require_once 'Google/Api/Ads/Common/Lib/ServiceException.php';
 /**
  * A collection of utility methods for logging or throwing errors related to the
  * usage of deprecated features.
- *
- * @package    GoogleApiAdsCommon
+ * @package GoogleApiAdsCommon
  * @subpackage Util
  */
 abstract class DeprecationUtils
@@ -62,8 +61,7 @@ abstract class DeprecationUtils
     /**
      * Checks to see if an ads user is authenticating with OAuth 2 or not.
      *
-     * @param AdsUser $user the AdsUser to test
-     *
+     * @param  AdsUser $user the AdsUser to test
      * @return boolean true if using OAuth 2, false otherwise
      */
     public static function IsUsingOAuth2(AdsUser $user)
@@ -78,13 +76,12 @@ abstract class DeprecationUtils
      * in a version where it is not supported and throws an error if this is the
      * case.
      *
-     * @param AdsUser $user                    the AdsUser to test
-     * @param string  $finalClientLoginVersion the final API version that supports
-     *                                         ClientLogin
-     * @param string  $requestedVersion        the API version being used
-     *
+     * @param  AdsUser          $user                    the AdsUser to test
+     * @param  string           $finalClientLoginVersion the final API version that supports
+     *                                                   ClientLogin
+     * @param  string           $requestedVersion        the API version being used
      * @throws ServiceException if the requested version does not support
-     *     ClientLogin
+     *                                                  ClientLogin
      */
     public static function CheckUsingClientLoginWithUnsupportedVersion(
         AdsUser $user,
@@ -105,6 +102,51 @@ abstract class DeprecationUtils
     }
 
     /**
+     * Checks to see if returnMoneyInMicros can be used.  Throws an error if it
+     * cannot be used.
+     *
+     * @param  string           $finalVersion     the final API version that supports
+     *                                            returnMoneyInMicros
+     * @param  string           $requestedVersion the API version being used
+     * @throws ServiceException if the requested version does not support
+     *                                           returnMoneyInMicros
+     */
+    public static function CheckUsingReturnMoneyInMicrosWithUnsupportedVersion(
+        $finalVersion,
+        $requestedVersion
+    ) {
+        if ($requestedVersion > $finalVersion) {
+            throw new ServiceException(
+                sprintf(
+                    "returnMoneyInMicros is not supported "
+                    . "in version %s.",
+                    $requestedVersion
+                )
+            );
+        }
+    }
+
+    /**
+     * Logs an error message indicating that the specified method is deprecated.
+     *
+     * @param string $methodName   the name of the deprecated method
+     * @param string $moreInfoLink an optional link to a URL with more information
+     */
+    public static function LogDeprecatedMethodUsage(
+        $methodName,
+        $moreInfoLink = null
+    ) {
+        $message = sprintf("The method '%s' is deprecated.", $methodName);
+        if (isset($moreInfoLink)) {
+            $message .= sprintf(
+                " For more information, please see '%s'",
+                $moreInfoLink
+            );
+        }
+        self::Log($message, Logger::$ERROR);
+    }
+
+    /**
      * Log messages to the relevant message sources.
      *
      * @param string $message is the message to log
@@ -116,4 +158,3 @@ abstract class DeprecationUtils
         Logger::log(Logger::$REQUEST_INFO_LOG, $message, $level);
     }
 }
-

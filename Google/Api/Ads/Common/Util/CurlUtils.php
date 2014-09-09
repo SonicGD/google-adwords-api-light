@@ -30,8 +30,7 @@
 
 /**
  * A collection of utility methods for working with cURL.
- *
- * @package    GoogleApiAdsCommon
+ * @package GoogleApiAdsCommon
  * @subpackage Util
  */
 class CurlUtils
@@ -39,10 +38,8 @@ class CurlUtils
 
     /**
      * Creates a new cURL session with the default options applied.
-     *
-     * @param string $url the URL of the resource to connect to
-     *
-     * @return the cURL handle for the new session
+     * @param  string $url the URL of the resource to connect to
+     * @return the    cURL handle for the new session
      */
     public function CreateSession($url)
     {
@@ -155,4 +152,3 @@ class CurlUtils
         curl_close($ch);
     }
 }
-

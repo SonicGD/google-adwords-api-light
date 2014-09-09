@@ -31,8 +31,7 @@
 
 /**
  * Exception class for any AuthToken (ClientLogin) error.
- *
- * @package    GoogleApiAdsCommon
+ * @package GoogleApiAdsCommon
  * @subpackage Util
  */
 class AuthTokenException extends Exception
@@ -45,7 +44,6 @@ class AuthTokenException extends Exception
 
     /**
      * Constructor for AuthTokenException.
-     *
      * @param string $error        the error that caused the exception
      * @param string $url          an optional URL associated with the error
      * @param string $captchaToken an optional CATPCHA token for the error
@@ -66,7 +64,6 @@ class AuthTokenException extends Exception
 
     /**
      * Gets the error that caused the exception.
-     *
      * @return string the error that caused the exception
      */
     public function GetError()
@@ -76,7 +73,6 @@ class AuthTokenException extends Exception
 
     /**
      * Gets the URL associated with the error.
-     *
      * @return string the URL associated with the error
      */
     public function GetUrl()
@@ -86,7 +82,6 @@ class AuthTokenException extends Exception
 
     /**
      * Gets the CATPCHA token for the error.
-     *
      * @return string the CATPCHA token for the error
      */
     public function GetCaptchaToken()
@@ -96,7 +91,6 @@ class AuthTokenException extends Exception
 
     /**
      * Gets the CAPTCHA URL for the error.
-     *
      * @return string the CAPTCHA URL for the error
      */
     public function GetCaptchaUrl()
@@ -104,4 +98,3 @@ class AuthTokenException extends Exception
         return $this->captchaUrl;
     }
 }
-

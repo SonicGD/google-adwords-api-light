@@ -41,15 +41,13 @@ require_once 'Google/Api/Ads/Common/Util/DeprecationUtils.php';
  * An extension of the {@link SoapClient} class intended to prepare
  * the XML before making a request as well as perform any book-keeping on
  * the response.
- *
- * @package    GoogleApiAdsCommon
+ * @package GoogleApiAdsCommon
  * @subpackage Lib
  */
 abstract class AdsSoapClient extends SoapClient
 {
     /**
      * The SoapClient options used to construct this class.
-     *
      * @var array
      * @access protected
      */
@@ -57,7 +55,6 @@ abstract class AdsSoapClient extends SoapClient
 
     /**
      * The {@link AdsUser} which generated this client.
-     *
      * @var AdsUser the user that generated this client
      * @access protected
      */
@@ -65,7 +62,6 @@ abstract class AdsSoapClient extends SoapClient
 
     /**
      * The header values.
-     *
      * @var array the header values
      * @access protected
      */
@@ -73,7 +69,6 @@ abstract class AdsSoapClient extends SoapClient
 
     /**
      * The name of the service this client is accessing.
-     *
      * @var string the name of the service this client is accessing
      * @access protected
      */
@@ -81,7 +76,6 @@ abstract class AdsSoapClient extends SoapClient
 
     /**
      * The namespace of the service this client is accessing.
-     *
      * @var string the namespace of the service this client is accessing
      * @access protected
      */
@@ -90,10 +84,9 @@ abstract class AdsSoapClient extends SoapClient
     /**
      * The last SOAP XML request made to the server after PrepareRequest() and
      * RemoveSensitiveInfo() have been called on it.
-     *
      * @var string the last SOAP XML request made to the server
-     * @see    PrepareRequest()
-     * @see    RemoveSensitiveInfo()
+     * @see PrepareRequest()
+     * @see RemoveSensitiveInfo()
      * @access protected
      */
     protected $lastRequest;
@@ -101,18 +94,16 @@ abstract class AdsSoapClient extends SoapClient
     /**
      * The last SOAP XML DOMDocument request made to the server after
      * PrepareRequest() and RemoveSensitiveInfo() have been called on it.
-     *
      * @var DOMDocument the last SOAP XML request made to the server. Can be
-     *         <var>NULL</var> if the last request was not proper XML
-     * @see    PrepareRequest()
-     * @see    RemoveSensitiveInfo()
+     *     <var>NULL</var> if the last request was not proper XML
+     * @see PrepareRequest()
+     * @see RemoveSensitiveInfo()
      * @access private
      */
     private $lastRequestDom;
 
     /**
      * The last SOAP XML response from the server.
-     *
      * @var string the last SOAP XML response from the server
      * @access protected
      */
@@ -120,16 +111,14 @@ abstract class AdsSoapClient extends SoapClient
 
     /**
      * The last SOAP XML DOMDocument response from the server.
-     *
      * @var DOMDocument the last SOAP XML response from the server. Can be
-     *         <var>NULL</var> if the last request was not proper XML
+     *     <var>NULL</var> if the last request was not proper XML
      * @access private
      */
     private $lastResponseDom;
 
     /**
      * The last SOAP fault generated from the server. <var>NULL</var> if none.
-     *
      * @var SOAPFault the last SOAP fault generated from the server
      * @access protected
      */
@@ -137,7 +126,6 @@ abstract class AdsSoapClient extends SoapClient
 
     /**
      * The name of the last method called from this client.
-     *
      * @var string the name of the last method called from this client
      * @access protected
      */
@@ -145,28 +133,24 @@ abstract class AdsSoapClient extends SoapClient
 
     /**
      * The last arguments passed to the called SOAP method
-     *
      * @var array the last arguments passed to the called SOAP method
      */
     protected $lastArguments;
 
     /**
      * The last headers used in the request.
-     *
      * @var array the last headers used in the request
      */
     protected $lastHeaders;
 
     /**
      * The transport layer override.
-     *
      * @var null|SoapClient
      */
     protected $transportLayer;
 
     /**
      * The constructor intended to be called by all sub-classes.
-     *
      * @param string  $wsdl             URI of the WSDL file or NULL if working in non-WSDL
      *                                  mode
      * @param array   $options          the SOAP client options
@@ -174,7 +158,6 @@ abstract class AdsSoapClient extends SoapClient
      * @param string  $serviceName      the name of the service which is making this
      *                                  call
      * @param string  $serviceNamespace the namespace of the service
-     *
      * @access protected
      */
     public function __construct(
@@ -195,21 +178,14 @@ abstract class AdsSoapClient extends SoapClient
     /**
      * Overrides the method SoapClient.__doRequest() to
      * perform a clean up of the request XML before marshalling.
-     *
-     * @param string $request  the request XML
-     * @param string $location the URL to request
-     * @param string $action   the SOAP action
-     * @param string $version  the SOAP version
-     *
+     * @param  string $request  the request XML
+     * @param  string $location the URL to request
+     * @param  string $action   the SOAP action
+     * @param  string $version  the SOAP version
      * @return string the XML SOAP response
      */
-    function __doRequest(
-        $request,
-        $location,
-        $action,
-        $version,
-        $one_way = 0
-    ) {
+    public function __doRequest($request, $location, $action, $version, $one_way = 0)
+    {
         $this->lastRequest = $this->PrepareRequest(
             $request,
             $this->lastArguments,
@@ -238,17 +214,15 @@ abstract class AdsSoapClient extends SoapClient
     /**
      * Overrides the method SoapClient.__soapCall() to process the
      * response from the SOAP call.
-     *
-     * @param string $function_name  the name of the function being called
-     * @param array  $arguments      the arguments to that function
-     * @param array  $options        the options for the SOAP call
-     * @param array  $input_headers  the optional input headers
-     * @param array  $output_headers the options output headers
-     *
-     * @return mixed the return from the parent __soapCall
+     * @param  string    $function_name  the name of the function being called
+     * @param  array     $arguments      the arguments to that function
+     * @param  array     $options        the options for the SOAP call
+     * @param  array     $input_headers  the optional input headers
+     * @param  array     $output_headers the options output headers
+     * @return mixed     the return from the parent __soapCall
      * @throws SOAPFault if there was an exception making the request
      */
-    function __soapCall(
+    public function __soapCall(
         $function_name,
         $arguments,
         $options = null,
@@ -260,6 +234,30 @@ abstract class AdsSoapClient extends SoapClient
             $input_headers[] = $this->GenerateSoapHeader();
             $this->lastHeaders = $input_headers;
             $this->lastArguments = $arguments;
+
+            $httpHeaders = $this->GenerateHttpHeaders();
+            if (!empty($httpHeaders)) {
+                // The context this soap client was originally created with. This is the
+                // only way to modify the HTTP headers per soap call.
+                $existingStreamContext = $this->options['stream_context'];
+                $existingStreamContextOptions =
+                    stream_context_get_options($existingStreamContext);
+                // Override the existing HTTP headers each time since they may have
+                // changed.
+                $existingStreamContextOptions['http']['header'] = implode(
+                    "\r\n",
+                    array_map(
+                        'AdsSoapClient::implodeHttpHeaders',
+                        array_keys($httpHeaders),
+                        $httpHeaders
+                    )
+                );
+                stream_context_set_option(
+                    $existingStreamContext,
+                    $existingStreamContextOptions
+                );
+            }
+
             $response = parent::__soapCall(
                 $function_name,
                 $arguments,
@@ -272,6 +270,7 @@ abstract class AdsSoapClient extends SoapClient
                 $this->__getLastResponse(),
                 $function_name
             );
+
             return $response;
         } catch (SoapFault $e) {
             $this->ProcessResponse(
@@ -284,14 +283,17 @@ abstract class AdsSoapClient extends SoapClient
         }
     }
 
+    private static function implodeHttpHeaders($headerName, $headerValue)
+    {
+        return sprintf("%s: %s", $headerName, $headerValue);
+    }
+
     /**
      * Processes the response from the __doRequest call.
-     *
      * @param string    $request  the request to the server
      * @param string    $response the response from the server
      * @param string    $method   the method called
      * @param SoapFault $e        the SOAP fault thrown if any
-     *
      * @access private
      */
     private function ProcessResponse(
@@ -336,11 +338,9 @@ abstract class AdsSoapClient extends SoapClient
      * Logs the SOAP XML to the Logger::$SOAP_XML_LOG log after the request has
      * transformed by PrepareRequest() and both the request and response have
      * been sanitized by RemoveSensitiveInfo().
-     *
      * @param string $level the log level to use
-     *
-     * @see    PrepareRequest()
-     * @see    RemoveSensitiveInfo()
+     * @see PrepareRequest()
+     * @see RemoveSensitiveInfo()
      * @access private
      */
     private function LogSoapXml($level)
@@ -359,11 +359,9 @@ abstract class AdsSoapClient extends SoapClient
      * Logs the request info to the Logger::$REQUEST_INFO_LOG log the request has
      * transformed by PrepareRequest() and both the request has been sanitized by
      * RemoveSensitiveInfo().
-     *
      * @param string $level the log level to use
-     *
-     * @see    PrepareRequest()
-     * @see    RemoveSensitiveInfo()
+     * @see PrepareRequest()
+     * @see RemoveSensitiveInfo()
      * @access private
      */
     private function LogRequestInfo($level)
@@ -378,7 +376,6 @@ abstract class AdsSoapClient extends SoapClient
 
     /**
      * Gets the user for this client.
-     *
      * @return AdsUser the user for this client.
      */
     public function GetAdsUser()
@@ -388,7 +385,6 @@ abstract class AdsSoapClient extends SoapClient
 
     /**
      * Gets the server that the request was made to.
-     *
      * @return string the server that the request was made to
      */
     public function GetServer()
@@ -407,7 +403,6 @@ abstract class AdsSoapClient extends SoapClient
 
     /**
      * Gets the email of the user making the request.
-     *
      * @return string the email of the user making the request
      */
     public function GetEmail()
@@ -417,7 +412,6 @@ abstract class AdsSoapClient extends SoapClient
 
     /**
      * Gets the service name for this client.
-     *
      * @return string the service name for this client
      */
     public function GetServiceName()
@@ -427,7 +421,6 @@ abstract class AdsSoapClient extends SoapClient
 
     /**
      * Gets the method name for the last method called.
-     *
      * @return string the name of last method called
      */
     public function GetLastMethodName()
@@ -437,7 +430,6 @@ abstract class AdsSoapClient extends SoapClient
 
     /**
      * Gets the response time for the last call
-     *
      * @return double the response time of the last call
      */
     public function GetLastResponseTime()
@@ -454,13 +446,13 @@ abstract class AdsSoapClient extends SoapClient
                 . $e->getMessage(),
                 E_USER_NOTICE
             );
+
             return "null";
         }
     }
 
     /**
      * Gets the request ID for the last call
-     *
      * @return string the request ID of the last call
      */
     public function GetLastRequestId()
@@ -477,13 +469,13 @@ abstract class AdsSoapClient extends SoapClient
                 . $e->getMessage(),
                 E_USER_NOTICE
             );
+
             return 'null';
         }
     }
 
     /**
      * Returns <var>TRUE</var> if there was a SOAP fault during the last call.
-     *
      * @returns boolean <var>TRUE</var> if there was a SOAP fault during the last
      *     call
      */
@@ -494,7 +486,6 @@ abstract class AdsSoapClient extends SoapClient
 
     /**
      * Returns the SOAP fault message if there was any
-     *
      * @return string the fault message if there was any
      */
     public function GetLastFaultMessage()
@@ -507,11 +498,9 @@ abstract class AdsSoapClient extends SoapClient
      * Depending on the version of PHP, the xsi:types need to be added and empty
      * tags may need to be removed. The SoapRequestXmlFixer class can facilitate
      * these changes.
-     *
-     * @param string $request   the request to be modified
-     * @param array  $arguments the arguments passed to the SOAP method
-     * @param array  $headers   the headers used in the request
-     *
+     * @param  string $request   the request to be modified
+     * @param  array  $arguments the arguments passed to the SOAP method
+     * @param  array  $headers   the headers used in the request
      * @return string the XML request ready to be sent to the server
      * @access protected
      */
@@ -520,7 +509,7 @@ abstract class AdsSoapClient extends SoapClient
         array $arguments,
         array $headers
     ) {
-        $addXsiTypes = false;
+        $addXsiTypes = $this->user->GetForceAddXsiTypes();
         $removeEmptyElements = false;
         $replaceReferences = false;
 
@@ -531,10 +520,18 @@ abstract class AdsSoapClient extends SoapClient
                 E_USER_ERROR
             );
         }
-        if (version_compare(PHP_VERSION, '5.2.6', '<') ||
-            (PHP_OS == 'Darwin' && version_compare(PHP_VERSION, '5.3.0', '<'))
-        ) {
-            $addXsiTypes = true;
+
+        // If FORCE_ADD_XSI_TYPES was unset, then set it based on PHP version
+        if ($addXsiTypes === null) {
+            if (version_compare(PHP_VERSION, '5.2.6', '<') ||
+                (PHP_OS == 'Darwin' && version_compare(PHP_VERSION, '5.3.0', '<'))
+            ) {
+                $addXsiTypes = true;
+            } else {
+                // If FORCE_ADD_XSI_TYPES was not set, and we didn't find an applicable
+                // version, then set it to FALSE by default.
+                $addXsiTypes = false;
+            }
         }
 
         $removeEmptyElements = version_compare(PHP_VERSION, '5.2.3', '<');
@@ -545,6 +542,7 @@ abstract class AdsSoapClient extends SoapClient
                 $addXsiTypes, $removeEmptyElements,
                 $replaceReferences
             );
+
             return $fixer->FixXml($request, $arguments, $headers);
         } else {
             // Empty string is appended to "save" the XML from being deleted.
@@ -554,7 +552,6 @@ abstract class AdsSoapClient extends SoapClient
 
     /**
      * Gets the names of all registered request header elements.
-     *
      * @return array the names of the request header elements
      */
     public function GetHeaderNames()
@@ -564,11 +561,9 @@ abstract class AdsSoapClient extends SoapClient
 
     /**
      * Gets the value for a registered request header element.
-     *
-     * @param string $key the name of the request header element
-     *
+     * @param  string $key the name of the request header element
      * @return string the value of the request header element or <var>NULL</var>
-     *     if not found
+     *                    if not found
      */
     public function GetHeaderValue($key)
     {
@@ -581,7 +576,6 @@ abstract class AdsSoapClient extends SoapClient
 
     /**
      * Sets the value for a request header.
-     *
      * @param string $key   the name of the request header element
      * @param string $value the value for the request header element
      */
@@ -592,39 +586,58 @@ abstract class AdsSoapClient extends SoapClient
 
     /**
      * Generates the SOAP header for the client.
-     *
      * @return SoapHeader the instantiated SoapHeader ready to set
      * @access protected
      */
-    protected abstract function GenerateSoapHeader();
+    abstract protected function GenerateSoapHeader();
+
+    /**
+     * Generates the HTTP headers for the client. By default includes OAuth2
+     * credentials if using OAuth2. Clients should override with product specific
+     * HTTP headers.
+     * @return array the HTTP headers as an array
+     * @access protected
+     */
+    protected function GenerateHttpHeaders()
+    {
+        $httpHeaders = array();
+        $oAuth2Info = $this->user->GetOAuth2Info();
+        $oAuth2Handler = $this->user->GetOAuth2Handler();
+        if (!empty($oAuth2Info)) {
+            $oAuth2Info = $oAuth2Handler->GetOrRefreshAccessToken($oAuth2Info);
+            $this->user->SetOAuth2Info($oAuth2Info);
+            if ($oAuth2Handler->IsAccessTokenValid($oAuth2Info)) {
+                $httpHeaders['Authorization'] =
+                    $oAuth2Handler->FormatCredentialsForHeader($oAuth2Info);
+            }
+        }
+
+        return $httpHeaders;
+    }
 
     /**
      * Removes any sensitive information from the request XML. This method is
      * called after the request has been made and before logging any XML.
-     *
-     * @param string $request the request just made to the server
-     *
+     * @param  string $request the request just made to the server
      * @return string the request with any sensitive information removed ready to
-     *     be logged.
+     *                        be logged.
      * @access protected
      */
-    protected abstract function RemoveSensitiveInfo($request);
+    abstract protected function RemoveSensitiveInfo($request);
 
     /**
      * Generates the request information using the request and response. This
      * method is called after the request has been made and RemoveSensitiveInfo()
      * has been called as well.
-     *
      * @return string the request information ready to be logged
      * @access protected
-     * @see    RemoveSensitiveInfo
+     * @see RemoveSensitiveInfo
      */
-    protected abstract function GenerateRequestInfoMessage();
+    abstract protected function GenerateRequestInfoMessage();
 
     /**
      * Gets the DOMDocument representing the last response from this client.
-     *
-     * @return DOMDocument the DOMDocument representing the last response
+     * @return DOMDocument  the DOMDocument representing the last response
      * @throws DOMException if the DOMDocument could not be loaded
      */
     public function GetLastResponseDom()
@@ -638,8 +651,7 @@ abstract class AdsSoapClient extends SoapClient
 
     /**
      * Get the DOMDocument representing the last request from this client.
-     *
-     * @return DOMDocument the DOMDocument representing the last request
+     * @return DOMDocument  the DOMDocument representing the last request
      * @throws DOMException if the DOMDocument could not be loaded
      */
     public function GetLastRequestDom()
@@ -653,7 +665,6 @@ abstract class AdsSoapClient extends SoapClient
 
     /**
      * Returns the typemaps to be used when constructing the SOAP client.
-     *
      * @return array the typemap entries
      */
     protected function GetTypemaps()
@@ -667,15 +678,14 @@ abstract class AdsSoapClient extends SoapClient
             'from_xml'  => 'AdsSoapClient::TypemapLongFromXml',
             'to_xml'    => 'AdsSoapClient::TypemapLongToXml'
         );
+
         return $typemaps;
     }
 
     /**
      * A typemap conversion function for parsing long values in SOAP responses.
-     *
-     * @param string $xml the XML snippet containing the long value.
-     *
-     * @return mixed the inner long value as an integer, float, or string
+     * @param  string $xml the XML snippet containing the long value.
+     * @return mixed  the inner long value as an integer, float, or string
      */
     public static function TypemapLongFromXml($xml)
     {
@@ -690,14 +700,13 @@ abstract class AdsSoapClient extends SoapClient
                 return floatval($value);
             }
         }
+
         return $value;
     }
 
     /**
      * A typemap conversion function for serializing long values in SOAP requests.
-     *
-     * @param mixed $value the long value
-     *
+     * @param  mixed  $value the long value
      * @return string an XML snippet with the serialized value
      */
     public static function TypemapLongToXml($value)
@@ -714,13 +723,11 @@ abstract class AdsSoapClient extends SoapClient
      * When pseudo-namespace support is enabled class names can become very long,
      * and this function provides an alternative way to create objects that is
      * more readable.
-     *
-     * @param string $type   the type of object to create
-     * @param array  $params parameters to pass into the constructor, as either
-     *                       flat array in the correct order for the constructor or as an
-     *                       associative array from parameter name to value
-     *
-     * @return mixed a new instance of a class that represents that type
+     * @param  string $type   the type of object to create
+     * @param  array  $params parameters to pass into the constructor, as either
+     *                        flat array in the correct order for the constructor or as an
+     *                        associative array from parameter name to value
+     * @return mixed  a new instance of a class that represents that type
      */
     public function Create($type, $params = null)
     {
@@ -734,6 +741,7 @@ abstract class AdsSoapClient extends SoapClient
                         $reflectionClass->getConstructor()
                     );
                 }
+
                 return $reflectionClass->newInstanceArgs($params);
             } else {
                 return $reflectionClass->newInstance();
@@ -748,8 +756,7 @@ abstract class AdsSoapClient extends SoapClient
      *
      * WARNING: to be used for testing purposes only.
      *
-     * @param SoapClient $client the soap client to use.
-     *
+     * @param  SoapClient    $client the soap client to use.
      * @return AdsSoapClient this prepared client.
      */
     public function __SetTransportLayer(SoapClient $client)

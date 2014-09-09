@@ -1,8 +1,7 @@
 <?php
 /**
  * Client used to retrieve authentication tokens from the Client Login API.
- *
- * @link       http://code.google.com/apis/accounts/docs/AuthForInstalledApps.html
+ * @link http://code.google.com/apis/accounts/docs/AuthForInstalledApps.html
  *
  * PHP version 5
  *
@@ -35,9 +34,8 @@ require_once 'Google/Api/Ads/Common/Util/CurlUtils.php';
 
 /**
  * Client used to retrieve authentication tokens from the Client Login API.
- *
- * @link       http://code.google.com/apis/accounts/docs/AuthForInstalledApps.html
- * @package    GoogleApiAdsCommon
+ * @link http://code.google.com/apis/accounts/docs/AuthForInstalledApps.html
+ * @package GoogleApiAdsCommon
  * @subpackage Util
  */
 class AuthToken
@@ -45,14 +43,12 @@ class AuthToken
 
     /**
      * The default account type for authentication requests.
-     *
      * @var string
      */
     const DEFAULT_ACCOUNT_TYPE = 'GOOGLE';
 
     /**
      * The default server to make authentication requests to.
-     *
      * @var string
      */
     const DEFAULT_SERVER = 'https://www.google.com';
@@ -70,7 +66,6 @@ class AuthToken
 
     /**
      * Creates a new instance of this authentication token utility class.
-     *
      * @param string    $email       the email of the user
      * @param string    $password    the password of the user
      * @param string    $service     the service name
@@ -78,11 +73,11 @@ class AuthToken
      * @param string    $accountType the account type, defaults to 'GOOGLE'
      * @param string    $server      the server to make the request to, defaults
      *                               to 'https://www.google.com'
-     * @param           string       captchaToken the token return with a CAPTCHA challenge
-     * @param           string       captchaResponse the response to a CAPTCHA challenge
+     * @param           string captchaToken the token return with a CAPTCHA challenge
+     * @param           string captchaResponse the response to a CAPTCHA challenge
      * @param CurlUtils $curlUtils   an instance of CurlUtils
      */
-    function __construct(
+    public function __construct(
         $email,
         $password,
         $service,
@@ -108,8 +103,7 @@ class AuthToken
 
     /**
      * Peforms a POST to get the auth token and then parses the result.
-     *
-     * @return string the auth token
+     * @return string             the auth token
      * @throws AuthTokenException if an error occurs during authentication
      */
     public function GetAuthToken()
@@ -138,8 +132,7 @@ class AuthToken
 
     /**
      * Makes the client login request and stores the result.
-     *
-     * @return string the response from the ClientLogin API
+     * @return string             the response from the ClientLogin API
      * @throws AuthTokenException if an error occurs during authentication
      */
     private function Login()
@@ -181,10 +174,8 @@ class AuthToken
 
     /**
      * Parses the response into a map of field name to value.
-     *
-     * @param string $response the response from the ClientLogin API
-     *
-     * @return array a map of field name to value
+     * @param  string $response the response from the ClientLogin API
+     * @return array  a map of field name to value
      */
     private function ParseResponse($response)
     {
@@ -196,12 +187,12 @@ class AuthToken
             $value = isset($parts[1]) ? $parts[1] : null;
             $result[$key] = $value;
         }
+
         return $result;
     }
 
     /**
      * Returns the server to make requests to.
-     *
      * @return string the server to make requests to
      */
     public function GetServer()
@@ -209,4 +200,3 @@ class AuthToken
         return $this->server;
     }
 }
-

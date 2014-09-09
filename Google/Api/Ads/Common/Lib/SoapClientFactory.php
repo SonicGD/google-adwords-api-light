@@ -32,12 +32,18 @@ require_once 'Google/Api/Ads/Common/Lib/AdsUser.php';
 
 /**
  * Base class for all SOAP client factories of Ads client libraries.
- *
- * @package    GoogleApiAdsCommon
+ * @package GoogleApiAdsCommon
  * @subpackage Lib
  */
 abstract class SoapClientFactory
 {
+
+    /**
+     * The minimum PHP version that can properly decode HTTP 1.1 chunked
+     * responses. We use 5.4.0 because some versions of 5.3.x work and some do
+     * not.
+     */
+    const MIN_VER_CHUNKED_HTTP11 = '5.4.0';
 
     private $user;
     private $version;
@@ -50,12 +56,10 @@ abstract class SoapClientFactory
 
     /**
      * The constructor called by any sub-class.
-     *
      * @param AdsUser $user        the user which the client will use for credentials
      * @param string  $version     the version to generate clients for
      * @param string  $server      the server to generate clients for
      * @param string  $productName the product name (i.e. adwords)
-     *
      * @access protected
      */
     protected function __construct(
@@ -74,7 +78,6 @@ abstract class SoapClientFactory
 
     /**
      * Initiates a require_once for the service.
-     *
      * @param string $serviceName the service to instantiate
      */
     abstract public function DoRequireOnce($serviceName);
@@ -83,9 +86,7 @@ abstract class SoapClientFactory
      * Generates a SOAP client for the given service name. Generates a user level
      * error if this instalation of PHP does not have the extension for SOAP
      * installed.
-     *
-     * @param string $serviceName the name of the service to generate a client for
-     *
+     * @param  string        $serviceName the name of the service to generate a client for
      * @return AdsSoapClient an instantiated SOAP client
      */
     public function GenerateSoapClient($serviceName)
@@ -93,6 +94,7 @@ abstract class SoapClientFactory
         if (extension_loaded('soap')) {
             $this->DoRequireOnce($serviceName);
             $soapClient = $this->GenerateServiceClient($serviceName);
+
             return $soapClient;
         } else {
             trigger_error(
@@ -106,9 +108,7 @@ abstract class SoapClientFactory
 
     /**
      * Generates the SOAP service client without the proper headers set yet.
-     *
-     * @param string $serviceName the service to create a client for
-     *
+     * @param  string        $serviceName the service to create a client for
      * @return AdsSoapClient the SOAP service client
      * @access protected
      */
@@ -135,6 +135,19 @@ abstract class SoapClientFactory
 
         // WSDL caching settings.
         $options['cache_wsdl'] = $this->GetAdsUser()->GetWsdlCacheType();
+
+        // Check to see if the default version of the HTTP protocol to use should be
+        // overriden depending on the user's environment.
+        if ($this->GetAdsUser()->GetForceHttpVersion() !== null) {
+            $contextOptions['http']['protocol_version'] =
+                $this->GetAdsUser()->GetForceHttpVersion();
+        } else {
+            if (version_compare(PHP_VERSION, self::MIN_VER_CHUNKED_HTTP11) <
+                '<'
+            ) {
+                $contextOptions['http']['protocol_version'] = 1.0;
+            }
+        }
 
         // Proxy settings.
         if (defined('HTTP_PROXY_HOST') && HTTP_PROXY_HOST != '') {
@@ -189,9 +202,7 @@ abstract class SoapClientFactory
 
     /**
      * Gets the end-point location of the service.
-     *
-     * @param string $serviceName the service to instantiate
-     *
+     * @param  string $serviceName the service to instantiate
      * @return string the end-point location of the service.
      * @access protected
      */
@@ -199,6 +210,7 @@ abstract class SoapClientFactory
     {
         $classVars = get_class_vars($serviceName);
         $endpoint = $classVars['endpoint'];
+
         return preg_replace(
             SoapClientFactory::$SERVER_REGEX,
             $this->GetServer(),
@@ -208,7 +220,6 @@ abstract class SoapClientFactory
 
     /**
      * Gets the user associated with this factory.
-     *
      * @return AdsUser the user associated with this factory
      */
     public function GetAdsUser()
@@ -218,7 +229,6 @@ abstract class SoapClientFactory
 
     /**
      * Gets the version associated with this factory.
-     *
      * @return string the version associated with this factory
      */
     public function GetVersion()
@@ -228,7 +238,6 @@ abstract class SoapClientFactory
 
     /**
      * Gets the server associated with this factory.
-     *
      * @return string the server associated with this factory
      */
     public function GetServer()
@@ -238,7 +247,6 @@ abstract class SoapClientFactory
 
     /**
      * Gets the product name associated with this factory.
-     *
      * @return string the product name associated with this factory
      */
     public function GetProductName()
@@ -248,7 +256,6 @@ abstract class SoapClientFactory
 
     /**
      * Get the compression flag
-     *
      * @return int Get the compression flag value
      */
     protected static function GetCompressionKind()
@@ -266,4 +273,3 @@ abstract class SoapClientFactory
         return self::$COMPRESSION_KIND;
     }
 }
-

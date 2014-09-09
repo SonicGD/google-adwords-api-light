@@ -35,8 +35,7 @@ require_once 'Google/Api/Ads/Common/Lib/ValidationException.php';
 
 /**
  * User class for all API modules using the Ads API.
- *
- * @package    GoogleApiAdsCommon
+ * @package GoogleApiAdsCommon
  * @subpackage Lib
  */
 abstract class AdsUser
@@ -52,13 +51,14 @@ abstract class AdsUser
     private $soapCompression;
     private $soapCompressionLevel;
     private $wsdlCache;
+    private $forceHttpVersion;
+    private $forceAddXsiTypes;
     private $authServer;
     private $oauth2Info;
     private $oauth2Handler;
 
     /**
      * Constructor for AdsUser.
-     *
      * @access protected
      */
     protected function __construct()
@@ -79,12 +79,10 @@ abstract class AdsUser
      * the <var>$authVar</var> is set, it is is used. Otherwise, the supplied
      * <var>$authenticationIni</var> is queired for the variable. If none is found
      * <var>NULL</var> is returned.
-     *
-     * @param string $authVar     the default value for the authenticaiton variable
-     * @param string $authVarName the name of the authencation variable
-     * @param array  $authIni     the array of authentication variables from
-     *                            an INI file
-     *
+     * @param  string $authVar     the default value for the authenticaiton variable
+     * @param  string $authVarName the name of the authencation variable
+     * @param  array  $authIni     the array of authentication variables from
+     *                             an INI file
      * @return string the authentication variable value
      * @access protected
      */
@@ -106,7 +104,6 @@ abstract class AdsUser
 
     /**
      * Gets the names of all registered request header elements.
-     *
      * @return array the names of the request header elements
      */
     public function GetHeaderNames()
@@ -116,9 +113,7 @@ abstract class AdsUser
 
     /**
      * Gets the value for a registered request header element.
-     *
-     * @param string $key the name of the request header element
-     *
+     * @param  string $key the name of the request header element
      * @return string the value of the request header element or NULL if not found
      */
     public function GetHeaderValue($key)
@@ -132,7 +127,6 @@ abstract class AdsUser
 
     /**
      * Sets the value for a request header.
-     *
      * @param string $key   the name of the request header element
      * @param string $value the value for the request header element
      */
@@ -143,11 +137,9 @@ abstract class AdsUser
 
     /**
      * Gets the service by its service name.
-     *
-     * @param string            $serviceName    the service name
-     * @param SoapClientFactory $serviceFactory the service factory
-     *
-     * @return SoapClient the instantiated service
+     * @param  string            $serviceName    the service name
+     * @param  SoapClientFactory $serviceFactory the service factory
+     * @return SoapClient        the instantiated service
      */
     public function GetServiceSoapClient(
         $serviceName,
@@ -208,7 +200,6 @@ abstract class AdsUser
      * Loads the settings for this client library. If the settings INI file
      * located at <var>$settingsIniPath</var> cannot be loaded, then the
      * parameters passed into this method are used.
-     *
      * @param string $settingsIniPath      the path to the settings INI file
      * @param string $defaultVersion       the default version if the settings INI file
      *                                     cannot be loaded
@@ -271,7 +262,7 @@ abstract class AdsUser
         );
 
         // SOAP settings.
-        $this->soapCompression = (bool)$this->GetSetting(
+        $this->soapCompression = (bool) $this->GetSetting(
             $settingsIni,
             'SOAP',
             'COMPRESSION',
@@ -286,7 +277,7 @@ abstract class AdsUser
         if ($this->soapCompressionLevel < 1 || $this->soapCompressionLevel > 9) {
             $this->soapCompressionLevel = 1;
         }
-        $this->wsdlCache = (int)$this->GetSetting(
+        $this->wsdlCache = (int) $this->GetSetting(
             $settingsIni,
             'SOAP',
             'WSDL_CACHE',
@@ -295,6 +286,20 @@ abstract class AdsUser
         if ($this->wsdlCache < 0 || $this->wsdlCache > 3) {
             $this->wsdlCache = WSDL_CACHE_NONE;
         }
+        $forceHttpVersion = $this->GetSetting(
+            $settingsIni,
+            'SOAP',
+            'FORCE_HTTP_VERSION'
+        );
+        $this->forceHttpVersion = $forceHttpVersion === null ? null :
+            (float) $forceHttpVersion;
+        $forceAddXsiTypes = $this->GetSetting(
+            $settingsIni,
+            'SOAP',
+            'FORCE_ADD_XSI_TYPES'
+        );
+        $this->forceAddXsiTypes = $forceAddXsiTypes === null ? null :
+            (bool) $forceAddXsiTypes;
 
         // Proxy settings.
         $proxyHost = $this->GetSetting($settingsIni, 'PROXY', 'HOST');
@@ -303,7 +308,7 @@ abstract class AdsUser
         }
         $proxyPort = $this->GetSetting($settingsIni, 'PROXY', 'PORT');
         if (isset($proxyPort)) {
-            $this->Define('HTTP_PROXY_PORT', (int)$proxyPort);
+            $this->Define('HTTP_PROXY_PORT', (int) $proxyPort);
         }
         $proxyUser = $this->GetSetting($settingsIni, 'PROXY', 'USER');
         if (isset($proxyUser)) {
@@ -333,7 +338,7 @@ abstract class AdsUser
         }
         $sslVerifyHost = $this->GetSetting($settingsIni, 'SSL', 'VERIFY_HOST');
         if (isset($sslVerifyHost)) {
-            $this->Define('SSL_VERIFY_HOST', (int)$sslVerifyHost);
+            $this->Define('SSL_VERIFY_HOST', (int) $sslVerifyHost);
         }
         $sslCaPath = $this->GetSetting($settingsIni, 'SSL', 'CA_PATH');
         if (isset($sslCaPath)) {
@@ -348,12 +353,10 @@ abstract class AdsUser
     /**
      * Gets the value for a given setting based on the contents of the parsed INI
      * file.
-     *
-     * @param array  $settings the parsed settings INI file
-     * @param string $section  the name of the section containing the setting
-     * @param string $name     the name of the setting
-     * @param mixed  $default  the default value of the setting
-     *
+     * @param  array  $settings the parsed settings INI file
+     * @param  string $section  the name of the section containing the setting
+     * @param  string $name     the name of the setting
+     * @param  mixed  $default  the default value of the setting
      * @return string the value of the setting
      */
     private function GetSetting($settings, $section, $name, $default = null)
@@ -365,6 +368,7 @@ abstract class AdsUser
         ) {
             return $default;
         }
+
         return $settings[$section][$name];
     }
 
@@ -372,7 +376,6 @@ abstract class AdsUser
      * Define a constant if it isn't already defined. If it is defined but the
      * value is different then attempt to redefine it, which will fail and throw
      * the appropriate error.
-     *
      * @param string $name  the name of the constant
      * @param string $value the value of the constant
      */
@@ -385,7 +388,6 @@ abstract class AdsUser
 
     /**
      * Gets the default server.
-     *
      * @return string the default server
      */
     public function GetDefaultServer()
@@ -395,7 +397,6 @@ abstract class AdsUser
 
     /**
      * Sets the default server.
-     *
      * @param string $defaultServer the default server
      */
     public function SetDefaultServer($defaultServer)
@@ -405,7 +406,6 @@ abstract class AdsUser
 
     /**
      * Gets the default version.
-     *
      * @return string the default version
      */
     public function GetDefaultVersion()
@@ -415,7 +415,6 @@ abstract class AdsUser
 
     /**
      * Sets the default version.
-     *
      * @param string $defaultVersion the default version
      */
     public function SetDefaultVersion($defaultVersion)
@@ -425,7 +424,6 @@ abstract class AdsUser
 
     /**
      * Gets the logs directory.
-     *
      * @return string the logs directory
      */
     public function GetLogsDirectory()
@@ -435,7 +433,6 @@ abstract class AdsUser
 
     /**
      * Is SOAP compression enabled.
-     *
      * @return bool is SOAP compression enabled
      */
     public function IsSoapCompressionEnabled()
@@ -445,7 +442,6 @@ abstract class AdsUser
 
     /**
      * Gets the SOAP compression level.
-     *
      * @return int the SOAP compression level
      */
     public function GetSoapCompressionLevel()
@@ -455,7 +451,6 @@ abstract class AdsUser
 
     /**
      * Gets the type of WSDL caching in use.
-     *
      * @return int the type of WSDL caching in use
      */
     public function GetWsdlCacheType()
@@ -464,8 +459,25 @@ abstract class AdsUser
     }
 
     /**
+     * Gets the version of the HTTP protocol to use regardless of PHP version.
+     * @return float the HTTP version that should be used
+     */
+    public function GetForceHttpVersion()
+    {
+        return $this->forceHttpVersion;
+    }
+
+    /**
+     * Gets the setting of whether or not to add XSI types in the SOAP payload.
+     * @return bool whether or not to add XSI types in the SOAP payload
+     */
+    public function GetForceAddXsiTypes()
+    {
+        return $this->forceAddXsiTypes;
+    }
+
+    /**
      * Gets the server used for authentication.
-     *
      * @return string the server used for authentiation
      */
     public function GetAuthServer()
@@ -475,7 +487,6 @@ abstract class AdsUser
 
     /**
      * Gets the OAuth2 info for this user.
-     *
      * @return array the OAuth2 info for this user
      */
     public function GetOAuth2Info()
@@ -485,7 +496,6 @@ abstract class AdsUser
 
     /**
      * Sets the OAuth2 info for this user.
-     *
      * @param array $oauth2Info the OAuth2 info for this user
      */
     public function SetOAuth2Info($oauth2Info)
@@ -495,7 +505,6 @@ abstract class AdsUser
 
     /**
      * Gets the OAuth2 handler for this user.
-     *
      * @return OAuth2Handler the OAuth2 handler for this user
      */
     public function GetOAuth2Handler()
@@ -505,7 +514,6 @@ abstract class AdsUser
 
     /**
      * Sets the OAuth2 handler for this user.
-     *
      * @param array $oauth2Handler the OAuth2 handler for this user
      */
     public function SetOAuth2Handler($oauth2Handler)
@@ -516,25 +524,22 @@ abstract class AdsUser
     /**
      * Gets the appropriate user agent header name for the API this client library
      * is targeting.
-     *
      * @return string The user agent header name.
      */
     abstract protected function GetUserAgentHeaderName();
 
     /**
      * Gets the name and version of this client library.
-     *
      * @return array An array containing the name and version of this client
-     *     library, e.g.: ['DfpApi-PHP', '2.13.0'].
+     *               library, e.g.: ['DfpApi-PHP', '2.13.0'].
      */
     abstract protected function GetClientLibraryNameAndVersion();
 
     /**
      * Gets common PHP user agent parts for ads client libraries such as PHP
      * version, operating system, browser, or if compression is being used or not.
-     *
      * @return array An array of arrays with each inner array representing a user
-     *     agent parts, e.g.: ['PHP', '5.3.2'] or ['PHP', '5.4.0'].
+     *               agent parts, e.g.: ['PHP', '5.3.2'] or ['PHP', '5.4.0'].
      */
     private function GetCommonClientLibraryUserAgentParts()
     {
@@ -549,7 +554,6 @@ abstract class AdsUser
 
     /**
      * Gets the user agent string that identifies this library for this user.
-     *
      * @return string A user agent string.
      */
     public function GetClientLibraryUserAgent()
@@ -559,10 +563,9 @@ abstract class AdsUser
 
     /**
      * Gets all the user agent parts that identify this client library.
-     *
      * @return array An array of all the user agent parts that identify this
-     *     client library where each user agent part has been joined by a '/'
-     *     (forward slash).
+     *               client library where each user agent part has been joined by a '/'
+     *               (forward slash).
      */
     private function GetAllClientLibraryUserAgentParts()
     {
@@ -585,7 +588,7 @@ abstract class AdsUser
      * in their constructor.
      *
      * @param $applicationName The application name that will appear in this
-     *                         header.
+     *     header.
      */
     public function SetClientLibraryUserAgent($applicationName)
     {
@@ -604,16 +607,13 @@ abstract class AdsUser
 
     /**
      * Get the default OAuth2 Handler for this user.
-     *
-     * @param NULL|string $className the name of the oauth2Handler class or NULL
-     *
-     * @return mixed the configured OAuth2Handler class
+     * @param  NULL|string $className the name of the oauth2Handler class or NULL
+     * @return mixed       the configured OAuth2Handler class
      */
-    public abstract function GetDefaultOAuth2Handler($className = null);
+    abstract public function GetDefaultOAuth2Handler($className = null);
 
     /**
      * Validates that the OAuth2 info is complete.
-     *
      * @throws ValidationException if there are any validation errors
      * @access protected
      */
@@ -638,4 +638,3 @@ abstract class AdsUser
         }
     }
 }
-

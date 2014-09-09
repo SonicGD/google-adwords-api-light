@@ -26,8 +26,7 @@
 
 /**
  * A collection of utility methods for reading API property files.
- *
- * @package    GoogleApiAdsCommon
+ * @package GoogleApiAdsCommon
  * @subpackage Util
  */
 class ApiPropertiesUtils
@@ -35,14 +34,11 @@ class ApiPropertiesUtils
 
     /**
      * Parses the specified API properties file.
-     *
-     * @param string $propsFilePath the path to the API properties file to parse
-     *
-     * @return array the parsed properties
+     * @param  string $propsFilePath the path to the API properties file to parse
+     * @return array  the parsed properties
      */
     public static function ParseApiPropertiesFile($propsFilePath)
     {
         return parse_ini_file($propsFilePath);
     }
 }
-

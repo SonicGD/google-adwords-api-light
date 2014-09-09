@@ -31,8 +31,7 @@
 
 /**
  * Exception class for any client library validation error.
- *
- * @package    GoogleApiAdsCommon
+ * @package GoogleApiAdsCommon
  * @subpackage Lib
  */
 class ValidationException extends Exception
@@ -42,7 +41,6 @@ class ValidationException extends Exception
 
     /**
      * The trigger for the validation exception.
-     *
      * @var $trigger
      */
     protected $trigger;
@@ -50,7 +48,6 @@ class ValidationException extends Exception
     /**
      * Constructor for ValidationException where the exception will appear
      * as "Validation failed for [$trigger] with value [$value]: $message".
-     *
      * @param string $trigger the trigger for the validation error
      * @param string $value   the value for the trigger
      * @param string $message the message representing the error in validation
@@ -70,7 +67,6 @@ class ValidationException extends Exception
 
     /**
      * Get the trigger for the validation error.
-     *
      * @return string the trigger for the validation error.
      */
     public function GetTrigger()
@@ -78,4 +74,3 @@ class ValidationException extends Exception
         return $this->trigger;
     }
 }
-

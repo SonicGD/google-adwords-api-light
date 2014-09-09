@@ -32,8 +32,7 @@ require_once dirname(__FILE__) . '/../../Common/Lib/SoapClientFactory.php';
 
 /**
  * Factory class for SOAP clients for the AdWords API.
- *
- * @package    GoogleApiAdsAdWords
+ * @package GoogleApiAdsAdWords
  * @subpackage Lib
  */
 class AdWordsSoapClientFactory extends SoapClientFactory
@@ -41,14 +40,13 @@ class AdWordsSoapClientFactory extends SoapClientFactory
 
     /**
      * The constructor for the AdWords API SOAP client factory.
-     *
-     * @param AdsUser $user           the user which the client will use for credentials
-     * @param string  $version        the version to generate clients for
-     * @param string  $server         the server to generate clients for
-     * @param bool    $validateOnly   if the clients should be created in validateOnly
-     *                                mode
+     * @param AdsUser $user the user which the client will use for credentials
+     * @param string  $version the version to generate clients for
+     * @param string  $server the server to generate clients for
+     * @param bool    $validateOnly if the clients should be created in validateOnly
+     *     mode
      * @param bool    $partialFailure if the service should be created in
-     *                                partialFailure mode
+     *     partialFailure mode
      */
     public function __construct(
         AdsUser $user,
@@ -73,7 +71,6 @@ class AdWordsSoapClientFactory extends SoapClientFactory
 
     /**
      * Initiates a require_once for the service.
-     *
      * @param string $serviceName the service to instantiate
      */
     public function DoRequireOnce($serviceName)

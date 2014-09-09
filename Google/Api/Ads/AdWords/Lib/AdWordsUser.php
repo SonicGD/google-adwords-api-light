@@ -42,21 +42,18 @@ require_once 'AdWordsConstants.php';
 /**
  * User class for the AdWords API to create SOAP clients to the available API
  * services.
- *
- * @package    GoogleApiAdsAdWords
+ * @package GoogleApiAdsAdWords
  * @subpackage Lib
  */
 class AdWordsUser extends AdsUser
 {
 
-    const OAUTH2_SCOPE = 'https://adwords.google.com/api/adwords/';
+    const OAUTH2_SCOPE = 'https://www.googleapis.com/auth/adwords';
     const OAUTH2_HANDLER_CLASS = 'SimpleOAuth2Handler';
-    const FINAL_CLIENT_LOGIN_VERSION = "v201309";
 
     /**
      * The name of the SOAP header that represents the user agent making API
      * calls.
-     *
      * @var string
      */
     const USER_AGENT_HEADER_NAME = 'userAgent';
@@ -69,8 +66,6 @@ class AdWordsUser extends AdsUser
     private $defaultVersion;
     private $defaultServer;
 
-    private $email;
-    private $password;
     private $userAgent;
 
     /**
@@ -88,40 +83,31 @@ class AdWordsUser extends AdsUser
      * <p>Likewise, if a custom settings INI file is not provided, the default
      * settings INI file will be loaded from the path of "../settings.ini"
      * relative to this file's directory.</p>
-     *
      * @param string $authenticationIniPath the absolute path to the
-     *                                      authentication INI or relative to the current directory (cwd). If
-     *                                      <var>NULL</var>, the default authentication INI file will attempt to be
-     *                                      loaded
-     * @param string $email                 the email of the user (required header). Will
-     *                                      overwrite the email entry loaded from any INI file
-     * @param string $password              the password of the user (required header). Will
-     *                                      overwrite the password entry loaded from any INI file
-     * @param string $developerToken        the developer token (required header). Will
-     *                                      overwrite the developer token entry loaded from any INI file
-     * @param string $applicationToken      the application token (required header).
-     *                                      Will overwrite the application token entry loaded from any INI file
-     * @param string $userAgent             the user agent name (required header). Will
-     *                                      be prepended with the library name and version. Will overwrite the
-     *                                      userAgent entry loaded from any INI file
-     * @param string $clientCustomerId      the client customer ID to make the request
-     *                                      against (optional header). Will overwrite the clientCustomerId entry
-     *                                      loaded from any INI file
-     * @param string $settingsIniPath       the path to the settings INI file. If
-     *                                      <var>NULL</var>, the default settings INI file will be loaded
-     * @param string $authToken             the authToken to use for requests
-     * @param array  $oauth2Info            the OAuth 2.0 information to use for requests
+     *     authentication INI or relative to the current directory (cwd). If
+     *     <var>NULL</var>, the default authentication INI file will attempt to be
+     *     loaded
+     * @param string $developerToken the developer token (required header). Will
+     *     overwrite the developer token entry loaded from any INI file
+     * @param string $applicationToken the application token (required header).
+     *     Will overwrite the application token entry loaded from any INI file
+     * @param string $userAgent the user agent name (required header). Will
+     *     be prepended with the library name and version. Will overwrite the
+     *     userAgent entry loaded from any INI file
+     * @param string $clientCustomerId the client customer ID to make the request
+     *     against (optional header). Will overwrite the clientCustomerId entry
+     *     loaded from any INI file
+     * @param string $settingsIniPath the path to the settings INI file. If
+     *     <var>NULL</var>, the default settings INI file will be loaded
+     * @param array  $oauth2Info the OAuth 2.0 information to use for requests
      */
     public function __construct(
         $authenticationIniPath = null,
-        $email = null,
-        $password = null,
         $developerToken = null,
         $applicationToken = null,
         $userAgent = null,
         $clientCustomerId = null,
         $settingsIniPath = null,
-        $authToken = null,
         $oauth2Info = null
     ) {
         parent::__construct();
@@ -154,12 +140,6 @@ class AdWordsUser extends AdsUser
                 parse_ini_file(dirname(__FILE__) . '/../auth.ini', true);
         }
 
-        $email = $this->GetAuthVarValue($email, 'email', $authenticationIni);
-        $password = $this->GetAuthVarValue(
-            $password,
-            'password',
-            $authenticationIni
-        );
         $developerToken = $this->GetAuthVarValue(
             $developerToken,
             'developerToken',
@@ -180,11 +160,6 @@ class AdWordsUser extends AdsUser
             'clientCustomerId',
             $authenticationIni
         );
-        $authToken = $this->GetAuthVarValue(
-            $authToken,
-            'authToken',
-            $authenticationIni
-        );
         $oauth2Info = $this->GetAuthVarValue(
             $oauth2Info,
             'OAUTH2',
@@ -200,9 +175,6 @@ class AdWordsUser extends AdsUser
             );
         }
 
-        $this->SetEmail($email);
-        $this->SetPassword($password);
-        $this->SetAuthToken($authToken);
         $this->SetOAuth2Info($oauth2Info);
         $this->SetUserAgent($userAgent);
         $this->SetClientLibraryUserAgent($userAgent);
@@ -269,19 +241,17 @@ class AdWordsUser extends AdsUser
 
     /**
      * Gets the service by its service name and group.
-     *
-     * @param                   $serviceName    the service name
-     * @param string            $version        the version of the service to get. If
-     *                                          <var>NULL</var>, then the default version will be used
-     * @param string            $server         the server to make the request to. If
-     *                                          <var>NULL</var>, then the default server will be used
+     * @param                   $serviceName the service name
+     * @param string            $version the version of the service to get. If
+     *     <var>NULL</var>, then the default version will be used
+     * @param string            $server the server to make the request to. If
+     *     <var>NULL</var>, then the default server will be used
      * @param SoapClientFactory $serviceFactory the factory to create the client.
-     *                                          If <var>NULL</var>, then the built-in SOAP client factory will be used
-     * @param bool              $validateOnly   if the service should be created in validateOnly
-     *                                          mode
+     *     If <var>NULL</var>, then the built-in SOAP client factory will be used
+     * @param bool              $validateOnly if the service should be created in validateOnly
+     *     mode
      * @param bool              $partialFailure if the service should be created in
-     *                                          partialFailure mode
-     *
+     *     partialFailure mode
      * @return SoapClient the instantiated service
      * @throws ServiceException if an error occurred when getting the service
      */
@@ -309,22 +279,15 @@ class AdWordsUser extends AdsUser
             );
         }
 
-        DeprecationUtils::CheckUsingClientLoginWithUnsupportedVersion(
-            $this,
-            self::FINAL_CLIENT_LOGIN_VERSION,
-            $version
-        );
-
         return parent::GetServiceSoapClient($serviceName, $serviceFactory);
     }
 
     /**
      * Loads the classes within a service, so they can be used before the service
      * is constructed.
-     *
      * @param        $serviceName the service name
-     * @param string $version     the version of the service to get. If
-     *                            <var>NULL</var>, then the default version will be used
+     * @param string $version the version of the service to get. If
+     *     <var>NULL</var>, then the default version will be used
      */
     public function LoadService($serviceName, $version = null)
     {
@@ -339,53 +302,7 @@ class AdWordsUser extends AdsUser
     }
 
     /**
-     * Regenerates the authentication token and sets it for this user.
-     *
-     * @param string $server the server to retrieve the token from
-     *
-     * @return string the newly generated auth token
-     */
-    public function RegenerateAuthToken($server = null)
-    {
-        if (!isset($server)) {
-            $server = $this->GetAuthServer();
-        }
-        $authTokenClient = new AuthToken(
-            $this->email, $this->password, 'adwords',
-            $this->GetClientLibraryUserAgent(), 'GOOGLE', $server
-        );
-        $authToken = $authTokenClient->GetAuthToken();
-        $this->SetAuthToken($authToken);
-        return $authToken;
-    }
-
-    /**
-     * Gets the authentication token.
-     *
-     * @return string the auth token
-     */
-    public function GetAuthToken()
-    {
-        $authToken = $this->GetHeaderValue('authToken');
-        if (!isset($authToken) && isset($this->email) && isset($this->password)) {
-            $authToken = $this->RegenerateAuthToken();
-        }
-        return $authToken;
-    }
-
-    /**
-     * Sets the authentication token.
-     *
-     * @param string $authToken the auth token to set
-     */
-    public function SetAuthToken($authToken)
-    {
-        $this->SetHeaderValue('authToken', $authToken);
-    }
-
-    /**
      * Gets the developer token for this user.
-     *
      * @return string the developer token
      */
     public function GetDeveloperToken()
@@ -395,7 +312,6 @@ class AdWordsUser extends AdsUser
 
     /**
      * Sets the developer token for this user.
-     *
      * @param string $developerToken the developer token
      */
     public function SetDeveloperToken($developerToken)
@@ -405,7 +321,6 @@ class AdWordsUser extends AdsUser
 
     /**
      * Gets the application token that this user.
-     *
      * @return string the application token
      */
     public function GetApplicationToken()
@@ -415,7 +330,6 @@ class AdWordsUser extends AdsUser
 
     /**
      * Sets the application token for this user.
-     *
      * @param string $applicationToken the application token
      */
     public function SetApplicationToken($applicationToken)
@@ -425,7 +339,6 @@ class AdWordsUser extends AdsUser
 
     /**
      * Gets the client customer ID for this user.
-     *
      * @return string the client customer ID for this user
      */
     public function GetClientCustomerId()
@@ -435,7 +348,6 @@ class AdWordsUser extends AdsUser
 
     /**
      * Sets the client customer ID for this user.
-     *
      * @param string $clientCustomerId the client customer ID for this user
      */
     public function SetClientCustomerId($clientCustomerId)
@@ -463,7 +375,6 @@ class AdWordsUser extends AdsUser
 
     /**
      * Gets the raw user agent for this user.
-     *
      * @return string The raw user agent.
      */
     public function GetUserAgent()
@@ -473,7 +384,6 @@ class AdWordsUser extends AdsUser
 
     /**
      * Sets the raw user agent for this user.
-     *
      * @param string $userAgent The raw user agent.
      */
     public function SetUserAgent($userAgent)
@@ -498,48 +408,7 @@ class AdWordsUser extends AdsUser
     }
 
     /**
-     * Gets the email address of the user login.
-     *
-     * @return string the user login email
-     */
-    public function GetEmail()
-    {
-        return $this->email;
-    }
-
-    /**
-     * Sets the email address of the user login.
-     *
-     * @param string $email the user login email
-     */
-    public function SetEmail($email)
-    {
-        $this->email = $email;
-    }
-
-    /**
-     * Gets the password for this user.
-     *
-     * @return string the password for this user
-     */
-    public function GetPassword()
-    {
-        return $this->password;
-    }
-
-    /**
-     * Sets the password for this user.
-     *
-     * @param string $password the password for this user
-     */
-    public function SetPassword($password)
-    {
-        $this->password = $password;
-    }
-
-    /**
      * Validates the user and throws a validation error if there are any errors.
-     *
      * @throws ValidationException if there are any validation errors
      */
     public function ValidateUser()
@@ -547,23 +416,10 @@ class AdWordsUser extends AdsUser
         if ($this->GetOAuth2Info() !== null) {
             parent::ValidateOAuth2Info();
         } else {
-            if ($this->GetAuthToken() === null) {
-                if (!isset($this->email)) {
-                    throw new ValidationException(
-                        'email', null,
-                        'email is required and cannot be NULL.'
-                    );
-                }
-
-                if (!isset($this->password)) {
-                    throw new ValidationException(
-                        'password', null,
-                        'password is required and cannot be NULL.'
-                    );
-                }
-                // Generate an authToken.
-                $this->RegenerateAuthToken();
-            }
+            throw new ValidationException(
+                'OAuth2Info', null,
+                'OAuth 2.0 configuration is required.'
+            );
         }
 
         if ($this->GetUserAgent() === null
@@ -590,9 +446,7 @@ class AdWordsUser extends AdsUser
 
     /**
      * Get the default OAuth2 Handler for this user.
-     *
      * @param NULL|string $className the name of the oauth2Handler class or NULL
-     *
      * @return mixed the configured OAuth2Handler class
      */
     public function GetDefaultOAuth2Handler($className = null)
@@ -603,10 +457,8 @@ class AdWordsUser extends AdsUser
 
     /**
      * Handles calls to undefined methods.
-     *
-     * @param string $name      the name of the method being called
+     * @param string $name the name of the method being called
      * @param array  $arguments the arguments passed to the method
-     *
      * @return mixed the result of the correct method call, or nothing if there
      *     is no correct method
      */

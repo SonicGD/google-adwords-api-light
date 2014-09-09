@@ -36,14 +36,14 @@ require_once "ReportUtils.require.php";
 
 /**
  * A collection of utility methods for working with reports.
- *
- * @package    GoogleApiAdsAdWords
+ * @package GoogleApiAdsAdWords
  * @subpackage Util
  */
 class ReportUtils
 {
 
     const CLIENT_LOGIN_FORMAT = 'GoogleLogin auth=%s';
+    const FINAL_RETURN_MONEY_IN_MICROS_VERSION = "v201402";
 
     /**
      * The log name to use when logging requests.
@@ -52,7 +52,6 @@ class ReportUtils
 
     /**
      * Regular expression used to detect errors messages in a response.
-     *
      * @access private
      */
     private static $ERROR_MESSAGE_REGEX =
@@ -60,7 +59,6 @@ class ReportUtils
 
     /**
      * The format of the report download URL, for use with sprintf.
-     *
      * @access private
      */
     private static $DOWNLOAD_URL_FORMAT = '%s/api/adwords/reportdownload/%s';
@@ -68,14 +66,12 @@ class ReportUtils
     /**
      * The length of the snippet to read from the request to determine if there
      * was an error.
-     *
      * @access private
      */
     private static $SNIPPET_LENGTH = 1024;
 
     /**
      * The ReportUtils class is not meant to have any instances.
-     *
      * @access private
      */
     private function __construct()
@@ -86,19 +82,17 @@ class ReportUtils
      * Downloads a new instance of an existing report definition. If the path
      * parameter is specified it will be downloaded to the file at that path,
      * otherwise it will be downloaded to memory and be returned as a string.
-     *
      * @param mixed       $reportDefinition the ReportDefinition to download or the id
-     *                                      of a stored report definition
-     * @param string      $path             an optional path of the file to download the report to
-     * @param AdWordsUser $user             the user that created the ReportDefinition
-     * @param array       $options          the option to use when downloading the report:
-     *                                      {boolean} returnMoneyInMicros: if the money values in the report
-     *                                      should be returned in micros
-     *                                      {string} server: the server to make the request to. If <var>NULL</var>,
-     *                                      then the default server will be used
-     *                                      {string} version: the version to make the request against. If
-     *                                      <var>NULL</var>, then the default version will be used
-     *
+     *     of a stored report definition
+     * @param string      $path an optional path of the file to download the report to
+     * @param AdWordsUser $user the user that created the ReportDefinition
+     * @param array       $options the option to use when downloading the report:
+     *     {boolean} returnMoneyInMicros: if the money values in the report
+     *         should be returned in micros
+     *     {string} server: the server to make the request to. If <var>NULL</var>,
+     *         then the default server will be used
+     *     {string} version: the version to make the request against. If
+     *         <var>NULL</var>, then the default version will be used
      * @return mixed if path isn't specified the contents of the report,
      *     otherwise the size in bytes of the downloaded report
      */
@@ -118,17 +112,15 @@ class ReportUtils
      * Downloads a report with AWQL. If the path parameter is specified it will be
      * downloaded to the file at that path, otherwise it will be downloaded to
      * memory and be returned as a string.
-     *
-     * @param string      $reportQuery  the query to use for the report
-     * @param string      $path         an optional path of the file to download the report to
-     * @param AdWordsUser $user         the user to retrieve report with
+     * @param string      $reportQuery the query to use for the report
+     * @param string      $path an optional path of the file to download the report to
+     * @param AdWordsUser $user the user to retrieve report with
      * @param string      $reportFormat : the report format to request
-     * @param array       $options      the option to use when downloading the report:
-     *                                  {string} server: the server to make the request to. If <var>NULL</var>,
-     *                                  then the default server will be used
-     *                                  {string} version: the version to make the request against. If
-     *                                  <var>NULL</var>, then the default version will be used
-     *
+     * @param array       $options the option to use when downloading the report:
+     *     {string} server: the server to make the request to. If <var>NULL</var>,
+     *         then the default server will be used
+     *     {string} version: the version to make the request against. If
+     *         <var>NULL</var>, then the default version will be used
      * @return mixed if path isn't specified the contents of the report,
      *     otherwise the size in bytes of the downloaded report
      */
@@ -147,12 +139,10 @@ class ReportUtils
 
     /**
      * Downloads a report using the URL provided.
-     *
-     * @param string $url     the URL to make the request to
+     * @param string $url the URL to make the request to
      * @param array  $headers the headers to use in the request
-     * @param array  $params  the parameters to pass in the request
-     * @param string $path    the optional path to download the report to
-     *
+     * @param array  $params the parameters to pass in the request
+     * @param string $path the optional path to download the report to
      * @return mixed if path isn't specified the contents of the report,
      *     otherwise the size in bytes of the downloaded report
      */
@@ -260,7 +250,6 @@ class ReportUtils
      * in the request headers.
      *
      * @param String $responseXml the error response xml
-     *
      * @return Object the parsed error object, or null if the response cannot
      * be parsed.
      */
@@ -282,10 +271,8 @@ class ReportUtils
 
     /**
      * Generates the URL to use for the download request.
-     *
-     * @param AdWordsUser $user    the AdWordsUser to make the request for
+     * @param AdWordsUser $user the AdWordsUser to make the request for
      * @param array       $options the options configured for the download
-     *
      * @return string the download URL
      */
     private static function GetUrl($user, array $options = null)
@@ -304,9 +291,7 @@ class ReportUtils
 
     /**
      * Generates the parameters to use for the download request.
-     *
      * @param mixed $reportDefinition the report definition, as an ID or object
-     *
      * @return array the parameters
      */
     private static function GetParams($reportDefinition)
@@ -334,10 +319,8 @@ class ReportUtils
 
     /**
      * Generates the parameters to use for the download request with AWQL.
-     *
-     * @param string $reportQuery  the report query, as string
+     * @param string $reportQuery the report query, as string
      * @param string $reportFormat the format to request report in, as string
-     *
      * @return array the parameters
      */
     private static function GetQueryParams($reportQuery, $reportFormat)
@@ -352,11 +335,9 @@ class ReportUtils
 
     /**
      * Gets the HTTP headers for the report download request.
-     *
-     * @param AdWordsUser $user    the AdWordsUser to get credentials from
-     * @param string      $url     the URL the request will be made to
+     * @param AdWordsUser $user the AdWordsUser to get credentials from
+     * @param string      $url the URL the request will be made to
      * @param array       $options the options for the download
-     *
      * @return array and array of strings, which are header names and values
      */
     private static function GetHeaders($user, $url, array $options = null)
@@ -373,34 +354,28 @@ class ReportUtils
             $user->SetOAuth2Info($oAuth2Info);
             $authHeader = $oAuth2Handler->FormatCredentialsForHeader($oAuth2Info);
         } else {
-            DeprecationUtils::CheckUsingClientLoginWithUnsupportedVersion(
-                $user,
-                AdWordsUser::FINAL_CLIENT_LOGIN_VERSION,
-                $version
-            );
-            $authHeader = sprintf(self::CLIENT_LOGIN_FORMAT, $user->GetAuthToken());
+            throw new ServiceException('OAuth 2.0 authentication is required.');
         }
         $headers['Authorization'] = $authHeader;
 
         // Developer token.
         $headers['developerToken'] = $user->GetDeveloperToken();
         // Target client.
-        $email = $user->GetEmail();
         $clientCustomerId = $user->GetClientCustomerId();
         if (isset($clientCustomerId)) {
             $headers['clientCustomerId'] = $clientCustomerId;
         } else {
-            if ($version < 'v201109' && isset($email)) {
-                $headers['clientEmail'] = $email;
-            } else {
-                throw new ReportDownloadException(
-                    'The client customer ID must be '
-                    . 'specified for report downloads.'
-                );
-            }
+            throw new ReportDownloadException(
+                'The client customer ID must be '
+                . 'specified for report downloads.'
+            );
         }
         // Flags.
         if (isset($options['returnMoneyInMicros'])) {
+            DeprecationUtils::CheckUsingReturnMoneyInMicrosWithUnsupportedVersion(
+                self::FINAL_RETURN_MONEY_IN_MICROS_VERSION,
+                $version
+            );
             $headers['returnMoneyInMicros'] =
                 $options['returnMoneyInMicros'] ? 'true' : 'false';
         }
@@ -409,11 +384,10 @@ class ReportUtils
 
     /**
      * Logs the report download request.
-     *
      * @param string    $requestHeaders the HTTP request headers
-     * @param integer   $responseCode   the HTTP response code
-     * @param array     $params         the parameters that were sent, if any
-     * @param Exception $exception      the exception that will be thrown, if any
+     * @param integer   $responseCode the HTTP response code
+     * @param array     $params the parameters that were sent, if any
+     * @param Exception $exception the exception that will be thrown, if any
      */
     private static function LogRequest(
         $requestHeaders,
@@ -442,16 +416,14 @@ class ReportUtils
 
 /**
  * Exception class for an error that occurs while downloading a report.
- *
- * @package    GoogleApiAdsAdWords
+ * @package GoogleApiAdsAdWords
  * @subpackage Util
  */
 class ReportDownloadException extends Exception
 {
     /**
      * Constructor for ReportDownloadException.
-     *
-     * @param string $error    an optional error message
+     * @param string $error an optional error message
      * @param string $httpCode an optional HTTP status code of the response
      */
     public function __construct($error = null, $httpCode = null)
@@ -466,8 +438,7 @@ class ReportDownloadException extends Exception
 if (!class_exists("ReportDefinition", false)) {
     /**
      * Represents a report definition.
-     *
-     * @package    GoogleApiAdsAdWords
+     * @package GoogleApiAdsAdWords
      * @subpackage Util
      */
     class ReportDefinition
@@ -528,7 +499,6 @@ if (!class_exists("ReportDefinition", false)) {
 
         /**
          * Gets the namesapce of this class
-         *
          * @return the namespace of this class
          */
         public function getNamespace()
@@ -538,7 +508,6 @@ if (!class_exists("ReportDefinition", false)) {
 
         /**
          * Gets the xsi:type name of this class
-         *
          * @return the xsi:type name of this class
          */
         public function getXsiTypeName()
@@ -573,15 +542,13 @@ if (!class_exists("ReportDefinition", false)) {
 if (!class_exists("ReportDefinitionDateRangeType", false)) {
     /**
      * Enums for date range of report.
-     *
-     * @package    GoogleApiAdsAdWords
+     * @package GoogleApiAdsAdWords
      * @subpackage Util
      */
     class ReportDefinitionDateRangeType
     {
         /**
          * Gets the namesapce of this class
-         *
          * @return the namespace of this class
          */
         public function getNamespace()
@@ -591,7 +558,6 @@ if (!class_exists("ReportDefinitionDateRangeType", false)) {
 
         /**
          * Gets the xsi:type name of this class
-         *
          * @return the xsi:type name of this class
          */
         public function getXsiTypeName()
@@ -610,15 +576,13 @@ if (!class_exists("DownloadFormat", false)) {
      * Enum class that describes the supported formats for content downloads.
      * The order mimics the order in which download options are presented in the
      * legacy report center.
-     *
-     * @package    GoogleApiAdsAdWords
+     * @package GoogleApiAdsAdWords
      * @subpackage Util
      */
     class DownloadFormat
     {
         /**
          * Gets the namesapce of this class
-         *
          * @return the namespace of this class
          */
         public function getNamespace()
@@ -628,7 +592,6 @@ if (!class_exists("DownloadFormat", false)) {
 
         /**
          * Gets the xsi:type name of this class
-         *
          * @return the xsi:type name of this class
          */
         public function getXsiTypeName()

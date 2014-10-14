@@ -1,5 +1,5 @@
 {
-    "name": "sonicgd/google-adwords-api-light",
+    "name": "anton-github/google-adwords-api-light",
     "type": "library",
     "description": "AdWords PHP API Client with cleaned code",
     "keywords": ["adwords", "google"],

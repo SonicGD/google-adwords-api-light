@@ -15,7 +15,7 @@ function parseFile($path, $baseClassName, $dummy)
     $require = [];
     $code = file_get_contents($path);
     //$pattern = '/if \(\!class_exists\(\"([a-zA-Z]+)\", FALSE\)\) \{(.*)\}\}/um';
-    $pattern = '/if \(!class_exists\("([a-zA-Z]+)", false\)\) {\s(.*?\s*}\s*})\s*}/ms';
+    $pattern = '/if \(!class_exists\("([a-zA-Z_]+)", false\)\) {\s(.*?\s*}\s*})\s*}/ms';
 
     preg_match_all($pattern, $code, $matches);
     var_dump($matches);

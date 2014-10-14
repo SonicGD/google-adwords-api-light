@@ -3,7 +3,7 @@
     "type": "library",
     "description": "AdWords PHP API Client with cleaned code",
     "keywords": ["adwords", "google"],
-    "homepage": "https://github.com/SonicGD/google-adwords-api-light",
+    "homepage": "https://github.com/anton-github/google-adwords-api-light",
     "license": "Apache License 2.0",
     "authors": [
         {

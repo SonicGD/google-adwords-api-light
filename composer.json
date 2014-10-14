@@ -1,9 +1,9 @@
 {
-    "name": "sonicgd/google-adwords-api-light",
+    "name": "anton-github/google-adwords-api-light",
     "type": "library",
     "description": "AdWords PHP API Client with cleaned code",
     "keywords": ["adwords", "google"],
-    "homepage": "https://github.com/SonicGD/google-adwords-api-light",
+    "homepage": "https://github.com/anton-github/google-adwords-api-light",
     "license": "Apache License 2.0",
     "authors": [
         {
@@ -19,7 +19,7 @@
         {
             "name": "George Drak",
             "email": "sonicgd@gmail.com",
-            "homepage": "https://github.com/SonicGD"
+            "homepage": "https://github.com/anton-github"
         }
     ],
     "require": {

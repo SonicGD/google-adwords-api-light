@@ -12,8 +12,8 @@
    */
   class SoapResponseHeader
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "SoapResponseHeader";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "SoapResponseHeader";
 
     /**
      * @access public
@@ -51,7 +51,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -60,16 +60,15 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($requestId = null, $serviceName = null, $methodName = null, $operations = null, $responseTime = null)
-    {
-      $this->requestId = $requestId;
-      $this->serviceName = $serviceName;
-      $this->methodName = $methodName;
-      $this->operations = $operations;
-      $this->responseTime = $responseTime;
-    }
-
+      public function __construct($requestId = null, $serviceName = null, $methodName = null, $operations = null, $responseTime = null)
+      {
+          $this->requestId = $requestId;
+          $this->serviceName = $serviceName;
+          $this->methodName = $methodName;
+          $this->operations = $operations;
+          $this->responseTime = $responseTime;
+      }
   }

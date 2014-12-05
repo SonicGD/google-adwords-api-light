@@ -9,8 +9,8 @@
    */
   class ManualCPCAdGroupCriterionExperimentBidMultiplier extends AdGroupCriterionExperimentBidMultiplier
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "ManualCPCAdGroupCriterionExperimentBidMultiplier";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "ManualCPCAdGroupCriterionExperimentBidMultiplier";
 
     /**
      * @access public
@@ -30,7 +30,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -39,15 +39,14 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($maxCpcMultiplier = null, $multiplierSource = null, $AdGroupCriterionExperimentBidMultiplierType = null)
-    {
-      parent::__construct();
-      $this->maxCpcMultiplier = $maxCpcMultiplier;
-      $this->multiplierSource = $multiplierSource;
-      $this->AdGroupCriterionExperimentBidMultiplierType = $AdGroupCriterionExperimentBidMultiplierType;
-    }
-
+      public function __construct($maxCpcMultiplier = null, $multiplierSource = null, $AdGroupCriterionExperimentBidMultiplierType = null)
+      {
+          parent::__construct();
+          $this->maxCpcMultiplier = $maxCpcMultiplier;
+          $this->multiplierSource = $multiplierSource;
+          $this->AdGroupCriterionExperimentBidMultiplierType = $AdGroupCriterionExperimentBidMultiplierType;
+      }
   }

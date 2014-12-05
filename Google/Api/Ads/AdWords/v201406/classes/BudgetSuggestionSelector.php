@@ -8,8 +8,8 @@
    */
   class BudgetSuggestionSelector
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/express/v201406";
-    const XSI_TYPE = "BudgetSuggestionSelector";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/express/v201406";
+      const XSI_TYPE = "BudgetSuggestionSelector";
 
     /**
      * @access public
@@ -29,7 +29,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -38,13 +38,12 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($criteria = null, $currencyCode = null)
-    {
-      $this->criteria = $criteria;
-      $this->currencyCode = $currencyCode;
-    }
-
+      public function __construct($criteria = null, $currencyCode = null)
+      {
+          $this->criteria = $criteria;
+          $this->currencyCode = $currencyCode;
+      }
   }

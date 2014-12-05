@@ -9,8 +9,8 @@
    */
   class FunctionOperand extends FunctionArgumentOperand
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "FunctionOperand";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "FunctionOperand";
 
     /**
      * @access public
@@ -24,7 +24,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -33,14 +33,13 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($value = null, $FunctionArgumentOperandType = null)
-    {
-      parent::__construct();
-      $this->value = $value;
-      $this->FunctionArgumentOperandType = $FunctionArgumentOperandType;
-    }
-
+      public function __construct($value = null, $FunctionArgumentOperandType = null)
+      {
+          parent::__construct();
+          $this->value = $value;
+          $this->FunctionArgumentOperandType = $FunctionArgumentOperandType;
+      }
   }

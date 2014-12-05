@@ -9,8 +9,8 @@
    */
   class Detail
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/mcm/v201406";
-    const XSI_TYPE = "Detail";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/mcm/v201406";
+      const XSI_TYPE = "Detail";
 
     /**
      * @access public
@@ -24,7 +24,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -33,12 +33,11 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($triggerTime = null)
-    {
-      $this->triggerTime = $triggerTime;
-    }
-
+      public function __construct($triggerTime = null)
+      {
+          $this->triggerTime = $triggerTime;
+      }
   }

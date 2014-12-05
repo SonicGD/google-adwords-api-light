@@ -23,8 +23,8 @@
    */
   class PolicyViolationError extends ApiError
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "PolicyViolationError";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "PolicyViolationError";
 
     /**
      * @access public
@@ -68,7 +68,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -77,22 +77,21 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($key = null, $externalPolicyName = null, $externalPolicyUrl = null, $externalPolicyDescription = null, $isExemptable = null, $violatingParts = null, $fieldPath = null, $trigger = null, $errorString = null, $ApiErrorType = null)
-    {
-      parent::__construct();
-      $this->key = $key;
-      $this->externalPolicyName = $externalPolicyName;
-      $this->externalPolicyUrl = $externalPolicyUrl;
-      $this->externalPolicyDescription = $externalPolicyDescription;
-      $this->isExemptable = $isExemptable;
-      $this->violatingParts = $violatingParts;
-      $this->fieldPath = $fieldPath;
-      $this->trigger = $trigger;
-      $this->errorString = $errorString;
-      $this->ApiErrorType = $ApiErrorType;
-    }
-
+      public function __construct($key = null, $externalPolicyName = null, $externalPolicyUrl = null, $externalPolicyDescription = null, $isExemptable = null, $violatingParts = null, $fieldPath = null, $trigger = null, $errorString = null, $ApiErrorType = null)
+      {
+          parent::__construct();
+          $this->key = $key;
+          $this->externalPolicyName = $externalPolicyName;
+          $this->externalPolicyUrl = $externalPolicyUrl;
+          $this->externalPolicyDescription = $externalPolicyDescription;
+          $this->isExemptable = $isExemptable;
+          $this->violatingParts = $violatingParts;
+          $this->fieldPath = $fieldPath;
+          $this->trigger = $trigger;
+          $this->errorString = $errorString;
+          $this->ApiErrorType = $ApiErrorType;
+      }
   }

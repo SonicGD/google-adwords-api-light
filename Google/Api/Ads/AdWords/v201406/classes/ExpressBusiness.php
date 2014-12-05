@@ -8,8 +8,8 @@
    */
   class ExpressBusiness
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/express/v201406";
-    const XSI_TYPE = "ExpressBusiness";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/express/v201406";
+      const XSI_TYPE = "ExpressBusiness";
 
     /**
      * @access public
@@ -59,7 +59,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -68,18 +68,17 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($id = null, $name = null, $status = null, $address = null, $geoPoint = null, $phoneNumber = null, $website = null)
-    {
-      $this->id = $id;
-      $this->name = $name;
-      $this->status = $status;
-      $this->address = $address;
-      $this->geoPoint = $geoPoint;
-      $this->phoneNumber = $phoneNumber;
-      $this->website = $website;
-    }
-
+      public function __construct($id = null, $name = null, $status = null, $address = null, $geoPoint = null, $phoneNumber = null, $website = null)
+      {
+          $this->id = $id;
+          $this->name = $name;
+          $this->status = $status;
+          $this->address = $address;
+          $this->geoPoint = $geoPoint;
+          $this->phoneNumber = $phoneNumber;
+          $this->website = $website;
+      }
   }

@@ -8,8 +8,8 @@
    */
   class WebpageDescriptor
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
-    const XSI_TYPE = "WebpageDescriptor";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
+      const XSI_TYPE = "WebpageDescriptor";
 
     /**
      * @access public
@@ -29,7 +29,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -38,13 +38,12 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($url = null, $title = null)
-    {
-      $this->url = $url;
-      $this->title = $title;
-    }
-
+      public function __construct($url = null, $title = null)
+      {
+          $this->url = $url;
+          $this->title = $title;
+      }
   }

@@ -12,8 +12,8 @@
    */
   class DimensionProperties extends DataEntry
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "DimensionProperties";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "DimensionProperties";
 
     /**
      * @access public
@@ -27,7 +27,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -36,14 +36,13 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($levelOfDetail = null, $DataEntryType = null)
-    {
-      parent::__construct();
-      $this->levelOfDetail = $levelOfDetail;
-      $this->DataEntryType = $DataEntryType;
-    }
-
+      public function __construct($levelOfDetail = null, $DataEntryType = null)
+      {
+          parent::__construct();
+          $this->levelOfDetail = $levelOfDetail;
+          $this->DataEntryType = $DataEntryType;
+      }
   }

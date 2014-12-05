@@ -9,9 +9,9 @@ require_once 'ConstantDataService.require.php';
    */
   class ConstantDataService extends AdWordsSoapClient
   {
-    const SERVICE_NAME = "ConstantDataService";
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const ENDPOINT = "https://adwords.google.com/api/adwords/cm/v201406/ConstantDataService";
+      const SERVICE_NAME = "ConstantDataService";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const ENDPOINT = "https://adwords.google.com/api/adwords/cm/v201406/ConstantDataService";
 
     /**
      * The endpoint of the service
@@ -146,8 +146,8 @@ require_once 'ConstantDataService.require.php';
      */
     public function __construct($wsdl, $options, $user)
     {
-      $options["classmap"] = self::$classmap;
-      parent::__construct($wsdl, $options, $user, self::SERVICE_NAME,
+        $options["classmap"] = self::$classmap;
+        parent::__construct($wsdl, $options, $user, self::SERVICE_NAME,
           self::WSDL_NAMESPACE);
     }
     /**
@@ -158,10 +158,10 @@ require_once 'ConstantDataService.require.php';
      */
     public function getAgeRangeCriterion()
     {
-      $args = new GetAgeRangeCriterion();
-      $result = $this->__soapCall("getAgeRangeCriterion", array($args));
+        $args = new GetAgeRangeCriterion();
+        $result = $this->__soapCall("getAgeRangeCriterion", array($args));
 
-      return $result->rval;
+        return $result->rval;
     }
     /**
      * Returns a list of all carrier criteria.
@@ -171,10 +171,10 @@ require_once 'ConstantDataService.require.php';
      */
     public function getCarrierCriterion()
     {
-      $args = new GetCarrierCriterion();
-      $result = $this->__soapCall("getCarrierCriterion", array($args));
+        $args = new GetCarrierCriterion();
+        $result = $this->__soapCall("getCarrierCriterion", array($args));
 
-      return $result->rval;
+        return $result->rval;
     }
     /**
      * Returns a list of all gender criteria.
@@ -184,10 +184,10 @@ require_once 'ConstantDataService.require.php';
      */
     public function getGenderCriterion()
     {
-      $args = new GetGenderCriterion();
-      $result = $this->__soapCall("getGenderCriterion", array($args));
+        $args = new GetGenderCriterion();
+        $result = $this->__soapCall("getGenderCriterion", array($args));
 
-      return $result->rval;
+        return $result->rval;
     }
     /**
      * Returns a list of all language criteria.
@@ -197,10 +197,10 @@ require_once 'ConstantDataService.require.php';
      */
     public function getLanguageCriterion()
     {
-      $args = new GetLanguageCriterion();
-      $result = $this->__soapCall("getLanguageCriterion", array($args));
+        $args = new GetLanguageCriterion();
+        $result = $this->__soapCall("getLanguageCriterion", array($args));
 
-      return $result->rval;
+        return $result->rval;
     }
     /**
      * Returns a list of all mobile devices.
@@ -210,10 +210,10 @@ require_once 'ConstantDataService.require.php';
      */
     public function getMobileDeviceCriterion()
     {
-      $args = new GetMobileDeviceCriterion();
-      $result = $this->__soapCall("getMobileDeviceCriterion", array($args));
+        $args = new GetMobileDeviceCriterion();
+        $result = $this->__soapCall("getMobileDeviceCriterion", array($args));
 
-      return $result->rval;
+        return $result->rval;
     }
     /**
      * Returns a list of all operating system version criteria.
@@ -223,10 +223,10 @@ require_once 'ConstantDataService.require.php';
      */
     public function getOperatingSystemVersionCriterion()
     {
-      $args = new GetOperatingSystemVersionCriterion();
-      $result = $this->__soapCall("getOperatingSystemVersionCriterion", array($args));
+        $args = new GetOperatingSystemVersionCriterion();
+        $result = $this->__soapCall("getOperatingSystemVersionCriterion", array($args));
 
-      return $result->rval;
+        return $result->rval;
     }
     /**
      * <span class="constraint Required">This field is required and should not be {@code null}.</span>
@@ -243,10 +243,10 @@ require_once 'ConstantDataService.require.php';
      */
     public function getProductBiddingCategoryData($selector)
     {
-      $args = new GetProductBiddingCategoryData($selector);
-      $result = $this->__soapCall("getProductBiddingCategoryData", array($args));
+        $args = new GetProductBiddingCategoryData($selector);
+        $result = $this->__soapCall("getProductBiddingCategoryData", array($args));
 
-      return $result->rval;
+        return $result->rval;
     }
     /**
      * Returns a list of user interests.
@@ -257,10 +257,10 @@ require_once 'ConstantDataService.require.php';
      */
     public function getUserInterestCriterion($userInterestTaxonomyType)
     {
-      $args = new GetUserInterestCriterion($userInterestTaxonomyType);
-      $result = $this->__soapCall("getUserInterestCriterion", array($args));
+        $args = new GetUserInterestCriterion($userInterestTaxonomyType);
+        $result = $this->__soapCall("getUserInterestCriterion", array($args));
 
-      return $result->rval;
+        return $result->rval;
     }
     /**
      * Returns a list of content verticals.
@@ -270,9 +270,9 @@ require_once 'ConstantDataService.require.php';
      */
     public function getVerticalCriterion()
     {
-      $args = new GetVerticalCriterion();
-      $result = $this->__soapCall("getVerticalCriterion", array($args));
+        $args = new GetVerticalCriterion();
+        $result = $this->__soapCall("getVerticalCriterion", array($args));
 
-      return $result->rval;
+        return $result->rval;
     }
   }

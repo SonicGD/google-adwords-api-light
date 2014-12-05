@@ -10,8 +10,8 @@
    */
   class FeedItemValidationDetail
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "FeedItemValidationDetail";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "FeedItemValidationDetail";
 
     /**
      * @access public
@@ -43,7 +43,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -52,15 +52,14 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($feedMappingId = null, $validationStatus = null, $validationErrors = null, $approvalStatus = null)
-    {
-      $this->feedMappingId = $feedMappingId;
-      $this->validationStatus = $validationStatus;
-      $this->validationErrors = $validationErrors;
-      $this->approvalStatus = $approvalStatus;
-    }
-
+      public function __construct($feedMappingId = null, $validationStatus = null, $validationErrors = null, $approvalStatus = null)
+      {
+          $this->feedMappingId = $feedMappingId;
+          $this->validationStatus = $validationStatus;
+          $this->validationErrors = $validationErrors;
+          $this->approvalStatus = $approvalStatus;
+      }
   }

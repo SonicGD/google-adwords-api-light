@@ -33,8 +33,8 @@
    */
   class GeoTargetTypeSetting extends Setting
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "GeoTargetTypeSetting";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "GeoTargetTypeSetting";
 
     /**
      * @access public
@@ -54,7 +54,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -63,15 +63,14 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($positiveGeoTargetType = null, $negativeGeoTargetType = null, $SettingType = null)
-    {
-      parent::__construct();
-      $this->positiveGeoTargetType = $positiveGeoTargetType;
-      $this->negativeGeoTargetType = $negativeGeoTargetType;
-      $this->SettingType = $SettingType;
-    }
-
+      public function __construct($positiveGeoTargetType = null, $negativeGeoTargetType = null, $SettingType = null)
+      {
+          parent::__construct();
+          $this->positiveGeoTargetType = $positiveGeoTargetType;
+          $this->negativeGeoTargetType = $negativeGeoTargetType;
+          $this->SettingType = $SettingType;
+      }
   }

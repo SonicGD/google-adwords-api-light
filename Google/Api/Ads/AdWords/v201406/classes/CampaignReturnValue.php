@@ -8,8 +8,8 @@
    */
   class CampaignReturnValue extends ListReturnValue
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "CampaignReturnValue";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "CampaignReturnValue";
 
     /**
      * @access public
@@ -29,7 +29,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -38,15 +38,14 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($value = null, $partialFailureErrors = null, $ListReturnValueType = null)
-    {
-      parent::__construct();
-      $this->value = $value;
-      $this->partialFailureErrors = $partialFailureErrors;
-      $this->ListReturnValueType = $ListReturnValueType;
-    }
-
+      public function __construct($value = null, $partialFailureErrors = null, $ListReturnValueType = null)
+      {
+          parent::__construct();
+          $this->value = $value;
+          $this->partialFailureErrors = $partialFailureErrors;
+          $this->ListReturnValueType = $ListReturnValueType;
+      }
   }

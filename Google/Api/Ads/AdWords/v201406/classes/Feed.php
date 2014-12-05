@@ -10,8 +10,8 @@
    */
   class Feed
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "Feed";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "Feed";
 
     /**
      * @access public
@@ -55,7 +55,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -64,17 +64,16 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($id = null, $name = null, $attributes = null, $status = null, $origin = null, $systemFeedGenerationData = null)
-    {
-      $this->id = $id;
-      $this->name = $name;
-      $this->attributes = $attributes;
-      $this->status = $status;
-      $this->origin = $origin;
-      $this->systemFeedGenerationData = $systemFeedGenerationData;
-    }
-
+      public function __construct($id = null, $name = null, $attributes = null, $status = null, $origin = null, $systemFeedGenerationData = null)
+      {
+          $this->id = $id;
+          $this->name = $name;
+          $this->attributes = $attributes;
+          $this->status = $status;
+          $this->origin = $origin;
+          $this->systemFeedGenerationData = $systemFeedGenerationData;
+      }
   }

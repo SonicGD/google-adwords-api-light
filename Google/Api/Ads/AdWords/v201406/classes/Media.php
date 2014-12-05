@@ -8,8 +8,8 @@
    */
   class Media
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "Media";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "Media";
 
     /**
      * @access public
@@ -76,7 +76,7 @@
      * @var string
      */
     public $MediaType;
-    private $_parameterMap = array(
+      private $_parameterMap = array(
       "Media.Type" => "MediaType",
     );
 
@@ -87,7 +87,7 @@
      */
     public function __set($var, $value)
     {
-      $this->{$this->_parameterMap[$var]} = $value;
+        $this->{$this->_parameterMap[$var]} = $value;
     }
 
     /**
@@ -97,11 +97,11 @@
      */
     public function __get($var)
     {
-      if (!isset($this->_parameterMap[$var])) {
-        return null;
-      }
+        if (!isset($this->_parameterMap[$var])) {
+            return null;
+        }
 
-      return $this->{$this->_parameterMap[$var]};
+        return $this->{$this->_parameterMap[$var]};
     }
 
     /**
@@ -110,7 +110,7 @@
      */
     protected function getParameterMap()
     {
-      return $this->_parameterMap;
+        return $this->_parameterMap;
     }
 
     /**
@@ -119,7 +119,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -128,22 +128,21 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($mediaId = null, $type = null, $referenceId = null, $dimensions = null, $urls = null, $mimeType = null, $sourceUrl = null, $name = null, $fileSize = null, $creationTime = null, $MediaType = null)
-    {
-      $this->mediaId = $mediaId;
-      $this->type = $type;
-      $this->referenceId = $referenceId;
-      $this->dimensions = $dimensions;
-      $this->urls = $urls;
-      $this->mimeType = $mimeType;
-      $this->sourceUrl = $sourceUrl;
-      $this->name = $name;
-      $this->fileSize = $fileSize;
-      $this->creationTime = $creationTime;
-      $this->MediaType = $MediaType;
-    }
-
+      public function __construct($mediaId = null, $type = null, $referenceId = null, $dimensions = null, $urls = null, $mimeType = null, $sourceUrl = null, $name = null, $fileSize = null, $creationTime = null, $MediaType = null)
+      {
+          $this->mediaId = $mediaId;
+          $this->type = $type;
+          $this->referenceId = $referenceId;
+          $this->dimensions = $dimensions;
+          $this->urls = $urls;
+          $this->mimeType = $mimeType;
+          $this->sourceUrl = $sourceUrl;
+          $this->name = $name;
+          $this->fileSize = $fileSize;
+          $this->creationTime = $creationTime;
+          $this->MediaType = $MediaType;
+      }
   }

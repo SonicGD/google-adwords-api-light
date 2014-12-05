@@ -9,8 +9,8 @@
    */
   class WebpageParameter extends CriterionParameter
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "WebpageParameter";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "WebpageParameter";
 
     /**
      * @access public
@@ -30,7 +30,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -39,15 +39,14 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($criterionName = null, $conditions = null, $CriterionParameterType = null)
-    {
-      parent::__construct();
-      $this->criterionName = $criterionName;
-      $this->conditions = $conditions;
-      $this->CriterionParameterType = $CriterionParameterType;
-    }
-
+      public function __construct($criterionName = null, $conditions = null, $CriterionParameterType = null)
+      {
+          parent::__construct();
+          $this->criterionName = $criterionName;
+          $this->conditions = $conditions;
+          $this->CriterionParameterType = $CriterionParameterType;
+      }
   }

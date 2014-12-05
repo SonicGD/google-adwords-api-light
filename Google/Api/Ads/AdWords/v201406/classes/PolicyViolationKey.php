@@ -13,8 +13,8 @@
    */
   class PolicyViolationKey
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "PolicyViolationKey";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "PolicyViolationKey";
 
     /**
      * @access public
@@ -34,7 +34,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -43,13 +43,12 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($policyName = null, $violatingText = null)
-    {
-      $this->policyName = $policyName;
-      $this->violatingText = $violatingText;
-    }
-
+      public function __construct($policyName = null, $violatingText = null)
+      {
+          $this->policyName = $policyName;
+          $this->violatingText = $violatingText;
+      }
   }

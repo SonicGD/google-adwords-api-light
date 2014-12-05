@@ -9,9 +9,9 @@ require_once 'DataService.require.php';
    */
   class DataService extends AdWordsSoapClient
   {
-    const SERVICE_NAME = "DataService";
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const ENDPOINT = "https://adwords.google.com/api/adwords/cm/v201406/DataService";
+      const SERVICE_NAME = "DataService";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const ENDPOINT = "https://adwords.google.com/api/adwords/cm/v201406/DataService";
 
     /**
      * The endpoint of the service
@@ -29,7 +29,6 @@ require_once 'DataService.require.php';
       "AuthenticationError" => "AuthenticationError",
       "AuthorizationError" => "AuthorizationError",
       "ClientTermsError" => "ClientTermsError",
-      "CriterionBidLandscape" => "CriterionBidLandscape",
       "DateError" => "DateError",
       "DateRange" => "DateRange",
       "DistinctError" => "DistinctError",
@@ -61,6 +60,7 @@ require_once 'DataService.require.php';
       "StringLengthError" => "StringLengthError",
       "DataError" => "DataError",
       "ComparableValue" => "ComparableValue",
+      "CriterionBidLandscape" => "CriterionBidLandscape",
       "DatabaseError" => "DatabaseError",
       "ApiError" => "ApiError",
       "ApiException" => "ApiException",
@@ -122,8 +122,8 @@ require_once 'DataService.require.php';
      */
     public function __construct($wsdl, $options, $user)
     {
-      $options["classmap"] = self::$classmap;
-      parent::__construct($wsdl, $options, $user, self::SERVICE_NAME,
+        $options["classmap"] = self::$classmap;
+        parent::__construct($wsdl, $options, $user, self::SERVICE_NAME,
           self::WSDL_NAMESPACE);
     }
     /**
@@ -142,10 +142,10 @@ require_once 'DataService.require.php';
      */
     public function getAdGroupBidLandscape($serviceSelector)
     {
-      $args = new GetAdGroupBidLandscape($serviceSelector);
-      $result = $this->__soapCall("getAdGroupBidLandscape", array($args));
+        $args = new GetAdGroupBidLandscape($serviceSelector);
+        $result = $this->__soapCall("getAdGroupBidLandscape", array($args));
 
-      return $result->rval;
+        return $result->rval;
     }
     /**
      * <span class="constraint Required">This field is required and should not be {@code null}.</span>
@@ -163,10 +163,10 @@ require_once 'DataService.require.php';
      */
     public function getCriterionBidLandscape($serviceSelector)
     {
-      $args = new GetCriterionBidLandscape($serviceSelector);
-      $result = $this->__soapCall("getCriterionBidLandscape", array($args));
+        $args = new GetCriterionBidLandscape($serviceSelector);
+        $result = $this->__soapCall("getCriterionBidLandscape", array($args));
 
-      return $result->rval;
+        return $result->rval;
     }
     /**
      * <span class="constraint Required">This field is required and should not be {@code null}.</span>
@@ -181,10 +181,10 @@ require_once 'DataService.require.php';
      */
     public function getDomainCategory($serviceSelector)
     {
-      $args = new GetDomainCategory($serviceSelector);
-      $result = $this->__soapCall("getDomainCategory", array($args));
+        $args = new GetDomainCategory($serviceSelector);
+        $result = $this->__soapCall("getDomainCategory", array($args));
 
-      return $result->rval;
+        return $result->rval;
     }
     /**
      * <span class="constraint Required">This field is required and should not be {@code null}.</span>
@@ -202,10 +202,10 @@ require_once 'DataService.require.php';
      */
     public function queryAdGroupBidLandscape($query)
     {
-      $args = new QueryAdGroupBidLandscape($query);
-      $result = $this->__soapCall("queryAdGroupBidLandscape", array($args));
+        $args = new QueryAdGroupBidLandscape($query);
+        $result = $this->__soapCall("queryAdGroupBidLandscape", array($args));
 
-      return $result->rval;
+        return $result->rval;
     }
     /**
      * <span class="constraint Required">This field is required and should not be {@code null}.</span>
@@ -223,10 +223,10 @@ require_once 'DataService.require.php';
      */
     public function queryCriterionBidLandscape($query)
     {
-      $args = new QueryCriterionBidLandscape($query);
-      $result = $this->__soapCall("queryCriterionBidLandscape", array($args));
+        $args = new QueryCriterionBidLandscape($query);
+        $result = $this->__soapCall("queryCriterionBidLandscape", array($args));
 
-      return $result->rval;
+        return $result->rval;
     }
     /**
      * <span class="constraint Required">This field is required and should not be {@code null}.</span>
@@ -242,9 +242,9 @@ require_once 'DataService.require.php';
      */
     public function queryDomainCategory($query)
     {
-      $args = new QueryDomainCategory($query);
-      $result = $this->__soapCall("queryDomainCategory", array($args));
+        $args = new QueryDomainCategory($query);
+        $result = $this->__soapCall("queryDomainCategory", array($args));
 
-      return $result->rval;
+        return $result->rval;
     }
   }

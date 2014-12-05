@@ -9,9 +9,9 @@ require_once 'TrafficEstimatorService.require.php';
    */
   class TrafficEstimatorService extends AdWordsSoapClient
   {
-    const SERVICE_NAME = "TrafficEstimatorService";
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
-    const ENDPOINT = "https://adwords.google.com/api/adwords/o/v201406/TrafficEstimatorService";
+      const SERVICE_NAME = "TrafficEstimatorService";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
+      const ENDPOINT = "https://adwords.google.com/api/adwords/o/v201406/TrafficEstimatorService";
 
     /**
      * The endpoint of the service
@@ -56,6 +56,7 @@ require_once 'TrafficEstimatorService.require.php';
       "OperationAccessDenied" => "OperationAccessDenied",
       "OperatorError" => "OperatorError",
       "Placement" => "Placement",
+      "Platform" => "Platform",
       "Product" => "Product",
       "ProductCondition" => "ProductCondition",
       "ProductConditionOperand" => "ProductConditionOperand",
@@ -134,8 +135,8 @@ require_once 'TrafficEstimatorService.require.php';
      */
     public function __construct($wsdl, $options, $user)
     {
-      $options["classmap"] = self::$classmap;
-      parent::__construct($wsdl, $options, $user, self::SERVICE_NAME,
+        $options["classmap"] = self::$classmap;
+        parent::__construct($wsdl, $options, $user, self::SERVICE_NAME,
           self::WSDL_NAMESPACE);
     }
     /**
@@ -152,9 +153,9 @@ require_once 'TrafficEstimatorService.require.php';
      */
     public function get($selector)
     {
-      $args = new TrafficEstimatorServiceGet($selector);
-      $result = $this->__soapCall("get", array($args));
+        $args = new TrafficEstimatorServiceGet($selector);
+        $result = $this->__soapCall("get", array($args));
 
-      return $result->rval;
+        return $result->rval;
     }
   }

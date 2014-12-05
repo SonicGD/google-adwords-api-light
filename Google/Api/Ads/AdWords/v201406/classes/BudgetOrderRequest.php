@@ -10,8 +10,8 @@
    */
   class BudgetOrderRequest
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/billing/v201406";
-    const XSI_TYPE = "BudgetOrderRequest";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/billing/v201406";
+      const XSI_TYPE = "BudgetOrderRequest";
 
     /**
      * @access public
@@ -67,7 +67,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -76,19 +76,18 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($status = null, $date = null, $billingAccountName = null, $poNumber = null, $budgetOrderName = null, $spendingLimit = null, $startDateTime = null, $endDateTime = null)
-    {
-      $this->status = $status;
-      $this->date = $date;
-      $this->billingAccountName = $billingAccountName;
-      $this->poNumber = $poNumber;
-      $this->budgetOrderName = $budgetOrderName;
-      $this->spendingLimit = $spendingLimit;
-      $this->startDateTime = $startDateTime;
-      $this->endDateTime = $endDateTime;
-    }
-
+      public function __construct($status = null, $date = null, $billingAccountName = null, $poNumber = null, $budgetOrderName = null, $spendingLimit = null, $startDateTime = null, $endDateTime = null)
+      {
+          $this->status = $status;
+          $this->date = $date;
+          $this->billingAccountName = $billingAccountName;
+          $this->poNumber = $poNumber;
+          $this->budgetOrderName = $budgetOrderName;
+          $this->spendingLimit = $spendingLimit;
+          $this->startDateTime = $startDateTime;
+          $this->endDateTime = $endDateTime;
+      }
   }

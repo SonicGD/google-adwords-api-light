@@ -8,8 +8,8 @@
    */
   class LocationSyncExtension extends AdExtension
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "LocationSyncExtension";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "LocationSyncExtension";
 
     /**
      * @access public
@@ -41,7 +41,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -50,18 +50,17 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($email = null, $oAuthInfo = null, $iconMediaId = null, $shouldSyncUrl = null, $id = null, $AdExtensionType = null)
-    {
-      parent::__construct();
-      $this->email = $email;
-      $this->oAuthInfo = $oAuthInfo;
-      $this->iconMediaId = $iconMediaId;
-      $this->shouldSyncUrl = $shouldSyncUrl;
-      $this->id = $id;
-      $this->AdExtensionType = $AdExtensionType;
-    }
-
+      public function __construct($email = null, $oAuthInfo = null, $iconMediaId = null, $shouldSyncUrl = null, $id = null, $AdExtensionType = null)
+      {
+          parent::__construct();
+          $this->email = $email;
+          $this->oAuthInfo = $oAuthInfo;
+          $this->iconMediaId = $iconMediaId;
+          $this->shouldSyncUrl = $shouldSyncUrl;
+          $this->id = $id;
+          $this->AdExtensionType = $AdExtensionType;
+      }
   }

@@ -12,8 +12,8 @@
    */
   class AdGroupCriterionLimitExceeded extends EntityCountLimitExceeded
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "AdGroupCriterionLimitExceeded";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "AdGroupCriterionLimitExceeded";
 
     /**
      * @access public
@@ -27,7 +27,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -36,18 +36,17 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($limitType = null, $reason = null, $enclosingId = null, $limit = null, $accountLimitType = null, $existingCount = null)
-    {
-      parent::__construct();
-      $this->limitType = $limitType;
-      $this->reason = $reason;
-      $this->enclosingId = $enclosingId;
-      $this->limit = $limit;
-      $this->accountLimitType = $accountLimitType;
-      $this->existingCount = $existingCount;
-    }
-
+      public function __construct($limitType = null, $reason = null, $enclosingId = null, $limit = null, $accountLimitType = null, $existingCount = null)
+      {
+          parent::__construct();
+          $this->limitType = $limitType;
+          $this->reason = $reason;
+          $this->enclosingId = $enclosingId;
+          $this->limit = $limit;
+          $this->accountLimitType = $accountLimitType;
+          $this->existingCount = $existingCount;
+      }
   }

@@ -36,8 +36,8 @@
    */
   class LocationGroups extends Criterion
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "LocationGroups";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "LocationGroups";
 
     /**
      * @access public
@@ -51,7 +51,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -60,16 +60,15 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($matchingFunction = null, $id = null, $type = null, $CriterionType = null)
-    {
-      parent::__construct();
-      $this->matchingFunction = $matchingFunction;
-      $this->id = $id;
-      $this->type = $type;
-      $this->CriterionType = $CriterionType;
-    }
-
+      public function __construct($matchingFunction = null, $id = null, $type = null, $CriterionType = null)
+      {
+          parent::__construct();
+          $this->matchingFunction = $matchingFunction;
+          $this->id = $id;
+          $this->type = $type;
+          $this->CriterionType = $CriterionType;
+      }
   }

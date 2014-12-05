@@ -8,8 +8,8 @@
    */
   class MoveOperation extends Operation
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/mcm/v201406";
-    const XSI_TYPE = "MoveOperation";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/mcm/v201406";
+      const XSI_TYPE = "MoveOperation";
 
     /**
      * @access public
@@ -29,7 +29,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -38,16 +38,15 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($operand = null, $oldManagerCustomerId = null, $operator = null, $OperationType = null)
-    {
-      parent::__construct();
-      $this->operand = $operand;
-      $this->oldManagerCustomerId = $oldManagerCustomerId;
-      $this->operator = $operator;
-      $this->OperationType = $OperationType;
-    }
-
+      public function __construct($operand = null, $oldManagerCustomerId = null, $operator = null, $OperationType = null)
+      {
+          parent::__construct();
+          $this->operand = $operand;
+          $this->oldManagerCustomerId = $oldManagerCustomerId;
+          $this->operator = $operator;
+          $this->OperationType = $OperationType;
+      }
   }

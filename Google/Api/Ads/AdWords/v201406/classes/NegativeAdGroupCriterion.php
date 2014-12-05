@@ -8,8 +8,8 @@
    */
   class NegativeAdGroupCriterion extends AdGroupCriterion
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "NegativeAdGroupCriterion";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "NegativeAdGroupCriterion";
 
     /**
      * Gets the namesapce of this class
@@ -17,7 +17,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -26,18 +26,17 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($adGroupId = null, $criterionUse = null, $criterion = null, $labels = null, $forwardCompatibilityMap = null, $AdGroupCriterionType = null)
-    {
-      parent::__construct();
-      $this->adGroupId = $adGroupId;
-      $this->criterionUse = $criterionUse;
-      $this->criterion = $criterion;
-      $this->labels = $labels;
-      $this->forwardCompatibilityMap = $forwardCompatibilityMap;
-      $this->AdGroupCriterionType = $AdGroupCriterionType;
-    }
-
+      public function __construct($adGroupId = null, $criterionUse = null, $criterion = null, $labels = null, $forwardCompatibilityMap = null, $AdGroupCriterionType = null)
+      {
+          parent::__construct();
+          $this->adGroupId = $adGroupId;
+          $this->criterionUse = $criterionUse;
+          $this->criterion = $criterion;
+          $this->labels = $labels;
+          $this->forwardCompatibilityMap = $forwardCompatibilityMap;
+          $this->AdGroupCriterionType = $AdGroupCriterionType;
+      }
   }

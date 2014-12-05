@@ -18,8 +18,8 @@
    */
   class IdeaTextFilterSearchParameter extends SearchParameter
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
-    const XSI_TYPE = "IdeaTextFilterSearchParameter";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
+      const XSI_TYPE = "IdeaTextFilterSearchParameter";
 
     /**
      * @access public
@@ -39,7 +39,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -48,15 +48,14 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($included = null, $excluded = null, $SearchParameterType = null)
-    {
-      parent::__construct();
-      $this->included = $included;
-      $this->excluded = $excluded;
-      $this->SearchParameterType = $SearchParameterType;
-    }
-
+      public function __construct($included = null, $excluded = null, $SearchParameterType = null)
+      {
+          parent::__construct();
+          $this->included = $included;
+          $this->excluded = $excluded;
+          $this->SearchParameterType = $SearchParameterType;
+      }
   }

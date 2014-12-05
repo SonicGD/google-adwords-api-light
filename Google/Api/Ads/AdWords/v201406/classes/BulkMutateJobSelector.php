@@ -8,8 +8,8 @@
    */
   class BulkMutateJobSelector extends JobSelector
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "BulkMutateJobSelector";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "BulkMutateJobSelector";
 
     /**
      * @access public
@@ -29,7 +29,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -38,17 +38,16 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($jobIds = null, $resultPartIndex = null, $includeHistory = null, $includeStats = null, $JobSelectorType = null)
-    {
-      parent::__construct();
-      $this->jobIds = $jobIds;
-      $this->resultPartIndex = $resultPartIndex;
-      $this->includeHistory = $includeHistory;
-      $this->includeStats = $includeStats;
-      $this->JobSelectorType = $JobSelectorType;
-    }
-
+      public function __construct($jobIds = null, $resultPartIndex = null, $includeHistory = null, $includeStats = null, $JobSelectorType = null)
+      {
+          parent::__construct();
+          $this->jobIds = $jobIds;
+          $this->resultPartIndex = $resultPartIndex;
+          $this->includeHistory = $includeHistory;
+          $this->includeStats = $includeStats;
+          $this->JobSelectorType = $JobSelectorType;
+      }
   }

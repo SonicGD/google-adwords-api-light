@@ -8,8 +8,8 @@
    */
   class TargetingIdeaSelector
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
-    const XSI_TYPE = "TargetingIdeaSelector";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
+      const XSI_TYPE = "TargetingIdeaSelector";
 
     /**
      * @access public
@@ -59,7 +59,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -68,18 +68,17 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($searchParameters = null, $ideaType = null, $requestType = null, $requestedAttributeTypes = null, $paging = null, $localeCode = null, $currencyCode = null)
-    {
-      $this->searchParameters = $searchParameters;
-      $this->ideaType = $ideaType;
-      $this->requestType = $requestType;
-      $this->requestedAttributeTypes = $requestedAttributeTypes;
-      $this->paging = $paging;
-      $this->localeCode = $localeCode;
-      $this->currencyCode = $currencyCode;
-    }
-
+      public function __construct($searchParameters = null, $ideaType = null, $requestType = null, $requestedAttributeTypes = null, $paging = null, $localeCode = null, $currencyCode = null)
+      {
+          $this->searchParameters = $searchParameters;
+          $this->ideaType = $ideaType;
+          $this->requestType = $requestType;
+          $this->requestedAttributeTypes = $requestedAttributeTypes;
+          $this->paging = $paging;
+          $this->localeCode = $localeCode;
+          $this->currencyCode = $currencyCode;
+      }
   }

@@ -12,8 +12,8 @@
    */
   class NumberValue extends ComparableValue
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "NumberValue";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "NumberValue";
 
     /**
      * Gets the namesapce of this class
@@ -21,7 +21,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -30,13 +30,12 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($ComparableValueType = null)
-    {
-      parent::__construct();
-      $this->ComparableValueType = $ComparableValueType;
-    }
-
+      public function __construct($ComparableValueType = null)
+      {
+          parent::__construct();
+          $this->ComparableValueType = $ComparableValueType;
+      }
   }

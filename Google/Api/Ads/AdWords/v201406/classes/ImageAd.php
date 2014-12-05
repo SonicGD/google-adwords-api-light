@@ -9,8 +9,8 @@
    */
   class ImageAd extends Ad
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "ImageAd";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "ImageAd";
 
     /**
      * @access public
@@ -36,7 +36,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -45,24 +45,23 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($image = null, $name = null, $adToCopyImageFrom = null, $id = null, $url = null, $displayUrl = null, $finalUrls = null, $finalMobileUrls = null, $trackingUrlTemplate = null, $urlCustomParameters = null, $devicePreference = null, $AdType = null)
-    {
-      parent::__construct();
-      $this->image = $image;
-      $this->name = $name;
-      $this->adToCopyImageFrom = $adToCopyImageFrom;
-      $this->id = $id;
-      $this->url = $url;
-      $this->displayUrl = $displayUrl;
-      $this->finalUrls = $finalUrls;
-      $this->finalMobileUrls = $finalMobileUrls;
-      $this->trackingUrlTemplate = $trackingUrlTemplate;
-      $this->urlCustomParameters = $urlCustomParameters;
-      $this->devicePreference = $devicePreference;
-      $this->AdType = $AdType;
-    }
-
+      public function __construct($image = null, $name = null, $adToCopyImageFrom = null, $id = null, $url = null, $displayUrl = null, $finalUrls = null, $finalMobileUrls = null, $trackingUrlTemplate = null, $urlCustomParameters = null, $devicePreference = null, $AdType = null)
+      {
+          parent::__construct();
+          $this->image = $image;
+          $this->name = $name;
+          $this->adToCopyImageFrom = $adToCopyImageFrom;
+          $this->id = $id;
+          $this->url = $url;
+          $this->displayUrl = $displayUrl;
+          $this->finalUrls = $finalUrls;
+          $this->finalMobileUrls = $finalMobileUrls;
+          $this->trackingUrlTemplate = $trackingUrlTemplate;
+          $this->urlCustomParameters = $urlCustomParameters;
+          $this->devicePreference = $devicePreference;
+          $this->AdType = $AdType;
+      }
   }

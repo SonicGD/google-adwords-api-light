@@ -9,8 +9,8 @@
    */
   class DynamicSearchAdsSetting extends Setting
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "DynamicSearchAdsSetting";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "DynamicSearchAdsSetting";
 
     /**
      * @access public
@@ -30,7 +30,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -39,15 +39,14 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($domainName = null, $languageCode = null, $SettingType = null)
-    {
-      parent::__construct();
-      $this->domainName = $domainName;
-      $this->languageCode = $languageCode;
-      $this->SettingType = $SettingType;
-    }
-
+      public function __construct($domainName = null, $languageCode = null, $SettingType = null)
+      {
+          parent::__construct();
+          $this->domainName = $domainName;
+          $this->languageCode = $languageCode;
+          $this->SettingType = $SettingType;
+      }
   }

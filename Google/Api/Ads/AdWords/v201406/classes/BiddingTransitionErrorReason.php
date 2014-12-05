@@ -3,15 +3,14 @@
 
   /**
    * Reason for bidding transition error.
-   * It is used by capability service as denial reasons, for bidding transition
-   * capability.
+   * Used by the bidding transition capability service as the denial reason.
    * @package Google_Api_Ads_AdWords_v201406
    * @subpackage v201406
    */
   class BiddingTransitionErrorReason
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "BiddingTransitionError.Reason";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "BiddingTransitionError.Reason";
 
     /**
      * Gets the namesapce of this class
@@ -19,7 +18,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -28,11 +27,10 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct()
-    {
-    }
-
+      public function __construct()
+      {
+      }
   }

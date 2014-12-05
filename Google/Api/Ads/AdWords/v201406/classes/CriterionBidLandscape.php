@@ -13,8 +13,8 @@
    */
   class CriterionBidLandscape extends BidLandscape
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "CriterionBidLandscape";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "CriterionBidLandscape";
 
     /**
      * @access public
@@ -28,7 +28,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -37,18 +37,17 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($criterionId = null, $campaignId = null, $adGroupId = null, $startDate = null, $endDate = null, $landscapePoints = null)
-    {
-      parent::__construct();
-      $this->criterionId = $criterionId;
-      $this->campaignId = $campaignId;
-      $this->adGroupId = $adGroupId;
-      $this->startDate = $startDate;
-      $this->endDate = $endDate;
-      $this->landscapePoints = $landscapePoints;
-    }
-
+      public function __construct($criterionId = null, $campaignId = null, $adGroupId = null, $startDate = null, $endDate = null, $landscapePoints = null)
+      {
+          parent::__construct();
+          $this->criterionId = $criterionId;
+          $this->campaignId = $campaignId;
+          $this->adGroupId = $adGroupId;
+          $this->startDate = $startDate;
+          $this->endDate = $endDate;
+          $this->landscapePoints = $landscapePoints;
+      }
   }

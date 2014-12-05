@@ -9,8 +9,8 @@
    */
   class PhoneNumber
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/express/v201406";
-    const XSI_TYPE = "PhoneNumber";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/express/v201406";
+      const XSI_TYPE = "PhoneNumber";
 
     /**
      * @access public
@@ -30,7 +30,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -39,13 +39,12 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($regionCode = null, $number = null)
-    {
-      $this->regionCode = $regionCode;
-      $this->number = $number;
-    }
-
+      public function __construct($regionCode = null, $number = null)
+      {
+          $this->regionCode = $regionCode;
+          $this->number = $number;
+      }
   }

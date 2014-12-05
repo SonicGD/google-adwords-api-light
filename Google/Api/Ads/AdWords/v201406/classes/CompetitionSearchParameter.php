@@ -11,8 +11,8 @@
    */
   class CompetitionSearchParameter extends SearchParameter
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
-    const XSI_TYPE = "CompetitionSearchParameter";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
+      const XSI_TYPE = "CompetitionSearchParameter";
 
     /**
      * @access public
@@ -26,7 +26,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -35,14 +35,13 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($levels = null, $SearchParameterType = null)
-    {
-      parent::__construct();
-      $this->levels = $levels;
-      $this->SearchParameterType = $SearchParameterType;
-    }
-
+      public function __construct($levels = null, $SearchParameterType = null)
+      {
+          parent::__construct();
+          $this->levels = $levels;
+          $this->SearchParameterType = $SearchParameterType;
+      }
   }

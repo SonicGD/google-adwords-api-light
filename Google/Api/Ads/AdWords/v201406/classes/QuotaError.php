@@ -8,8 +8,8 @@
    */
   class QuotaError extends ApiError
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "QuotaError";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "QuotaError";
 
     /**
      * @access public
@@ -29,7 +29,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -38,18 +38,17 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($reason = null, $limit = null, $fieldPath = null, $trigger = null, $errorString = null, $ApiErrorType = null)
-    {
-      parent::__construct();
-      $this->reason = $reason;
-      $this->limit = $limit;
-      $this->fieldPath = $fieldPath;
-      $this->trigger = $trigger;
-      $this->errorString = $errorString;
-      $this->ApiErrorType = $ApiErrorType;
-    }
-
+      public function __construct($reason = null, $limit = null, $fieldPath = null, $trigger = null, $errorString = null, $ApiErrorType = null)
+      {
+          parent::__construct();
+          $this->reason = $reason;
+          $this->limit = $limit;
+          $this->fieldPath = $fieldPath;
+          $this->trigger = $trigger;
+          $this->errorString = $errorString;
+          $this->ApiErrorType = $ApiErrorType;
+      }
   }

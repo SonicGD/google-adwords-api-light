@@ -18,8 +18,8 @@
    */
   class TargetRoasBiddingScheme extends BiddingScheme
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "TargetRoasBiddingScheme";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "TargetRoasBiddingScheme";
 
     /**
      * @access public
@@ -45,7 +45,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -54,16 +54,15 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($targetRoas = null, $bidCeiling = null, $bidFloor = null, $BiddingSchemeType = null)
-    {
-      parent::__construct();
-      $this->targetRoas = $targetRoas;
-      $this->bidCeiling = $bidCeiling;
-      $this->bidFloor = $bidFloor;
-      $this->BiddingSchemeType = $BiddingSchemeType;
-    }
-
+      public function __construct($targetRoas = null, $bidCeiling = null, $bidFloor = null, $BiddingSchemeType = null)
+      {
+          parent::__construct();
+          $this->targetRoas = $targetRoas;
+          $this->bidCeiling = $bidCeiling;
+          $this->bidFloor = $bidFloor;
+          $this->BiddingSchemeType = $BiddingSchemeType;
+      }
   }

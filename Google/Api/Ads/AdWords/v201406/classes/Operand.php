@@ -9,8 +9,8 @@
    */
   class Operand
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "Operand";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "Operand";
 
     /**
      * @access public
@@ -138,7 +138,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -147,31 +147,30 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($AdGroupAdLabel = null, $AdGroupAd = null, $AdGroupBidModifier = null, $AdGroupCriterionLabel = null, $AdGroupCriterion = null, $AdGroupLabel = null, $AdGroup = null, $Ad = null, $Budget = null, $CampaignAdExtension = null, $CampaignCriterion = null, $CampaignLabel = null, $Campaign = null, $FeedItem = null, $Job = null, $Label = null, $Media = null, $PlaceHolder = null, $TargetList = null, $Target = null)
-    {
-      $this->AdGroupAdLabel = $AdGroupAdLabel;
-      $this->AdGroupAd = $AdGroupAd;
-      $this->AdGroupBidModifier = $AdGroupBidModifier;
-      $this->AdGroupCriterionLabel = $AdGroupCriterionLabel;
-      $this->AdGroupCriterion = $AdGroupCriterion;
-      $this->AdGroupLabel = $AdGroupLabel;
-      $this->AdGroup = $AdGroup;
-      $this->Ad = $Ad;
-      $this->Budget = $Budget;
-      $this->CampaignAdExtension = $CampaignAdExtension;
-      $this->CampaignCriterion = $CampaignCriterion;
-      $this->CampaignLabel = $CampaignLabel;
-      $this->Campaign = $Campaign;
-      $this->FeedItem = $FeedItem;
-      $this->Job = $Job;
-      $this->Label = $Label;
-      $this->Media = $Media;
-      $this->PlaceHolder = $PlaceHolder;
-      $this->TargetList = $TargetList;
-      $this->Target = $Target;
-    }
-
+      public function __construct($AdGroupAdLabel = null, $AdGroupAd = null, $AdGroupBidModifier = null, $AdGroupCriterionLabel = null, $AdGroupCriterion = null, $AdGroupLabel = null, $AdGroup = null, $Ad = null, $Budget = null, $CampaignAdExtension = null, $CampaignCriterion = null, $CampaignLabel = null, $Campaign = null, $FeedItem = null, $Job = null, $Label = null, $Media = null, $PlaceHolder = null, $TargetList = null, $Target = null)
+      {
+          $this->AdGroupAdLabel = $AdGroupAdLabel;
+          $this->AdGroupAd = $AdGroupAd;
+          $this->AdGroupBidModifier = $AdGroupBidModifier;
+          $this->AdGroupCriterionLabel = $AdGroupCriterionLabel;
+          $this->AdGroupCriterion = $AdGroupCriterion;
+          $this->AdGroupLabel = $AdGroupLabel;
+          $this->AdGroup = $AdGroup;
+          $this->Ad = $Ad;
+          $this->Budget = $Budget;
+          $this->CampaignAdExtension = $CampaignAdExtension;
+          $this->CampaignCriterion = $CampaignCriterion;
+          $this->CampaignLabel = $CampaignLabel;
+          $this->Campaign = $Campaign;
+          $this->FeedItem = $FeedItem;
+          $this->Job = $Job;
+          $this->Label = $Label;
+          $this->Media = $Media;
+          $this->PlaceHolder = $PlaceHolder;
+          $this->TargetList = $TargetList;
+          $this->Target = $Target;
+      }
   }

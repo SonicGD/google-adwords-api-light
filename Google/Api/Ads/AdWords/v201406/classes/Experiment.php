@@ -8,8 +8,8 @@
    */
   class Experiment
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "Experiment";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "Experiment";
 
     /**
      * @access public
@@ -83,7 +83,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -92,22 +92,21 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($id = null, $controlId = null, $campaignId = null, $name = null, $status = null, $servingStatus = null, $queryPercentage = null, $startDateTime = null, $endDateTime = null, $lastModifiedDateTime = null, $experimentSummaryStats = null)
-    {
-      $this->id = $id;
-      $this->controlId = $controlId;
-      $this->campaignId = $campaignId;
-      $this->name = $name;
-      $this->status = $status;
-      $this->servingStatus = $servingStatus;
-      $this->queryPercentage = $queryPercentage;
-      $this->startDateTime = $startDateTime;
-      $this->endDateTime = $endDateTime;
-      $this->lastModifiedDateTime = $lastModifiedDateTime;
-      $this->experimentSummaryStats = $experimentSummaryStats;
-    }
-
+      public function __construct($id = null, $controlId = null, $campaignId = null, $name = null, $status = null, $servingStatus = null, $queryPercentage = null, $startDateTime = null, $endDateTime = null, $lastModifiedDateTime = null, $experimentSummaryStats = null)
+      {
+          $this->id = $id;
+          $this->controlId = $controlId;
+          $this->campaignId = $campaignId;
+          $this->name = $name;
+          $this->status = $status;
+          $this->servingStatus = $servingStatus;
+          $this->queryPercentage = $queryPercentage;
+          $this->startDateTime = $startDateTime;
+          $this->endDateTime = $endDateTime;
+          $this->lastModifiedDateTime = $lastModifiedDateTime;
+          $this->experimentSummaryStats = $experimentSummaryStats;
+      }
   }

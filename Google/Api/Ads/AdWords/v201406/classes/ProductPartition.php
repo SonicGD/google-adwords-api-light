@@ -22,8 +22,8 @@
    */
   class ProductPartition extends Criterion
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "ProductPartition";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "ProductPartition";
 
     /**
      * @access public
@@ -49,7 +49,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -58,18 +58,17 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($partitionType = null, $parentCriterionId = null, $caseValue = null, $id = null, $type = null, $CriterionType = null)
-    {
-      parent::__construct();
-      $this->partitionType = $partitionType;
-      $this->parentCriterionId = $parentCriterionId;
-      $this->caseValue = $caseValue;
-      $this->id = $id;
-      $this->type = $type;
-      $this->CriterionType = $CriterionType;
-    }
-
+      public function __construct($partitionType = null, $parentCriterionId = null, $caseValue = null, $id = null, $type = null, $CriterionType = null)
+      {
+          parent::__construct();
+          $this->partitionType = $partitionType;
+          $this->parentCriterionId = $parentCriterionId;
+          $this->caseValue = $caseValue;
+          $this->id = $id;
+          $this->type = $type;
+          $this->CriterionType = $CriterionType;
+      }
   }

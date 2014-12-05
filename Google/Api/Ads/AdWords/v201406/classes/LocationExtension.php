@@ -8,8 +8,8 @@
    */
   class LocationExtension extends AdExtension
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "LocationExtension";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "LocationExtension";
 
     /**
      * @access public
@@ -65,7 +65,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -74,22 +74,21 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($address = null, $geoPoint = null, $encodedLocation = null, $companyName = null, $phoneNumber = null, $source = null, $iconMediaId = null, $imageMediaId = null, $id = null, $AdExtensionType = null)
-    {
-      parent::__construct();
-      $this->address = $address;
-      $this->geoPoint = $geoPoint;
-      $this->encodedLocation = $encodedLocation;
-      $this->companyName = $companyName;
-      $this->phoneNumber = $phoneNumber;
-      $this->source = $source;
-      $this->iconMediaId = $iconMediaId;
-      $this->imageMediaId = $imageMediaId;
-      $this->id = $id;
-      $this->AdExtensionType = $AdExtensionType;
-    }
-
+      public function __construct($address = null, $geoPoint = null, $encodedLocation = null, $companyName = null, $phoneNumber = null, $source = null, $iconMediaId = null, $imageMediaId = null, $id = null, $AdExtensionType = null)
+      {
+          parent::__construct();
+          $this->address = $address;
+          $this->geoPoint = $geoPoint;
+          $this->encodedLocation = $encodedLocation;
+          $this->companyName = $companyName;
+          $this->phoneNumber = $phoneNumber;
+          $this->source = $source;
+          $this->iconMediaId = $iconMediaId;
+          $this->imageMediaId = $imageMediaId;
+          $this->id = $id;
+          $this->AdExtensionType = $AdExtensionType;
+      }
   }

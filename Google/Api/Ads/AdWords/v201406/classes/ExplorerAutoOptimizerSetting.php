@@ -8,8 +8,8 @@
    */
   class ExplorerAutoOptimizerSetting extends Setting
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "ExplorerAutoOptimizerSetting";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "ExplorerAutoOptimizerSetting";
 
     /**
      * @access public
@@ -23,7 +23,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -32,14 +32,13 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($optIn = null, $SettingType = null)
-    {
-      parent::__construct();
-      $this->optIn = $optIn;
-      $this->SettingType = $SettingType;
-    }
-
+      public function __construct($optIn = null, $SettingType = null)
+      {
+          parent::__construct();
+          $this->optIn = $optIn;
+          $this->SettingType = $SettingType;
+      }
   }

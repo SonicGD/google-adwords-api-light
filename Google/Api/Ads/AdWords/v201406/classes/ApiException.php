@@ -12,8 +12,8 @@
    */
   class ApiException extends ApplicationException
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "ApiException";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "ApiException";
 
     /**
      * @access public
@@ -27,7 +27,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -36,15 +36,14 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($errors = null, $message = null, $ApplicationExceptionType = null)
-    {
-      parent::__construct();
-      $this->errors = $errors;
-      $this->message = $message;
-      $this->ApplicationExceptionType = $ApplicationExceptionType;
-    }
-
+      public function __construct($errors = null, $message = null, $ApplicationExceptionType = null)
+      {
+          parent::__construct();
+          $this->errors = $errors;
+          $this->message = $message;
+          $this->ApplicationExceptionType = $ApplicationExceptionType;
+      }
   }

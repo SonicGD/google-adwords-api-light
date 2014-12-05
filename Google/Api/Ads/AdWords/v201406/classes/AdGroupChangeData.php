@@ -8,8 +8,8 @@
    */
   class AdGroupChangeData
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/ch/v201406";
-    const XSI_TYPE = "AdGroupChangeData";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/ch/v201406";
+      const XSI_TYPE = "AdGroupChangeData";
 
     /**
      * @access public
@@ -71,7 +71,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -80,20 +80,19 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($adGroupId = null, $adGroupChangeStatus = null, $changedAds = null, $changedCriteria = null, $removedCriteria = null, $changedFeeds = null, $removedFeeds = null, $changedAdGroupBidModifierCriteria = null, $removedAdGroupBidModifierCriteria = null)
-    {
-      $this->adGroupId = $adGroupId;
-      $this->adGroupChangeStatus = $adGroupChangeStatus;
-      $this->changedAds = $changedAds;
-      $this->changedCriteria = $changedCriteria;
-      $this->removedCriteria = $removedCriteria;
-      $this->changedFeeds = $changedFeeds;
-      $this->removedFeeds = $removedFeeds;
-      $this->changedAdGroupBidModifierCriteria = $changedAdGroupBidModifierCriteria;
-      $this->removedAdGroupBidModifierCriteria = $removedAdGroupBidModifierCriteria;
-    }
-
+      public function __construct($adGroupId = null, $adGroupChangeStatus = null, $changedAds = null, $changedCriteria = null, $removedCriteria = null, $changedFeeds = null, $removedFeeds = null, $changedAdGroupBidModifierCriteria = null, $removedAdGroupBidModifierCriteria = null)
+      {
+          $this->adGroupId = $adGroupId;
+          $this->adGroupChangeStatus = $adGroupChangeStatus;
+          $this->changedAds = $changedAds;
+          $this->changedCriteria = $changedCriteria;
+          $this->removedCriteria = $removedCriteria;
+          $this->changedFeeds = $changedFeeds;
+          $this->removedFeeds = $removedFeeds;
+          $this->changedAdGroupBidModifierCriteria = $changedAdGroupBidModifierCriteria;
+          $this->removedAdGroupBidModifierCriteria = $removedAdGroupBidModifierCriteria;
+      }
   }

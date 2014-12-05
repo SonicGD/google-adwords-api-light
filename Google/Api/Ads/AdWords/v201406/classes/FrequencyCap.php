@@ -9,8 +9,8 @@
    */
   class FrequencyCap
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "FrequencyCap";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "FrequencyCap";
 
     /**
      * @access public
@@ -36,7 +36,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -45,14 +45,13 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($impressions = null, $timeUnit = null, $level = null)
-    {
-      $this->impressions = $impressions;
-      $this->timeUnit = $timeUnit;
-      $this->level = $level;
-    }
-
+      public function __construct($impressions = null, $timeUnit = null, $level = null)
+      {
+          $this->impressions = $impressions;
+          $this->timeUnit = $timeUnit;
+          $this->level = $level;
+      }
   }

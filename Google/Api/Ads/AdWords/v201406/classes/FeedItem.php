@@ -8,8 +8,8 @@
    */
   class FeedItem
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "FeedItem";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "FeedItem";
 
     /**
      * @access public
@@ -95,7 +95,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -104,24 +104,23 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($feedId = null, $feedItemId = null, $status = null, $startTime = null, $endTime = null, $attributeValues = null, $validationDetails = null, $devicePreference = null, $scheduling = null, $campaignTargeting = null, $adGroupTargeting = null, $keywordTargeting = null, $urlCustomParameters = null)
-    {
-      $this->feedId = $feedId;
-      $this->feedItemId = $feedItemId;
-      $this->status = $status;
-      $this->startTime = $startTime;
-      $this->endTime = $endTime;
-      $this->attributeValues = $attributeValues;
-      $this->validationDetails = $validationDetails;
-      $this->devicePreference = $devicePreference;
-      $this->scheduling = $scheduling;
-      $this->campaignTargeting = $campaignTargeting;
-      $this->adGroupTargeting = $adGroupTargeting;
-      $this->keywordTargeting = $keywordTargeting;
-      $this->urlCustomParameters = $urlCustomParameters;
-    }
-
+      public function __construct($feedId = null, $feedItemId = null, $status = null, $startTime = null, $endTime = null, $attributeValues = null, $validationDetails = null, $devicePreference = null, $scheduling = null, $campaignTargeting = null, $adGroupTargeting = null, $keywordTargeting = null, $urlCustomParameters = null)
+      {
+          $this->feedId = $feedId;
+          $this->feedItemId = $feedItemId;
+          $this->status = $status;
+          $this->startTime = $startTime;
+          $this->endTime = $endTime;
+          $this->attributeValues = $attributeValues;
+          $this->validationDetails = $validationDetails;
+          $this->devicePreference = $devicePreference;
+          $this->scheduling = $scheduling;
+          $this->campaignTargeting = $campaignTargeting;
+          $this->adGroupTargeting = $adGroupTargeting;
+          $this->keywordTargeting = $keywordTargeting;
+          $this->urlCustomParameters = $urlCustomParameters;
+      }
   }

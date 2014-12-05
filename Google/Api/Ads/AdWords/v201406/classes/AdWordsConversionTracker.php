@@ -8,8 +8,8 @@
    */
   class AdWordsConversionTracker extends ConversionTracker
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "AdWordsConversionTracker";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "AdWordsConversionTracker";
 
     /**
      * @access public
@@ -53,7 +53,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -62,32 +62,31 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($snippet = null, $markupLanguage = null, $textFormat = null, $conversionPageLanguage = null, $backgroundColor = null, $trackingCodeType = null, $id = null, $originalConversionTypeId = null, $name = null, $status = null, $category = null, $stats = null, $viewthroughLookbackWindow = null, $isProductAdsChargeable = null, $productAdsChargeableConversionWindow = null, $ctcLookbackWindow = null, $countingType = null, $defaultRevenueValue = null, $alwaysUseDefaultRevenueValue = null, $ConversionTrackerType = null)
-    {
-      parent::__construct();
-      $this->snippet = $snippet;
-      $this->markupLanguage = $markupLanguage;
-      $this->textFormat = $textFormat;
-      $this->conversionPageLanguage = $conversionPageLanguage;
-      $this->backgroundColor = $backgroundColor;
-      $this->trackingCodeType = $trackingCodeType;
-      $this->id = $id;
-      $this->originalConversionTypeId = $originalConversionTypeId;
-      $this->name = $name;
-      $this->status = $status;
-      $this->category = $category;
-      $this->stats = $stats;
-      $this->viewthroughLookbackWindow = $viewthroughLookbackWindow;
-      $this->isProductAdsChargeable = $isProductAdsChargeable;
-      $this->productAdsChargeableConversionWindow = $productAdsChargeableConversionWindow;
-      $this->ctcLookbackWindow = $ctcLookbackWindow;
-      $this->countingType = $countingType;
-      $this->defaultRevenueValue = $defaultRevenueValue;
-      $this->alwaysUseDefaultRevenueValue = $alwaysUseDefaultRevenueValue;
-      $this->ConversionTrackerType = $ConversionTrackerType;
-    }
-
+      public function __construct($snippet = null, $markupLanguage = null, $textFormat = null, $conversionPageLanguage = null, $backgroundColor = null, $trackingCodeType = null, $id = null, $originalConversionTypeId = null, $name = null, $status = null, $category = null, $stats = null, $viewthroughLookbackWindow = null, $isProductAdsChargeable = null, $productAdsChargeableConversionWindow = null, $ctcLookbackWindow = null, $countingType = null, $defaultRevenueValue = null, $alwaysUseDefaultRevenueValue = null, $ConversionTrackerType = null)
+      {
+          parent::__construct();
+          $this->snippet = $snippet;
+          $this->markupLanguage = $markupLanguage;
+          $this->textFormat = $textFormat;
+          $this->conversionPageLanguage = $conversionPageLanguage;
+          $this->backgroundColor = $backgroundColor;
+          $this->trackingCodeType = $trackingCodeType;
+          $this->id = $id;
+          $this->originalConversionTypeId = $originalConversionTypeId;
+          $this->name = $name;
+          $this->status = $status;
+          $this->category = $category;
+          $this->stats = $stats;
+          $this->viewthroughLookbackWindow = $viewthroughLookbackWindow;
+          $this->isProductAdsChargeable = $isProductAdsChargeable;
+          $this->productAdsChargeableConversionWindow = $productAdsChargeableConversionWindow;
+          $this->ctcLookbackWindow = $ctcLookbackWindow;
+          $this->countingType = $countingType;
+          $this->defaultRevenueValue = $defaultRevenueValue;
+          $this->alwaysUseDefaultRevenueValue = $alwaysUseDefaultRevenueValue;
+          $this->ConversionTrackerType = $ConversionTrackerType;
+      }
   }

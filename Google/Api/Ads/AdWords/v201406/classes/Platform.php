@@ -8,14 +8,14 @@
    *
    *
    *
-   * Represents data about a bidlandscape for an adgroup.
+   * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
    * @package Google_Api_Ads_AdWords_v201406
    * @subpackage v201406
    */
   class Platform extends Criterion
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "Platform";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "Platform";
 
     /**
      * @access public
@@ -29,7 +29,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -38,16 +38,15 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($platformName = null, $id = null, $type = null, $CriterionType = null)
-    {
-      parent::__construct();
-      $this->platformName = $platformName;
-      $this->id = $id;
-      $this->type = $type;
-      $this->CriterionType = $CriterionType;
-    }
-
+      public function __construct($platformName = null, $id = null, $type = null, $CriterionType = null)
+      {
+          parent::__construct();
+          $this->platformName = $platformName;
+          $this->id = $id;
+          $this->type = $type;
+          $this->CriterionType = $CriterionType;
+      }
   }

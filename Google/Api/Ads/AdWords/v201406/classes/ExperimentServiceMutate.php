@@ -11,7 +11,7 @@
    *
    *
    * Mutates (add, update or remove) experiments.
-   * <b>Note:</b> To REMOVE use SET and mark status to DELETED.
+   * <b>Note:</b> To REMOVE use SET and mark status to REMOVED.
    * @param operations A list of unique operations.
    * The same experiment cannot be specified in more than one operation.
    * @return The updated experiments. The list of experiments is returned in
@@ -22,8 +22,8 @@
    */
   class ExperimentServiceMutate
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "";
 
     /**
      * @access public
@@ -37,7 +37,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -46,12 +46,11 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($operations = null)
-    {
-      $this->operations = $operations;
-    }
-
+      public function __construct($operations = null)
+      {
+          $this->operations = $operations;
+      }
   }

@@ -9,8 +9,8 @@
    */
   class CampaignSharedSet
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "CampaignSharedSet";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "CampaignSharedSet";
 
     /**
      * @access public
@@ -54,7 +54,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -63,17 +63,16 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($sharedSetId = null, $campaignId = null, $sharedSetName = null, $sharedSetType = null, $campaignName = null, $status = null)
-    {
-      $this->sharedSetId = $sharedSetId;
-      $this->campaignId = $campaignId;
-      $this->sharedSetName = $sharedSetName;
-      $this->sharedSetType = $sharedSetType;
-      $this->campaignName = $campaignName;
-      $this->status = $status;
-    }
-
+      public function __construct($sharedSetId = null, $campaignId = null, $sharedSetName = null, $sharedSetType = null, $campaignName = null, $status = null)
+      {
+          $this->sharedSetId = $sharedSetId;
+          $this->campaignId = $campaignId;
+          $this->sharedSetName = $sharedSetName;
+          $this->sharedSetType = $sharedSetType;
+          $this->campaignName = $campaignName;
+          $this->status = $status;
+      }
   }

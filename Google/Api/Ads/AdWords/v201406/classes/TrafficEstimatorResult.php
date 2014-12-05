@@ -8,8 +8,8 @@
    */
   class TrafficEstimatorResult
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
-    const XSI_TYPE = "TrafficEstimatorResult";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
+      const XSI_TYPE = "TrafficEstimatorResult";
 
     /**
      * @access public
@@ -23,7 +23,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -32,12 +32,11 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($campaignEstimates = null)
-    {
-      $this->campaignEstimates = $campaignEstimates;
-    }
-
+      public function __construct($campaignEstimates = null)
+      {
+          $this->campaignEstimates = $campaignEstimates;
+      }
   }

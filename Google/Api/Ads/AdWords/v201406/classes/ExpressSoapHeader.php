@@ -8,8 +8,8 @@
    */
   class ExpressSoapHeader extends SoapRequestHeader
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/express/v201406";
-    const XSI_TYPE = "ExpressSoapHeader";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/express/v201406";
+      const XSI_TYPE = "ExpressSoapHeader";
 
     /**
      * @access public
@@ -18,12 +18,18 @@
     public $expressBusinessId;
 
     /**
+     * @access public
+     * @var string
+     */
+    public $pageId;
+
+    /**
      * Gets the namesapce of this class
      * @return the namespace of this class
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -32,18 +38,18 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($expressBusinessId = null, $clientCustomerId = null, $developerToken = null, $userAgent = null, $validateOnly = null, $partialFailure = null)
-    {
-      parent::__construct();
-      $this->expressBusinessId = $expressBusinessId;
-      $this->clientCustomerId = $clientCustomerId;
-      $this->developerToken = $developerToken;
-      $this->userAgent = $userAgent;
-      $this->validateOnly = $validateOnly;
-      $this->partialFailure = $partialFailure;
-    }
-
+      public function __construct($expressBusinessId = null, $pageId = null, $clientCustomerId = null, $developerToken = null, $userAgent = null, $validateOnly = null, $partialFailure = null)
+      {
+          parent::__construct();
+          $this->expressBusinessId = $expressBusinessId;
+          $this->pageId = $pageId;
+          $this->clientCustomerId = $clientCustomerId;
+          $this->developerToken = $developerToken;
+          $this->userAgent = $userAgent;
+          $this->validateOnly = $validateOnly;
+          $this->partialFailure = $partialFailure;
+      }
   }

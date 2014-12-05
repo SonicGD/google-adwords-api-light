@@ -9,8 +9,8 @@
    */
   class ExperimentSummaryStats
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "ExperimentSummaryStats";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "ExperimentSummaryStats";
 
     /**
      * @access public
@@ -36,7 +36,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -45,14 +45,13 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($adGroupsCount = null, $adGroupCriteriaCount = null, $adGroupAdsCount = null)
-    {
-      $this->adGroupsCount = $adGroupsCount;
-      $this->adGroupCriteriaCount = $adGroupCriteriaCount;
-      $this->adGroupAdsCount = $adGroupAdsCount;
-    }
-
+      public function __construct($adGroupsCount = null, $adGroupCriteriaCount = null, $adGroupAdsCount = null)
+      {
+          $this->adGroupsCount = $adGroupsCount;
+          $this->adGroupCriteriaCount = $adGroupCriteriaCount;
+          $this->adGroupAdsCount = $adGroupAdsCount;
+      }
   }

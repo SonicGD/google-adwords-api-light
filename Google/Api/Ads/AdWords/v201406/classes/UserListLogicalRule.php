@@ -9,8 +9,8 @@
    */
   class UserListLogicalRule
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/rm/v201406";
-    const XSI_TYPE = "UserListLogicalRule";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/rm/v201406";
+      const XSI_TYPE = "UserListLogicalRule";
 
     /**
      * @access public
@@ -30,7 +30,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -39,13 +39,12 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($operator = null, $ruleOperands = null)
-    {
-      $this->operator = $operator;
-      $this->ruleOperands = $ruleOperands;
-    }
-
+      public function __construct($operator = null, $ruleOperands = null)
+      {
+          $this->operator = $operator;
+          $this->ruleOperands = $ruleOperands;
+      }
   }

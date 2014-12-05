@@ -71,6 +71,7 @@ require_once 'SizeLimitError.php';
 require_once 'SoapRequestHeader.php';
 require_once 'SoapResponseHeader.php';
 require_once 'StringLengthError.php';
+require_once 'String_StringMapEntry.php';
 require_once 'CriterionUserInterest.php';
 require_once 'CriterionUserList.php';
 require_once 'Vertical.php';

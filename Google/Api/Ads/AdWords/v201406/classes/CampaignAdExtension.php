@@ -9,8 +9,8 @@
    */
   class CampaignAdExtension
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "CampaignAdExtension";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "CampaignAdExtension";
 
     /**
      * @access public
@@ -42,7 +42,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -51,15 +51,14 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($campaignId = null, $adExtension = null, $status = null, $approvalStatus = null)
-    {
-      $this->campaignId = $campaignId;
-      $this->adExtension = $adExtension;
-      $this->status = $status;
-      $this->approvalStatus = $approvalStatus;
-    }
-
+      public function __construct($campaignId = null, $adExtension = null, $status = null, $approvalStatus = null)
+      {
+          $this->campaignId = $campaignId;
+          $this->adExtension = $adExtension;
+          $this->status = $status;
+          $this->approvalStatus = $approvalStatus;
+      }
   }

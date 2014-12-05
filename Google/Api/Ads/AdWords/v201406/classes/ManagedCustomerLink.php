@@ -8,8 +8,8 @@
    */
   class ManagedCustomerLink
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/mcm/v201406";
-    const XSI_TYPE = "ManagedCustomerLink";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/mcm/v201406";
+      const XSI_TYPE = "ManagedCustomerLink";
 
     /**
      * @access public
@@ -41,7 +41,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -50,15 +50,14 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($managerCustomerId = null, $clientCustomerId = null, $linkStatus = null, $pendingDescriptiveName = null)
-    {
-      $this->managerCustomerId = $managerCustomerId;
-      $this->clientCustomerId = $clientCustomerId;
-      $this->linkStatus = $linkStatus;
-      $this->pendingDescriptiveName = $pendingDescriptiveName;
-    }
-
+      public function __construct($managerCustomerId = null, $clientCustomerId = null, $linkStatus = null, $pendingDescriptiveName = null)
+      {
+          $this->managerCustomerId = $managerCustomerId;
+          $this->clientCustomerId = $clientCustomerId;
+          $this->linkStatus = $linkStatus;
+          $this->pendingDescriptiveName = $pendingDescriptiveName;
+      }
   }

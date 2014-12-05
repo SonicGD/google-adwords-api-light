@@ -8,8 +8,8 @@
    */
   class SharedBiddingStrategy
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "SharedBiddingStrategy";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "SharedBiddingStrategy";
 
     /**
      * @access public
@@ -47,7 +47,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -56,16 +56,15 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($biddingScheme = null, $id = null, $name = null, $status = null, $type = null)
-    {
-      $this->biddingScheme = $biddingScheme;
-      $this->id = $id;
-      $this->name = $name;
-      $this->status = $status;
-      $this->type = $type;
-    }
-
+      public function __construct($biddingScheme = null, $id = null, $name = null, $status = null, $type = null)
+      {
+          $this->biddingScheme = $biddingScheme;
+          $this->id = $id;
+          $this->name = $name;
+          $this->status = $status;
+          $this->type = $type;
+      }
   }

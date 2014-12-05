@@ -10,10 +10,10 @@
    *
    *
    *
-   * Adds, updates, or deletes campaigns.
+   * Adds, updates, or removes campaigns.
    * <p class="note"><b>Note:</b> {@link CampaignOperation} does not support the
-   * <code>REMOVE</code> operator. To delete a campaign, set its
-   * {@link Campaign#status status} to <code>DELETED</code>.</p>
+   * <code>REMOVE</code> operator. To remove a campaign, set its
+   * {@link Campaign#status status} to {@code REMOVED}.</p>
    * @param operations A list of unique operations.
    * The same campaign cannot be specified in more than one operation.
    * @return The list of updated campaigns, returned in the same order as the
@@ -24,8 +24,8 @@
    */
   class CampaignServiceMutate
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "";
 
     /**
      * @access public
@@ -39,7 +39,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -48,12 +48,11 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($operations = null)
-    {
-      $this->operations = $operations;
-    }
-
+      public function __construct($operations = null)
+      {
+          $this->operations = $operations;
+      }
   }

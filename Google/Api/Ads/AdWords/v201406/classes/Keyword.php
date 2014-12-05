@@ -13,8 +13,8 @@
    */
   class Keyword extends Criterion
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "Keyword";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "Keyword";
 
     /**
      * @access public
@@ -34,7 +34,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -43,17 +43,16 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($text = null, $matchType = null, $id = null, $type = null, $CriterionType = null)
-    {
-      parent::__construct();
-      $this->text = $text;
-      $this->matchType = $matchType;
-      $this->id = $id;
-      $this->type = $type;
-      $this->CriterionType = $CriterionType;
-    }
-
+      public function __construct($text = null, $matchType = null, $id = null, $type = null, $CriterionType = null)
+      {
+          parent::__construct();
+          $this->text = $text;
+          $this->matchType = $matchType;
+          $this->id = $id;
+          $this->type = $type;
+          $this->CriterionType = $CriterionType;
+      }
   }

@@ -18,8 +18,8 @@
    */
   class AdGroupEstimateRequest extends EstimateRequest
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
-    const XSI_TYPE = "AdGroupEstimateRequest";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
+      const XSI_TYPE = "AdGroupEstimateRequest";
 
     /**
      * @access public
@@ -45,7 +45,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -54,16 +54,15 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($adGroupId = null, $keywordEstimateRequests = null, $maxCpc = null, $EstimateRequestType = null)
-    {
-      parent::__construct();
-      $this->adGroupId = $adGroupId;
-      $this->keywordEstimateRequests = $keywordEstimateRequests;
-      $this->maxCpc = $maxCpc;
-      $this->EstimateRequestType = $EstimateRequestType;
-    }
-
+      public function __construct($adGroupId = null, $keywordEstimateRequests = null, $maxCpc = null, $EstimateRequestType = null)
+      {
+          parent::__construct();
+          $this->adGroupId = $adGroupId;
+          $this->keywordEstimateRequests = $keywordEstimateRequests;
+          $this->maxCpc = $maxCpc;
+          $this->EstimateRequestType = $EstimateRequestType;
+      }
   }

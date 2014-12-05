@@ -11,8 +11,8 @@
    */
   class ProductType extends ProductDimension
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "ProductType";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "ProductType";
 
     /**
      * @access public
@@ -32,7 +32,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -41,15 +41,14 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($type = null, $value = null, $ProductDimensionType = null)
-    {
-      parent::__construct();
-      $this->type = $type;
-      $this->value = $value;
-      $this->ProductDimensionType = $ProductDimensionType;
-    }
-
+      public function __construct($type = null, $value = null, $ProductDimensionType = null)
+      {
+          parent::__construct();
+          $this->type = $type;
+          $this->value = $value;
+          $this->ProductDimensionType = $ProductDimensionType;
+      }
   }

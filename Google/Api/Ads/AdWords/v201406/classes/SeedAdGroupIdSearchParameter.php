@@ -13,8 +13,8 @@
    */
   class SeedAdGroupIdSearchParameter extends SearchParameter
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
-    const XSI_TYPE = "SeedAdGroupIdSearchParameter";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
+      const XSI_TYPE = "SeedAdGroupIdSearchParameter";
 
     /**
      * @access public
@@ -28,7 +28,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -37,14 +37,13 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($adGroupId = null, $SearchParameterType = null)
-    {
-      parent::__construct();
-      $this->adGroupId = $adGroupId;
-      $this->SearchParameterType = $SearchParameterType;
-    }
-
+      public function __construct($adGroupId = null, $SearchParameterType = null)
+      {
+          parent::__construct();
+          $this->adGroupId = $adGroupId;
+          $this->SearchParameterType = $SearchParameterType;
+      }
   }

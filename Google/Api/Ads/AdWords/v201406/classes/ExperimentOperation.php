@@ -3,14 +3,14 @@
 
   /**
    * Operation for adding, updating or removing operations. For removing,
-   * use SET and mark status as DELETED.
+   * use SET and mark status as REMOVED.
    * @package Google_Api_Ads_AdWords_v201406
    * @subpackage v201406
    */
   class ExperimentOperation extends Operation
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "ExperimentOperation";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "ExperimentOperation";
 
     /**
      * @access public
@@ -24,7 +24,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -33,15 +33,14 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($operand = null, $operator = null, $OperationType = null)
-    {
-      parent::__construct();
-      $this->operand = $operand;
-      $this->operator = $operator;
-      $this->OperationType = $OperationType;
-    }
-
+      public function __construct($operand = null, $operator = null, $OperationType = null)
+      {
+          parent::__construct();
+          $this->operand = $operand;
+          $this->operator = $operator;
+          $this->OperationType = $OperationType;
+      }
   }

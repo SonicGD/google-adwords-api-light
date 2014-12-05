@@ -7,10 +7,7 @@
    * listing ad</a> in the AdWords user interface). A product ad displays
    * product data (managed using the Google Merchant Center) that is
    * pulled from the Google base product feed specified in the parent campaign's
-   * {@linkplain ProductExtension product extension}.
-   *
-   * <p>Product ads are only available to a limited set of advertisers. If you
-   * are not eligible to use product ads, they will not serve.</p>
+   * {@linkplain ShoppingSetting shopping setting}.
    *
    * <p class="caution"><b>Caution:</b> Product ads do not use {@link #url url} or
    * {@link #displayUrl displayUrl}; setting these fields on a product ad will
@@ -21,8 +18,8 @@
    */
   class ProductAd extends Ad
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "ProductAd";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "ProductAd";
 
     /**
      * @access public
@@ -36,7 +33,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -45,22 +42,21 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($promotionLine = null, $id = null, $url = null, $displayUrl = null, $finalUrls = null, $finalMobileUrls = null, $trackingUrlTemplate = null, $urlCustomParameters = null, $devicePreference = null, $AdType = null)
-    {
-      parent::__construct();
-      $this->promotionLine = $promotionLine;
-      $this->id = $id;
-      $this->url = $url;
-      $this->displayUrl = $displayUrl;
-      $this->finalUrls = $finalUrls;
-      $this->finalMobileUrls = $finalMobileUrls;
-      $this->trackingUrlTemplate = $trackingUrlTemplate;
-      $this->urlCustomParameters = $urlCustomParameters;
-      $this->devicePreference = $devicePreference;
-      $this->AdType = $AdType;
-    }
-
+      public function __construct($promotionLine = null, $id = null, $url = null, $displayUrl = null, $finalUrls = null, $finalMobileUrls = null, $trackingUrlTemplate = null, $urlCustomParameters = null, $devicePreference = null, $AdType = null)
+      {
+          parent::__construct();
+          $this->promotionLine = $promotionLine;
+          $this->id = $id;
+          $this->url = $url;
+          $this->displayUrl = $displayUrl;
+          $this->finalUrls = $finalUrls;
+          $this->finalMobileUrls = $finalMobileUrls;
+          $this->trackingUrlTemplate = $trackingUrlTemplate;
+          $this->urlCustomParameters = $urlCustomParameters;
+          $this->devicePreference = $devicePreference;
+          $this->AdType = $AdType;
+      }
   }

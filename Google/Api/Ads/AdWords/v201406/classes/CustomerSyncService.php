@@ -9,9 +9,9 @@ require_once 'CustomerSyncService.require.php';
    */
   class CustomerSyncService extends AdWordsSoapClient
   {
-    const SERVICE_NAME = "CustomerSyncService";
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/ch/v201406";
-    const ENDPOINT = "https://adwords.google.com/api/adwords/ch/v201406/CustomerSyncService";
+      const SERVICE_NAME = "CustomerSyncService";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/ch/v201406";
+      const ENDPOINT = "https://adwords.google.com/api/adwords/ch/v201406/CustomerSyncService";
 
     /**
      * The endpoint of the service
@@ -85,8 +85,8 @@ require_once 'CustomerSyncService.require.php';
      */
     public function __construct($wsdl, $options, $user)
     {
-      $options["classmap"] = self::$classmap;
-      parent::__construct($wsdl, $options, $user, self::SERVICE_NAME,
+        $options["classmap"] = self::$classmap;
+        parent::__construct($wsdl, $options, $user, self::SERVICE_NAME,
           self::WSDL_NAMESPACE);
     }
     /**
@@ -103,9 +103,9 @@ require_once 'CustomerSyncService.require.php';
      */
     public function get($selector)
     {
-      $args = new CustomerSyncServiceGet($selector);
-      $result = $this->__soapCall("get", array($args));
+        $args = new CustomerSyncServiceGet($selector);
+        $result = $this->__soapCall("get", array($args));
 
-      return $result->rval;
+        return $result->rval;
     }
   }

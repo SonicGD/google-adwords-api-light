@@ -8,8 +8,8 @@
    */
   class ManagedCustomerPage extends Page
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/mcm/v201406";
-    const XSI_TYPE = "ManagedCustomerPage";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/mcm/v201406";
+      const XSI_TYPE = "ManagedCustomerPage";
 
     /**
      * @access public
@@ -29,7 +29,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -38,16 +38,15 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($entries = null, $links = null, $totalNumEntries = null, $PageType = null)
-    {
-      parent::__construct();
-      $this->entries = $entries;
-      $this->links = $links;
-      $this->totalNumEntries = $totalNumEntries;
-      $this->PageType = $PageType;
-    }
-
+      public function __construct($entries = null, $links = null, $totalNumEntries = null, $PageType = null)
+      {
+          parent::__construct();
+          $this->entries = $entries;
+          $this->links = $links;
+          $this->totalNumEntries = $totalNumEntries;
+          $this->PageType = $PageType;
+      }
   }

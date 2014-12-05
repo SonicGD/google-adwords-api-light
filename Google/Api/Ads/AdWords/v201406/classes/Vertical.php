@@ -17,8 +17,8 @@
    */
   class Vertical extends Criterion
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "Vertical";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "Vertical";
 
     /**
      * @access public
@@ -44,7 +44,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -53,18 +53,17 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($verticalId = null, $verticalParentId = null, $path = null, $id = null, $type = null, $CriterionType = null)
-    {
-      parent::__construct();
-      $this->verticalId = $verticalId;
-      $this->verticalParentId = $verticalParentId;
-      $this->path = $path;
-      $this->id = $id;
-      $this->type = $type;
-      $this->CriterionType = $CriterionType;
-    }
-
+      public function __construct($verticalId = null, $verticalParentId = null, $path = null, $id = null, $type = null, $CriterionType = null)
+      {
+          parent::__construct();
+          $this->verticalId = $verticalId;
+          $this->verticalParentId = $verticalParentId;
+          $this->path = $path;
+          $this->id = $id;
+          $this->type = $type;
+          $this->CriterionType = $CriterionType;
+      }
   }

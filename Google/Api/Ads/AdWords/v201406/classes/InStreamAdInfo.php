@@ -10,8 +10,8 @@
    */
   class InStreamAdInfo
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
-    const XSI_TYPE = "InStreamAdInfo";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
+      const XSI_TYPE = "InStreamAdInfo";
 
     /**
      * @access public
@@ -55,7 +55,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -64,17 +64,16 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($maxAdDuration = null, $minAdDuration = null, $medianAdDuration = null, $preRollPercent = null, $midRollPercent = null, $postRollPercent = null)
-    {
-      $this->maxAdDuration = $maxAdDuration;
-      $this->minAdDuration = $minAdDuration;
-      $this->medianAdDuration = $medianAdDuration;
-      $this->preRollPercent = $preRollPercent;
-      $this->midRollPercent = $midRollPercent;
-      $this->postRollPercent = $postRollPercent;
-    }
-
+      public function __construct($maxAdDuration = null, $minAdDuration = null, $medianAdDuration = null, $preRollPercent = null, $midRollPercent = null, $postRollPercent = null)
+      {
+          $this->maxAdDuration = $maxAdDuration;
+          $this->minAdDuration = $minAdDuration;
+          $this->medianAdDuration = $medianAdDuration;
+          $this->preRollPercent = $preRollPercent;
+          $this->midRollPercent = $midRollPercent;
+          $this->postRollPercent = $postRollPercent;
+      }
   }

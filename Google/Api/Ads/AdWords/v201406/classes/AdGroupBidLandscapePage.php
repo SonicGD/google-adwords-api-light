@@ -11,8 +11,8 @@
    */
   class AdGroupBidLandscapePage extends NoStatsPage
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "AdGroupBidLandscapePage";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "AdGroupBidLandscapePage";
 
     /**
      * @access public
@@ -26,7 +26,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -35,13 +35,12 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($entries = null)
-    {
-      parent::__construct();
-      $this->entries = $entries;
-    }
-
+      public function __construct($entries = null)
+      {
+          parent::__construct();
+          $this->entries = $entries;
+      }
   }

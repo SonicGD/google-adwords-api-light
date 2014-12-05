@@ -10,8 +10,8 @@
    */
   class FeedItemScheduling
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "FeedItemScheduling";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "FeedItemScheduling";
 
     /**
      * @access public
@@ -25,7 +25,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -34,12 +34,11 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($feedItemSchedules = null)
-    {
-      $this->feedItemSchedules = $feedItemSchedules;
-    }
-
+      public function __construct($feedItemSchedules = null)
+      {
+          $this->feedItemSchedules = $feedItemSchedules;
+      }
   }

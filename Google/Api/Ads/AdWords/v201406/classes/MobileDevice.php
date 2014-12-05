@@ -10,8 +10,8 @@
    */
   class MobileDevice extends Criterion
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "MobileDevice";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "MobileDevice";
 
     /**
      * @access public
@@ -43,7 +43,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -52,19 +52,18 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($deviceName = null, $manufacturerName = null, $deviceType = null, $operatingSystemName = null, $id = null, $type = null, $CriterionType = null)
-    {
-      parent::__construct();
-      $this->deviceName = $deviceName;
-      $this->manufacturerName = $manufacturerName;
-      $this->deviceType = $deviceType;
-      $this->operatingSystemName = $operatingSystemName;
-      $this->id = $id;
-      $this->type = $type;
-      $this->CriterionType = $CriterionType;
-    }
-
+      public function __construct($deviceName = null, $manufacturerName = null, $deviceType = null, $operatingSystemName = null, $id = null, $type = null, $CriterionType = null)
+      {
+          parent::__construct();
+          $this->deviceName = $deviceName;
+          $this->manufacturerName = $manufacturerName;
+          $this->deviceType = $deviceType;
+          $this->operatingSystemName = $operatingSystemName;
+          $this->id = $id;
+          $this->type = $type;
+          $this->CriterionType = $CriterionType;
+      }
   }

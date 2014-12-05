@@ -9,8 +9,8 @@
    */
   class ThirdPartyRedirectAd extends RichMediaAd
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "ThirdPartyRedirectAd";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "ThirdPartyRedirectAd";
 
     /**
      * @access public
@@ -48,7 +48,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -57,26 +57,25 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($isCookieTargeted = null, $isUserInterestTargeted = null, $isTagged = null, $videoTypes = null, $expandingDirections = null, $name = null, $dimensions = null, $snippet = null, $impressionBeaconUrl = null, $adDuration = null, $certifiedVendorFormatId = null, $sourceUrl = null, $richMediaAdType = null, $adAttributes = null)
-    {
-      parent::__construct();
-      $this->isCookieTargeted = $isCookieTargeted;
-      $this->isUserInterestTargeted = $isUserInterestTargeted;
-      $this->isTagged = $isTagged;
-      $this->videoTypes = $videoTypes;
-      $this->expandingDirections = $expandingDirections;
-      $this->name = $name;
-      $this->dimensions = $dimensions;
-      $this->snippet = $snippet;
-      $this->impressionBeaconUrl = $impressionBeaconUrl;
-      $this->adDuration = $adDuration;
-      $this->certifiedVendorFormatId = $certifiedVendorFormatId;
-      $this->sourceUrl = $sourceUrl;
-      $this->richMediaAdType = $richMediaAdType;
-      $this->adAttributes = $adAttributes;
-    }
-
+      public function __construct($isCookieTargeted = null, $isUserInterestTargeted = null, $isTagged = null, $videoTypes = null, $expandingDirections = null, $name = null, $dimensions = null, $snippet = null, $impressionBeaconUrl = null, $adDuration = null, $certifiedVendorFormatId = null, $sourceUrl = null, $richMediaAdType = null, $adAttributes = null)
+      {
+          parent::__construct();
+          $this->isCookieTargeted = $isCookieTargeted;
+          $this->isUserInterestTargeted = $isUserInterestTargeted;
+          $this->isTagged = $isTagged;
+          $this->videoTypes = $videoTypes;
+          $this->expandingDirections = $expandingDirections;
+          $this->name = $name;
+          $this->dimensions = $dimensions;
+          $this->snippet = $snippet;
+          $this->impressionBeaconUrl = $impressionBeaconUrl;
+          $this->adDuration = $adDuration;
+          $this->certifiedVendorFormatId = $certifiedVendorFormatId;
+          $this->sourceUrl = $sourceUrl;
+          $this->richMediaAdType = $richMediaAdType;
+          $this->adAttributes = $adAttributes;
+      }
   }

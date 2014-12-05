@@ -2,7 +2,14 @@
 
 
   /**
-   * Represents domain category information.
+   * Represents categories that AdWords finds automatically for your website.
+   *
+   * <p>
+   * No categories available means that AdWords couldn't automatically find categories for your
+   * website. To control how categories are assigned, manually add breadcrumbs to your webpages.
+   *
+   * <p>
+   * Categories can be filtered by domain name or by a set of campaign IDs.
    *
    *
    *
@@ -12,8 +19,8 @@
    */
   class DomainCategory extends DimensionProperties
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "DomainCategory";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "DomainCategory";
 
     /**
      * @access public
@@ -45,7 +52,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -54,17 +61,16 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($category = null, $coverage = null, $domainName = null, $isoLanguage = null, $levelOfDetail = null)
-    {
-      parent::__construct();
-      $this->category = $category;
-      $this->coverage = $coverage;
-      $this->domainName = $domainName;
-      $this->isoLanguage = $isoLanguage;
-      $this->levelOfDetail = $levelOfDetail;
-    }
-
+      public function __construct($category = null, $coverage = null, $domainName = null, $isoLanguage = null, $levelOfDetail = null)
+      {
+          parent::__construct();
+          $this->category = $category;
+          $this->coverage = $coverage;
+          $this->domainName = $domainName;
+          $this->isoLanguage = $isoLanguage;
+          $this->levelOfDetail = $levelOfDetail;
+      }
   }

@@ -10,8 +10,8 @@
    */
   class ProductService extends Criterion
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/express/v201406";
-    const XSI_TYPE = "ProductService";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/express/v201406";
+      const XSI_TYPE = "ProductService";
 
     /**
      * @access public
@@ -31,7 +31,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -40,17 +40,16 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($text = null, $locale = null, $id = null, $type = null, $CriterionType = null)
-    {
-      parent::__construct();
-      $this->text = $text;
-      $this->locale = $locale;
-      $this->id = $id;
-      $this->type = $type;
-      $this->CriterionType = $CriterionType;
-    }
-
+      public function __construct($text = null, $locale = null, $id = null, $type = null, $CriterionType = null)
+      {
+          parent::__construct();
+          $this->text = $text;
+          $this->locale = $locale;
+          $this->id = $id;
+          $this->type = $type;
+          $this->CriterionType = $CriterionType;
+      }
   }

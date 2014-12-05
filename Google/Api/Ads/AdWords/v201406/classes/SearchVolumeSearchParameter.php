@@ -15,8 +15,8 @@
    */
   class SearchVolumeSearchParameter extends SearchParameter
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
-    const XSI_TYPE = "SearchVolumeSearchParameter";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
+      const XSI_TYPE = "SearchVolumeSearchParameter";
 
     /**
      * @access public
@@ -30,7 +30,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -39,14 +39,13 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($operation = null, $SearchParameterType = null)
-    {
-      parent::__construct();
-      $this->operation = $operation;
-      $this->SearchParameterType = $SearchParameterType;
-    }
-
+      public function __construct($operation = null, $SearchParameterType = null)
+      {
+          parent::__construct();
+          $this->operation = $operation;
+          $this->SearchParameterType = $SearchParameterType;
+      }
   }

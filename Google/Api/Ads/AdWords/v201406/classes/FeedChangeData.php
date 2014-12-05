@@ -8,8 +8,8 @@
    */
   class FeedChangeData
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/ch/v201406";
-    const XSI_TYPE = "FeedChangeData";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/ch/v201406";
+      const XSI_TYPE = "FeedChangeData";
 
     /**
      * @access public
@@ -41,7 +41,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -50,15 +50,14 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($feedId = null, $feedChangeStatus = null, $changedFeedItems = null, $removedFeedItems = null)
-    {
-      $this->feedId = $feedId;
-      $this->feedChangeStatus = $feedChangeStatus;
-      $this->changedFeedItems = $changedFeedItems;
-      $this->removedFeedItems = $removedFeedItems;
-    }
-
+      public function __construct($feedId = null, $feedChangeStatus = null, $changedFeedItems = null, $removedFeedItems = null)
+      {
+          $this->feedId = $feedId;
+          $this->feedChangeStatus = $feedChangeStatus;
+          $this->changedFeedItems = $changedFeedItems;
+          $this->removedFeedItems = $removedFeedItems;
+      }
   }

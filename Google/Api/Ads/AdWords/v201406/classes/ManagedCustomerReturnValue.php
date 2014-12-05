@@ -8,8 +8,8 @@
    */
   class ManagedCustomerReturnValue
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/mcm/v201406";
-    const XSI_TYPE = "ManagedCustomerReturnValue";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/mcm/v201406";
+      const XSI_TYPE = "ManagedCustomerReturnValue";
 
     /**
      * @access public
@@ -23,7 +23,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -32,12 +32,11 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($value = null)
-    {
-      $this->value = $value;
-    }
-
+      public function __construct($value = null)
+      {
+          $this->value = $value;
+      }
   }

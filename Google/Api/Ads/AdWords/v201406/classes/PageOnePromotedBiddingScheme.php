@@ -10,8 +10,8 @@
    */
   class PageOnePromotedBiddingScheme extends BiddingScheme
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "PageOnePromotedBiddingScheme";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "PageOnePromotedBiddingScheme";
 
     /**
      * @access public
@@ -55,7 +55,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -64,19 +64,18 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($strategyGoal = null, $bidCeiling = null, $bidModifier = null, $bidChangesForRaisesOnly = null, $raiseBidWhenBudgetConstained = null, $raiseBidWhenLowQualityScore = null, $BiddingSchemeType = null)
-    {
-      parent::__construct();
-      $this->strategyGoal = $strategyGoal;
-      $this->bidCeiling = $bidCeiling;
-      $this->bidModifier = $bidModifier;
-      $this->bidChangesForRaisesOnly = $bidChangesForRaisesOnly;
-      $this->raiseBidWhenBudgetConstained = $raiseBidWhenBudgetConstained;
-      $this->raiseBidWhenLowQualityScore = $raiseBidWhenLowQualityScore;
-      $this->BiddingSchemeType = $BiddingSchemeType;
-    }
-
+      public function __construct($strategyGoal = null, $bidCeiling = null, $bidModifier = null, $bidChangesForRaisesOnly = null, $raiseBidWhenBudgetConstained = null, $raiseBidWhenLowQualityScore = null, $BiddingSchemeType = null)
+      {
+          parent::__construct();
+          $this->strategyGoal = $strategyGoal;
+          $this->bidCeiling = $bidCeiling;
+          $this->bidModifier = $bidModifier;
+          $this->bidChangesForRaisesOnly = $bidChangesForRaisesOnly;
+          $this->raiseBidWhenBudgetConstained = $raiseBidWhenBudgetConstained;
+          $this->raiseBidWhenLowQualityScore = $raiseBidWhenLowQualityScore;
+          $this->BiddingSchemeType = $BiddingSchemeType;
+      }
   }

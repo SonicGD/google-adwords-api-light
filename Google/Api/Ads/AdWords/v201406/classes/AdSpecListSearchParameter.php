@@ -12,8 +12,8 @@
    */
   class AdSpecListSearchParameter extends SearchParameter
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
-    const XSI_TYPE = "AdSpecListSearchParameter";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
+      const XSI_TYPE = "AdSpecListSearchParameter";
 
     /**
      * @access public
@@ -27,7 +27,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -36,14 +36,13 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($adSpecs = null, $SearchParameterType = null)
-    {
-      parent::__construct();
-      $this->adSpecs = $adSpecs;
-      $this->SearchParameterType = $SearchParameterType;
-    }
-
+      public function __construct($adSpecs = null, $SearchParameterType = null)
+      {
+          parent::__construct();
+          $this->adSpecs = $adSpecs;
+          $this->SearchParameterType = $SearchParameterType;
+      }
   }

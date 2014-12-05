@@ -136,6 +136,7 @@ require_once 'TargetingIdeaPage.php';
 require_once 'TargetingIdeaSelector.php';
 require_once 'TextAdSpec.php';
 require_once 'TrafficEstimatorError.php';
+require_once 'Type_AttributeMapEntry.php';
 require_once 'WebpageDescriptor.php';
 require_once 'WebpageDescriptorAttribute.php';
 require_once 'AttributeType.php';

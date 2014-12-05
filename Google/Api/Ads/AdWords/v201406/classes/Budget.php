@@ -8,8 +8,8 @@
    */
   class Budget
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "Budget";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "Budget";
 
     /**
      * @access public
@@ -65,7 +65,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -74,19 +74,18 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($budgetId = null, $name = null, $period = null, $amount = null, $deliveryMethod = null, $referenceCount = null, $isExplicitlyShared = null, $status = null)
-    {
-      $this->budgetId = $budgetId;
-      $this->name = $name;
-      $this->period = $period;
-      $this->amount = $amount;
-      $this->deliveryMethod = $deliveryMethod;
-      $this->referenceCount = $referenceCount;
-      $this->isExplicitlyShared = $isExplicitlyShared;
-      $this->status = $status;
-    }
-
+      public function __construct($budgetId = null, $name = null, $period = null, $amount = null, $deliveryMethod = null, $referenceCount = null, $isExplicitlyShared = null, $status = null)
+      {
+          $this->budgetId = $budgetId;
+          $this->name = $name;
+          $this->period = $period;
+          $this->amount = $amount;
+          $this->deliveryMethod = $deliveryMethod;
+          $this->referenceCount = $referenceCount;
+          $this->isExplicitlyShared = $isExplicitlyShared;
+          $this->status = $status;
+      }
   }

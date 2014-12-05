@@ -8,8 +8,8 @@
    */
   class CampaignEstimate extends Estimate
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
-    const XSI_TYPE = "CampaignEstimate";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
+      const XSI_TYPE = "CampaignEstimate";
 
     /**
      * @access public
@@ -29,7 +29,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -38,15 +38,14 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($campaignId = null, $adGroupEstimates = null, $EstimateType = null)
-    {
-      parent::__construct();
-      $this->campaignId = $campaignId;
-      $this->adGroupEstimates = $adGroupEstimates;
-      $this->EstimateType = $EstimateType;
-    }
-
+      public function __construct($campaignId = null, $adGroupEstimates = null, $EstimateType = null)
+      {
+          parent::__construct();
+          $this->campaignId = $campaignId;
+          $this->adGroupEstimates = $adGroupEstimates;
+          $this->EstimateType = $EstimateType;
+      }
   }

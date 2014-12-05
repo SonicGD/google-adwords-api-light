@@ -9,8 +9,8 @@
    */
   class CampaignChangeData
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/ch/v201406";
-    const XSI_TYPE = "CampaignChangeData";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/ch/v201406";
+      const XSI_TYPE = "CampaignChangeData";
 
     /**
      * @access public
@@ -78,7 +78,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -87,21 +87,20 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($campaignId = null, $campaignChangeStatus = null, $changedAdGroups = null, $addedCampaignCriteria = null, $removedCampaignCriteria = null, $addedAdExtensions = null, $removedAdExtensions = null, $changedFeeds = null, $removedFeeds = null, $campaignTargetingChanged = null)
-    {
-      $this->campaignId = $campaignId;
-      $this->campaignChangeStatus = $campaignChangeStatus;
-      $this->changedAdGroups = $changedAdGroups;
-      $this->addedCampaignCriteria = $addedCampaignCriteria;
-      $this->removedCampaignCriteria = $removedCampaignCriteria;
-      $this->addedAdExtensions = $addedAdExtensions;
-      $this->removedAdExtensions = $removedAdExtensions;
-      $this->changedFeeds = $changedFeeds;
-      $this->removedFeeds = $removedFeeds;
-      $this->campaignTargetingChanged = $campaignTargetingChanged;
-    }
-
+      public function __construct($campaignId = null, $campaignChangeStatus = null, $changedAdGroups = null, $addedCampaignCriteria = null, $removedCampaignCriteria = null, $addedAdExtensions = null, $removedAdExtensions = null, $changedFeeds = null, $removedFeeds = null, $campaignTargetingChanged = null)
+      {
+          $this->campaignId = $campaignId;
+          $this->campaignChangeStatus = $campaignChangeStatus;
+          $this->changedAdGroups = $changedAdGroups;
+          $this->addedCampaignCriteria = $addedCampaignCriteria;
+          $this->removedCampaignCriteria = $removedCampaignCriteria;
+          $this->addedAdExtensions = $addedAdExtensions;
+          $this->removedAdExtensions = $removedAdExtensions;
+          $this->changedFeeds = $changedFeeds;
+          $this->removedFeeds = $removedFeeds;
+          $this->campaignTargetingChanged = $campaignTargetingChanged;
+      }
   }

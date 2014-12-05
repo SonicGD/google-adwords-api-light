@@ -14,8 +14,8 @@
    */
   class IncludeAdultContentSearchParameter extends SearchParameter
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
-    const XSI_TYPE = "IncludeAdultContentSearchParameter";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
+      const XSI_TYPE = "IncludeAdultContentSearchParameter";
 
     /**
      * Gets the namesapce of this class
@@ -23,7 +23,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -32,13 +32,12 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($SearchParameterType = null)
-    {
-      parent::__construct();
-      $this->SearchParameterType = $SearchParameterType;
-    }
-
+      public function __construct($SearchParameterType = null)
+      {
+          parent::__construct();
+          $this->SearchParameterType = $SearchParameterType;
+      }
   }

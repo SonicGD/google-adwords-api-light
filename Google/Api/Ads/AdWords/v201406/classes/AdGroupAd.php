@@ -8,8 +8,8 @@
    */
   class AdGroupAd
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "AdGroupAd";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "AdGroupAd";
 
     /**
      * @access public
@@ -71,7 +71,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -80,20 +80,19 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($adGroupId = null, $ad = null, $experimentData = null, $status = null, $approvalStatus = null, $disapprovalReasons = null, $trademarkDisapproved = null, $labels = null, $forwardCompatibilityMap = null)
-    {
-      $this->adGroupId = $adGroupId;
-      $this->ad = $ad;
-      $this->experimentData = $experimentData;
-      $this->status = $status;
-      $this->approvalStatus = $approvalStatus;
-      $this->disapprovalReasons = $disapprovalReasons;
-      $this->trademarkDisapproved = $trademarkDisapproved;
-      $this->labels = $labels;
-      $this->forwardCompatibilityMap = $forwardCompatibilityMap;
-    }
-
+      public function __construct($adGroupId = null, $ad = null, $experimentData = null, $status = null, $approvalStatus = null, $disapprovalReasons = null, $trademarkDisapproved = null, $labels = null, $forwardCompatibilityMap = null)
+      {
+          $this->adGroupId = $adGroupId;
+          $this->ad = $ad;
+          $this->experimentData = $experimentData;
+          $this->status = $status;
+          $this->approvalStatus = $approvalStatus;
+          $this->disapprovalReasons = $disapprovalReasons;
+          $this->trademarkDisapproved = $trademarkDisapproved;
+          $this->labels = $labels;
+          $this->forwardCompatibilityMap = $forwardCompatibilityMap;
+      }
   }

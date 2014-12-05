@@ -8,8 +8,8 @@
    */
   class BudgetSuggestion
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/express/v201406";
-    const XSI_TYPE = "BudgetSuggestion";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/express/v201406";
+      const XSI_TYPE = "BudgetSuggestion";
 
     /**
      * @access public
@@ -71,7 +71,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -80,20 +80,19 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($cpc = null, $minCpc = null, $maxCpc = null, $cpm = null, $suggestedBudget = null, $minBudget = null, $maxBudget = null, $budgetQuantiles = null, $impressions = null)
-    {
-      $this->cpc = $cpc;
-      $this->minCpc = $minCpc;
-      $this->maxCpc = $maxCpc;
-      $this->cpm = $cpm;
-      $this->suggestedBudget = $suggestedBudget;
-      $this->minBudget = $minBudget;
-      $this->maxBudget = $maxBudget;
-      $this->budgetQuantiles = $budgetQuantiles;
-      $this->impressions = $impressions;
-    }
-
+      public function __construct($cpc = null, $minCpc = null, $maxCpc = null, $cpm = null, $suggestedBudget = null, $minBudget = null, $maxBudget = null, $budgetQuantiles = null, $impressions = null)
+      {
+          $this->cpc = $cpc;
+          $this->minCpc = $minCpc;
+          $this->maxCpc = $maxCpc;
+          $this->cpm = $cpm;
+          $this->suggestedBudget = $suggestedBudget;
+          $this->minBudget = $minBudget;
+          $this->maxBudget = $maxBudget;
+          $this->budgetQuantiles = $budgetQuantiles;
+          $this->impressions = $impressions;
+      }
   }

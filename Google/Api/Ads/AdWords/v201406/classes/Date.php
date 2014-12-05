@@ -12,8 +12,8 @@
    */
   class Date
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "Date";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "Date";
 
     /**
      * @access public
@@ -39,7 +39,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -48,14 +48,13 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($year = null, $month = null, $day = null)
-    {
-      $this->year = $year;
-      $this->month = $month;
-      $this->day = $day;
-    }
-
+      public function __construct($year = null, $month = null, $day = null)
+      {
+          $this->year = $year;
+          $this->month = $month;
+          $this->day = $day;
+      }
   }

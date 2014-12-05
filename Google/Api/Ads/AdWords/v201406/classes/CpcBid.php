@@ -8,8 +8,8 @@
    */
   class CpcBid extends Bids
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "CpcBid";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "CpcBid";
 
     /**
      * @access public
@@ -29,7 +29,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -38,15 +38,14 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($bid = null, $cpcBidSource = null, $BidsType = null)
-    {
-      parent::__construct();
-      $this->bid = $bid;
-      $this->cpcBidSource = $cpcBidSource;
-      $this->BidsType = $BidsType;
-    }
-
+      public function __construct($bid = null, $cpcBidSource = null, $BidsType = null)
+      {
+          parent::__construct();
+          $this->bid = $bid;
+          $this->cpcBidSource = $cpcBidSource;
+          $this->BidsType = $BidsType;
+      }
   }

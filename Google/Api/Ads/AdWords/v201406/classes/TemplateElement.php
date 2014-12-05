@@ -9,8 +9,8 @@
    */
   class TemplateElement
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "TemplateElement";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "TemplateElement";
 
     /**
      * @access public
@@ -30,7 +30,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -39,13 +39,12 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($uniqueName = null, $fields = null)
-    {
-      $this->uniqueName = $uniqueName;
-      $this->fields = $fields;
-    }
-
+      public function __construct($uniqueName = null, $fields = null)
+      {
+          $this->uniqueName = $uniqueName;
+          $this->fields = $fields;
+      }
   }

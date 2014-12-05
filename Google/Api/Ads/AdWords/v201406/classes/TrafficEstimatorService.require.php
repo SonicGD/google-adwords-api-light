@@ -27,6 +27,7 @@ require_once 'NumberValue.php';
 require_once 'OperationAccessDenied.php';
 require_once 'OperatorError.php';
 require_once 'Placement.php';
+require_once 'Platform.php';
 require_once 'Product.php';
 require_once 'ProductCondition.php';
 require_once 'ProductConditionOperand.php';

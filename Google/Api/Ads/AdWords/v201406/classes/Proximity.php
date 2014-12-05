@@ -19,8 +19,8 @@
    */
   class Proximity extends Criterion
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "Proximity";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "Proximity";
 
     /**
      * @access public
@@ -52,7 +52,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -61,19 +61,18 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($geoPoint = null, $radiusDistanceUnits = null, $radiusInUnits = null, $address = null, $id = null, $type = null, $CriterionType = null)
-    {
-      parent::__construct();
-      $this->geoPoint = $geoPoint;
-      $this->radiusDistanceUnits = $radiusDistanceUnits;
-      $this->radiusInUnits = $radiusInUnits;
-      $this->address = $address;
-      $this->id = $id;
-      $this->type = $type;
-      $this->CriterionType = $CriterionType;
-    }
-
+      public function __construct($geoPoint = null, $radiusDistanceUnits = null, $radiusInUnits = null, $address = null, $id = null, $type = null, $CriterionType = null)
+      {
+          parent::__construct();
+          $this->geoPoint = $geoPoint;
+          $this->radiusDistanceUnits = $radiusDistanceUnits;
+          $this->radiusInUnits = $radiusInUnits;
+          $this->address = $address;
+          $this->id = $id;
+          $this->type = $type;
+          $this->CriterionType = $CriterionType;
+      }
   }

@@ -12,8 +12,8 @@
    */
   class ApplicationException
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "ApplicationException";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "ApplicationException";
 
     /**
      * @access public
@@ -26,7 +26,7 @@
      * @var string
      */
     public $ApplicationExceptionType;
-    private $_parameterMap = array(
+      private $_parameterMap = array(
       "ApplicationException.Type" => "ApplicationExceptionType",
     );
 
@@ -37,7 +37,7 @@
      */
     public function __set($var, $value)
     {
-      $this->{$this->_parameterMap[$var]} = $value;
+        $this->{$this->_parameterMap[$var]} = $value;
     }
 
     /**
@@ -47,11 +47,11 @@
      */
     public function __get($var)
     {
-      if (!isset($this->_parameterMap[$var])) {
-        return null;
-      }
+        if (!isset($this->_parameterMap[$var])) {
+            return null;
+        }
 
-      return $this->{$this->_parameterMap[$var]};
+        return $this->{$this->_parameterMap[$var]};
     }
 
     /**
@@ -60,7 +60,7 @@
      */
     protected function getParameterMap()
     {
-      return $this->_parameterMap;
+        return $this->_parameterMap;
     }
 
     /**
@@ -69,7 +69,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -78,13 +78,12 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($message = null, $ApplicationExceptionType = null)
-    {
-      $this->message = $message;
-      $this->ApplicationExceptionType = $ApplicationExceptionType;
-    }
-
+      public function __construct($message = null, $ApplicationExceptionType = null)
+      {
+          $this->message = $message;
+          $this->ApplicationExceptionType = $ApplicationExceptionType;
+      }
   }

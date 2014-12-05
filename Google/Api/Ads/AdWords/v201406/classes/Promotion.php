@@ -9,8 +9,8 @@
    */
   class Promotion
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/express/v201406";
-    const XSI_TYPE = "Promotion";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/express/v201406";
+      const XSI_TYPE = "Promotion";
 
     /**
      * @access public
@@ -90,7 +90,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -99,23 +99,22 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($id = null, $name = null, $status = null, $creatives = null, $destinationUrl = null, $phoneNumber = null, $streetAddressVisible = null, $callTrackingEnabled = null, $budget = null, $criteria = null, $campaignIds = null, $remainingBudget = null)
-    {
-      $this->id = $id;
-      $this->name = $name;
-      $this->status = $status;
-      $this->creatives = $creatives;
-      $this->destinationUrl = $destinationUrl;
-      $this->phoneNumber = $phoneNumber;
-      $this->streetAddressVisible = $streetAddressVisible;
-      $this->callTrackingEnabled = $callTrackingEnabled;
-      $this->budget = $budget;
-      $this->criteria = $criteria;
-      $this->campaignIds = $campaignIds;
-      $this->remainingBudget = $remainingBudget;
-    }
-
+      public function __construct($id = null, $name = null, $status = null, $creatives = null, $destinationUrl = null, $phoneNumber = null, $streetAddressVisible = null, $callTrackingEnabled = null, $budget = null, $criteria = null, $campaignIds = null, $remainingBudget = null)
+      {
+          $this->id = $id;
+          $this->name = $name;
+          $this->status = $status;
+          $this->creatives = $creatives;
+          $this->destinationUrl = $destinationUrl;
+          $this->phoneNumber = $phoneNumber;
+          $this->streetAddressVisible = $streetAddressVisible;
+          $this->callTrackingEnabled = $callTrackingEnabled;
+          $this->budget = $budget;
+          $this->criteria = $criteria;
+          $this->campaignIds = $campaignIds;
+          $this->remainingBudget = $remainingBudget;
+      }
   }

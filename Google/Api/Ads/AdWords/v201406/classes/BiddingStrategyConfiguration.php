@@ -25,8 +25,8 @@
    */
   class BiddingStrategyConfiguration
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "BiddingStrategyConfiguration";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "BiddingStrategyConfiguration";
 
     /**
      * @access public
@@ -70,7 +70,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -79,17 +79,16 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($biddingStrategyId = null, $biddingStrategyName = null, $biddingStrategyType = null, $biddingStrategySource = null, $biddingScheme = null, $bids = null)
-    {
-      $this->biddingStrategyId = $biddingStrategyId;
-      $this->biddingStrategyName = $biddingStrategyName;
-      $this->biddingStrategyType = $biddingStrategyType;
-      $this->biddingStrategySource = $biddingStrategySource;
-      $this->biddingScheme = $biddingScheme;
-      $this->bids = $bids;
-    }
-
+      public function __construct($biddingStrategyId = null, $biddingStrategyName = null, $biddingStrategyType = null, $biddingStrategySource = null, $biddingScheme = null, $bids = null)
+      {
+          $this->biddingStrategyId = $biddingStrategyId;
+          $this->biddingStrategyName = $biddingStrategyName;
+          $this->biddingStrategyType = $biddingStrategyType;
+          $this->biddingStrategySource = $biddingStrategySource;
+          $this->biddingScheme = $biddingScheme;
+          $this->bids = $bids;
+      }
   }

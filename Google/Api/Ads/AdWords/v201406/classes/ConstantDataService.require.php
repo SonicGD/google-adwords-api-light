@@ -6,6 +6,7 @@ require_once 'Predicate.php';
 require_once 'ProductConditionOperand.php';
 require_once 'SoapRequestHeader.php';
 require_once 'SoapResponseHeader.php';
+require_once 'String_StringMapEntry.php';
 require_once 'ProductCondition.php';
 require_once 'ProductDimension.php';
 require_once 'ApiError.php';

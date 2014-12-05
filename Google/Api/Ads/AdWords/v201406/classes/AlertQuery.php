@@ -8,8 +8,8 @@
    */
   class AlertQuery
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/mcm/v201406";
-    const XSI_TYPE = "AlertQuery";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/mcm/v201406";
+      const XSI_TYPE = "AlertQuery";
 
     /**
      * @access public
@@ -59,7 +59,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -68,18 +68,17 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($clientSpec = null, $filterSpec = null, $types = null, $severities = null, $triggerTimeSpec = null, $triggerTime = null, $clientCustomerIds = null)
-    {
-      $this->clientSpec = $clientSpec;
-      $this->filterSpec = $filterSpec;
-      $this->types = $types;
-      $this->severities = $severities;
-      $this->triggerTimeSpec = $triggerTimeSpec;
-      $this->triggerTime = $triggerTime;
-      $this->clientCustomerIds = $clientCustomerIds;
-    }
-
+      public function __construct($clientSpec = null, $filterSpec = null, $types = null, $severities = null, $triggerTimeSpec = null, $triggerTime = null, $clientCustomerIds = null)
+      {
+          $this->clientSpec = $clientSpec;
+          $this->filterSpec = $filterSpec;
+          $this->types = $types;
+          $this->severities = $severities;
+          $this->triggerTimeSpec = $triggerTimeSpec;
+          $this->triggerTime = $triggerTime;
+          $this->clientCustomerIds = $clientCustomerIds;
+      }
   }

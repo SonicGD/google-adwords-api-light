@@ -11,8 +11,8 @@
    */
   class TargetSpendBiddingScheme extends BiddingScheme
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "TargetSpendBiddingScheme";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "TargetSpendBiddingScheme";
 
     /**
      * @access public
@@ -32,7 +32,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -41,15 +41,14 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($bidCeiling = null, $spendTarget = null, $BiddingSchemeType = null)
-    {
-      parent::__construct();
-      $this->bidCeiling = $bidCeiling;
-      $this->spendTarget = $spendTarget;
-      $this->BiddingSchemeType = $BiddingSchemeType;
-    }
-
+      public function __construct($bidCeiling = null, $spendTarget = null, $BiddingSchemeType = null)
+      {
+          parent::__construct();
+          $this->bidCeiling = $bidCeiling;
+          $this->spendTarget = $spendTarget;
+          $this->BiddingSchemeType = $BiddingSchemeType;
+      }
   }

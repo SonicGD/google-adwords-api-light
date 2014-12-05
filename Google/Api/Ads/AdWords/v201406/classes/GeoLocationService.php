@@ -9,9 +9,9 @@ require_once 'GeoLocationService.require.php';
    */
   class GeoLocationService extends AdWordsSoapClient
   {
-    const SERVICE_NAME = "GeoLocationService";
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const ENDPOINT = "https://adwords.google.com/api/adwords/cm/v201406/GeoLocationService";
+      const SERVICE_NAME = "GeoLocationService";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const ENDPOINT = "https://adwords.google.com/api/adwords/cm/v201406/GeoLocationService";
 
     /**
      * The endpoint of the service
@@ -85,8 +85,8 @@ require_once 'GeoLocationService.require.php';
      */
     public function __construct($wsdl, $options, $user)
     {
-      $options["classmap"] = self::$classmap;
-      parent::__construct($wsdl, $options, $user, self::SERVICE_NAME,
+        $options["classmap"] = self::$classmap;
+        parent::__construct($wsdl, $options, $user, self::SERVICE_NAME,
           self::WSDL_NAMESPACE);
     }
     /**
@@ -103,9 +103,9 @@ require_once 'GeoLocationService.require.php';
      */
     public function get($selector)
     {
-      $args = new GeoLocationServiceGet($selector);
-      $result = $this->__soapCall("get", array($args));
+        $args = new GeoLocationServiceGet($selector);
+        $result = $this->__soapCall("get", array($args));
 
-      return $result->rval;
+        return $result->rval;
     }
   }

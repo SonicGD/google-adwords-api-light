@@ -12,8 +12,8 @@
    */
   class LongComparisonOperation
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
-    const XSI_TYPE = "LongComparisonOperation";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
+      const XSI_TYPE = "LongComparisonOperation";
 
     /**
      * @access public
@@ -33,7 +33,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -42,13 +42,12 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($minimum = null, $maximum = null)
-    {
-      $this->minimum = $minimum;
-      $this->maximum = $maximum;
-    }
-
+      public function __construct($minimum = null, $maximum = null)
+      {
+          $this->minimum = $minimum;
+          $this->maximum = $maximum;
+      }
   }

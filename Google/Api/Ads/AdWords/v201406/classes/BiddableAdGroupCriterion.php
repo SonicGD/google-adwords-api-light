@@ -8,8 +8,8 @@
    */
   class BiddableAdGroupCriterion extends AdGroupCriterion
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "BiddableAdGroupCriterion";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "BiddableAdGroupCriterion";
 
     /**
      * @access public
@@ -107,7 +107,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -116,33 +116,32 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($userStatus = null, $systemServingStatus = null, $approvalStatus = null, $disapprovalReasons = null, $destinationUrl = null, $experimentData = null, $firstPageCpc = null, $topOfPageCpc = null, $qualityInfo = null, $biddingStrategyConfiguration = null, $bidModifier = null, $finalUrls = null, $finalMobileUrls = null, $trackingUrlTemplate = null, $urlCustomParameters = null, $adGroupId = null, $criterionUse = null, $criterion = null, $labels = null, $forwardCompatibilityMap = null, $AdGroupCriterionType = null)
-    {
-      parent::__construct();
-      $this->userStatus = $userStatus;
-      $this->systemServingStatus = $systemServingStatus;
-      $this->approvalStatus = $approvalStatus;
-      $this->disapprovalReasons = $disapprovalReasons;
-      $this->destinationUrl = $destinationUrl;
-      $this->experimentData = $experimentData;
-      $this->firstPageCpc = $firstPageCpc;
-      $this->topOfPageCpc = $topOfPageCpc;
-      $this->qualityInfo = $qualityInfo;
-      $this->biddingStrategyConfiguration = $biddingStrategyConfiguration;
-      $this->bidModifier = $bidModifier;
-      $this->finalUrls = $finalUrls;
-      $this->finalMobileUrls = $finalMobileUrls;
-      $this->trackingUrlTemplate = $trackingUrlTemplate;
-      $this->urlCustomParameters = $urlCustomParameters;
-      $this->adGroupId = $adGroupId;
-      $this->criterionUse = $criterionUse;
-      $this->criterion = $criterion;
-      $this->labels = $labels;
-      $this->forwardCompatibilityMap = $forwardCompatibilityMap;
-      $this->AdGroupCriterionType = $AdGroupCriterionType;
-    }
-
+      public function __construct($userStatus = null, $systemServingStatus = null, $approvalStatus = null, $disapprovalReasons = null, $destinationUrl = null, $experimentData = null, $firstPageCpc = null, $topOfPageCpc = null, $qualityInfo = null, $biddingStrategyConfiguration = null, $bidModifier = null, $finalUrls = null, $finalMobileUrls = null, $trackingUrlTemplate = null, $urlCustomParameters = null, $adGroupId = null, $criterionUse = null, $criterion = null, $labels = null, $forwardCompatibilityMap = null, $AdGroupCriterionType = null)
+      {
+          parent::__construct();
+          $this->userStatus = $userStatus;
+          $this->systemServingStatus = $systemServingStatus;
+          $this->approvalStatus = $approvalStatus;
+          $this->disapprovalReasons = $disapprovalReasons;
+          $this->destinationUrl = $destinationUrl;
+          $this->experimentData = $experimentData;
+          $this->firstPageCpc = $firstPageCpc;
+          $this->topOfPageCpc = $topOfPageCpc;
+          $this->qualityInfo = $qualityInfo;
+          $this->biddingStrategyConfiguration = $biddingStrategyConfiguration;
+          $this->bidModifier = $bidModifier;
+          $this->finalUrls = $finalUrls;
+          $this->finalMobileUrls = $finalMobileUrls;
+          $this->trackingUrlTemplate = $trackingUrlTemplate;
+          $this->urlCustomParameters = $urlCustomParameters;
+          $this->adGroupId = $adGroupId;
+          $this->criterionUse = $criterionUse;
+          $this->criterion = $criterion;
+          $this->labels = $labels;
+          $this->forwardCompatibilityMap = $forwardCompatibilityMap;
+          $this->AdGroupCriterionType = $AdGroupCriterionType;
+      }
   }

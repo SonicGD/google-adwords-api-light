@@ -11,8 +11,8 @@
    */
   class StatsEstimate
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
-    const XSI_TYPE = "StatsEstimate";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
+      const XSI_TYPE = "StatsEstimate";
 
     /**
      * @access public
@@ -56,7 +56,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -65,17 +65,16 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($averageCpc = null, $averagePosition = null, $clickThroughRate = null, $clicksPerDay = null, $impressionsPerDay = null, $totalCost = null)
-    {
-      $this->averageCpc = $averageCpc;
-      $this->averagePosition = $averagePosition;
-      $this->clickThroughRate = $clickThroughRate;
-      $this->clicksPerDay = $clicksPerDay;
-      $this->impressionsPerDay = $impressionsPerDay;
-      $this->totalCost = $totalCost;
-    }
-
+      public function __construct($averageCpc = null, $averagePosition = null, $clickThroughRate = null, $clicksPerDay = null, $impressionsPerDay = null, $totalCost = null)
+      {
+          $this->averageCpc = $averageCpc;
+          $this->averagePosition = $averagePosition;
+          $this->clickThroughRate = $clickThroughRate;
+          $this->clicksPerDay = $clicksPerDay;
+          $this->impressionsPerDay = $impressionsPerDay;
+          $this->totalCost = $totalCost;
+      }
   }

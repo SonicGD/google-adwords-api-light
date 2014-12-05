@@ -8,8 +8,8 @@
    */
   class AdScheduleTarget extends Target
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "AdScheduleTarget";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "AdScheduleTarget";
 
     /**
      * @access public
@@ -53,7 +53,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -62,19 +62,18 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($dayOfWeek = null, $startHour = null, $startMinute = null, $endHour = null, $endMinute = null, $bidMultiplier = null, $TargetType = null)
-    {
-      parent::__construct();
-      $this->dayOfWeek = $dayOfWeek;
-      $this->startHour = $startHour;
-      $this->startMinute = $startMinute;
-      $this->endHour = $endHour;
-      $this->endMinute = $endMinute;
-      $this->bidMultiplier = $bidMultiplier;
-      $this->TargetType = $TargetType;
-    }
-
+      public function __construct($dayOfWeek = null, $startHour = null, $startMinute = null, $endHour = null, $endMinute = null, $bidMultiplier = null, $TargetType = null)
+      {
+          parent::__construct();
+          $this->dayOfWeek = $dayOfWeek;
+          $this->startHour = $startHour;
+          $this->startMinute = $startMinute;
+          $this->endHour = $endHour;
+          $this->endMinute = $endMinute;
+          $this->bidMultiplier = $bidMultiplier;
+          $this->TargetType = $TargetType;
+      }
   }

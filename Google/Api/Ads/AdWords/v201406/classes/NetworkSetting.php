@@ -12,8 +12,8 @@
    */
   class NetworkSetting
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "NetworkSetting";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "NetworkSetting";
 
     /**
      * @access public
@@ -45,7 +45,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -54,15 +54,14 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($targetGoogleSearch = null, $targetSearchNetwork = null, $targetContentNetwork = null, $targetPartnerSearchNetwork = null)
-    {
-      $this->targetGoogleSearch = $targetGoogleSearch;
-      $this->targetSearchNetwork = $targetSearchNetwork;
-      $this->targetContentNetwork = $targetContentNetwork;
-      $this->targetPartnerSearchNetwork = $targetPartnerSearchNetwork;
-    }
-
+      public function __construct($targetGoogleSearch = null, $targetSearchNetwork = null, $targetContentNetwork = null, $targetPartnerSearchNetwork = null)
+      {
+          $this->targetGoogleSearch = $targetGoogleSearch;
+          $this->targetSearchNetwork = $targetSearchNetwork;
+          $this->targetContentNetwork = $targetContentNetwork;
+          $this->targetPartnerSearchNetwork = $targetPartnerSearchNetwork;
+      }
   }

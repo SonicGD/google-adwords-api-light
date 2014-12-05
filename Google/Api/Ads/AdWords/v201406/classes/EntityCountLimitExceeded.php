@@ -13,8 +13,8 @@
    */
   class EntityCountLimitExceeded extends ApiError
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "EntityCountLimitExceeded";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "EntityCountLimitExceeded";
 
     /**
      * @access public
@@ -52,7 +52,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -61,21 +61,20 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($reason = null, $enclosingId = null, $limit = null, $accountLimitType = null, $existingCount = null, $fieldPath = null, $trigger = null, $errorString = null, $ApiErrorType = null)
-    {
-      parent::__construct();
-      $this->reason = $reason;
-      $this->enclosingId = $enclosingId;
-      $this->limit = $limit;
-      $this->accountLimitType = $accountLimitType;
-      $this->existingCount = $existingCount;
-      $this->fieldPath = $fieldPath;
-      $this->trigger = $trigger;
-      $this->errorString = $errorString;
-      $this->ApiErrorType = $ApiErrorType;
-    }
-
+      public function __construct($reason = null, $enclosingId = null, $limit = null, $accountLimitType = null, $existingCount = null, $fieldPath = null, $trigger = null, $errorString = null, $ApiErrorType = null)
+      {
+          parent::__construct();
+          $this->reason = $reason;
+          $this->enclosingId = $enclosingId;
+          $this->limit = $limit;
+          $this->accountLimitType = $accountLimitType;
+          $this->existingCount = $existingCount;
+          $this->fieldPath = $fieldPath;
+          $this->trigger = $trigger;
+          $this->errorString = $errorString;
+          $this->ApiErrorType = $ApiErrorType;
+      }
   }

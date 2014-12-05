@@ -17,8 +17,8 @@
    */
   class DisplayAdSpecAdSizeSpec
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
-    const XSI_TYPE = "DisplayAdSpec.AdSizeSpec";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
+      const XSI_TYPE = "DisplayAdSpec.AdSizeSpec";
 
     /**
      * @access public
@@ -44,7 +44,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -53,14 +53,13 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($width = null, $height = null, $activationOptionFilter = null)
-    {
-      $this->width = $width;
-      $this->height = $height;
-      $this->activationOptionFilter = $activationOptionFilter;
-    }
-
+      public function __construct($width = null, $height = null, $activationOptionFilter = null)
+      {
+          $this->width = $width;
+          $this->height = $height;
+          $this->activationOptionFilter = $activationOptionFilter;
+      }
   }

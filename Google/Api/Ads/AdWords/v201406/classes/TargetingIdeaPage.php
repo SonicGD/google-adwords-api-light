@@ -9,8 +9,8 @@
    */
   class TargetingIdeaPage
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
-    const XSI_TYPE = "TargetingIdeaPage";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
+      const XSI_TYPE = "TargetingIdeaPage";
 
     /**
      * @access public
@@ -30,7 +30,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -39,13 +39,12 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($totalNumEntries = null, $entries = null)
-    {
-      $this->totalNumEntries = $totalNumEntries;
-      $this->entries = $entries;
-    }
-
+      public function __construct($totalNumEntries = null, $entries = null)
+      {
+          $this->totalNumEntries = $totalNumEntries;
+          $this->entries = $entries;
+      }
   }

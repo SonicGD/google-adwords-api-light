@@ -9,9 +9,9 @@ require_once 'BudgetOrderService.require.php';
    */
   class BudgetOrderService extends AdWordsSoapClient
   {
-    const SERVICE_NAME = "BudgetOrderService";
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/billing/v201406";
-    const ENDPOINT = "https://adwords.google.com/api/adwords/billing/v201406/BudgetOrderService";
+      const SERVICE_NAME = "BudgetOrderService";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/billing/v201406";
+      const ENDPOINT = "https://adwords.google.com/api/adwords/billing/v201406/BudgetOrderService";
 
     /**
      * The endpoint of the service
@@ -125,8 +125,8 @@ require_once 'BudgetOrderService.require.php';
      */
     public function __construct($wsdl, $options, $user)
     {
-      $options["classmap"] = self::$classmap;
-      parent::__construct($wsdl, $options, $user, self::SERVICE_NAME,
+        $options["classmap"] = self::$classmap;
+        parent::__construct($wsdl, $options, $user, self::SERVICE_NAME,
           self::WSDL_NAMESPACE);
     }
     /**
@@ -142,10 +142,10 @@ require_once 'BudgetOrderService.require.php';
      */
     public function get($serviceSelector)
     {
-      $args = new BudgetOrderServiceGet($serviceSelector);
-      $result = $this->__soapCall("get", array($args));
+        $args = new BudgetOrderServiceGet($serviceSelector);
+        $result = $this->__soapCall("get", array($args));
 
-      return $result->rval;
+        return $result->rval;
     }
     /**
      * Returns all the open/active BillingAccounts associated with the current
@@ -155,10 +155,10 @@ require_once 'BudgetOrderService.require.php';
      */
     public function getBillingAccounts()
     {
-      $args = new GetBillingAccounts();
-      $result = $this->__soapCall("getBillingAccounts", array($args));
+        $args = new GetBillingAccounts();
+        $result = $this->__soapCall("getBillingAccounts", array($args));
 
-      return $result->rval;
+        return $result->rval;
     }
     /**
      * <span class="constraint ContentsNotNull">This field must not contain {@code null} elements.</span>
@@ -184,9 +184,9 @@ require_once 'BudgetOrderService.require.php';
      */
     public function mutate($operations)
     {
-      $args = new BudgetOrderServiceMutate($operations);
-      $result = $this->__soapCall("mutate", array($args));
+        $args = new BudgetOrderServiceMutate($operations);
+        $result = $this->__soapCall("mutate", array($args));
 
-      return $result->rval;
+        return $result->rval;
     }
   }

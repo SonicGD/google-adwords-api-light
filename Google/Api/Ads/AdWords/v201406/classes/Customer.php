@@ -8,8 +8,8 @@
    */
   class Customer
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/mcm/v201406";
-    const XSI_TYPE = "Customer";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/mcm/v201406";
+      const XSI_TYPE = "Customer";
 
     /**
      * @access public
@@ -77,7 +77,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -86,21 +86,20 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($customerId = null, $currencyCode = null, $dateTimeZone = null, $descriptiveName = null, $companyName = null, $canManageClients = null, $testAccount = null, $autoTaggingEnabled = null, $trackingUrlTemplate = null, $conversionTrackingSettings = null)
-    {
-      $this->customerId = $customerId;
-      $this->currencyCode = $currencyCode;
-      $this->dateTimeZone = $dateTimeZone;
-      $this->descriptiveName = $descriptiveName;
-      $this->companyName = $companyName;
-      $this->canManageClients = $canManageClients;
-      $this->testAccount = $testAccount;
-      $this->autoTaggingEnabled = $autoTaggingEnabled;
-      $this->trackingUrlTemplate = $trackingUrlTemplate;
-      $this->conversionTrackingSettings = $conversionTrackingSettings;
-    }
-
+      public function __construct($customerId = null, $currencyCode = null, $dateTimeZone = null, $descriptiveName = null, $companyName = null, $canManageClients = null, $testAccount = null, $autoTaggingEnabled = null, $trackingUrlTemplate = null, $conversionTrackingSettings = null)
+      {
+          $this->customerId = $customerId;
+          $this->currencyCode = $currencyCode;
+          $this->dateTimeZone = $dateTimeZone;
+          $this->descriptiveName = $descriptiveName;
+          $this->companyName = $companyName;
+          $this->canManageClients = $canManageClients;
+          $this->testAccount = $testAccount;
+          $this->autoTaggingEnabled = $autoTaggingEnabled;
+          $this->trackingUrlTemplate = $trackingUrlTemplate;
+          $this->conversionTrackingSettings = $conversionTrackingSettings;
+      }
   }

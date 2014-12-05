@@ -8,8 +8,8 @@
    */
   class KeywordEstimateRequest extends EstimateRequest
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
-    const XSI_TYPE = "KeywordEstimateRequest";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
+      const XSI_TYPE = "KeywordEstimateRequest";
 
     /**
      * @access public
@@ -35,7 +35,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -44,16 +44,15 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($keyword = null, $maxCpc = null, $isNegative = null, $EstimateRequestType = null)
-    {
-      parent::__construct();
-      $this->keyword = $keyword;
-      $this->maxCpc = $maxCpc;
-      $this->isNegative = $isNegative;
-      $this->EstimateRequestType = $EstimateRequestType;
-    }
-
+      public function __construct($keyword = null, $maxCpc = null, $isNegative = null, $EstimateRequestType = null)
+      {
+          parent::__construct();
+          $this->keyword = $keyword;
+          $this->maxCpc = $maxCpc;
+          $this->isNegative = $isNegative;
+          $this->EstimateRequestType = $EstimateRequestType;
+      }
   }

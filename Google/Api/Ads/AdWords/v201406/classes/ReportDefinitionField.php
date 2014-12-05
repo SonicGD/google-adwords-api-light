@@ -12,8 +12,8 @@
    */
   class ReportDefinitionField
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "ReportDefinitionField";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "ReportDefinitionField";
 
     /**
      * @access public
@@ -87,7 +87,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -96,22 +96,21 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($fieldName = null, $displayFieldName = null, $xmlAttributeName = null, $fieldType = null, $enumValues = null, $canSelect = null, $canFilter = null, $isEnumType = null, $isBeta = null, $isZeroRowCompatible = null, $enumValuePairs = null)
-    {
-      $this->fieldName = $fieldName;
-      $this->displayFieldName = $displayFieldName;
-      $this->xmlAttributeName = $xmlAttributeName;
-      $this->fieldType = $fieldType;
-      $this->enumValues = $enumValues;
-      $this->canSelect = $canSelect;
-      $this->canFilter = $canFilter;
-      $this->isEnumType = $isEnumType;
-      $this->isBeta = $isBeta;
-      $this->isZeroRowCompatible = $isZeroRowCompatible;
-      $this->enumValuePairs = $enumValuePairs;
-    }
-
+      public function __construct($fieldName = null, $displayFieldName = null, $xmlAttributeName = null, $fieldType = null, $enumValues = null, $canSelect = null, $canFilter = null, $isEnumType = null, $isBeta = null, $isZeroRowCompatible = null, $enumValuePairs = null)
+      {
+          $this->fieldName = $fieldName;
+          $this->displayFieldName = $displayFieldName;
+          $this->xmlAttributeName = $xmlAttributeName;
+          $this->fieldType = $fieldType;
+          $this->enumValues = $enumValues;
+          $this->canSelect = $canSelect;
+          $this->canFilter = $canFilter;
+          $this->isEnumType = $isEnumType;
+          $this->isBeta = $isBeta;
+          $this->isZeroRowCompatible = $isZeroRowCompatible;
+          $this->enumValuePairs = $enumValuePairs;
+      }
   }

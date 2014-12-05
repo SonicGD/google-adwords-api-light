@@ -2,17 +2,14 @@
 
 
   /**
-   * Represents errors in bid multipliers
-   *
-   * TODO(user): Calling this BidMultiplierError results in grubby proto
-   * conflicts. There may be a better way to do this.
+   * Represents errors in bid multipliers.
    * @package Google_Api_Ads_AdWords_v201406
    * @subpackage v201406
    */
   class MultiplierError extends ApiError
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "MultiplierError";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "MultiplierError";
 
     /**
      * @access public
@@ -26,7 +23,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -35,17 +32,16 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($reason = null, $fieldPath = null, $trigger = null, $errorString = null, $ApiErrorType = null)
-    {
-      parent::__construct();
-      $this->reason = $reason;
-      $this->fieldPath = $fieldPath;
-      $this->trigger = $trigger;
-      $this->errorString = $errorString;
-      $this->ApiErrorType = $ApiErrorType;
-    }
-
+      public function __construct($reason = null, $fieldPath = null, $trigger = null, $errorString = null, $ApiErrorType = null)
+      {
+          parent::__construct();
+          $this->reason = $reason;
+          $this->fieldPath = $fieldPath;
+          $this->trigger = $trigger;
+          $this->errorString = $errorString;
+          $this->ApiErrorType = $ApiErrorType;
+      }
   }

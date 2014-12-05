@@ -8,8 +8,8 @@
    */
   class FeedAttributeOperand extends FunctionArgumentOperand
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "FeedAttributeOperand";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "FeedAttributeOperand";
 
     /**
      * @access public
@@ -29,7 +29,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -38,15 +38,14 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($feedId = null, $feedAttributeId = null, $FunctionArgumentOperandType = null)
-    {
-      parent::__construct();
-      $this->feedId = $feedId;
-      $this->feedAttributeId = $feedAttributeId;
-      $this->FunctionArgumentOperandType = $FunctionArgumentOperandType;
-    }
-
+      public function __construct($feedId = null, $feedAttributeId = null, $FunctionArgumentOperandType = null)
+      {
+          parent::__construct();
+          $this->feedId = $feedId;
+          $this->feedAttributeId = $feedAttributeId;
+          $this->FunctionArgumentOperandType = $FunctionArgumentOperandType;
+      }
   }

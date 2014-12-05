@@ -8,8 +8,8 @@
    */
   class FeedItemAttributeError
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "FeedItemAttributeError";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "FeedItemAttributeError";
 
     /**
      * @access public
@@ -29,7 +29,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -38,13 +38,12 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($feedAttributeIds = null, $validationErrorCode = null)
-    {
-      $this->feedAttributeIds = $feedAttributeIds;
-      $this->validationErrorCode = $validationErrorCode;
-    }
-
+      public function __construct($feedAttributeIds = null, $validationErrorCode = null)
+      {
+          $this->feedAttributeIds = $feedAttributeIds;
+          $this->validationErrorCode = $validationErrorCode;
+      }
   }

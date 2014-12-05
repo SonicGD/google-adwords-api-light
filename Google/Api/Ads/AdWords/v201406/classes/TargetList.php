@@ -8,8 +8,8 @@
    */
   class TargetList
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "TargetList";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "TargetList";
 
     /**
      * @access public
@@ -22,7 +22,7 @@
      * @var string
      */
     public $TargetListType;
-    private $_parameterMap = array(
+      private $_parameterMap = array(
       "TargetList.Type" => "TargetListType",
     );
 
@@ -33,7 +33,7 @@
      */
     public function __set($var, $value)
     {
-      $this->{$this->_parameterMap[$var]} = $value;
+        $this->{$this->_parameterMap[$var]} = $value;
     }
 
     /**
@@ -43,11 +43,11 @@
      */
     public function __get($var)
     {
-      if (!isset($this->_parameterMap[$var])) {
-        return null;
-      }
+        if (!isset($this->_parameterMap[$var])) {
+            return null;
+        }
 
-      return $this->{$this->_parameterMap[$var]};
+        return $this->{$this->_parameterMap[$var]};
     }
 
     /**
@@ -56,7 +56,7 @@
      */
     protected function getParameterMap()
     {
-      return $this->_parameterMap;
+        return $this->_parameterMap;
     }
 
     /**
@@ -65,7 +65,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -74,13 +74,12 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($campaignId = null, $TargetListType = null)
-    {
-      $this->campaignId = $campaignId;
-      $this->TargetListType = $TargetListType;
-    }
-
+      public function __construct($campaignId = null, $TargetListType = null)
+      {
+          $this->campaignId = $campaignId;
+          $this->TargetListType = $TargetListType;
+      }
   }

@@ -8,8 +8,8 @@
    */
   class TextLabel extends Label
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "TextLabel";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "TextLabel";
 
     /**
      * Gets the namesapce of this class
@@ -17,7 +17,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -26,16 +26,15 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($id = null, $name = null, $status = null, $LabelType = null)
-    {
-      parent::__construct();
-      $this->id = $id;
-      $this->name = $name;
-      $this->status = $status;
-      $this->LabelType = $LabelType;
-    }
-
+      public function __construct($id = null, $name = null, $status = null, $LabelType = null)
+      {
+          parent::__construct();
+          $this->id = $id;
+          $this->name = $name;
+          $this->status = $status;
+          $this->LabelType = $LabelType;
+      }
   }

@@ -8,8 +8,8 @@
    */
   class BudgetOrder
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/billing/v201406";
-    const XSI_TYPE = "BudgetOrder";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/billing/v201406";
+      const XSI_TYPE = "BudgetOrder";
 
     /**
      * @access public
@@ -83,7 +83,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -92,22 +92,21 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($billingAccountId = null, $id = null, $billingAccountName = null, $poNumber = null, $budgetOrderName = null, $primaryBillingId = null, $secondaryBillingId = null, $spendingLimit = null, $startDateTime = null, $endDateTime = null, $lastRequest = null)
-    {
-      $this->billingAccountId = $billingAccountId;
-      $this->id = $id;
-      $this->billingAccountName = $billingAccountName;
-      $this->poNumber = $poNumber;
-      $this->budgetOrderName = $budgetOrderName;
-      $this->primaryBillingId = $primaryBillingId;
-      $this->secondaryBillingId = $secondaryBillingId;
-      $this->spendingLimit = $spendingLimit;
-      $this->startDateTime = $startDateTime;
-      $this->endDateTime = $endDateTime;
-      $this->lastRequest = $lastRequest;
-    }
-
+      public function __construct($billingAccountId = null, $id = null, $billingAccountName = null, $poNumber = null, $budgetOrderName = null, $primaryBillingId = null, $secondaryBillingId = null, $spendingLimit = null, $startDateTime = null, $endDateTime = null, $lastRequest = null)
+      {
+          $this->billingAccountId = $billingAccountId;
+          $this->id = $id;
+          $this->billingAccountName = $billingAccountName;
+          $this->poNumber = $poNumber;
+          $this->budgetOrderName = $budgetOrderName;
+          $this->primaryBillingId = $primaryBillingId;
+          $this->secondaryBillingId = $secondaryBillingId;
+          $this->spendingLimit = $spendingLimit;
+          $this->startDateTime = $startDateTime;
+          $this->endDateTime = $endDateTime;
+          $this->lastRequest = $lastRequest;
+      }
   }

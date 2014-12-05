@@ -8,8 +8,8 @@
    */
   class DisplayType
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
-    const XSI_TYPE = "DisplayType";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
+      const XSI_TYPE = "DisplayType";
 
     /**
      * @access public
@@ -35,7 +35,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -44,14 +44,13 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($FlashDisplayType = null, $HtmlDisplayType = null, $ImageDisplayType = null)
-    {
-      $this->FlashDisplayType = $FlashDisplayType;
-      $this->HtmlDisplayType = $HtmlDisplayType;
-      $this->ImageDisplayType = $ImageDisplayType;
-    }
-
+      public function __construct($FlashDisplayType = null, $HtmlDisplayType = null, $ImageDisplayType = null)
+      {
+          $this->FlashDisplayType = $FlashDisplayType;
+          $this->HtmlDisplayType = $HtmlDisplayType;
+          $this->ImageDisplayType = $ImageDisplayType;
+      }
   }

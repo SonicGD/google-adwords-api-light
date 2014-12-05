@@ -23,8 +23,8 @@
    */
   class CampaignEstimateRequest extends EstimateRequest
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
-    const XSI_TYPE = "CampaignEstimateRequest";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
+      const XSI_TYPE = "CampaignEstimateRequest";
 
     /**
      * @access public
@@ -62,7 +62,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -71,18 +71,17 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($campaignId = null, $adGroupEstimateRequests = null, $criteria = null, $networkSetting = null, $dailyBudget = null, $EstimateRequestType = null)
-    {
-      parent::__construct();
-      $this->campaignId = $campaignId;
-      $this->adGroupEstimateRequests = $adGroupEstimateRequests;
-      $this->criteria = $criteria;
-      $this->networkSetting = $networkSetting;
-      $this->dailyBudget = $dailyBudget;
-      $this->EstimateRequestType = $EstimateRequestType;
-    }
-
+      public function __construct($campaignId = null, $adGroupEstimateRequests = null, $criteria = null, $networkSetting = null, $dailyBudget = null, $EstimateRequestType = null)
+      {
+          parent::__construct();
+          $this->campaignId = $campaignId;
+          $this->adGroupEstimateRequests = $adGroupEstimateRequests;
+          $this->criteria = $criteria;
+          $this->networkSetting = $networkSetting;
+          $this->dailyBudget = $dailyBudget;
+          $this->EstimateRequestType = $EstimateRequestType;
+      }
   }

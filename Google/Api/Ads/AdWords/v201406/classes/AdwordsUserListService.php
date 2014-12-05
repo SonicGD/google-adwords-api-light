@@ -9,9 +9,9 @@ require_once 'AdwordsUserListService.require.php';
    */
   class AdwordsUserListService extends AdWordsSoapClient
   {
-    const SERVICE_NAME = "AdwordsUserListService";
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/rm/v201406";
-    const ENDPOINT = "https://adwords.google.com/api/adwords/rm/v201406/AdwordsUserListService";
+      const SERVICE_NAME = "AdwordsUserListService";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/rm/v201406";
+      const ENDPOINT = "https://adwords.google.com/api/adwords/rm/v201406/AdwordsUserListService";
 
     /**
      * The endpoint of the service
@@ -117,8 +117,8 @@ require_once 'AdwordsUserListService.require.php';
      */
     public function __construct($wsdl, $options, $user)
     {
-      $options["classmap"] = self::$classmap;
-      parent::__construct($wsdl, $options, $user, self::SERVICE_NAME,
+        $options["classmap"] = self::$classmap;
+        parent::__construct($wsdl, $options, $user, self::SERVICE_NAME,
           self::WSDL_NAMESPACE);
     }
     /**
@@ -134,10 +134,10 @@ require_once 'AdwordsUserListService.require.php';
      */
     public function get($serviceSelector)
     {
-      $args = new AdwordsUserListServiceGet($serviceSelector);
-      $result = $this->__soapCall("get", array($args));
+        $args = new AdwordsUserListServiceGet($serviceSelector);
+        $result = $this->__soapCall("get", array($args));
 
-      return $result->rval;
+        return $result->rval;
     }
     /**
      * <span class="constraint CollectionSize">The minimum size of this collection is 1. The maximum size of this collection is 10000.</span>
@@ -157,9 +157,9 @@ require_once 'AdwordsUserListService.require.php';
      */
     public function mutate($operations)
     {
-      $args = new AdwordsUserListServiceMutate($operations);
-      $result = $this->__soapCall("mutate", array($args));
+        $args = new AdwordsUserListServiceMutate($operations);
+        $result = $this->__soapCall("mutate", array($args));
 
-      return $result->rval;
+        return $result->rval;
     }
   }

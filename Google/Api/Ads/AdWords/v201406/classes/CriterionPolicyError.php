@@ -12,8 +12,8 @@
    */
   class CriterionPolicyError extends PolicyViolationError
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "CriterionPolicyError";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "CriterionPolicyError";
 
     /**
      * Gets the namesapce of this class
@@ -21,7 +21,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -30,18 +30,17 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($key = null, $externalPolicyName = null, $externalPolicyUrl = null, $externalPolicyDescription = null, $isExemptable = null, $violatingParts = null)
-    {
-      parent::__construct();
-      $this->key = $key;
-      $this->externalPolicyName = $externalPolicyName;
-      $this->externalPolicyUrl = $externalPolicyUrl;
-      $this->externalPolicyDescription = $externalPolicyDescription;
-      $this->isExemptable = $isExemptable;
-      $this->violatingParts = $violatingParts;
-    }
-
+      public function __construct($key = null, $externalPolicyName = null, $externalPolicyUrl = null, $externalPolicyDescription = null, $isExemptable = null, $violatingParts = null)
+      {
+          parent::__construct();
+          $this->key = $key;
+          $this->externalPolicyName = $externalPolicyName;
+          $this->externalPolicyUrl = $externalPolicyUrl;
+          $this->externalPolicyDescription = $externalPolicyDescription;
+          $this->isExemptable = $isExemptable;
+          $this->violatingParts = $violatingParts;
+      }
   }

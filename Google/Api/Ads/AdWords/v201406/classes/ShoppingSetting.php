@@ -9,8 +9,8 @@
    */
   class ShoppingSetting extends Setting
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "ShoppingSetting";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "ShoppingSetting";
 
     /**
      * @access public
@@ -36,7 +36,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -45,16 +45,15 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($merchantId = null, $salesCountry = null, $campaignPriority = null, $SettingType = null)
-    {
-      parent::__construct();
-      $this->merchantId = $merchantId;
-      $this->salesCountry = $salesCountry;
-      $this->campaignPriority = $campaignPriority;
-      $this->SettingType = $SettingType;
-    }
-
+      public function __construct($merchantId = null, $salesCountry = null, $campaignPriority = null, $SettingType = null)
+      {
+          parent::__construct();
+          $this->merchantId = $merchantId;
+          $this->salesCountry = $salesCountry;
+          $this->campaignPriority = $campaignPriority;
+          $this->SettingType = $SettingType;
+      }
   }

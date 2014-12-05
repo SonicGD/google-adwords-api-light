@@ -8,8 +8,8 @@
    */
   class AdGroup
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "AdGroup";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "AdGroup";
 
     /**
      * @access public
@@ -95,7 +95,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -104,24 +104,23 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($id = null, $campaignId = null, $campaignName = null, $name = null, $status = null, $settings = null, $experimentData = null, $labels = null, $forwardCompatibilityMap = null, $biddingStrategyConfiguration = null, $contentBidCriterionTypeGroup = null, $trackingUrlTemplate = null, $urlCustomParameters = null)
-    {
-      $this->id = $id;
-      $this->campaignId = $campaignId;
-      $this->campaignName = $campaignName;
-      $this->name = $name;
-      $this->status = $status;
-      $this->settings = $settings;
-      $this->experimentData = $experimentData;
-      $this->labels = $labels;
-      $this->forwardCompatibilityMap = $forwardCompatibilityMap;
-      $this->biddingStrategyConfiguration = $biddingStrategyConfiguration;
-      $this->contentBidCriterionTypeGroup = $contentBidCriterionTypeGroup;
-      $this->trackingUrlTemplate = $trackingUrlTemplate;
-      $this->urlCustomParameters = $urlCustomParameters;
-    }
-
+      public function __construct($id = null, $campaignId = null, $campaignName = null, $name = null, $status = null, $settings = null, $experimentData = null, $labels = null, $forwardCompatibilityMap = null, $biddingStrategyConfiguration = null, $contentBidCriterionTypeGroup = null, $trackingUrlTemplate = null, $urlCustomParameters = null)
+      {
+          $this->id = $id;
+          $this->campaignId = $campaignId;
+          $this->campaignName = $campaignName;
+          $this->name = $name;
+          $this->status = $status;
+          $this->settings = $settings;
+          $this->experimentData = $experimentData;
+          $this->labels = $labels;
+          $this->forwardCompatibilityMap = $forwardCompatibilityMap;
+          $this->biddingStrategyConfiguration = $biddingStrategyConfiguration;
+          $this->contentBidCriterionTypeGroup = $contentBidCriterionTypeGroup;
+          $this->trackingUrlTemplate = $trackingUrlTemplate;
+          $this->urlCustomParameters = $urlCustomParameters;
+      }
   }

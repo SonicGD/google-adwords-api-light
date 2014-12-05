@@ -9,8 +9,8 @@
    */
   class InStreamAdSpec
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
-    const XSI_TYPE = "InStreamAdSpec";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
+      const XSI_TYPE = "InStreamAdSpec";
 
     /**
      * @access public
@@ -30,7 +30,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -39,13 +39,12 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($inStreamTypes = null, $durations = null)
-    {
-      $this->inStreamTypes = $inStreamTypes;
-      $this->durations = $durations;
-    }
-
+      public function __construct($inStreamTypes = null, $durations = null)
+      {
+          $this->inStreamTypes = $inStreamTypes;
+          $this->durations = $durations;
+      }
   }

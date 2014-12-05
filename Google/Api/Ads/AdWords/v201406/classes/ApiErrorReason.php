@@ -8,8 +8,8 @@
    */
   class ApiErrorReason
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "ApiErrorReason";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "ApiErrorReason";
 
     /**
      * @access public
@@ -389,7 +389,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -398,73 +398,72 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($AdErrorReason = null, $AdExtensionErrorReason = null, $AdGroupAdErrorReason = null, $AdGroupCriterionErrorReason = null, $AdGroupServiceErrorReason = null, $AdxErrorReason = null, $AuthenticationErrorReason = null, $AuthorizationErrorReason = null, $BetaErrorReason = null, $BiddingErrorReason = null, $BiddingErrorsReason = null, $BiddingTransitionErrorReason = null, $BudgetErrorReason = null, $BulkMutateJobErrorReason = null, $CampaignAdExtensionErrorReason = null, $CampaignCriterionErrorReason = null, $CampaignErrorReason = null, $ClientTermsErrorReason = null, $CollectionSizeErrorReason = null, $CriterionErrorReason = null, $DatabaseErrorReason = null, $DateErrorReason = null, $DateRangeErrorReason = null, $DistinctErrorReason = null, $EntityAccessDeniedReason = null, $EntityCountLimitExceededReason = null, $EntityNotFoundReason = null, $ExperimentErrorReason = null, $FeedItemErrorReason = null, $ForwardCompatibilityErrorReason = null, $FunctionErrorReason = null, $FunctionParsingErrorReason = null, $IdErrorReason = null, $ImageErrorReason = null, $InternalApiErrorReason = null, $JobErrorReason = null, $MediaErrorReason = null, $MultiplierErrorReason = null, $NewEntityCreationErrorReason = null, $NotEmptyErrorReason = null, $NullErrorReason = null, $OperationAccessDeniedReason = null, $OperatorErrorReason = null, $PagingErrorReason = null, $PolicyViolationErrorReason = null, $QueryErrorReason = null, $QuotaCheckErrorReason = null, $QuotaErrorReason = null, $RangeErrorReason = null, $RateExceededErrorReason = null, $ReadOnlyErrorReason = null, $RegionCodeErrorReason = null, $RejectedErrorReason = null, $RequestErrorReason = null, $RequiredErrorReason = null, $SelectorErrorReason = null, $SettingErrorReason = null, $SizeLimitErrorReason = null, $StatsQueryErrorReason = null, $StringLengthErrorReason = null, $TargetErrorReason = null, $UrlErrorReason = null)
-    {
-      $this->AdErrorReason = $AdErrorReason;
-      $this->AdExtensionErrorReason = $AdExtensionErrorReason;
-      $this->AdGroupAdErrorReason = $AdGroupAdErrorReason;
-      $this->AdGroupCriterionErrorReason = $AdGroupCriterionErrorReason;
-      $this->AdGroupServiceErrorReason = $AdGroupServiceErrorReason;
-      $this->AdxErrorReason = $AdxErrorReason;
-      $this->AuthenticationErrorReason = $AuthenticationErrorReason;
-      $this->AuthorizationErrorReason = $AuthorizationErrorReason;
-      $this->BetaErrorReason = $BetaErrorReason;
-      $this->BiddingErrorReason = $BiddingErrorReason;
-      $this->BiddingErrorsReason = $BiddingErrorsReason;
-      $this->BiddingTransitionErrorReason = $BiddingTransitionErrorReason;
-      $this->BudgetErrorReason = $BudgetErrorReason;
-      $this->BulkMutateJobErrorReason = $BulkMutateJobErrorReason;
-      $this->CampaignAdExtensionErrorReason = $CampaignAdExtensionErrorReason;
-      $this->CampaignCriterionErrorReason = $CampaignCriterionErrorReason;
-      $this->CampaignErrorReason = $CampaignErrorReason;
-      $this->ClientTermsErrorReason = $ClientTermsErrorReason;
-      $this->CollectionSizeErrorReason = $CollectionSizeErrorReason;
-      $this->CriterionErrorReason = $CriterionErrorReason;
-      $this->DatabaseErrorReason = $DatabaseErrorReason;
-      $this->DateErrorReason = $DateErrorReason;
-      $this->DateRangeErrorReason = $DateRangeErrorReason;
-      $this->DistinctErrorReason = $DistinctErrorReason;
-      $this->EntityAccessDeniedReason = $EntityAccessDeniedReason;
-      $this->EntityCountLimitExceededReason = $EntityCountLimitExceededReason;
-      $this->EntityNotFoundReason = $EntityNotFoundReason;
-      $this->ExperimentErrorReason = $ExperimentErrorReason;
-      $this->FeedItemErrorReason = $FeedItemErrorReason;
-      $this->ForwardCompatibilityErrorReason = $ForwardCompatibilityErrorReason;
-      $this->FunctionErrorReason = $FunctionErrorReason;
-      $this->FunctionParsingErrorReason = $FunctionParsingErrorReason;
-      $this->IdErrorReason = $IdErrorReason;
-      $this->ImageErrorReason = $ImageErrorReason;
-      $this->InternalApiErrorReason = $InternalApiErrorReason;
-      $this->JobErrorReason = $JobErrorReason;
-      $this->MediaErrorReason = $MediaErrorReason;
-      $this->MultiplierErrorReason = $MultiplierErrorReason;
-      $this->NewEntityCreationErrorReason = $NewEntityCreationErrorReason;
-      $this->NotEmptyErrorReason = $NotEmptyErrorReason;
-      $this->NullErrorReason = $NullErrorReason;
-      $this->OperationAccessDeniedReason = $OperationAccessDeniedReason;
-      $this->OperatorErrorReason = $OperatorErrorReason;
-      $this->PagingErrorReason = $PagingErrorReason;
-      $this->PolicyViolationErrorReason = $PolicyViolationErrorReason;
-      $this->QueryErrorReason = $QueryErrorReason;
-      $this->QuotaCheckErrorReason = $QuotaCheckErrorReason;
-      $this->QuotaErrorReason = $QuotaErrorReason;
-      $this->RangeErrorReason = $RangeErrorReason;
-      $this->RateExceededErrorReason = $RateExceededErrorReason;
-      $this->ReadOnlyErrorReason = $ReadOnlyErrorReason;
-      $this->RegionCodeErrorReason = $RegionCodeErrorReason;
-      $this->RejectedErrorReason = $RejectedErrorReason;
-      $this->RequestErrorReason = $RequestErrorReason;
-      $this->RequiredErrorReason = $RequiredErrorReason;
-      $this->SelectorErrorReason = $SelectorErrorReason;
-      $this->SettingErrorReason = $SettingErrorReason;
-      $this->SizeLimitErrorReason = $SizeLimitErrorReason;
-      $this->StatsQueryErrorReason = $StatsQueryErrorReason;
-      $this->StringLengthErrorReason = $StringLengthErrorReason;
-      $this->TargetErrorReason = $TargetErrorReason;
-      $this->UrlErrorReason = $UrlErrorReason;
-    }
-
+      public function __construct($AdErrorReason = null, $AdExtensionErrorReason = null, $AdGroupAdErrorReason = null, $AdGroupCriterionErrorReason = null, $AdGroupServiceErrorReason = null, $AdxErrorReason = null, $AuthenticationErrorReason = null, $AuthorizationErrorReason = null, $BetaErrorReason = null, $BiddingErrorReason = null, $BiddingErrorsReason = null, $BiddingTransitionErrorReason = null, $BudgetErrorReason = null, $BulkMutateJobErrorReason = null, $CampaignAdExtensionErrorReason = null, $CampaignCriterionErrorReason = null, $CampaignErrorReason = null, $ClientTermsErrorReason = null, $CollectionSizeErrorReason = null, $CriterionErrorReason = null, $DatabaseErrorReason = null, $DateErrorReason = null, $DateRangeErrorReason = null, $DistinctErrorReason = null, $EntityAccessDeniedReason = null, $EntityCountLimitExceededReason = null, $EntityNotFoundReason = null, $ExperimentErrorReason = null, $FeedItemErrorReason = null, $ForwardCompatibilityErrorReason = null, $FunctionErrorReason = null, $FunctionParsingErrorReason = null, $IdErrorReason = null, $ImageErrorReason = null, $InternalApiErrorReason = null, $JobErrorReason = null, $MediaErrorReason = null, $MultiplierErrorReason = null, $NewEntityCreationErrorReason = null, $NotEmptyErrorReason = null, $NullErrorReason = null, $OperationAccessDeniedReason = null, $OperatorErrorReason = null, $PagingErrorReason = null, $PolicyViolationErrorReason = null, $QueryErrorReason = null, $QuotaCheckErrorReason = null, $QuotaErrorReason = null, $RangeErrorReason = null, $RateExceededErrorReason = null, $ReadOnlyErrorReason = null, $RegionCodeErrorReason = null, $RejectedErrorReason = null, $RequestErrorReason = null, $RequiredErrorReason = null, $SelectorErrorReason = null, $SettingErrorReason = null, $SizeLimitErrorReason = null, $StatsQueryErrorReason = null, $StringLengthErrorReason = null, $TargetErrorReason = null, $UrlErrorReason = null)
+      {
+          $this->AdErrorReason = $AdErrorReason;
+          $this->AdExtensionErrorReason = $AdExtensionErrorReason;
+          $this->AdGroupAdErrorReason = $AdGroupAdErrorReason;
+          $this->AdGroupCriterionErrorReason = $AdGroupCriterionErrorReason;
+          $this->AdGroupServiceErrorReason = $AdGroupServiceErrorReason;
+          $this->AdxErrorReason = $AdxErrorReason;
+          $this->AuthenticationErrorReason = $AuthenticationErrorReason;
+          $this->AuthorizationErrorReason = $AuthorizationErrorReason;
+          $this->BetaErrorReason = $BetaErrorReason;
+          $this->BiddingErrorReason = $BiddingErrorReason;
+          $this->BiddingErrorsReason = $BiddingErrorsReason;
+          $this->BiddingTransitionErrorReason = $BiddingTransitionErrorReason;
+          $this->BudgetErrorReason = $BudgetErrorReason;
+          $this->BulkMutateJobErrorReason = $BulkMutateJobErrorReason;
+          $this->CampaignAdExtensionErrorReason = $CampaignAdExtensionErrorReason;
+          $this->CampaignCriterionErrorReason = $CampaignCriterionErrorReason;
+          $this->CampaignErrorReason = $CampaignErrorReason;
+          $this->ClientTermsErrorReason = $ClientTermsErrorReason;
+          $this->CollectionSizeErrorReason = $CollectionSizeErrorReason;
+          $this->CriterionErrorReason = $CriterionErrorReason;
+          $this->DatabaseErrorReason = $DatabaseErrorReason;
+          $this->DateErrorReason = $DateErrorReason;
+          $this->DateRangeErrorReason = $DateRangeErrorReason;
+          $this->DistinctErrorReason = $DistinctErrorReason;
+          $this->EntityAccessDeniedReason = $EntityAccessDeniedReason;
+          $this->EntityCountLimitExceededReason = $EntityCountLimitExceededReason;
+          $this->EntityNotFoundReason = $EntityNotFoundReason;
+          $this->ExperimentErrorReason = $ExperimentErrorReason;
+          $this->FeedItemErrorReason = $FeedItemErrorReason;
+          $this->ForwardCompatibilityErrorReason = $ForwardCompatibilityErrorReason;
+          $this->FunctionErrorReason = $FunctionErrorReason;
+          $this->FunctionParsingErrorReason = $FunctionParsingErrorReason;
+          $this->IdErrorReason = $IdErrorReason;
+          $this->ImageErrorReason = $ImageErrorReason;
+          $this->InternalApiErrorReason = $InternalApiErrorReason;
+          $this->JobErrorReason = $JobErrorReason;
+          $this->MediaErrorReason = $MediaErrorReason;
+          $this->MultiplierErrorReason = $MultiplierErrorReason;
+          $this->NewEntityCreationErrorReason = $NewEntityCreationErrorReason;
+          $this->NotEmptyErrorReason = $NotEmptyErrorReason;
+          $this->NullErrorReason = $NullErrorReason;
+          $this->OperationAccessDeniedReason = $OperationAccessDeniedReason;
+          $this->OperatorErrorReason = $OperatorErrorReason;
+          $this->PagingErrorReason = $PagingErrorReason;
+          $this->PolicyViolationErrorReason = $PolicyViolationErrorReason;
+          $this->QueryErrorReason = $QueryErrorReason;
+          $this->QuotaCheckErrorReason = $QuotaCheckErrorReason;
+          $this->QuotaErrorReason = $QuotaErrorReason;
+          $this->RangeErrorReason = $RangeErrorReason;
+          $this->RateExceededErrorReason = $RateExceededErrorReason;
+          $this->ReadOnlyErrorReason = $ReadOnlyErrorReason;
+          $this->RegionCodeErrorReason = $RegionCodeErrorReason;
+          $this->RejectedErrorReason = $RejectedErrorReason;
+          $this->RequestErrorReason = $RequestErrorReason;
+          $this->RequiredErrorReason = $RequiredErrorReason;
+          $this->SelectorErrorReason = $SelectorErrorReason;
+          $this->SettingErrorReason = $SettingErrorReason;
+          $this->SizeLimitErrorReason = $SizeLimitErrorReason;
+          $this->StatsQueryErrorReason = $StatsQueryErrorReason;
+          $this->StringLengthErrorReason = $StringLengthErrorReason;
+          $this->TargetErrorReason = $TargetErrorReason;
+          $this->UrlErrorReason = $UrlErrorReason;
+      }
   }

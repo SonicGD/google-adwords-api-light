@@ -9,9 +9,9 @@ require_once 'AlertService.require.php';
    */
   class AlertService extends AdWordsSoapClient
   {
-    const SERVICE_NAME = "AlertService";
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/mcm/v201406";
-    const ENDPOINT = "https://adwords.google.com/api/adwords/mcm/v201406/AlertService";
+      const SERVICE_NAME = "AlertService";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/mcm/v201406";
+      const ENDPOINT = "https://adwords.google.com/api/adwords/mcm/v201406/AlertService";
 
     /**
      * The endpoint of the service
@@ -91,8 +91,8 @@ require_once 'AlertService.require.php';
      */
     public function __construct($wsdl, $options, $user)
     {
-      $options["classmap"] = self::$classmap;
-      parent::__construct($wsdl, $options, $user, self::SERVICE_NAME,
+        $options["classmap"] = self::$classmap;
+        parent::__construct($wsdl, $options, $user, self::SERVICE_NAME,
           self::WSDL_NAMESPACE);
     }
     /**
@@ -108,9 +108,9 @@ require_once 'AlertService.require.php';
      */
     public function get($selector)
     {
-      $args = new AlertServiceGet($selector);
-      $result = $this->__soapCall("get", array($args));
+        $args = new AlertServiceGet($selector);
+        $result = $this->__soapCall("get", array($args));
 
-      return $result->rval;
+        return $result->rval;
     }
   }

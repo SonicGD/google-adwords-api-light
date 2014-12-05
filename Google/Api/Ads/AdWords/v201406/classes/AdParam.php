@@ -20,8 +20,8 @@
    */
   class AdParam
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "AdParam";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "AdParam";
 
     /**
      * @access public
@@ -53,7 +53,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -62,15 +62,14 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($adGroupId = null, $criterionId = null, $insertionText = null, $paramIndex = null)
-    {
-      $this->adGroupId = $adGroupId;
-      $this->criterionId = $criterionId;
-      $this->insertionText = $insertionText;
-      $this->paramIndex = $paramIndex;
-    }
-
+      public function __construct($adGroupId = null, $criterionId = null, $insertionText = null, $paramIndex = null)
+      {
+          $this->adGroupId = $adGroupId;
+          $this->criterionId = $criterionId;
+          $this->insertionText = $insertionText;
+          $this->paramIndex = $paramIndex;
+      }
   }

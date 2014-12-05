@@ -11,8 +11,8 @@
    */
   class ProductBiddingCategoryData extends ConstantData
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "ProductBiddingCategoryData";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "ProductBiddingCategoryData";
 
     /**
      * @access public
@@ -44,7 +44,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -53,17 +53,16 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($dimensionValue = null, $parentDimensionValue = null, $country = null, $displayValue = null, $ConstantDataType = null)
-    {
-      parent::__construct();
-      $this->dimensionValue = $dimensionValue;
-      $this->parentDimensionValue = $parentDimensionValue;
-      $this->country = $country;
-      $this->displayValue = $displayValue;
-      $this->ConstantDataType = $ConstantDataType;
-    }
-
+      public function __construct($dimensionValue = null, $parentDimensionValue = null, $country = null, $displayValue = null, $ConstantDataType = null)
+      {
+          parent::__construct();
+          $this->dimensionValue = $dimensionValue;
+          $this->parentDimensionValue = $parentDimensionValue;
+          $this->country = $country;
+          $this->displayValue = $displayValue;
+          $this->ConstantDataType = $ConstantDataType;
+      }
   }

@@ -8,8 +8,8 @@
    */
   class ConstantOperand extends FunctionArgumentOperand
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "ConstantOperand";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "ConstantOperand";
 
     /**
      * @access public
@@ -53,7 +53,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -62,19 +62,18 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($type = null, $unit = null, $longValue = null, $booleanValue = null, $doubleValue = null, $stringValue = null, $FunctionArgumentOperandType = null)
-    {
-      parent::__construct();
-      $this->type = $type;
-      $this->unit = $unit;
-      $this->longValue = $longValue;
-      $this->booleanValue = $booleanValue;
-      $this->doubleValue = $doubleValue;
-      $this->stringValue = $stringValue;
-      $this->FunctionArgumentOperandType = $FunctionArgumentOperandType;
-    }
-
+      public function __construct($type = null, $unit = null, $longValue = null, $booleanValue = null, $doubleValue = null, $stringValue = null, $FunctionArgumentOperandType = null)
+      {
+          parent::__construct();
+          $this->type = $type;
+          $this->unit = $unit;
+          $this->longValue = $longValue;
+          $this->booleanValue = $booleanValue;
+          $this->doubleValue = $doubleValue;
+          $this->stringValue = $stringValue;
+          $this->FunctionArgumentOperandType = $FunctionArgumentOperandType;
+      }
   }

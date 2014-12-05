@@ -9,8 +9,8 @@
    */
   class TempAdUnionId extends AdUnionId
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "TempAdUnionId";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "TempAdUnionId";
 
     /**
      * Gets the namesapce of this class
@@ -18,7 +18,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -27,14 +27,13 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($id = null, $AdUnionIdType = null)
-    {
-      parent::__construct();
-      $this->id = $id;
-      $this->AdUnionIdType = $AdUnionIdType;
-    }
-
+      public function __construct($id = null, $AdUnionIdType = null)
+      {
+          parent::__construct();
+          $this->id = $id;
+          $this->AdUnionIdType = $AdUnionIdType;
+      }
   }

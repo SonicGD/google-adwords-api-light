@@ -11,8 +11,8 @@
    */
   class NegativeCriterion extends Criterion
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/express/v201406";
-    const XSI_TYPE = "NegativeCriterion";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/express/v201406";
+      const XSI_TYPE = "NegativeCriterion";
 
     /**
      * @access public
@@ -26,7 +26,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -35,16 +35,15 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($criterion = null, $id = null, $type = null, $CriterionType = null)
-    {
-      parent::__construct();
-      $this->criterion = $criterion;
-      $this->id = $id;
-      $this->type = $type;
-      $this->CriterionType = $CriterionType;
-    }
-
+      public function __construct($criterion = null, $id = null, $type = null, $CriterionType = null)
+      {
+          parent::__construct();
+          $this->criterion = $criterion;
+          $this->id = $id;
+          $this->type = $type;
+          $this->CriterionType = $CriterionType;
+      }
   }

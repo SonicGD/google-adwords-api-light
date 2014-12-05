@@ -8,8 +8,8 @@
    */
   class Audio extends Media
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "Audio";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "Audio";
 
     /**
      * @access public
@@ -35,7 +35,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -44,26 +44,25 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($durationMillis = null, $streamingUrl = null, $readyToPlayOnTheWeb = null, $mediaId = null, $type = null, $referenceId = null, $dimensions = null, $urls = null, $mimeType = null, $sourceUrl = null, $name = null, $fileSize = null, $creationTime = null, $MediaType = null)
-    {
-      parent::__construct();
-      $this->durationMillis = $durationMillis;
-      $this->streamingUrl = $streamingUrl;
-      $this->readyToPlayOnTheWeb = $readyToPlayOnTheWeb;
-      $this->mediaId = $mediaId;
-      $this->type = $type;
-      $this->referenceId = $referenceId;
-      $this->dimensions = $dimensions;
-      $this->urls = $urls;
-      $this->mimeType = $mimeType;
-      $this->sourceUrl = $sourceUrl;
-      $this->name = $name;
-      $this->fileSize = $fileSize;
-      $this->creationTime = $creationTime;
-      $this->MediaType = $MediaType;
-    }
-
+      public function __construct($durationMillis = null, $streamingUrl = null, $readyToPlayOnTheWeb = null, $mediaId = null, $type = null, $referenceId = null, $dimensions = null, $urls = null, $mimeType = null, $sourceUrl = null, $name = null, $fileSize = null, $creationTime = null, $MediaType = null)
+      {
+          parent::__construct();
+          $this->durationMillis = $durationMillis;
+          $this->streamingUrl = $streamingUrl;
+          $this->readyToPlayOnTheWeb = $readyToPlayOnTheWeb;
+          $this->mediaId = $mediaId;
+          $this->type = $type;
+          $this->referenceId = $referenceId;
+          $this->dimensions = $dimensions;
+          $this->urls = $urls;
+          $this->mimeType = $mimeType;
+          $this->sourceUrl = $sourceUrl;
+          $this->name = $name;
+          $this->fileSize = $fileSize;
+          $this->creationTime = $creationTime;
+          $this->MediaType = $MediaType;
+      }
   }

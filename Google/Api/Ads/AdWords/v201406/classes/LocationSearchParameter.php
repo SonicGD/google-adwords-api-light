@@ -2,10 +2,9 @@
 
 
   /**
-   * A {@link SearchParameter} for both {@code PLACEMENT} and {@code KEYWORD}
-   * {@link IdeaType}s used to indicate the locations being targeted. This can
-   * be used, for example, to search for {@code KEYWORD} {@link IdeaType}s that
-   * are best for Japan and Los Angeles.
+   * A {@link SearchParameter} used to indicate the locations being targeted.
+   * This can be used, for example, to search for {@code KEYWORD}
+   * {@link IdeaType}s that are best for Japan and Los Angeles.
    *
    * <p>This parameter replaces the {@code CountryTargetSearchParameter}.
    *
@@ -21,8 +20,8 @@
    */
   class LocationSearchParameter extends SearchParameter
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
-    const XSI_TYPE = "LocationSearchParameter";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
+      const XSI_TYPE = "LocationSearchParameter";
 
     /**
      * @access public
@@ -36,7 +35,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -45,14 +44,13 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($locations = null, $SearchParameterType = null)
-    {
-      parent::__construct();
-      $this->locations = $locations;
-      $this->SearchParameterType = $SearchParameterType;
-    }
-
+      public function __construct($locations = null, $SearchParameterType = null)
+      {
+          parent::__construct();
+          $this->locations = $locations;
+          $this->SearchParameterType = $SearchParameterType;
+      }
   }

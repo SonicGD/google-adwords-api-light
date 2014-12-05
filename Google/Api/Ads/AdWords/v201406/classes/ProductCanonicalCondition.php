@@ -9,8 +9,8 @@
    */
   class ProductCanonicalCondition extends ProductDimension
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "ProductCanonicalCondition";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "ProductCanonicalCondition";
 
     /**
      * @access public
@@ -24,7 +24,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -33,14 +33,13 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($condition = null, $ProductDimensionType = null)
-    {
-      parent::__construct();
-      $this->condition = $condition;
-      $this->ProductDimensionType = $ProductDimensionType;
-    }
-
+      public function __construct($condition = null, $ProductDimensionType = null)
+      {
+          parent::__construct();
+          $this->condition = $condition;
+          $this->ProductDimensionType = $ProductDimensionType;
+      }
   }

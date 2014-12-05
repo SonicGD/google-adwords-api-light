@@ -2,8 +2,7 @@
 
 
   /**
-   * A {@link SearchParameter} for {@code KEYWORD} and {@code PLACEMENT}
-   * {@link IdeaType}s that specifies a set of URLs that results should
+   * A {@link SearchParameter} that specifies a set of URLs that results should
    * in some way be related too. For example, keyword results would be
    * similar to content keywords found on the related URLs.
    * <p>This search parameter can be used in bulk keyword requests through the {@link com.google.ads.api.services.targetingideas.TargetingIdeaService#getBulkKeywordIdeas(TargetingIdeaSelector)} method. It must be single-valued when used in a call to that method.
@@ -14,8 +13,8 @@
    */
   class RelatedToUrlSearchParameter extends SearchParameter
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
-    const XSI_TYPE = "RelatedToUrlSearchParameter";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
+      const XSI_TYPE = "RelatedToUrlSearchParameter";
 
     /**
      * @access public
@@ -35,7 +34,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -44,15 +43,14 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($urls = null, $includeSubUrls = null, $SearchParameterType = null)
-    {
-      parent::__construct();
-      $this->urls = $urls;
-      $this->includeSubUrls = $includeSubUrls;
-      $this->SearchParameterType = $SearchParameterType;
-    }
-
+      public function __construct($urls = null, $includeSubUrls = null, $SearchParameterType = null)
+      {
+          parent::__construct();
+          $this->urls = $urls;
+          $this->includeSubUrls = $includeSubUrls;
+          $this->SearchParameterType = $SearchParameterType;
+      }
   }

@@ -8,15 +8,15 @@
    */
   class Estimate
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
-    const XSI_TYPE = "Estimate";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
+      const XSI_TYPE = "Estimate";
 
     /**
      * @access public
      * @var string
      */
     public $EstimateType;
-    private $_parameterMap = array(
+      private $_parameterMap = array(
       "Estimate.Type" => "EstimateType",
     );
 
@@ -27,7 +27,7 @@
      */
     public function __set($var, $value)
     {
-      $this->{$this->_parameterMap[$var]} = $value;
+        $this->{$this->_parameterMap[$var]} = $value;
     }
 
     /**
@@ -37,11 +37,11 @@
      */
     public function __get($var)
     {
-      if (!isset($this->_parameterMap[$var])) {
-        return null;
-      }
+        if (!isset($this->_parameterMap[$var])) {
+            return null;
+        }
 
-      return $this->{$this->_parameterMap[$var]};
+        return $this->{$this->_parameterMap[$var]};
     }
 
     /**
@@ -50,7 +50,7 @@
      */
     protected function getParameterMap()
     {
-      return $this->_parameterMap;
+        return $this->_parameterMap;
     }
 
     /**
@@ -59,7 +59,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -68,12 +68,11 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($EstimateType = null)
-    {
-      $this->EstimateType = $EstimateType;
-    }
-
+      public function __construct($EstimateType = null)
+      {
+          $this->EstimateType = $EstimateType;
+      }
   }

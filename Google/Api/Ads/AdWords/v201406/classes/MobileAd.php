@@ -58,8 +58,8 @@
    */
   class MobileAd extends Ad
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "MobileAd";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "MobileAd";
 
     /**
      * @access public
@@ -109,7 +109,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -118,28 +118,27 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($headline = null, $description = null, $markupLanguages = null, $mobileCarriers = null, $businessName = null, $countryCode = null, $phoneNumber = null, $id = null, $url = null, $displayUrl = null, $finalUrls = null, $finalMobileUrls = null, $trackingUrlTemplate = null, $urlCustomParameters = null, $devicePreference = null, $AdType = null)
-    {
-      parent::__construct();
-      $this->headline = $headline;
-      $this->description = $description;
-      $this->markupLanguages = $markupLanguages;
-      $this->mobileCarriers = $mobileCarriers;
-      $this->businessName = $businessName;
-      $this->countryCode = $countryCode;
-      $this->phoneNumber = $phoneNumber;
-      $this->id = $id;
-      $this->url = $url;
-      $this->displayUrl = $displayUrl;
-      $this->finalUrls = $finalUrls;
-      $this->finalMobileUrls = $finalMobileUrls;
-      $this->trackingUrlTemplate = $trackingUrlTemplate;
-      $this->urlCustomParameters = $urlCustomParameters;
-      $this->devicePreference = $devicePreference;
-      $this->AdType = $AdType;
-    }
-
+      public function __construct($headline = null, $description = null, $markupLanguages = null, $mobileCarriers = null, $businessName = null, $countryCode = null, $phoneNumber = null, $id = null, $url = null, $displayUrl = null, $finalUrls = null, $finalMobileUrls = null, $trackingUrlTemplate = null, $urlCustomParameters = null, $devicePreference = null, $AdType = null)
+      {
+          parent::__construct();
+          $this->headline = $headline;
+          $this->description = $description;
+          $this->markupLanguages = $markupLanguages;
+          $this->mobileCarriers = $mobileCarriers;
+          $this->businessName = $businessName;
+          $this->countryCode = $countryCode;
+          $this->phoneNumber = $phoneNumber;
+          $this->id = $id;
+          $this->url = $url;
+          $this->displayUrl = $displayUrl;
+          $this->finalUrls = $finalUrls;
+          $this->finalMobileUrls = $finalMobileUrls;
+          $this->trackingUrlTemplate = $trackingUrlTemplate;
+          $this->urlCustomParameters = $urlCustomParameters;
+          $this->devicePreference = $devicePreference;
+          $this->AdType = $AdType;
+      }
   }

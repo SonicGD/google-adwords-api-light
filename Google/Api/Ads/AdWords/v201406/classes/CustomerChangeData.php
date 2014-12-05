@@ -8,8 +8,8 @@
    */
   class CustomerChangeData
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/ch/v201406";
-    const XSI_TYPE = "CustomerChangeData";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/ch/v201406";
+      const XSI_TYPE = "CustomerChangeData";
 
     /**
      * @access public
@@ -35,7 +35,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -44,14 +44,13 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($changedCampaigns = null, $changedFeeds = null, $lastChangeTimestamp = null)
-    {
-      $this->changedCampaigns = $changedCampaigns;
-      $this->changedFeeds = $changedFeeds;
-      $this->lastChangeTimestamp = $lastChangeTimestamp;
-    }
-
+      public function __construct($changedCampaigns = null, $changedFeeds = null, $lastChangeTimestamp = null)
+      {
+          $this->changedCampaigns = $changedCampaigns;
+          $this->changedFeeds = $changedFeeds;
+          $this->lastChangeTimestamp = $lastChangeTimestamp;
+      }
   }

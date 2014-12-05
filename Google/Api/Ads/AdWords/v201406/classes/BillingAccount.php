@@ -8,8 +8,8 @@
    */
   class BillingAccount
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/billing/v201406";
-    const XSI_TYPE = "BillingAccount";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/billing/v201406";
+      const XSI_TYPE = "BillingAccount";
 
     /**
      * @access public
@@ -47,7 +47,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -56,16 +56,15 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($id = null, $name = null, $currencyCode = null, $primaryBillingId = null, $secondaryBillingId = null)
-    {
-      $this->id = $id;
-      $this->name = $name;
-      $this->currencyCode = $currencyCode;
-      $this->primaryBillingId = $primaryBillingId;
-      $this->secondaryBillingId = $secondaryBillingId;
-    }
-
+      public function __construct($id = null, $name = null, $currencyCode = null, $primaryBillingId = null, $secondaryBillingId = null)
+      {
+          $this->id = $id;
+          $this->name = $name;
+          $this->currencyCode = $currencyCode;
+          $this->primaryBillingId = $primaryBillingId;
+          $this->secondaryBillingId = $secondaryBillingId;
+      }
   }

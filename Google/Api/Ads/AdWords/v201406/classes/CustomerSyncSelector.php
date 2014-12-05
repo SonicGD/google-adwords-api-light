@@ -8,8 +8,8 @@
    */
   class CustomerSyncSelector
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/ch/v201406";
-    const XSI_TYPE = "CustomerSyncSelector";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/ch/v201406";
+      const XSI_TYPE = "CustomerSyncSelector";
 
     /**
      * @access public
@@ -35,7 +35,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -44,14 +44,13 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($dateTimeRange = null, $campaignIds = null, $feedIds = null)
-    {
-      $this->dateTimeRange = $dateTimeRange;
-      $this->campaignIds = $campaignIds;
-      $this->feedIds = $feedIds;
-    }
-
+      public function __construct($dateTimeRange = null, $campaignIds = null, $feedIds = null)
+      {
+          $this->dateTimeRange = $dateTimeRange;
+          $this->campaignIds = $campaignIds;
+          $this->feedIds = $feedIds;
+      }
   }

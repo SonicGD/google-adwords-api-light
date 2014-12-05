@@ -8,8 +8,8 @@
    */
   class AdGroupCriterion
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "AdGroupCriterion";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "AdGroupCriterion";
 
     /**
      * @access public
@@ -46,7 +46,7 @@
      * @var string
      */
     public $AdGroupCriterionType;
-    private $_parameterMap = array(
+      private $_parameterMap = array(
       "AdGroupCriterion.Type" => "AdGroupCriterionType",
     );
 
@@ -57,7 +57,7 @@
      */
     public function __set($var, $value)
     {
-      $this->{$this->_parameterMap[$var]} = $value;
+        $this->{$this->_parameterMap[$var]} = $value;
     }
 
     /**
@@ -67,11 +67,11 @@
      */
     public function __get($var)
     {
-      if (!isset($this->_parameterMap[$var])) {
-        return null;
-      }
+        if (!isset($this->_parameterMap[$var])) {
+            return null;
+        }
 
-      return $this->{$this->_parameterMap[$var]};
+        return $this->{$this->_parameterMap[$var]};
     }
 
     /**
@@ -80,7 +80,7 @@
      */
     protected function getParameterMap()
     {
-      return $this->_parameterMap;
+        return $this->_parameterMap;
     }
 
     /**
@@ -89,7 +89,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -98,17 +98,16 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($adGroupId = null, $criterionUse = null, $criterion = null, $labels = null, $forwardCompatibilityMap = null, $AdGroupCriterionType = null)
-    {
-      $this->adGroupId = $adGroupId;
-      $this->criterionUse = $criterionUse;
-      $this->criterion = $criterion;
-      $this->labels = $labels;
-      $this->forwardCompatibilityMap = $forwardCompatibilityMap;
-      $this->AdGroupCriterionType = $AdGroupCriterionType;
-    }
-
+      public function __construct($adGroupId = null, $criterionUse = null, $criterion = null, $labels = null, $forwardCompatibilityMap = null, $AdGroupCriterionType = null)
+      {
+          $this->adGroupId = $adGroupId;
+          $this->criterionUse = $criterionUse;
+          $this->criterion = $criterion;
+          $this->labels = $labels;
+          $this->forwardCompatibilityMap = $forwardCompatibilityMap;
+          $this->AdGroupCriterionType = $AdGroupCriterionType;
+      }
   }

@@ -10,8 +10,8 @@
    */
   class BudgetOptimizerBiddingScheme extends BiddingScheme
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "BudgetOptimizerBiddingScheme";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "BudgetOptimizerBiddingScheme";
 
     /**
      * @access public
@@ -31,7 +31,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -40,15 +40,14 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($bidCeiling = null, $enhancedCpcEnabled = null, $BiddingSchemeType = null)
-    {
-      parent::__construct();
-      $this->bidCeiling = $bidCeiling;
-      $this->enhancedCpcEnabled = $enhancedCpcEnabled;
-      $this->BiddingSchemeType = $BiddingSchemeType;
-    }
-
+      public function __construct($bidCeiling = null, $enhancedCpcEnabled = null, $BiddingSchemeType = null)
+      {
+          parent::__construct();
+          $this->bidCeiling = $bidCeiling;
+          $this->enhancedCpcEnabled = $enhancedCpcEnabled;
+          $this->BiddingSchemeType = $BiddingSchemeType;
+      }
   }

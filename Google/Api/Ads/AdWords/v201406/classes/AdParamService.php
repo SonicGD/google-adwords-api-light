@@ -9,9 +9,9 @@ require_once 'AdParamService.require.php';
    */
   class AdParamService extends AdWordsSoapClient
   {
-    const SERVICE_NAME = "AdParamService";
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const ENDPOINT = "https://adwords.google.com/api/adwords/cm/v201406/AdParamService";
+      const SERVICE_NAME = "AdParamService";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const ENDPOINT = "https://adwords.google.com/api/adwords/cm/v201406/AdParamService";
 
     /**
      * The endpoint of the service
@@ -104,8 +104,8 @@ require_once 'AdParamService.require.php';
      */
     public function __construct($wsdl, $options, $user)
     {
-      $options["classmap"] = self::$classmap;
-      parent::__construct($wsdl, $options, $user, self::SERVICE_NAME,
+        $options["classmap"] = self::$classmap;
+        parent::__construct($wsdl, $options, $user, self::SERVICE_NAME,
           self::WSDL_NAMESPACE);
     }
     /**
@@ -121,10 +121,10 @@ require_once 'AdParamService.require.php';
      */
     public function get($serviceSelector)
     {
-      $args = new AdParamServiceGet($serviceSelector);
-      $result = $this->__soapCall("get", array($args));
+        $args = new AdParamServiceGet($serviceSelector);
+        $result = $this->__soapCall("get", array($args));
 
-      return $result->rval;
+        return $result->rval;
     }
     /**
      * <span class="constraint ContentsNotNull">This field must not contain {@code null} elements.</span>
@@ -154,9 +154,9 @@ require_once 'AdParamService.require.php';
      */
     public function mutate($operations)
     {
-      $args = new AdParamServiceMutate($operations);
-      $result = $this->__soapCall("mutate", array($args));
+        $args = new AdParamServiceMutate($operations);
+        $result = $this->__soapCall("mutate", array($args));
 
-      return $result->rval;
+        return $result->rval;
     }
   }

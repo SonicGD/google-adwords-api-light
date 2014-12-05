@@ -8,8 +8,8 @@
    */
   class AppConversion extends ConversionTracker
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "AppConversion";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "AppConversion";
 
     /**
      * @access public
@@ -47,7 +47,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -56,31 +56,30 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($appId = null, $appPlatform = null, $snippet = null, $appConversionType = null, $appPostbackUrl = null, $id = null, $originalConversionTypeId = null, $name = null, $status = null, $category = null, $stats = null, $viewthroughLookbackWindow = null, $isProductAdsChargeable = null, $productAdsChargeableConversionWindow = null, $ctcLookbackWindow = null, $countingType = null, $defaultRevenueValue = null, $alwaysUseDefaultRevenueValue = null, $ConversionTrackerType = null)
-    {
-      parent::__construct();
-      $this->appId = $appId;
-      $this->appPlatform = $appPlatform;
-      $this->snippet = $snippet;
-      $this->appConversionType = $appConversionType;
-      $this->appPostbackUrl = $appPostbackUrl;
-      $this->id = $id;
-      $this->originalConversionTypeId = $originalConversionTypeId;
-      $this->name = $name;
-      $this->status = $status;
-      $this->category = $category;
-      $this->stats = $stats;
-      $this->viewthroughLookbackWindow = $viewthroughLookbackWindow;
-      $this->isProductAdsChargeable = $isProductAdsChargeable;
-      $this->productAdsChargeableConversionWindow = $productAdsChargeableConversionWindow;
-      $this->ctcLookbackWindow = $ctcLookbackWindow;
-      $this->countingType = $countingType;
-      $this->defaultRevenueValue = $defaultRevenueValue;
-      $this->alwaysUseDefaultRevenueValue = $alwaysUseDefaultRevenueValue;
-      $this->ConversionTrackerType = $ConversionTrackerType;
-    }
-
+      public function __construct($appId = null, $appPlatform = null, $snippet = null, $appConversionType = null, $appPostbackUrl = null, $id = null, $originalConversionTypeId = null, $name = null, $status = null, $category = null, $stats = null, $viewthroughLookbackWindow = null, $isProductAdsChargeable = null, $productAdsChargeableConversionWindow = null, $ctcLookbackWindow = null, $countingType = null, $defaultRevenueValue = null, $alwaysUseDefaultRevenueValue = null, $ConversionTrackerType = null)
+      {
+          parent::__construct();
+          $this->appId = $appId;
+          $this->appPlatform = $appPlatform;
+          $this->snippet = $snippet;
+          $this->appConversionType = $appConversionType;
+          $this->appPostbackUrl = $appPostbackUrl;
+          $this->id = $id;
+          $this->originalConversionTypeId = $originalConversionTypeId;
+          $this->name = $name;
+          $this->status = $status;
+          $this->category = $category;
+          $this->stats = $stats;
+          $this->viewthroughLookbackWindow = $viewthroughLookbackWindow;
+          $this->isProductAdsChargeable = $isProductAdsChargeable;
+          $this->productAdsChargeableConversionWindow = $productAdsChargeableConversionWindow;
+          $this->ctcLookbackWindow = $ctcLookbackWindow;
+          $this->countingType = $countingType;
+          $this->defaultRevenueValue = $defaultRevenueValue;
+          $this->alwaysUseDefaultRevenueValue = $alwaysUseDefaultRevenueValue;
+          $this->ConversionTrackerType = $ConversionTrackerType;
+      }
   }

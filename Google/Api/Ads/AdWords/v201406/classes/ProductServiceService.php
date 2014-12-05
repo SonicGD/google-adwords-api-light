@@ -9,9 +9,9 @@ require_once 'ProductServiceService.require.php';
    */
   class ProductServiceService extends AdWordsSoapClient
   {
-    const SERVICE_NAME = "ProductServiceService";
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/express/v201406";
-    const ENDPOINT = "https://adwords.google.com/api/adwords/express/v201406/ProductServiceService";
+      const SERVICE_NAME = "ProductServiceService";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/express/v201406";
+      const ENDPOINT = "https://adwords.google.com/api/adwords/express/v201406/ProductServiceService";
 
     /**
      * The endpoint of the service
@@ -106,8 +106,8 @@ require_once 'ProductServiceService.require.php';
      */
     public function __construct($wsdl, $options, $user)
     {
-      $options["classmap"] = self::$classmap;
-      parent::__construct($wsdl, $options, $user, self::SERVICE_NAME,
+        $options["classmap"] = self::$classmap;
+        parent::__construct($wsdl, $options, $user, self::SERVICE_NAME,
           self::WSDL_NAMESPACE);
     }
     /**
@@ -123,9 +123,9 @@ require_once 'ProductServiceService.require.php';
      */
     public function get($selector)
     {
-      $args = new ProductServiceServiceGet($selector);
-      $result = $this->__soapCall("get", array($args));
+        $args = new ProductServiceServiceGet($selector);
+        $result = $this->__soapCall("get", array($args));
 
-      return $result->rval;
+        return $result->rval;
     }
   }

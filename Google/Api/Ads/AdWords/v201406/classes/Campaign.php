@@ -8,8 +8,8 @@
    */
   class Campaign
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "Campaign";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "Campaign";
 
     /**
      * @access public
@@ -131,7 +131,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -140,30 +140,29 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($id = null, $name = null, $status = null, $servingStatus = null, $startDate = null, $endDate = null, $budget = null, $conversionOptimizerEligibility = null, $adServingOptimizationStatus = null, $frequencyCap = null, $settings = null, $advertisingChannelType = null, $networkSetting = null, $labels = null, $biddingStrategyConfiguration = null, $forwardCompatibilityMap = null, $displaySelect = null, $trackingUrlTemplate = null, $urlCustomParameters = null)
-    {
-      $this->id = $id;
-      $this->name = $name;
-      $this->status = $status;
-      $this->servingStatus = $servingStatus;
-      $this->startDate = $startDate;
-      $this->endDate = $endDate;
-      $this->budget = $budget;
-      $this->conversionOptimizerEligibility = $conversionOptimizerEligibility;
-      $this->adServingOptimizationStatus = $adServingOptimizationStatus;
-      $this->frequencyCap = $frequencyCap;
-      $this->settings = $settings;
-      $this->advertisingChannelType = $advertisingChannelType;
-      $this->networkSetting = $networkSetting;
-      $this->labels = $labels;
-      $this->biddingStrategyConfiguration = $biddingStrategyConfiguration;
-      $this->forwardCompatibilityMap = $forwardCompatibilityMap;
-      $this->displaySelect = $displaySelect;
-      $this->trackingUrlTemplate = $trackingUrlTemplate;
-      $this->urlCustomParameters = $urlCustomParameters;
-    }
-
+      public function __construct($id = null, $name = null, $status = null, $servingStatus = null, $startDate = null, $endDate = null, $budget = null, $conversionOptimizerEligibility = null, $adServingOptimizationStatus = null, $frequencyCap = null, $settings = null, $advertisingChannelType = null, $networkSetting = null, $labels = null, $biddingStrategyConfiguration = null, $forwardCompatibilityMap = null, $displaySelect = null, $trackingUrlTemplate = null, $urlCustomParameters = null)
+      {
+          $this->id = $id;
+          $this->name = $name;
+          $this->status = $status;
+          $this->servingStatus = $servingStatus;
+          $this->startDate = $startDate;
+          $this->endDate = $endDate;
+          $this->budget = $budget;
+          $this->conversionOptimizerEligibility = $conversionOptimizerEligibility;
+          $this->adServingOptimizationStatus = $adServingOptimizationStatus;
+          $this->frequencyCap = $frequencyCap;
+          $this->settings = $settings;
+          $this->advertisingChannelType = $advertisingChannelType;
+          $this->networkSetting = $networkSetting;
+          $this->labels = $labels;
+          $this->biddingStrategyConfiguration = $biddingStrategyConfiguration;
+          $this->forwardCompatibilityMap = $forwardCompatibilityMap;
+          $this->displaySelect = $displaySelect;
+          $this->trackingUrlTemplate = $trackingUrlTemplate;
+          $this->urlCustomParameters = $urlCustomParameters;
+      }
   }

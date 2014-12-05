@@ -9,9 +9,9 @@ require_once 'OfflineConversionFeedService.require.php';
    */
   class OfflineConversionFeedService extends AdWordsSoapClient
   {
-    const SERVICE_NAME = "OfflineConversionFeedService";
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const ENDPOINT = "https://adwords.google.com/api/adwords/cm/v201406/OfflineConversionFeedService";
+      const SERVICE_NAME = "OfflineConversionFeedService";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const ENDPOINT = "https://adwords.google.com/api/adwords/cm/v201406/OfflineConversionFeedService";
 
     /**
      * The endpoint of the service
@@ -104,8 +104,8 @@ require_once 'OfflineConversionFeedService.require.php';
      */
     public function __construct($wsdl, $options, $user)
     {
-      $options["classmap"] = self::$classmap;
-      parent::__construct($wsdl, $options, $user, self::SERVICE_NAME,
+        $options["classmap"] = self::$classmap;
+        parent::__construct($wsdl, $options, $user, self::SERVICE_NAME,
           self::WSDL_NAMESPACE);
     }
     /**
@@ -127,9 +127,9 @@ require_once 'OfflineConversionFeedService.require.php';
      */
     public function mutate($operations)
     {
-      $args = new OfflineConversionFeedServiceMutate($operations);
-      $result = $this->__soapCall("mutate", array($args));
+        $args = new OfflineConversionFeedServiceMutate($operations);
+        $result = $this->__soapCall("mutate", array($args));
 
-      return $result->rval;
+        return $result->rval;
     }
   }

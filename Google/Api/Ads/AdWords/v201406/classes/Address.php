@@ -12,8 +12,8 @@
    */
   class Address
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "Address";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "Address";
 
     /**
      * @access public
@@ -63,7 +63,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -72,18 +72,17 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($streetAddress = null, $streetAddress2 = null, $cityName = null, $provinceCode = null, $provinceName = null, $postalCode = null, $countryCode = null)
-    {
-      $this->streetAddress = $streetAddress;
-      $this->streetAddress2 = $streetAddress2;
-      $this->cityName = $cityName;
-      $this->provinceCode = $provinceCode;
-      $this->provinceName = $provinceName;
-      $this->postalCode = $postalCode;
-      $this->countryCode = $countryCode;
-    }
-
+      public function __construct($streetAddress = null, $streetAddress2 = null, $cityName = null, $provinceCode = null, $provinceName = null, $postalCode = null, $countryCode = null)
+      {
+          $this->streetAddress = $streetAddress;
+          $this->streetAddress2 = $streetAddress2;
+          $this->cityName = $cityName;
+          $this->provinceCode = $provinceCode;
+          $this->provinceName = $provinceName;
+          $this->postalCode = $postalCode;
+          $this->countryCode = $countryCode;
+      }
   }

@@ -8,8 +8,8 @@
    */
   class ManagedCustomer
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/mcm/v201406";
-    const XSI_TYPE = "ManagedCustomer";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/mcm/v201406";
+      const XSI_TYPE = "ManagedCustomer";
 
     /**
      * @access public
@@ -65,7 +65,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -74,19 +74,18 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($name = null, $login = null, $companyName = null, $customerId = null, $canManageClients = null, $currencyCode = null, $dateTimeZone = null, $testAccount = null)
-    {
-      $this->name = $name;
-      $this->login = $login;
-      $this->companyName = $companyName;
-      $this->customerId = $customerId;
-      $this->canManageClients = $canManageClients;
-      $this->currencyCode = $currencyCode;
-      $this->dateTimeZone = $dateTimeZone;
-      $this->testAccount = $testAccount;
-    }
-
+      public function __construct($name = null, $login = null, $companyName = null, $customerId = null, $canManageClients = null, $currencyCode = null, $dateTimeZone = null, $testAccount = null)
+      {
+          $this->name = $name;
+          $this->login = $login;
+          $this->companyName = $companyName;
+          $this->customerId = $customerId;
+          $this->canManageClients = $canManageClients;
+          $this->currencyCode = $currencyCode;
+          $this->dateTimeZone = $dateTimeZone;
+          $this->testAccount = $testAccount;
+      }
   }

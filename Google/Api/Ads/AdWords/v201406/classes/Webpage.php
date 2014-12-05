@@ -10,8 +10,8 @@
    */
   class Webpage extends Criterion
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "Webpage";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "Webpage";
 
     /**
      * @access public
@@ -37,7 +37,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -46,18 +46,17 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($parameter = null, $criteriaCoverage = null, $criteriaSamples = null, $id = null, $type = null, $CriterionType = null)
-    {
-      parent::__construct();
-      $this->parameter = $parameter;
-      $this->criteriaCoverage = $criteriaCoverage;
-      $this->criteriaSamples = $criteriaSamples;
-      $this->id = $id;
-      $this->type = $type;
-      $this->CriterionType = $CriterionType;
-    }
-
+      public function __construct($parameter = null, $criteriaCoverage = null, $criteriaSamples = null, $id = null, $type = null, $CriterionType = null)
+      {
+          parent::__construct();
+          $this->parameter = $parameter;
+          $this->criteriaCoverage = $criteriaCoverage;
+          $this->criteriaSamples = $criteriaSamples;
+          $this->id = $id;
+          $this->type = $type;
+          $this->CriterionType = $CriterionType;
+      }
   }

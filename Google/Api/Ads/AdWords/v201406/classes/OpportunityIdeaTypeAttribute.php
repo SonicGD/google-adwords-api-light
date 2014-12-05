@@ -12,8 +12,8 @@
    */
   class OpportunityIdeaTypeAttribute extends Attribute
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
-    const XSI_TYPE = "OpportunityIdeaTypeAttribute";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
+      const XSI_TYPE = "OpportunityIdeaTypeAttribute";
 
     /**
      * @access public
@@ -27,7 +27,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -36,14 +36,13 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($value = null, $AttributeType = null)
-    {
-      parent::__construct();
-      $this->value = $value;
-      $this->AttributeType = $AttributeType;
-    }
-
+      public function __construct($value = null, $AttributeType = null)
+      {
+          parent::__construct();
+          $this->value = $value;
+          $this->AttributeType = $AttributeType;
+      }
   }

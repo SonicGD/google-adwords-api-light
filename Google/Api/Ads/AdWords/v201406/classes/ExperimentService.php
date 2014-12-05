@@ -9,9 +9,9 @@ require_once 'ExperimentService.require.php';
    */
   class ExperimentService extends AdWordsSoapClient
   {
-    const SERVICE_NAME = "ExperimentService";
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const ENDPOINT = "https://adwords.google.com/api/adwords/cm/v201406/ExperimentService";
+      const SERVICE_NAME = "ExperimentService";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const ENDPOINT = "https://adwords.google.com/api/adwords/cm/v201406/ExperimentService";
 
     /**
      * The endpoint of the service
@@ -116,8 +116,8 @@ require_once 'ExperimentService.require.php';
      */
     public function __construct($wsdl, $options, $user)
     {
-      $options["classmap"] = self::$classmap;
-      parent::__construct($wsdl, $options, $user, self::SERVICE_NAME,
+        $options["classmap"] = self::$classmap;
+        parent::__construct($wsdl, $options, $user, self::SERVICE_NAME,
           self::WSDL_NAMESPACE);
     }
     /**
@@ -134,10 +134,10 @@ require_once 'ExperimentService.require.php';
      */
     public function get($serviceSelector)
     {
-      $args = new ExperimentServiceGet($serviceSelector);
-      $result = $this->__soapCall("get", array($args));
+        $args = new ExperimentServiceGet($serviceSelector);
+        $result = $this->__soapCall("get", array($args));
 
-      return $result->rval;
+        return $result->rval;
     }
     /**
      * <span class="constraint ContentsNotNull">This field must not contain {@code null} elements.</span>
@@ -149,7 +149,7 @@ require_once 'ExperimentService.require.php';
      *
      *
      * Mutates (add, update or remove) experiments.
-     * <b>Note:</b> To REMOVE use SET and mark status to DELETED.
+     * <b>Note:</b> To REMOVE use SET and mark status to REMOVED.
      * @param operations A list of unique operations.
      * The same experiment cannot be specified in more than one operation.
      * @return The          updated experiments. The list of experiments is returned in
@@ -158,9 +158,9 @@ require_once 'ExperimentService.require.php';
      */
     public function mutate($operations)
     {
-      $args = new ExperimentServiceMutate($operations);
-      $result = $this->__soapCall("mutate", array($args));
+        $args = new ExperimentServiceMutate($operations);
+        $result = $this->__soapCall("mutate", array($args));
 
-      return $result->rval;
+        return $result->rval;
     }
   }

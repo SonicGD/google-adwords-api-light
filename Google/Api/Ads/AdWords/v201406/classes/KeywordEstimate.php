@@ -8,8 +8,8 @@
    */
   class KeywordEstimate extends Estimate
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
-    const XSI_TYPE = "KeywordEstimate";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
+      const XSI_TYPE = "KeywordEstimate";
 
     /**
      * @access public
@@ -35,7 +35,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -44,16 +44,15 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($criterionId = null, $min = null, $max = null, $EstimateType = null)
-    {
-      parent::__construct();
-      $this->criterionId = $criterionId;
-      $this->min = $min;
-      $this->max = $max;
-      $this->EstimateType = $EstimateType;
-    }
-
+      public function __construct($criterionId = null, $min = null, $max = null, $EstimateType = null)
+      {
+          parent::__construct();
+          $this->criterionId = $criterionId;
+          $this->min = $min;
+          $this->max = $max;
+          $this->EstimateType = $EstimateType;
+      }
   }

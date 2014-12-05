@@ -10,8 +10,8 @@
    */
   class Carrier extends Criterion
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "Carrier";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "Carrier";
 
     /**
      * @access public
@@ -31,7 +31,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -40,17 +40,16 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($name = null, $countryCode = null, $id = null, $type = null, $CriterionType = null)
-    {
-      parent::__construct();
-      $this->name = $name;
-      $this->countryCode = $countryCode;
-      $this->id = $id;
-      $this->type = $type;
-      $this->CriterionType = $CriterionType;
-    }
-
+      public function __construct($name = null, $countryCode = null, $id = null, $type = null, $CriterionType = null)
+      {
+          parent::__construct();
+          $this->name = $name;
+          $this->countryCode = $countryCode;
+          $this->id = $id;
+          $this->type = $type;
+          $this->CriterionType = $CriterionType;
+      }
   }

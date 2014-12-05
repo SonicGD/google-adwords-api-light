@@ -11,8 +11,8 @@
    */
   class DeprecatedAd extends Ad
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "DeprecatedAd";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "DeprecatedAd";
 
     /**
      * @access public
@@ -32,7 +32,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -41,23 +41,22 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($name = null, $type = null, $id = null, $url = null, $displayUrl = null, $finalUrls = null, $finalMobileUrls = null, $trackingUrlTemplate = null, $urlCustomParameters = null, $devicePreference = null, $AdType = null)
-    {
-      parent::__construct();
-      $this->name = $name;
-      $this->type = $type;
-      $this->id = $id;
-      $this->url = $url;
-      $this->displayUrl = $displayUrl;
-      $this->finalUrls = $finalUrls;
-      $this->finalMobileUrls = $finalMobileUrls;
-      $this->trackingUrlTemplate = $trackingUrlTemplate;
-      $this->urlCustomParameters = $urlCustomParameters;
-      $this->devicePreference = $devicePreference;
-      $this->AdType = $AdType;
-    }
-
+      public function __construct($name = null, $type = null, $id = null, $url = null, $displayUrl = null, $finalUrls = null, $finalMobileUrls = null, $trackingUrlTemplate = null, $urlCustomParameters = null, $devicePreference = null, $AdType = null)
+      {
+          parent::__construct();
+          $this->name = $name;
+          $this->type = $type;
+          $this->id = $id;
+          $this->url = $url;
+          $this->displayUrl = $displayUrl;
+          $this->finalUrls = $finalUrls;
+          $this->finalMobileUrls = $finalMobileUrls;
+          $this->trackingUrlTemplate = $trackingUrlTemplate;
+          $this->urlCustomParameters = $urlCustomParameters;
+          $this->devicePreference = $devicePreference;
+          $this->AdType = $AdType;
+      }
   }

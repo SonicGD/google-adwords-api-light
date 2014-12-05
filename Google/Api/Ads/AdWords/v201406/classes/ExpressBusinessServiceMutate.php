@@ -17,8 +17,8 @@
    */
   class ExpressBusinessServiceMutate
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/express/v201406";
-    const XSI_TYPE = "";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/express/v201406";
+      const XSI_TYPE = "";
 
     /**
      * @access public
@@ -32,7 +32,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -41,12 +41,11 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($operations = null)
-    {
-      $this->operations = $operations;
-    }
-
+      public function __construct($operations = null)
+      {
+          $this->operations = $operations;
+      }
   }

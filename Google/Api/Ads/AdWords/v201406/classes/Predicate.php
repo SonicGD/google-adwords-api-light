@@ -8,8 +8,8 @@
    */
   class Predicate
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "Predicate";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "Predicate";
 
     /**
      * @access public
@@ -35,7 +35,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -44,14 +44,13 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($field = null, $operator = null, $values = null)
-    {
-      $this->field = $field;
-      $this->operator = $operator;
-      $this->values = $values;
-    }
-
+      public function __construct($field = null, $operator = null, $values = null)
+      {
+          $this->field = $field;
+          $this->operator = $operator;
+          $this->values = $values;
+      }
   }

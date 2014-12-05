@@ -12,8 +12,8 @@
    */
   class DoubleValue extends NumberValue
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "DoubleValue";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "DoubleValue";
 
     /**
      * @access public
@@ -27,7 +27,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -36,13 +36,12 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($number = null)
-    {
-      parent::__construct();
-      $this->number = $number;
-    }
-
+      public function __construct($number = null)
+      {
+          parent::__construct();
+          $this->number = $number;
+      }
   }

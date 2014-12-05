@@ -8,6 +8,7 @@ require_once 'Paging.php';
 require_once 'Predicate.php';
 require_once 'SoapRequestHeader.php';
 require_once 'SoapResponseHeader.php';
+require_once 'String_StringMapEntry.php';
 require_once 'TargetingSettingDetail.php';
 require_once 'ComparableValue.php';
 require_once 'Setting.php';

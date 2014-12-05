@@ -8,8 +8,8 @@
    */
   class InvalidGeoLocation extends GeoLocation
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "InvalidGeoLocation";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "InvalidGeoLocation";
 
     /**
      * Gets the namesapce of this class
@@ -17,7 +17,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -26,16 +26,15 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($geoPoint = null, $address = null, $encodedLocation = null, $GeoLocationType = null)
-    {
-      parent::__construct();
-      $this->geoPoint = $geoPoint;
-      $this->address = $address;
-      $this->encodedLocation = $encodedLocation;
-      $this->GeoLocationType = $GeoLocationType;
-    }
-
+      public function __construct($geoPoint = null, $address = null, $encodedLocation = null, $GeoLocationType = null)
+      {
+          parent::__construct();
+          $this->geoPoint = $geoPoint;
+          $this->address = $address;
+          $this->encodedLocation = $encodedLocation;
+          $this->GeoLocationType = $GeoLocationType;
+      }
   }

@@ -8,8 +8,8 @@
    */
   class UserListConversionType
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/rm/v201406";
-    const XSI_TYPE = "UserListConversionType";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/rm/v201406";
+      const XSI_TYPE = "UserListConversionType";
 
     /**
      * @access public
@@ -35,7 +35,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -44,14 +44,13 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($id = null, $name = null, $category = null)
-    {
-      $this->id = $id;
-      $this->name = $name;
-      $this->category = $category;
-    }
-
+      public function __construct($id = null, $name = null, $category = null)
+      {
+          $this->id = $id;
+          $this->name = $name;
+          $this->category = $category;
+      }
   }

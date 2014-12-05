@@ -9,8 +9,8 @@
    */
   class SharedCriterion
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "SharedCriterion";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "SharedCriterion";
 
     /**
      * @access public
@@ -36,7 +36,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -45,14 +45,13 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($sharedSetId = null, $criterion = null, $negative = null)
-    {
-      $this->sharedSetId = $sharedSetId;
-      $this->criterion = $criterion;
-      $this->negative = $negative;
-    }
-
+      public function __construct($sharedSetId = null, $criterion = null, $negative = null)
+      {
+          $this->sharedSetId = $sharedSetId;
+          $this->criterion = $criterion;
+          $this->negative = $negative;
+      }
   }

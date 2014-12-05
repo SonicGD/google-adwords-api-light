@@ -8,8 +8,8 @@
    */
   class PendingInvitationSelector
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/mcm/v201406";
-    const XSI_TYPE = "PendingInvitationSelector";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/mcm/v201406";
+      const XSI_TYPE = "PendingInvitationSelector";
 
     /**
      * @access public
@@ -29,7 +29,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -38,13 +38,12 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($managerCustomerIds = null, $clientCustomerIds = null)
-    {
-      $this->managerCustomerIds = $managerCustomerIds;
-      $this->clientCustomerIds = $clientCustomerIds;
-    }
-
+      public function __construct($managerCustomerIds = null, $clientCustomerIds = null)
+      {
+          $this->managerCustomerIds = $managerCustomerIds;
+          $this->clientCustomerIds = $clientCustomerIds;
+      }
   }

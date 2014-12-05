@@ -9,9 +9,9 @@ require_once 'ManagedCustomerService.require.php';
    */
   class ManagedCustomerService extends AdWordsSoapClient
   {
-    const SERVICE_NAME = "ManagedCustomerService";
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/mcm/v201406";
-    const ENDPOINT = "https://adwords.google.com/api/adwords/mcm/v201406/ManagedCustomerService";
+      const SERVICE_NAME = "ManagedCustomerService";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/mcm/v201406";
+      const ENDPOINT = "https://adwords.google.com/api/adwords/mcm/v201406/ManagedCustomerService";
 
     /**
      * The endpoint of the service
@@ -114,8 +114,8 @@ require_once 'ManagedCustomerService.require.php';
      */
     public function __construct($wsdl, $options, $user)
     {
-      $options["classmap"] = self::$classmap;
-      parent::__construct($wsdl, $options, $user, self::SERVICE_NAME,
+        $options["classmap"] = self::$classmap;
+        parent::__construct($wsdl, $options, $user, self::SERVICE_NAME,
           self::WSDL_NAMESPACE);
     }
     /**
@@ -131,10 +131,10 @@ require_once 'ManagedCustomerService.require.php';
      */
     public function get($serviceSelector)
     {
-      $args = new ManagedCustomerServiceGet($serviceSelector);
-      $result = $this->__soapCall("get", array($args));
+        $args = new ManagedCustomerServiceGet($serviceSelector);
+        $result = $this->__soapCall("get", array($args));
 
-      return $result->rval;
+        return $result->rval;
     }
     /**
      * <span class="constraint Required">This field is required and should not be {@code null}.</span>
@@ -147,10 +147,10 @@ require_once 'ManagedCustomerService.require.php';
      */
     public function getPendingInvitations($selector)
     {
-      $args = new GetPendingInvitations($selector);
-      $result = $this->__soapCall("getPendingInvitations", array($args));
+        $args = new GetPendingInvitations($selector);
+        $result = $this->__soapCall("getPendingInvitations", array($args));
 
-      return $result->rval;
+        return $result->rval;
     }
     /**
      * <span class="constraint ContentsNotNull">This field must not contain {@code null} elements.</span>
@@ -171,10 +171,10 @@ require_once 'ManagedCustomerService.require.php';
      */
     public function mutate($operations)
     {
-      $args = new ManagedCustomerServiceMutate($operations);
-      $result = $this->__soapCall("mutate", array($args));
+        $args = new ManagedCustomerServiceMutate($operations);
+        $result = $this->__soapCall("mutate", array($args));
 
-      return $result->rval;
+        return $result->rval;
     }
     /**
      * <span class="constraint Required">This field is required and should not be {@code null}.</span>
@@ -199,10 +199,10 @@ require_once 'ManagedCustomerService.require.php';
      */
     public function mutateLink($operations)
     {
-      $args = new MutateLink($operations);
-      $result = $this->__soapCall("mutateLink", array($args));
+        $args = new MutateLink($operations);
+        $result = $this->__soapCall("mutateLink", array($args));
 
-      return $result->rval;
+        return $result->rval;
     }
     /**
      * <span class="constraint ContentsNotNull">This field must not contain {@code null} elements.</span>
@@ -225,9 +225,9 @@ require_once 'ManagedCustomerService.require.php';
      */
     public function mutateManager($operations)
     {
-      $args = new MutateManager($operations);
-      $result = $this->__soapCall("mutateManager", array($args));
+        $args = new MutateManager($operations);
+        $result = $this->__soapCall("mutateManager", array($args));
 
-      return $result->rval;
+        return $result->rval;
     }
   }

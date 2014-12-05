@@ -8,8 +8,8 @@
    */
   class LocationCriterion
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "LocationCriterion";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "LocationCriterion";
 
     /**
      * @access public
@@ -53,7 +53,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -62,17 +62,16 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($location = null, $canonicalName = null, $reach = null, $locale = null, $searchTerm = null, $countryCode = null)
-    {
-      $this->location = $location;
-      $this->canonicalName = $canonicalName;
-      $this->reach = $reach;
-      $this->locale = $locale;
-      $this->searchTerm = $searchTerm;
-      $this->countryCode = $countryCode;
-    }
-
+      public function __construct($location = null, $canonicalName = null, $reach = null, $locale = null, $searchTerm = null, $countryCode = null)
+      {
+          $this->location = $location;
+          $this->canonicalName = $canonicalName;
+          $this->reach = $reach;
+          $this->locale = $locale;
+          $this->searchTerm = $searchTerm;
+          $this->countryCode = $countryCode;
+      }
   }

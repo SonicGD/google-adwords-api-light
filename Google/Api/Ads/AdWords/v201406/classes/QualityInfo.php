@@ -8,8 +8,8 @@
    */
   class QualityInfo
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "QualityInfo";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "QualityInfo";
 
     /**
      * @access public
@@ -41,7 +41,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -50,15 +50,14 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($isKeywordAdRelevanceAcceptable = null, $isLandingPageQualityAcceptable = null, $isLandingPageLatencyAcceptable = null, $qualityScore = null)
-    {
-      $this->isKeywordAdRelevanceAcceptable = $isKeywordAdRelevanceAcceptable;
-      $this->isLandingPageQualityAcceptable = $isLandingPageQualityAcceptable;
-      $this->isLandingPageLatencyAcceptable = $isLandingPageLatencyAcceptable;
-      $this->qualityScore = $qualityScore;
-    }
-
+      public function __construct($isKeywordAdRelevanceAcceptable = null, $isLandingPageQualityAcceptable = null, $isLandingPageLatencyAcceptable = null, $qualityScore = null)
+      {
+          $this->isKeywordAdRelevanceAcceptable = $isKeywordAdRelevanceAcceptable;
+          $this->isLandingPageQualityAcceptable = $isLandingPageQualityAcceptable;
+          $this->isLandingPageLatencyAcceptable = $isLandingPageLatencyAcceptable;
+          $this->qualityScore = $qualityScore;
+      }
   }

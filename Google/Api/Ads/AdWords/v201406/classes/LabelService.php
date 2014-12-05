@@ -9,9 +9,9 @@ require_once 'LabelService.require.php';
    */
   class LabelService extends AdWordsSoapClient
   {
-    const SERVICE_NAME = "LabelService";
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const ENDPOINT = "https://adwords.google.com/api/adwords/cm/v201406/LabelService";
+      const SERVICE_NAME = "LabelService";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const ENDPOINT = "https://adwords.google.com/api/adwords/cm/v201406/LabelService";
 
     /**
      * The endpoint of the service
@@ -118,8 +118,8 @@ require_once 'LabelService.require.php';
      */
     public function __construct($wsdl, $options, $user)
     {
-      $options["classmap"] = self::$classmap;
-      parent::__construct($wsdl, $options, $user, self::SERVICE_NAME,
+        $options["classmap"] = self::$classmap;
+        parent::__construct($wsdl, $options, $user, self::SERVICE_NAME,
           self::WSDL_NAMESPACE);
     }
     /**
@@ -136,10 +136,10 @@ require_once 'LabelService.require.php';
      */
     public function get($serviceSelector)
     {
-      $args = new LabelServiceGet($serviceSelector);
-      $result = $this->__soapCall("get", array($args));
+        $args = new LabelServiceGet($serviceSelector);
+        $result = $this->__soapCall("get", array($args));
 
-      return $result->rval;
+        return $result->rval;
     }
     /**
      * <span class="constraint ContentsNotNull">This field must not contain {@code null} elements.</span>
@@ -159,10 +159,10 @@ require_once 'LabelService.require.php';
      */
     public function mutate($operations)
     {
-      $args = new LabelServiceMutate($operations);
-      $result = $this->__soapCall("mutate", array($args));
+        $args = new LabelServiceMutate($operations);
+        $result = $this->__soapCall("mutate", array($args));
 
-      return $result->rval;
+        return $result->rval;
     }
     /**
      * <span class="constraint Required">This field is required and should not be {@code null}.</span>
@@ -177,9 +177,9 @@ require_once 'LabelService.require.php';
      */
     public function query($query)
     {
-      $args = new Query($query);
-      $result = $this->__soapCall("query", array($args));
+        $args = new Query($query);
+        $result = $this->__soapCall("query", array($args));
 
-      return $result->rval;
+        return $result->rval;
     }
   }

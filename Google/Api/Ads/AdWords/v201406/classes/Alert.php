@@ -9,8 +9,8 @@
    */
   class Alert
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/mcm/v201406";
-    const XSI_TYPE = "Alert";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/mcm/v201406";
+      const XSI_TYPE = "Alert";
 
     /**
      * @access public
@@ -42,7 +42,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -51,15 +51,14 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($alertSeverity = null, $alertType = null, $clientCustomerId = null, $details = null)
-    {
-      $this->alertSeverity = $alertSeverity;
-      $this->alertType = $alertType;
-      $this->clientCustomerId = $clientCustomerId;
-      $this->details = $details;
-    }
-
+      public function __construct($alertSeverity = null, $alertType = null, $clientCustomerId = null, $details = null)
+      {
+          $this->alertSeverity = $alertSeverity;
+          $this->alertType = $alertType;
+          $this->clientCustomerId = $clientCustomerId;
+          $this->details = $details;
+      }
   }

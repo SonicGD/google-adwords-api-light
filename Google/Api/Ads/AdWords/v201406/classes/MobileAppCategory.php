@@ -15,8 +15,8 @@
    */
   class MobileAppCategory extends Criterion
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "MobileAppCategory";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "MobileAppCategory";
 
     /**
      * @access public
@@ -36,7 +36,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -45,17 +45,16 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($mobileAppCategoryId = null, $displayName = null, $id = null, $type = null, $CriterionType = null)
-    {
-      parent::__construct();
-      $this->mobileAppCategoryId = $mobileAppCategoryId;
-      $this->displayName = $displayName;
-      $this->id = $id;
-      $this->type = $type;
-      $this->CriterionType = $CriterionType;
-    }
-
+      public function __construct($mobileAppCategoryId = null, $displayName = null, $id = null, $type = null, $CriterionType = null)
+      {
+          parent::__construct();
+          $this->mobileAppCategoryId = $mobileAppCategoryId;
+          $this->displayName = $displayName;
+          $this->id = $id;
+          $this->type = $type;
+          $this->CriterionType = $CriterionType;
+      }
   }

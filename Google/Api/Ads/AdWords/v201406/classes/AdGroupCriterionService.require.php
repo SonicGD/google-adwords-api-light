@@ -95,6 +95,7 @@ require_once 'SoapRequestHeader.php';
 require_once 'SoapResponseHeader.php';
 require_once 'StatsQueryError.php';
 require_once 'StringLengthError.php';
+require_once 'String_StringMapEntry.php';
 require_once 'TargetCpaBiddingScheme.php';
 require_once 'TargetRoasBiddingScheme.php';
 require_once 'TargetSpendBiddingScheme.php';

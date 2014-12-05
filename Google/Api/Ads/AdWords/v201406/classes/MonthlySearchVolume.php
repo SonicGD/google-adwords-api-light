@@ -10,8 +10,8 @@
    */
   class MonthlySearchVolume
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
-    const XSI_TYPE = "MonthlySearchVolume";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/o/v201406";
+      const XSI_TYPE = "MonthlySearchVolume";
 
     /**
      * @access public
@@ -37,7 +37,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -46,14 +46,13 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($year = null, $month = null, $count = null)
-    {
-      $this->year = $year;
-      $this->month = $month;
-      $this->count = $count;
-    }
-
+      public function __construct($year = null, $month = null, $count = null)
+      {
+          $this->year = $year;
+          $this->month = $month;
+          $this->count = $count;
+      }
   }

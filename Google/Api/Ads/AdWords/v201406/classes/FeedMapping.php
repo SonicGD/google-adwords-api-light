@@ -17,8 +17,8 @@
    */
   class FeedMapping
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "FeedMapping";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "FeedMapping";
 
     /**
      * @access public
@@ -62,7 +62,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -71,17 +71,16 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($feedMappingId = null, $feedId = null, $placeholderType = null, $status = null, $attributeFieldMappings = null, $criterionType = null)
-    {
-      $this->feedMappingId = $feedMappingId;
-      $this->feedId = $feedId;
-      $this->placeholderType = $placeholderType;
-      $this->status = $status;
-      $this->attributeFieldMappings = $attributeFieldMappings;
-      $this->criterionType = $criterionType;
-    }
-
+      public function __construct($feedMappingId = null, $feedId = null, $placeholderType = null, $status = null, $attributeFieldMappings = null, $criterionType = null)
+      {
+          $this->feedMappingId = $feedMappingId;
+          $this->feedId = $feedId;
+          $this->placeholderType = $placeholderType;
+          $this->status = $status;
+          $this->attributeFieldMappings = $attributeFieldMappings;
+          $this->criterionType = $criterionType;
+      }
   }

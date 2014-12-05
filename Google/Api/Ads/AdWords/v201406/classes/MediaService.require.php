@@ -1,6 +1,8 @@
 <?php
 require_once 'DateRange.php';
 require_once 'Dimensions.php';
+require_once 'Media_Size_DimensionsMapEntry.php';
+require_once 'Media_Size_StringMapEntry.php';
 require_once 'OrderBy.php';
 require_once 'Paging.php';
 require_once 'Predicate.php';

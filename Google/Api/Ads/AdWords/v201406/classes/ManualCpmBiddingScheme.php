@@ -9,8 +9,8 @@
    */
   class ManualCpmBiddingScheme extends BiddingScheme
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "ManualCpmBiddingScheme";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "ManualCpmBiddingScheme";
 
     /**
      * Gets the namesapce of this class
@@ -18,7 +18,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -27,13 +27,12 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($BiddingSchemeType = null)
-    {
-      parent::__construct();
-      $this->BiddingSchemeType = $BiddingSchemeType;
-    }
-
+      public function __construct($BiddingSchemeType = null)
+      {
+          parent::__construct();
+          $this->BiddingSchemeType = $BiddingSchemeType;
+      }
   }

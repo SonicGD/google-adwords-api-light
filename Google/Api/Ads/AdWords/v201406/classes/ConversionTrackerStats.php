@@ -8,8 +8,8 @@
    */
   class ConversionTrackerStats
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "ConversionTrackerStats";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "ConversionTrackerStats";
 
     /**
      * @access public
@@ -41,7 +41,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -50,15 +50,14 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($numConversionEvents = null, $conversionValue = null, $mostRecentConversionDate = null, $numConvertedClicks = null)
-    {
-      $this->numConversionEvents = $numConversionEvents;
-      $this->conversionValue = $conversionValue;
-      $this->mostRecentConversionDate = $mostRecentConversionDate;
-      $this->numConvertedClicks = $numConvertedClicks;
-    }
-
+      public function __construct($numConversionEvents = null, $conversionValue = null, $mostRecentConversionDate = null, $numConvertedClicks = null)
+      {
+          $this->numConversionEvents = $numConversionEvents;
+          $this->conversionValue = $conversionValue;
+          $this->mostRecentConversionDate = $mostRecentConversionDate;
+          $this->numConvertedClicks = $numConvertedClicks;
+      }
   }

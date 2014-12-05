@@ -9,9 +9,9 @@ require_once 'CampaignService.require.php';
    */
   class CampaignService extends AdWordsSoapClient
   {
-    const SERVICE_NAME = "CampaignService";
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const ENDPOINT = "https://adwords.google.com/api/adwords/cm/v201406/CampaignService";
+      const SERVICE_NAME = "CampaignService";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const ENDPOINT = "https://adwords.google.com/api/adwords/cm/v201406/CampaignService";
 
     /**
      * The endpoint of the service
@@ -25,21 +25,39 @@ require_once 'CampaignService.require.php';
      */
     public static $classmap = array(
       "AdxError" => "AdxError",
+      "ApiError" => "ApiError",
+      "ApiException" => "ApiException",
+      "ApplicationException" => "ApplicationException",
       "AuthenticationError" => "AuthenticationError",
       "AuthorizationError" => "AuthorizationError",
       "BiddingError" => "BiddingError",
       "BiddingErrors" => "BiddingErrors",
+      "BiddingScheme" => "BiddingScheme",
+      "BiddingStrategyConfiguration" => "BiddingStrategyConfiguration",
       "BiddingTransitionError" => "BiddingTransitionError",
+      "Bids" => "Bids",
+      "Budget" => "Budget",
       "BudgetError" => "BudgetError",
+      "BudgetOptimizerBiddingScheme" => "BudgetOptimizerBiddingScheme",
+      "Campaign" => "Campaign",
       "CampaignError" => "CampaignError",
       "CampaignLabel" => "CampaignLabel",
       "CampaignLabelOperation" => "CampaignLabelOperation",
+      "CampaignLabelReturnValue" => "CampaignLabelReturnValue",
       "TextLabel" => "TextLabel",
+      "CampaignOperation" => "CampaignOperation",
+      "CampaignPage" => "CampaignPage",
+      "CampaignReturnValue" => "CampaignReturnValue",
       "ClientTermsError" => "ClientTermsError",
+      "ComparableValue" => "ComparableValue",
       "ConversionOptimizerBiddingScheme" => "ConversionOptimizerBiddingScheme",
       "ConversionOptimizerEligibility" => "ConversionOptimizerEligibility",
+      "CpaBid" => "CpaBid",
+      "CpcBid" => "CpcBid",
+      "CpmBid" => "CpmBid",
       "CustomParameter" => "CustomParameter",
       "CustomParameters" => "CustomParameters",
+      "DatabaseError" => "DatabaseError",
       "DateError" => "DateError",
       "DateRange" => "DateRange",
       "DateRangeError" => "DateRangeError",
@@ -47,6 +65,7 @@ require_once 'CampaignService.require.php';
       "DoubleValue" => "DoubleValue",
       "DynamicSearchAdsSetting" => "DynamicSearchAdsSetting",
       "EnhancedCpcBiddingScheme" => "EnhancedCpcBiddingScheme",
+      "EntityAccessDenied" => "EntityAccessDenied",
       "EntityCountLimitExceeded" => "EntityCountLimitExceeded",
       "EntityNotFound" => "EntityNotFound",
       "ForwardCompatibilityError" => "ForwardCompatibilityError",
@@ -55,6 +74,8 @@ require_once 'CampaignService.require.php';
       "IdError" => "IdError",
       "InternalApiError" => "InternalApiError",
       "KeywordMatchSetting" => "KeywordMatchSetting",
+      "Label" => "Label",
+      "ListReturnValue" => "ListReturnValue",
       "LongValue" => "LongValue",
       "ManualCpcBiddingScheme" => "ManualCpcBiddingScheme",
       "ManualCpmBiddingScheme" => "ManualCpmBiddingScheme",
@@ -64,9 +85,12 @@ require_once 'CampaignService.require.php';
       "NotEmptyError" => "NotEmptyError",
       "NullError" => "NullError",
       "NumberValue" => "NumberValue",
+      "Operation" => "Operation",
       "OperationAccessDenied" => "OperationAccessDenied",
       "OperatorError" => "OperatorError",
       "OrderBy" => "OrderBy",
+      "Page" => "Page",
+      "PageOnePromotedBiddingScheme" => "PageOnePromotedBiddingScheme",
       "Paging" => "Paging",
       "PercentCpaBid" => "PercentCpaBid",
       "PercentCpaBiddingScheme" => "PercentCpaBiddingScheme",
@@ -81,7 +105,9 @@ require_once 'CampaignService.require.php';
       "RejectedError" => "RejectedError",
       "RequestError" => "RequestError",
       "RequiredError" => "RequiredError",
+      "Selector" => "Selector",
       "SelectorError" => "SelectorError",
+      "Setting" => "Setting",
       "SettingError" => "SettingError",
       "ShoppingSetting" => "ShoppingSetting",
       "SizeLimitError" => "SizeLimitError",
@@ -90,37 +116,12 @@ require_once 'CampaignService.require.php';
       "StatsQueryError" => "StatsQueryError",
       "StringLengthError" => "StringLengthError",
       "String_StringMapEntry" => "String_StringMapEntry",
-      "TargetError" => "TargetError",
-      "TrackingSetting" => "TrackingSetting",
-      "UrlError" => "UrlError",
-      "ComparableValue" => "ComparableValue",
-      "CpaBid" => "CpaBid",
-      "CpcBid" => "CpcBid",
-      "CpmBid" => "CpmBid",
-      "DatabaseError" => "DatabaseError",
-      "PageOnePromotedBiddingScheme" => "PageOnePromotedBiddingScheme",
-      "Setting" => "Setting",
       "TargetCpaBiddingScheme" => "TargetCpaBiddingScheme",
+      "TargetError" => "TargetError",
       "TargetRoasBiddingScheme" => "TargetRoasBiddingScheme",
       "TargetSpendBiddingScheme" => "TargetSpendBiddingScheme",
-      "ApiError" => "ApiError",
-      "ApiException" => "ApiException",
-      "ApplicationException" => "ApplicationException",
-      "Bids" => "Bids",
-      "BudgetOptimizerBiddingScheme" => "BudgetOptimizerBiddingScheme",
-      "CampaignLabelReturnValue" => "CampaignLabelReturnValue",
-      "Label" => "Label",
-      "Selector" => "Selector",
-      "BiddingScheme" => "BiddingScheme",
-      "BiddingStrategyConfiguration" => "BiddingStrategyConfiguration",
-      "Budget" => "Budget",
-      "Campaign" => "Campaign",
-      "CampaignOperation" => "CampaignOperation",
-      "CampaignPage" => "CampaignPage",
-      "CampaignReturnValue" => "CampaignReturnValue",
-      "ListReturnValue" => "ListReturnValue",
-      "Operation" => "Operation",
-      "Page" => "Page",
+      "TrackingSetting" => "TrackingSetting",
+      "UrlError" => "UrlError",
       "AdServingOptimizationStatus" => "AdServingOptimizationStatus",
       "AdvertisingChannelType" => "AdvertisingChannelType",
       "AdxError.Reason" => "AdxErrorReason",
@@ -146,6 +147,7 @@ require_once 'CampaignService.require.php';
       "DateError.Reason" => "DateErrorReason",
       "DateRangeError.Reason" => "DateRangeErrorReason",
       "DistinctError.Reason" => "DistinctErrorReason",
+      "EntityAccessDenied.Reason" => "EntityAccessDeniedReason",
       "EntityCountLimitExceeded.Reason" => "EntityCountLimitExceededReason",
       "EntityNotFound.Reason" => "EntityNotFoundReason",
       "ForwardCompatibilityError.Reason" => "ForwardCompatibilityErrorReason",
@@ -199,8 +201,8 @@ require_once 'CampaignService.require.php';
      */
     public function __construct($wsdl, $options, $user)
     {
-      $options["classmap"] = self::$classmap;
-      parent::__construct($wsdl, $options, $user, self::SERVICE_NAME,
+        $options["classmap"] = self::$classmap;
+        parent::__construct($wsdl, $options, $user, self::SERVICE_NAME,
           self::WSDL_NAMESPACE);
     }
     /**
@@ -216,10 +218,10 @@ require_once 'CampaignService.require.php';
      */
     public function get($serviceSelector)
     {
-      $args = new CampaignServiceGet($serviceSelector);
-      $result = $this->__soapCall("get", array($args));
+        $args = new CampaignServiceGet($serviceSelector);
+        $result = $this->__soapCall("get", array($args));
 
-      return $result->rval;
+        return $result->rval;
     }
     /**
      * <span class="constraint ContentsNotNull">This field must not contain {@code null} elements.</span>
@@ -230,10 +232,10 @@ require_once 'CampaignService.require.php';
      *
      *
      *
-     * Adds, updates, or deletes campaigns.
+     * Adds, updates, or removes campaigns.
      * <p class="note"><b>Note:</b> {@link CampaignOperation} does not support the
-     * <code>REMOVE</code> operator. To delete a campaign, set its
-     * {@link Campaign#status status} to <code>DELETED</code>.</p>
+     * <code>REMOVE</code> operator. To remove a campaign, set its
+     * {@link Campaign#status status} to {@code REMOVED}.</p>
      * @param operations A list of unique operations.
      * The same campaign cannot be specified in more than one operation.
      * @return The          list of updated campaigns, returned in the same order as the
@@ -242,10 +244,10 @@ require_once 'CampaignService.require.php';
      */
     public function mutate($operations)
     {
-      $args = new CampaignServiceMutate($operations);
-      $result = $this->__soapCall("mutate", array($args));
+        $args = new CampaignServiceMutate($operations);
+        $result = $this->__soapCall("mutate", array($args));
 
-      return $result->rval;
+        return $result->rval;
     }
     /**
      * <span class="constraint ContentsNotNull">This field must not contain {@code null} elements.</span>
@@ -275,10 +277,10 @@ require_once 'CampaignService.require.php';
      */
     public function mutateLabel($operations)
     {
-      $args = new MutateLabel($operations);
-      $result = $this->__soapCall("mutateLabel", array($args));
+        $args = new MutateLabel($operations);
+        $result = $this->__soapCall("mutateLabel", array($args));
 
-      return $result->rval;
+        return $result->rval;
     }
     /**
      * <span class="constraint Required">This field is required and should not be {@code null}.</span>
@@ -294,9 +296,9 @@ require_once 'CampaignService.require.php';
      */
     public function query($query)
     {
-      $args = new Query($query);
-      $result = $this->__soapCall("query", array($args));
+        $args = new Query($query);
+        $result = $this->__soapCall("query", array($args));
 
-      return $result->rval;
+        return $result->rval;
     }
   }

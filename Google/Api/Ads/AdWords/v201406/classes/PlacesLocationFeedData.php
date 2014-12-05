@@ -9,8 +9,8 @@
    */
   class PlacesLocationFeedData extends SystemFeedGenerationData
   {
-    const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
-    const XSI_TYPE = "PlacesLocationFeedData";
+      const WSDL_NAMESPACE = "https://adwords.google.com/api/adwords/cm/v201406";
+      const XSI_TYPE = "PlacesLocationFeedData";
 
     /**
      * @access public
@@ -42,7 +42,7 @@
      */
     public function getNamespace()
     {
-      return self::WSDL_NAMESPACE;
+        return self::WSDL_NAMESPACE;
     }
 
     /**
@@ -51,17 +51,16 @@
      */
     public function getXsiTypeName()
     {
-      return self::XSI_TYPE;
+        return self::XSI_TYPE;
     }
 
-    public function __construct($oAuthInfo = null, $emailAddress = null, $businessNameFilter = null, $categoryFilters = null, $SystemFeedGenerationDataType = null)
-    {
-      parent::__construct();
-      $this->oAuthInfo = $oAuthInfo;
-      $this->emailAddress = $emailAddress;
-      $this->businessNameFilter = $businessNameFilter;
-      $this->categoryFilters = $categoryFilters;
-      $this->SystemFeedGenerationDataType = $SystemFeedGenerationDataType;
-    }
-
+      public function __construct($oAuthInfo = null, $emailAddress = null, $businessNameFilter = null, $categoryFilters = null, $SystemFeedGenerationDataType = null)
+      {
+          parent::__construct();
+          $this->oAuthInfo = $oAuthInfo;
+          $this->emailAddress = $emailAddress;
+          $this->businessNameFilter = $businessNameFilter;
+          $this->categoryFilters = $categoryFilters;
+          $this->SystemFeedGenerationDataType = $SystemFeedGenerationDataType;
+      }
   }

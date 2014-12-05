@@ -35,7 +35,7 @@ require_once 'Google/Api/Ads/Common/Lib/ValidationException.php';
 
 /**
  * User class for all API modules using the Ads API.
- * @package GoogleApiAdsCommon
+ * @package    GoogleApiAdsCommon
  * @subpackage Lib
  */
 abstract class AdsUser
@@ -65,11 +65,8 @@ abstract class AdsUser
     {
         $this->requestHeaderElements = array();
 
-        $buildIni = parse_ini_file(
-            dirname(__FILE__) .
-            '/../Lib/build.ini',
-            false
-        );
+        $buildIni = parse_ini_file(dirname(__FILE__) .
+            '/../Lib/build.ini', false);
         $this->libVersion = $buildIni['LIB_VERSION'];
         $this->libName = $buildIni['LIB_NAME'];
     }
@@ -79,10 +76,10 @@ abstract class AdsUser
      * the <var>$authVar</var> is set, it is is used. Otherwise, the supplied
      * <var>$authenticationIni</var> is queired for the variable. If none is found
      * <var>NULL</var> is returned.
-     * @param  string $authVar     the default value for the authenticaiton variable
-     * @param  string $authVarName the name of the authencation variable
-     * @param  array  $authIni     the array of authentication variables from
-     *                             an INI file
+     * @param string $authVar     the default value for the authenticaiton variable
+     * @param string $authVarName the name of the authencation variable
+     * @param array  $authIni     the array of authentication variables from
+     *                            an INI file
      * @return string the authentication variable value
      * @access protected
      */
@@ -113,7 +110,7 @@ abstract class AdsUser
 
     /**
      * Gets the value for a registered request header element.
-     * @param  string $key the name of the request header element
+     * @param string $key the name of the request header element
      * @return string the value of the request header element or NULL if not found
      */
     public function GetHeaderValue($key)
@@ -137,9 +134,9 @@ abstract class AdsUser
 
     /**
      * Gets the service by its service name.
-     * @param  string            $serviceName    the service name
-     * @param  SoapClientFactory $serviceFactory the service factory
-     * @return SoapClient        the instantiated service
+     * @param string            $serviceName    the service name
+     * @param SoapClientFactory $serviceFactory the service factory
+     * @return SoapClient the instantiated service
      */
     public function GetServiceSoapClient(
         $serviceName,
@@ -156,14 +153,10 @@ abstract class AdsUser
      */
     protected function InitLogs()
     {
-        Logger::LogToFile(
-            Logger::$SOAP_XML_LOG,
-            $this->logsDirectory . "/soap_xml.log"
-        );
-        Logger::LogToFile(
-            Logger::$REQUEST_INFO_LOG,
-            $this->logsDirectory . "/request_info.log"
-        );
+        Logger::LogToFile(Logger::$SOAP_XML_LOG,
+            $this->logsDirectory . "/soap_xml.log");
+        Logger::LogToFile(Logger::$REQUEST_INFO_LOG,
+            $this->logsDirectory . "/request_info.log");
         Logger::SetLogLevel(Logger::$SOAP_XML_LOG, Logger::$FATAL);
         Logger::SetLogLevel(Logger::$REQUEST_INFO_LOG, Logger::$FATAL);
     }
@@ -224,18 +217,10 @@ abstract class AdsUser
         $settingsIni = parse_ini_file($settingsIniPath, true);
 
         // Logging settings.
-        $pathRelative = $this->GetSetting(
-            $settingsIni,
-            'LOGGING',
-            'PATH_RELATIVE',
-            false
-        );
-        $libLogDirPath = $this->GetSetting(
-            $settingsIni,
-            'LOGGING',
-            'LIB_LOG_DIR_PATH',
-            $defaultLogsDir
-        );
+        $pathRelative = $this->GetSetting($settingsIni, 'LOGGING',
+            'PATH_RELATIVE', false);
+        $libLogDirPath = $this->GetSetting($settingsIni, 'LOGGING',
+            'LIB_LOG_DIR_PATH', $defaultLogsDir);
         $relativePath = realpath($logsRelativePathBase . '/' . $libLogDirPath);
 
         if ($pathRelative && $relativePath) {
@@ -248,58 +233,33 @@ abstract class AdsUser
         $this->InitLogs();
 
         // Server settings.
-        $this->defaultVersion = $this->GetSetting(
-            $settingsIni,
-            'SERVER',
-            'DEFAULT_VERSION',
-            $defaultVersion
-        );
-        $this->defaultServer = $this->GetSetting(
-            $settingsIni,
-            'SERVER',
-            'DEFAULT_SERVER',
-            $defaultServer
-        );
+        $this->defaultVersion = $this->GetSetting($settingsIni, 'SERVER',
+            'DEFAULT_VERSION', $defaultVersion);
+        $this->defaultServer = $this->GetSetting($settingsIni, 'SERVER',
+            'DEFAULT_SERVER', $defaultServer);
 
         // SOAP settings.
-        $this->soapCompression = (bool) $this->GetSetting(
-            $settingsIni,
-            'SOAP',
-            'COMPRESSION',
-            true
-        );
-        $this->soapCompressionLevel = $this->GetSetting(
-            $settingsIni,
-            'SOAP',
-            'COMPRESSION_LEVEL',
-            1
-        );
+        $this->soapCompression = (bool)$this->GetSetting($settingsIni, 'SOAP',
+            'COMPRESSION', true);
+        $this->soapCompressionLevel = $this->GetSetting($settingsIni, 'SOAP',
+            'COMPRESSION_LEVEL', 1);
         if ($this->soapCompressionLevel < 1 || $this->soapCompressionLevel > 9) {
             $this->soapCompressionLevel = 1;
         }
-        $this->wsdlCache = (int) $this->GetSetting(
-            $settingsIni,
-            'SOAP',
-            'WSDL_CACHE',
-            WSDL_CACHE_NONE
-        );
+        $this->wsdlCache = (int)$this->GetSetting($settingsIni, 'SOAP',
+            'WSDL_CACHE', WSDL_CACHE_NONE);
         if ($this->wsdlCache < 0 || $this->wsdlCache > 3) {
             $this->wsdlCache = WSDL_CACHE_NONE;
         }
-        $forceHttpVersion = $this->GetSetting(
-            $settingsIni,
-            'SOAP',
-            'FORCE_HTTP_VERSION'
-        );
+        $forceHttpVersion = $this->GetSetting($settingsIni, 'SOAP',
+            'FORCE_HTTP_VERSION');
         $this->forceHttpVersion = $forceHttpVersion === null ? null :
-            (float) $forceHttpVersion;
-        $forceAddXsiTypes = $this->GetSetting(
-            $settingsIni,
-            'SOAP',
-            'FORCE_ADD_XSI_TYPES'
-        );
+            (float)$forceHttpVersion;
+        $forceAddXsiTypes = $this->GetSetting($settingsIni, 'SOAP',
+            'FORCE_ADD_XSI_TYPES');
         $this->forceAddXsiTypes = $forceAddXsiTypes === null ? null :
-            (bool) $forceAddXsiTypes;
+            (bool)$forceAddXsiTypes;
+
 
         // Proxy settings.
         $proxyHost = $this->GetSetting($settingsIni, 'PROXY', 'HOST');
@@ -308,7 +268,7 @@ abstract class AdsUser
         }
         $proxyPort = $this->GetSetting($settingsIni, 'PROXY', 'PORT');
         if (isset($proxyPort)) {
-            $this->Define('HTTP_PROXY_PORT', (int) $proxyPort);
+            $this->Define('HTTP_PROXY_PORT', (int)$proxyPort);
         }
         $proxyUser = $this->GetSetting($settingsIni, 'PROXY', 'USER');
         if (isset($proxyUser)) {
@@ -320,16 +280,11 @@ abstract class AdsUser
         }
 
         // Auth settings.
-        $this->authServer = $this->GetSetting(
-            $settingsIni,
-            'AUTH',
-            'AUTH_SERVER',
-            'https://accounts.google.com'
-        );
+        $this->authServer = $this->GetSetting($settingsIni, 'AUTH', 'AUTH_SERVER',
+            'https://accounts.google.com');
         // OAuth2.
         $this->oauth2Handler = $this->GetDefaultOAuth2Handler(
-            $this->GetSetting($settingsIni, 'AUTH', 'OAUTH2_HANDLER_CLASS')
-        );
+            $this->GetSetting($settingsIni, 'AUTH', 'OAUTH2_HANDLER_CLASS'));
 
         // SSL settings.
         $sslVerifyPeer = $this->GetSetting($settingsIni, 'SSL', 'VERIFY_PEER');
@@ -338,7 +293,7 @@ abstract class AdsUser
         }
         $sslVerifyHost = $this->GetSetting($settingsIni, 'SSL', 'VERIFY_HOST');
         if (isset($sslVerifyHost)) {
-            $this->Define('SSL_VERIFY_HOST', (int) $sslVerifyHost);
+            $this->Define('SSL_VERIFY_HOST', (int)$sslVerifyHost);
         }
         $sslCaPath = $this->GetSetting($settingsIni, 'SSL', 'CA_PATH');
         if (isset($sslCaPath)) {
@@ -353,10 +308,10 @@ abstract class AdsUser
     /**
      * Gets the value for a given setting based on the contents of the parsed INI
      * file.
-     * @param  array  $settings the parsed settings INI file
-     * @param  string $section  the name of the section containing the setting
-     * @param  string $name     the name of the setting
-     * @param  mixed  $default  the default value of the setting
+     * @param array  $settings the parsed settings INI file
+     * @param string $section  the name of the section containing the setting
+     * @param string $name     the name of the setting
+     * @param mixed  $default  the default value of the setting
      * @return string the value of the setting
      */
     private function GetSetting($settings, $section, $name, $default = null)
@@ -368,7 +323,6 @@ abstract class AdsUser
         ) {
             return $default;
         }
-
         return $settings[$section][$name];
     }
 
@@ -531,7 +485,7 @@ abstract class AdsUser
     /**
      * Gets the name and version of this client library.
      * @return array An array containing the name and version of this client
-     *               library, e.g.: ['DfpApi-PHP', '2.13.0'].
+     *     library, e.g.: ['DfpApi-PHP', '2.13.0'].
      */
     abstract protected function GetClientLibraryNameAndVersion();
 
@@ -539,7 +493,7 @@ abstract class AdsUser
      * Gets common PHP user agent parts for ads client libraries such as PHP
      * version, operating system, browser, or if compression is being used or not.
      * @return array An array of arrays with each inner array representing a user
-     *               agent parts, e.g.: ['PHP', '5.3.2'] or ['PHP', '5.4.0'].
+     *     agent parts, e.g.: ['PHP', '5.3.2'] or ['PHP', '5.4.0'].
      */
     private function GetCommonClientLibraryUserAgentParts()
     {
@@ -564,15 +518,13 @@ abstract class AdsUser
     /**
      * Gets all the user agent parts that identify this client library.
      * @return array An array of all the user agent parts that identify this
-     *               client library where each user agent part has been joined by a '/'
-     *               (forward slash).
+     *     client library where each user agent part has been joined by a '/'
+     *     (forward slash).
      */
     private function GetAllClientLibraryUserAgentParts()
     {
-        $allUserAgentParts[] = implode(
-            '/',
-            $this->GetClientLibraryNameAndVersion()
-        );
+        $allUserAgentParts[] = implode('/',
+            $this->GetClientLibraryNameAndVersion());
 
         foreach ($this->GetCommonClientLibraryUserAgentParts() as $userAgentPart) {
             $allUserAgentParts[] = implode('/', $userAgentPart);
@@ -588,29 +540,21 @@ abstract class AdsUser
      * in their constructor.
      *
      * @param $applicationName The application name that will appear in this
-     *     header.
+     *                         header.
      */
     public function SetClientLibraryUserAgent($applicationName)
     {
-        $this->SetHeaderValue(
-            $this->GetUserAgentHeaderName(),
-            sprintf(
-                "%s (%s)",
-                $applicationName,
-                implode(
-                    ', ',
-                    $this->GetAllClientLibraryUserAgentParts()
-                )
-            )
-        );
+        $this->SetHeaderValue($this->GetUserAgentHeaderName(), sprintf("%s (%s)",
+            $applicationName, implode(', ',
+                $this->GetAllClientLibraryUserAgentParts())));
     }
 
     /**
      * Get the default OAuth2 Handler for this user.
-     * @param  NULL|string $className the name of the oauth2Handler class or NULL
-     * @return mixed       the configured OAuth2Handler class
+     * @param NULL|string $className the name of the oauth2Handler class or NULL
+     * @return mixed the configured OAuth2Handler class
      */
-    abstract public function GetDefaultOAuth2Handler($className = null);
+    public abstract function GetDefaultOAuth2Handler($className = null);
 
     /**
      * Validates that the OAuth2 info is complete.
@@ -622,19 +566,16 @@ abstract class AdsUser
         $requiredFields = array('client_id', 'client_secret');
         foreach ($requiredFields as $field) {
             if (empty($this->oauth2Info[$field])) {
-                throw new ValidationException(
-                    $field, null,
-                    sprintf('%s is required.', $field)
-                );
+                throw new ValidationException($field, null,
+                    sprintf('%s is required.', $field));
             }
         }
         if (empty($this->oauth2Info['access_token'])
             && empty($this->oauth2Info['refresh_token'])
         ) {
-            throw new ValidationException(
-                'refresh_token', null,
-                'Either the refresh_token or the access_token is required.'
-            );
+            throw new ValidationException('refresh_token', null,
+                'Either the refresh_token or the access_token is required.');
         }
     }
 }
+

@@ -32,7 +32,7 @@ require_once 'Google/Api/Ads/Common/Lib/AdsUser.php';
 
 /**
  * Base class for all SOAP client factories of Ads client libraries.
- * @package GoogleApiAdsCommon
+ * @package    GoogleApiAdsCommon
  * @subpackage Lib
  */
 abstract class SoapClientFactory
@@ -86,7 +86,7 @@ abstract class SoapClientFactory
      * Generates a SOAP client for the given service name. Generates a user level
      * error if this instalation of PHP does not have the extension for SOAP
      * installed.
-     * @param  string        $serviceName the name of the service to generate a client for
+     * @param string $serviceName the name of the service to generate a client for
      * @return AdsSoapClient an instantiated SOAP client
      */
     public function GenerateSoapClient($serviceName)
@@ -94,21 +94,17 @@ abstract class SoapClientFactory
         if (extension_loaded('soap')) {
             $this->DoRequireOnce($serviceName);
             $soapClient = $this->GenerateServiceClient($serviceName);
-
             return $soapClient;
         } else {
-            trigger_error(
-                'This client library requires the SOAP extension to be'
+            trigger_error('This client library requires the SOAP extension to be'
                 . ' activated. See http://php.net/manual/en/soap.installation.php for'
-                . ' details.',
-                E_USER_ERROR
-            );
+                . ' details.', E_USER_ERROR);
         }
     }
 
     /**
      * Generates the SOAP service client without the proper headers set yet.
-     * @param  string        $serviceName the service to create a client for
+     * @param string $serviceName the service to create a client for
      * @return AdsSoapClient the SOAP service client
      * @access protected
      */
@@ -185,9 +181,7 @@ abstract class SoapClientFactory
         // Copy headers from user.
         foreach ($this->GetAdsUser()->GetHeaderNames() as $key) {
             $soapClient->SetHeaderValue(
-                $key,
-                $this->GetAdsUser()->GetHeaderValue($key)
-            );
+                $key, $this->GetAdsUser()->GetHeaderValue($key));
         }
 
         // Copy headers from overrides.
@@ -202,7 +196,7 @@ abstract class SoapClientFactory
 
     /**
      * Gets the end-point location of the service.
-     * @param  string $serviceName the service to instantiate
+     * @param string $serviceName the service to instantiate
      * @return string the end-point location of the service.
      * @access protected
      */
@@ -210,12 +204,8 @@ abstract class SoapClientFactory
     {
         $classVars = get_class_vars($serviceName);
         $endpoint = $classVars['endpoint'];
-
-        return preg_replace(
-            SoapClientFactory::$SERVER_REGEX,
-            $this->GetServer(),
-            $endpoint
-        );
+        return preg_replace(SoapClientFactory::$SERVER_REGEX, $this->GetServer(),
+            $endpoint);
     }
 
     /**
@@ -273,3 +263,4 @@ abstract class SoapClientFactory
         return self::$COMPRESSION_KIND;
     }
 }
+

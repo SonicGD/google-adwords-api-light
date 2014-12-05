@@ -31,7 +31,7 @@ require_once dirname(__FILE__) . '/../../Common/Lib/AdsSoapClient.php';
 
 /**
  * An extension of the {@link AdsSoapClient} for the AdWords API.
- * @package GoogleApiAdsAdWords
+ * @package    GoogleApiAdsAdWords
  * @subpackage Lib
  */
 class AdWordsSoapClient extends AdsSoapClient
@@ -39,12 +39,12 @@ class AdWordsSoapClient extends AdsSoapClient
 
     /**
      * Constructor for the AdWords API SOAP client.
-     * @param string  $wsdl URI of the WSDL file or <var>NULL</var> if working in
-     *     non-WSDL mode
-     * @param array   $options the SOAP client options
-     * @param AdsUser $user the user which is responsible for this client
-     * @param string  $serviceName the name of the service which is making this
-     *     call
+     * @param string  $wsdl             URI of the WSDL file or <var>NULL</var> if working in
+     *                                  non-WSDL mode
+     * @param array   $options          the SOAP client options
+     * @param AdsUser $user             the user which is responsible for this client
+     * @param string  $serviceName      the name of the service which is making this
+     *                                  call
      * @param string  $serviceNamespace the namespace of the service
      */
     public function __construct(
@@ -54,23 +54,18 @@ class AdWordsSoapClient extends AdsSoapClient
         $serviceName,
         $serviceNamespace
     ) {
-        parent::__construct(
-            $wsdl,
-            $options,
-            $user,
-            $serviceName,
-            $serviceNamespace
-        );
+        parent::__construct($wsdl, $options, $user, $serviceName,
+            $serviceNamespace);
     }
 
     /**
      * Overrides the method __doRequest(). When OAuth2 authentication is used the
      * URL parameters added.
-     * @param string $request the request XML
+     * @param string $request  the request XML
      * @param string $location the URL to request
-     * @param string $action the SOAP action
-     * @param string $version the SOAP version
-     * @param int    $one_way if set to 1, this method returns nothing
+     * @param string $action   the SOAP action
+     * @param string $version  the SOAP version
+     * @param int    $one_way  if set to 1, this method returns nothing
      * @return string the XML SOAP response
      */
     function __doRequest(
@@ -111,10 +106,8 @@ class AdWordsSoapClient extends AdsSoapClient
         foreach (get_object_vars($headerObject) as $var => $value) {
             $headerObject->$var = $this->GetHeaderValue($var);
         }
-        return new SoapHeader(
-            $this->serviceNamespace, 'RequestHeader',
-            $headerObject, false
-        );
+        return new SoapHeader($this->serviceNamespace, 'RequestHeader',
+            $headerObject, false);
     }
 
     /**
@@ -126,10 +119,7 @@ class AdWordsSoapClient extends AdsSoapClient
     protected function RemoveSensitiveInfo($request)
     {
         $result = preg_replace(
-            '/(.*authToken>)(.*)(<\/.*authToken>.*)/sU',
-            '\1*****\3',
-            $request
-        );
+            '/(.*authToken>)(.*)(<\/.*authToken>.*)/sU', '\1*****\3', $request);
         return isset($result) ? $result : $request;
     }
 

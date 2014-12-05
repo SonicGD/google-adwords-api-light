@@ -31,7 +31,7 @@
 
 /**
  * Exception class for any client library validation error.
- * @package GoogleApiAdsCommon
+ * @package    GoogleApiAdsCommon
  * @subpackage Lib
  */
 class ValidationException extends Exception
@@ -55,14 +55,8 @@ class ValidationException extends Exception
     public function __construct($trigger, $value, $message)
     {
         $this->trigger = $trigger;
-        parent::__construct(
-            sprintf(
-                self::EXCEPTION_FORMAT,
-                $trigger,
-                $value,
-                $message
-            )
-        );
+        parent::__construct(sprintf(self::EXCEPTION_FORMAT, $trigger, $value,
+            $message));
     }
 
     /**
@@ -74,3 +68,4 @@ class ValidationException extends Exception
         return $this->trigger;
     }
 }
+

@@ -1,7 +1,7 @@
 <?php
 /**
  * Client used to retrieve authentication tokens from the Client Login API.
- * @link http://code.google.com/apis/accounts/docs/AuthForInstalledApps.html
+ * @link       http://code.google.com/apis/accounts/docs/AuthForInstalledApps.html
  *
  * PHP version 5
  *
@@ -34,8 +34,8 @@ require_once 'Google/Api/Ads/Common/Util/CurlUtils.php';
 
 /**
  * Client used to retrieve authentication tokens from the Client Login API.
- * @link http://code.google.com/apis/accounts/docs/AuthForInstalledApps.html
- * @package GoogleApiAdsCommon
+ * @link       http://code.google.com/apis/accounts/docs/AuthForInstalledApps.html
+ * @package    GoogleApiAdsCommon
  * @subpackage Util
  */
 class AuthToken
@@ -73,11 +73,11 @@ class AuthToken
      * @param string    $accountType the account type, defaults to 'GOOGLE'
      * @param string    $server      the server to make the request to, defaults
      *                               to 'https://www.google.com'
-     * @param           string captchaToken the token return with a CAPTCHA challenge
-     * @param           string captchaResponse the response to a CAPTCHA challenge
+     * @param           string       captchaToken the token return with a CAPTCHA challenge
+     * @param           string       captchaResponse the response to a CAPTCHA challenge
      * @param CurlUtils $curlUtils   an instance of CurlUtils
      */
-    public function __construct(
+    function __construct(
         $email,
         $password,
         $service,
@@ -103,7 +103,7 @@ class AuthToken
 
     /**
      * Peforms a POST to get the auth token and then parses the result.
-     * @return string             the auth token
+     * @return string the auth token
      * @throws AuthTokenException if an error occurs during authentication
      */
     public function GetAuthToken()
@@ -132,25 +132,21 @@ class AuthToken
 
     /**
      * Makes the client login request and stores the result.
-     * @return string             the response from the ClientLogin API
+     * @return string the response from the ClientLogin API
      * @throws AuthTokenException if an error occurs during authentication
      */
     private function Login()
     {
         $postUrl = $this->server . '/accounts/ClientLogin';
-        $postVars = http_build_query(
-            array(
-                'accountType'  => $this->accountType,
-                'Email'        => $this->email,
-                'Passwd'       => $this->password,
-                'service'      => $this->service,
-                'source'       => $this->source,
-                'logintoken'   => $this->captchaToken,
-                'logincaptcha' => $this->captchaResponse
-            ),
-            null,
-            '&'
-        );
+        $postVars = http_build_query(array(
+            'accountType'  => $this->accountType,
+            'Email'        => $this->email,
+            'Passwd'       => $this->password,
+            'service'      => $this->service,
+            'source'       => $this->source,
+            'logintoken'   => $this->captchaToken,
+            'logincaptcha' => $this->captchaResponse
+        ), null, '&');
 
         $ch = $this->curlUtils->CreateSession($postUrl);
         $this->curlUtils->SetOpt($ch, CURLOPT_POST, 1);
@@ -174,8 +170,8 @@ class AuthToken
 
     /**
      * Parses the response into a map of field name to value.
-     * @param  string $response the response from the ClientLogin API
-     * @return array  a map of field name to value
+     * @param string $response the response from the ClientLogin API
+     * @return array a map of field name to value
      */
     private function ParseResponse($response)
     {
@@ -187,7 +183,6 @@ class AuthToken
             $value = isset($parts[1]) ? $parts[1] : null;
             $result[$key] = $value;
         }
-
         return $result;
     }
 
@@ -200,3 +195,4 @@ class AuthToken
         return $this->server;
     }
 }
+

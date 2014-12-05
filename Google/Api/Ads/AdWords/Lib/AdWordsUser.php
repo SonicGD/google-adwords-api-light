@@ -42,7 +42,7 @@ require_once 'AdWordsConstants.php';
 /**
  * User class for the AdWords API to create SOAP clients to the available API
  * services.
- * @package GoogleApiAdsAdWords
+ * @package    GoogleApiAdsAdWords
  * @subpackage Lib
  */
 class AdWordsUser extends AdsUser
@@ -84,22 +84,22 @@ class AdWordsUser extends AdsUser
      * settings INI file will be loaded from the path of "../settings.ini"
      * relative to this file's directory.</p>
      * @param string $authenticationIniPath the absolute path to the
-     *     authentication INI or relative to the current directory (cwd). If
-     *     <var>NULL</var>, the default authentication INI file will attempt to be
-     *     loaded
-     * @param string $developerToken the developer token (required header). Will
-     *     overwrite the developer token entry loaded from any INI file
-     * @param string $applicationToken the application token (required header).
-     *     Will overwrite the application token entry loaded from any INI file
-     * @param string $userAgent the user agent name (required header). Will
-     *     be prepended with the library name and version. Will overwrite the
-     *     userAgent entry loaded from any INI file
-     * @param string $clientCustomerId the client customer ID to make the request
-     *     against (optional header). Will overwrite the clientCustomerId entry
-     *     loaded from any INI file
-     * @param string $settingsIniPath the path to the settings INI file. If
-     *     <var>NULL</var>, the default settings INI file will be loaded
-     * @param array  $oauth2Info the OAuth 2.0 information to use for requests
+     *                                      authentication INI or relative to the current directory (cwd). If
+     *                                      <var>NULL</var>, the default authentication INI file will attempt to be
+     *                                      loaded
+     * @param string $developerToken        the developer token (required header). Will
+     *                                      overwrite the developer token entry loaded from any INI file
+     * @param string $applicationToken      the application token (required header).
+     *                                      Will overwrite the application token entry loaded from any INI file
+     * @param string $userAgent             the user agent name (required header). Will
+     *                                      be prepended with the library name and version. Will overwrite the
+     *                                      userAgent entry loaded from any INI file
+     * @param string $clientCustomerId      the client customer ID to make the request
+     *                                      against (optional header). Will overwrite the clientCustomerId entry
+     *                                      loaded from any INI file
+     * @param string $settingsIniPath       the path to the settings INI file. If
+     *                                      <var>NULL</var>, the default settings INI file will be loaded
+     * @param array  $oauth2Info            the OAuth 2.0 information to use for requests
      */
     public function __construct(
         $authenticationIniPath = null,
@@ -112,22 +112,15 @@ class AdWordsUser extends AdsUser
     ) {
         parent::__construct();
 
-        $buildIniAw = parse_ini_file(
-            dirname(__FILE__) . '/build.ini',
-            false
-        );
-        $buildIniCommon = parse_ini_file(
-            dirname(__FILE__) .
-            '/../../Common/Lib/build.ini',
-            false
-        );
+        $buildIniAw = parse_ini_file(dirname(__FILE__) . '/build.ini',
+            false);
+        $buildIniCommon = parse_ini_file(dirname(__FILE__) .
+            '/../../Common/Lib/build.ini', false);
         $this->libName = $buildIniAw['LIB_NAME'];
         $this->libVersion = $buildIniCommon['LIB_VERSION'];
 
-        $apiProps = ApiPropertiesUtils::ParseApiPropertiesFile(
-            dirname(__FILE__) .
-            '/api.properties'
-        );
+        $apiProps = ApiPropertiesUtils::ParseApiPropertiesFile(dirname(__FILE__) .
+            '/api.properties');
         $versions = explode(',', $apiProps['api.versions']);
         $this->defaultVersion = $versions[count($versions) - 1];
         $this->defaultServer = $apiProps['api.server'];
@@ -140,39 +133,22 @@ class AdWordsUser extends AdsUser
                 parse_ini_file(dirname(__FILE__) . '/../auth.ini', true);
         }
 
-        $developerToken = $this->GetAuthVarValue(
-            $developerToken,
-            'developerToken',
-            $authenticationIni
-        );
-        $applicationToken = $this->GetAuthVarValue(
-            $applicationToken,
-            'applicationToken',
-            $authenticationIni
-        );
-        $userAgent = $this->GetAuthVarValue(
-            $userAgent,
-            self::USER_AGENT_HEADER_NAME,
-            $authenticationIni
-        );
-        $clientCustomerId = $this->GetAuthVarValue(
-            $clientCustomerId,
-            'clientCustomerId',
-            $authenticationIni
-        );
-        $oauth2Info = $this->GetAuthVarValue(
-            $oauth2Info,
-            'OAUTH2',
-            $authenticationIni
-        );
+        $developerToken = $this->GetAuthVarValue($developerToken, 'developerToken',
+            $authenticationIni);
+        $applicationToken = $this->GetAuthVarValue($applicationToken,
+            'applicationToken', $authenticationIni);
+        $userAgent = $this->GetAuthVarValue($userAgent,
+            self::USER_AGENT_HEADER_NAME, $authenticationIni);
+        $clientCustomerId = $this->GetAuthVarValue($clientCustomerId,
+            'clientCustomerId', $authenticationIni);
+        $oauth2Info = $this->GetAuthVarValue($oauth2Info, 'OAUTH2',
+            $authenticationIni);
 
         $clientId = $this->GetAuthVarValue(null, 'clientId', $authenticationIni);
         if ($clientId !== null) {
-            throw new ValidationException(
-                'clientId', $clientId,
+            throw new ValidationException('clientId', $clientId,
                 'The authentication key "clientId" has been changed to'
-                . ' "clientCustomerId", please use that instead.'
-            );
+                . ' "clientCustomerId", please use that instead.');
         }
 
         $this->SetOAuth2Info($oauth2Info);
@@ -186,13 +162,10 @@ class AdWordsUser extends AdsUser
             $settingsIniPath = dirname(__FILE__) . '/../settings.ini';
         }
 
-        $this->LoadSettings(
-            $settingsIniPath,
+        $this->LoadSettings($settingsIniPath,
             $this->defaultVersion,
             $this->defaultServer,
-            getcwd(),
-            dirname(__FILE__)
-        );
+            getcwd(), dirname(__FILE__));
     }
 
     /**
@@ -202,10 +175,8 @@ class AdWordsUser extends AdsUser
     protected function InitLogs()
     {
         parent::InitLogs();
-        Logger::LogToFile(
-            ReportUtils::$LOG_NAME,
-            $this->GetLogsDirectory() . "/report_download.log"
-        );
+        Logger::LogToFile(ReportUtils::$LOG_NAME,
+            $this->GetLogsDirectory() . "/report_download.log");
         Logger::SetLogLevel(ReportUtils::$LOG_NAME, Logger::$FATAL);
     }
 
@@ -241,17 +212,17 @@ class AdWordsUser extends AdsUser
 
     /**
      * Gets the service by its service name and group.
-     * @param                   $serviceName the service name
-     * @param string            $version the version of the service to get. If
-     *     <var>NULL</var>, then the default version will be used
-     * @param string            $server the server to make the request to. If
-     *     <var>NULL</var>, then the default server will be used
+     * @param                   $serviceName    the service name
+     * @param string            $version        the version of the service to get. If
+     *                                          <var>NULL</var>, then the default version will be used
+     * @param string            $server         the server to make the request to. If
+     *                                          <var>NULL</var>, then the default server will be used
      * @param SoapClientFactory $serviceFactory the factory to create the client.
-     *     If <var>NULL</var>, then the built-in SOAP client factory will be used
-     * @param bool              $validateOnly if the service should be created in validateOnly
-     *     mode
+     *                                          If <var>NULL</var>, then the built-in SOAP client factory will be used
+     * @param bool              $validateOnly   if the service should be created in validateOnly
+     *                                          mode
      * @param bool              $partialFailure if the service should be created in
-     *     partialFailure mode
+     *                                          partialFailure mode
      * @return SoapClient the instantiated service
      * @throws ServiceException if an error occurred when getting the service
      */
@@ -273,10 +244,8 @@ class AdWordsUser extends AdsUser
                 $server = $this->GetDefaultServer();
             }
 
-            $serviceFactory = new AdWordsSoapClientFactory(
-                $this, $version, $server,
-                $validateOnly, $partialFailure
-            );
+            $serviceFactory = new AdWordsSoapClientFactory($this, $version, $server,
+                $validateOnly, $partialFailure);
         }
 
         return parent::GetServiceSoapClient($serviceName, $serviceFactory);
@@ -286,18 +255,16 @@ class AdWordsUser extends AdsUser
      * Loads the classes within a service, so they can be used before the service
      * is constructed.
      * @param        $serviceName the service name
-     * @param string $version the version of the service to get. If
-     *     <var>NULL</var>, then the default version will be used
+     * @param string $version     the version of the service to get. If
+     *                            <var>NULL</var>, then the default version will be used
      */
     public function LoadService($serviceName, $version = null)
     {
         if (!isset($version)) {
             $version = $this->GetDefaultVersion();
         }
-        $serviceFactory = new AdWordsSoapClientFactory(
-            $this, $version, null, null,
-            null
-        );
+        $serviceFactory = new AdWordsSoapClientFactory($this, $version, null, null,
+            null);
         $serviceFactory->DoRequireOnce($serviceName);
     }
 
@@ -367,10 +334,30 @@ class AdWordsUser extends AdsUser
     /**
      * Sets the AdWords Express business ID required for AdWords Express
      * PromotionService
+     * @param string AdWords Express business ID
      */
     public function SetExpressBusinessId($businessId)
     {
         $this->SetHeaderValue('expressBusinessId', $businessId);
+    }
+
+    /**
+     * Gets the Google My Business page ID used by AdWords Express
+     * PromotionService
+     */
+    public function GetExpressPlusPageId()
+    {
+        return $this->GetHeaderValue('pageId');
+    }
+
+    /**
+     * Sets the Google My Business page ID used by AdWords Express
+     * PromotionService
+     * @param string Google My Business page ID
+     */
+    public function SetExpressPlusPageId($pageId)
+    {
+        $this->SetHeaderValue('pageId', $pageId);
     }
 
     /**
@@ -416,31 +403,23 @@ class AdWordsUser extends AdsUser
         if ($this->GetOAuth2Info() !== null) {
             parent::ValidateOAuth2Info();
         } else {
-            throw new ValidationException(
-                'OAuth2Info', null,
-                'OAuth 2.0 configuration is required.'
-            );
+            throw new ValidationException('OAuth2Info', null,
+                'OAuth 2.0 configuration is required.');
         }
 
         if ($this->GetUserAgent() === null
             || trim($this->GetUserAgent()) === ''
             || strpos($this->GetUserAgent(), self::DEFAULT_USER_AGENT) !== false
         ) {
-            throw new ValidationException(
-                'userAgent', null,
-                sprintf(
-                    "The property userAgent is required and cannot be "
+            throw new ValidationException('userAgent', null,
+                sprintf("The property userAgent is required and cannot be "
                     . "NULL, the empty string, or the default [%s]",
-                    self::DEFAULT_USER_AGENT
-                )
-            );
+                    self::DEFAULT_USER_AGENT));
         }
 
         if ($this->GetDeveloperToken() === null) {
-            throw new ValidationException(
-                'developerToken', null,
-                'developerToken is required and cannot be NULL.'
-            );
+            throw new ValidationException('developerToken', null,
+                'developerToken is required and cannot be NULL.');
         }
     }
 
@@ -457,10 +436,10 @@ class AdWordsUser extends AdsUser
 
     /**
      * Handles calls to undefined methods.
-     * @param string $name the name of the method being called
+     * @param string $name      the name of the method being called
      * @param array  $arguments the arguments passed to the method
      * @return mixed the result of the correct method call, or nothing if there
-     *     is no correct method
+     *                          is no correct method
      */
     public function __call($name, $arguments)
     {

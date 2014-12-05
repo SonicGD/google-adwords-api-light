@@ -30,7 +30,7 @@
 
 /**
  * A collection of utility methods for working with cURL.
- * @package GoogleApiAdsCommon
+ * @package    GoogleApiAdsCommon
  * @subpackage Util
  */
 class CurlUtils
@@ -38,8 +38,8 @@ class CurlUtils
 
     /**
      * Creates a new cURL session with the default options applied.
-     * @param  string $url the URL of the resource to connect to
-     * @return the    cURL handle for the new session
+     * @param string $url the URL of the resource to connect to
+     * @return the cURL handle for the new session
      */
     public function CreateSession($url)
     {
@@ -62,12 +62,8 @@ class CurlUtils
         if (defined('HTTP_PROXY_USER') && defined('HTTP_PROXY_PASSWORD')
             && HTTP_PROXY_USER != '' && HTTP_PROXY_PASSWORD != ''
         ) {
-            $this->SetOpt(
-                $ch,
-                CURLOPT_PROXYUSERPWD,
-                HTTP_PROXY_USER . ':'
-                . HTTP_PROXY_PASSWORD
-            );
+            $this->SetOpt($ch, CURLOPT_PROXYUSERPWD, HTTP_PROXY_USER . ':'
+                . HTTP_PROXY_PASSWORD);
         }
 
         // SSL options.
@@ -152,3 +148,4 @@ class CurlUtils
         curl_close($ch);
     }
 }
+

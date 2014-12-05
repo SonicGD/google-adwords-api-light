@@ -34,7 +34,7 @@ require_once 'Google/Api/Ads/Common/Lib/ServiceException.php';
 /**
  * A collection of utility methods for logging or throwing errors related to the
  * usage of deprecated features.
- * @package GoogleApiAdsCommon
+ * @package    GoogleApiAdsCommon
  * @subpackage Util
  */
 abstract class DeprecationUtils
@@ -48,20 +48,17 @@ abstract class DeprecationUtils
     public static function CheckUsingClientLogin(AdsUser $user)
     {
         if (!self::IsUsingOAuth2($user)) {
-            self::Log(
-                "Current authentication method DEPRECATED. Please switch to"
+            self::Log("Current authentication method DEPRECATED. Please switch to"
                 . " OAuth2 as authentication method. For more information, see:\n"
                 . " https://developers.google.com/accounts/docs/"
-                . "AuthForInstalledApps",
-                Logger::$ERROR
-            );
+                . "AuthForInstalledApps", Logger::$ERROR);
         }
     }
 
     /**
      * Checks to see if an ads user is authenticating with OAuth 2 or not.
      *
-     * @param  AdsUser $user the AdsUser to test
+     * @param AdsUser $user the AdsUser to test
      * @return boolean true if using OAuth 2, false otherwise
      */
     public static function IsUsingOAuth2(AdsUser $user)
@@ -76,12 +73,12 @@ abstract class DeprecationUtils
      * in a version where it is not supported and throws an error if this is the
      * case.
      *
-     * @param  AdsUser          $user                    the AdsUser to test
-     * @param  string           $finalClientLoginVersion the final API version that supports
-     *                                                   ClientLogin
-     * @param  string           $requestedVersion        the API version being used
+     * @param AdsUser $user                    the AdsUser to test
+     * @param string  $finalClientLoginVersion the final API version that supports
+     *                                         ClientLogin
+     * @param string  $requestedVersion        the API version being used
      * @throws ServiceException if the requested version does not support
-     *                                                  ClientLogin
+     *                                         ClientLogin
      */
     public static function CheckUsingClientLoginWithUnsupportedVersion(
         AdsUser $user,
@@ -91,13 +88,8 @@ abstract class DeprecationUtils
         if (!self::IsUsingOAuth2($user) &&
             $requestedVersion > $finalClientLoginVersion
         ) {
-            throw new ServiceException(
-                sprintf(
-                    "ClientLogin is not supported in "
-                    . "version %s. Please upgrade to OAuth 2.",
-                    $requestedVersion
-                )
-            );
+            throw new ServiceException(sprintf("ClientLogin is not supported in "
+                . "version %s. Please upgrade to OAuth 2.", $requestedVersion));
         }
     }
 
@@ -105,24 +97,41 @@ abstract class DeprecationUtils
      * Checks to see if returnMoneyInMicros can be used.  Throws an error if it
      * cannot be used.
      *
-     * @param  string           $finalVersion     the final API version that supports
-     *                                            returnMoneyInMicros
-     * @param  string           $requestedVersion the API version being used
+     * @param string $finalVersion     the final API version that supports
+     *                                 returnMoneyInMicros
+     * @param string $requestedVersion the API version being used
      * @throws ServiceException if the requested version does not support
-     *                                           returnMoneyInMicros
+     *                                 returnMoneyInMicros
      */
     public static function CheckUsingReturnMoneyInMicrosWithUnsupportedVersion(
         $finalVersion,
         $requestedVersion
     ) {
         if ($requestedVersion > $finalVersion) {
-            throw new ServiceException(
-                sprintf(
-                    "returnMoneyInMicros is not supported "
-                    . "in version %s.",
-                    $requestedVersion
-                )
-            );
+            throw new ServiceException(sprintf("returnMoneyInMicros is not supported "
+                . "in version %s.", $requestedVersion));
+        }
+    }
+
+    /**
+     * Checks to see if skipReportHeader or skipReportSummary can be used.
+     * Throws an error if it cannot be used.
+     *
+     * @param string $header           skipReportHeader or skipReportSummary
+     * @param string $minimumVersion   the minimum API version that supports
+     *                                 skipReportHeader or skipReportSummary
+     * @param string $requestedVersion the API version being used
+     * @throws ServiceException if the requested version does not support
+     *                                 skipReportHeader or skipReportSummary
+     */
+    public static function CheckUsingSkipReportHeaderWithUnsupportedVersion(
+        $header,
+        $minimumVersion,
+        $requestedVersion
+    ) {
+        if ($requestedVersion < $minimumVersion) {
+            throw new ServiceException(sprintf("%s is not supported "
+                . "in version %s.", $header, $requestedVersion));
         }
     }
 
@@ -138,10 +147,8 @@ abstract class DeprecationUtils
     ) {
         $message = sprintf("The method '%s' is deprecated.", $methodName);
         if (isset($moreInfoLink)) {
-            $message .= sprintf(
-                " For more information, please see '%s'",
-                $moreInfoLink
-            );
+            $message .= sprintf(" For more information, please see '%s'",
+                $moreInfoLink);
         }
         self::Log($message, Logger::$ERROR);
     }
@@ -158,3 +165,4 @@ abstract class DeprecationUtils
         Logger::log(Logger::$REQUEST_INFO_LOG, $message, $level);
     }
 }
+

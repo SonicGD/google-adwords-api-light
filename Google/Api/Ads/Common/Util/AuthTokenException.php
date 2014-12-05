@@ -31,7 +31,7 @@
 
 /**
  * Exception class for any AuthToken (ClientLogin) error.
- * @package GoogleApiAdsCommon
+ * @package    GoogleApiAdsCommon
  * @subpackage Util
  */
 class AuthTokenException extends Exception
@@ -98,3 +98,4 @@ class AuthTokenException extends Exception
         return $this->captchaUrl;
     }
 }
+

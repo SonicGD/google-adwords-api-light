@@ -39,7 +39,7 @@ function parseFile($path, $baseClassName, $dummy)
                 $require[] = $className;
             }
             echo "Write class file for " . $className . "\n";
-            $newPath = "Google/Api/Ads/AdWords/v201406/classes/" . $className . ".php";
+            $newPath = "Google/Api/Ads/AdWords/v201409/classes/" . $className . ".php";
             file_put_contents(
                 $newPath,
                 str_ireplace("%code%", $classCode, $result)
@@ -55,7 +55,7 @@ function parseFile($path, $baseClassName, $dummy)
     }
     echo "Write required file for " . $baseClassName . "\n";
     file_put_contents(
-        "Google/Api/Ads/AdWords/v201406/classes/" . $baseClassName . ".require.php",
+        "Google/Api/Ads/AdWords/v201409/classes/" . $baseClassName . ".require.php",
         "<?php" . PHP_EOL . $requireCode
     );
     //unlink($path);
@@ -63,11 +63,11 @@ function parseFile($path, $baseClassName, $dummy)
 
 $dummy = file_get_contents("Dummy.php.txt");
 
-$handle = opendir('Google/Api/Ads/AdWords/v201406/');
+$handle = opendir('Google/Api/Ads/AdWords/v201409/');
 $files = readdir($handle);
 while (false !== ($entry = readdir($handle))) {
     if (strpos($entry, "Service.php")) {
-        $path = "Google/Api/Ads/AdWords/v201406/" . $entry;
+        $path = "Google/Api/Ads/AdWords/v201409/" . $entry;
         parseFile($path, str_ireplace(".php", "", $entry), $dummy);
     }
 }

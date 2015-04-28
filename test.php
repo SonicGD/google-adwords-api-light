@@ -9,7 +9,7 @@
  * Date: 30.10.13
  * Time: 22:44
  */
-require_once('vendor/autoload.php');
+require_once 'vendor/autoload.php';
 $settingsFile = "/var/www/cg2/common/config/adwapi/settings.ini";
 $user = new AdWordsUser(
     '/var/www/cg2/common/config/adwapi/auth.ini',
@@ -38,9 +38,8 @@ $selector->fields = [
     'TargetGoogleSearch',
     'TargetSearchNetwork',
     'TargetContentNetwork',
-    'TargetPartnerSearchNetwork'
+    'TargetPartnerSearchNetwork',
 ];
-
 
 $result = $campaignService->get($selector);
 var_dump($result);

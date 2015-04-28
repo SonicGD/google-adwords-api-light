@@ -10,7 +10,7 @@
  * Time: 22:44
  */
 require_once 'vendor/autoload.php';
-$settingsFile = "/var/www/cg2/common/config/adwapi/settings.ini";
+$settingsFile = "settings.ini";
 $user = new AdWordsUser(
     '/var/www/cg2/common/config/adwapi/auth.ini',
     null,
@@ -23,8 +23,8 @@ $user = new AdWordsUser(
     null
 );
 
-$user->SetClientCustomerId(7141094402);
-$campaignService = $user->GetService('CampaignService', 'v201409');
+$user->SetClientCustomerId(0);
+$campaignService = $user->GetService('CampaignService', 'v201502');
 $selector = new Selector();
 $selector->fields = [
     'Id',

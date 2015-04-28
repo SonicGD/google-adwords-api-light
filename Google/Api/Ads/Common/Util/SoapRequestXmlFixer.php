@@ -39,7 +39,6 @@ require_once 'Google/Api/Ads/Common/Util/XmlUtils.php';
  */
 class SoapRequestXmlFixer
 {
-
     private static $XSI_NAMESPACE = 'http://www.w3.org/2001/XMLSchema-instance';
 
     private $addXsiTypes;
@@ -67,9 +66,9 @@ class SoapRequestXmlFixer
 
     /**
      * Fixes the XML based on the parameters specified in the constructor.
-     * @param string $request   the raw request produced by the SOAP client
-     * @param array  $arguments the arguments passed to the SOAP method
-     * @param array  $headers   the headers used in the request
+     * @param  string $request   the raw request produced by the SOAP client
+     * @param  array  $arguments the arguments passed to the SOAP method
+     * @param  array  $headers   the headers used in the request
      * @return string the prepared request ready to be sent to the server
      */
     public function FixXml($request, array $arguments, array $headers)
@@ -150,7 +149,7 @@ class SoapRequestXmlFixer
             if (is_object($object)) {
                 foreach (get_object_vars($object) as $varName => $varValue) {
                     $nodeList =
-                        $xpath->query("*[local-name() = '" . $varName . "']", $node);
+                        $xpath->query("*[local-name() = '".$varName."']", $node);
 
                     if (is_array($varValue)) {
                         $this->FixXmlNodes($nodeList, $varValue, $xpath);
@@ -181,7 +180,7 @@ class SoapRequestXmlFixer
             if (isset($xsiTypeName) && $xsiTypeName != '') {
                 $prefix = $domNode->lookupPrefix($object->getNamespace());
                 $domNode->setAttributeNS(self::$XSI_NAMESPACE, 'xsi:type',
-                    (isset($prefix) ? $prefix . ':' : '') . $xsiTypeName);
+                    (isset($prefix) ? $prefix.':' : '').$xsiTypeName);
             }
         }
     }
@@ -201,10 +200,10 @@ class SoapRequestXmlFixer
             && version_compare(PHP_VERSION, '5.2.4', '<')
         ) {
             // These versions have a bug where href is generated without the # symbol.
-            $href = '#' . $href;
+            $href = '#'.$href;
         }
         $id = substr($href, 1);
-        $referencedElements = $xpath->query('//*[@id="' . $id . '"]');
+        $referencedElements = $xpath->query('//*[@id="'.$id.'"]');
         if ($referencedElements->length > 0) {
             $referencedElement = $referencedElements->item(0);
             for ($i = 0; $i < $referencedElement->childNodes->length; $i++) {
@@ -238,7 +237,7 @@ class SoapRequestXmlFixer
     {
         $requestHeaderDom = $xpath->query(
             "//*[local-name()='Envelope']/*[local-name()='Header']"
-            . "/*[local-name()='RequestHeader']")->item(0);
+            ."/*[local-name()='RequestHeader']")->item(0);
 
         $childNodes = $requestHeaderDom->childNodes;
 
@@ -249,4 +248,3 @@ class SoapRequestXmlFixer
         }
     }
 }
-

@@ -36,7 +36,6 @@
  */
 class AuthTokenException extends Exception
 {
-
     private $error;
     private $url;
     private $captchaToken;
@@ -59,7 +58,7 @@ class AuthTokenException extends Exception
         $this->url = $url;
         $this->captchaToken = $captchaToken;
         $this->captchaUrl = $captchaUrl;
-        parent::__construct('Failed to get authToken. Reason: ' . $error);
+        parent::__construct('Failed to get authToken. Reason: '.$error);
     }
 
     /**
@@ -98,4 +97,3 @@ class AuthTokenException extends Exception
         return $this->captchaUrl;
     }
 }
-

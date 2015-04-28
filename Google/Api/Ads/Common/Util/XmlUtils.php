@@ -37,27 +37,27 @@ require_once 'Google/Api/Ads/Common/Util/MapUtils.php';
  */
 class XmlUtils
 {
-
     /**
      * Gets the DOMDocument of the <var>$xml</var>.
-     * @param string $xml the XML to create a DOMDocument from
-     * @return DOMDocument the DOMDocument of the XML
+     * @param  string       $xml the XML to create a DOMDocument from
+     * @return DOMDocument  the DOMDocument of the XML
      * @throws DOMException if the DOM could not be loaded
      */
     public static function GetDomFromXml($xml)
     {
-        set_error_handler(array('XmlUtils', 'HandleXmlError'));
+        set_error_handler(['XmlUtils', 'HandleXmlError']);
         $dom = new DOMDocument();
         $dom->loadXML($xml,
             LIBXML_DTDLOAD | LIBXML_DTDATTR | LIBXML_NOENT | LIBXML_XINCLUDE);
         restore_error_handler();
+
         return $dom;
     }
 
     /**
      * Gets the XML represenation of the document.
-     * @param DOMDocument $document the document to convert
-     * @return string the XML represenation of the document
+     * @param  DOMDocument $document the document to convert
+     * @return string      the XML represenation of the document
      */
     public static function GetXmlFromDom($document)
     {
@@ -67,7 +67,7 @@ class XmlUtils
     /**
      * Returns a pretty printed XML. If the XML cannot be loaded a string
      * stripped of any newlines is returned.
-     * @param string $xml the XML to pretty print
+     * @param  string $xml the XML to pretty print
      * @return string a pretty printed string
      */
     public static function PrettyPrint($xml)
@@ -75,10 +75,12 @@ class XmlUtils
         try {
             $dom = self::GetDomFromXml($xml);
             $dom->formatOutput = true;
+
             return self::GetXmlFromDom($dom);
         } catch (DOMException $e) {
             restore_error_handler();
-            return str_replace(array("\r\n", "\n", "\r"), '', $xml);
+
+            return str_replace(["\r\n", "\n", "\r"], '', $xml);
         }
     }
 
@@ -101,7 +103,7 @@ class XmlUtils
      */
     private static function ConvertElementToObject($element)
     {
-        $result = array();
+        $result = [];
         if ($element->hasChildNodes()) {
             $numChildNodes = $element->childNodes->length;
             for ($i = 0; $i < $numChildNodes; $i++) {
@@ -111,7 +113,7 @@ class XmlUtils
                     $value = self::ConvertElementToObject($childNode);
                     if (isset($result[$name])) {
                         if (!is_array($result[$name])) {
-                            $result[$name] = array($result[$name]);
+                            $result[$name] = [$result[$name]];
                         }
                         $result[$name][] = $value;
                     } else {
@@ -121,7 +123,7 @@ class XmlUtils
             }
         }
         if (sizeof($result) > 0) {
-            return (Object)$result;
+            return (Object) $result;
         } else {
             return self::ConvertNodeValueToObject($element->nodeValue);
         }
@@ -129,8 +131,8 @@ class XmlUtils
 
     /**
      * Converts a node value to a PHP value of the appropriate type.
-     * @param string $value the value of the node
-     * @return mixed the PHP value as the appropriate type
+     * @param  string $value the value of the node
+     * @return mixed  the PHP value as the appropriate type
      */
     private static function ConvertNodeValueToObject($value)
     {
@@ -156,8 +158,8 @@ class XmlUtils
      * a parameter, and each field of the object becomes a child element. Array
      * values are represented by multiples instances of that element. Methods on
      * the object are ignored. There is no support for XML attributes.
-     * @param Object $object          the object to serialize
-     * @param string $rootElementName the name of the root element
+     * @param  Object      $object          the object to serialize
+     * @param  string      $rootElementName the name of the root element
      * @return DOMDocument the document representing the object
      */
     public static function ConvertObjectToDocument($object, $rootElementName)
@@ -165,15 +167,16 @@ class XmlUtils
         $document = new DOMDocument();
         $document->appendChild(
             self::ConvertObjectToElement($object, $rootElementName, $document));
+
         return $document;
     }
 
     /**
      * Converts an object to an DOMElement.
-     * @param Object      $object      the object to serialize
-     * @param string      $elementName the name of the element to serialize
-     * @param DOMDocument $document    the document that the element will be added to
-     * @return DOMElement the element representing the object
+     * @param  Object      $object      the object to serialize
+     * @param  string      $elementName the name of the element to serialize
+     * @param  DOMDocument $document    the document that the element will be added to
+     * @return DOMElement  the element representing the object
      */
     private static function ConvertObjectToElement(
         $object,
@@ -184,9 +187,9 @@ class XmlUtils
             return null;
         }
         $element = $document->createElement($elementName);
-        $children = array();
+        $children = [];
         if (is_array($object) && MapUtils::IsMap($object)) {
-            $object = (Object)$object;
+            $object = (Object) $object;
         }
         if (is_object($object)) {
             foreach (get_object_vars($object) as $field => $value) {
@@ -208,6 +211,7 @@ class XmlUtils
         } else {
             $element->nodeValue = self::ConvertObjectToNodeValue($object);
         }
+
         return $element;
     }
 
@@ -236,12 +240,12 @@ class XmlUtils
     /**
      * Caputures the warnings thrown by the loadXML function to create a proper
      * DOMException.
-     * @param string  $errno   contains the level of the error raised, as an integer
-     * @param string  $errstr  contains the error message, as a string
-     * @param string  $errfile contains the filename that the error was raised in,
-     *                         as a string
-     * @param integer $errline contains the line number the error was raised at,
-     *                         as an integer
+     * @param  string  $errno   contains the level of the error raised, as an integer
+     * @param  string  $errstr  contains the error message, as a string
+     * @param  string  $errfile contains the filename that the error was raised in,
+     *                          as a string
+     * @param  integer $errline contains the line number the error was raised at,
+     *                          as an integer
      * @return boolean <var>FALSE</var> if the normal error handler should
      *                         continue
      */
@@ -256,4 +260,3 @@ class XmlUtils
         }
     }
 }
-

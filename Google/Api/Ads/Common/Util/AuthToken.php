@@ -40,7 +40,6 @@ require_once 'Google/Api/Ads/Common/Util/CurlUtils.php';
  */
 class AuthToken
 {
-
     /**
      * The default account type for authentication requests.
      * @var string
@@ -77,7 +76,7 @@ class AuthToken
      * @param           string       captchaResponse the response to a CAPTCHA challenge
      * @param CurlUtils $curlUtils   an instance of CurlUtils
      */
-    function __construct(
+    public function __construct(
         $email,
         $password,
         $service,
@@ -103,7 +102,7 @@ class AuthToken
 
     /**
      * Peforms a POST to get the auth token and then parses the result.
-     * @return string the auth token
+     * @return string             the auth token
      * @throws AuthTokenException if an error occurs during authentication
      */
     public function GetAuthToken()
@@ -113,7 +112,7 @@ class AuthToken
         if (array_key_exists('Error', $fields)) {
             $error = $fields['Error'];
             if (array_key_exists('Info', $fields)) {
-                $error .= ': ' . $fields['Info'];
+                $error .= ': '.$fields['Info'];
             }
             $url = array_key_exists('Url', $fields) ? $fields['Url'] : null;
             $captchaToken = array_key_exists('CaptchaToken', $fields) ?
@@ -132,21 +131,21 @@ class AuthToken
 
     /**
      * Makes the client login request and stores the result.
-     * @return string the response from the ClientLogin API
+     * @return string             the response from the ClientLogin API
      * @throws AuthTokenException if an error occurs during authentication
      */
     private function Login()
     {
-        $postUrl = $this->server . '/accounts/ClientLogin';
-        $postVars = http_build_query(array(
+        $postUrl = $this->server.'/accounts/ClientLogin';
+        $postVars = http_build_query([
             'accountType'  => $this->accountType,
             'Email'        => $this->email,
             'Passwd'       => $this->password,
             'service'      => $this->service,
             'source'       => $this->source,
             'logintoken'   => $this->captchaToken,
-            'logincaptcha' => $this->captchaResponse
-        ), null, '&');
+            'logincaptcha' => $this->captchaResponse,
+        ], null, '&');
 
         $ch = $this->curlUtils->CreateSession($postUrl);
         $this->curlUtils->SetOpt($ch, CURLOPT_POST, 1);
@@ -170,12 +169,12 @@ class AuthToken
 
     /**
      * Parses the response into a map of field name to value.
-     * @param string $response the response from the ClientLogin API
-     * @return array a map of field name to value
+     * @param  string $response the response from the ClientLogin API
+     * @return array  a map of field name to value
      */
     private function ParseResponse($response)
     {
-        $result = array();
+        $result = [];
         $lines = explode("\n", $response);
         foreach ($lines as $line) {
             $parts = explode('=', $line, 2);
@@ -183,6 +182,7 @@ class AuthToken
             $value = isset($parts[1]) ? $parts[1] : null;
             $result[$key] = $value;
         }
+
         return $result;
     }
 
@@ -195,4 +195,3 @@ class AuthToken
         return $this->server;
     }
 }
-

@@ -35,7 +35,6 @@
  */
 class CurlUtils
 {
-
     /**
      * Creates a new cURL session with the following default options applied. Use
      * {@link #SetOpt} to change them. Proxy and SSL options should be set in the
@@ -47,8 +46,8 @@ class CurlUtils
      * CURLOPT_ENCODING - 'gzip'.
      * CURLOPT_USERAGENT - 'curl, gzip'.
      *
-     * @param string $url the URL of the resource to connect to
-     * @return the cURL handle for the new session
+     * @param  string $url the URL of the resource to connect to
+     * @return the    cURL handle for the new session
      */
     public function CreateSession($url)
     {
@@ -72,8 +71,8 @@ class CurlUtils
         if (defined('HTTP_PROXY_USER') && defined('HTTP_PROXY_PASSWORD')
             && HTTP_PROXY_USER != '' && HTTP_PROXY_PASSWORD != ''
         ) {
-            $this->SetOpt($ch, CURLOPT_PROXYUSERPWD, HTTP_PROXY_USER . ':'
-                . HTTP_PROXY_PASSWORD);
+            $this->SetOpt($ch, CURLOPT_PROXYUSERPWD, HTTP_PROXY_USER.':'
+                .HTTP_PROXY_PASSWORD);
         }
 
         // SSL options.
@@ -158,4 +157,3 @@ class CurlUtils
         curl_close($ch);
     }
 }
-

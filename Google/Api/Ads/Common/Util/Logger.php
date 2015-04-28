@@ -47,7 +47,6 @@
  */
 class Logger
 {
-
     /**
      * Logs all incomming and outgoing SOAP XML.
      * @var string log for all incomming and outgoing SOAP XML
@@ -98,8 +97,8 @@ class Logger
      */
     public static $FATAL = 'FATAL';
 
-    private static $logToMap = array();
-    private static $logLevelMap = array();
+    private static $logToMap = [];
+    private static $logLevelMap = [];
     private static $timeFormat = 'M d Y H:i:s.u';
 
     /**
@@ -147,7 +146,7 @@ class Logger
     private static function LogTo($log, $handleLocation)
     {
         if (!array_key_exists($log, self::$logToMap)) {
-            self::$logToMap[$log] = array();
+            self::$logToMap[$log] = [];
         }
 
         $appenders = self::$logToMap[$log];
@@ -213,7 +212,8 @@ class Logger
     private static function ShouldLog($logLevel, $messageLevel)
     {
         $levelPriority =
-            array(self::$DEBUG, self::$INFO, self::$ERROR, self::$FATAL);
+            [self::$DEBUG, self::$INFO, self::$ERROR, self::$FATAL];
+
         return array_search($logLevel, $levelPriority) <=
         array_search($messageLevel, $levelPriority);
     }
@@ -245,10 +245,9 @@ class Logger
     private static function WriteMessage($handleLocation, $message, $level)
     {
         $fp = fopen($handleLocation, 'a');
-        $line = '[' . date(self::$timeFormat, time()) . ' - ' . $level . '] '
-            . $message . "\n";
+        $line = '['.date(self::$timeFormat, time()).' - '.$level.'] '
+            .$message."\n";
         fwrite($fp, $line);
         fclose($fp);
     }
 }
-

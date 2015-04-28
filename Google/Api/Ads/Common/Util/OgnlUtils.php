@@ -35,7 +35,6 @@
  */
 class OgnlUtils
 {
-
     /**
      * Matches either a field or an index, and ensures the required punctionation
      * between tokens.
@@ -68,7 +67,7 @@ class OgnlUtils
             return null;
         }
         while (strlen($expression) > 0) {
-            $matches = array();
+            $matches = [];
             if (preg_match(self::$OGNL_TOKEN_REGEX, $expression, $matches)) {
                 $token = array_shift($matches);
                 $expression = substr($expression, strlen($token));
@@ -91,19 +90,20 @@ class OgnlUtils
                 return null;
             }
         }
+
         return $context;
     }
 
     /**
      * Retrieves the operation index from an OGNL expression that references an
      * operation.
-     * @param string $expression the OGNL expression
-     * @return int the operation index referenced, or NULL if no operation was
+     * @param  string $expression the OGNL expression
+     * @return int    the operation index referenced, or NULL if no operation was
      *                           references
      */
     public static function GetOperationIndex($expression)
     {
-        $matches = array();
+        $matches = [];
         if (preg_match(self::$OPERATION_INDEX_REGEX, $expression, $matches)) {
             return $matches[1];
         } else {
@@ -111,4 +111,3 @@ class OgnlUtils
         }
     }
 }
-

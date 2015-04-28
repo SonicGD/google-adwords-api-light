@@ -35,7 +35,6 @@
  */
 class UrlUtils
 {
-
     /**
      * The UrlUtils class is not meant to have any instances.
      * @access private
@@ -46,8 +45,8 @@ class UrlUtils
 
     /**
      * Replaces the protocol and server portion of a URL with another.
-     * @param string $url    the full URL
-     * @param string $server the protocol and server to replace with
+     * @param  string $url    the full URL
+     * @param  string $server the protocol and server to replace with
      * @return string the URL with the protocol and server replaced
      */
     public static function ReplaceServerInUrl($url, $server)
@@ -58,15 +57,16 @@ class UrlUtils
             $url .= $urlParts['path'];
         }
         if (!empty($urlParts['query'])) {
-            $url .= '?' . $urlParts['query'];
+            $url .= '?'.$urlParts['query'];
         }
+
         return $url;
     }
 
     /**
      * Adds parameters to a URL.
-     * @param string $url    the URL
-     * @param array  $params the parameters to add
+     * @param  string $url    the URL
+     * @param  array  $params the parameters to add
      * @return string the new URL with the parameters added
      */
     public static function AddParamsToUrl($url, $params)
@@ -77,8 +77,8 @@ class UrlUtils
             $paramString = http_build_query($params, null, '&');
             $query = parse_url($url, PHP_URL_QUERY);
             $separator = empty($query) ? '?' : '&';
-            return $url . $separator . $paramString;
+
+            return $url.$separator.$paramString;
         }
     }
 }
-

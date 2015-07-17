@@ -39,7 +39,7 @@ class AdWordsSoapClient extends AdsSoapClient
 
     /**
      * Constructor for the AdWords API SOAP client.
-     * @param string  $wsdl             URI of the WSDL file or <var>NULL</var> if working in
+     * @param string  $wsdl             URI of the WSDL file or <var>null</var> if working in
      *                                  non-WSDL mode
      * @param array   $options          the SOAP client options
      * @param AdsUser $user             the user which is responsible for this client
@@ -93,8 +93,8 @@ class AdWordsSoapClient extends AdsSoapClient
 
     /**
      * Generates the SOAP header for the client.
+     *
      * @return SoapHeader the instantiated SoapHeader ready to set
-     * @access protected
      */
     protected function GenerateSoapHeader()
     {
@@ -110,14 +110,14 @@ class AdWordsSoapClient extends AdsSoapClient
             $headerObject, false);
     }
 
-  /**
-   * @see AdsSoapClient::RemoveSensitiveInfo()
-   */
-  protected function RemoveSensitiveInfo($request)
-  {
-      // No-op, there is no sensitive information to remove from AdWords requests.
-    return $request;
-  }
+    /**
+     * @see AdsSoapClient::RemoveSensitiveInfo()
+     */
+    protected function RemoveSensitiveInfo($request)
+    {
+        // No-op, there is no sensitive information to remove from AdWords requests.
+        return $request;
+    }
 
     /**
      * Gets the effective user the request was made against.
@@ -128,107 +128,108 @@ class AdWordsSoapClient extends AdsSoapClient
         return $this->GetAdsUser()->GetClientCustomerId();
     }
 
-  /**
-   * Gets the last set of operators the last call in the form of
-   * "operator1,operator2".
-   * @return string the last set of operators
-   */
-  public function GetLastOperators()
-  {
-      try {
-          $operatorString = '{';
-          $operators = [];
-          $operatorElements =
-          $this->GetLastRequestDom()->getElementsByTagName('operator');
+    /**
+     * Gets the last set of operators the last call in the form of
+     * "operator1,operator2".
+     * @return string the last set of operators
+     */
+    public function GetLastOperators()
+    {
+        try {
+            $operatorString = '{';
+            $operators = [];
+            $operatorElements =
+                $this->GetLastRequestDom()->getElementsByTagName('operator');
 
-          foreach ($operatorElements as $operatorElement) {
-              if (array_key_exists($operatorElement->nodeValue, $operators)) {
-                  $operators[$operatorElement->nodeValue] += 1;
-              } else {
-                  $operators[$operatorElement->nodeValue] = 1;
-              }
-          }
+            foreach ($operatorElements as $operatorElement) {
+                if (array_key_exists($operatorElement->nodeValue, $operators)) {
+                    $operators[$operatorElement->nodeValue] += 1;
+                } else {
+                    $operators[$operatorElement->nodeValue] = 1;
+                }
+            }
 
-          foreach ($operators as $operator => $numOps) {
-              $operatorString .= $operator.': '.$numOps.', ';
-          }
+            foreach ($operators as $operator => $numOps) {
+                $operatorString .= $operator . ': ' . $numOps . ', ';
+            }
 
-          if ($operatorString != '{') {
-              $operatorString = substr($operatorString, 0, -2);
-          }
+            if ($operatorString != '{') {
+                $operatorString = substr($operatorString, 0, -2);
+            }
 
-          return $operatorString.'}';
-      } catch (DOMException $e) {
-          // TODO(api.arogal): Log failures to retrieve headers.
-      return 'null';
-      }
-  }
+            return $operatorString . '}';
+        } catch (DOMException $e) {
+            // TODO(api.arogal): Log failures to retrieve headers.
+            return 'null';
+        }
+    }
 
-  /**
-   * Gets the last number of operations.
-   * @return string the last number of operations
-   */
-  public function GetLastOperations()
-  {
-      try {
-          $operationsElements =
-          $this->GetLastResponseDom()->getElementsByTagName('operations');
-          foreach ($operationsElements as $operationsElement) {
-              return $operationsElement->nodeValue;
-          }
-      } catch (DOMException $e) {
-          // TODO(api.arogal): Log failures to retrieve headers.
-      return 'null';
-      }
-  }
+    /**
+     * Gets the last number of operations.
+     * @return string the last number of operations
+     */
+    public function GetLastOperations()
+    {
+        try {
+            $operationsElements =
+                $this->GetLastResponseDom()->getElementsByTagName('operations');
+            foreach ($operationsElements as $operationsElement) {
+                return $operationsElement->nodeValue;
+            }
+        } catch (DOMException $e) {
+            // TODO(api.arogal): Log failures to retrieve headers.
+            return 'null';
+        }
+    }
 
-  /**
-   * Gets the last number of units.
-   * @return string the last number of units
-   */
-  public function GetLastUnits()
-  {
-      try {
-          $unitsElements =
-          $this->GetLastResponseDom()->getElementsByTagName('units');
-          foreach ($unitsElements as $unitsElement) {
-              return $unitsElement->nodeValue;
-          }
-      } catch (DOMException $e) {
-          // TODO(api.arogal): Log failures to retrieve headers.
-      return 'null';
-      }
-  }
+    /**
+     * Gets the last number of units.
+     * @return string the last number of units
+     */
+    public function GetLastUnits()
+    {
+        try {
+            $unitsElements =
+                $this->GetLastResponseDom()->getElementsByTagName('units');
+            foreach ($unitsElements as $unitsElement) {
+                return $unitsElement->nodeValue;
+            }
+        } catch (DOMException $e) {
+            // TODO(api.arogal): Log failures to retrieve headers.
+            return 'null';
+        }
+    }
 
-  /**
-   * Generates the request info message containing:
-   * <ul>
-   * <li>effectiveUser</li>
-   * <li>service</li>
-   * <li>method</li>
-   * <li>operators</li>
-   * <li>responseTime</li>
-   * <li>requestId</li>
-   * <li>operations</li>
-   * <li>units</li>
-   * <li>server</li>
-   * <li>isFault</li>
-   * <li>faultMessage</li>
-   * </ul>
-   * @return string the request info message to log
-   * @access protected
-   */
-  protected function GenerateRequestInfoMessage()
-  {
-      return 'effectiveUser='.$this->GetEffectiveUser()
-    .' service='.$this->GetServiceName()
-    .' method='.$this->GetLastMethodName().' operators='
-    .$this->GetLastOperators().' responseTime='
-    .$this->GetLastResponseTime().' requestId='
-    .$this->GetLastRequestId().' operations='
-    .$this->GetLastOperations().' units='
-    .$this->GetLastUnits().' server='.$this->GetServer()
-    .' isFault='.($this->IsFault() ? 'true' : 'false')
-    .' faultMessage='.$this->GetLastFaultMessage();
-  }
+    /**
+     * Generates the request info message containing:
+     * <ul>
+     * <li>effectiveUser</li>
+     * <li>service</li>
+     * <li>method</li>
+     * <li>operators</li>
+     * <li>responseTime</li>
+     * <li>requestId</li>
+     * <li>operations</li>
+     * <li>units</li>
+     * <li>server</li>
+     * <li>isFault</li>
+     * <li>faultMessage</li>
+     * </ul>
+     *
+     * @return string the request info message to log
+     */
+    protected function GenerateRequestInfoMessage()
+    {
+        return 'effectiveUser=' . $this->GetEffectiveUser()
+        . ' service=' . $this->GetServiceName()
+        . ' method=' . $this->GetLastMethodName() . ' operators='
+        . $this->GetLastOperators() . ' responseTime='
+        . $this->GetLastResponseTime() . ' requestId='
+        . $this->GetLastRequestId() . ' operations='
+        . $this->GetLastOperations() . ' units='
+        . $this->GetLastUnits() . ' server=' . $this->GetServer()
+        . ' isFault=' . ($this->IsFault() ? 'true' : 'false')
+        . ' faultMessage=' . $this->GetLastFaultMessage();
+    }
 }
+

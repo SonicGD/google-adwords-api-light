@@ -25,8 +25,6 @@
  * @copyright  2011, Google Inc. All Rights Reserved.
  * @license    http://www.apache.org/licenses/LICENSE-2.0 Apache License,
  *             Version 2.0
- * @author     Adam Rogal
- * @author     Eric Koleda
  * @author     Vincent Tsao
  */
 require_once 'Google/Api/Ads/Common/Util/XmlUtils.php';
@@ -39,6 +37,7 @@ require_once 'Google/Api/Ads/Common/Util/XmlUtils.php';
  */
 class SoapRequestXmlFixer
 {
+
     private static $XSI_NAMESPACE = 'http://www.w3.org/2001/XMLSchema-instance';
 
     private $addXsiTypes;
@@ -47,11 +46,11 @@ class SoapRequestXmlFixer
 
     /**
      * Constructor to determine how the XML should be fixed.
-     * @param boolean $addXsiTypes         <var>TRUE</var> if xsi:types should be added
+     * @param boolean $addXsiTypes         <var>true</var> if xsi:types should be added
      *                                     to all complex type elements
-     * @param boolean $removeEmptyElements <var>TRUE</var> if all empty elements
+     * @param boolean $removeEmptyElements <var>true</var> if all empty elements
      *                                     should be removed from the XML request
-     * @param boolean $replaceReferences   <var>TRUE</var> if element references
+     * @param boolean $replaceReferences   <var>true</var> if element references
      *                                     should be replaced with a copy of the element.
      */
     public function __construct(
@@ -66,9 +65,9 @@ class SoapRequestXmlFixer
 
     /**
      * Fixes the XML based on the parameters specified in the constructor.
-     * @param  string $request   the raw request produced by the SOAP client
-     * @param  array  $arguments the arguments passed to the SOAP method
-     * @param  array  $headers   the headers used in the request
+     * @param string $request   the raw request produced by the SOAP client
+     * @param array  $arguments the arguments passed to the SOAP method
+     * @param array  $headers   the headers used in the request
      * @return string the prepared request ready to be sent to the server
      */
     public function FixXml($request, array $arguments, array $headers)
@@ -149,7 +148,7 @@ class SoapRequestXmlFixer
             if (is_object($object)) {
                 foreach (get_object_vars($object) as $varName => $varValue) {
                     $nodeList =
-                        $xpath->query("*[local-name() = '".$varName."']", $node);
+                        $xpath->query("*[local-name() = '" . $varName . "']", $node);
 
                     if (is_array($varValue)) {
                         $this->FixXmlNodes($nodeList, $varValue, $xpath);
@@ -167,7 +166,6 @@ class SoapRequestXmlFixer
      * Adds the xsi:type to the DOMNode generated from the corresponding object.
      * @param DOMNode $domNode the DOM node corresponding to the object
      * @param         $object  the object used to determine the xsi:type
-     * @access private
      */
     private function AddXsiType(DOMNode $domNode, $object)
     {
@@ -180,7 +178,7 @@ class SoapRequestXmlFixer
             if (isset($xsiTypeName) && $xsiTypeName != '') {
                 $prefix = $domNode->lookupPrefix($object->getNamespace());
                 $domNode->setAttributeNS(self::$XSI_NAMESPACE, 'xsi:type',
-                    (isset($prefix) ? $prefix.':' : '').$xsiTypeName);
+                    (isset($prefix) ? $prefix . ':' : '') . $xsiTypeName);
             }
         }
     }
@@ -189,21 +187,14 @@ class SoapRequestXmlFixer
      * Replaces an element reference with a copy of the element it references.
      * @param DOMElement $elementReference the element reference to replace
      * @param DOMXPath   $xpath            the xpath object representing the DOM
-     * @access private
      */
     private function ReplaceElementReference(
         DOMElement $elementReference,
         DOMXPath $xpath
     ) {
         $href = $elementReference->getAttribute('href');
-        if (version_compare(PHP_VERSION, '5.2.2', '>=')
-            && version_compare(PHP_VERSION, '5.2.4', '<')
-        ) {
-            // These versions have a bug where href is generated without the # symbol.
-            $href = '#'.$href;
-        }
         $id = substr($href, 1);
-        $referencedElements = $xpath->query('//*[@id="'.$id.'"]');
+        $referencedElements = $xpath->query('//*[@id="' . $id . '"]');
         if ($referencedElements->length > 0) {
             $referencedElement = $referencedElements->item(0);
             for ($i = 0; $i < $referencedElement->childNodes->length; $i++) {
@@ -217,7 +208,6 @@ class SoapRequestXmlFixer
     /**
      * Removed id attributes leftover after reference replacement.
      * @param DOMXPath $xpath the xpath object representing the DOM
-     * @access private
      */
     private function RemoveIdAttributes(DOMXPath $xpath)
     {
@@ -231,13 +221,12 @@ class SoapRequestXmlFixer
     /**
      * Removes empty header elements from the request.
      * @param DOMXPath $xpath the xpath object representing the DOM
-     * @access private
      */
     private function RemoveEmptyHeaderElements(DOMXPath $xpath)
     {
         $requestHeaderDom = $xpath->query(
             "//*[local-name()='Envelope']/*[local-name()='Header']"
-            ."/*[local-name()='RequestHeader']")->item(0);
+            . "/*[local-name()='RequestHeader']")->item(0);
 
         $childNodes = $requestHeaderDom->childNodes;
 
@@ -248,3 +237,4 @@ class SoapRequestXmlFixer
         }
     }
 }
+

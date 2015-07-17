@@ -39,9 +39,9 @@
  */
 class ChoiceUtils
 {
+
     /**
      * The ChoiceUtils class is not meant to have any instances.
-     * @access private
      */
     private function __construct()
     {
@@ -49,8 +49,8 @@ class ChoiceUtils
 
     /**
      * Gets the value of a choice object.
-     * @param  object $choice the choice to get the value of.
-     * @return mixed  the value of the choice.
+     * @param object $choice the choice to get the value of.
+     * @return mixed the value of the choice.
      */
     public static function GetValue($choice)
     {
@@ -59,7 +59,7 @@ class ChoiceUtils
                 return $value;
             }
         }
-
         return null;
     }
 }
+

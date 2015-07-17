@@ -39,25 +39,30 @@ require_once 'Google/Api/Ads/Common/Lib/ServiceException.php';
  */
 abstract class DeprecationUtils
 {
+
     /**
-     * Checks to see if skipReportHeader or skipReportSummary can be used.
+     * Checks to see if skipReportHeader, skipColumnHeader, skipReportSummary
+     * or includeZeroImpressions can be used for AdWords reports.
      * Throws an error if it cannot be used.
      *
-     * @param  string           $header           skipReportHeader or skipReportSummary
-     * @param  string           $minimumVersion   the minimum API version that supports
-     *                                            skipReportHeader or skipReportSummary
-     * @param  string           $requestedVersion the API version being used
+     * @param string $header           skipReportHeader, skipColumnHeader,
+     *                                 skipReportSummary, includeZeroImpressions
+     * @param string $minimumVersion   the minimum API version that supports
+     *                                 skipReportHeader, skipColumnHeader, skipReportSummary,
+     *                                 includeZeroImpressions
+     * @param string $requestedVersion the API version being used
      * @throws ServiceException if the requested version does not support
-     *                                           skipReportHeader or skipReportSummary
+     *                                 skipReportHeader, skipColumnHeader, skipReportSummary,
+     *                                 includeZeroImpressions
      */
-    public static function CheckUsingSkipReportHeaderWithUnsupportedVersion(
+    public static function CheckUsingReportHeadersWithUnsupportedVersion(
         $header,
         $minimumVersion,
         $requestedVersion
     ) {
         if ($requestedVersion < $minimumVersion) {
             throw new ServiceException(sprintf("%s is not supported "
-                ."in version %s.", $header, $requestedVersion));
+                . "in version %s.", $header, $requestedVersion));
         }
     }
 
@@ -91,3 +96,4 @@ abstract class DeprecationUtils
         Logger::log(Logger::$REQUEST_INFO_LOG, $message, $level);
     }
 }
+

@@ -23,7 +23,7 @@ $user = new AdWordsUser(
     null
 );
 
-$user->SetClientCustomerId(0);
+$user->SetClientCustomerId(9932046675);
 $campaignService = $user->GetService('CampaignService', 'v201506');
 $selector = new Selector();
 $selector->fields = [

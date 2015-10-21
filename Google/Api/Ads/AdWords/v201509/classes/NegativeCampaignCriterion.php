@@ -3,7 +3,7 @@
 
 /**
  * A negative campaign criterion.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class NegativeCampaignCriterion extends CampaignCriterion
@@ -30,8 +30,14 @@ class NegativeCampaignCriterion extends CampaignCriterion
         return self::XSI_TYPE;
     }
 
-    public function __construct($campaignId = null, $isNegative = null, $criterion = null, $bidModifier = null, $forwardCompatibilityMap = null, $CampaignCriterionType = null)
-    {
+    public function __construct(
+        $campaignId = null,
+        $isNegative = null,
+        $criterion = null,
+        $bidModifier = null,
+        $forwardCompatibilityMap = null,
+        $CampaignCriterionType = null
+    ) {
         parent::__construct();
         $this->campaignId = $campaignId;
         $this->isNegative = $isNegative;

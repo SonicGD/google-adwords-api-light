@@ -3,7 +3,7 @@
 
 /**
  * Represents a sitelink extension.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class SitelinkFeedItem extends ExtensionFeedItem
@@ -78,8 +78,26 @@ class SitelinkFeedItem extends ExtensionFeedItem
         return self::XSI_TYPE;
     }
 
-    public function __construct($sitelinkText = null, $sitelinkUrl = null, $sitelinkLine2 = null, $sitelinkLine3 = null, $sitelinkFinalUrls = null, $sitelinkFinalMobileUrls = null, $sitelinkTrackingUrlTemplate = null, $sitelinkUrlCustomParameters = null, $feedId = null, $feedItemId = null, $status = null, $feedType = null, $startTime = null, $endTime = null, $devicePreference = null, $scheduling = null, $policyData = null, $ExtensionFeedItemType = null)
-    {
+    public function __construct(
+        $sitelinkText = null,
+        $sitelinkUrl = null,
+        $sitelinkLine2 = null,
+        $sitelinkLine3 = null,
+        $sitelinkFinalUrls = null,
+        $sitelinkFinalMobileUrls = null,
+        $sitelinkTrackingUrlTemplate = null,
+        $sitelinkUrlCustomParameters = null,
+        $feedId = null,
+        $feedItemId = null,
+        $status = null,
+        $feedType = null,
+        $startTime = null,
+        $endTime = null,
+        $devicePreference = null,
+        $scheduling = null,
+        $policyData = null,
+        $ExtensionFeedItemType = null
+    ) {
         parent::__construct();
         $this->sitelinkText = $sitelinkText;
         $this->sitelinkUrl = $sitelinkUrl;

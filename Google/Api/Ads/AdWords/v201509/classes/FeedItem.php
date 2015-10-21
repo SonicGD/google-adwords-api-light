@@ -3,7 +3,7 @@
 
 /**
  * Represents an item in a feed.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class FeedItem
@@ -114,8 +114,22 @@ class FeedItem
         return self::XSI_TYPE;
     }
 
-    public function __construct($feedId = null, $feedItemId = null, $status = null, $startTime = null, $endTime = null, $attributeValues = null, $policyData = null, $devicePreference = null, $scheduling = null, $campaignTargeting = null, $adGroupTargeting = null, $keywordTargeting = null, $geoTargeting = null, $urlCustomParameters = null)
-    {
+    public function __construct(
+        $feedId = null,
+        $feedItemId = null,
+        $status = null,
+        $startTime = null,
+        $endTime = null,
+        $attributeValues = null,
+        $policyData = null,
+        $devicePreference = null,
+        $scheduling = null,
+        $campaignTargeting = null,
+        $adGroupTargeting = null,
+        $keywordTargeting = null,
+        $geoTargeting = null,
+        $urlCustomParameters = null
+    ) {
         $this->feedId = $feedId;
         $this->feedItemId = $feedItemId;
         $this->status = $status;

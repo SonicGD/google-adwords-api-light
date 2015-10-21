@@ -4,7 +4,7 @@
 /**
  * Contains a subset of adgroup criteria resulting from a
  * {@link AdGroupCriterionService#get} call.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AdGroupCriterionPage extends Page

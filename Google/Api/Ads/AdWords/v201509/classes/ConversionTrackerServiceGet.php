@@ -11,11 +11,11 @@
  * subclasses of the abstract {@link ConversionTracker} class.
  *
  * @param serviceSelector The selector specifying the
- * {@link ConversionTracker}s to return.
+ *                        {@link ConversionTracker}s to return.
  * @return List of conversion trackers specified by the selector.
  * @throws com.google.ads.api.services.common.error.ApiException if problems
- * occurred while retrieving results.
- * @package Google_Api_Ads_AdWords_v201509
+ *                        occurred while retrieving results.
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class ConversionTrackerServiceGet

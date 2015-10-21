@@ -3,7 +3,7 @@
 
 /**
  * Represents a structured snippet extension.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class StructuredSnippetFeedItem extends ExtensionFeedItem
@@ -42,8 +42,20 @@ class StructuredSnippetFeedItem extends ExtensionFeedItem
         return self::XSI_TYPE;
     }
 
-    public function __construct($header = null, $values = null, $feedId = null, $feedItemId = null, $status = null, $feedType = null, $startTime = null, $endTime = null, $devicePreference = null, $scheduling = null, $policyData = null, $ExtensionFeedItemType = null)
-    {
+    public function __construct(
+        $header = null,
+        $values = null,
+        $feedId = null,
+        $feedItemId = null,
+        $status = null,
+        $feedType = null,
+        $startTime = null,
+        $endTime = null,
+        $devicePreference = null,
+        $scheduling = null,
+        $policyData = null,
+        $ExtensionFeedItemType = null
+    ) {
         parent::__construct();
         $this->header = $header;
         $this->values = $values;

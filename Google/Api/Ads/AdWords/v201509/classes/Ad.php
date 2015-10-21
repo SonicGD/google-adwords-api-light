@@ -11,7 +11,7 @@
  * you can construct an {@code Ad} object (instead of the {@code Ad}'s concrete type) with the
  * {@link #id} field set.
  * <span class="constraint AdxEnabled">This is enabled for AdX.</span>
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class Ad
@@ -79,13 +79,13 @@ class Ad
      * @var string
      */
     public $AdType;
-    private $_parameterMap = array(
+    private $_parameterMap = [
         "Ad.Type" => "AdType",
-    );
+    ];
 
     /**
      * Provided for setting non-php-standard named variables
-     * @param $var Variable name to set
+     * @param $var   Variable name to set
      * @param $value Value to set
      */
     public function __set($var, $value)
@@ -133,8 +133,18 @@ class Ad
         return self::XSI_TYPE;
     }
 
-    public function __construct($id = null, $url = null, $displayUrl = null, $finalUrls = null, $finalMobileUrls = null, $finalAppUrls = null, $trackingUrlTemplate = null, $urlCustomParameters = null, $devicePreference = null, $AdType = null)
-    {
+    public function __construct(
+        $id = null,
+        $url = null,
+        $displayUrl = null,
+        $finalUrls = null,
+        $finalMobileUrls = null,
+        $finalAppUrls = null,
+        $trackingUrlTemplate = null,
+        $urlCustomParameters = null,
+        $devicePreference = null,
+        $AdType = null
+    ) {
         $this->id = $id;
         $this->url = $url;
         $this->displayUrl = $displayUrl;

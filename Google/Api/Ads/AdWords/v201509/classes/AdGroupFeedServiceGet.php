@@ -9,10 +9,10 @@
  * Returns a list of AdGroupFeeds that meet the selector criteria.
  *
  * @param selector Determines which AdGroupFeeds to return. If empty all
- * adgroup feeds are returned.
+ *                 adgroup feeds are returned.
  * @return The list of AdgroupFeeds.
  * @throws ApiException Indicates a problem with the request.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AdGroupFeedServiceGet

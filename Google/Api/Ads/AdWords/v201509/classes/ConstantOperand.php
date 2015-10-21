@@ -3,7 +3,7 @@
 
 /**
  * A constant operand in a matching function.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class ConstantOperand extends FunctionArgumentOperand
@@ -66,8 +66,15 @@ class ConstantOperand extends FunctionArgumentOperand
         return self::XSI_TYPE;
     }
 
-    public function __construct($type = null, $unit = null, $longValue = null, $booleanValue = null, $doubleValue = null, $stringValue = null, $FunctionArgumentOperandType = null)
-    {
+    public function __construct(
+        $type = null,
+        $unit = null,
+        $longValue = null,
+        $booleanValue = null,
+        $doubleValue = null,
+        $stringValue = null,
+        $FunctionArgumentOperandType = null
+    ) {
         parent::__construct();
         $this->type = $type;
         $this->unit = $unit;

@@ -6,7 +6,7 @@
  * the feed item to be considered eligible for serving (aka the targeted adgroup).
  * E.g., if the below adgroup targeting is set to adgroup = X, then the feed
  * item can only serve under adgroup X.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class FeedItemAdGroupTargeting

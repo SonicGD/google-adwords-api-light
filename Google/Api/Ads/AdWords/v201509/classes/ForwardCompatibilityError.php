@@ -4,7 +4,7 @@
 /**
  * A ForwardComptibilityError represents possible errors when using the forwardCompatibilityMap
  * in some of the common services.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class ForwardCompatibilityError extends ApiError
@@ -37,8 +37,13 @@ class ForwardCompatibilityError extends ApiError
         return self::XSI_TYPE;
     }
 
-    public function __construct($reason = null, $fieldPath = null, $trigger = null, $errorString = null, $ApiErrorType = null)
-    {
+    public function __construct(
+        $reason = null,
+        $fieldPath = null,
+        $trigger = null,
+        $errorString = null,
+        $ApiErrorType = null
+    ) {
         parent::__construct();
         $this->reason = $reason;
         $this->fieldPath = $fieldPath;

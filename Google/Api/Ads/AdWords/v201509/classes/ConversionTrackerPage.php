@@ -4,7 +4,7 @@
 /**
  * Contains a subset of {@link ConversionTracker}s resulting from the filtering
  * and paging of the {@link ConversionTrackerService#get} call.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class ConversionTrackerPage extends NoStatsPage

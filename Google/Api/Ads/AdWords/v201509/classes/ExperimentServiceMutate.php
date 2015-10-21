@@ -13,11 +13,11 @@
  * Mutates (add, update or remove) experiments.
  * <b>Note:</b> To REMOVE use SET and mark status to REMOVED.
  * @param operations A list of unique operations.
- * The same experiment cannot be specified in more than one operation.
+ *                   The same experiment cannot be specified in more than one operation.
  * @return The updated experiments. The list of experiments is returned in
- * the same order in which it came in as input.
+ *                   the same order in which it came in as input.
  * @throws ApiException if problems occurred while updating experiment information.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class ExperimentServiceMutate

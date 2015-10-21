@@ -4,7 +4,7 @@
 /**
  * Contains a subset of AdGroupExtensionSetting objects resulting from a
  * {@code AdGroupExtensionSettingService#get} call.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AdGroupExtensionSettingPage extends Page

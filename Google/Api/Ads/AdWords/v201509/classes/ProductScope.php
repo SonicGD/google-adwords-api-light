@@ -10,7 +10,7 @@
  * has more than one {@code ProductScope}, products are included as long as they match any.
  * Campaigns of {@link AdvertisingChannelType#SHOPPING} can have at most one {@code ProductScope}.
  * <span class="constraint AdxEnabled">This is disabled for AdX when it is contained within Operators: ADD, SET.</span>
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class ProductScope extends Criterion

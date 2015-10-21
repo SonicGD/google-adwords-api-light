@@ -4,7 +4,7 @@
 /**
  * A marker interface for entities that can be operated upon in mutate
  * operations.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class Operand
@@ -139,8 +139,26 @@ class Operand
         return self::XSI_TYPE;
     }
 
-    public function __construct($AdGroupAdLabel = null, $AdGroupAd = null, $AdGroupBidModifier = null, $AdGroupCriterionLabel = null, $AdGroupCriterion = null, $AdGroupLabel = null, $AdGroup = null, $Ad = null, $Budget = null, $CampaignAdExtension = null, $CampaignCriterion = null, $CampaignLabel = null, $Campaign = null, $FeedItem = null, $Job = null, $Label = null, $Media = null, $PlaceHolder = null)
-    {
+    public function __construct(
+        $AdGroupAdLabel = null,
+        $AdGroupAd = null,
+        $AdGroupBidModifier = null,
+        $AdGroupCriterionLabel = null,
+        $AdGroupCriterion = null,
+        $AdGroupLabel = null,
+        $AdGroup = null,
+        $Ad = null,
+        $Budget = null,
+        $CampaignAdExtension = null,
+        $CampaignCriterion = null,
+        $CampaignLabel = null,
+        $Campaign = null,
+        $FeedItem = null,
+        $Job = null,
+        $Label = null,
+        $Media = null,
+        $PlaceHolder = null
+    ) {
         $this->AdGroupAdLabel = $AdGroupAdLabel;
         $this->AdGroupAd = $AdGroupAd;
         $this->AdGroupBidModifier = $AdGroupBidModifier;

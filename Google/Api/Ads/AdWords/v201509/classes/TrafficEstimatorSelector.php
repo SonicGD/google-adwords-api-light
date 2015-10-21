@@ -3,7 +3,7 @@
 
 /**
  * Contains a list of campaigns to perform a traffic estimate on.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class TrafficEstimatorSelector

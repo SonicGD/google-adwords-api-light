@@ -7,7 +7,7 @@
  *
  *
  * Structure to specify an address location.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class Address
@@ -76,8 +76,15 @@ class Address
         return self::XSI_TYPE;
     }
 
-    public function __construct($streetAddress = null, $streetAddress2 = null, $cityName = null, $provinceCode = null, $provinceName = null, $postalCode = null, $countryCode = null)
-    {
+    public function __construct(
+        $streetAddress = null,
+        $streetAddress2 = null,
+        $cityName = null,
+        $provinceCode = null,
+        $provinceName = null,
+        $postalCode = null,
+        $countryCode = null
+    ) {
         $this->streetAddress = $streetAddress;
         $this->streetAddress2 = $streetAddress2;
         $this->cityName = $cityName;

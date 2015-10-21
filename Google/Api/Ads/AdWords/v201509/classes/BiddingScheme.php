@@ -4,7 +4,7 @@
 /**
  * Base class for all bidding schemes.
  * <span class="constraint AdxEnabled">This is disabled for AdX.</span>
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class BiddingScheme
@@ -18,13 +18,13 @@ class BiddingScheme
      * @var string
      */
     public $BiddingSchemeType;
-    private $_parameterMap = array(
+    private $_parameterMap = [
         "BiddingScheme.Type" => "BiddingSchemeType",
-    );
+    ];
 
     /**
      * Provided for setting non-php-standard named variables
-     * @param $var Variable name to set
+     * @param $var   Variable name to set
      * @param $value Value to set
      */
     public function __set($var, $value)

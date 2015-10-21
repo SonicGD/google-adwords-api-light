@@ -3,7 +3,7 @@
 
 /**
  * The result of a call to AdGroupFeedService#mutate.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AdGroupFeedReturnValue extends ListReturnValue

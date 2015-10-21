@@ -4,7 +4,7 @@
 /**
  * Contains a subset of {@link TargetingIdea}s from the search criteria
  * specified by a {@link TargetingIdeaSelector}.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class TargetingIdeaPage

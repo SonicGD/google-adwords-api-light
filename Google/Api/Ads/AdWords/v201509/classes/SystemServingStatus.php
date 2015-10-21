@@ -3,7 +3,7 @@
 
 /**
  * Reported by system to reflect the criterion's serving status.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class SystemServingStatus

@@ -4,7 +4,7 @@
 /**
  * Represents an adgroup level bid modifier override for campaign level criterion
  * bid modifier values.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AdGroupBidModifier
@@ -61,8 +61,13 @@ class AdGroupBidModifier
         return self::XSI_TYPE;
     }
 
-    public function __construct($campaignId = null, $adGroupId = null, $criterion = null, $bidModifier = null, $bidModifierSource = null)
-    {
+    public function __construct(
+        $campaignId = null,
+        $adGroupId = null,
+        $criterion = null,
+        $bidModifier = null,
+        $bidModifierSource = null
+    ) {
         $this->campaignId = $campaignId;
         $this->adGroupId = $adGroupId;
         $this->criterion = $criterion;

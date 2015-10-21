@@ -13,7 +13,7 @@
  * @param operations The operations to apply.
  * @return The resulting AdCustomizerFeeds.
  * @throws ApiException Indicates a problem with the request.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AdCustomizerFeedServiceMutate

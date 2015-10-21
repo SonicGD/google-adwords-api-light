@@ -10,7 +10,7 @@
  *
  * <p>
  * Categories can be filtered by domain name or by a set of campaign IDs.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class DomainCategory extends DimensionProperties
@@ -79,8 +79,16 @@ class DomainCategory extends DimensionProperties
         return self::XSI_TYPE;
     }
 
-    public function __construct($category = null, $coverage = null, $domainName = null, $isoLanguage = null, $recommendedCpc = null, $hasChild = null, $categoryRank = null, $levelOfDetail = null)
-    {
+    public function __construct(
+        $category = null,
+        $coverage = null,
+        $domainName = null,
+        $isoLanguage = null,
+        $recommendedCpc = null,
+        $hasChild = null,
+        $categoryRank = null,
+        $levelOfDetail = null
+    ) {
         parent::__construct();
         $this->category = $category;
         $this->coverage = $coverage;

@@ -11,8 +11,8 @@
  * @param query The SQL-like AWQL query string.
  * @return A list of domain categories.
  * @throws ApiException if problems occur while parsing the query
- * or fetching domain categories.
- * @package Google_Api_Ads_AdWords_v201509
+ *              or fetching domain categories.
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class QueryDomainCategory

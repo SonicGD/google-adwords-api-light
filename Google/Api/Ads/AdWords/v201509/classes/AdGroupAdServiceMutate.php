@@ -25,12 +25,12 @@
  * Ad.</p>
  * @param operations The operations to apply.
  * @return A list of AdGroupAds where each entry in the list is the result of
- * applying the operation in the input list with the same index. For an
- * add/set operation, the return AdGroupAd will be what is saved to the db.
- * In the case of the remove operation, the return AdGroupAd will simply be
- * an AdGroupAd containing an Ad with the id set to the Ad being removed from
- * the AdGroup.
- * @package Google_Api_Ads_AdWords_v201509
+ *                   applying the operation in the input list with the same index. For an
+ *                   add/set operation, the return AdGroupAd will be what is saved to the db.
+ *                   In the case of the remove operation, the return AdGroupAd will simply be
+ *                   an AdGroupAd containing an Ad with the id set to the Ad being removed from
+ *                   the AdGroup.
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AdGroupAdServiceMutate

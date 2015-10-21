@@ -4,7 +4,7 @@
 /**
  * Represents an operation on an {@link AdParam}. The supported operators
  * are {@code SET} and {@code REMOVE}.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AdParamOperation extends Operation

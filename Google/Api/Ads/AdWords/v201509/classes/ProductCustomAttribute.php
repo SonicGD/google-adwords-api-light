@@ -5,7 +5,7 @@
  * A custom attribute value. As a product can have multiple custom attributes, the user must specify
  * a dimension type that indicates the index of the attribute by which to subdivide. All cases of
  * the same subdivision must have the same dimension type (attribute index).
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class ProductCustomAttribute extends ProductDimension

@@ -3,7 +3,7 @@
 
 /**
  * Holds information about a changed feed and any feeds items within the feed.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class FeedChangeData
@@ -54,8 +54,12 @@ class FeedChangeData
         return self::XSI_TYPE;
     }
 
-    public function __construct($feedId = null, $feedChangeStatus = null, $changedFeedItems = null, $removedFeedItems = null)
-    {
+    public function __construct(
+        $feedId = null,
+        $feedChangeStatus = null,
+        $changedFeedItems = null,
+        $removedFeedItems = null
+    ) {
         $this->feedId = $feedId;
         $this->feedChangeStatus = $feedChangeStatus;
         $this->changedFeedItems = $changedFeedItems;

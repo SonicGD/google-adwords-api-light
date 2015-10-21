@@ -3,7 +3,7 @@
 
 /**
  * Feed hard type. Values coincide with placeholder type id.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class FeedType

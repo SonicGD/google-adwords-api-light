@@ -3,7 +3,7 @@
 
 /**
  * An error indicating a problem with an ad customizer tag.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AdCustomizerError extends ApiError
@@ -60,8 +60,17 @@ class AdCustomizerError extends ApiError
         return self::XSI_TYPE;
     }
 
-    public function __construct($reason = null, $functionString = null, $operatorName = null, $operandIndex = null, $operandValue = null, $fieldPath = null, $trigger = null, $errorString = null, $ApiErrorType = null)
-    {
+    public function __construct(
+        $reason = null,
+        $functionString = null,
+        $operatorName = null,
+        $operandIndex = null,
+        $operandValue = null,
+        $fieldPath = null,
+        $trigger = null,
+        $errorString = null,
+        $ApiErrorType = null
+    ) {
         parent::__construct();
         $this->reason = $reason;
         $this->functionString = $functionString;

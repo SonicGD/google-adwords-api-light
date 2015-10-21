@@ -4,7 +4,7 @@
 /**
  * The bid landscape for a criterion.  A bid landscape estimates how a
  * a criterion will perform based on different bid amounts.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class CriterionBidLandscape extends BidLandscape
@@ -37,8 +37,14 @@ class CriterionBidLandscape extends BidLandscape
         return self::XSI_TYPE;
     }
 
-    public function __construct($criterionId = null, $campaignId = null, $adGroupId = null, $startDate = null, $endDate = null, $landscapePoints = null)
-    {
+    public function __construct(
+        $criterionId = null,
+        $campaignId = null,
+        $adGroupId = null,
+        $startDate = null,
+        $endDate = null,
+        $landscapePoints = null
+    ) {
         parent::__construct();
         $this->criterionId = $criterionId;
         $this->campaignId = $campaignId;

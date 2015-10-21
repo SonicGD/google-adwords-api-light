@@ -3,7 +3,7 @@
 
 /**
  * Encapsulates a Video media identified by a MediaId.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class Video extends Media
@@ -66,8 +66,25 @@ class Video extends Media
         return self::XSI_TYPE;
     }
 
-    public function __construct($durationMillis = null, $streamingUrl = null, $readyToPlayOnTheWeb = null, $industryStandardCommercialIdentifier = null, $advertisingId = null, $youTubeVideoIdString = null, $mediaId = null, $type = null, $referenceId = null, $dimensions = null, $urls = null, $mimeType = null, $sourceUrl = null, $name = null, $fileSize = null, $creationTime = null, $MediaType = null)
-    {
+    public function __construct(
+        $durationMillis = null,
+        $streamingUrl = null,
+        $readyToPlayOnTheWeb = null,
+        $industryStandardCommercialIdentifier = null,
+        $advertisingId = null,
+        $youTubeVideoIdString = null,
+        $mediaId = null,
+        $type = null,
+        $referenceId = null,
+        $dimensions = null,
+        $urls = null,
+        $mimeType = null,
+        $sourceUrl = null,
+        $name = null,
+        $fileSize = null,
+        $creationTime = null,
+        $MediaType = null
+    ) {
         parent::__construct();
         $this->durationMillis = $durationMillis;
         $this->streamingUrl = $streamingUrl;

@@ -9,10 +9,10 @@
  * Returns traffic estimates for specified criteria.
  *
  * @param selector Campaigns, ad groups and keywords for which traffic
- * should be estimated.
+ *                 should be estimated.
  * @return Traffic estimation results.
  * @throws ApiException if problems occurred while retrieving estimates
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class TrafficEstimatorServiceGet

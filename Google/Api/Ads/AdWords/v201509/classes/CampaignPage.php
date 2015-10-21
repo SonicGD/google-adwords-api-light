@@ -4,7 +4,7 @@
 /**
  * Contains a subset of campaign resulting from the filtering and paging of the
  * {@link com.google.ads.api.services.campaignmgmt.campaign.CampaignService#get} call.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class CampaignPage extends Page

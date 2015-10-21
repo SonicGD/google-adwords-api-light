@@ -4,7 +4,7 @@
 /**
  * Contains a subset of CustomerExtensionSetting objects resulting from a
  * {@code CustomerExtensionSettingService#get} call.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class CustomerExtensionSettingPage extends Page

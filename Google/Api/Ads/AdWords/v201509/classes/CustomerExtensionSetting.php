@@ -3,7 +3,7 @@
 
 /**
  * A CustomerExtensionSetting is used to add or modify extensions being served for the customer.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class CustomerExtensionSetting

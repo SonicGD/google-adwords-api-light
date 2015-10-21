@@ -4,7 +4,7 @@
 /**
  * Setting for shopping campaigns. Defines the universe of products covered by the campaign.
  * Encapsulates a merchant ID, sales country, and campaign priority.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class ShoppingSetting extends Setting
@@ -55,8 +55,13 @@ class ShoppingSetting extends Setting
         return self::XSI_TYPE;
     }
 
-    public function __construct($merchantId = null, $salesCountry = null, $campaignPriority = null, $enableLocal = null, $SettingType = null)
-    {
+    public function __construct(
+        $merchantId = null,
+        $salesCountry = null,
+        $campaignPriority = null,
+        $enableLocal = null,
+        $SettingType = null
+    ) {
         parent::__construct();
         $this->merchantId = $merchantId;
         $this->salesCountry = $salesCountry;

@@ -5,7 +5,7 @@
  * An enumeration of possible values to be used in conjunction with the
  * {@link CompetitionSearchParameter} to specify the granularity of
  * competition to be filtered.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class CompetitionSearchParameterLevel

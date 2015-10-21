@@ -13,10 +13,10 @@
  * Adds, removes or updates adgroup criteria.
  *
  * @param operations operations to do
- * during checks on keywords to be added.
+ *                   during checks on keywords to be added.
  * @return added and updated adgroup criteria (without optional parts)
  * @throws ApiException when there is at least one error with the request
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AdGroupCriterionServiceMutate

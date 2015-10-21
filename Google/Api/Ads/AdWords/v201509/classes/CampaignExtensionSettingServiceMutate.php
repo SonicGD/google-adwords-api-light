@@ -20,7 +20,7 @@
  * specified in more than one operation.
  * @return The changed {@link CampaignExtensionSetting}s.
  * @throws ApiException Indicates a problem with the request.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class CampaignExtensionSettingServiceMutate

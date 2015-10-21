@@ -9,10 +9,10 @@
  * Returns a list of CustomerExtensionSettings that meet the selector criteria.
  *
  * @param selector Determines which CustomerExtensionSettings to return. If empty, all
- * CustomerExtensionSettings are returned.
+ *                 CustomerExtensionSettings are returned.
  * @return The list of CustomerExtensionSettings specified by the selector.
  * @throws ApiException Indicates a problem with the request.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class CustomerExtensionSettingServiceGet

@@ -4,7 +4,7 @@
 /**
  * AdGroupFeeds are used to link a feed to an adgroup using a matching function,
  * making the feed's feed items available in the adgroup's ads for substitution.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AdGroupFeed
@@ -61,8 +61,13 @@ class AdGroupFeed
         return self::XSI_TYPE;
     }
 
-    public function __construct($feedId = null, $adGroupId = null, $matchingFunction = null, $placeholderTypes = null, $status = null)
-    {
+    public function __construct(
+        $feedId = null,
+        $adGroupId = null,
+        $matchingFunction = null,
+        $placeholderTypes = null,
+        $status = null
+    ) {
         $this->feedId = $feedId;
         $this->adGroupId = $adGroupId;
         $this->matchingFunction = $matchingFunction;

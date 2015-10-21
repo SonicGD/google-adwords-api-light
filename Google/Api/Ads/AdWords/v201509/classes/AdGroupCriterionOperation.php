@@ -3,7 +3,7 @@
 
 /**
  * Operation (add, remove and set) on adgroup criteria.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AdGroupCriterionOperation extends Operation

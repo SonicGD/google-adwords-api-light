@@ -4,7 +4,7 @@
 /**
  * This represents an operation that includes an operator and an operand
  * specified type.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class Operation
@@ -24,13 +24,13 @@ class Operation
      * @var string
      */
     public $OperationType;
-    private $_parameterMap = array(
+    private $_parameterMap = [
         "Operation.Type" => "OperationType",
-    );
+    ];
 
     /**
      * Provided for setting non-php-standard named variables
-     * @param $var Variable name to set
+     * @param $var   Variable name to set
      * @param $value Value to set
      */
     public function __set($var, $value)

@@ -3,7 +3,7 @@
 
 /**
  * Represents an id indicating a grouping of Ads under some heuristic.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AdUnionId
@@ -23,13 +23,13 @@ class AdUnionId
      * @var string
      */
     public $AdUnionIdType;
-    private $_parameterMap = array(
+    private $_parameterMap = [
         "AdUnionId.Type" => "AdUnionIdType",
-    );
+    ];
 
     /**
      * Provided for setting non-php-standard named variables
-     * @param $var Variable name to set
+     * @param $var   Variable name to set
      * @param $value Value to set
      */
     public function __set($var, $value)

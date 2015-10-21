@@ -4,7 +4,7 @@
 /**
  * Contains a list of bidding strategies resulting from the filtering and paging
  * of {@link BiddingStrategy#get} call.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class BiddingStrategyPage extends Page

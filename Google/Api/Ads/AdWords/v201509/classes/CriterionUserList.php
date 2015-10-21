@@ -8,7 +8,7 @@
  *
  *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class CriterionUserList extends Criterion
@@ -53,8 +53,14 @@ class CriterionUserList extends Criterion
         return self::XSI_TYPE;
     }
 
-    public function __construct($userListId = null, $userListName = null, $userListMembershipStatus = null, $id = null, $type = null, $CriterionType = null)
-    {
+    public function __construct(
+        $userListId = null,
+        $userListName = null,
+        $userListMembershipStatus = null,
+        $id = null,
+        $type = null,
+        $CriterionType = null
+    ) {
         parent::__construct();
         $this->userListId = $userListId;
         $this->userListName = $userListName;

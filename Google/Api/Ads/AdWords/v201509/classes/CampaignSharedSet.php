@@ -4,7 +4,7 @@
 /**
  * CampaignSharedSets are used for managing the shared sets
  * associated with a campaign.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class CampaignSharedSet
@@ -67,8 +67,14 @@ class CampaignSharedSet
         return self::XSI_TYPE;
     }
 
-    public function __construct($sharedSetId = null, $campaignId = null, $sharedSetName = null, $sharedSetType = null, $campaignName = null, $status = null)
-    {
+    public function __construct(
+        $sharedSetId = null,
+        $campaignId = null,
+        $sharedSetName = null,
+        $sharedSetType = null,
+        $campaignName = null,
+        $status = null
+    ) {
         $this->sharedSetId = $sharedSetId;
         $this->campaignId = $campaignId;
         $this->sharedSetName = $sharedSetName;

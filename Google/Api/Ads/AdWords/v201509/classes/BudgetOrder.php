@@ -3,7 +3,7 @@
 
 /**
  * A {@link BudgetOrder} links an account wide budget with a {@link BillingAccount}.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class BudgetOrder
@@ -96,8 +96,19 @@ class BudgetOrder
         return self::XSI_TYPE;
     }
 
-    public function __construct($billingAccountId = null, $id = null, $billingAccountName = null, $poNumber = null, $budgetOrderName = null, $primaryBillingId = null, $secondaryBillingId = null, $spendingLimit = null, $startDateTime = null, $endDateTime = null, $lastRequest = null)
-    {
+    public function __construct(
+        $billingAccountId = null,
+        $id = null,
+        $billingAccountName = null,
+        $poNumber = null,
+        $budgetOrderName = null,
+        $primaryBillingId = null,
+        $secondaryBillingId = null,
+        $spendingLimit = null,
+        $startDateTime = null,
+        $endDateTime = null,
+        $lastRequest = null
+    ) {
         $this->billingAccountId = $billingAccountId;
         $this->id = $id;
         $this->billingAccountName = $billingAccountName;

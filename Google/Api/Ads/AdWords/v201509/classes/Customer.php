@@ -3,7 +3,7 @@
 
 /**
  * Represents a customer for the CustomerService.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class Customer
@@ -96,8 +96,19 @@ class Customer
         return self::XSI_TYPE;
     }
 
-    public function __construct($customerId = null, $currencyCode = null, $dateTimeZone = null, $descriptiveName = null, $companyName = null, $canManageClients = null, $testAccount = null, $autoTaggingEnabled = null, $trackingUrlTemplate = null, $conversionTrackingSettings = null, $remarketingSettings = null)
-    {
+    public function __construct(
+        $customerId = null,
+        $currencyCode = null,
+        $dateTimeZone = null,
+        $descriptiveName = null,
+        $companyName = null,
+        $canManageClients = null,
+        $testAccount = null,
+        $autoTaggingEnabled = null,
+        $trackingUrlTemplate = null,
+        $conversionTrackingSettings = null,
+        $remarketingSettings = null
+    ) {
         $this->customerId = $customerId;
         $this->currencyCode = $currencyCode;
         $this->dateTimeZone = $dateTimeZone;

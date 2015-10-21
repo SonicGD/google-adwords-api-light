@@ -9,7 +9,7 @@
  * need to use the AdWords API and/or UI to manage the campaigns.
  * <p>Please note: it is one way migration from Adwords Express to AdWords. There is no way to
  * undo the migration currently.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class PromotionStatus

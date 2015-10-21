@@ -16,7 +16,7 @@
  * @param operations the mutate members operations to apply
  * @return a list of UserList objects
  * @throws ApiException when there are one or more errors with the request
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class MutateMembers

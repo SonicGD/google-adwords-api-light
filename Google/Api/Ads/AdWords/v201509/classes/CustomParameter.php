@@ -3,7 +3,7 @@
 
 /**
  * CustomParameter is used to map a custom parameter key to its value.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class CustomParameter

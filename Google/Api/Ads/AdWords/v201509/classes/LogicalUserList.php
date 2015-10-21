@@ -4,7 +4,7 @@
 /**
  * Represents a user list that is a custom combination of user lists and user
  * interests.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class LogicalUserList extends UserList
@@ -43,8 +43,26 @@ class LogicalUserList extends UserList
         return self::XSI_TYPE;
     }
 
-    public function __construct($rules = null, $logicalOptOutLink = null, $id = null, $isReadOnly = null, $name = null, $description = null, $status = null, $integrationCode = null, $accessReason = null, $accountUserListStatus = null, $membershipLifeSpan = null, $size = null, $sizeRange = null, $sizeForSearch = null, $sizeRangeForSearch = null, $listType = null, $isEligibleForSearch = null, $UserListType = null)
-    {
+    public function __construct(
+        $rules = null,
+        $logicalOptOutLink = null,
+        $id = null,
+        $isReadOnly = null,
+        $name = null,
+        $description = null,
+        $status = null,
+        $integrationCode = null,
+        $accessReason = null,
+        $accountUserListStatus = null,
+        $membershipLifeSpan = null,
+        $size = null,
+        $sizeRange = null,
+        $sizeForSearch = null,
+        $sizeRangeForSearch = null,
+        $listType = null,
+        $isEligibleForSearch = null,
+        $UserListType = null
+    ) {
         parent::__construct();
         $this->rules = $rules;
         $this->logicalOptOutLink = $logicalOptOutLink;

@@ -5,7 +5,7 @@
  * A keyword response value representing search volume for a single month. An
  * instance with a {@code null} count is valid, indicating that the information
  * is unavailable.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class MonthlySearchVolume

@@ -9,7 +9,7 @@
  * Returns the pending invitations for the customer IDs in the selector.
  * @param selector the manager customer ids (inviters) or the client customer ids (invitees)
  * @throws ApiException when there is at least one error with the request
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class GetPendingInvitations

@@ -13,7 +13,7 @@
  * @param operations the operations to apply
  * @return the modified CriterionList entities
  * @throws ApiException
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class SharedSetServiceMutate

@@ -3,7 +3,7 @@
 
 /**
  * Data object that represents a managed customer.  Member of {@link ManagedCustomerPage}.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class ManagedCustomer
@@ -84,8 +84,17 @@ class ManagedCustomer
         return self::XSI_TYPE;
     }
 
-    public function __construct($name = null, $companyName = null, $customerId = null, $canManageClients = null, $currencyCode = null, $dateTimeZone = null, $testAccount = null, $accountLabels = null, $excludeHiddenAccounts = null)
-    {
+    public function __construct(
+        $name = null,
+        $companyName = null,
+        $customerId = null,
+        $canManageClients = null,
+        $currencyCode = null,
+        $dateTimeZone = null,
+        $testAccount = null,
+        $accountLabels = null,
+        $excludeHiddenAccounts = null
+    ) {
         $this->name = $name;
         $this->companyName = $companyName;
         $this->customerId = $customerId;

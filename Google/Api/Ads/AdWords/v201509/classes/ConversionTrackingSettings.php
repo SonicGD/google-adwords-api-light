@@ -5,7 +5,7 @@
  * A collection of customer-wide settings related to AdWords Conversion Tracking. Settings
  * that apply at the conversion type level can be accessed and modified though
  * {@code ConversionTrackerService}.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class ConversionTrackingSettings
@@ -50,8 +50,11 @@ class ConversionTrackingSettings
         return self::XSI_TYPE;
     }
 
-    public function __construct($conversionOptimizerMode = null, $effectiveConversionTrackingId = null, $usesCrossAccountConversionTracking = null)
-    {
+    public function __construct(
+        $conversionOptimizerMode = null,
+        $effectiveConversionTrackingId = null,
+        $usesCrossAccountConversionTracking = null
+    ) {
         $this->conversionOptimizerMode = $conversionOptimizerMode;
         $this->effectiveConversionTrackingId = $effectiveConversionTrackingId;
         $this->usesCrossAccountConversionTracking = $usesCrossAccountConversionTracking;

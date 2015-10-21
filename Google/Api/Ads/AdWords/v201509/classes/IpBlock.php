@@ -11,7 +11,7 @@
  * <li>masks for Class C networks (192.168.0.1/24)</li>
  * </ul>
  * <span class="constraint AdxEnabled">This is disabled for AdX when it is contained within Operators: ADD, SET.</span>
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class IpBlock extends Criterion

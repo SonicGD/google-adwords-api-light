@@ -3,7 +3,7 @@
 
 /**
  * Represents data about a bidlandscape for an adgroup.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AdGroupBidLandscape extends BidLandscape
@@ -42,8 +42,15 @@ class AdGroupBidLandscape extends BidLandscape
         return self::XSI_TYPE;
     }
 
-    public function __construct($type = null, $landscapeCurrent = null, $campaignId = null, $adGroupId = null, $startDate = null, $endDate = null, $landscapePoints = null)
-    {
+    public function __construct(
+        $type = null,
+        $landscapeCurrent = null,
+        $campaignId = null,
+        $adGroupId = null,
+        $startDate = null,
+        $endDate = null,
+        $landscapePoints = null
+    ) {
         parent::__construct();
         $this->type = $type;
         $this->landscapeCurrent = $landscapeCurrent;

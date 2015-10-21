@@ -4,7 +4,7 @@
 /**
  * The request attempted to access a campaign that either does not
  * exist or belongs to a different account.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class CustomerSyncErrorReason

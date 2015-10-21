@@ -10,7 +10,7 @@
  *
  * @param selector the selector specifying the AdWords Express businesses to return
  * @return list of AdWords Express businesses identified by the selector
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class ExpressBusinessServiceGet

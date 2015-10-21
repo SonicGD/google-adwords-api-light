@@ -3,7 +3,7 @@
 
 /**
  * Top level class for Dimensions.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class DimensionProperties extends DataEntry

@@ -5,7 +5,7 @@ require_once('FeedMappingService.require.php');
 
 /**
  * FeedMappingService
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class FeedMappingService extends AdWordsSoapClient
@@ -25,89 +25,89 @@ class FeedMappingService extends AdWordsSoapClient
      * @access private
      * @var array
      */
-    public static $classmap = array(
-        "AttributeFieldMapping" => "AttributeFieldMapping",
-        "AuthenticationError" => "AuthenticationError",
-        "AuthorizationError" => "AuthorizationError",
-        "ClientTermsError" => "ClientTermsError",
-        "DateRange" => "DateRange",
-        "DistinctError" => "DistinctError",
-        "EntityNotFound" => "EntityNotFound",
-        "FeedMapping" => "FeedMapping",
-        "FeedMappingError" => "FeedMappingError",
-        "FeedMappingOperation" => "FeedMappingOperation",
-        "FeedMappingPage" => "FeedMappingPage",
-        "FeedMappingReturnValue" => "FeedMappingReturnValue",
-        "IdError" => "IdError",
-        "InternalApiError" => "InternalApiError",
-        "ListReturnValue" => "ListReturnValue",
-        "NotEmptyError" => "NotEmptyError",
-        "NullStatsPage" => "NullStatsPage",
-        "Operation" => "Operation",
-        "OperationAccessDenied" => "OperationAccessDenied",
-        "OperatorError" => "OperatorError",
-        "OrderBy" => "OrderBy",
-        "Page" => "Page",
-        "Paging" => "Paging",
-        "Predicate" => "Predicate",
-        "QueryError" => "QueryError",
-        "QuotaCheckError" => "QuotaCheckError",
-        "RangeError" => "RangeError",
-        "RateExceededError" => "RateExceededError",
-        "ReadOnlyError" => "ReadOnlyError",
-        "RejectedError" => "RejectedError",
-        "RequestError" => "RequestError",
-        "RequiredError" => "RequiredError",
-        "SelectorError" => "SelectorError",
-        "SizeLimitError" => "SizeLimitError",
-        "SoapHeader" => "SoapRequestHeader",
-        "SoapResponseHeader" => "SoapResponseHeader",
-        "StringLengthError" => "StringLengthError",
-        "DatabaseError" => "DatabaseError",
-        "ApiError" => "ApiError",
-        "ApiException" => "ApiException",
-        "ApplicationException" => "ApplicationException",
-        "Selector" => "Selector",
-        "AuthenticationError.Reason" => "AuthenticationErrorReason",
-        "AuthorizationError.Reason" => "AuthorizationErrorReason",
-        "ClientTermsError.Reason" => "ClientTermsErrorReason",
-        "DatabaseError.Reason" => "DatabaseErrorReason",
-        "DistinctError.Reason" => "DistinctErrorReason",
-        "EntityNotFound.Reason" => "EntityNotFoundReason",
-        "FeedMapping.Status" => "FeedMappingStatus",
-        "FeedMappingError.Reason" => "FeedMappingErrorReason",
-        "IdError.Reason" => "IdErrorReason",
-        "InternalApiError.Reason" => "InternalApiErrorReason",
-        "NotEmptyError.Reason" => "NotEmptyErrorReason",
+    public static $classmap = [
+        "AttributeFieldMapping"        => "AttributeFieldMapping",
+        "AuthenticationError"          => "AuthenticationError",
+        "AuthorizationError"           => "AuthorizationError",
+        "ClientTermsError"             => "ClientTermsError",
+        "DateRange"                    => "DateRange",
+        "DistinctError"                => "DistinctError",
+        "EntityNotFound"               => "EntityNotFound",
+        "FeedMapping"                  => "FeedMapping",
+        "FeedMappingError"             => "FeedMappingError",
+        "FeedMappingOperation"         => "FeedMappingOperation",
+        "FeedMappingPage"              => "FeedMappingPage",
+        "FeedMappingReturnValue"       => "FeedMappingReturnValue",
+        "IdError"                      => "IdError",
+        "InternalApiError"             => "InternalApiError",
+        "ListReturnValue"              => "ListReturnValue",
+        "NotEmptyError"                => "NotEmptyError",
+        "NullStatsPage"                => "NullStatsPage",
+        "Operation"                    => "Operation",
+        "OperationAccessDenied"        => "OperationAccessDenied",
+        "OperatorError"                => "OperatorError",
+        "OrderBy"                      => "OrderBy",
+        "Page"                         => "Page",
+        "Paging"                       => "Paging",
+        "Predicate"                    => "Predicate",
+        "QueryError"                   => "QueryError",
+        "QuotaCheckError"              => "QuotaCheckError",
+        "RangeError"                   => "RangeError",
+        "RateExceededError"            => "RateExceededError",
+        "ReadOnlyError"                => "ReadOnlyError",
+        "RejectedError"                => "RejectedError",
+        "RequestError"                 => "RequestError",
+        "RequiredError"                => "RequiredError",
+        "SelectorError"                => "SelectorError",
+        "SizeLimitError"               => "SizeLimitError",
+        "SoapHeader"                   => "SoapRequestHeader",
+        "SoapResponseHeader"           => "SoapResponseHeader",
+        "StringLengthError"            => "StringLengthError",
+        "DatabaseError"                => "DatabaseError",
+        "ApiError"                     => "ApiError",
+        "ApiException"                 => "ApiException",
+        "ApplicationException"         => "ApplicationException",
+        "Selector"                     => "Selector",
+        "AuthenticationError.Reason"   => "AuthenticationErrorReason",
+        "AuthorizationError.Reason"    => "AuthorizationErrorReason",
+        "ClientTermsError.Reason"      => "ClientTermsErrorReason",
+        "DatabaseError.Reason"         => "DatabaseErrorReason",
+        "DistinctError.Reason"         => "DistinctErrorReason",
+        "EntityNotFound.Reason"        => "EntityNotFoundReason",
+        "FeedMapping.Status"           => "FeedMappingStatus",
+        "FeedMappingError.Reason"      => "FeedMappingErrorReason",
+        "IdError.Reason"               => "IdErrorReason",
+        "InternalApiError.Reason"      => "InternalApiErrorReason",
+        "NotEmptyError.Reason"         => "NotEmptyErrorReason",
         "OperationAccessDenied.Reason" => "OperationAccessDeniedReason",
-        "Operator" => "Operator",
-        "OperatorError.Reason" => "OperatorErrorReason",
-        "Predicate.Operator" => "PredicateOperator",
-        "QueryError.Reason" => "QueryErrorReason",
-        "QuotaCheckError.Reason" => "QuotaCheckErrorReason",
-        "RangeError.Reason" => "RangeErrorReason",
-        "RateExceededError.Reason" => "RateExceededErrorReason",
-        "ReadOnlyError.Reason" => "ReadOnlyErrorReason",
-        "RejectedError.Reason" => "RejectedErrorReason",
-        "RequestError.Reason" => "RequestErrorReason",
-        "RequiredError.Reason" => "RequiredErrorReason",
-        "SelectorError.Reason" => "SelectorErrorReason",
-        "SizeLimitError.Reason" => "SizeLimitErrorReason",
-        "SortOrder" => "SortOrder",
-        "StringLengthError.Reason" => "StringLengthErrorReason",
-        "get" => "FeedMappingServiceGet",
-        "getResponse" => "FeedMappingServiceGetResponse",
-        "mutate" => "FeedMappingServiceMutate",
-        "mutateResponse" => "FeedMappingServiceMutateResponse",
-        "query" => "Query",
-        "queryResponse" => "QueryResponse",
-    );
+        "Operator"                     => "Operator",
+        "OperatorError.Reason"         => "OperatorErrorReason",
+        "Predicate.Operator"           => "PredicateOperator",
+        "QueryError.Reason"            => "QueryErrorReason",
+        "QuotaCheckError.Reason"       => "QuotaCheckErrorReason",
+        "RangeError.Reason"            => "RangeErrorReason",
+        "RateExceededError.Reason"     => "RateExceededErrorReason",
+        "ReadOnlyError.Reason"         => "ReadOnlyErrorReason",
+        "RejectedError.Reason"         => "RejectedErrorReason",
+        "RequestError.Reason"          => "RequestErrorReason",
+        "RequiredError.Reason"         => "RequiredErrorReason",
+        "SelectorError.Reason"         => "SelectorErrorReason",
+        "SizeLimitError.Reason"        => "SizeLimitErrorReason",
+        "SortOrder"                    => "SortOrder",
+        "StringLengthError.Reason"     => "StringLengthErrorReason",
+        "get"                          => "FeedMappingServiceGet",
+        "getResponse"                  => "FeedMappingServiceGetResponse",
+        "mutate"                       => "FeedMappingServiceMutate",
+        "mutateResponse"               => "FeedMappingServiceMutateResponse",
+        "query"                        => "Query",
+        "queryResponse"                => "QueryResponse",
+    ];
 
 
     /**
      * Constructor using wsdl location and options array
-     * @param string $wsdl WSDL location for this service
-     * @param array $options Options for the SoapClient
+     * @param string $wsdl    WSDL location for this service
+     * @param array  $options Options for the SoapClient
      */
     public function __construct($wsdl, $options, $user)
     {
@@ -124,14 +124,14 @@ class FeedMappingService extends AdWordsSoapClient
      * Returns a list of FeedMappings that meet the selector criteria.
      *
      * @param selector Determines which FeedMappings to return. If empty all
-     * FeedMappings are returned.
+     *                 FeedMappings are returned.
      * @return The list of FeedMappings.
      * @throws ApiException indicates a problem with the request.
      */
     public function get($selector)
     {
         $args = new FeedMappingServiceGet($selector);
-        $result = $this->__soapCall("get", array($args));
+        $result = $this->__soapCall("get", [$args]);
         return $result->rval;
     }
 
@@ -152,7 +152,7 @@ class FeedMappingService extends AdWordsSoapClient
     public function mutate($operations)
     {
         $args = new FeedMappingServiceMutate($operations);
-        $result = $this->__soapCall("mutate", array($args));
+        $result = $this->__soapCall("mutate", [$args]);
         return $result->rval;
     }
 
@@ -170,7 +170,7 @@ class FeedMappingService extends AdWordsSoapClient
     public function query($query)
     {
         $args = new Query($query);
-        $result = $this->__soapCall("query", array($args));
+        $result = $this->__soapCall("query", [$args]);
         return $result->rval;
     }
 }

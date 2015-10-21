@@ -5,7 +5,7 @@ require_once('BudgetOrderService.require.php');
 
 /**
  * BudgetOrderService
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class BudgetOrderService extends AdWordsSoapClient
@@ -25,106 +25,106 @@ class BudgetOrderService extends AdWordsSoapClient
      * @access private
      * @var array
      */
-    public static $classmap = array(
-        "ApiError" => "ApiError",
-        "ApiException" => "ApiException",
-        "ApplicationException" => "ApplicationException",
-        "AuthenticationError" => "AuthenticationError",
-        "AuthorizationError" => "AuthorizationError",
-        "ClientTermsError" => "ClientTermsError",
-        "ComparableValue" => "ComparableValue",
-        "DatabaseError" => "DatabaseError",
-        "DateError" => "DateError",
-        "DateRange" => "DateRange",
-        "DistinctError" => "DistinctError",
-        "DoubleValue" => "DoubleValue",
-        "EntityNotFound" => "EntityNotFound",
-        "IdError" => "IdError",
-        "InternalApiError" => "InternalApiError",
-        "ListReturnValue" => "ListReturnValue",
-        "LongValue" => "LongValue",
-        "Money" => "Money",
-        "NewEntityCreationError" => "NewEntityCreationError",
-        "NotEmptyError" => "NotEmptyError",
-        "NotWhitelistedError" => "NotWhitelistedError",
-        "NullError" => "NullError",
-        "NumberValue" => "NumberValue",
-        "Operation" => "Operation",
-        "OperationAccessDenied" => "OperationAccessDenied",
-        "OperatorError" => "OperatorError",
-        "OrderBy" => "OrderBy",
-        "Page" => "Page",
-        "Paging" => "Paging",
-        "PagingError" => "PagingError",
-        "Predicate" => "Predicate",
-        "QuotaCheckError" => "QuotaCheckError",
-        "RangeError" => "RangeError",
-        "RateExceededError" => "RateExceededError",
-        "ReadOnlyError" => "ReadOnlyError",
-        "RejectedError" => "RejectedError",
-        "RequestError" => "RequestError",
-        "RequiredError" => "RequiredError",
-        "Selector" => "Selector",
-        "SelectorError" => "SelectorError",
-        "SizeLimitError" => "SizeLimitError",
-        "SoapHeader" => "SoapRequestHeader",
-        "SoapResponseHeader" => "SoapResponseHeader",
-        "StatsQueryError" => "StatsQueryError",
-        "StringLengthError" => "StringLengthError",
-        "AuthenticationError.Reason" => "AuthenticationErrorReason",
-        "AuthorizationError.Reason" => "AuthorizationErrorReason",
-        "ClientTermsError.Reason" => "ClientTermsErrorReason",
-        "DatabaseError.Reason" => "DatabaseErrorReason",
-        "DateError.Reason" => "DateErrorReason",
-        "DistinctError.Reason" => "DistinctErrorReason",
-        "EntityNotFound.Reason" => "EntityNotFoundReason",
-        "IdError.Reason" => "IdErrorReason",
-        "InternalApiError.Reason" => "InternalApiErrorReason",
+    public static $classmap = [
+        "ApiError"                      => "ApiError",
+        "ApiException"                  => "ApiException",
+        "ApplicationException"          => "ApplicationException",
+        "AuthenticationError"           => "AuthenticationError",
+        "AuthorizationError"            => "AuthorizationError",
+        "ClientTermsError"              => "ClientTermsError",
+        "ComparableValue"               => "ComparableValue",
+        "DatabaseError"                 => "DatabaseError",
+        "DateError"                     => "DateError",
+        "DateRange"                     => "DateRange",
+        "DistinctError"                 => "DistinctError",
+        "DoubleValue"                   => "DoubleValue",
+        "EntityNotFound"                => "EntityNotFound",
+        "IdError"                       => "IdError",
+        "InternalApiError"              => "InternalApiError",
+        "ListReturnValue"               => "ListReturnValue",
+        "LongValue"                     => "LongValue",
+        "Money"                         => "Money",
+        "NewEntityCreationError"        => "NewEntityCreationError",
+        "NotEmptyError"                 => "NotEmptyError",
+        "NotWhitelistedError"           => "NotWhitelistedError",
+        "NullError"                     => "NullError",
+        "NumberValue"                   => "NumberValue",
+        "Operation"                     => "Operation",
+        "OperationAccessDenied"         => "OperationAccessDenied",
+        "OperatorError"                 => "OperatorError",
+        "OrderBy"                       => "OrderBy",
+        "Page"                          => "Page",
+        "Paging"                        => "Paging",
+        "PagingError"                   => "PagingError",
+        "Predicate"                     => "Predicate",
+        "QuotaCheckError"               => "QuotaCheckError",
+        "RangeError"                    => "RangeError",
+        "RateExceededError"             => "RateExceededError",
+        "ReadOnlyError"                 => "ReadOnlyError",
+        "RejectedError"                 => "RejectedError",
+        "RequestError"                  => "RequestError",
+        "RequiredError"                 => "RequiredError",
+        "Selector"                      => "Selector",
+        "SelectorError"                 => "SelectorError",
+        "SizeLimitError"                => "SizeLimitError",
+        "SoapHeader"                    => "SoapRequestHeader",
+        "SoapResponseHeader"            => "SoapResponseHeader",
+        "StatsQueryError"               => "StatsQueryError",
+        "StringLengthError"             => "StringLengthError",
+        "AuthenticationError.Reason"    => "AuthenticationErrorReason",
+        "AuthorizationError.Reason"     => "AuthorizationErrorReason",
+        "ClientTermsError.Reason"       => "ClientTermsErrorReason",
+        "DatabaseError.Reason"          => "DatabaseErrorReason",
+        "DateError.Reason"              => "DateErrorReason",
+        "DistinctError.Reason"          => "DistinctErrorReason",
+        "EntityNotFound.Reason"         => "EntityNotFoundReason",
+        "IdError.Reason"                => "IdErrorReason",
+        "InternalApiError.Reason"       => "InternalApiErrorReason",
         "NewEntityCreationError.Reason" => "NewEntityCreationErrorReason",
-        "NotEmptyError.Reason" => "NotEmptyErrorReason",
-        "NotWhitelistedError.Reason" => "NotWhitelistedErrorReason",
-        "NullError.Reason" => "NullErrorReason",
-        "OperationAccessDenied.Reason" => "OperationAccessDeniedReason",
-        "Operator" => "Operator",
-        "OperatorError.Reason" => "OperatorErrorReason",
-        "PagingError.Reason" => "PagingErrorReason",
-        "Predicate.Operator" => "PredicateOperator",
-        "QuotaCheckError.Reason" => "QuotaCheckErrorReason",
-        "RangeError.Reason" => "RangeErrorReason",
-        "RateExceededError.Reason" => "RateExceededErrorReason",
-        "ReadOnlyError.Reason" => "ReadOnlyErrorReason",
-        "RejectedError.Reason" => "RejectedErrorReason",
-        "RequestError.Reason" => "RequestErrorReason",
-        "RequiredError.Reason" => "RequiredErrorReason",
-        "SelectorError.Reason" => "SelectorErrorReason",
-        "SizeLimitError.Reason" => "SizeLimitErrorReason",
-        "SortOrder" => "SortOrder",
-        "StatsQueryError.Reason" => "StatsQueryErrorReason",
-        "StringLengthError.Reason" => "StringLengthErrorReason",
-        "BillingAccount" => "BillingAccount",
-        "BudgetOrder" => "BudgetOrder",
-        "BudgetOrderError" => "BudgetOrderError",
-        "BudgetOrderOperation" => "BudgetOrderOperation",
-        "BudgetOrderPage" => "BudgetOrderPage",
-        "BudgetOrderRequest" => "BudgetOrderRequest",
-        "BudgetOrderReturnValue" => "BudgetOrderReturnValue",
-        "CustomerOrderLineError" => "CustomerOrderLineError",
-        "BudgetOrderError.Reason" => "BudgetOrderErrorReason",
-        "BudgetOrderRequest.Status" => "BudgetOrderRequestStatus",
+        "NotEmptyError.Reason"          => "NotEmptyErrorReason",
+        "NotWhitelistedError.Reason"    => "NotWhitelistedErrorReason",
+        "NullError.Reason"              => "NullErrorReason",
+        "OperationAccessDenied.Reason"  => "OperationAccessDeniedReason",
+        "Operator"                      => "Operator",
+        "OperatorError.Reason"          => "OperatorErrorReason",
+        "PagingError.Reason"            => "PagingErrorReason",
+        "Predicate.Operator"            => "PredicateOperator",
+        "QuotaCheckError.Reason"        => "QuotaCheckErrorReason",
+        "RangeError.Reason"             => "RangeErrorReason",
+        "RateExceededError.Reason"      => "RateExceededErrorReason",
+        "ReadOnlyError.Reason"          => "ReadOnlyErrorReason",
+        "RejectedError.Reason"          => "RejectedErrorReason",
+        "RequestError.Reason"           => "RequestErrorReason",
+        "RequiredError.Reason"          => "RequiredErrorReason",
+        "SelectorError.Reason"          => "SelectorErrorReason",
+        "SizeLimitError.Reason"         => "SizeLimitErrorReason",
+        "SortOrder"                     => "SortOrder",
+        "StatsQueryError.Reason"        => "StatsQueryErrorReason",
+        "StringLengthError.Reason"      => "StringLengthErrorReason",
+        "BillingAccount"                => "BillingAccount",
+        "BudgetOrder"                   => "BudgetOrder",
+        "BudgetOrderError"              => "BudgetOrderError",
+        "BudgetOrderOperation"          => "BudgetOrderOperation",
+        "BudgetOrderPage"               => "BudgetOrderPage",
+        "BudgetOrderRequest"            => "BudgetOrderRequest",
+        "BudgetOrderReturnValue"        => "BudgetOrderReturnValue",
+        "CustomerOrderLineError"        => "CustomerOrderLineError",
+        "BudgetOrderError.Reason"       => "BudgetOrderErrorReason",
+        "BudgetOrderRequest.Status"     => "BudgetOrderRequestStatus",
         "CustomerOrderLineError.Reason" => "CustomerOrderLineErrorReason",
-        "get" => "BudgetOrderServiceGet",
-        "getResponse" => "BudgetOrderServiceGetResponse",
-        "getBillingAccounts" => "GetBillingAccounts",
-        "getBillingAccountsResponse" => "GetBillingAccountsResponse",
-        "mutate" => "BudgetOrderServiceMutate",
-        "mutateResponse" => "BudgetOrderServiceMutateResponse",
-    );
+        "get"                           => "BudgetOrderServiceGet",
+        "getResponse"                   => "BudgetOrderServiceGetResponse",
+        "getBillingAccounts"            => "GetBillingAccounts",
+        "getBillingAccountsResponse"    => "GetBillingAccountsResponse",
+        "mutate"                        => "BudgetOrderServiceMutate",
+        "mutateResponse"                => "BudgetOrderServiceMutateResponse",
+    ];
 
 
     /**
      * Constructor using wsdl location and options array
-     * @param string $wsdl WSDL location for this service
-     * @param array $options Options for the SoapClient
+     * @param string $wsdl    WSDL location for this service
+     * @param array  $options Options for the SoapClient
      */
     public function __construct($wsdl, $options, $user)
     {
@@ -141,13 +141,13 @@ class BudgetOrderService extends AdWordsSoapClient
      * Gets a list of {@link BudgetOrder}s using the generic selector.
      * @param serviceSelector specifies which BudgetOrder to return.
      * @return A {@link BudgetOrderPage} of BudgetOrders of the client customer.
-     * All BudgetOrder fields are returned. Stats are not yet supported.
+     *                        All BudgetOrder fields are returned. Stats are not yet supported.
      * @throws ApiException
      */
     public function get($serviceSelector)
     {
         $args = new BudgetOrderServiceGet($serviceSelector);
-        $result = $this->__soapCall("get", array($args));
+        $result = $this->__soapCall("get", [$args]);
         return $result->rval;
     }
 
@@ -160,7 +160,7 @@ class BudgetOrderService extends AdWordsSoapClient
     public function getBillingAccounts()
     {
         $args = new GetBillingAccounts();
-        $result = $this->__soapCall("getBillingAccounts", array($args));
+        $result = $this->__soapCall("getBillingAccounts", [$args]);
         return $result->rval;
     }
 
@@ -182,14 +182,14 @@ class BudgetOrderService extends AdWordsSoapClient
      * is limited to one operation per mutate request. Any attempt to make more
      * than one operation will result in an <code>ApiException</code>.</p>
      * @param operations A list of operations, <b>however currently we only
-     * support one operation per mutate call</b>.
+     *                   support one operation per mutate call</b>.
      * @return BudgetOrders affected by the mutate operation.
      * @throws ApiException
      */
     public function mutate($operations)
     {
         $args = new BudgetOrderServiceMutate($operations);
-        $result = $this->__soapCall("mutate", array($args));
+        $result = $this->__soapCall("mutate", [$args]);
         return $result->rval;
     }
 }

@@ -13,7 +13,7 @@
  * If time zone information is not present in the value,
  * it is assumed to be PST. If time value is not specified,
  * it defaults to midnight of the day.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class DateKey

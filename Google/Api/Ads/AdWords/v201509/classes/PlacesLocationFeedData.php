@@ -4,7 +4,7 @@
 /**
  * Data used to configure a location feed populated from
  * Google My Business Locations.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class PlacesLocationFeedData extends SystemFeedGenerationData
@@ -67,8 +67,15 @@ class PlacesLocationFeedData extends SystemFeedGenerationData
         return self::XSI_TYPE;
     }
 
-    public function __construct($oAuthInfo = null, $emailAddress = null, $businessAccountIdentifier = null, $businessNameFilter = null, $categoryFilters = null, $labelFilters = null, $SystemFeedGenerationDataType = null)
-    {
+    public function __construct(
+        $oAuthInfo = null,
+        $emailAddress = null,
+        $businessAccountIdentifier = null,
+        $businessNameFilter = null,
+        $categoryFilters = null,
+        $labelFilters = null,
+        $SystemFeedGenerationDataType = null
+    ) {
         parent::__construct();
         $this->oAuthInfo = $oAuthInfo;
         $this->emailAddress = $emailAddress;

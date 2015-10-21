@@ -31,7 +31,7 @@ require_once 'Google/Api/Ads/Common/Util/XmlUtils.php';
 /**
  * The SOAP XML request fixer used to fix some inconsistencies among the
  * different versions of the PHP SoapClient.
- * @package GoogleApiAdsCommon
+ * @package    GoogleApiAdsCommon
  * @subpackage Util
  */
 class SoapRequestXmlFixer
@@ -45,16 +45,18 @@ class SoapRequestXmlFixer
 
     /**
      * Constructor to determine how the XML should be fixed.
-     * @param boolean $addXsiTypes <var>true</var> if xsi:types should be added
-     *     to all complex type elements
+     * @param boolean $addXsiTypes         <var>true</var> if xsi:types should be added
+     *                                     to all complex type elements
      * @param boolean $removeEmptyElements <var>true</var> if all empty elements
-     *     should be removed from the XML request
-     * @param boolean $replaceReferences <var>true</var> if element references
-     *     should be replaced with a copy of the element.
+     *                                     should be removed from the XML request
+     * @param boolean $replaceReferences   <var>true</var> if element references
+     *                                     should be replaced with a copy of the element.
      */
-    public function __construct($addXsiTypes, $removeEmptyElements,
-                                $replaceReferences)
-    {
+    public function __construct(
+        $addXsiTypes,
+        $removeEmptyElements,
+        $replaceReferences
+    ) {
         $this->addXsiTypes = $addXsiTypes;
         $this->removeEmptyElements = $removeEmptyElements;
         $this->replaceReferences = $replaceReferences;
@@ -62,9 +64,9 @@ class SoapRequestXmlFixer
 
     /**
      * Fixes the XML based on the parameters specified in the constructor.
-     * @param string $request the raw request produced by the SOAP client
-     * @param array $arguments the arguments passed to the SOAP method
-     * @param array $headers the headers used in the request
+     * @param string $request   the raw request produced by the SOAP client
+     * @param array  $arguments the arguments passed to the SOAP method
+     * @param array  $headers   the headers used in the request
      * @return string the prepared request ready to be sent to the server
      */
     public function FixXml($request, array $arguments, array $headers)
@@ -98,12 +100,14 @@ class SoapRequestXmlFixer
     /**
      * Fix a list of nodes corresponding to an array of objects.
      * @param DOMNodeList $nodeList the node list matching <var>$objects</var>
-     * @param array $objects the objects array matching <var>$nodeList</var>
-     * @param DOMXPath $xpath the xpath object representing the DOM
+     * @param array       $objects  the objects array matching <var>$nodeList</var>
+     * @param DOMXPath    $xpath    the xpath object representing the DOM
      */
-    private function FixXmlNodes(DOMNodeList $nodeList, array $objects,
-                                 DOMXPath $xpath)
-    {
+    private function FixXmlNodes(
+        DOMNodeList $nodeList,
+        array $objects,
+        DOMXPath $xpath
+    ) {
         if ($nodeList->length == sizeof($objects)) {
             $i = 0;
             foreach ($objects as $object) {
@@ -115,9 +119,9 @@ class SoapRequestXmlFixer
 
     /**
      * Fix a node corresponding to an objects.
-     * @param DOMNode $node the node matching <var>$object</var>
-     * @param mixed $object the object matching <var>$node</var>
-     * @param DOMXPath $xpath the xpath object representing the DOM
+     * @param DOMNode  $node   the node matching <var>$object</var>
+     * @param mixed    $object the object matching <var>$node</var>
+     * @param DOMXPath $xpath  the xpath object representing the DOM
      */
     private function FixXmlNode(DOMNode $node, $object, DOMXPath $xpath)
     {
@@ -147,8 +151,10 @@ class SoapRequestXmlFixer
 
                     if (is_array($varValue)) {
                         $this->FixXmlNodes($nodeList, $varValue, $xpath);
-                    } else if ($nodeList->length == 1) {
-                        $this->FixXmlNode($nodeList->item(0), $varValue, $xpath);
+                    } else {
+                        if ($nodeList->length == 1) {
+                            $this->FixXmlNode($nodeList->item(0), $varValue, $xpath);
+                        }
                     }
                 }
             }
@@ -158,7 +164,7 @@ class SoapRequestXmlFixer
     /**
      * Adds the xsi:type to the DOMNode generated from the corresponding object.
      * @param DOMNode $domNode the DOM node corresponding to the object
-     * @param $object the object used to determine the xsi:type
+     * @param         $object  the object used to determine the xsi:type
      */
     private function AddXsiType(DOMNode $domNode, $object)
     {
@@ -179,11 +185,12 @@ class SoapRequestXmlFixer
     /**
      * Replaces an element reference with a copy of the element it references.
      * @param DOMElement $elementReference the element reference to replace
-     * @param DOMXPath $xpath the xpath object representing the DOM
+     * @param DOMXPath   $xpath            the xpath object representing the DOM
      */
-    private function ReplaceElementReference(DOMElement $elementReference,
-                                             DOMXPath $xpath)
-    {
+    private function ReplaceElementReference(
+        DOMElement $elementReference,
+        DOMXPath $xpath
+    ) {
         $href = $elementReference->getAttribute('href');
         $id = substr($href, 1);
         $referencedElements = $xpath->query('//*[@id="' . $id . '"]');

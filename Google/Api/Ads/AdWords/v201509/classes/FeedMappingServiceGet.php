@@ -9,10 +9,10 @@
  * Returns a list of FeedMappings that meet the selector criteria.
  *
  * @param selector Determines which FeedMappings to return. If empty all
- * FeedMappings are returned.
+ *                 FeedMappings are returned.
  * @return The list of FeedMappings.
  * @throws ApiException indicates a problem with the request.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class FeedMappingServiceGet

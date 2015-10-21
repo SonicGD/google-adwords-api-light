@@ -4,7 +4,7 @@
 /**
  * CampaignFeeds are used to link a feed to a campaign using a matching function,
  * making the feed's feed items available in the campaign's ads for substitution.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class CampaignFeed
@@ -61,8 +61,13 @@ class CampaignFeed
         return self::XSI_TYPE;
     }
 
-    public function __construct($feedId = null, $campaignId = null, $matchingFunction = null, $placeholderTypes = null, $status = null)
-    {
+    public function __construct(
+        $feedId = null,
+        $campaignId = null,
+        $matchingFunction = null,
+        $placeholderTypes = null,
+        $status = null
+    ) {
         $this->feedId = $feedId;
         $this->campaignId = $campaignId;
         $this->matchingFunction = $matchingFunction;

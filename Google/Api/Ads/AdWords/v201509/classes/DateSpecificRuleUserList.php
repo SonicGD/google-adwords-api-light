@@ -8,7 +8,7 @@
  * <li> before {@code endDate} (exclusive) with {@code startDate} = 2000-01-01;
  * <li> after {@code startDate} (exclusive) with {@code endDate} = 2037-12-30.
  * </ul>
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class DateSpecificRuleUserList extends RuleBasedUserList

@@ -11,7 +11,7 @@
  * @param selector The selector specifying the {@link ManagedCustomer}s to return.
  * @return List of customers identified by the selector.
  * @throws ApiException When there is at least one error with the request.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class ManagedCustomerServiceGet

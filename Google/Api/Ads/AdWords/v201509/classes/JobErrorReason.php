@@ -3,7 +3,7 @@
 
 /**
  * The reasons for the job handling error.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class JobErrorReason

@@ -12,7 +12,7 @@
  * @return The page containing the {@link Label}s which meet the criteria specified by the
  * selector.
  * @throws ApiException when there is at least one error with the request
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class LabelServiceGet

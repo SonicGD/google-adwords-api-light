@@ -4,7 +4,7 @@
 /**
  * User can create only BOOMERANG_EVENT conversion types. For all other types
  * UserListService service will return OTHER.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class UserListConversionTypeCategory

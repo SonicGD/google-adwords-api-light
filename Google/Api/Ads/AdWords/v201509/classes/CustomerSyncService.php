@@ -5,7 +5,7 @@ require_once('CustomerSyncService.require.php');
 
 /**
  * CustomerSyncService
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class CustomerSyncService extends AdWordsSoapClient
@@ -25,68 +25,68 @@ class CustomerSyncService extends AdWordsSoapClient
      * @access private
      * @var array
      */
-    public static $classmap = array(
-        "AuthenticationError" => "AuthenticationError",
-        "AuthorizationError" => "AuthorizationError",
-        "ClientTermsError" => "ClientTermsError",
-        "DateError" => "DateError",
-        "DateTimeRange" => "DateTimeRange",
-        "DistinctError" => "DistinctError",
-        "IdError" => "IdError",
-        "InternalApiError" => "InternalApiError",
-        "NotEmptyError" => "NotEmptyError",
-        "OperationAccessDenied" => "OperationAccessDenied",
-        "QuotaCheckError" => "QuotaCheckError",
-        "RangeError" => "RangeError",
-        "RateExceededError" => "RateExceededError",
-        "ReadOnlyError" => "ReadOnlyError",
-        "RejectedError" => "RejectedError",
-        "RequestError" => "RequestError",
-        "RequiredError" => "RequiredError",
-        "SizeLimitError" => "SizeLimitError",
-        "SoapHeader" => "SoapRequestHeader",
-        "SoapResponseHeader" => "SoapResponseHeader",
-        "StringLengthError" => "StringLengthError",
-        "DatabaseError" => "DatabaseError",
-        "ApiError" => "ApiError",
-        "ApiException" => "ApiException",
-        "ApplicationException" => "ApplicationException",
-        "AuthenticationError.Reason" => "AuthenticationErrorReason",
-        "AuthorizationError.Reason" => "AuthorizationErrorReason",
-        "ClientTermsError.Reason" => "ClientTermsErrorReason",
-        "DatabaseError.Reason" => "DatabaseErrorReason",
-        "DateError.Reason" => "DateErrorReason",
-        "DistinctError.Reason" => "DistinctErrorReason",
-        "IdError.Reason" => "IdErrorReason",
-        "InternalApiError.Reason" => "InternalApiErrorReason",
-        "NotEmptyError.Reason" => "NotEmptyErrorReason",
+    public static $classmap = [
+        "AuthenticationError"          => "AuthenticationError",
+        "AuthorizationError"           => "AuthorizationError",
+        "ClientTermsError"             => "ClientTermsError",
+        "DateError"                    => "DateError",
+        "DateTimeRange"                => "DateTimeRange",
+        "DistinctError"                => "DistinctError",
+        "IdError"                      => "IdError",
+        "InternalApiError"             => "InternalApiError",
+        "NotEmptyError"                => "NotEmptyError",
+        "OperationAccessDenied"        => "OperationAccessDenied",
+        "QuotaCheckError"              => "QuotaCheckError",
+        "RangeError"                   => "RangeError",
+        "RateExceededError"            => "RateExceededError",
+        "ReadOnlyError"                => "ReadOnlyError",
+        "RejectedError"                => "RejectedError",
+        "RequestError"                 => "RequestError",
+        "RequiredError"                => "RequiredError",
+        "SizeLimitError"               => "SizeLimitError",
+        "SoapHeader"                   => "SoapRequestHeader",
+        "SoapResponseHeader"           => "SoapResponseHeader",
+        "StringLengthError"            => "StringLengthError",
+        "DatabaseError"                => "DatabaseError",
+        "ApiError"                     => "ApiError",
+        "ApiException"                 => "ApiException",
+        "ApplicationException"         => "ApplicationException",
+        "AuthenticationError.Reason"   => "AuthenticationErrorReason",
+        "AuthorizationError.Reason"    => "AuthorizationErrorReason",
+        "ClientTermsError.Reason"      => "ClientTermsErrorReason",
+        "DatabaseError.Reason"         => "DatabaseErrorReason",
+        "DateError.Reason"             => "DateErrorReason",
+        "DistinctError.Reason"         => "DistinctErrorReason",
+        "IdError.Reason"               => "IdErrorReason",
+        "InternalApiError.Reason"      => "InternalApiErrorReason",
+        "NotEmptyError.Reason"         => "NotEmptyErrorReason",
         "OperationAccessDenied.Reason" => "OperationAccessDeniedReason",
-        "QuotaCheckError.Reason" => "QuotaCheckErrorReason",
-        "RangeError.Reason" => "RangeErrorReason",
-        "RateExceededError.Reason" => "RateExceededErrorReason",
-        "ReadOnlyError.Reason" => "ReadOnlyErrorReason",
-        "RejectedError.Reason" => "RejectedErrorReason",
-        "RequestError.Reason" => "RequestErrorReason",
-        "RequiredError.Reason" => "RequiredErrorReason",
-        "SizeLimitError.Reason" => "SizeLimitErrorReason",
-        "StringLengthError.Reason" => "StringLengthErrorReason",
-        "AdGroupChangeData" => "AdGroupChangeData",
-        "CampaignChangeData" => "CampaignChangeData",
-        "CustomerSyncError" => "CustomerSyncError",
-        "FeedChangeData" => "FeedChangeData",
-        "CustomerChangeData" => "CustomerChangeData",
-        "CustomerSyncSelector" => "CustomerSyncSelector",
-        "ChangeStatus" => "ChangeStatus",
-        "CustomerSyncError.Reason" => "CustomerSyncErrorReason",
-        "get" => "CustomerSyncServiceGet",
-        "getResponse" => "CustomerSyncServiceGetResponse",
-    );
+        "QuotaCheckError.Reason"       => "QuotaCheckErrorReason",
+        "RangeError.Reason"            => "RangeErrorReason",
+        "RateExceededError.Reason"     => "RateExceededErrorReason",
+        "ReadOnlyError.Reason"         => "ReadOnlyErrorReason",
+        "RejectedError.Reason"         => "RejectedErrorReason",
+        "RequestError.Reason"          => "RequestErrorReason",
+        "RequiredError.Reason"         => "RequiredErrorReason",
+        "SizeLimitError.Reason"        => "SizeLimitErrorReason",
+        "StringLengthError.Reason"     => "StringLengthErrorReason",
+        "AdGroupChangeData"            => "AdGroupChangeData",
+        "CampaignChangeData"           => "CampaignChangeData",
+        "CustomerSyncError"            => "CustomerSyncError",
+        "FeedChangeData"               => "FeedChangeData",
+        "CustomerChangeData"           => "CustomerChangeData",
+        "CustomerSyncSelector"         => "CustomerSyncSelector",
+        "ChangeStatus"                 => "ChangeStatus",
+        "CustomerSyncError.Reason"     => "CustomerSyncErrorReason",
+        "get"                          => "CustomerSyncServiceGet",
+        "getResponse"                  => "CustomerSyncServiceGetResponse",
+    ];
 
 
     /**
      * Constructor using wsdl location and options array
-     * @param string $wsdl WSDL location for this service
-     * @param array $options Options for the SoapClient
+     * @param string $wsdl    WSDL location for this service
+     * @param array  $options Options for the SoapClient
      */
     public function __construct($wsdl, $options, $user)
     {
@@ -104,13 +104,13 @@ class CustomerSyncService extends AdWordsSoapClient
      *
      * @param selector Specifies the filter for selecting changehistory events for a customer.
      * @return A Customer->Campaign->AdGroup hierarchy containing information about the objects
-     * changed at each level.  All Campaigns that are requested in the selector will be returned,
-     * regardless of whether or not they have changed, but unchanged AdGroups will be ignored.
+     *                 changed at each level.  All Campaigns that are requested in the selector will be returned,
+     *                 regardless of whether or not they have changed, but unchanged AdGroups will be ignored.
      */
     public function get($selector)
     {
         $args = new CustomerSyncServiceGet($selector);
-        $result = $this->__soapCall("get", array($args));
+        $result = $this->__soapCall("get", [$args]);
         return $result->rval;
     }
 }

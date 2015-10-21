@@ -18,7 +18,7 @@
  * To make a keyword estimates request in which estimates do not consider
  * existing account information (e.g. historical ad group performance), set
  * {@link #campaignId} to {@code null}.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class CampaignEstimateRequest extends EstimateRequest
@@ -75,8 +75,14 @@ class CampaignEstimateRequest extends EstimateRequest
         return self::XSI_TYPE;
     }
 
-    public function __construct($campaignId = null, $adGroupEstimateRequests = null, $criteria = null, $networkSetting = null, $dailyBudget = null, $EstimateRequestType = null)
-    {
+    public function __construct(
+        $campaignId = null,
+        $adGroupEstimateRequests = null,
+        $criteria = null,
+        $networkSetting = null,
+        $dailyBudget = null,
+        $EstimateRequestType = null
+    ) {
         parent::__construct();
         $this->campaignId = $campaignId;
         $this->adGroupEstimateRequests = $adGroupEstimateRequests;

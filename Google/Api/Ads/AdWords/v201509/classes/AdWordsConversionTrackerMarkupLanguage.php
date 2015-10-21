@@ -3,7 +3,7 @@
 
 /**
  * Controls the markup language in which the snippet will be written.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AdWordsConversionTrackerMarkupLanguage

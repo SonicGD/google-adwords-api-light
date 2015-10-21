@@ -6,7 +6,7 @@
  *
  * <p>Clients use this to convert between human-readable category names / display strings and
  * ProductBiddingCategory instances.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class ProductBiddingCategoryData extends ConstantData
@@ -63,8 +63,14 @@ class ProductBiddingCategoryData extends ConstantData
         return self::XSI_TYPE;
     }
 
-    public function __construct($dimensionValue = null, $parentDimensionValue = null, $country = null, $status = null, $displayValue = null, $ConstantDataType = null)
-    {
+    public function __construct(
+        $dimensionValue = null,
+        $parentDimensionValue = null,
+        $country = null,
+        $status = null,
+        $displayValue = null,
+        $ConstantDataType = null
+    ) {
         parent::__construct();
         $this->dimensionValue = $dimensionValue;
         $this->parentDimensionValue = $parentDimensionValue;

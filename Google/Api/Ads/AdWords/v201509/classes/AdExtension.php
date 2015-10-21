@@ -4,7 +4,7 @@
 /**
  * Base class for AdExtension objects. An AdExtension is an extension to
  * an existing ad or metadata that will process into an extension.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AdExtension
@@ -24,13 +24,13 @@ class AdExtension
      * @var string
      */
     public $AdExtensionType;
-    private $_parameterMap = array(
+    private $_parameterMap = [
         "AdExtension.Type" => "AdExtensionType",
-    );
+    ];
 
     /**
      * Provided for setting non-php-standard named variables
-     * @param $var Variable name to set
+     * @param $var   Variable name to set
      * @param $value Value to set
      */
     public function __set($var, $value)

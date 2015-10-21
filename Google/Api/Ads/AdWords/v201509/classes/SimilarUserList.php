@@ -4,7 +4,7 @@
 /**
  * SimilarUserList is a list of users which are similar to users from another UserList.
  * These lists are readonly and automatically created by google.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class SimilarUserList extends UserList
@@ -61,8 +61,29 @@ class SimilarUserList extends UserList
         return self::XSI_TYPE;
     }
 
-    public function __construct($seedUserListId = null, $seedUserListName = null, $seedUserListDescription = null, $seedUserListStatus = null, $seedListSize = null, $id = null, $isReadOnly = null, $name = null, $description = null, $status = null, $integrationCode = null, $accessReason = null, $accountUserListStatus = null, $membershipLifeSpan = null, $size = null, $sizeRange = null, $sizeForSearch = null, $sizeRangeForSearch = null, $listType = null, $isEligibleForSearch = null, $UserListType = null)
-    {
+    public function __construct(
+        $seedUserListId = null,
+        $seedUserListName = null,
+        $seedUserListDescription = null,
+        $seedUserListStatus = null,
+        $seedListSize = null,
+        $id = null,
+        $isReadOnly = null,
+        $name = null,
+        $description = null,
+        $status = null,
+        $integrationCode = null,
+        $accessReason = null,
+        $accountUserListStatus = null,
+        $membershipLifeSpan = null,
+        $size = null,
+        $sizeRange = null,
+        $sizeForSearch = null,
+        $sizeRangeForSearch = null,
+        $listType = null,
+        $isEligibleForSearch = null,
+        $UserListType = null
+    ) {
         parent::__construct();
         $this->seedUserListId = $seedUserListId;
         $this->seedUserListName = $seedUserListName;

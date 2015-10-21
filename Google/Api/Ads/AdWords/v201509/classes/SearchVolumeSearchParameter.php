@@ -10,7 +10,7 @@
  * equivalent to having no constraint on search volume specified.
  * <p>This element is supported by following {@link IdeaType}s: KEYWORD.
  * <p>This element is supported by following {@link RequestType}s: IDEAS, STATS.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class SearchVolumeSearchParameter extends SearchParameter

@@ -3,7 +3,7 @@
 
 /**
  * Base type for AdWords campaign settings.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class Setting
@@ -17,13 +17,13 @@ class Setting
      * @var string
      */
     public $SettingType;
-    private $_parameterMap = array(
+    private $_parameterMap = [
         "Setting.Type" => "SettingType",
-    );
+    ];
 
     /**
      * Provided for setting non-php-standard named variables
-     * @param $var Variable name to set
+     * @param $var   Variable name to set
      * @param $value Value to set
      */
     public function __set($var, $value)

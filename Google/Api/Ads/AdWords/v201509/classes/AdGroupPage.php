@@ -4,7 +4,7 @@
 /**
  * Contains a subset of adgroup resulting from the filtering and paging of the
  * {@link com.google.ads.api.services.campaignmgmt.adgroup.AdGroupService#get} call
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AdGroupPage extends Page

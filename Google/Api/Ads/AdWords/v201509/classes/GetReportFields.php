@@ -10,12 +10,12 @@
  *
  * @param reportType The type of report.
  * @return The list of available report fields. Each
- * {@link ReportDefinitionField} encapsulates the field name, the
- * field data type, and the enum values (if the field's type is
- * {@code enum}).
+ *                   {@link ReportDefinitionField} encapsulates the field name, the
+ *                   field data type, and the enum values (if the field's type is
+ *                   {@code enum}).
  * @throws ApiException if a problem occurred while fetching the
- * ReportDefinitionField information.
- * @package Google_Api_Ads_AdWords_v201509
+ *                   ReportDefinitionField information.
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class GetReportFields

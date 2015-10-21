@@ -3,7 +3,7 @@
 
 /**
  * Contains a page of {@link ExpressBusiness}es with no stats.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class ExpressBusinessPage extends NoStatsPage

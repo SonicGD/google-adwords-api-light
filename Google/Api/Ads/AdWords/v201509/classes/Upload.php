@@ -7,7 +7,7 @@
  * @param media A list of {@code Media} objects, each containing the data to
  * be uploaded.
  * @return A list of uploaded media in the same order as the argument list.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class Upload

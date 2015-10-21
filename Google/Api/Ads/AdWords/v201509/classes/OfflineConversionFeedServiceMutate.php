@@ -16,8 +16,8 @@
  *
  * @param operations A list of offline conversion feed operations.
  * @return The list of offline conversion feed results (in the same order as the operations).
- * @throws {@link ApiException} if problems occurred while applying offline conversions.
- * @package Google_Api_Ads_AdWords_v201509
+ * @throws     {@link ApiException} if problems occurred while applying offline conversions.
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class OfflineConversionFeedServiceMutate

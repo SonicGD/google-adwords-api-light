@@ -10,9 +10,9 @@
  * Performs the given {@link ExpressBusinessOperation}.
  *
  * @param operations list of unique operations; the same AdWords Express business cannot be
- * specified in more than one operation
+ *                   specified in more than one operation
  * @return the updated AdWords Express businesses
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class ExpressBusinessServiceMutate

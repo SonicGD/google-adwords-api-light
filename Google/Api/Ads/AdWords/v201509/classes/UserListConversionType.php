@@ -3,7 +3,7 @@
 
 /**
  * Represents a conversion type used for building remarketing user lists.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class UserListConversionType

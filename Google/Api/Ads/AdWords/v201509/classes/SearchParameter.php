@@ -45,7 +45,7 @@
  * <li>{@link SearchVolumeSearchParameter}</li>
  * <li>{@link SeedAdGroupIdSearchParameter}</li>
  * </ul><p>
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class SearchParameter
@@ -59,13 +59,13 @@ class SearchParameter
      * @var string
      */
     public $SearchParameterType;
-    private $_parameterMap = array(
+    private $_parameterMap = [
         "SearchParameter.Type" => "SearchParameterType",
-    );
+    ];
 
     /**
      * Provided for setting non-php-standard named variables
-     * @param $var Variable name to set
+     * @param $var   Variable name to set
      * @param $value Value to set
      */
     public function __set($var, $value)

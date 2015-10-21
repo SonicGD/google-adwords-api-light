@@ -17,7 +17,7 @@
  * within the scope of a single API request. The API will assign real criterion IDs, and replace
  * the temporary values, and the API response will reflect this.
  * <span class="constraint AdxEnabled">This is disabled for AdX when it is contained within Operators: ADD, SET.</span>
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class ProductPartition extends Criterion
@@ -62,8 +62,14 @@ class ProductPartition extends Criterion
         return self::XSI_TYPE;
     }
 
-    public function __construct($partitionType = null, $parentCriterionId = null, $caseValue = null, $id = null, $type = null, $CriterionType = null)
-    {
+    public function __construct(
+        $partitionType = null,
+        $parentCriterionId = null,
+        $caseValue = null,
+        $id = null,
+        $type = null,
+        $CriterionType = null
+    ) {
         parent::__construct();
         $this->partitionType = $partitionType;
         $this->parentCriterionId = $parentCriterionId;

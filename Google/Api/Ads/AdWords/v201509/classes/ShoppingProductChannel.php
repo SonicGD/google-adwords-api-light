@@ -3,7 +3,7 @@
 
 /**
  * Channel specifies where the item is sold: online or in local stores.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class ShoppingProductChannel

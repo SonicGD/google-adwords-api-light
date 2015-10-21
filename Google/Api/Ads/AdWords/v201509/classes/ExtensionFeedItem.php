@@ -3,7 +3,7 @@
 
 /**
  * Contains base extension feed item data for an extension in an extension feed managed by AdWords.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class ExtensionFeedItem
@@ -71,13 +71,13 @@ class ExtensionFeedItem
      * @var string
      */
     public $ExtensionFeedItemType;
-    private $_parameterMap = array(
+    private $_parameterMap = [
         "ExtensionFeedItem.Type" => "ExtensionFeedItemType",
-    );
+    ];
 
     /**
      * Provided for setting non-php-standard named variables
-     * @param $var Variable name to set
+     * @param $var   Variable name to set
      * @param $value Value to set
      */
     public function __set($var, $value)
@@ -125,8 +125,18 @@ class ExtensionFeedItem
         return self::XSI_TYPE;
     }
 
-    public function __construct($feedId = null, $feedItemId = null, $status = null, $feedType = null, $startTime = null, $endTime = null, $devicePreference = null, $scheduling = null, $policyData = null, $ExtensionFeedItemType = null)
-    {
+    public function __construct(
+        $feedId = null,
+        $feedItemId = null,
+        $status = null,
+        $feedType = null,
+        $startTime = null,
+        $endTime = null,
+        $devicePreference = null,
+        $scheduling = null,
+        $policyData = null,
+        $ExtensionFeedItemType = null
+    ) {
         $this->feedId = $feedId;
         $this->feedItemId = $feedItemId;
         $this->status = $status;

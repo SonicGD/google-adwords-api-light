@@ -3,7 +3,7 @@
 
 /**
  * Used to specify the type of {@code AdGroupLandscape}
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AdGroupBidLandscapeType

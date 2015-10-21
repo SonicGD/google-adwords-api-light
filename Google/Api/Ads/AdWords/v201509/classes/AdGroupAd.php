@@ -3,7 +3,7 @@
 
 /**
  * Represents an ad in an ad group.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AdGroupAd
@@ -90,8 +90,18 @@ class AdGroupAd
         return self::XSI_TYPE;
     }
 
-    public function __construct($adGroupId = null, $ad = null, $experimentData = null, $status = null, $approvalStatus = null, $trademarks = null, $disapprovalReasons = null, $trademarkDisapproved = null, $labels = null, $forwardCompatibilityMap = null)
-    {
+    public function __construct(
+        $adGroupId = null,
+        $ad = null,
+        $experimentData = null,
+        $status = null,
+        $approvalStatus = null,
+        $trademarks = null,
+        $disapprovalReasons = null,
+        $trademarkDisapproved = null,
+        $labels = null,
+        $forwardCompatibilityMap = null
+    ) {
         $this->adGroupId = $adGroupId;
         $this->ad = $ad;
         $this->experimentData = $experimentData;

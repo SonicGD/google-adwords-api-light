@@ -30,7 +30,7 @@ require_once dirname(__FILE__) . '/../../Common/Lib/AdsSoapClient.php';
 
 /**
  * An extension of the {@link AdsSoapClient} for the AdWords API.
- * @package GoogleApiAdsAdWords
+ * @package    GoogleApiAdsAdWords
  * @subpackage Lib
  */
 class AdWordsSoapClient extends AdsSoapClient
@@ -38,17 +38,21 @@ class AdWordsSoapClient extends AdsSoapClient
 
     /**
      * Constructor for the AdWords API SOAP client.
-     * @param string $wsdl URI of the WSDL file or <var>null</var> if working in
-     *     non-WSDL mode
-     * @param array $options the SOAP client options
-     * @param AdsUser $user the user which is responsible for this client
-     * @param string $serviceName the name of the service which is making this
-     *     call
-     * @param string $serviceNamespace the namespace of the service
+     * @param string  $wsdl             URI of the WSDL file or <var>null</var> if working in
+     *                                  non-WSDL mode
+     * @param array   $options          the SOAP client options
+     * @param AdsUser $user             the user which is responsible for this client
+     * @param string  $serviceName      the name of the service which is making this
+     *                                  call
+     * @param string  $serviceNamespace the namespace of the service
      */
-    public function __construct($wsdl, array $options, AdsUser $user,
-                                $serviceName, $serviceNamespace)
-    {
+    public function __construct(
+        $wsdl,
+        array $options,
+        AdsUser $user,
+        $serviceName,
+        $serviceNamespace
+    ) {
         parent::__construct($wsdl, $options, $user, $serviceName,
             $serviceNamespace);
     }
@@ -56,16 +60,20 @@ class AdWordsSoapClient extends AdsSoapClient
     /**
      * Overrides the method __doRequest(). When OAuth2 authentication is used the
      * URL parameters added.
-     * @param string $request the request XML
+     * @param string $request  the request XML
      * @param string $location the URL to request
-     * @param string $action the SOAP action
-     * @param string $version the SOAP version
-     * @param int $one_way if set to 1, this method returns nothing
+     * @param string $action   the SOAP action
+     * @param string $version  the SOAP version
+     * @param int    $one_way  if set to 1, this method returns nothing
      * @return string the XML SOAP response
      */
-    function __doRequest($request, $location, $action, $version,
-                         $one_way = 0)
-    {
+    function __doRequest(
+        $request,
+        $location,
+        $action,
+        $version,
+        $one_way = 0
+    ) {
         // PHP version < 5.3.3 does not properly append HTTP headers to requests.
 
         if (version_compare(PHP_VERSION, '5.3.3', '<')) {

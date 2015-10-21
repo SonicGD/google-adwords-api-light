@@ -6,7 +6,7 @@
  * if a {@link com.google.ads.api.services.targetingideas.TargetingIdea}
  * represents a keyword idea, its {@link IdeaTypeAttribute} would contain a
  * {@code KEYWORD} {@link IdeaType}.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class IdeaTypeAttribute extends Attribute

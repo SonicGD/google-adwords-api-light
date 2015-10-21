@@ -9,10 +9,10 @@
  * Returns a list of customer feeds that meet the selector criteria.
  *
  * @param selector Determines which customer feeds to return. If empty, all
- * customer feeds are returned.
+ *                 customer feeds are returned.
  * @return The list of customer feeds.
  * @throws ApiException Indicates a problem with the request.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class CustomerFeedServiceGet

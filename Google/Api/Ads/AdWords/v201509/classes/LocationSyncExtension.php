@@ -3,7 +3,7 @@
 
 /**
  * Local business center(LBC) sync extension that ties a LBC account with a campaign.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class LocationSyncExtension extends AdExtension
@@ -54,8 +54,14 @@ class LocationSyncExtension extends AdExtension
         return self::XSI_TYPE;
     }
 
-    public function __construct($email = null, $oAuthInfo = null, $iconMediaId = null, $shouldSyncUrl = null, $id = null, $AdExtensionType = null)
-    {
+    public function __construct(
+        $email = null,
+        $oAuthInfo = null,
+        $iconMediaId = null,
+        $shouldSyncUrl = null,
+        $id = null,
+        $AdExtensionType = null
+    ) {
         parent::__construct();
         $this->email = $email;
         $this->oAuthInfo = $oAuthInfo;

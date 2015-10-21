@@ -3,7 +3,7 @@
 
 /**
  * {@link SoapHeader} for AdWords Express services.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class ExpressSoapHeader extends SoapRequestHeader
@@ -42,8 +42,15 @@ class ExpressSoapHeader extends SoapRequestHeader
         return self::XSI_TYPE;
     }
 
-    public function __construct($expressBusinessId = null, $pageId = null, $clientCustomerId = null, $developerToken = null, $userAgent = null, $validateOnly = null, $partialFailure = null)
-    {
+    public function __construct(
+        $expressBusinessId = null,
+        $pageId = null,
+        $clientCustomerId = null,
+        $developerToken = null,
+        $userAgent = null,
+        $validateOnly = null,
+        $partialFailure = null
+    ) {
         parent::__construct();
         $this->expressBusinessId = $expressBusinessId;
         $this->pageId = $pageId;

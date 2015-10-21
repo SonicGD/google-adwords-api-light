@@ -6,7 +6,7 @@
  * the feed item to be considered eligible for serving (aka the targeted campaign).
  * E.g., if the below campaign targeting is set to campaignId = X, then the feed
  * item can only serve under campaign X.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class FeedItemCampaignTargeting

@@ -4,7 +4,7 @@
 /**
  * Status in the AccountUserListStatus table. This indicates if the user list share or
  * the licensing of the userlist is still active.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AccountUserListStatus

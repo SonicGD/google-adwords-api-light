@@ -30,7 +30,7 @@ require_once 'Google/Api/Ads/Common/Util/CurlUtils.php';
 
 /**
  * A simple OAuth 2.0 handler.
- * @package GoogleApiAdsCommon
+ * @package    GoogleApiAdsCommon
  * @subpackage Util
  */
 class SimpleOAuth2Handler extends OAuth2Handler
@@ -40,12 +40,14 @@ class SimpleOAuth2Handler extends OAuth2Handler
 
     /**
      * Creates a new instance of this OAuth handler.
-     * @param string $server the auth server to make OAuth2 request against
+     * @param string    $server    the auth server to make OAuth2 request against
      * @param CurlUtils $curlUtils an instance of CurlUtils
      */
-    public function __construct($server = null, $scope = null,
-                                $curlUtils = null)
-    {
+    public function __construct(
+        $server = null,
+        $scope = null,
+        $curlUtils = null
+    ) {
         parent::__construct($server, $scope);
         $this->curlUtils = is_null($curlUtils) ? new CurlUtils() : $curlUtils;
     }
@@ -53,9 +55,11 @@ class SimpleOAuth2Handler extends OAuth2Handler
     /**
      * @see OAuth2Hanlder::GetAccessToken()
      */
-    public function GetAccessToken(array $credentials, $code,
-                                   $redirectUri = null)
-    {
+    public function GetAccessToken(
+        array $credentials,
+        $code,
+        $redirectUri = null
+    ) {
         if (empty($credentials['client_id'])) {
             throw new OAuth2Exception('client_id required.');
         }
@@ -64,16 +68,16 @@ class SimpleOAuth2Handler extends OAuth2Handler
         }
         $redirectUri = !empty($redirectUri) ?
             $redirectUri : self::DEFAULT_REDIRECT_URI;
-        $params = array(
-            'code' => $code,
-            'client_id' => $credentials['client_id'],
+        $params = [
+            'code'          => $code,
+            'client_id'     => $credentials['client_id'],
             'client_secret' => $credentials['client_secret'],
-            'redirect_uri' => $redirectUri,
-            'grant_type' => 'authorization_code'
-        );
+            'redirect_uri'  => $redirectUri,
+            'grant_type'    => 'authorization_code'
+        ];
         $endpoint = $this->GetAccessEndpoint();
         $response = $this->MakeRequest($endpoint, $params);
-        return array_merge($credentials, $response, array('timestamp' => time()));
+        return array_merge($credentials, $response, ['timestamp' => time()]);
     }
 
     /**
@@ -90,22 +94,22 @@ class SimpleOAuth2Handler extends OAuth2Handler
         if (empty($credentials['client_secret'])) {
             throw new OAuth2Exception('client_secret required.');
         }
-        $params = array(
+        $params = [
             'refresh_token' => $credentials['refresh_token'],
-            'client_id' => $credentials['client_id'],
+            'client_id'     => $credentials['client_id'],
             'client_secret' => $credentials['client_secret'],
-            'grant_type' => 'refresh_token'
-        );
+            'grant_type'    => 'refresh_token'
+        ];
         $endpoint = $this->GetAccessEndpoint();
         $response = $this->MakeRequest($endpoint, $params);
-        return array_merge($credentials, $response, array('timestamp' => time()));
+        return array_merge($credentials, $response, ['timestamp' => time()]);
     }
 
     /**
      * Makes an HTTP request to the given URL and extracts the returned OAuth2
      * response.
-     * @param string $url the URL to make the request to
-     * @param array $params the parameters to include in the POST body
+     * @param string $url    the URL to make the request to
+     * @param array  $params the parameters to include in the POST body
      * @return OAuthToken the returned token
      */
     protected function MakeRequest($url, $params)

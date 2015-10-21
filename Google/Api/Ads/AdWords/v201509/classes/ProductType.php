@@ -6,7 +6,7 @@
  * their children at level 2, and so on. We currently support up to 5 levels. The user must specify
  * a dimension type that indicates the level of the product type. All cases of the the same
  * subdivision must have the same dimension type (product type level).
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class ProductType extends ProductDimension

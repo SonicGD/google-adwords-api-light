@@ -3,7 +3,7 @@
 
 /**
  * Represents a criterion in an ad group, used with AdGroupCriterionService.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AdGroupCriterion
@@ -47,13 +47,13 @@ class AdGroupCriterion
      * @var string
      */
     public $AdGroupCriterionType;
-    private $_parameterMap = array(
+    private $_parameterMap = [
         "AdGroupCriterion.Type" => "AdGroupCriterionType",
-    );
+    ];
 
     /**
      * Provided for setting non-php-standard named variables
-     * @param $var Variable name to set
+     * @param $var   Variable name to set
      * @param $value Value to set
      */
     public function __set($var, $value)
@@ -101,8 +101,14 @@ class AdGroupCriterion
         return self::XSI_TYPE;
     }
 
-    public function __construct($adGroupId = null, $criterionUse = null, $criterion = null, $labels = null, $forwardCompatibilityMap = null, $AdGroupCriterionType = null)
-    {
+    public function __construct(
+        $adGroupId = null,
+        $criterionUse = null,
+        $criterion = null,
+        $labels = null,
+        $forwardCompatibilityMap = null,
+        $AdGroupCriterionType = null
+    ) {
         $this->adGroupId = $adGroupId;
         $this->criterionUse = $criterionUse;
         $this->criterion = $criterion;

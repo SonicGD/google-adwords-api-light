@@ -3,7 +3,7 @@
 
 /**
  * A set of attributes that describe the rich media ad capabilities.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class RichMediaAdAdAttribute

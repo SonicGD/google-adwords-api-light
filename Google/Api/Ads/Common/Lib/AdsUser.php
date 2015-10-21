@@ -32,7 +32,7 @@ require_once 'Google/Api/Ads/Common/Lib/ValidationException.php';
 
 /**
  * User class for all API modules using the Ads API.
- * @package GoogleApiAdsCommon
+ * @package    GoogleApiAdsCommon
  * @subpackage Lib
  */
 abstract class AdsUser
@@ -59,7 +59,7 @@ abstract class AdsUser
      */
     protected function __construct()
     {
-        $this->requestHeaderElements = array();
+        $this->requestHeaderElements = [];
 
         $buildIni = parse_ini_file(dirname(__FILE__) . '/../Lib/build.ini', false);
         $this->libVersion = $buildIni['LIB_VERSION'];
@@ -71,15 +71,17 @@ abstract class AdsUser
      * the <var>$authVar</var> is set, it is is used. Otherwise, the supplied
      * <var>$authenticationIni</var> is queired for the variable. If none is found
      * <var>null</var> is returned.
-     * @param string $authVar the default value for the authenticaiton variable
+     * @param string $authVar     the default value for the authenticaiton variable
      * @param string $authVarName the name of the authencation variable
-     * @param array $authIni the array of authentication variables from
-     *     an INI file
+     * @param array  $authIni     the array of authentication variables from
+     *                            an INI file
      * @return string the authentication variable value
      */
-    protected function GetAuthVarValue($authVar, $authVarName,
-                                       array $authIni)
-    {
+    protected function GetAuthVarValue(
+        $authVar,
+        $authVarName,
+        array $authIni
+    ) {
         if (isset($authVar)) {
             return $authVar;
         } else {
@@ -116,7 +118,7 @@ abstract class AdsUser
 
     /**
      * Sets the value for a request header.
-     * @param string $key the name of the request header element
+     * @param string $key   the name of the request header element
      * @param string $value the value for the request header element
      */
     public function SetHeaderValue($key, $value)
@@ -126,13 +128,14 @@ abstract class AdsUser
 
     /**
      * Gets the service by its service name.
-     * @param string $serviceName the service name
+     * @param string            $serviceName    the service name
      * @param SoapClientFactory $serviceFactory the service factory
      * @return SoapClient the instantiated service
      */
-    public function GetServiceSoapClient($serviceName,
-                                         SoapClientFactory $serviceFactory)
-    {
+    public function GetServiceSoapClient(
+        $serviceName,
+        SoapClientFactory $serviceFactory
+    ) {
         return $serviceFactory->GenerateSoapClient($serviceName);
     }
 
@@ -184,19 +187,23 @@ abstract class AdsUser
      * Loads the settings for this client library. If the settings INI file
      * located at <var>$settingsIniPath</var> cannot be loaded, then the
      * parameters passed into this method are used.
-     * @param string $settingsIniPath the path to the settings INI file
-     * @param string $defaultVersion the default version if the settings INI file
-     *     cannot be loaded
-     * @param string $defaultServer the default server if the settings INI file
-     *     cannot be loaded
-     * @param string $defaultLogsDir the default logs directory if the settings
-     *     INI file cannot be loaded
+     * @param string $settingsIniPath      the path to the settings INI file
+     * @param string $defaultVersion       the default version if the settings INI file
+     *                                     cannot be loaded
+     * @param string $defaultServer        the default server if the settings INI file
+     *                                     cannot be loaded
+     * @param string $defaultLogsDir       the default logs directory if the settings
+     *                                     INI file cannot be loaded
      * @param string $logsRelativePathBase the relative path base for the logs
-     *     directory
+     *                                     directory
      */
-    public function LoadSettings($settingsIniPath, $defaultVersion,
-                                 $defaultServer, $defaultLogsDir, $logsRelativePathBase)
-    {
+    public function LoadSettings(
+        $settingsIniPath,
+        $defaultVersion,
+        $defaultServer,
+        $defaultLogsDir,
+        $logsRelativePathBase
+    ) {
         // Set no time limit for PHP operations.
         set_time_limit(0);
         ini_set('default_socket_timeout', 480);
@@ -294,10 +301,10 @@ abstract class AdsUser
     /**
      * Gets the value for a given setting based on the contents of the parsed INI
      * file.
-     * @param array $settings the parsed settings INI file
-     * @param string $section the name of the section containing the setting
-     * @param string $name the name of the setting
-     * @param mixed $default the default value of the setting
+     * @param array  $settings the parsed settings INI file
+     * @param string $section  the name of the section containing the setting
+     * @param string $name     the name of the setting
+     * @param mixed  $default  the default value of the setting
      * @return string the value of the setting
      */
     private function GetSetting($settings, $section, $name, $default = null)
@@ -316,7 +323,7 @@ abstract class AdsUser
      * Define a constant if it isn't already defined. If it is defined but the
      * value is different then attempt to redefine it, which will fail and throw
      * the appropriate error.
-     * @param string $name the name of the constant
+     * @param string $name  the name of the constant
      * @param string $value the value of the constant
      */
     private function Define($name, $value)
@@ -483,8 +490,13 @@ abstract class AdsUser
      */
     private function GetCommonClientLibraryUserAgentParts()
     {
-        return array(array($this->libName, $this->libVersion), array('PHP',
-            PHP_VERSION));
+        return [
+            [$this->libName, $this->libVersion],
+            [
+                'PHP',
+                PHP_VERSION
+            ]
+        ];
     }
 
     /**
@@ -521,7 +533,7 @@ abstract class AdsUser
      * in their constructor.
      *
      * @param $applicationName The application name that will appear in this
-     *     header.
+     *                         header.
      */
     public function SetClientLibraryUserAgent($applicationName)
     {
@@ -543,7 +555,7 @@ abstract class AdsUser
      */
     protected function ValidateOAuth2Info()
     {
-        $requiredFields = array('client_id', 'client_secret');
+        $requiredFields = ['client_id', 'client_secret'];
         foreach ($requiredFields as $field) {
             if (empty($this->oauth2Info[$field])) {
                 throw new ValidationException($field, null,

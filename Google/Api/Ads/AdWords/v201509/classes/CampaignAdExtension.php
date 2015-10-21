@@ -4,7 +4,7 @@
 /**
  * Represents a campaign level ad extension. A campaign ad extension specifies
  * a campaign and an ad extension which can extend any ad under that campaign.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class CampaignAdExtension

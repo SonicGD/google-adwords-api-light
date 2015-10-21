@@ -4,7 +4,7 @@
 /**
  * Custom parameter of type string. For websites, there are two built-in parameters
  * URL (name = 'url__') and referrer URL (name = 'ref_url__').
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class StringKey

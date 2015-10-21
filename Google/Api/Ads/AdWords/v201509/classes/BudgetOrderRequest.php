@@ -5,7 +5,7 @@
  * Holds fields that provide information on the last set of values that were passed in through
  * the parent BudgetOrder for mutate.add and mutate.set.
  * <span class="constraint Billing">This element only applies if manager account is whitelisted for new billing backend.</span>
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class BudgetOrderRequest
@@ -80,8 +80,16 @@ class BudgetOrderRequest
         return self::XSI_TYPE;
     }
 
-    public function __construct($status = null, $date = null, $billingAccountName = null, $poNumber = null, $budgetOrderName = null, $spendingLimit = null, $startDateTime = null, $endDateTime = null)
-    {
+    public function __construct(
+        $status = null,
+        $date = null,
+        $billingAccountName = null,
+        $poNumber = null,
+        $budgetOrderName = null,
+        $spendingLimit = null,
+        $startDateTime = null,
+        $endDateTime = null
+    ) {
         $this->status = $status;
         $this->date = $date;
         $this->billingAccountName = $billingAccountName;

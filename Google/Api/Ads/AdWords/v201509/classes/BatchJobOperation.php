@@ -6,7 +6,7 @@
  *
  * <p class="note"><b>Note:</b> Only the <code>ADD</code> and <code>SET</code>
  * operators are supported.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class BatchJobOperation extends Operation

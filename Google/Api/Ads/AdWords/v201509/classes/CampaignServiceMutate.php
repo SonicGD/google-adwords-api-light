@@ -15,11 +15,11 @@
  * <code>REMOVE</code> operator. To remove a campaign, set its
  * {@link Campaign#status status} to {@code REMOVED}.</p>
  * @param operations A list of unique operations.
- * The same campaign cannot be specified in more than one operation.
+ *                   The same campaign cannot be specified in more than one operation.
  * @return The list of updated campaigns, returned in the same order as the
- * <code>operations</code> array.
+ *                   <code>operations</code> array.
  * @throws ApiException if problems occurred while updating campaign information.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class CampaignServiceMutate

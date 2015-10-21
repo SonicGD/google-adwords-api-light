@@ -9,7 +9,7 @@
  * For example, if an AdGroup name changed, this status would be FIELDS_CHANGED,
  * but if only bids on keywords belonging an AdGroup were changed this
  * status would be FIELDS_UNCHANGED.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class ChangeStatus

@@ -4,7 +4,7 @@
 /**
  * Denotes whether the bid multiplier is derived from the adgroup
  * or the criterion
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class MultiplierSource

@@ -5,7 +5,7 @@ require_once('BudgetSuggestionService.require.php');
 
 /**
  * BudgetSuggestionService
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class BudgetSuggestionService extends AdWordsSoapClient
@@ -25,89 +25,89 @@ class BudgetSuggestionService extends AdWordsSoapClient
      * @access private
      * @var array
      */
-    public static $classmap = array(
-        "Address" => "Address",
-        "ApiError" => "ApiError",
-        "ApiException" => "ApiException",
-        "ApplicationException" => "ApplicationException",
-        "AuthenticationError" => "AuthenticationError",
-        "AuthorizationError" => "AuthorizationError",
-        "ClientTermsError" => "ClientTermsError",
-        "ComparableValue" => "ComparableValue",
-        "Criterion" => "Criterion",
-        "DatabaseError" => "DatabaseError",
-        "DistinctError" => "DistinctError",
-        "DoubleValue" => "DoubleValue",
-        "GeoPoint" => "GeoPoint",
-        "IdError" => "IdError",
-        "InternalApiError" => "InternalApiError",
-        "Keyword" => "Keyword",
-        "Language" => "Language",
-        "Location" => "Location",
-        "LongValue" => "LongValue",
-        "MobileAppCategory" => "MobileAppCategory",
-        "MobileApplication" => "MobileApplication",
-        "Money" => "Money",
-        "NotEmptyError" => "NotEmptyError",
-        "NumberValue" => "NumberValue",
-        "OperationAccessDenied" => "OperationAccessDenied",
-        "Placement" => "Placement",
-        "Proximity" => "Proximity",
-        "QuotaCheckError" => "QuotaCheckError",
-        "RangeError" => "RangeError",
-        "RateExceededError" => "RateExceededError",
-        "ReadOnlyError" => "ReadOnlyError",
-        "RejectedError" => "RejectedError",
-        "RequestError" => "RequestError",
-        "RequiredError" => "RequiredError",
-        "SizeLimitError" => "SizeLimitError",
-        "SoapHeader" => "SoapRequestHeader",
-        "SoapResponseHeader" => "SoapResponseHeader",
-        "StringLengthError" => "StringLengthError",
-        "CriterionUserInterest" => "CriterionUserInterest",
-        "CriterionUserList" => "CriterionUserList",
-        "Vertical" => "Vertical",
-        "AuthenticationError.Reason" => "AuthenticationErrorReason",
-        "AuthorizationError.Reason" => "AuthorizationErrorReason",
-        "ClientTermsError.Reason" => "ClientTermsErrorReason",
-        "Criterion.Type" => "CriterionType",
-        "DatabaseError.Reason" => "DatabaseErrorReason",
-        "DistinctError.Reason" => "DistinctErrorReason",
-        "IdError.Reason" => "IdErrorReason",
-        "InternalApiError.Reason" => "InternalApiErrorReason",
-        "KeywordMatchType" => "KeywordMatchType",
-        "LocationTargetingStatus" => "LocationTargetingStatus",
-        "NotEmptyError.Reason" => "NotEmptyErrorReason",
-        "OperationAccessDenied.Reason" => "OperationAccessDeniedReason",
-        "Proximity.DistanceUnits" => "ProximityDistanceUnits",
-        "QuotaCheckError.Reason" => "QuotaCheckErrorReason",
-        "RangeError.Reason" => "RangeErrorReason",
-        "RateExceededError.Reason" => "RateExceededErrorReason",
-        "ReadOnlyError.Reason" => "ReadOnlyErrorReason",
-        "RejectedError.Reason" => "RejectedErrorReason",
-        "RequestError.Reason" => "RequestErrorReason",
-        "RequiredError.Reason" => "RequiredErrorReason",
-        "SizeLimitError.Reason" => "SizeLimitErrorReason",
-        "StringLengthError.Reason" => "StringLengthErrorReason",
+    public static $classmap = [
+        "Address"                            => "Address",
+        "ApiError"                           => "ApiError",
+        "ApiException"                       => "ApiException",
+        "ApplicationException"               => "ApplicationException",
+        "AuthenticationError"                => "AuthenticationError",
+        "AuthorizationError"                 => "AuthorizationError",
+        "ClientTermsError"                   => "ClientTermsError",
+        "ComparableValue"                    => "ComparableValue",
+        "Criterion"                          => "Criterion",
+        "DatabaseError"                      => "DatabaseError",
+        "DistinctError"                      => "DistinctError",
+        "DoubleValue"                        => "DoubleValue",
+        "GeoPoint"                           => "GeoPoint",
+        "IdError"                            => "IdError",
+        "InternalApiError"                   => "InternalApiError",
+        "Keyword"                            => "Keyword",
+        "Language"                           => "Language",
+        "Location"                           => "Location",
+        "LongValue"                          => "LongValue",
+        "MobileAppCategory"                  => "MobileAppCategory",
+        "MobileApplication"                  => "MobileApplication",
+        "Money"                              => "Money",
+        "NotEmptyError"                      => "NotEmptyError",
+        "NumberValue"                        => "NumberValue",
+        "OperationAccessDenied"              => "OperationAccessDenied",
+        "Placement"                          => "Placement",
+        "Proximity"                          => "Proximity",
+        "QuotaCheckError"                    => "QuotaCheckError",
+        "RangeError"                         => "RangeError",
+        "RateExceededError"                  => "RateExceededError",
+        "ReadOnlyError"                      => "ReadOnlyError",
+        "RejectedError"                      => "RejectedError",
+        "RequestError"                       => "RequestError",
+        "RequiredError"                      => "RequiredError",
+        "SizeLimitError"                     => "SizeLimitError",
+        "SoapHeader"                         => "SoapRequestHeader",
+        "SoapResponseHeader"                 => "SoapResponseHeader",
+        "StringLengthError"                  => "StringLengthError",
+        "CriterionUserInterest"              => "CriterionUserInterest",
+        "CriterionUserList"                  => "CriterionUserList",
+        "Vertical"                           => "Vertical",
+        "AuthenticationError.Reason"         => "AuthenticationErrorReason",
+        "AuthorizationError.Reason"          => "AuthorizationErrorReason",
+        "ClientTermsError.Reason"            => "ClientTermsErrorReason",
+        "Criterion.Type"                     => "CriterionType",
+        "DatabaseError.Reason"               => "DatabaseErrorReason",
+        "DistinctError.Reason"               => "DistinctErrorReason",
+        "IdError.Reason"                     => "IdErrorReason",
+        "InternalApiError.Reason"            => "InternalApiErrorReason",
+        "KeywordMatchType"                   => "KeywordMatchType",
+        "LocationTargetingStatus"            => "LocationTargetingStatus",
+        "NotEmptyError.Reason"               => "NotEmptyErrorReason",
+        "OperationAccessDenied.Reason"       => "OperationAccessDeniedReason",
+        "Proximity.DistanceUnits"            => "ProximityDistanceUnits",
+        "QuotaCheckError.Reason"             => "QuotaCheckErrorReason",
+        "RangeError.Reason"                  => "RangeErrorReason",
+        "RateExceededError.Reason"           => "RateExceededErrorReason",
+        "ReadOnlyError.Reason"               => "ReadOnlyErrorReason",
+        "RejectedError.Reason"               => "RejectedErrorReason",
+        "RequestError.Reason"                => "RequestErrorReason",
+        "RequiredError.Reason"               => "RequiredErrorReason",
+        "SizeLimitError.Reason"              => "SizeLimitErrorReason",
+        "StringLengthError.Reason"           => "StringLengthErrorReason",
         "CriterionUserList.MembershipStatus" => "CriterionUserListMembershipStatus",
-        "BudgetSuggestion" => "BudgetSuggestion",
-        "BudgetSuggestionSelector" => "BudgetSuggestionSelector",
-        "ExpressSoapHeader" => "ExpressSoapHeader",
-        "KeywordGroup" => "KeywordGroup",
-        "KeywordSet" => "KeywordSet",
-        "NegativeCriterion" => "NegativeCriterion",
-        "NegativeKeyword" => "NegativeKeyword",
-        "ProductService" => "ProductService",
-        "CurrencyCode" => "CurrencyCode",
-        "get" => "BudgetSuggestionServiceGet",
-        "getResponse" => "BudgetSuggestionServiceGetResponse",
-    );
+        "BudgetSuggestion"                   => "BudgetSuggestion",
+        "BudgetSuggestionSelector"           => "BudgetSuggestionSelector",
+        "ExpressSoapHeader"                  => "ExpressSoapHeader",
+        "KeywordGroup"                       => "KeywordGroup",
+        "KeywordSet"                         => "KeywordSet",
+        "NegativeCriterion"                  => "NegativeCriterion",
+        "NegativeKeyword"                    => "NegativeKeyword",
+        "ProductService"                     => "ProductService",
+        "CurrencyCode"                       => "CurrencyCode",
+        "get"                                => "BudgetSuggestionServiceGet",
+        "getResponse"                        => "BudgetSuggestionServiceGetResponse",
+    ];
 
 
     /**
      * Constructor using wsdl location and options array
-     * @param string $wsdl WSDL location for this service
-     * @param array $options Options for the SoapClient
+     * @param string $wsdl    WSDL location for this service
+     * @param array  $options Options for the SoapClient
      */
     public function __construct($wsdl, $options, $user)
     {
@@ -129,7 +129,7 @@ class BudgetSuggestionService extends AdWordsSoapClient
     public function get($selector)
     {
         $args = new BudgetSuggestionServiceGet($selector);
-        $result = $this->__soapCall("get", array($args));
+        $result = $this->__soapCall("get", [$args]);
         return $result->rval;
     }
 }

@@ -4,7 +4,7 @@
 /**
  * Settings for Real-Time Bidding, a feature only available for campaigns
  * targeting the Ad Exchange network.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class RealTimeBiddingSetting extends Setting

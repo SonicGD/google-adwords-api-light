@@ -11,7 +11,7 @@
  * @param selector The selector specifying the {@code BatchJob}s to return.
  * @return The list of selected jobs.
  * @throws ApiException
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class BatchJobServiceGet

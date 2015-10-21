@@ -4,7 +4,7 @@
 /**
  * Contains a list of budgets resulting from the filtering and paging of
  * {@link BudgetService#get} call.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class BudgetPage extends Page

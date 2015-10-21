@@ -5,7 +5,7 @@
  * The product channel exclusivity dimension, which limits the availability of an offer between only
  * local, only online, or both. Only supported by campaigns of
  * {@link AdvertisingChannelType#SHOPPING}.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class ProductChannelExclusivity extends ProductDimension

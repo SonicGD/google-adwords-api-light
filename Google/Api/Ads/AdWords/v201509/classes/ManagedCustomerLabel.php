@@ -3,7 +3,7 @@
 
 /**
  * A label ID and customer ID the label applies to.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class ManagedCustomerLabel

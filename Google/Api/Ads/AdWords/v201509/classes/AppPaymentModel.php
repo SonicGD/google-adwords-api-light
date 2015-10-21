@@ -7,7 +7,7 @@
  * <p>Possible IDs: {@code 30} ({@code APP_PAYMENT_MODEL_PAID}).</p>
  * <p>A criterion of this type can only be created using an ID.
  * <span class="constraint AdxEnabled">This is disabled for AdX when it is contained within Operators: ADD, SET.</span>
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AppPaymentModel extends Criterion

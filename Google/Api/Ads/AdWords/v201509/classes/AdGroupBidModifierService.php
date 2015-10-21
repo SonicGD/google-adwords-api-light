@@ -5,7 +5,7 @@ require_once('AdGroupBidModifierService.require.php');
 
 /**
  * AdGroupBidModifierService
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AdGroupBidModifierService extends AdWordsSoapClient
@@ -25,92 +25,92 @@ class AdGroupBidModifierService extends AdWordsSoapClient
      * @access private
      * @var array
      */
-    public static $classmap = array(
-        "AuthenticationError" => "AuthenticationError",
-        "AuthorizationError" => "AuthorizationError",
-        "ClientTermsError" => "ClientTermsError",
-        "CriterionError" => "CriterionError",
-        "DateRange" => "DateRange",
-        "DistinctError" => "DistinctError",
-        "EntityNotFound" => "EntityNotFound",
-        "IdError" => "IdError",
-        "InternalApiError" => "InternalApiError",
-        "NewEntityCreationError" => "NewEntityCreationError",
-        "NotEmptyError" => "NotEmptyError",
-        "OperationAccessDenied" => "OperationAccessDenied",
-        "OperatorError" => "OperatorError",
-        "OrderBy" => "OrderBy",
-        "Paging" => "Paging",
-        "Platform" => "Platform",
-        "Predicate" => "Predicate",
-        "QueryError" => "QueryError",
-        "QuotaCheckError" => "QuotaCheckError",
-        "RangeError" => "RangeError",
-        "RateExceededError" => "RateExceededError",
-        "ReadOnlyError" => "ReadOnlyError",
-        "RejectedError" => "RejectedError",
-        "RequestError" => "RequestError",
-        "RequiredError" => "RequiredError",
-        "SelectorError" => "SelectorError",
-        "SizeLimitError" => "SizeLimitError",
-        "SoapHeader" => "SoapRequestHeader",
-        "SoapResponseHeader" => "SoapResponseHeader",
-        "StringLengthError" => "StringLengthError",
-        "DatabaseError" => "DatabaseError",
-        "ApiError" => "ApiError",
-        "ApiException" => "ApiException",
-        "ApplicationException" => "ApplicationException",
-        "Selector" => "Selector",
-        "Criterion" => "Criterion",
-        "AdGroupBidModifier" => "AdGroupBidModifier",
-        "AdGroupBidModifierOperation" => "AdGroupBidModifierOperation",
-        "AdGroupBidModifierPage" => "AdGroupBidModifierPage",
+    public static $classmap = [
+        "AuthenticationError"           => "AuthenticationError",
+        "AuthorizationError"            => "AuthorizationError",
+        "ClientTermsError"              => "ClientTermsError",
+        "CriterionError"                => "CriterionError",
+        "DateRange"                     => "DateRange",
+        "DistinctError"                 => "DistinctError",
+        "EntityNotFound"                => "EntityNotFound",
+        "IdError"                       => "IdError",
+        "InternalApiError"              => "InternalApiError",
+        "NewEntityCreationError"        => "NewEntityCreationError",
+        "NotEmptyError"                 => "NotEmptyError",
+        "OperationAccessDenied"         => "OperationAccessDenied",
+        "OperatorError"                 => "OperatorError",
+        "OrderBy"                       => "OrderBy",
+        "Paging"                        => "Paging",
+        "Platform"                      => "Platform",
+        "Predicate"                     => "Predicate",
+        "QueryError"                    => "QueryError",
+        "QuotaCheckError"               => "QuotaCheckError",
+        "RangeError"                    => "RangeError",
+        "RateExceededError"             => "RateExceededError",
+        "ReadOnlyError"                 => "ReadOnlyError",
+        "RejectedError"                 => "RejectedError",
+        "RequestError"                  => "RequestError",
+        "RequiredError"                 => "RequiredError",
+        "SelectorError"                 => "SelectorError",
+        "SizeLimitError"                => "SizeLimitError",
+        "SoapHeader"                    => "SoapRequestHeader",
+        "SoapResponseHeader"            => "SoapResponseHeader",
+        "StringLengthError"             => "StringLengthError",
+        "DatabaseError"                 => "DatabaseError",
+        "ApiError"                      => "ApiError",
+        "ApiException"                  => "ApiException",
+        "ApplicationException"          => "ApplicationException",
+        "Selector"                      => "Selector",
+        "Criterion"                     => "Criterion",
+        "AdGroupBidModifier"            => "AdGroupBidModifier",
+        "AdGroupBidModifierOperation"   => "AdGroupBidModifierOperation",
+        "AdGroupBidModifierPage"        => "AdGroupBidModifierPage",
         "AdGroupBidModifierReturnValue" => "AdGroupBidModifierReturnValue",
-        "ListReturnValue" => "ListReturnValue",
-        "Operation" => "Operation",
-        "Page" => "Page",
-        "AuthenticationError.Reason" => "AuthenticationErrorReason",
-        "AuthorizationError.Reason" => "AuthorizationErrorReason",
-        "BidModifierSource" => "BidModifierSource",
-        "ClientTermsError.Reason" => "ClientTermsErrorReason",
-        "Criterion.Type" => "CriterionType",
-        "CriterionError.Reason" => "CriterionErrorReason",
-        "DatabaseError.Reason" => "DatabaseErrorReason",
-        "DistinctError.Reason" => "DistinctErrorReason",
-        "EntityNotFound.Reason" => "EntityNotFoundReason",
-        "IdError.Reason" => "IdErrorReason",
-        "InternalApiError.Reason" => "InternalApiErrorReason",
+        "ListReturnValue"               => "ListReturnValue",
+        "Operation"                     => "Operation",
+        "Page"                          => "Page",
+        "AuthenticationError.Reason"    => "AuthenticationErrorReason",
+        "AuthorizationError.Reason"     => "AuthorizationErrorReason",
+        "BidModifierSource"             => "BidModifierSource",
+        "ClientTermsError.Reason"       => "ClientTermsErrorReason",
+        "Criterion.Type"                => "CriterionType",
+        "CriterionError.Reason"         => "CriterionErrorReason",
+        "DatabaseError.Reason"          => "DatabaseErrorReason",
+        "DistinctError.Reason"          => "DistinctErrorReason",
+        "EntityNotFound.Reason"         => "EntityNotFoundReason",
+        "IdError.Reason"                => "IdErrorReason",
+        "InternalApiError.Reason"       => "InternalApiErrorReason",
         "NewEntityCreationError.Reason" => "NewEntityCreationErrorReason",
-        "NotEmptyError.Reason" => "NotEmptyErrorReason",
-        "OperationAccessDenied.Reason" => "OperationAccessDeniedReason",
-        "Operator" => "Operator",
-        "OperatorError.Reason" => "OperatorErrorReason",
-        "Predicate.Operator" => "PredicateOperator",
-        "QueryError.Reason" => "QueryErrorReason",
-        "QuotaCheckError.Reason" => "QuotaCheckErrorReason",
-        "RangeError.Reason" => "RangeErrorReason",
-        "RateExceededError.Reason" => "RateExceededErrorReason",
-        "ReadOnlyError.Reason" => "ReadOnlyErrorReason",
-        "RejectedError.Reason" => "RejectedErrorReason",
-        "RequestError.Reason" => "RequestErrorReason",
-        "RequiredError.Reason" => "RequiredErrorReason",
-        "SelectorError.Reason" => "SelectorErrorReason",
-        "SizeLimitError.Reason" => "SizeLimitErrorReason",
-        "SortOrder" => "SortOrder",
-        "StringLengthError.Reason" => "StringLengthErrorReason",
-        "get" => "AdGroupBidModifierServiceGet",
-        "getResponse" => "AdGroupBidModifierServiceGetResponse",
-        "mutate" => "AdGroupBidModifierServiceMutate",
-        "mutateResponse" => "AdGroupBidModifierServiceMutateResponse",
-        "query" => "Query",
-        "queryResponse" => "QueryResponse",
-    );
+        "NotEmptyError.Reason"          => "NotEmptyErrorReason",
+        "OperationAccessDenied.Reason"  => "OperationAccessDeniedReason",
+        "Operator"                      => "Operator",
+        "OperatorError.Reason"          => "OperatorErrorReason",
+        "Predicate.Operator"            => "PredicateOperator",
+        "QueryError.Reason"             => "QueryErrorReason",
+        "QuotaCheckError.Reason"        => "QuotaCheckErrorReason",
+        "RangeError.Reason"             => "RangeErrorReason",
+        "RateExceededError.Reason"      => "RateExceededErrorReason",
+        "ReadOnlyError.Reason"          => "ReadOnlyErrorReason",
+        "RejectedError.Reason"          => "RejectedErrorReason",
+        "RequestError.Reason"           => "RequestErrorReason",
+        "RequiredError.Reason"          => "RequiredErrorReason",
+        "SelectorError.Reason"          => "SelectorErrorReason",
+        "SizeLimitError.Reason"         => "SizeLimitErrorReason",
+        "SortOrder"                     => "SortOrder",
+        "StringLengthError.Reason"      => "StringLengthErrorReason",
+        "get"                           => "AdGroupBidModifierServiceGet",
+        "getResponse"                   => "AdGroupBidModifierServiceGetResponse",
+        "mutate"                        => "AdGroupBidModifierServiceMutate",
+        "mutateResponse"                => "AdGroupBidModifierServiceMutateResponse",
+        "query"                         => "Query",
+        "queryResponse"                 => "QueryResponse",
+    ];
 
 
     /**
      * Constructor using wsdl location and options array
-     * @param string $wsdl WSDL location for this service
-     * @param array $options Options for the SoapClient
+     * @param string $wsdl    WSDL location for this service
+     * @param array  $options Options for the SoapClient
      */
     public function __construct($wsdl, $options, $user)
     {
@@ -133,7 +133,7 @@ class AdGroupBidModifierService extends AdWordsSoapClient
     public function get($selector)
     {
         $args = new AdGroupBidModifierServiceGet($selector);
-        $result = $this->__soapCall("get", array($args));
+        $result = $this->__soapCall("get", [$args]);
         return $result->rval;
     }
 
@@ -154,7 +154,7 @@ class AdGroupBidModifierService extends AdWordsSoapClient
     public function mutate($operations)
     {
         $args = new AdGroupBidModifierServiceMutate($operations);
-        $result = $this->__soapCall("mutate", array($args));
+        $result = $this->__soapCall("mutate", [$args]);
         return $result->rval;
     }
 
@@ -171,7 +171,7 @@ class AdGroupBidModifierService extends AdWordsSoapClient
     public function query($query)
     {
         $args = new Query($query);
-        $result = $this->__soapCall("query", array($args));
+        $result = $this->__soapCall("query", [$args]);
         return $result->rval;
     }
 }

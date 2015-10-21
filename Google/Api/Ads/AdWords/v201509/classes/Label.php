@@ -4,7 +4,7 @@
 /**
  * Represents a label that can be attached to entities such as campaign, ad group, ads,
  * criterion etc.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class Label
@@ -42,13 +42,13 @@ class Label
      * @var string
      */
     public $LabelType;
-    private $_parameterMap = array(
+    private $_parameterMap = [
         "Label.Type" => "LabelType",
-    );
+    ];
 
     /**
      * Provided for setting non-php-standard named variables
-     * @param $var Variable name to set
+     * @param $var   Variable name to set
      * @param $value Value to set
      */
     public function __set($var, $value)

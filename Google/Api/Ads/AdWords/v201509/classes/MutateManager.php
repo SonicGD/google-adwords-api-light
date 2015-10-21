@@ -19,7 +19,7 @@
  * @param operations List of unique operations.
  * @return results for the given operations
  * @throws ApiException with a {@link ManagedCustomerServiceError}
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class MutateManager

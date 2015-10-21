@@ -16,9 +16,9 @@
  * {@link AdGroup#status status} to {@code REMOVED}.</p>
  *
  * @param operations List of unique operations. The same ad group cannot be
- * specified in more than one operation.
+ *                   specified in more than one operation.
  * @return The updated adgroups.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AdGroupServiceMutate

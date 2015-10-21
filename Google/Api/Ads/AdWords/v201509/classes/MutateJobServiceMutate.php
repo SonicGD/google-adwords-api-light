@@ -16,7 +16,7 @@
  * <p>When this method returns with success, the job will be in
  * {@code PROCESSING} or {@code PENDING} state and no further action is
  * needed for the job to get executed.</p>
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class MutateJobServiceMutate

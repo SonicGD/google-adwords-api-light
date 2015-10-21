@@ -28,7 +28,7 @@
 
 /**
  * A collection of utility methods for working with OGNL paths.
- * @package GoogleApiAdsCommon
+ * @package    GoogleApiAdsCommon
  * @subpackage Util
  */
 class OgnlUtils
@@ -56,7 +56,7 @@ class OgnlUtils
     /**
      * Gets the value of an OGNL expression in the given context.
      * @param $expression the OGNL expression to evaluate
-     * @param $context the context in which to evaluate the expression
+     * @param $context    the context in which to evaluate the expression
      * @return the value of the expression or null if the expression is invalid
      */
     public static function GetValue($expression, $context)
@@ -65,7 +65,7 @@ class OgnlUtils
             return null;
         }
         while (strlen($expression) > 0) {
-            $matches = array();
+            $matches = [];
             if (preg_match(self::$OGNL_TOKEN_REGEX, $expression, $matches)) {
                 $token = array_shift($matches);
                 $expression = substr($expression, strlen($token));
@@ -74,11 +74,13 @@ class OgnlUtils
                 foreach ($matches as $field) {
                     if (is_object($context) && property_exists($context, $field)) {
                         $context = $context->$field;
-                    } else if (is_array($context) && array_key_exists($field, $context)) {
-                        $context = $context[$field];
                     } else {
-                        // Field doesn't evaluate in the context.
-                        return null;
+                        if (is_array($context) && array_key_exists($field, $context)) {
+                            $context = $context[$field];
+                        } else {
+                            // Field doesn't evaluate in the context.
+                            return null;
+                        }
                     }
                 }
             } else {
@@ -94,11 +96,11 @@ class OgnlUtils
      * operation.
      * @param string $expression the OGNL expression
      * @return int the operation index referenced, or null if no operation was
-     *     references
+     *                           references
      */
     public static function GetOperationIndex($expression)
     {
-        $matches = array();
+        $matches = [];
         if (preg_match(self::$OPERATION_INDEX_REGEX, $expression, $matches)) {
             return $matches[1];
         } else {

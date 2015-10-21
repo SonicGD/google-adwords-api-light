@@ -28,7 +28,7 @@
 
 /**
  * Useful constants for the AdWords API.
- * @package GoogleApiAdsAdWords
+ * @package    GoogleApiAdsAdWords
  * @subpackage Lib
  */
 class AdWordsConstants

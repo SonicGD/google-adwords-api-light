@@ -5,7 +5,7 @@
  * A {@link SearchParameter} for a query of {@code String}s.
  * <p>This element is supported by following {@link IdeaType}s: KEYWORD.
  * <p>This element is supported by following {@link RequestType}s: IDEAS, STATS.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class RelatedToQuerySearchParameter extends SearchParameter

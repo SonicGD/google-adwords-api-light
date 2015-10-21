@@ -4,7 +4,7 @@
 /**
  * Contains a subset of campaign criteria resulting from a call to
  * {@link CampaignCriterionService#get}.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class CampaignCriterionPage extends Page

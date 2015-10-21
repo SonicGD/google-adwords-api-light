@@ -3,7 +3,7 @@
 
 /**
  * Represents a ZIP archive media the content of which contains HTML5 assets.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class MediaBundle extends Media
@@ -48,8 +48,22 @@ class MediaBundle extends Media
         return self::XSI_TYPE;
     }
 
-    public function __construct($data = null, $mediaBundleUrl = null, $entryPoint = null, $mediaId = null, $type = null, $referenceId = null, $dimensions = null, $urls = null, $mimeType = null, $sourceUrl = null, $name = null, $fileSize = null, $creationTime = null, $MediaType = null)
-    {
+    public function __construct(
+        $data = null,
+        $mediaBundleUrl = null,
+        $entryPoint = null,
+        $mediaId = null,
+        $type = null,
+        $referenceId = null,
+        $dimensions = null,
+        $urls = null,
+        $mimeType = null,
+        $sourceUrl = null,
+        $name = null,
+        $fileSize = null,
+        $creationTime = null,
+        $MediaType = null
+    ) {
         parent::__construct();
         $this->data = $data;
         $this->mediaBundleUrl = $mediaBundleUrl;

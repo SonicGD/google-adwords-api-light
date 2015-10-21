@@ -4,7 +4,7 @@
 /**
  * Contains a list of shared set criteria results filtered and sorted
  * as specified in the {@link SharedCriterionService#get} call
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class SharedCriterionPage extends Page

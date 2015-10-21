@@ -4,7 +4,7 @@
 /**
  * Enums for all the reasons an error can be thrown to the user during a CustomerOrderLine mutate
  * operation.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class CustomerOrderLineErrorReason

@@ -21,7 +21,7 @@
  * <p>An AccountLabel may be applied to at most 1000 customers.</p>
  * <p>This method does not support partial failures, and will fail if any
  * operation is invalid.</p>
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class MutateLabel

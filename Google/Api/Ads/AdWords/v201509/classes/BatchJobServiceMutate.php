@@ -17,7 +17,7 @@
  * @param operations A list of operations.
  * @return The list of created or updated jobs.
  * @throws ApiException
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class BatchJobServiceMutate

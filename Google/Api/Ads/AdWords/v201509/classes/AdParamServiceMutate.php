@@ -22,11 +22,11 @@
  *
  * @param operations The operations to perform.
  * @return A list of ad parameters, where each entry in the list is the
- * result of applying the operation in the input list with the same index.
- * For a {@code SET} operation, the returned ad parameter will contain the
- * updated values. For a {@code REMOVE} operation, the returned ad parameter
- * will simply be the ad parameter that was removed.
- * @package Google_Api_Ads_AdWords_v201509
+ *                   result of applying the operation in the input list with the same index.
+ *                   For a {@code SET} operation, the returned ad parameter will contain the
+ *                   updated values. For a {@code REMOVE} operation, the returned ad parameter
+ *                   will simply be the ad parameter that was removed.
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AdParamServiceMutate

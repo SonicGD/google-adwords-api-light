@@ -3,7 +3,7 @@
 
 /**
  * Location based ad extension.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class LocationExtension extends AdExtension
@@ -78,8 +78,18 @@ class LocationExtension extends AdExtension
         return self::XSI_TYPE;
     }
 
-    public function __construct($address = null, $geoPoint = null, $encodedLocation = null, $companyName = null, $phoneNumber = null, $source = null, $iconMediaId = null, $imageMediaId = null, $id = null, $AdExtensionType = null)
-    {
+    public function __construct(
+        $address = null,
+        $geoPoint = null,
+        $encodedLocation = null,
+        $companyName = null,
+        $phoneNumber = null,
+        $source = null,
+        $iconMediaId = null,
+        $imageMediaId = null,
+        $id = null,
+        $AdExtensionType = null
+    ) {
         parent::__construct();
         $this->address = $address;
         $this->geoPoint = $geoPoint;

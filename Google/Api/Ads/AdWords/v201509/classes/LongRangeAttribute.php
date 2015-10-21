@@ -4,7 +4,7 @@
 /**
  * {@link Attribute} type that contains a {@link Range} of {@link LongValue}
  * values.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class LongRangeAttribute extends Attribute

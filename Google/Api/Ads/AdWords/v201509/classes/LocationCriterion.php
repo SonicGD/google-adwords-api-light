@@ -3,7 +3,7 @@
 
 /**
  * Represents data that encapsulates a location criterion.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class LocationCriterion
@@ -66,8 +66,14 @@ class LocationCriterion
         return self::XSI_TYPE;
     }
 
-    public function __construct($location = null, $canonicalName = null, $reach = null, $locale = null, $searchTerm = null, $countryCode = null)
-    {
+    public function __construct(
+        $location = null,
+        $canonicalName = null,
+        $reach = null,
+        $locale = null,
+        $searchTerm = null,
+        $countryCode = null
+    ) {
         $this->location = $location;
         $this->canonicalName = $canonicalName;
         $this->reach = $reach;

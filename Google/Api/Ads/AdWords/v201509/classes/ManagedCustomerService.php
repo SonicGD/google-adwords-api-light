@@ -5,7 +5,7 @@ require_once('ManagedCustomerService.require.php');
 
 /**
  * ManagedCustomerService
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class ManagedCustomerService extends AdWordsSoapClient
@@ -25,103 +25,103 @@ class ManagedCustomerService extends AdWordsSoapClient
      * @access private
      * @var array
      */
-    public static $classmap = array(
-        "AuthenticationError" => "AuthenticationError",
-        "AuthorizationError" => "AuthorizationError",
-        "ClientTermsError" => "ClientTermsError",
-        "DateError" => "DateError",
-        "DateRange" => "DateRange",
-        "DistinctError" => "DistinctError",
-        "IdError" => "IdError",
-        "InternalApiError" => "InternalApiError",
-        "NotEmptyError" => "NotEmptyError",
-        "NullError" => "NullError",
-        "OperationAccessDenied" => "OperationAccessDenied",
-        "OperatorError" => "OperatorError",
-        "OrderBy" => "OrderBy",
-        "Paging" => "Paging",
-        "Predicate" => "Predicate",
-        "QuotaCheckError" => "QuotaCheckError",
-        "RangeError" => "RangeError",
-        "RateExceededError" => "RateExceededError",
-        "ReadOnlyError" => "ReadOnlyError",
-        "RejectedError" => "RejectedError",
-        "RequestError" => "RequestError",
-        "RequiredError" => "RequiredError",
-        "SelectorError" => "SelectorError",
-        "SizeLimitError" => "SizeLimitError",
-        "SoapHeader" => "SoapRequestHeader",
-        "SoapResponseHeader" => "SoapResponseHeader",
-        "StringLengthError" => "StringLengthError",
-        "DatabaseError" => "DatabaseError",
-        "ApiError" => "ApiError",
-        "ApiException" => "ApiException",
-        "ApplicationException" => "ApplicationException",
-        "Selector" => "Selector",
-        "Operation" => "Operation",
-        "Page" => "Page",
-        "AuthenticationError.Reason" => "AuthenticationErrorReason",
-        "AuthorizationError.Reason" => "AuthorizationErrorReason",
-        "ClientTermsError.Reason" => "ClientTermsErrorReason",
-        "DatabaseError.Reason" => "DatabaseErrorReason",
-        "DateError.Reason" => "DateErrorReason",
-        "DistinctError.Reason" => "DistinctErrorReason",
-        "IdError.Reason" => "IdErrorReason",
-        "InternalApiError.Reason" => "InternalApiErrorReason",
-        "NotEmptyError.Reason" => "NotEmptyErrorReason",
-        "NullError.Reason" => "NullErrorReason",
-        "OperationAccessDenied.Reason" => "OperationAccessDeniedReason",
-        "Operator" => "Operator",
-        "OperatorError.Reason" => "OperatorErrorReason",
-        "Predicate.Operator" => "PredicateOperator",
-        "QuotaCheckError.Reason" => "QuotaCheckErrorReason",
-        "RangeError.Reason" => "RangeErrorReason",
-        "RateExceededError.Reason" => "RateExceededErrorReason",
-        "ReadOnlyError.Reason" => "ReadOnlyErrorReason",
-        "RejectedError.Reason" => "RejectedErrorReason",
-        "RequestError.Reason" => "RequestErrorReason",
-        "RequiredError.Reason" => "RequiredErrorReason",
-        "SelectorError.Reason" => "SelectorErrorReason",
-        "SizeLimitError.Reason" => "SizeLimitErrorReason",
-        "SortOrder" => "SortOrder",
-        "StringLengthError.Reason" => "StringLengthErrorReason",
-        "ManagedCustomerLabel" => "ManagedCustomerLabel",
-        "ManagedCustomerLabelOperation" => "ManagedCustomerLabelOperation",
-        "ManagedCustomerLabelReturnValue" => "ManagedCustomerLabelReturnValue",
-        "ManagedCustomerServiceError" => "ManagedCustomerServiceError",
-        "PendingInvitationSelector" => "PendingInvitationSelector",
-        "AccountLabel" => "AccountLabel",
-        "ManagedCustomerLink" => "ManagedCustomerLink",
-        "LinkOperation" => "LinkOperation",
-        "MoveOperation" => "MoveOperation",
-        "MutateLinkResults" => "MutateLinkResults",
-        "MutateManagerResults" => "MutateManagerResults",
-        "ManagedCustomer" => "ManagedCustomer",
-        "ManagedCustomerOperation" => "ManagedCustomerOperation",
-        "ManagedCustomerPage" => "ManagedCustomerPage",
-        "ManagedCustomerReturnValue" => "ManagedCustomerReturnValue",
-        "PendingInvitation" => "PendingInvitation",
-        "LinkStatus" => "LinkStatus",
+    public static $classmap = [
+        "AuthenticationError"                => "AuthenticationError",
+        "AuthorizationError"                 => "AuthorizationError",
+        "ClientTermsError"                   => "ClientTermsError",
+        "DateError"                          => "DateError",
+        "DateRange"                          => "DateRange",
+        "DistinctError"                      => "DistinctError",
+        "IdError"                            => "IdError",
+        "InternalApiError"                   => "InternalApiError",
+        "NotEmptyError"                      => "NotEmptyError",
+        "NullError"                          => "NullError",
+        "OperationAccessDenied"              => "OperationAccessDenied",
+        "OperatorError"                      => "OperatorError",
+        "OrderBy"                            => "OrderBy",
+        "Paging"                             => "Paging",
+        "Predicate"                          => "Predicate",
+        "QuotaCheckError"                    => "QuotaCheckError",
+        "RangeError"                         => "RangeError",
+        "RateExceededError"                  => "RateExceededError",
+        "ReadOnlyError"                      => "ReadOnlyError",
+        "RejectedError"                      => "RejectedError",
+        "RequestError"                       => "RequestError",
+        "RequiredError"                      => "RequiredError",
+        "SelectorError"                      => "SelectorError",
+        "SizeLimitError"                     => "SizeLimitError",
+        "SoapHeader"                         => "SoapRequestHeader",
+        "SoapResponseHeader"                 => "SoapResponseHeader",
+        "StringLengthError"                  => "StringLengthError",
+        "DatabaseError"                      => "DatabaseError",
+        "ApiError"                           => "ApiError",
+        "ApiException"                       => "ApiException",
+        "ApplicationException"               => "ApplicationException",
+        "Selector"                           => "Selector",
+        "Operation"                          => "Operation",
+        "Page"                               => "Page",
+        "AuthenticationError.Reason"         => "AuthenticationErrorReason",
+        "AuthorizationError.Reason"          => "AuthorizationErrorReason",
+        "ClientTermsError.Reason"            => "ClientTermsErrorReason",
+        "DatabaseError.Reason"               => "DatabaseErrorReason",
+        "DateError.Reason"                   => "DateErrorReason",
+        "DistinctError.Reason"               => "DistinctErrorReason",
+        "IdError.Reason"                     => "IdErrorReason",
+        "InternalApiError.Reason"            => "InternalApiErrorReason",
+        "NotEmptyError.Reason"               => "NotEmptyErrorReason",
+        "NullError.Reason"                   => "NullErrorReason",
+        "OperationAccessDenied.Reason"       => "OperationAccessDeniedReason",
+        "Operator"                           => "Operator",
+        "OperatorError.Reason"               => "OperatorErrorReason",
+        "Predicate.Operator"                 => "PredicateOperator",
+        "QuotaCheckError.Reason"             => "QuotaCheckErrorReason",
+        "RangeError.Reason"                  => "RangeErrorReason",
+        "RateExceededError.Reason"           => "RateExceededErrorReason",
+        "ReadOnlyError.Reason"               => "ReadOnlyErrorReason",
+        "RejectedError.Reason"               => "RejectedErrorReason",
+        "RequestError.Reason"                => "RequestErrorReason",
+        "RequiredError.Reason"               => "RequiredErrorReason",
+        "SelectorError.Reason"               => "SelectorErrorReason",
+        "SizeLimitError.Reason"              => "SizeLimitErrorReason",
+        "SortOrder"                          => "SortOrder",
+        "StringLengthError.Reason"           => "StringLengthErrorReason",
+        "ManagedCustomerLabel"               => "ManagedCustomerLabel",
+        "ManagedCustomerLabelOperation"      => "ManagedCustomerLabelOperation",
+        "ManagedCustomerLabelReturnValue"    => "ManagedCustomerLabelReturnValue",
+        "ManagedCustomerServiceError"        => "ManagedCustomerServiceError",
+        "PendingInvitationSelector"          => "PendingInvitationSelector",
+        "AccountLabel"                       => "AccountLabel",
+        "ManagedCustomerLink"                => "ManagedCustomerLink",
+        "LinkOperation"                      => "LinkOperation",
+        "MoveOperation"                      => "MoveOperation",
+        "MutateLinkResults"                  => "MutateLinkResults",
+        "MutateManagerResults"               => "MutateManagerResults",
+        "ManagedCustomer"                    => "ManagedCustomer",
+        "ManagedCustomerOperation"           => "ManagedCustomerOperation",
+        "ManagedCustomerPage"                => "ManagedCustomerPage",
+        "ManagedCustomerReturnValue"         => "ManagedCustomerReturnValue",
+        "PendingInvitation"                  => "PendingInvitation",
+        "LinkStatus"                         => "LinkStatus",
         "ManagedCustomerServiceError.Reason" => "ManagedCustomerServiceErrorReason",
-        "get" => "ManagedCustomerServiceGet",
-        "getResponse" => "ManagedCustomerServiceGetResponse",
-        "getPendingInvitations" => "GetPendingInvitations",
-        "getPendingInvitationsResponse" => "GetPendingInvitationsResponse",
-        "mutate" => "ManagedCustomerServiceMutate",
-        "mutateResponse" => "ManagedCustomerServiceMutateResponse",
-        "mutateLabel" => "MutateLabel",
-        "mutateLabelResponse" => "MutateLabelResponse",
-        "mutateLink" => "MutateLink",
-        "mutateLinkResponse" => "MutateLinkResponse",
-        "mutateManager" => "MutateManager",
-        "mutateManagerResponse" => "MutateManagerResponse",
-    );
+        "get"                                => "ManagedCustomerServiceGet",
+        "getResponse"                        => "ManagedCustomerServiceGetResponse",
+        "getPendingInvitations"              => "GetPendingInvitations",
+        "getPendingInvitationsResponse"      => "GetPendingInvitationsResponse",
+        "mutate"                             => "ManagedCustomerServiceMutate",
+        "mutateResponse"                     => "ManagedCustomerServiceMutateResponse",
+        "mutateLabel"                        => "MutateLabel",
+        "mutateLabelResponse"                => "MutateLabelResponse",
+        "mutateLink"                         => "MutateLink",
+        "mutateLinkResponse"                 => "MutateLinkResponse",
+        "mutateManager"                      => "MutateManager",
+        "mutateManagerResponse"              => "MutateManagerResponse",
+    ];
 
 
     /**
      * Constructor using wsdl location and options array
-     * @param string $wsdl WSDL location for this service
-     * @param array $options Options for the SoapClient
+     * @param string $wsdl    WSDL location for this service
+     * @param array  $options Options for the SoapClient
      */
     public function __construct($wsdl, $options, $user)
     {
@@ -144,7 +144,7 @@ class ManagedCustomerService extends AdWordsSoapClient
     public function get($serviceSelector)
     {
         $args = new ManagedCustomerServiceGet($serviceSelector);
-        $result = $this->__soapCall("get", array($args));
+        $result = $this->__soapCall("get", [$args]);
         return $result->rval;
     }
 
@@ -160,7 +160,7 @@ class ManagedCustomerService extends AdWordsSoapClient
     public function getPendingInvitations($selector)
     {
         $args = new GetPendingInvitations($selector);
-        $result = $this->__soapCall("getPendingInvitations", array($args));
+        $result = $this->__soapCall("getPendingInvitations", [$args]);
         return $result->rval;
     }
 
@@ -179,12 +179,12 @@ class ManagedCustomerService extends AdWordsSoapClient
      *
      * @param operations List of unique operations.
      * @return The list of updated managed customers, returned in the same order as the
-     * <code>operations</code> array.
+     *                   <code>operations</code> array.
      */
     public function mutate($operations)
     {
         $args = new ManagedCustomerServiceMutate($operations);
-        $result = $this->__soapCall("mutate", array($args));
+        $result = $this->__soapCall("mutate", [$args]);
         return $result->rval;
     }
 
@@ -212,7 +212,7 @@ class ManagedCustomerService extends AdWordsSoapClient
     public function mutateLabel($operations)
     {
         $args = new MutateLabel($operations);
-        $result = $this->__soapCall("mutateLabel", array($args));
+        $result = $this->__soapCall("mutateLabel", [$args]);
         return $result->rval;
     }
 
@@ -248,7 +248,7 @@ class ManagedCustomerService extends AdWordsSoapClient
     public function mutateLink($operations)
     {
         $args = new MutateLink($operations);
-        $result = $this->__soapCall("mutateLink", array($args));
+        $result = $this->__soapCall("mutateLink", [$args]);
         return $result->rval;
     }
 
@@ -274,7 +274,7 @@ class ManagedCustomerService extends AdWordsSoapClient
     public function mutateManager($operations)
     {
         $args = new MutateManager($operations);
-        $result = $this->__soapCall("mutateManager", array($args));
+        $result = $this->__soapCall("mutateManager", [$args]);
         return $result->rval;
     }
 }

@@ -3,7 +3,7 @@
 
 /**
  * Information about an AdWords Express business.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class ExpressBusiness
@@ -72,8 +72,15 @@ class ExpressBusiness
         return self::XSI_TYPE;
     }
 
-    public function __construct($id = null, $name = null, $status = null, $address = null, $geoPoint = null, $phoneNumber = null, $website = null)
-    {
+    public function __construct(
+        $id = null,
+        $name = null,
+        $status = null,
+        $address = null,
+        $geoPoint = null,
+        $phoneNumber = null,
+        $website = null
+    ) {
         $this->id = $id;
         $this->name = $name;
         $this->status = $status;

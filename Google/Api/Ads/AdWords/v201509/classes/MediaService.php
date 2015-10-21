@@ -5,7 +5,7 @@ require_once('MediaService.require.php');
 
 /**
  * MediaService
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class MediaService extends AdWordsSoapClient
@@ -25,100 +25,100 @@ class MediaService extends AdWordsSoapClient
      * @access private
      * @var array
      */
-    public static $classmap = array(
-        "Audio" => "Audio",
-        "AudioError" => "AudioError",
-        "AuthenticationError" => "AuthenticationError",
-        "AuthorizationError" => "AuthorizationError",
-        "ClientTermsError" => "ClientTermsError",
-        "DateRange" => "DateRange",
-        "Dimensions" => "Dimensions",
-        "DistinctError" => "DistinctError",
-        "EntityNotFound" => "EntityNotFound",
-        "IdError" => "IdError",
-        "Image" => "Image",
-        "ImageError" => "ImageError",
-        "InternalApiError" => "InternalApiError",
-        "MediaBundle" => "MediaBundle",
-        "MediaBundleError" => "MediaBundleError",
-        "MediaError" => "MediaError",
+    public static $classmap = [
+        "Audio"                         => "Audio",
+        "AudioError"                    => "AudioError",
+        "AuthenticationError"           => "AuthenticationError",
+        "AuthorizationError"            => "AuthorizationError",
+        "ClientTermsError"              => "ClientTermsError",
+        "DateRange"                     => "DateRange",
+        "Dimensions"                    => "Dimensions",
+        "DistinctError"                 => "DistinctError",
+        "EntityNotFound"                => "EntityNotFound",
+        "IdError"                       => "IdError",
+        "Image"                         => "Image",
+        "ImageError"                    => "ImageError",
+        "InternalApiError"              => "InternalApiError",
+        "MediaBundle"                   => "MediaBundle",
+        "MediaBundleError"              => "MediaBundleError",
+        "MediaError"                    => "MediaError",
         "Media_Size_DimensionsMapEntry" => "Media_Size_DimensionsMapEntry",
-        "Media_Size_StringMapEntry" => "Media_Size_StringMapEntry",
-        "NewEntityCreationError" => "NewEntityCreationError",
-        "NotEmptyError" => "NotEmptyError",
-        "NullError" => "NullError",
-        "OperationAccessDenied" => "OperationAccessDenied",
-        "OrderBy" => "OrderBy",
-        "Paging" => "Paging",
-        "Predicate" => "Predicate",
-        "QueryError" => "QueryError",
-        "QuotaCheckError" => "QuotaCheckError",
-        "RangeError" => "RangeError",
-        "RateExceededError" => "RateExceededError",
-        "ReadOnlyError" => "ReadOnlyError",
-        "RejectedError" => "RejectedError",
-        "RequestError" => "RequestError",
-        "RequiredError" => "RequiredError",
-        "SelectorError" => "SelectorError",
-        "SizeLimitError" => "SizeLimitError",
-        "SoapHeader" => "SoapRequestHeader",
-        "SoapResponseHeader" => "SoapResponseHeader",
-        "StringLengthError" => "StringLengthError",
-        "Video" => "Video",
-        "VideoError" => "VideoError",
-        "DatabaseError" => "DatabaseError",
-        "ApiError" => "ApiError",
-        "ApiException" => "ApiException",
-        "ApplicationException" => "ApplicationException",
-        "Media" => "Media",
-        "MediaPage" => "MediaPage",
-        "Selector" => "Selector",
-        "AudioError.Reason" => "AudioErrorReason",
-        "AuthenticationError.Reason" => "AuthenticationErrorReason",
-        "AuthorizationError.Reason" => "AuthorizationErrorReason",
-        "ClientTermsError.Reason" => "ClientTermsErrorReason",
-        "DatabaseError.Reason" => "DatabaseErrorReason",
-        "DistinctError.Reason" => "DistinctErrorReason",
-        "EntityNotFound.Reason" => "EntityNotFoundReason",
-        "IdError.Reason" => "IdErrorReason",
-        "ImageError.Reason" => "ImageErrorReason",
-        "InternalApiError.Reason" => "InternalApiErrorReason",
-        "Media.MediaType" => "MediaMediaType",
-        "Media.MimeType" => "MediaMimeType",
-        "Media.Size" => "MediaSize",
-        "MediaBundleError.Reason" => "MediaBundleErrorReason",
-        "MediaError.Reason" => "MediaErrorReason",
+        "Media_Size_StringMapEntry"     => "Media_Size_StringMapEntry",
+        "NewEntityCreationError"        => "NewEntityCreationError",
+        "NotEmptyError"                 => "NotEmptyError",
+        "NullError"                     => "NullError",
+        "OperationAccessDenied"         => "OperationAccessDenied",
+        "OrderBy"                       => "OrderBy",
+        "Paging"                        => "Paging",
+        "Predicate"                     => "Predicate",
+        "QueryError"                    => "QueryError",
+        "QuotaCheckError"               => "QuotaCheckError",
+        "RangeError"                    => "RangeError",
+        "RateExceededError"             => "RateExceededError",
+        "ReadOnlyError"                 => "ReadOnlyError",
+        "RejectedError"                 => "RejectedError",
+        "RequestError"                  => "RequestError",
+        "RequiredError"                 => "RequiredError",
+        "SelectorError"                 => "SelectorError",
+        "SizeLimitError"                => "SizeLimitError",
+        "SoapHeader"                    => "SoapRequestHeader",
+        "SoapResponseHeader"            => "SoapResponseHeader",
+        "StringLengthError"             => "StringLengthError",
+        "Video"                         => "Video",
+        "VideoError"                    => "VideoError",
+        "DatabaseError"                 => "DatabaseError",
+        "ApiError"                      => "ApiError",
+        "ApiException"                  => "ApiException",
+        "ApplicationException"          => "ApplicationException",
+        "Media"                         => "Media",
+        "MediaPage"                     => "MediaPage",
+        "Selector"                      => "Selector",
+        "AudioError.Reason"             => "AudioErrorReason",
+        "AuthenticationError.Reason"    => "AuthenticationErrorReason",
+        "AuthorizationError.Reason"     => "AuthorizationErrorReason",
+        "ClientTermsError.Reason"       => "ClientTermsErrorReason",
+        "DatabaseError.Reason"          => "DatabaseErrorReason",
+        "DistinctError.Reason"          => "DistinctErrorReason",
+        "EntityNotFound.Reason"         => "EntityNotFoundReason",
+        "IdError.Reason"                => "IdErrorReason",
+        "ImageError.Reason"             => "ImageErrorReason",
+        "InternalApiError.Reason"       => "InternalApiErrorReason",
+        "Media.MediaType"               => "MediaMediaType",
+        "Media.MimeType"                => "MediaMimeType",
+        "Media.Size"                    => "MediaSize",
+        "MediaBundleError.Reason"       => "MediaBundleErrorReason",
+        "MediaError.Reason"             => "MediaErrorReason",
         "NewEntityCreationError.Reason" => "NewEntityCreationErrorReason",
-        "NotEmptyError.Reason" => "NotEmptyErrorReason",
-        "NullError.Reason" => "NullErrorReason",
-        "OperationAccessDenied.Reason" => "OperationAccessDeniedReason",
-        "Predicate.Operator" => "PredicateOperator",
-        "QueryError.Reason" => "QueryErrorReason",
-        "QuotaCheckError.Reason" => "QuotaCheckErrorReason",
-        "RangeError.Reason" => "RangeErrorReason",
-        "RateExceededError.Reason" => "RateExceededErrorReason",
-        "ReadOnlyError.Reason" => "ReadOnlyErrorReason",
-        "RejectedError.Reason" => "RejectedErrorReason",
-        "RequestError.Reason" => "RequestErrorReason",
-        "RequiredError.Reason" => "RequiredErrorReason",
-        "SelectorError.Reason" => "SelectorErrorReason",
-        "SizeLimitError.Reason" => "SizeLimitErrorReason",
-        "SortOrder" => "SortOrder",
-        "StringLengthError.Reason" => "StringLengthErrorReason",
-        "VideoError.Reason" => "VideoErrorReason",
-        "get" => "MediaServiceGet",
-        "getResponse" => "MediaServiceGetResponse",
-        "query" => "Query",
-        "queryResponse" => "QueryResponse",
-        "upload" => "Upload",
-        "uploadResponse" => "UploadResponse",
-    );
+        "NotEmptyError.Reason"          => "NotEmptyErrorReason",
+        "NullError.Reason"              => "NullErrorReason",
+        "OperationAccessDenied.Reason"  => "OperationAccessDeniedReason",
+        "Predicate.Operator"            => "PredicateOperator",
+        "QueryError.Reason"             => "QueryErrorReason",
+        "QuotaCheckError.Reason"        => "QuotaCheckErrorReason",
+        "RangeError.Reason"             => "RangeErrorReason",
+        "RateExceededError.Reason"      => "RateExceededErrorReason",
+        "ReadOnlyError.Reason"          => "ReadOnlyErrorReason",
+        "RejectedError.Reason"          => "RejectedErrorReason",
+        "RequestError.Reason"           => "RequestErrorReason",
+        "RequiredError.Reason"          => "RequiredErrorReason",
+        "SelectorError.Reason"          => "SelectorErrorReason",
+        "SizeLimitError.Reason"         => "SizeLimitErrorReason",
+        "SortOrder"                     => "SortOrder",
+        "StringLengthError.Reason"      => "StringLengthErrorReason",
+        "VideoError.Reason"             => "VideoErrorReason",
+        "get"                           => "MediaServiceGet",
+        "getResponse"                   => "MediaServiceGetResponse",
+        "query"                         => "Query",
+        "queryResponse"                 => "QueryResponse",
+        "upload"                        => "Upload",
+        "uploadResponse"                => "UploadResponse",
+    ];
 
 
     /**
      * Constructor using wsdl location and options array
-     * @param string $wsdl WSDL location for this service
-     * @param array $options Options for the SoapClient
+     * @param string $wsdl    WSDL location for this service
+     * @param array  $options Options for the SoapClient
      */
     public function __construct($wsdl, $options, $user)
     {
@@ -142,7 +142,7 @@ class MediaService extends AdWordsSoapClient
     public function get($serviceSelector)
     {
         $args = new MediaServiceGet($serviceSelector);
-        $result = $this->__soapCall("get", array($args));
+        $result = $this->__soapCall("get", [$args]);
         return $result->rval;
     }
 
@@ -160,7 +160,7 @@ class MediaService extends AdWordsSoapClient
     public function query($query)
     {
         $args = new Query($query);
-        $result = $this->__soapCall("query", array($args));
+        $result = $this->__soapCall("query", [$args]);
         return $result->rval;
     }
 
@@ -174,7 +174,7 @@ class MediaService extends AdWordsSoapClient
     public function upload($media)
     {
         $args = new Upload($media);
-        $result = $this->__soapCall("upload", array($args));
+        $result = $this->__soapCall("upload", [$args]);
         return $result->rval;
     }
 }

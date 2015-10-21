@@ -4,7 +4,7 @@
 /**
  * Encapsulates an Image media. For {@code SET},{@code REMOVE} operations in
  * MediaService, use {@code mediaId}.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class Image extends Media
@@ -37,8 +37,20 @@ class Image extends Media
         return self::XSI_TYPE;
     }
 
-    public function __construct($data = null, $mediaId = null, $type = null, $referenceId = null, $dimensions = null, $urls = null, $mimeType = null, $sourceUrl = null, $name = null, $fileSize = null, $creationTime = null, $MediaType = null)
-    {
+    public function __construct(
+        $data = null,
+        $mediaId = null,
+        $type = null,
+        $referenceId = null,
+        $dimensions = null,
+        $urls = null,
+        $mimeType = null,
+        $sourceUrl = null,
+        $name = null,
+        $fileSize = null,
+        $creationTime = null,
+        $MediaType = null
+    ) {
         parent::__construct();
         $this->data = $data;
         $this->mediaId = $mediaId;

@@ -3,7 +3,7 @@
 
 /**
  * A conversion tracker created through AdWords Conversion Tracking.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AdWordsConversionTracker extends ConversionTracker
@@ -66,8 +66,30 @@ class AdWordsConversionTracker extends ConversionTracker
         return self::XSI_TYPE;
     }
 
-    public function __construct($snippet = null, $markupLanguage = null, $textFormat = null, $conversionPageLanguage = null, $backgroundColor = null, $trackingCodeType = null, $id = null, $originalConversionTypeId = null, $name = null, $status = null, $category = null, $conversionTypeOwnerCustomerId = null, $viewthroughLookbackWindow = null, $ctcLookbackWindow = null, $countingType = null, $defaultRevenueValue = null, $defaultRevenueCurrencyCode = null, $alwaysUseDefaultRevenueValue = null, $excludeFromBidding = null, $mostRecentConversionDate = null, $lastReceivedRequestTime = null, $ConversionTrackerType = null)
-    {
+    public function __construct(
+        $snippet = null,
+        $markupLanguage = null,
+        $textFormat = null,
+        $conversionPageLanguage = null,
+        $backgroundColor = null,
+        $trackingCodeType = null,
+        $id = null,
+        $originalConversionTypeId = null,
+        $name = null,
+        $status = null,
+        $category = null,
+        $conversionTypeOwnerCustomerId = null,
+        $viewthroughLookbackWindow = null,
+        $ctcLookbackWindow = null,
+        $countingType = null,
+        $defaultRevenueValue = null,
+        $defaultRevenueCurrencyCode = null,
+        $alwaysUseDefaultRevenueValue = null,
+        $excludeFromBidding = null,
+        $mostRecentConversionDate = null,
+        $lastReceivedRequestTime = null,
+        $ConversionTrackerType = null
+    ) {
         parent::__construct();
         $this->snippet = $snippet;
         $this->markupLanguage = $markupLanguage;

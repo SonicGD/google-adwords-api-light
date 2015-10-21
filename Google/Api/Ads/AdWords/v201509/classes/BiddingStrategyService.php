@@ -5,7 +5,7 @@ require_once('BiddingStrategyService.require.php');
 
 /**
  * BiddingStrategyService
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class BiddingStrategyService extends AdWordsSoapClient
@@ -25,117 +25,117 @@ class BiddingStrategyService extends AdWordsSoapClient
      * @access private
      * @var array
      */
-    public static $classmap = array(
-        "AdxError" => "AdxError",
-        "AuthenticationError" => "AuthenticationError",
-        "AuthorizationError" => "AuthorizationError",
-        "BiddingErrors" => "BiddingErrors",
-        "BiddingStrategyError" => "BiddingStrategyError",
-        "ClientTermsError" => "ClientTermsError",
-        "ConversionOptimizerBiddingScheme" => "ConversionOptimizerBiddingScheme",
-        "DateError" => "DateError",
-        "DateRange" => "DateRange",
-        "DistinctError" => "DistinctError",
-        "DoubleValue" => "DoubleValue",
-        "EnhancedCpcBiddingScheme" => "EnhancedCpcBiddingScheme",
-        "EntityCountLimitExceeded" => "EntityCountLimitExceeded",
-        "EntityNotFound" => "EntityNotFound",
-        "IdError" => "IdError",
-        "InternalApiError" => "InternalApiError",
-        "LongValue" => "LongValue",
-        "ManualCpcBiddingScheme" => "ManualCpcBiddingScheme",
-        "ManualCpmBiddingScheme" => "ManualCpmBiddingScheme",
-        "Money" => "Money",
-        "NewEntityCreationError" => "NewEntityCreationError",
-        "NotEmptyError" => "NotEmptyError",
-        "NullError" => "NullError",
-        "NumberValue" => "NumberValue",
-        "OperationAccessDenied" => "OperationAccessDenied",
-        "OrderBy" => "OrderBy",
-        "Paging" => "Paging",
-        "Predicate" => "Predicate",
-        "QueryError" => "QueryError",
-        "QuotaCheckError" => "QuotaCheckError",
-        "RangeError" => "RangeError",
-        "RateExceededError" => "RateExceededError",
-        "ReadOnlyError" => "ReadOnlyError",
-        "RejectedError" => "RejectedError",
-        "RequestError" => "RequestError",
-        "RequiredError" => "RequiredError",
-        "SelectorError" => "SelectorError",
-        "SizeLimitError" => "SizeLimitError",
-        "SoapHeader" => "SoapRequestHeader",
-        "SoapResponseHeader" => "SoapResponseHeader",
-        "StringLengthError" => "StringLengthError",
-        "ComparableValue" => "ComparableValue",
-        "DatabaseError" => "DatabaseError",
-        "PageOnePromotedBiddingScheme" => "PageOnePromotedBiddingScheme",
-        "TargetCpaBiddingScheme" => "TargetCpaBiddingScheme",
-        "TargetOutrankShareBiddingScheme" => "TargetOutrankShareBiddingScheme",
-        "TargetRoasBiddingScheme" => "TargetRoasBiddingScheme",
-        "TargetSpendBiddingScheme" => "TargetSpendBiddingScheme",
-        "ApiError" => "ApiError",
-        "ApiException" => "ApiException",
-        "ApplicationException" => "ApplicationException",
-        "BudgetOptimizerBiddingScheme" => "BudgetOptimizerBiddingScheme",
-        "Selector" => "Selector",
-        "BiddingScheme" => "BiddingScheme",
-        "SharedBiddingStrategy" => "SharedBiddingStrategy",
-        "BiddingStrategyOperation" => "BiddingStrategyOperation",
-        "BiddingStrategyPage" => "BiddingStrategyPage",
-        "BiddingStrategyReturnValue" => "BiddingStrategyReturnValue",
-        "ListReturnValue" => "ListReturnValue",
-        "Operation" => "Operation",
-        "Page" => "Page",
-        "AdxError.Reason" => "AdxErrorReason",
-        "AuthenticationError.Reason" => "AuthenticationErrorReason",
-        "AuthorizationError.Reason" => "AuthorizationErrorReason",
-        "BiddingErrors.Reason" => "BiddingErrorsReason",
-        "SharedBiddingStrategy.BiddingStrategyStatus" => "SharedBiddingStrategyBiddingStrategyStatus",
-        "BiddingStrategyError.Reason" => "BiddingStrategyErrorReason",
-        "BiddingStrategyType" => "BiddingStrategyType",
-        "ClientTermsError.Reason" => "ClientTermsErrorReason",
-        "ConversionOptimizerBiddingScheme.BidType" => "ConversionOptimizerBiddingSchemeBidType",
+    public static $classmap = [
+        "AdxError"                                     => "AdxError",
+        "AuthenticationError"                          => "AuthenticationError",
+        "AuthorizationError"                           => "AuthorizationError",
+        "BiddingErrors"                                => "BiddingErrors",
+        "BiddingStrategyError"                         => "BiddingStrategyError",
+        "ClientTermsError"                             => "ClientTermsError",
+        "ConversionOptimizerBiddingScheme"             => "ConversionOptimizerBiddingScheme",
+        "DateError"                                    => "DateError",
+        "DateRange"                                    => "DateRange",
+        "DistinctError"                                => "DistinctError",
+        "DoubleValue"                                  => "DoubleValue",
+        "EnhancedCpcBiddingScheme"                     => "EnhancedCpcBiddingScheme",
+        "EntityCountLimitExceeded"                     => "EntityCountLimitExceeded",
+        "EntityNotFound"                               => "EntityNotFound",
+        "IdError"                                      => "IdError",
+        "InternalApiError"                             => "InternalApiError",
+        "LongValue"                                    => "LongValue",
+        "ManualCpcBiddingScheme"                       => "ManualCpcBiddingScheme",
+        "ManualCpmBiddingScheme"                       => "ManualCpmBiddingScheme",
+        "Money"                                        => "Money",
+        "NewEntityCreationError"                       => "NewEntityCreationError",
+        "NotEmptyError"                                => "NotEmptyError",
+        "NullError"                                    => "NullError",
+        "NumberValue"                                  => "NumberValue",
+        "OperationAccessDenied"                        => "OperationAccessDenied",
+        "OrderBy"                                      => "OrderBy",
+        "Paging"                                       => "Paging",
+        "Predicate"                                    => "Predicate",
+        "QueryError"                                   => "QueryError",
+        "QuotaCheckError"                              => "QuotaCheckError",
+        "RangeError"                                   => "RangeError",
+        "RateExceededError"                            => "RateExceededError",
+        "ReadOnlyError"                                => "ReadOnlyError",
+        "RejectedError"                                => "RejectedError",
+        "RequestError"                                 => "RequestError",
+        "RequiredError"                                => "RequiredError",
+        "SelectorError"                                => "SelectorError",
+        "SizeLimitError"                               => "SizeLimitError",
+        "SoapHeader"                                   => "SoapRequestHeader",
+        "SoapResponseHeader"                           => "SoapResponseHeader",
+        "StringLengthError"                            => "StringLengthError",
+        "ComparableValue"                              => "ComparableValue",
+        "DatabaseError"                                => "DatabaseError",
+        "PageOnePromotedBiddingScheme"                 => "PageOnePromotedBiddingScheme",
+        "TargetCpaBiddingScheme"                       => "TargetCpaBiddingScheme",
+        "TargetOutrankShareBiddingScheme"              => "TargetOutrankShareBiddingScheme",
+        "TargetRoasBiddingScheme"                      => "TargetRoasBiddingScheme",
+        "TargetSpendBiddingScheme"                     => "TargetSpendBiddingScheme",
+        "ApiError"                                     => "ApiError",
+        "ApiException"                                 => "ApiException",
+        "ApplicationException"                         => "ApplicationException",
+        "BudgetOptimizerBiddingScheme"                 => "BudgetOptimizerBiddingScheme",
+        "Selector"                                     => "Selector",
+        "BiddingScheme"                                => "BiddingScheme",
+        "SharedBiddingStrategy"                        => "SharedBiddingStrategy",
+        "BiddingStrategyOperation"                     => "BiddingStrategyOperation",
+        "BiddingStrategyPage"                          => "BiddingStrategyPage",
+        "BiddingStrategyReturnValue"                   => "BiddingStrategyReturnValue",
+        "ListReturnValue"                              => "ListReturnValue",
+        "Operation"                                    => "Operation",
+        "Page"                                         => "Page",
+        "AdxError.Reason"                              => "AdxErrorReason",
+        "AuthenticationError.Reason"                   => "AuthenticationErrorReason",
+        "AuthorizationError.Reason"                    => "AuthorizationErrorReason",
+        "BiddingErrors.Reason"                         => "BiddingErrorsReason",
+        "SharedBiddingStrategy.BiddingStrategyStatus"  => "SharedBiddingStrategyBiddingStrategyStatus",
+        "BiddingStrategyError.Reason"                  => "BiddingStrategyErrorReason",
+        "BiddingStrategyType"                          => "BiddingStrategyType",
+        "ClientTermsError.Reason"                      => "ClientTermsErrorReason",
+        "ConversionOptimizerBiddingScheme.BidType"     => "ConversionOptimizerBiddingSchemeBidType",
         "ConversionOptimizerBiddingScheme.PricingMode" => "ConversionOptimizerBiddingSchemePricingMode",
-        "DatabaseError.Reason" => "DatabaseErrorReason",
-        "DateError.Reason" => "DateErrorReason",
-        "DistinctError.Reason" => "DistinctErrorReason",
-        "EntityCountLimitExceeded.Reason" => "EntityCountLimitExceededReason",
-        "EntityNotFound.Reason" => "EntityNotFoundReason",
-        "IdError.Reason" => "IdErrorReason",
-        "InternalApiError.Reason" => "InternalApiErrorReason",
-        "NewEntityCreationError.Reason" => "NewEntityCreationErrorReason",
-        "NotEmptyError.Reason" => "NotEmptyErrorReason",
-        "NullError.Reason" => "NullErrorReason",
-        "OperationAccessDenied.Reason" => "OperationAccessDeniedReason",
-        "Operator" => "Operator",
-        "PageOnePromotedBiddingScheme.StrategyGoal" => "PageOnePromotedBiddingSchemeStrategyGoal",
-        "Predicate.Operator" => "PredicateOperator",
-        "QueryError.Reason" => "QueryErrorReason",
-        "QuotaCheckError.Reason" => "QuotaCheckErrorReason",
-        "RangeError.Reason" => "RangeErrorReason",
-        "RateExceededError.Reason" => "RateExceededErrorReason",
-        "ReadOnlyError.Reason" => "ReadOnlyErrorReason",
-        "RejectedError.Reason" => "RejectedErrorReason",
-        "RequestError.Reason" => "RequestErrorReason",
-        "RequiredError.Reason" => "RequiredErrorReason",
-        "SelectorError.Reason" => "SelectorErrorReason",
-        "SizeLimitError.Reason" => "SizeLimitErrorReason",
-        "SortOrder" => "SortOrder",
-        "StringLengthError.Reason" => "StringLengthErrorReason",
-        "get" => "BiddingStrategyServiceGet",
-        "getResponse" => "BiddingStrategyServiceGetResponse",
-        "mutate" => "BiddingStrategyServiceMutate",
-        "mutateResponse" => "BiddingStrategyServiceMutateResponse",
-        "query" => "Query",
-        "queryResponse" => "QueryResponse",
-    );
+        "DatabaseError.Reason"                         => "DatabaseErrorReason",
+        "DateError.Reason"                             => "DateErrorReason",
+        "DistinctError.Reason"                         => "DistinctErrorReason",
+        "EntityCountLimitExceeded.Reason"              => "EntityCountLimitExceededReason",
+        "EntityNotFound.Reason"                        => "EntityNotFoundReason",
+        "IdError.Reason"                               => "IdErrorReason",
+        "InternalApiError.Reason"                      => "InternalApiErrorReason",
+        "NewEntityCreationError.Reason"                => "NewEntityCreationErrorReason",
+        "NotEmptyError.Reason"                         => "NotEmptyErrorReason",
+        "NullError.Reason"                             => "NullErrorReason",
+        "OperationAccessDenied.Reason"                 => "OperationAccessDeniedReason",
+        "Operator"                                     => "Operator",
+        "PageOnePromotedBiddingScheme.StrategyGoal"    => "PageOnePromotedBiddingSchemeStrategyGoal",
+        "Predicate.Operator"                           => "PredicateOperator",
+        "QueryError.Reason"                            => "QueryErrorReason",
+        "QuotaCheckError.Reason"                       => "QuotaCheckErrorReason",
+        "RangeError.Reason"                            => "RangeErrorReason",
+        "RateExceededError.Reason"                     => "RateExceededErrorReason",
+        "ReadOnlyError.Reason"                         => "ReadOnlyErrorReason",
+        "RejectedError.Reason"                         => "RejectedErrorReason",
+        "RequestError.Reason"                          => "RequestErrorReason",
+        "RequiredError.Reason"                         => "RequiredErrorReason",
+        "SelectorError.Reason"                         => "SelectorErrorReason",
+        "SizeLimitError.Reason"                        => "SizeLimitErrorReason",
+        "SortOrder"                                    => "SortOrder",
+        "StringLengthError.Reason"                     => "StringLengthErrorReason",
+        "get"                                          => "BiddingStrategyServiceGet",
+        "getResponse"                                  => "BiddingStrategyServiceGetResponse",
+        "mutate"                                       => "BiddingStrategyServiceMutate",
+        "mutateResponse"                               => "BiddingStrategyServiceMutateResponse",
+        "query"                                        => "Query",
+        "queryResponse"                                => "QueryResponse",
+    ];
 
 
     /**
      * Constructor using wsdl location and options array
-     * @param string $wsdl WSDL location for this service
-     * @param array $options Options for the SoapClient
+     * @param string $wsdl    WSDL location for this service
+     * @param array  $options Options for the SoapClient
      */
     public function __construct($wsdl, $options, $user)
     {
@@ -158,7 +158,7 @@ class BiddingStrategyService extends AdWordsSoapClient
     public function get($selector)
     {
         $args = new BiddingStrategyServiceGet($selector);
-        $result = $this->__soapCall("get", array($args));
+        $result = $this->__soapCall("get", [$args]);
         return $result->rval;
     }
 
@@ -179,7 +179,7 @@ class BiddingStrategyService extends AdWordsSoapClient
     public function mutate($operations)
     {
         $args = new BiddingStrategyServiceMutate($operations);
-        $result = $this->__soapCall("mutate", array($args));
+        $result = $this->__soapCall("mutate", [$args]);
         return $result->rval;
     }
 
@@ -196,7 +196,7 @@ class BiddingStrategyService extends AdWordsSoapClient
     public function query($query)
     {
         $args = new Query($query);
-        $result = $this->__soapCall("query", array($args));
+        $result = $this->__soapCall("query", [$args]);
         return $result->rval;
     }
 }

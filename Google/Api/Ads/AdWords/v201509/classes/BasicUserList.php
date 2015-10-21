@@ -3,7 +3,7 @@
 
 /**
  * User list targeting as a collection of conversion types.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class BasicUserList extends UserList
@@ -36,8 +36,25 @@ class BasicUserList extends UserList
         return self::XSI_TYPE;
     }
 
-    public function __construct($conversionTypes = null, $id = null, $isReadOnly = null, $name = null, $description = null, $status = null, $integrationCode = null, $accessReason = null, $accountUserListStatus = null, $membershipLifeSpan = null, $size = null, $sizeRange = null, $sizeForSearch = null, $sizeRangeForSearch = null, $listType = null, $isEligibleForSearch = null, $UserListType = null)
-    {
+    public function __construct(
+        $conversionTypes = null,
+        $id = null,
+        $isReadOnly = null,
+        $name = null,
+        $description = null,
+        $status = null,
+        $integrationCode = null,
+        $accessReason = null,
+        $accountUserListStatus = null,
+        $membershipLifeSpan = null,
+        $size = null,
+        $sizeRange = null,
+        $sizeForSearch = null,
+        $sizeRangeForSearch = null,
+        $listType = null,
+        $isEligibleForSearch = null,
+        $UserListType = null
+    ) {
         parent::__construct();
         $this->conversionTypes = $conversionTypes;
         $this->id = $id;

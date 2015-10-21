@@ -4,7 +4,7 @@
 /**
  * A set of estimates for a criterion's performance for a specific bid
  * amount.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class BidLandscapeLandscapePoint
@@ -61,8 +61,13 @@ class BidLandscapeLandscapePoint
         return self::XSI_TYPE;
     }
 
-    public function __construct($bid = null, $clicks = null, $cost = null, $impressions = null, $promotedImpressions = null)
-    {
+    public function __construct(
+        $bid = null,
+        $clicks = null,
+        $cost = null,
+        $impressions = null,
+        $promotedImpressions = null
+    ) {
         $this->bid = $bid;
         $this->clicks = $clicks;
         $this->cost = $cost;

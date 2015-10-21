@@ -4,7 +4,7 @@
 /**
  * This represents an entry in a map with a key of type Size
  * and value of type Dimensions.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class Media_Size_DimensionsMapEntry

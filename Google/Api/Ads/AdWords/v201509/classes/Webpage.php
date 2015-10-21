@@ -5,7 +5,7 @@
  * Criterion for targeting webpages of an advertiser's website. The
  * website domain name is specified at the campaign level.
  * <span class="constraint AdxEnabled">This is disabled for AdX when it is contained within Operators: ADD, SET.</span>
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class Webpage extends Criterion
@@ -50,8 +50,14 @@ class Webpage extends Criterion
         return self::XSI_TYPE;
     }
 
-    public function __construct($parameter = null, $criteriaCoverage = null, $criteriaSamples = null, $id = null, $type = null, $CriterionType = null)
-    {
+    public function __construct(
+        $parameter = null,
+        $criteriaCoverage = null,
+        $criteriaSamples = null,
+        $id = null,
+        $type = null,
+        $CriterionType = null
+    ) {
         parent::__construct();
         $this->parameter = $parameter;
         $this->criteriaCoverage = $criteriaCoverage;

@@ -11,7 +11,7 @@
  * @param query The SQL-like AWQL query string
  * @returns A list of SharedSet entities
  * @throws ApiException when the query is invalid or there are errors processing the request.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class Query

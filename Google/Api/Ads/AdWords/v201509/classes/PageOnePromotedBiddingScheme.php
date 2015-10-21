@@ -5,7 +5,7 @@
  * Page-One Promoted bidding scheme, which sets max cpc bids to
  * target impressions on page one or page one promoted slots on google.com.
  * <span class="constraint AdxEnabled">This is disabled for AdX.</span>
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class PageOnePromotedBiddingScheme extends BiddingScheme
@@ -68,8 +68,15 @@ class PageOnePromotedBiddingScheme extends BiddingScheme
         return self::XSI_TYPE;
     }
 
-    public function __construct($strategyGoal = null, $bidCeiling = null, $bidModifier = null, $bidChangesForRaisesOnly = null, $raiseBidWhenBudgetConstrained = null, $raiseBidWhenLowQualityScore = null, $BiddingSchemeType = null)
-    {
+    public function __construct(
+        $strategyGoal = null,
+        $bidCeiling = null,
+        $bidModifier = null,
+        $bidChangesForRaisesOnly = null,
+        $raiseBidWhenBudgetConstrained = null,
+        $raiseBidWhenLowQualityScore = null,
+        $BiddingSchemeType = null
+    ) {
         parent::__construct();
         $this->strategyGoal = $strategyGoal;
         $this->bidCeiling = $bidCeiling;

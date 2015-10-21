@@ -7,7 +7,7 @@
  *
  *
  * Base error class for Ad Group Criterion Service.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AdGroupCriterionLimitExceeded extends EntityCountLimitExceeded
@@ -40,8 +40,14 @@ class AdGroupCriterionLimitExceeded extends EntityCountLimitExceeded
         return self::XSI_TYPE;
     }
 
-    public function __construct($limitType = null, $reason = null, $enclosingId = null, $limit = null, $accountLimitType = null, $existingCount = null)
-    {
+    public function __construct(
+        $limitType = null,
+        $reason = null,
+        $enclosingId = null,
+        $limit = null,
+        $accountLimitType = null,
+        $existingCount = null
+    ) {
         parent::__construct();
         $this->limitType = $limitType;
         $this->reason = $reason;

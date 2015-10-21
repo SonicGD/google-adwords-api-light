@@ -3,7 +3,7 @@
 
 /**
  * An abstract Conversion base class.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class ConversionTracker
@@ -107,13 +107,13 @@ class ConversionTracker
      * @var string
      */
     public $ConversionTrackerType;
-    private $_parameterMap = array(
+    private $_parameterMap = [
         "ConversionTracker.Type" => "ConversionTrackerType",
-    );
+    ];
 
     /**
      * Provided for setting non-php-standard named variables
-     * @param $var Variable name to set
+     * @param $var   Variable name to set
      * @param $value Value to set
      */
     public function __set($var, $value)
@@ -161,8 +161,24 @@ class ConversionTracker
         return self::XSI_TYPE;
     }
 
-    public function __construct($id = null, $originalConversionTypeId = null, $name = null, $status = null, $category = null, $conversionTypeOwnerCustomerId = null, $viewthroughLookbackWindow = null, $ctcLookbackWindow = null, $countingType = null, $defaultRevenueValue = null, $defaultRevenueCurrencyCode = null, $alwaysUseDefaultRevenueValue = null, $excludeFromBidding = null, $mostRecentConversionDate = null, $lastReceivedRequestTime = null, $ConversionTrackerType = null)
-    {
+    public function __construct(
+        $id = null,
+        $originalConversionTypeId = null,
+        $name = null,
+        $status = null,
+        $category = null,
+        $conversionTypeOwnerCustomerId = null,
+        $viewthroughLookbackWindow = null,
+        $ctcLookbackWindow = null,
+        $countingType = null,
+        $defaultRevenueValue = null,
+        $defaultRevenueCurrencyCode = null,
+        $alwaysUseDefaultRevenueValue = null,
+        $excludeFromBidding = null,
+        $mostRecentConversionDate = null,
+        $lastReceivedRequestTime = null,
+        $ConversionTrackerType = null
+    ) {
         $this->id = $id;
         $this->originalConversionTypeId = $originalConversionTypeId;
         $this->name = $name;

@@ -5,7 +5,7 @@
  * A Feed identifies a source of data and its schema. The data for the Feed can either be
  * user-entered via the FeedItemService or system-generated, in which case the data is provided
  * automatically.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class Feed
@@ -68,8 +68,14 @@ class Feed
         return self::XSI_TYPE;
     }
 
-    public function __construct($id = null, $name = null, $attributes = null, $status = null, $origin = null, $systemFeedGenerationData = null)
-    {
+    public function __construct(
+        $id = null,
+        $name = null,
+        $attributes = null,
+        $status = null,
+        $origin = null,
+        $systemFeedGenerationData = null
+    ) {
         $this->id = $id;
         $this->name = $name;
         $this->attributes = $attributes;

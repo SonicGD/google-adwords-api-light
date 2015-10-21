@@ -6,7 +6,7 @@
  * the job's operations, i.e., for the work done <i>by</i> the job. This
  * therefore excludes the cost of operating on the job itself - setting up the
  * job, polling for its status, retrieving the result, etc.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class BillingSummary

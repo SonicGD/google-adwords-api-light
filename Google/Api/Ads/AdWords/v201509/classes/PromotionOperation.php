@@ -7,7 +7,7 @@
  * <p class="note"><b>Note:</b> The <code>REMOVE</code> operator is not
  * supported. To remove a {@link Promotion}, set its {@link Promotion#status status} to
  * <code>DELETED</code>.</p>
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class PromotionOperation extends Operation

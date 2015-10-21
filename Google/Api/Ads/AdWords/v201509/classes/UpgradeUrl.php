@@ -5,7 +5,7 @@
  * Upgrades the url for a set of ads.
  * @param operations The list of upgrades to apply.
  * @return The list of Ads that were upgraded.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class UpgradeUrl

@@ -5,7 +5,7 @@ require_once('DataService.require.php');
 
 /**
  * DataService
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class DataService extends AdWordsSoapClient
@@ -25,105 +25,105 @@ class DataService extends AdWordsSoapClient
      * @access private
      * @var array
      */
-    public static $classmap = array(
-        "AdGroupBidLandscape" => "AdGroupBidLandscape",
-        "AdxError" => "AdxError",
-        "AuthenticationError" => "AuthenticationError",
-        "AuthorizationError" => "AuthorizationError",
-        "ClientTermsError" => "ClientTermsError",
-        "DateError" => "DateError",
-        "DateRange" => "DateRange",
-        "DistinctError" => "DistinctError",
-        "DoubleValue" => "DoubleValue",
-        "IdError" => "IdError",
-        "InternalApiError" => "InternalApiError",
-        "LevelOfDetail" => "LevelOfDetail",
-        "LongValue" => "LongValue",
-        "Money" => "Money",
-        "NotEmptyError" => "NotEmptyError",
-        "NullError" => "NullError",
-        "NumberValue" => "NumberValue",
-        "OperationAccessDenied" => "OperationAccessDenied",
-        "OrderBy" => "OrderBy",
-        "Paging" => "Paging",
-        "Predicate" => "Predicate",
-        "QueryError" => "QueryError",
-        "QuotaCheckError" => "QuotaCheckError",
-        "RangeError" => "RangeError",
-        "RateExceededError" => "RateExceededError",
-        "ReadOnlyError" => "ReadOnlyError",
-        "RejectedError" => "RejectedError",
-        "RequestError" => "RequestError",
-        "RequiredError" => "RequiredError",
-        "SelectorError" => "SelectorError",
-        "SizeLimitError" => "SizeLimitError",
-        "SoapHeader" => "SoapRequestHeader",
-        "SoapResponseHeader" => "SoapResponseHeader",
-        "StringLengthError" => "StringLengthError",
-        "DataError" => "DataError",
-        "ComparableValue" => "ComparableValue",
-        "CriterionBidLandscape" => "CriterionBidLandscape",
-        "DatabaseError" => "DatabaseError",
-        "DomainCategory" => "DomainCategory",
-        "ApiError" => "ApiError",
-        "ApiException" => "ApiException",
-        "ApplicationException" => "ApplicationException",
-        "BidLandscape.LandscapePoint" => "BidLandscapeLandscapePoint",
-        "Selector" => "Selector",
-        "BidLandscape" => "BidLandscape",
-        "DimensionProperties" => "DimensionProperties",
-        "DataEntry" => "DataEntry",
-        "AdGroupBidLandscapePage" => "AdGroupBidLandscapePage",
-        "CriterionBidLandscapePage" => "CriterionBidLandscapePage",
-        "DomainCategoryPage" => "DomainCategoryPage",
-        "NoStatsPage" => "NoStatsPage",
-        "Page" => "Page",
-        "AdGroupBidLandscape.Type" => "AdGroupBidLandscapeType",
-        "AdxError.Reason" => "AdxErrorReason",
-        "AuthenticationError.Reason" => "AuthenticationErrorReason",
-        "AuthorizationError.Reason" => "AuthorizationErrorReason",
-        "ClientTermsError.Reason" => "ClientTermsErrorReason",
-        "DatabaseError.Reason" => "DatabaseErrorReason",
-        "DateError.Reason" => "DateErrorReason",
-        "DistinctError.Reason" => "DistinctErrorReason",
-        "IdError.Reason" => "IdErrorReason",
-        "InternalApiError.Reason" => "InternalApiErrorReason",
-        "NotEmptyError.Reason" => "NotEmptyErrorReason",
-        "NullError.Reason" => "NullErrorReason",
-        "OperationAccessDenied.Reason" => "OperationAccessDeniedReason",
-        "Predicate.Operator" => "PredicateOperator",
-        "QueryError.Reason" => "QueryErrorReason",
-        "QuotaCheckError.Reason" => "QuotaCheckErrorReason",
-        "RangeError.Reason" => "RangeErrorReason",
-        "RateExceededError.Reason" => "RateExceededErrorReason",
-        "ReadOnlyError.Reason" => "ReadOnlyErrorReason",
-        "RejectedError.Reason" => "RejectedErrorReason",
-        "RequestError.Reason" => "RequestErrorReason",
-        "RequiredError.Reason" => "RequiredErrorReason",
-        "SelectorError.Reason" => "SelectorErrorReason",
-        "SizeLimitError.Reason" => "SizeLimitErrorReason",
-        "SortOrder" => "SortOrder",
-        "StringLengthError.Reason" => "StringLengthErrorReason",
-        "DataError.Reason" => "DataErrorReason",
-        "getAdGroupBidLandscape" => "GetAdGroupBidLandscape",
-        "getAdGroupBidLandscapeResponse" => "GetAdGroupBidLandscapeResponse",
-        "getCriterionBidLandscape" => "GetCriterionBidLandscape",
-        "getCriterionBidLandscapeResponse" => "GetCriterionBidLandscapeResponse",
-        "getDomainCategory" => "GetDomainCategory",
-        "getDomainCategoryResponse" => "GetDomainCategoryResponse",
-        "queryAdGroupBidLandscape" => "QueryAdGroupBidLandscape",
-        "queryAdGroupBidLandscapeResponse" => "QueryAdGroupBidLandscapeResponse",
-        "queryCriterionBidLandscape" => "QueryCriterionBidLandscape",
+    public static $classmap = [
+        "AdGroupBidLandscape"                => "AdGroupBidLandscape",
+        "AdxError"                           => "AdxError",
+        "AuthenticationError"                => "AuthenticationError",
+        "AuthorizationError"                 => "AuthorizationError",
+        "ClientTermsError"                   => "ClientTermsError",
+        "DateError"                          => "DateError",
+        "DateRange"                          => "DateRange",
+        "DistinctError"                      => "DistinctError",
+        "DoubleValue"                        => "DoubleValue",
+        "IdError"                            => "IdError",
+        "InternalApiError"                   => "InternalApiError",
+        "LevelOfDetail"                      => "LevelOfDetail",
+        "LongValue"                          => "LongValue",
+        "Money"                              => "Money",
+        "NotEmptyError"                      => "NotEmptyError",
+        "NullError"                          => "NullError",
+        "NumberValue"                        => "NumberValue",
+        "OperationAccessDenied"              => "OperationAccessDenied",
+        "OrderBy"                            => "OrderBy",
+        "Paging"                             => "Paging",
+        "Predicate"                          => "Predicate",
+        "QueryError"                         => "QueryError",
+        "QuotaCheckError"                    => "QuotaCheckError",
+        "RangeError"                         => "RangeError",
+        "RateExceededError"                  => "RateExceededError",
+        "ReadOnlyError"                      => "ReadOnlyError",
+        "RejectedError"                      => "RejectedError",
+        "RequestError"                       => "RequestError",
+        "RequiredError"                      => "RequiredError",
+        "SelectorError"                      => "SelectorError",
+        "SizeLimitError"                     => "SizeLimitError",
+        "SoapHeader"                         => "SoapRequestHeader",
+        "SoapResponseHeader"                 => "SoapResponseHeader",
+        "StringLengthError"                  => "StringLengthError",
+        "DataError"                          => "DataError",
+        "ComparableValue"                    => "ComparableValue",
+        "CriterionBidLandscape"              => "CriterionBidLandscape",
+        "DatabaseError"                      => "DatabaseError",
+        "DomainCategory"                     => "DomainCategory",
+        "ApiError"                           => "ApiError",
+        "ApiException"                       => "ApiException",
+        "ApplicationException"               => "ApplicationException",
+        "BidLandscape.LandscapePoint"        => "BidLandscapeLandscapePoint",
+        "Selector"                           => "Selector",
+        "BidLandscape"                       => "BidLandscape",
+        "DimensionProperties"                => "DimensionProperties",
+        "DataEntry"                          => "DataEntry",
+        "AdGroupBidLandscapePage"            => "AdGroupBidLandscapePage",
+        "CriterionBidLandscapePage"          => "CriterionBidLandscapePage",
+        "DomainCategoryPage"                 => "DomainCategoryPage",
+        "NoStatsPage"                        => "NoStatsPage",
+        "Page"                               => "Page",
+        "AdGroupBidLandscape.Type"           => "AdGroupBidLandscapeType",
+        "AdxError.Reason"                    => "AdxErrorReason",
+        "AuthenticationError.Reason"         => "AuthenticationErrorReason",
+        "AuthorizationError.Reason"          => "AuthorizationErrorReason",
+        "ClientTermsError.Reason"            => "ClientTermsErrorReason",
+        "DatabaseError.Reason"               => "DatabaseErrorReason",
+        "DateError.Reason"                   => "DateErrorReason",
+        "DistinctError.Reason"               => "DistinctErrorReason",
+        "IdError.Reason"                     => "IdErrorReason",
+        "InternalApiError.Reason"            => "InternalApiErrorReason",
+        "NotEmptyError.Reason"               => "NotEmptyErrorReason",
+        "NullError.Reason"                   => "NullErrorReason",
+        "OperationAccessDenied.Reason"       => "OperationAccessDeniedReason",
+        "Predicate.Operator"                 => "PredicateOperator",
+        "QueryError.Reason"                  => "QueryErrorReason",
+        "QuotaCheckError.Reason"             => "QuotaCheckErrorReason",
+        "RangeError.Reason"                  => "RangeErrorReason",
+        "RateExceededError.Reason"           => "RateExceededErrorReason",
+        "ReadOnlyError.Reason"               => "ReadOnlyErrorReason",
+        "RejectedError.Reason"               => "RejectedErrorReason",
+        "RequestError.Reason"                => "RequestErrorReason",
+        "RequiredError.Reason"               => "RequiredErrorReason",
+        "SelectorError.Reason"               => "SelectorErrorReason",
+        "SizeLimitError.Reason"              => "SizeLimitErrorReason",
+        "SortOrder"                          => "SortOrder",
+        "StringLengthError.Reason"           => "StringLengthErrorReason",
+        "DataError.Reason"                   => "DataErrorReason",
+        "getAdGroupBidLandscape"             => "GetAdGroupBidLandscape",
+        "getAdGroupBidLandscapeResponse"     => "GetAdGroupBidLandscapeResponse",
+        "getCriterionBidLandscape"           => "GetCriterionBidLandscape",
+        "getCriterionBidLandscapeResponse"   => "GetCriterionBidLandscapeResponse",
+        "getDomainCategory"                  => "GetDomainCategory",
+        "getDomainCategoryResponse"          => "GetDomainCategoryResponse",
+        "queryAdGroupBidLandscape"           => "QueryAdGroupBidLandscape",
+        "queryAdGroupBidLandscapeResponse"   => "QueryAdGroupBidLandscapeResponse",
+        "queryCriterionBidLandscape"         => "QueryCriterionBidLandscape",
         "queryCriterionBidLandscapeResponse" => "QueryCriterionBidLandscapeResponse",
-        "queryDomainCategory" => "QueryDomainCategory",
-        "queryDomainCategoryResponse" => "QueryDomainCategoryResponse",
-    );
+        "queryDomainCategory"                => "QueryDomainCategory",
+        "queryDomainCategoryResponse"        => "QueryDomainCategoryResponse",
+    ];
 
 
     /**
      * Constructor using wsdl location and options array
-     * @param string $wsdl WSDL location for this service
-     * @param array $options Options for the SoapClient
+     * @param string $wsdl    WSDL location for this service
+     * @param array  $options Options for the SoapClient
      */
     public function __construct($wsdl, $options, $user)
     {
@@ -149,7 +149,7 @@ class DataService extends AdWordsSoapClient
     public function getAdGroupBidLandscape($serviceSelector)
     {
         $args = new GetAdGroupBidLandscape($serviceSelector);
-        $result = $this->__soapCall("getAdGroupBidLandscape", array($args));
+        $result = $this->__soapCall("getAdGroupBidLandscape", [$args]);
         return $result->rval;
     }
 
@@ -170,7 +170,7 @@ class DataService extends AdWordsSoapClient
     public function getCriterionBidLandscape($serviceSelector)
     {
         $args = new GetCriterionBidLandscape($serviceSelector);
-        $result = $this->__soapCall("getCriterionBidLandscape", array($args));
+        $result = $this->__soapCall("getCriterionBidLandscape", [$args]);
         return $result->rval;
     }
 
@@ -188,7 +188,7 @@ class DataService extends AdWordsSoapClient
     public function getDomainCategory($serviceSelector)
     {
         $args = new GetDomainCategory($serviceSelector);
-        $result = $this->__soapCall("getDomainCategory", array($args));
+        $result = $this->__soapCall("getDomainCategory", [$args]);
         return $result->rval;
     }
 
@@ -209,7 +209,7 @@ class DataService extends AdWordsSoapClient
     public function queryAdGroupBidLandscape($query)
     {
         $args = new QueryAdGroupBidLandscape($query);
-        $result = $this->__soapCall("queryAdGroupBidLandscape", array($args));
+        $result = $this->__soapCall("queryAdGroupBidLandscape", [$args]);
         return $result->rval;
     }
 
@@ -230,7 +230,7 @@ class DataService extends AdWordsSoapClient
     public function queryCriterionBidLandscape($query)
     {
         $args = new QueryCriterionBidLandscape($query);
-        $result = $this->__soapCall("queryCriterionBidLandscape", array($args));
+        $result = $this->__soapCall("queryCriterionBidLandscape", [$args]);
         return $result->rval;
     }
 
@@ -244,12 +244,12 @@ class DataService extends AdWordsSoapClient
      * @param query The SQL-like AWQL query string.
      * @return A list of domain categories.
      * @throws ApiException if problems occur while parsing the query
-     * or fetching domain categories.
+     *              or fetching domain categories.
      */
     public function queryDomainCategory($query)
     {
         $args = new QueryDomainCategory($query);
-        $result = $this->__soapCall("queryDomainCategory", array($args));
+        $result = $this->__soapCall("queryDomainCategory", [$args]);
         return $result->rval;
     }
 }

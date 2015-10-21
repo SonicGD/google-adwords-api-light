@@ -3,7 +3,7 @@
 
 /**
  * Represents an BillingAccount.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class BillingAccount
@@ -60,8 +60,13 @@ class BillingAccount
         return self::XSI_TYPE;
     }
 
-    public function __construct($id = null, $name = null, $currencyCode = null, $primaryBillingId = null, $secondaryBillingId = null)
-    {
+    public function __construct(
+        $id = null,
+        $name = null,
+        $currencyCode = null,
+        $primaryBillingId = null,
+        $secondaryBillingId = null
+    ) {
         $this->id = $id;
         $this->name = $name;
         $this->currencyCode = $currencyCode;

@@ -5,7 +5,7 @@
  * Represents the result data of a job. This contains both the results of
  * successfully processed operations as well as errors returned by failed
  * operations.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class JobResult

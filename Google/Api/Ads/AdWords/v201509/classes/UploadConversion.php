@@ -8,7 +8,7 @@
  * After successfully creating a new UploadConversion, send the name of this conversion type
  * along with your conversion details to the OfflineConversionFeedService
  * to attribute those conversions to this conversion type.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class UploadConversion extends ConversionTracker
@@ -35,8 +35,24 @@ class UploadConversion extends ConversionTracker
         return self::XSI_TYPE;
     }
 
-    public function __construct($id = null, $originalConversionTypeId = null, $name = null, $status = null, $category = null, $conversionTypeOwnerCustomerId = null, $viewthroughLookbackWindow = null, $ctcLookbackWindow = null, $countingType = null, $defaultRevenueValue = null, $defaultRevenueCurrencyCode = null, $alwaysUseDefaultRevenueValue = null, $excludeFromBidding = null, $mostRecentConversionDate = null, $lastReceivedRequestTime = null, $ConversionTrackerType = null)
-    {
+    public function __construct(
+        $id = null,
+        $originalConversionTypeId = null,
+        $name = null,
+        $status = null,
+        $category = null,
+        $conversionTypeOwnerCustomerId = null,
+        $viewthroughLookbackWindow = null,
+        $ctcLookbackWindow = null,
+        $countingType = null,
+        $defaultRevenueValue = null,
+        $defaultRevenueCurrencyCode = null,
+        $alwaysUseDefaultRevenueValue = null,
+        $excludeFromBidding = null,
+        $mostRecentConversionDate = null,
+        $lastReceivedRequestTime = null,
+        $ConversionTrackerType = null
+    ) {
         parent::__construct();
         $this->id = $id;
         $this->originalConversionTypeId = $originalConversionTypeId;

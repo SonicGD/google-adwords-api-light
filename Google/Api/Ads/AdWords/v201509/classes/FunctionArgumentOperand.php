@@ -3,7 +3,7 @@
 
 /**
  * An operand that can be used in a function expression.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class FunctionArgumentOperand
@@ -17,13 +17,13 @@ class FunctionArgumentOperand
      * @var string
      */
     public $FunctionArgumentOperandType;
-    private $_parameterMap = array(
+    private $_parameterMap = [
         "FunctionArgumentOperand.Type" => "FunctionArgumentOperandType",
-    );
+    ];
 
     /**
      * Provided for setting non-php-standard named variables
-     * @param $var Variable name to set
+     * @param $var   Variable name to set
      * @param $value Value to set
      */
     public function __set($var, $value)

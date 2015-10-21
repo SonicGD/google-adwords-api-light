@@ -3,7 +3,7 @@
 
 /**
  * Operation representing a request to add or remove members from a user list.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class MutateMembersOperation extends Operation

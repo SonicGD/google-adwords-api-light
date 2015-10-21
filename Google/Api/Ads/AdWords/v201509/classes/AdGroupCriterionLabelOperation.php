@@ -3,7 +3,7 @@
 
 /**
  * Operations for adding/removing labels from AdGroupCriterion.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AdGroupCriterionLabelOperation extends Operation

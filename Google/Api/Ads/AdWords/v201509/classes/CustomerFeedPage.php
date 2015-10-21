@@ -4,7 +4,7 @@
 /**
  * The result of a call to {@link CustomerFeedService#get}. Contains a list of
  * associations between customer and feeds.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class CustomerFeedPage extends NullStatsPage

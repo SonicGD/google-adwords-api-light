@@ -9,9 +9,9 @@
  *
  * Performs the given {@link PromotionOperation}.
  * @param operations list of unique operations; the same AdWords Express promotion cannot be
- * specified in more than one operation
+ *                   specified in more than one operation
  * @return the updated AdWords Express promotion
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class PromotionServiceMutate

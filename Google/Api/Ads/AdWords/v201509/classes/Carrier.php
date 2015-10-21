@@ -5,7 +5,7 @@
  * Represents a Carrier Criterion.
  * <p>A criterion of this type can only be created using an ID.
  * <span class="constraint AdxEnabled">This is enabled for AdX.</span>
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class Carrier extends Criterion

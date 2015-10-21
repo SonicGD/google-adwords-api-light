@@ -11,7 +11,7 @@
  * </li>
  * <li>Calls that number from their home (or other) phone</li>
  * </ul>
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class WebsiteCallMetricsConversion extends ConversionTracker
@@ -50,8 +50,26 @@ class WebsiteCallMetricsConversion extends ConversionTracker
         return self::XSI_TYPE;
     }
 
-    public function __construct($phoneCallDuration = null, $snippet = null, $id = null, $originalConversionTypeId = null, $name = null, $status = null, $category = null, $conversionTypeOwnerCustomerId = null, $viewthroughLookbackWindow = null, $ctcLookbackWindow = null, $countingType = null, $defaultRevenueValue = null, $defaultRevenueCurrencyCode = null, $alwaysUseDefaultRevenueValue = null, $excludeFromBidding = null, $mostRecentConversionDate = null, $lastReceivedRequestTime = null, $ConversionTrackerType = null)
-    {
+    public function __construct(
+        $phoneCallDuration = null,
+        $snippet = null,
+        $id = null,
+        $originalConversionTypeId = null,
+        $name = null,
+        $status = null,
+        $category = null,
+        $conversionTypeOwnerCustomerId = null,
+        $viewthroughLookbackWindow = null,
+        $ctcLookbackWindow = null,
+        $countingType = null,
+        $defaultRevenueValue = null,
+        $defaultRevenueCurrencyCode = null,
+        $alwaysUseDefaultRevenueValue = null,
+        $excludeFromBidding = null,
+        $mostRecentConversionDate = null,
+        $lastReceivedRequestTime = null,
+        $ConversionTrackerType = null
+    ) {
         parent::__construct();
         $this->phoneCallDuration = $phoneCallDuration;
         $this->snippet = $snippet;

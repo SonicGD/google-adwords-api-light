@@ -9,7 +9,7 @@
  * the template's fields. For a list of available templates and their required
  * fields, see <a href="/adwords/api/docs/appendix/templateads">Template Ads</a>.
  * <span class="constraint AdxEnabled">This is disabled for AdX when it is contained within Operators: ADD, SET.</span>
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class TemplateAd extends Ad
@@ -84,8 +84,26 @@ class TemplateAd extends Ad
         return self::XSI_TYPE;
     }
 
-    public function __construct($templateId = null, $adUnionId = null, $templateElements = null, $adAsImage = null, $dimensions = null, $name = null, $duration = null, $originAdId = null, $id = null, $url = null, $displayUrl = null, $finalUrls = null, $finalMobileUrls = null, $finalAppUrls = null, $trackingUrlTemplate = null, $urlCustomParameters = null, $devicePreference = null, $AdType = null)
-    {
+    public function __construct(
+        $templateId = null,
+        $adUnionId = null,
+        $templateElements = null,
+        $adAsImage = null,
+        $dimensions = null,
+        $name = null,
+        $duration = null,
+        $originAdId = null,
+        $id = null,
+        $url = null,
+        $displayUrl = null,
+        $finalUrls = null,
+        $finalMobileUrls = null,
+        $finalAppUrls = null,
+        $trackingUrlTemplate = null,
+        $urlCustomParameters = null,
+        $devicePreference = null,
+        $AdType = null
+    ) {
         parent::__construct();
         $this->templateId = $templateId;
         $this->adUnionId = $adUnionId;

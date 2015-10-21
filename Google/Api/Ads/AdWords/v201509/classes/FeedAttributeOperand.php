@@ -3,7 +3,7 @@
 
 /**
  * Represents a feed attribute reference to use in a function.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class FeedAttributeOperand extends FunctionArgumentOperand

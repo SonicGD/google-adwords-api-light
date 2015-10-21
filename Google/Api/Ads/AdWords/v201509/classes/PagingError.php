@@ -4,7 +4,7 @@
 /**
  * Error codes for pagination.
  * See {@link com.google.ads.api.services.common.pagination.Paging}.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class PagingError extends ApiError
@@ -37,8 +37,13 @@ class PagingError extends ApiError
         return self::XSI_TYPE;
     }
 
-    public function __construct($reason = null, $fieldPath = null, $trigger = null, $errorString = null, $ApiErrorType = null)
-    {
+    public function __construct(
+        $reason = null,
+        $fieldPath = null,
+        $trigger = null,
+        $errorString = null,
+        $ApiErrorType = null
+    ) {
         parent::__construct();
         $this->reason = $reason;
         $this->fieldPath = $fieldPath;

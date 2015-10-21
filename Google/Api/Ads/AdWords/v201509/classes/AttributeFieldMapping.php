@@ -8,7 +8,7 @@
  * <a href="/adwords/api/docs/appendix/placeholders">
  * https://developers.google.com/adwords/api/docs/appendix/placeholders
  * </a></p>
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AttributeFieldMapping

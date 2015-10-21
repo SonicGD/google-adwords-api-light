@@ -5,7 +5,7 @@
  * FeedAttributes define the types of data expected to be present in a Feed. A single FeedAttribute
  * specifies the expected type of the FeedItemAttributes with the same FeedAttributeId. Optionally,
  * a FeedAttribute can be marked as being part of a FeedItem's unique key.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class FeedAttribute

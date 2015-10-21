@@ -9,9 +9,9 @@
  * Gets a list of {@link BudgetOrder}s using the generic selector.
  * @param serviceSelector specifies which BudgetOrder to return.
  * @return A {@link BudgetOrderPage} of BudgetOrders of the client customer.
- * All BudgetOrder fields are returned. Stats are not yet supported.
+ *                        All BudgetOrder fields are returned. Stats are not yet supported.
  * @throws ApiException
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class BudgetOrderServiceGet

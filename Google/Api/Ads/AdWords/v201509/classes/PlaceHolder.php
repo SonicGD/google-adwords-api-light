@@ -3,7 +3,7 @@
 
 /**
  * A place holder for a result which is not available.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class PlaceHolder

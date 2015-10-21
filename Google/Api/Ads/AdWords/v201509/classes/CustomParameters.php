@@ -5,7 +5,7 @@
  * CustomParameters holds a list of CustomParameters to be treated as a map.
  * It has a special field used to indicate that the current map should be cleared and replaced
  * with this new map.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class CustomParameters

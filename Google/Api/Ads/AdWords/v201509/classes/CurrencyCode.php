@@ -55,7 +55,7 @@
  * <p>These concerns will be addressed by other classes, some in
  * application-specific packages, others in common.base.i18n. The latter ones
  * will be listed with "see" tags in this class.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class CurrencyCode

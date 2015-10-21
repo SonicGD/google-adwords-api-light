@@ -3,7 +3,7 @@
 
 /**
  * A ConversionTracker for mobile apps.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AppConversion extends ConversionTracker
@@ -60,8 +60,29 @@ class AppConversion extends ConversionTracker
         return self::XSI_TYPE;
     }
 
-    public function __construct($appId = null, $appPlatform = null, $snippet = null, $appConversionType = null, $appPostbackUrl = null, $id = null, $originalConversionTypeId = null, $name = null, $status = null, $category = null, $conversionTypeOwnerCustomerId = null, $viewthroughLookbackWindow = null, $ctcLookbackWindow = null, $countingType = null, $defaultRevenueValue = null, $defaultRevenueCurrencyCode = null, $alwaysUseDefaultRevenueValue = null, $excludeFromBidding = null, $mostRecentConversionDate = null, $lastReceivedRequestTime = null, $ConversionTrackerType = null)
-    {
+    public function __construct(
+        $appId = null,
+        $appPlatform = null,
+        $snippet = null,
+        $appConversionType = null,
+        $appPostbackUrl = null,
+        $id = null,
+        $originalConversionTypeId = null,
+        $name = null,
+        $status = null,
+        $category = null,
+        $conversionTypeOwnerCustomerId = null,
+        $viewthroughLookbackWindow = null,
+        $ctcLookbackWindow = null,
+        $countingType = null,
+        $defaultRevenueValue = null,
+        $defaultRevenueCurrencyCode = null,
+        $alwaysUseDefaultRevenueValue = null,
+        $excludeFromBidding = null,
+        $mostRecentConversionDate = null,
+        $lastReceivedRequestTime = null,
+        $ConversionTrackerType = null
+    ) {
         parent::__construct();
         $this->appId = $appId;
         $this->appPlatform = $appPlatform;

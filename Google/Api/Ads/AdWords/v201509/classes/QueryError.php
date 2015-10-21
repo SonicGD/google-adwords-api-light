@@ -3,7 +3,7 @@
 
 /**
  * A QueryError represents possible errors for query parsing and execution.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class QueryError extends ApiError
@@ -42,8 +42,14 @@ class QueryError extends ApiError
         return self::XSI_TYPE;
     }
 
-    public function __construct($reason = null, $message = null, $fieldPath = null, $trigger = null, $errorString = null, $ApiErrorType = null)
-    {
+    public function __construct(
+        $reason = null,
+        $message = null,
+        $fieldPath = null,
+        $trigger = null,
+        $errorString = null,
+        $ApiErrorType = null
+    ) {
         parent::__construct();
         $this->reason = $reason;
         $this->message = $message;

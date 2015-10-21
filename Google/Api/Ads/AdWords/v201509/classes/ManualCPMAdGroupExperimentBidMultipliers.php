@@ -4,7 +4,7 @@
 /**
  * Adgroup level bid multipliers used in manual CPM bidding strategy.
  * <span class="constraint AdxEnabled">This is disabled for AdX.</span>
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class ManualCPMAdGroupExperimentBidMultipliers extends AdGroupExperimentBidMultipliers

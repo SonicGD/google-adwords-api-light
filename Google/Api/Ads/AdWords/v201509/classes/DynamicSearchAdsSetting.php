@@ -4,7 +4,7 @@
 /**
  * Setting for controlling Dynamic Search Ads (DSA). Contains the domain name and the language
  * used by the DSA system to automatically generate landing pages and keywords for a campaign.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class DynamicSearchAdsSetting extends Setting

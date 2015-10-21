@@ -3,7 +3,7 @@
 
 /**
  * A biddable (positive) criterion in an adgroup.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class BiddableAdGroupCriterion extends AdGroupCriterion
@@ -126,8 +126,30 @@ class BiddableAdGroupCriterion extends AdGroupCriterion
         return self::XSI_TYPE;
     }
 
-    public function __construct($userStatus = null, $systemServingStatus = null, $approvalStatus = null, $disapprovalReasons = null, $destinationUrl = null, $experimentData = null, $firstPageCpc = null, $topOfPageCpc = null, $qualityInfo = null, $biddingStrategyConfiguration = null, $bidModifier = null, $finalUrls = null, $finalMobileUrls = null, $finalAppUrls = null, $trackingUrlTemplate = null, $urlCustomParameters = null, $adGroupId = null, $criterionUse = null, $criterion = null, $labels = null, $forwardCompatibilityMap = null, $AdGroupCriterionType = null)
-    {
+    public function __construct(
+        $userStatus = null,
+        $systemServingStatus = null,
+        $approvalStatus = null,
+        $disapprovalReasons = null,
+        $destinationUrl = null,
+        $experimentData = null,
+        $firstPageCpc = null,
+        $topOfPageCpc = null,
+        $qualityInfo = null,
+        $biddingStrategyConfiguration = null,
+        $bidModifier = null,
+        $finalUrls = null,
+        $finalMobileUrls = null,
+        $finalAppUrls = null,
+        $trackingUrlTemplate = null,
+        $urlCustomParameters = null,
+        $adGroupId = null,
+        $criterionUse = null,
+        $criterion = null,
+        $labels = null,
+        $forwardCompatibilityMap = null,
+        $AdGroupCriterionType = null
+    ) {
         parent::__construct();
         $this->userStatus = $userStatus;
         $this->systemServingStatus = $systemServingStatus;

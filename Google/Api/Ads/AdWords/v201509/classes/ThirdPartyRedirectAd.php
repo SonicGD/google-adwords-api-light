@@ -4,7 +4,7 @@
 /**
  * Data associated with rich media extension attributes.
  * <span class="constraint AdxEnabled">This is enabled for AdX.</span>
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class ThirdPartyRedirectAd extends RichMediaAd
@@ -61,8 +61,22 @@ class ThirdPartyRedirectAd extends RichMediaAd
         return self::XSI_TYPE;
     }
 
-    public function __construct($isCookieTargeted = null, $isUserInterestTargeted = null, $isTagged = null, $videoTypes = null, $expandingDirections = null, $name = null, $dimensions = null, $snippet = null, $impressionBeaconUrl = null, $adDuration = null, $certifiedVendorFormatId = null, $sourceUrl = null, $richMediaAdType = null, $adAttributes = null)
-    {
+    public function __construct(
+        $isCookieTargeted = null,
+        $isUserInterestTargeted = null,
+        $isTagged = null,
+        $videoTypes = null,
+        $expandingDirections = null,
+        $name = null,
+        $dimensions = null,
+        $snippet = null,
+        $impressionBeaconUrl = null,
+        $adDuration = null,
+        $certifiedVendorFormatId = null,
+        $sourceUrl = null,
+        $richMediaAdType = null,
+        $adAttributes = null
+    ) {
         parent::__construct();
         $this->isCookieTargeted = $isCookieTargeted;
         $this->isUserInterestTargeted = $isUserInterestTargeted;

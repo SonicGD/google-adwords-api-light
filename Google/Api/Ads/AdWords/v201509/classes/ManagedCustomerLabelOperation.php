@@ -5,7 +5,7 @@
  * An operation to apply or remove an account label from a managed customer.
  *
  * <p class="note"><b>Note:</b> The {@code SET} operator is not supported.</p>
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class ManagedCustomerLabelOperation extends Operation

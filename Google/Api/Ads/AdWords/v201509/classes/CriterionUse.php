@@ -3,7 +3,7 @@
 
 /**
  * The way a criterion is used - biddable or negative.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class CriterionUse

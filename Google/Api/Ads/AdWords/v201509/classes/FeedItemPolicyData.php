@@ -5,7 +5,7 @@
  * Contains offline-validation and approval results for a given FeedItem and FeedMapping. Each
  * validation data indicates any issues found on the feed item when used in the context of the
  * feed mapping.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class FeedItemPolicyData extends PolicyData
@@ -62,8 +62,15 @@ class FeedItemPolicyData extends PolicyData
         return self::XSI_TYPE;
     }
 
-    public function __construct($placeholderType = null, $feedMappingId = null, $validationStatus = null, $approvalStatus = null, $validationErrors = null, $disapprovalReasons = null, $PolicyDataType = null)
-    {
+    public function __construct(
+        $placeholderType = null,
+        $feedMappingId = null,
+        $validationStatus = null,
+        $approvalStatus = null,
+        $validationErrors = null,
+        $disapprovalReasons = null,
+        $PolicyDataType = null
+    ) {
         parent::__construct();
         $this->placeholderType = $placeholderType;
         $this->feedMappingId = $feedMappingId;

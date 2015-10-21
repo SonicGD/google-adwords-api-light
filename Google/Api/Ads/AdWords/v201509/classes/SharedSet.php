@@ -4,7 +4,7 @@
 /**
  * SharedSets are used for sharing entities across multiple campaigns
  * under the same account.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class SharedSet
@@ -67,8 +67,14 @@ class SharedSet
         return self::XSI_TYPE;
     }
 
-    public function __construct($sharedSetId = null, $name = null, $type = null, $memberCount = null, $referenceCount = null, $status = null)
-    {
+    public function __construct(
+        $sharedSetId = null,
+        $name = null,
+        $type = null,
+        $memberCount = null,
+        $referenceCount = null,
+        $status = null
+    ) {
         $this->sharedSetId = $sharedSetId;
         $this->name = $name;
         $this->type = $type;

@@ -3,7 +3,7 @@
 
 /**
  * The base class of all return types of the table service.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class DataEntry
@@ -17,13 +17,13 @@ class DataEntry
      * @var string
      */
     public $DataEntryType;
-    private $_parameterMap = array(
+    private $_parameterMap = [
         "DataEntry.Type" => "DataEntryType",
-    );
+    ];
 
     /**
      * Provided for setting non-php-standard named variables
-     * @param $var Variable name to set
+     * @param $var   Variable name to set
      * @param $value Value to set
      */
     public function __set($var, $value)

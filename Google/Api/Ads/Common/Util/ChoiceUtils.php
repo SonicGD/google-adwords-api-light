@@ -32,7 +32,7 @@
  * A collection of utility methods for working with choices. Choices are
  * objects which contain many fields, but any time only one of which will
  * contain a value.
- * @package GoogleApiAdsCommon
+ * @package    GoogleApiAdsCommon
  * @subpackage Util
  */
 class ChoiceUtils

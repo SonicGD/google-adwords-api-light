@@ -4,7 +4,7 @@
 /**
  * Contains a subset of adgroup bid modifiers resulting from a call to
  * {@link AdGroupBidModifierService#get}.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AdGroupBidModifierPage extends Page

@@ -3,7 +3,7 @@
 
 /**
  * A budget suggestion and its associated data (all are estimates).
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class BudgetSuggestion
@@ -90,8 +90,18 @@ class BudgetSuggestion
         return self::XSI_TYPE;
     }
 
-    public function __construct($cpc = null, $minCpc = null, $maxCpc = null, $cpm = null, $suggestedBudget = null, $minBudget = null, $maxBudget = null, $budgetQuantiles = null, $impressions = null, $currencyCode = null)
-    {
+    public function __construct(
+        $cpc = null,
+        $minCpc = null,
+        $maxCpc = null,
+        $cpm = null,
+        $suggestedBudget = null,
+        $minBudget = null,
+        $maxBudget = null,
+        $budgetQuantiles = null,
+        $impressions = null,
+        $currencyCode = null
+    ) {
         $this->cpc = $cpc;
         $this->minCpc = $minCpc;
         $this->maxCpc = $maxCpc;

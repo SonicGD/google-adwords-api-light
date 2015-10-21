@@ -3,7 +3,7 @@
 
 /**
  * A URL for deep linking into an app for the given operating system.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AppUrl

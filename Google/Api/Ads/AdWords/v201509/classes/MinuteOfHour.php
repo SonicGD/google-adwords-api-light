@@ -3,7 +3,7 @@
 
 /**
  * Minutes in an hour.  Currently only 0, 15, 30, and 45 are supported
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class MinuteOfHour

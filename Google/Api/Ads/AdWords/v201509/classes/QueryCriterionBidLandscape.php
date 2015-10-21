@@ -14,7 +14,7 @@
  * @param query The SQL-like AWQL query string.
  * @return A list of bid landscapes.
  * @throws ApiException if problems occur while parsing the query or fetching bid landscapes.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class QueryCriterionBidLandscape

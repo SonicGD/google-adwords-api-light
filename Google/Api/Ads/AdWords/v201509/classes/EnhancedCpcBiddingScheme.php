@@ -7,7 +7,7 @@
  *
  * This bidding scheme does not support criteria level bidding strategy overrides.
  * <span class="constraint AdxEnabled">This is disabled for AdX.</span>
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class EnhancedCpcBiddingScheme extends BiddingScheme

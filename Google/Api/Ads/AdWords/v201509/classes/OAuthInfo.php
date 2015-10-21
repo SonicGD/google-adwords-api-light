@@ -5,7 +5,7 @@
  * Data used for authorization using OAuth.
  * For more information about OAuth, see:
  * {@link "https://developers.google.com/accounts/docs/OAuth2"}
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class OAuthInfo

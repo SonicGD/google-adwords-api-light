@@ -10,7 +10,7 @@
  * example, {@link KeywordAttribute} wraps the keyword itself, while a
  * {@link BooleanAttribute} simply wraps a boolean describing some information
  * about the keyword idea.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class Attribute
@@ -24,13 +24,13 @@ class Attribute
      * @var string
      */
     public $AttributeType;
-    private $_parameterMap = array(
+    private $_parameterMap = [
         "Attribute.Type" => "AttributeType",
-    );
+    ];
 
     /**
      * Provided for setting non-php-standard named variables
-     * @param $var Variable name to set
+     * @param $var   Variable name to set
      * @param $value Value to set
      */
     public function __set($var, $value)

@@ -3,7 +3,7 @@
 
 /**
  * Represents some kind of media.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class Media
@@ -77,13 +77,13 @@ class Media
      * @var string
      */
     public $MediaType;
-    private $_parameterMap = array(
+    private $_parameterMap = [
         "Media.Type" => "MediaType",
-    );
+    ];
 
     /**
      * Provided for setting non-php-standard named variables
-     * @param $var Variable name to set
+     * @param $var   Variable name to set
      * @param $value Value to set
      */
     public function __set($var, $value)
@@ -131,8 +131,19 @@ class Media
         return self::XSI_TYPE;
     }
 
-    public function __construct($mediaId = null, $type = null, $referenceId = null, $dimensions = null, $urls = null, $mimeType = null, $sourceUrl = null, $name = null, $fileSize = null, $creationTime = null, $MediaType = null)
-    {
+    public function __construct(
+        $mediaId = null,
+        $type = null,
+        $referenceId = null,
+        $dimensions = null,
+        $urls = null,
+        $mimeType = null,
+        $sourceUrl = null,
+        $name = null,
+        $fileSize = null,
+        $creationTime = null,
+        $MediaType = null
+    ) {
         $this->mediaId = $mediaId;
         $this->type = $type;
         $this->referenceId = $referenceId;

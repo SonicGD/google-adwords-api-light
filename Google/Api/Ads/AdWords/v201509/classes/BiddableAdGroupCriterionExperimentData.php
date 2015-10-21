@@ -3,7 +3,7 @@
 
 /**
  * Data associated with an advertiser experiment for this {@link BiddableAdGroupCriterion}.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class BiddableAdGroupCriterionExperimentData
@@ -54,8 +54,12 @@ class BiddableAdGroupCriterionExperimentData
         return self::XSI_TYPE;
     }
 
-    public function __construct($experimentId = null, $experimentDeltaStatus = null, $experimentDataStatus = null, $experimentBidMultiplier = null)
-    {
+    public function __construct(
+        $experimentId = null,
+        $experimentDeltaStatus = null,
+        $experimentDataStatus = null,
+        $experimentBidMultiplier = null
+    ) {
         $this->experimentId = $experimentId;
         $this->experimentDeltaStatus = $experimentDeltaStatus;
         $this->experimentDataStatus = $experimentDataStatus;

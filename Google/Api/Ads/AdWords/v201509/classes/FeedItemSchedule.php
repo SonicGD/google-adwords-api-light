@@ -4,7 +4,7 @@
 /**
  * Represents a FeedItem schedule, which specifies a time interval on a given day
  * when the feed item may serve. The FeedItemSchedule times are in the account's time zone.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class FeedItemSchedule
@@ -61,8 +61,13 @@ class FeedItemSchedule
         return self::XSI_TYPE;
     }
 
-    public function __construct($dayOfWeek = null, $startHour = null, $startMinute = null, $endHour = null, $endMinute = null)
-    {
+    public function __construct(
+        $dayOfWeek = null,
+        $startHour = null,
+        $startMinute = null,
+        $endHour = null,
+        $endMinute = null
+    ) {
         $this->dayOfWeek = $dayOfWeek;
         $this->startHour = $startHour;
         $this->startMinute = $startMinute;

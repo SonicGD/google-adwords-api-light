@@ -5,7 +5,7 @@
  * Represents a {@link TargetingIdea} returned by search criteria specified in
  * the {@link TargetingIdeaSelector}. Targeting ideas are keywords or placements
  * that are similar to those the user inputs.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class TargetingIdea

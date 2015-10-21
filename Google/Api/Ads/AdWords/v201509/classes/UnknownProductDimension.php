@@ -4,7 +4,7 @@
 /**
  * An unknown product dimension type which will be returned in place of any ProductDimension not
  * supported by the clients current API version.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class UnknownProductDimension extends ProductDimension

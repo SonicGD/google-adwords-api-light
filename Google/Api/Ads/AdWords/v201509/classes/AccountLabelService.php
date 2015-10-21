@@ -5,7 +5,7 @@ require_once('AccountLabelService.require.php');
 
 /**
  * AccountLabelService
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AccountLabelService extends AdWordsSoapClient
@@ -25,91 +25,91 @@ class AccountLabelService extends AdWordsSoapClient
      * @access private
      * @var array
      */
-    public static $classmap = array(
-        "AuthenticationError" => "AuthenticationError",
-        "AuthorizationError" => "AuthorizationError",
-        "ClientTermsError" => "ClientTermsError",
-        "Date" => "Date",
-        "DateError" => "DateError",
-        "DateRange" => "DateRange",
-        "DistinctError" => "DistinctError",
-        "IdError" => "IdError",
-        "InternalApiError" => "InternalApiError",
-        "NotEmptyError" => "NotEmptyError",
-        "NullError" => "NullError",
-        "OperationAccessDenied" => "OperationAccessDenied",
-        "OperatorError" => "OperatorError",
-        "OrderBy" => "OrderBy",
-        "Paging" => "Paging",
-        "Predicate" => "Predicate",
-        "QuotaCheckError" => "QuotaCheckError",
-        "RangeError" => "RangeError",
-        "RateExceededError" => "RateExceededError",
-        "ReadOnlyError" => "ReadOnlyError",
-        "RegionCodeError" => "RegionCodeError",
-        "RejectedError" => "RejectedError",
-        "RequestError" => "RequestError",
-        "RequiredError" => "RequiredError",
-        "SelectorError" => "SelectorError",
-        "SizeLimitError" => "SizeLimitError",
-        "SoapHeader" => "SoapRequestHeader",
-        "SoapResponseHeader" => "SoapResponseHeader",
-        "StringFormatError" => "StringFormatError",
-        "StringLengthError" => "StringLengthError",
-        "DatabaseError" => "DatabaseError",
-        "ApiError" => "ApiError",
-        "ApiException" => "ApiException",
-        "ApplicationException" => "ApplicationException",
-        "Selector" => "Selector",
-        "Operation" => "Operation",
-        "AuthenticationError.Reason" => "AuthenticationErrorReason",
-        "AuthorizationError.Reason" => "AuthorizationErrorReason",
-        "ClientTermsError.Reason" => "ClientTermsErrorReason",
-        "DatabaseError.Reason" => "DatabaseErrorReason",
-        "DateError.Reason" => "DateErrorReason",
-        "DistinctError.Reason" => "DistinctErrorReason",
-        "IdError.Reason" => "IdErrorReason",
-        "InternalApiError.Reason" => "InternalApiErrorReason",
-        "NotEmptyError.Reason" => "NotEmptyErrorReason",
-        "NullError.Reason" => "NullErrorReason",
+    public static $classmap = [
+        "AuthenticationError"          => "AuthenticationError",
+        "AuthorizationError"           => "AuthorizationError",
+        "ClientTermsError"             => "ClientTermsError",
+        "Date"                         => "Date",
+        "DateError"                    => "DateError",
+        "DateRange"                    => "DateRange",
+        "DistinctError"                => "DistinctError",
+        "IdError"                      => "IdError",
+        "InternalApiError"             => "InternalApiError",
+        "NotEmptyError"                => "NotEmptyError",
+        "NullError"                    => "NullError",
+        "OperationAccessDenied"        => "OperationAccessDenied",
+        "OperatorError"                => "OperatorError",
+        "OrderBy"                      => "OrderBy",
+        "Paging"                       => "Paging",
+        "Predicate"                    => "Predicate",
+        "QuotaCheckError"              => "QuotaCheckError",
+        "RangeError"                   => "RangeError",
+        "RateExceededError"            => "RateExceededError",
+        "ReadOnlyError"                => "ReadOnlyError",
+        "RegionCodeError"              => "RegionCodeError",
+        "RejectedError"                => "RejectedError",
+        "RequestError"                 => "RequestError",
+        "RequiredError"                => "RequiredError",
+        "SelectorError"                => "SelectorError",
+        "SizeLimitError"               => "SizeLimitError",
+        "SoapHeader"                   => "SoapRequestHeader",
+        "SoapResponseHeader"           => "SoapResponseHeader",
+        "StringFormatError"            => "StringFormatError",
+        "StringLengthError"            => "StringLengthError",
+        "DatabaseError"                => "DatabaseError",
+        "ApiError"                     => "ApiError",
+        "ApiException"                 => "ApiException",
+        "ApplicationException"         => "ApplicationException",
+        "Selector"                     => "Selector",
+        "Operation"                    => "Operation",
+        "AuthenticationError.Reason"   => "AuthenticationErrorReason",
+        "AuthorizationError.Reason"    => "AuthorizationErrorReason",
+        "ClientTermsError.Reason"      => "ClientTermsErrorReason",
+        "DatabaseError.Reason"         => "DatabaseErrorReason",
+        "DateError.Reason"             => "DateErrorReason",
+        "DistinctError.Reason"         => "DistinctErrorReason",
+        "IdError.Reason"               => "IdErrorReason",
+        "InternalApiError.Reason"      => "InternalApiErrorReason",
+        "NotEmptyError.Reason"         => "NotEmptyErrorReason",
+        "NullError.Reason"             => "NullErrorReason",
         "OperationAccessDenied.Reason" => "OperationAccessDeniedReason",
-        "Operator" => "Operator",
-        "OperatorError.Reason" => "OperatorErrorReason",
-        "Predicate.Operator" => "PredicateOperator",
-        "QuotaCheckError.Reason" => "QuotaCheckErrorReason",
-        "RangeError.Reason" => "RangeErrorReason",
-        "RateExceededError.Reason" => "RateExceededErrorReason",
-        "ReadOnlyError.Reason" => "ReadOnlyErrorReason",
-        "RegionCodeError.Reason" => "RegionCodeErrorReason",
-        "RejectedError.Reason" => "RejectedErrorReason",
-        "RequestError.Reason" => "RequestErrorReason",
-        "RequiredError.Reason" => "RequiredErrorReason",
-        "SelectorError.Reason" => "SelectorErrorReason",
-        "SizeLimitError.Reason" => "SizeLimitErrorReason",
-        "SortOrder" => "SortOrder",
-        "StringFormatError.Reason" => "StringFormatErrorReason",
-        "StringLengthError.Reason" => "StringLengthErrorReason",
-        "CollectionSizeError" => "CollectionSizeError",
-        "CurrencyCodeError" => "CurrencyCodeError",
-        "LabelServiceError" => "LabelServiceError",
-        "AccountLabel" => "AccountLabel",
-        "AccountLabelOperation" => "AccountLabelOperation",
-        "AccountLabelPage" => "AccountLabelPage",
-        "AccountLabelReturnValue" => "AccountLabelReturnValue",
-        "CollectionSizeError.Reason" => "CollectionSizeErrorReason",
-        "CurrencyCodeError.Reason" => "CurrencyCodeErrorReason",
-        "LabelServiceError.Reason" => "LabelServiceErrorReason",
-        "get" => "AccountLabelServiceGet",
-        "getResponse" => "AccountLabelServiceGetResponse",
-        "mutate" => "AccountLabelServiceMutate",
-        "mutateResponse" => "AccountLabelServiceMutateResponse",
-    );
+        "Operator"                     => "Operator",
+        "OperatorError.Reason"         => "OperatorErrorReason",
+        "Predicate.Operator"           => "PredicateOperator",
+        "QuotaCheckError.Reason"       => "QuotaCheckErrorReason",
+        "RangeError.Reason"            => "RangeErrorReason",
+        "RateExceededError.Reason"     => "RateExceededErrorReason",
+        "ReadOnlyError.Reason"         => "ReadOnlyErrorReason",
+        "RegionCodeError.Reason"       => "RegionCodeErrorReason",
+        "RejectedError.Reason"         => "RejectedErrorReason",
+        "RequestError.Reason"          => "RequestErrorReason",
+        "RequiredError.Reason"         => "RequiredErrorReason",
+        "SelectorError.Reason"         => "SelectorErrorReason",
+        "SizeLimitError.Reason"        => "SizeLimitErrorReason",
+        "SortOrder"                    => "SortOrder",
+        "StringFormatError.Reason"     => "StringFormatErrorReason",
+        "StringLengthError.Reason"     => "StringLengthErrorReason",
+        "CollectionSizeError"          => "CollectionSizeError",
+        "CurrencyCodeError"            => "CurrencyCodeError",
+        "LabelServiceError"            => "LabelServiceError",
+        "AccountLabel"                 => "AccountLabel",
+        "AccountLabelOperation"        => "AccountLabelOperation",
+        "AccountLabelPage"             => "AccountLabelPage",
+        "AccountLabelReturnValue"      => "AccountLabelReturnValue",
+        "CollectionSizeError.Reason"   => "CollectionSizeErrorReason",
+        "CurrencyCodeError.Reason"     => "CurrencyCodeErrorReason",
+        "LabelServiceError.Reason"     => "LabelServiceErrorReason",
+        "get"                          => "AccountLabelServiceGet",
+        "getResponse"                  => "AccountLabelServiceGetResponse",
+        "mutate"                       => "AccountLabelServiceMutate",
+        "mutateResponse"               => "AccountLabelServiceMutateResponse",
+    ];
 
 
     /**
      * Constructor using wsdl location and options array
-     * @param string $wsdl WSDL location for this service
-     * @param array $options Options for the SoapClient
+     * @param string $wsdl    WSDL location for this service
+     * @param array  $options Options for the SoapClient
      */
     public function __construct($wsdl, $options, $user)
     {
@@ -128,7 +128,7 @@ class AccountLabelService extends AdWordsSoapClient
     public function get($selector)
     {
         $args = new AccountLabelServiceGet($selector);
-        $result = $this->__soapCall("get", array($args));
+        $result = $this->__soapCall("get", [$args]);
         return $result->rval;
     }
 
@@ -149,14 +149,14 @@ class AccountLabelService extends AdWordsSoapClient
      * </ul>
      *
      * @param operations list of unique operations to be executed in a single transaction, in the
-     * order specified.
+     *                   order specified.
      * @return the mutated labels, in the same order that they were in as the parameter
      * @throws ApiException if problems occurs while modifying label information
      */
     public function mutate($operations)
     {
         $args = new AccountLabelServiceMutate($operations);
-        $result = $this->__soapCall("mutate", array($args));
+        $result = $this->__soapCall("mutate", [$args]);
         return $result->rval;
     }
 }

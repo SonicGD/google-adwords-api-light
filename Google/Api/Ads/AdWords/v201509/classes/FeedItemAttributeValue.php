@@ -4,7 +4,7 @@
 /**
  * Represents a feed item's value for a particular feed attribute. A feed item's value is
  * composed of a collection of these attribute values.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class FeedItemAttributeValue
@@ -85,8 +85,17 @@ class FeedItemAttributeValue
         return self::XSI_TYPE;
     }
 
-    public function __construct($feedAttributeId = null, $integerValue = null, $doubleValue = null, $booleanValue = null, $stringValue = null, $integerValues = null, $doubleValues = null, $booleanValues = null, $stringValues = null)
-    {
+    public function __construct(
+        $feedAttributeId = null,
+        $integerValue = null,
+        $doubleValue = null,
+        $booleanValue = null,
+        $stringValue = null,
+        $integerValues = null,
+        $doubleValues = null,
+        $booleanValues = null,
+        $stringValues = null
+    ) {
         $this->feedAttributeId = $feedAttributeId;
         $this->integerValue = $integerValue;
         $this->doubleValue = $doubleValue;

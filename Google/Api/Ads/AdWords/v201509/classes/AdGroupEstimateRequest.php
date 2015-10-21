@@ -13,7 +13,7 @@
  *
  * <p>For more details on usage, refer to document at
  * {@link CampaignEstimateRequest}.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AdGroupEstimateRequest extends EstimateRequest
@@ -58,8 +58,12 @@ class AdGroupEstimateRequest extends EstimateRequest
         return self::XSI_TYPE;
     }
 
-    public function __construct($adGroupId = null, $keywordEstimateRequests = null, $maxCpc = null, $EstimateRequestType = null)
-    {
+    public function __construct(
+        $adGroupId = null,
+        $keywordEstimateRequests = null,
+        $maxCpc = null,
+        $EstimateRequestType = null
+    ) {
         parent::__construct();
         $this->adGroupId = $adGroupId;
         $this->keywordEstimateRequests = $keywordEstimateRequests;

@@ -4,7 +4,7 @@
 /**
  * A frequency cap is the maximum number of times an ad (or some set of ads) can
  * be shown to a user over a particular time period.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class FrequencyCap

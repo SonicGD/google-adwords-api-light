@@ -14,7 +14,7 @@
  * eligibility requirements</a> before they can use the <code>TargetCpaBiddingScheme</code>
  * bidding strategy.
  * <span class="constraint AdxEnabled">This is disabled for AdX.</span>
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class TargetCpaBiddingScheme extends BiddingScheme
@@ -59,8 +59,12 @@ class TargetCpaBiddingScheme extends BiddingScheme
         return self::XSI_TYPE;
     }
 
-    public function __construct($targetCpa = null, $maxCpcBidCeiling = null, $maxCpcBidFloor = null, $BiddingSchemeType = null)
-    {
+    public function __construct(
+        $targetCpa = null,
+        $maxCpcBidCeiling = null,
+        $maxCpcBidFloor = null,
+        $BiddingSchemeType = null
+    ) {
         parent::__construct();
         $this->targetCpa = $targetCpa;
         $this->maxCpcBidCeiling = $maxCpcBidCeiling;

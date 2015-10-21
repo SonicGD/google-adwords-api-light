@@ -3,7 +3,7 @@
 
 /**
  * Enumerates all the possible reasons for a ConversionTypeError.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class ConversionTrackingErrorReason

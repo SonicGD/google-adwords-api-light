@@ -3,7 +3,7 @@
 
 /**
  * This represents an operator that may be presented to an adsapi service.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class Operator

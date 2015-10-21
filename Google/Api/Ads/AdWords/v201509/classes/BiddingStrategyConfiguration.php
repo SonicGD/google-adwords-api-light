@@ -22,7 +22,7 @@
  *
  * <p>For more information on flexible bidding, visit the
  * <a href="https://support.google.com/adwords/answer/2979071">Help Center</a>.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class BiddingStrategyConfiguration
@@ -85,8 +85,14 @@ class BiddingStrategyConfiguration
         return self::XSI_TYPE;
     }
 
-    public function __construct($biddingStrategyId = null, $biddingStrategyName = null, $biddingStrategyType = null, $biddingStrategySource = null, $biddingScheme = null, $bids = null)
-    {
+    public function __construct(
+        $biddingStrategyId = null,
+        $biddingStrategyName = null,
+        $biddingStrategyType = null,
+        $biddingStrategySource = null,
+        $biddingScheme = null,
+        $bids = null
+    ) {
         $this->biddingStrategyId = $biddingStrategyId;
         $this->biddingStrategyName = $biddingStrategyName;
         $this->biddingStrategyType = $biddingStrategyType;

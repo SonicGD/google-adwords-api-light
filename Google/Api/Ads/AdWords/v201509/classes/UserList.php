@@ -4,7 +4,7 @@
 /**
  * Represents a UserList object that is sent over the wire.
  * This is a list of users an account may target.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class UserList
@@ -108,13 +108,13 @@ class UserList
      * @var string
      */
     public $UserListType;
-    private $_parameterMap = array(
+    private $_parameterMap = [
         "UserList.Type" => "UserListType",
-    );
+    ];
 
     /**
      * Provided for setting non-php-standard named variables
-     * @param $var Variable name to set
+     * @param $var   Variable name to set
      * @param $value Value to set
      */
     public function __set($var, $value)
@@ -162,8 +162,24 @@ class UserList
         return self::XSI_TYPE;
     }
 
-    public function __construct($id = null, $isReadOnly = null, $name = null, $description = null, $status = null, $integrationCode = null, $accessReason = null, $accountUserListStatus = null, $membershipLifeSpan = null, $size = null, $sizeRange = null, $sizeForSearch = null, $sizeRangeForSearch = null, $listType = null, $isEligibleForSearch = null, $UserListType = null)
-    {
+    public function __construct(
+        $id = null,
+        $isReadOnly = null,
+        $name = null,
+        $description = null,
+        $status = null,
+        $integrationCode = null,
+        $accessReason = null,
+        $accountUserListStatus = null,
+        $membershipLifeSpan = null,
+        $size = null,
+        $sizeRange = null,
+        $sizeForSearch = null,
+        $sizeRangeForSearch = null,
+        $listType = null,
+        $isEligibleForSearch = null,
+        $UserListType = null
+    ) {
         $this->id = $id;
         $this->isReadOnly = $isReadOnly;
         $this->name = $name;

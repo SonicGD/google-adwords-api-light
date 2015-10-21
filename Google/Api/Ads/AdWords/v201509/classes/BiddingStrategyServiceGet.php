@@ -11,7 +11,7 @@
  * @return list of bidding strategies specified by the selector.
  * @throws com.google.ads.api.services.common.error.ApiException if problems
  * occurred while retrieving results.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class BiddingStrategyServiceGet

@@ -5,7 +5,7 @@
  * Contains a list of associations between campaigns and shared sets
  * resulting from the filtering and paging of
  * {@link CampaignSharedSetService#get} call.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class CampaignSharedSetPage extends NullStatsPage

@@ -4,7 +4,7 @@
 /**
  * Status of the conversion tracker. The user cannot ADD or SET the
  * status to {@code HIDDEN}.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class ConversionTrackerStatus

@@ -3,7 +3,7 @@
 
 /**
  * A page of {@code BatchJob}s.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class BatchJobPage extends Page

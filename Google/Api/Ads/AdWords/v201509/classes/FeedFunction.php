@@ -33,7 +33,7 @@
  * function.setRhsOperand(Arrays.asList(
  * (Operand) new ConstantOperand(10L), new ConstantOperand(20L), new ConstantOperand(30L)));
  * </code></pre>
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class FeedFunction

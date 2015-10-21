@@ -3,7 +3,7 @@
 
 /**
  * Represents a campaign level criterion.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class CampaignCriterion
@@ -47,13 +47,13 @@ class CampaignCriterion
      * @var string
      */
     public $CampaignCriterionType;
-    private $_parameterMap = array(
+    private $_parameterMap = [
         "CampaignCriterion.Type" => "CampaignCriterionType",
-    );
+    ];
 
     /**
      * Provided for setting non-php-standard named variables
-     * @param $var Variable name to set
+     * @param $var   Variable name to set
      * @param $value Value to set
      */
     public function __set($var, $value)
@@ -101,8 +101,14 @@ class CampaignCriterion
         return self::XSI_TYPE;
     }
 
-    public function __construct($campaignId = null, $isNegative = null, $criterion = null, $bidModifier = null, $forwardCompatibilityMap = null, $CampaignCriterionType = null)
-    {
+    public function __construct(
+        $campaignId = null,
+        $isNegative = null,
+        $criterion = null,
+        $bidModifier = null,
+        $forwardCompatibilityMap = null,
+        $CampaignCriterionType = null
+    ) {
         $this->campaignId = $campaignId;
         $this->isNegative = $isNegative;
         $this->criterion = $criterion;

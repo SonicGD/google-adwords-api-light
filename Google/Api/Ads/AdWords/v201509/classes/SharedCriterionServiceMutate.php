@@ -13,9 +13,9 @@
  *
  * @param operations A list of unique operations
  * @return The list of updated SharedCriterion, returned in the same order as the
- * {@code operations} array.
+ *                   {@code operations} array.
  * @throws ApiException
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class SharedCriterionServiceMutate

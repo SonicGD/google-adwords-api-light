@@ -10,7 +10,7 @@
  * or {@link #trackingUrlTemplate trackingUrlTemplate};
  * setting these fields on a call only ad will cause an error.
  * <span class="constraint AdxEnabled">This is enabled for AdX.</span>
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class CallOnlyAd extends Ad
@@ -91,8 +91,27 @@ class CallOnlyAd extends Ad
         return self::XSI_TYPE;
     }
 
-    public function __construct($countryCode = null, $phoneNumber = null, $businessName = null, $description1 = null, $description2 = null, $callTracked = null, $disableCallConversion = null, $conversionTypeId = null, $phoneNumberVerificationUrl = null, $id = null, $url = null, $displayUrl = null, $finalUrls = null, $finalMobileUrls = null, $finalAppUrls = null, $trackingUrlTemplate = null, $urlCustomParameters = null, $devicePreference = null, $AdType = null)
-    {
+    public function __construct(
+        $countryCode = null,
+        $phoneNumber = null,
+        $businessName = null,
+        $description1 = null,
+        $description2 = null,
+        $callTracked = null,
+        $disableCallConversion = null,
+        $conversionTypeId = null,
+        $phoneNumberVerificationUrl = null,
+        $id = null,
+        $url = null,
+        $displayUrl = null,
+        $finalUrls = null,
+        $finalMobileUrls = null,
+        $finalAppUrls = null,
+        $trackingUrlTemplate = null,
+        $urlCustomParameters = null,
+        $devicePreference = null,
+        $AdType = null
+    ) {
         parent::__construct();
         $this->countryCode = $countryCode;
         $this->phoneNumber = $phoneNumber;

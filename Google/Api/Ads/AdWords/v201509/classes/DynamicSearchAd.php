@@ -48,7 +48,7 @@
  * <a href="//support.google.com/adwords/answer/2549100">Using dynamic tracking URLs</a>.
  * </p>
  * <span class="constraint AdxEnabled">This is disabled for AdX when it is contained within Operators: ADD, SET.</span>
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class DynamicSearchAd extends Ad
@@ -87,8 +87,20 @@ class DynamicSearchAd extends Ad
         return self::XSI_TYPE;
     }
 
-    public function __construct($description1 = null, $description2 = null, $id = null, $url = null, $displayUrl = null, $finalUrls = null, $finalMobileUrls = null, $finalAppUrls = null, $trackingUrlTemplate = null, $urlCustomParameters = null, $devicePreference = null, $AdType = null)
-    {
+    public function __construct(
+        $description1 = null,
+        $description2 = null,
+        $id = null,
+        $url = null,
+        $displayUrl = null,
+        $finalUrls = null,
+        $finalMobileUrls = null,
+        $finalAppUrls = null,
+        $trackingUrlTemplate = null,
+        $urlCustomParameters = null,
+        $devicePreference = null,
+        $AdType = null
+    ) {
         parent::__construct();
         $this->description1 = $description1;
         $this->description2 = $description2;

@@ -4,7 +4,7 @@
 /**
  * Represents an operand containing geo information, specifying the scope of the
  * geographical area.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class GeoTargetOperand extends FunctionArgumentOperand

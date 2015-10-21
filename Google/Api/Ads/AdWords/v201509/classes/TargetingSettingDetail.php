@@ -7,7 +7,7 @@
  * determining the bid.
  * <p>For more information, see
  * <a href="https://support.google.com/adwords/answer/6056342">Targeting Settings</a>.</p>
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class TargetingSettingDetail

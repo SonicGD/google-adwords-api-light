@@ -14,7 +14,7 @@
  * <li>{@link #SEARCH_VOLUME}</li>
  * <li>{@link #TARGETED_MONTHLY_SEARCHES}</li>
  * </ul>
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AttributeType

@@ -4,7 +4,7 @@
 /**
  * Wrapper object for a list of AppUrls. The list can be cleared if a request contains
  * an AppUrlList with an empty urls list.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AppUrlList

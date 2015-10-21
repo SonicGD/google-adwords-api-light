@@ -9,10 +9,10 @@
  * Returns a list of CampaignExtensionSettings that meet the selector criteria.
  *
  * @param selector Determines which CampaignExtensionSettings to return. If empty, all
- * CampaignExtensionSettings are returned.
+ *                 CampaignExtensionSettings are returned.
  * @return The list of CampaignExtensionSettings specified by the selector.
  * @throws ApiException Indicates a problem with the request.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class CampaignExtensionSettingServiceGet

@@ -9,9 +9,9 @@
  * Returns a list of CampaignSharedSets based on the given selector.
  * @param selector the selector specifying the query
  * @return a list of CampaignSharedSet entities that meet the criterion specified
- * by the selector
+ *                 by the selector
  * @throws ApiException
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class CampaignSharedSetServiceGet

@@ -18,10 +18,10 @@
  * </ul>
  *
  * @param operations list of unique operations to be executed in a single transaction, in the
- * order specified.
+ *                   order specified.
  * @return the mutated labels, in the same order that they were in as the parameter
  * @throws ApiException if problems occurs while modifying label information
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AccountLabelServiceMutate

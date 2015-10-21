@@ -3,7 +3,7 @@
 
 /**
  * Eligibility data for Campaign to transition to Conversion Optimizer
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class ConversionOptimizerEligibility

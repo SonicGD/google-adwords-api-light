@@ -69,7 +69,7 @@
  * <p>Also note that CLDR -- contrary to ISO -- <em>guarantees</em> non-reuse of
  * country codes. Thus, though most times CLDR codes are the same as the ISO
  * codes, sometimes they are not.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class RegionCode

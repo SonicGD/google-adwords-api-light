@@ -5,7 +5,7 @@ require_once('AdGroupAdService.require.php');
 
 /**
  * AdGroupAdService
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AdGroupAdService extends AdWordsSoapClient
@@ -25,183 +25,183 @@ class AdGroupAdService extends AdWordsSoapClient
      * @access private
      * @var array
      */
-    public static $classmap = array(
-        "Ad" => "Ad",
-        "AdCustomizerError" => "AdCustomizerError",
-        "AdError" => "AdError",
-        "AdGroupAd" => "AdGroupAd",
-        "AdGroupAdCountLimitExceeded" => "AdGroupAdCountLimitExceeded",
-        "AdGroupAdError" => "AdGroupAdError",
-        "AdGroupAdExperimentData" => "AdGroupAdExperimentData",
-        "AdGroupAdLabel" => "AdGroupAdLabel",
-        "AdGroupAdLabelOperation" => "AdGroupAdLabelOperation",
-        "AdGroupAdLabelReturnValue" => "AdGroupAdLabelReturnValue",
-        "AdGroupAdOperation" => "AdGroupAdOperation",
-        "AdGroupAdPage" => "AdGroupAdPage",
-        "AdGroupAdReturnValue" => "AdGroupAdReturnValue",
-        "AdUnionId" => "AdUnionId",
-        "AdUrlUpgrade" => "AdUrlUpgrade",
-        "AdxError" => "AdxError",
-        "ApiError" => "ApiError",
-        "ApiException" => "ApiException",
-        "AppUrl" => "AppUrl",
-        "ApplicationException" => "ApplicationException",
-        "LabelAttribute" => "LabelAttribute",
-        "Audio" => "Audio",
-        "AuthenticationError" => "AuthenticationError",
-        "AuthorizationError" => "AuthorizationError",
-        "CallOnlyAd" => "CallOnlyAd",
-        "TextLabel" => "TextLabel",
-        "DisplayAttribute" => "DisplayAttribute",
-        "ClientTermsError" => "ClientTermsError",
-        "CustomParameter" => "CustomParameter",
-        "CustomParameters" => "CustomParameters",
-        "DatabaseError" => "DatabaseError",
-        "DateError" => "DateError",
-        "DateRange" => "DateRange",
-        "DeprecatedAd" => "DeprecatedAd",
-        "Dimensions" => "Dimensions",
-        "DistinctError" => "DistinctError",
-        "EntityAccessDenied" => "EntityAccessDenied",
-        "EntityCountLimitExceeded" => "EntityCountLimitExceeded",
-        "EntityNotFound" => "EntityNotFound",
-        "ExemptionRequest" => "ExemptionRequest",
-        "ExperimentError" => "ExperimentError",
-        "FeedAttributeReferenceError" => "FeedAttributeReferenceError",
-        "ForwardCompatibilityError" => "ForwardCompatibilityError",
-        "FunctionError" => "FunctionError",
-        "FunctionParsingError" => "FunctionParsingError",
-        "IdError" => "IdError",
-        "Image" => "Image",
-        "ImageAd" => "ImageAd",
-        "ImageError" => "ImageError",
-        "InternalApiError" => "InternalApiError",
-        "Label" => "Label",
-        "ListReturnValue" => "ListReturnValue",
-        "Media" => "Media",
-        "MediaBundle" => "MediaBundle",
-        "MediaBundleError" => "MediaBundleError",
-        "MediaError" => "MediaError",
-        "Media_Size_DimensionsMapEntry" => "Media_Size_DimensionsMapEntry",
-        "Media_Size_StringMapEntry" => "Media_Size_StringMapEntry",
-        "NewEntityCreationError" => "NewEntityCreationError",
-        "NotEmptyError" => "NotEmptyError",
-        "NullError" => "NullError",
-        "Operation" => "Operation",
-        "OperationAccessDenied" => "OperationAccessDenied",
-        "OperatorError" => "OperatorError",
-        "OrderBy" => "OrderBy",
-        "Page" => "Page",
-        "Paging" => "Paging",
-        "PagingError" => "PagingError",
-        "PolicyViolationError" => "PolicyViolationError",
-        "PolicyViolationError.Part" => "PolicyViolationErrorPart",
-        "PolicyViolationKey" => "PolicyViolationKey",
-        "Predicate" => "Predicate",
-        "ProductAd" => "ProductAd",
-        "QueryError" => "QueryError",
-        "QuotaCheckError" => "QuotaCheckError",
-        "RangeError" => "RangeError",
-        "RateExceededError" => "RateExceededError",
-        "ReadOnlyError" => "ReadOnlyError",
-        "RejectedError" => "RejectedError",
-        "RequestError" => "RequestError",
-        "RequiredError" => "RequiredError",
-        "RichMediaAd" => "RichMediaAd",
-        "Selector" => "Selector",
-        "SelectorError" => "SelectorError",
-        "SizeLimitError" => "SizeLimitError",
-        "SoapHeader" => "SoapRequestHeader",
-        "SoapResponseHeader" => "SoapResponseHeader",
-        "StatsQueryError" => "StatsQueryError",
-        "StringLengthError" => "StringLengthError",
-        "String_StringMapEntry" => "String_StringMapEntry",
-        "TempAdUnionId" => "TempAdUnionId",
-        "TemplateAd" => "TemplateAd",
-        "TemplateElement" => "TemplateElement",
-        "TemplateElementField" => "TemplateElementField",
-        "TextAd" => "TextAd",
-        "ThirdPartyRedirectAd" => "ThirdPartyRedirectAd",
-        "UrlError" => "UrlError",
-        "Video" => "Video",
-        "DynamicSearchAd" => "DynamicSearchAd",
-        "AdCustomizerError.Reason" => "AdCustomizerErrorReason",
-        "AdError.Reason" => "AdErrorReason",
-        "AdGroupAd.ApprovalStatus" => "AdGroupAdApprovalStatus",
-        "AdGroupAd.Status" => "AdGroupAdStatus",
-        "AdGroupAdError.Reason" => "AdGroupAdErrorReason",
-        "AdxError.Reason" => "AdxErrorReason",
-        "AppUrl.OsType" => "AppUrlOsType",
-        "AuthenticationError.Reason" => "AuthenticationErrorReason",
-        "AuthorizationError.Reason" => "AuthorizationErrorReason",
-        "ClientTermsError.Reason" => "ClientTermsErrorReason",
-        "DatabaseError.Reason" => "DatabaseErrorReason",
-        "DateError.Reason" => "DateErrorReason",
-        "DeprecatedAd.Type" => "DeprecatedAdType",
-        "DistinctError.Reason" => "DistinctErrorReason",
-        "EntityAccessDenied.Reason" => "EntityAccessDeniedReason",
-        "EntityCountLimitExceeded.Reason" => "EntityCountLimitExceededReason",
-        "EntityNotFound.Reason" => "EntityNotFoundReason",
-        "ExperimentDataStatus" => "ExperimentDataStatus",
-        "ExperimentDeltaStatus" => "ExperimentDeltaStatus",
-        "ExperimentError.Reason" => "ExperimentErrorReason",
-        "FeedAttributeReferenceError.Reason" => "FeedAttributeReferenceErrorReason",
-        "ForwardCompatibilityError.Reason" => "ForwardCompatibilityErrorReason",
-        "FunctionError.Reason" => "FunctionErrorReason",
-        "FunctionParsingError.Reason" => "FunctionParsingErrorReason",
-        "IdError.Reason" => "IdErrorReason",
-        "ImageError.Reason" => "ImageErrorReason",
-        "InternalApiError.Reason" => "InternalApiErrorReason",
-        "Label.Status" => "LabelStatus",
-        "Media.MediaType" => "MediaMediaType",
-        "Media.MimeType" => "MediaMimeType",
-        "Media.Size" => "MediaSize",
-        "MediaBundleError.Reason" => "MediaBundleErrorReason",
-        "MediaError.Reason" => "MediaErrorReason",
-        "NewEntityCreationError.Reason" => "NewEntityCreationErrorReason",
-        "NotEmptyError.Reason" => "NotEmptyErrorReason",
-        "NullError.Reason" => "NullErrorReason",
-        "OperationAccessDenied.Reason" => "OperationAccessDeniedReason",
-        "Operator" => "Operator",
-        "OperatorError.Reason" => "OperatorErrorReason",
-        "PagingError.Reason" => "PagingErrorReason",
-        "Predicate.Operator" => "PredicateOperator",
-        "QueryError.Reason" => "QueryErrorReason",
-        "QuotaCheckError.Reason" => "QuotaCheckErrorReason",
-        "RangeError.Reason" => "RangeErrorReason",
-        "RateExceededError.Reason" => "RateExceededErrorReason",
-        "ReadOnlyError.Reason" => "ReadOnlyErrorReason",
-        "RejectedError.Reason" => "RejectedErrorReason",
-        "RequestError.Reason" => "RequestErrorReason",
-        "RequiredError.Reason" => "RequiredErrorReason",
-        "RichMediaAd.AdAttribute" => "RichMediaAdAdAttribute",
-        "RichMediaAd.RichMediaAdType" => "RichMediaAdRichMediaAdType",
-        "SelectorError.Reason" => "SelectorErrorReason",
-        "SizeLimitError.Reason" => "SizeLimitErrorReason",
-        "SortOrder" => "SortOrder",
-        "StatsQueryError.Reason" => "StatsQueryErrorReason",
-        "StringLengthError.Reason" => "StringLengthErrorReason",
-        "TemplateElementField.Type" => "TemplateElementFieldType",
+    public static $classmap = [
+        "Ad"                                      => "Ad",
+        "AdCustomizerError"                       => "AdCustomizerError",
+        "AdError"                                 => "AdError",
+        "AdGroupAd"                               => "AdGroupAd",
+        "AdGroupAdCountLimitExceeded"             => "AdGroupAdCountLimitExceeded",
+        "AdGroupAdError"                          => "AdGroupAdError",
+        "AdGroupAdExperimentData"                 => "AdGroupAdExperimentData",
+        "AdGroupAdLabel"                          => "AdGroupAdLabel",
+        "AdGroupAdLabelOperation"                 => "AdGroupAdLabelOperation",
+        "AdGroupAdLabelReturnValue"               => "AdGroupAdLabelReturnValue",
+        "AdGroupAdOperation"                      => "AdGroupAdOperation",
+        "AdGroupAdPage"                           => "AdGroupAdPage",
+        "AdGroupAdReturnValue"                    => "AdGroupAdReturnValue",
+        "AdUnionId"                               => "AdUnionId",
+        "AdUrlUpgrade"                            => "AdUrlUpgrade",
+        "AdxError"                                => "AdxError",
+        "ApiError"                                => "ApiError",
+        "ApiException"                            => "ApiException",
+        "AppUrl"                                  => "AppUrl",
+        "ApplicationException"                    => "ApplicationException",
+        "LabelAttribute"                          => "LabelAttribute",
+        "Audio"                                   => "Audio",
+        "AuthenticationError"                     => "AuthenticationError",
+        "AuthorizationError"                      => "AuthorizationError",
+        "CallOnlyAd"                              => "CallOnlyAd",
+        "TextLabel"                               => "TextLabel",
+        "DisplayAttribute"                        => "DisplayAttribute",
+        "ClientTermsError"                        => "ClientTermsError",
+        "CustomParameter"                         => "CustomParameter",
+        "CustomParameters"                        => "CustomParameters",
+        "DatabaseError"                           => "DatabaseError",
+        "DateError"                               => "DateError",
+        "DateRange"                               => "DateRange",
+        "DeprecatedAd"                            => "DeprecatedAd",
+        "Dimensions"                              => "Dimensions",
+        "DistinctError"                           => "DistinctError",
+        "EntityAccessDenied"                      => "EntityAccessDenied",
+        "EntityCountLimitExceeded"                => "EntityCountLimitExceeded",
+        "EntityNotFound"                          => "EntityNotFound",
+        "ExemptionRequest"                        => "ExemptionRequest",
+        "ExperimentError"                         => "ExperimentError",
+        "FeedAttributeReferenceError"             => "FeedAttributeReferenceError",
+        "ForwardCompatibilityError"               => "ForwardCompatibilityError",
+        "FunctionError"                           => "FunctionError",
+        "FunctionParsingError"                    => "FunctionParsingError",
+        "IdError"                                 => "IdError",
+        "Image"                                   => "Image",
+        "ImageAd"                                 => "ImageAd",
+        "ImageError"                              => "ImageError",
+        "InternalApiError"                        => "InternalApiError",
+        "Label"                                   => "Label",
+        "ListReturnValue"                         => "ListReturnValue",
+        "Media"                                   => "Media",
+        "MediaBundle"                             => "MediaBundle",
+        "MediaBundleError"                        => "MediaBundleError",
+        "MediaError"                              => "MediaError",
+        "Media_Size_DimensionsMapEntry"           => "Media_Size_DimensionsMapEntry",
+        "Media_Size_StringMapEntry"               => "Media_Size_StringMapEntry",
+        "NewEntityCreationError"                  => "NewEntityCreationError",
+        "NotEmptyError"                           => "NotEmptyError",
+        "NullError"                               => "NullError",
+        "Operation"                               => "Operation",
+        "OperationAccessDenied"                   => "OperationAccessDenied",
+        "OperatorError"                           => "OperatorError",
+        "OrderBy"                                 => "OrderBy",
+        "Page"                                    => "Page",
+        "Paging"                                  => "Paging",
+        "PagingError"                             => "PagingError",
+        "PolicyViolationError"                    => "PolicyViolationError",
+        "PolicyViolationError.Part"               => "PolicyViolationErrorPart",
+        "PolicyViolationKey"                      => "PolicyViolationKey",
+        "Predicate"                               => "Predicate",
+        "ProductAd"                               => "ProductAd",
+        "QueryError"                              => "QueryError",
+        "QuotaCheckError"                         => "QuotaCheckError",
+        "RangeError"                              => "RangeError",
+        "RateExceededError"                       => "RateExceededError",
+        "ReadOnlyError"                           => "ReadOnlyError",
+        "RejectedError"                           => "RejectedError",
+        "RequestError"                            => "RequestError",
+        "RequiredError"                           => "RequiredError",
+        "RichMediaAd"                             => "RichMediaAd",
+        "Selector"                                => "Selector",
+        "SelectorError"                           => "SelectorError",
+        "SizeLimitError"                          => "SizeLimitError",
+        "SoapHeader"                              => "SoapRequestHeader",
+        "SoapResponseHeader"                      => "SoapResponseHeader",
+        "StatsQueryError"                         => "StatsQueryError",
+        "StringLengthError"                       => "StringLengthError",
+        "String_StringMapEntry"                   => "String_StringMapEntry",
+        "TempAdUnionId"                           => "TempAdUnionId",
+        "TemplateAd"                              => "TemplateAd",
+        "TemplateElement"                         => "TemplateElement",
+        "TemplateElementField"                    => "TemplateElementField",
+        "TextAd"                                  => "TextAd",
+        "ThirdPartyRedirectAd"                    => "ThirdPartyRedirectAd",
+        "UrlError"                                => "UrlError",
+        "Video"                                   => "Video",
+        "DynamicSearchAd"                         => "DynamicSearchAd",
+        "AdCustomizerError.Reason"                => "AdCustomizerErrorReason",
+        "AdError.Reason"                          => "AdErrorReason",
+        "AdGroupAd.ApprovalStatus"                => "AdGroupAdApprovalStatus",
+        "AdGroupAd.Status"                        => "AdGroupAdStatus",
+        "AdGroupAdError.Reason"                   => "AdGroupAdErrorReason",
+        "AdxError.Reason"                         => "AdxErrorReason",
+        "AppUrl.OsType"                           => "AppUrlOsType",
+        "AuthenticationError.Reason"              => "AuthenticationErrorReason",
+        "AuthorizationError.Reason"               => "AuthorizationErrorReason",
+        "ClientTermsError.Reason"                 => "ClientTermsErrorReason",
+        "DatabaseError.Reason"                    => "DatabaseErrorReason",
+        "DateError.Reason"                        => "DateErrorReason",
+        "DeprecatedAd.Type"                       => "DeprecatedAdType",
+        "DistinctError.Reason"                    => "DistinctErrorReason",
+        "EntityAccessDenied.Reason"               => "EntityAccessDeniedReason",
+        "EntityCountLimitExceeded.Reason"         => "EntityCountLimitExceededReason",
+        "EntityNotFound.Reason"                   => "EntityNotFoundReason",
+        "ExperimentDataStatus"                    => "ExperimentDataStatus",
+        "ExperimentDeltaStatus"                   => "ExperimentDeltaStatus",
+        "ExperimentError.Reason"                  => "ExperimentErrorReason",
+        "FeedAttributeReferenceError.Reason"      => "FeedAttributeReferenceErrorReason",
+        "ForwardCompatibilityError.Reason"        => "ForwardCompatibilityErrorReason",
+        "FunctionError.Reason"                    => "FunctionErrorReason",
+        "FunctionParsingError.Reason"             => "FunctionParsingErrorReason",
+        "IdError.Reason"                          => "IdErrorReason",
+        "ImageError.Reason"                       => "ImageErrorReason",
+        "InternalApiError.Reason"                 => "InternalApiErrorReason",
+        "Label.Status"                            => "LabelStatus",
+        "Media.MediaType"                         => "MediaMediaType",
+        "Media.MimeType"                          => "MediaMimeType",
+        "Media.Size"                              => "MediaSize",
+        "MediaBundleError.Reason"                 => "MediaBundleErrorReason",
+        "MediaError.Reason"                       => "MediaErrorReason",
+        "NewEntityCreationError.Reason"           => "NewEntityCreationErrorReason",
+        "NotEmptyError.Reason"                    => "NotEmptyErrorReason",
+        "NullError.Reason"                        => "NullErrorReason",
+        "OperationAccessDenied.Reason"            => "OperationAccessDeniedReason",
+        "Operator"                                => "Operator",
+        "OperatorError.Reason"                    => "OperatorErrorReason",
+        "PagingError.Reason"                      => "PagingErrorReason",
+        "Predicate.Operator"                      => "PredicateOperator",
+        "QueryError.Reason"                       => "QueryErrorReason",
+        "QuotaCheckError.Reason"                  => "QuotaCheckErrorReason",
+        "RangeError.Reason"                       => "RangeErrorReason",
+        "RateExceededError.Reason"                => "RateExceededErrorReason",
+        "ReadOnlyError.Reason"                    => "ReadOnlyErrorReason",
+        "RejectedError.Reason"                    => "RejectedErrorReason",
+        "RequestError.Reason"                     => "RequestErrorReason",
+        "RequiredError.Reason"                    => "RequiredErrorReason",
+        "RichMediaAd.AdAttribute"                 => "RichMediaAdAdAttribute",
+        "RichMediaAd.RichMediaAdType"             => "RichMediaAdRichMediaAdType",
+        "SelectorError.Reason"                    => "SelectorErrorReason",
+        "SizeLimitError.Reason"                   => "SizeLimitErrorReason",
+        "SortOrder"                               => "SortOrder",
+        "StatsQueryError.Reason"                  => "StatsQueryErrorReason",
+        "StringLengthError.Reason"                => "StringLengthErrorReason",
+        "TemplateElementField.Type"               => "TemplateElementFieldType",
         "ThirdPartyRedirectAd.ExpandingDirection" => "ThirdPartyRedirectAdExpandingDirection",
-        "UrlError.Reason" => "UrlErrorReason",
-        "VideoType" => "VideoType",
-        "get" => "AdGroupAdServiceGet",
-        "getResponse" => "AdGroupAdServiceGetResponse",
-        "mutate" => "AdGroupAdServiceMutate",
-        "mutateResponse" => "AdGroupAdServiceMutateResponse",
-        "mutateLabel" => "MutateLabel",
-        "mutateLabelResponse" => "MutateLabelResponse",
-        "query" => "Query",
-        "queryResponse" => "QueryResponse",
-        "upgradeUrl" => "UpgradeUrl",
-        "upgradeUrlResponse" => "UpgradeUrlResponse",
-    );
+        "UrlError.Reason"                         => "UrlErrorReason",
+        "VideoType"                               => "VideoType",
+        "get"                                     => "AdGroupAdServiceGet",
+        "getResponse"                             => "AdGroupAdServiceGetResponse",
+        "mutate"                                  => "AdGroupAdServiceMutate",
+        "mutateResponse"                          => "AdGroupAdServiceMutateResponse",
+        "mutateLabel"                             => "MutateLabel",
+        "mutateLabelResponse"                     => "MutateLabelResponse",
+        "query"                                   => "Query",
+        "queryResponse"                           => "QueryResponse",
+        "upgradeUrl"                              => "UpgradeUrl",
+        "upgradeUrlResponse"                      => "UpgradeUrlResponse",
+    ];
 
 
     /**
      * Constructor using wsdl location and options array
-     * @param string $wsdl WSDL location for this service
-     * @param array $options Options for the SoapClient
+     * @param string $wsdl    WSDL location for this service
+     * @param array  $options Options for the SoapClient
      */
     public function __construct($wsdl, $options, $user)
     {
@@ -225,7 +225,7 @@ class AdGroupAdService extends AdWordsSoapClient
     public function get($serviceSelector)
     {
         $args = new AdGroupAdServiceGet($serviceSelector);
-        $result = $this->__soapCall("get", array($args));
+        $result = $this->__soapCall("get", [$args]);
         return $result->rval;
     }
 
@@ -253,16 +253,16 @@ class AdGroupAdService extends AdWordsSoapClient
      * Ad.</p>
      * @param operations The operations to apply.
      * @return A list of AdGroupAds where each entry in the list is the result of
-     * applying the operation in the input list with the same index. For an
-     * add/set operation, the return AdGroupAd will be what is saved to the db.
-     * In the case of the remove operation, the return AdGroupAd will simply be
-     * an AdGroupAd containing an Ad with the id set to the Ad being removed from
-     * the AdGroup.
+     *                   applying the operation in the input list with the same index. For an
+     *                   add/set operation, the return AdGroupAd will be what is saved to the db.
+     *                   In the case of the remove operation, the return AdGroupAd will simply be
+     *                   an AdGroupAd containing an Ad with the id set to the Ad being removed from
+     *                   the AdGroup.
      */
     public function mutate($operations)
     {
         $args = new AdGroupAdServiceMutate($operations);
-        $result = $this->__soapCall("mutate", array($args));
+        $result = $this->__soapCall("mutate", [$args]);
         return $result->rval;
     }
 
@@ -284,16 +284,16 @@ class AdGroupAdService extends AdWordsSoapClient
      * {@linkplain com.google.ads.api.services.campaignmgmt.label.Label label}.</p>
      * @param operations The operations to apply.
      * @return A list of AdGroupAdLabel where each entry in the list is the result of
-     * applying the operation in the input list with the same index. For an
-     * add operation, the returned AdGroupAdLabel contains the AdGroupId, AdId and the LabelId.
-     * In the case of a remove operation, the returned AdGroupAdLabel will only have AdGroupId and
-     * AdId.
+     *                   applying the operation in the input list with the same index. For an
+     *                   add operation, the returned AdGroupAdLabel contains the AdGroupId, AdId and the LabelId.
+     *                   In the case of a remove operation, the returned AdGroupAdLabel will only have AdGroupId and
+     *                   AdId.
      * @throws ApiException when there are one or more errors with the request.
      */
     public function mutateLabel($operations)
     {
         $args = new MutateLabel($operations);
-        $result = $this->__soapCall("mutateLabel", array($args));
+        $result = $this->__soapCall("mutateLabel", [$args]);
         return $result->rval;
     }
 
@@ -311,7 +311,7 @@ class AdGroupAdService extends AdWordsSoapClient
     public function query($query)
     {
         $args = new Query($query);
-        $result = $this->__soapCall("query", array($args));
+        $result = $this->__soapCall("query", [$args]);
         return $result->rval;
     }
 
@@ -323,7 +323,7 @@ class AdGroupAdService extends AdWordsSoapClient
     public function upgradeUrl($operations)
     {
         $args = new UpgradeUrl($operations);
-        $result = $this->__soapCall("upgradeUrl", array($args));
+        $result = $this->__soapCall("upgradeUrl", [$args]);
         return $result->rval;
     }
 }

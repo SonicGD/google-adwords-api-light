@@ -5,7 +5,7 @@ require_once('OfflineConversionFeedService.require.php');
 
 /**
  * OfflineConversionFeedService
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class OfflineConversionFeedService extends AdWordsSoapClient
@@ -25,85 +25,85 @@ class OfflineConversionFeedService extends AdWordsSoapClient
      * @access private
      * @var array
      */
-    public static $classmap = array(
-        "AuthenticationError" => "AuthenticationError",
-        "AuthorizationError" => "AuthorizationError",
-        "ClientTermsError" => "ClientTermsError",
-        "CollectionSizeError" => "CollectionSizeError",
-        "CurrencyCodeError" => "CurrencyCodeError",
-        "DateError" => "DateError",
-        "DistinctError" => "DistinctError",
-        "EntityCountLimitExceeded" => "EntityCountLimitExceeded",
-        "EntityNotFound" => "EntityNotFound",
-        "IdError" => "IdError",
-        "InternalApiError" => "InternalApiError",
-        "NotEmptyError" => "NotEmptyError",
-        "NullError" => "NullError",
-        "OfflineConversionError" => "OfflineConversionError",
-        "OfflineConversionFeed" => "OfflineConversionFeed",
-        "OfflineConversionFeedOperation" => "OfflineConversionFeedOperation",
-        "Operation" => "Operation",
-        "OperationAccessDenied" => "OperationAccessDenied",
-        "OperatorError" => "OperatorError",
-        "PagingError" => "PagingError",
-        "QuotaCheckError" => "QuotaCheckError",
-        "RangeError" => "RangeError",
-        "RateExceededError" => "RateExceededError",
-        "ReadOnlyError" => "ReadOnlyError",
-        "RegionCodeError" => "RegionCodeError",
-        "RejectedError" => "RejectedError",
-        "RequestError" => "RequestError",
-        "RequiredError" => "RequiredError",
-        "SizeLimitError" => "SizeLimitError",
-        "SoapHeader" => "SoapRequestHeader",
-        "SoapResponseHeader" => "SoapResponseHeader",
-        "StringFormatError" => "StringFormatError",
-        "StringLengthError" => "StringLengthError",
-        "DatabaseError" => "DatabaseError",
-        "ApiError" => "ApiError",
-        "ApiException" => "ApiException",
-        "ApplicationException" => "ApplicationException",
+    public static $classmap = [
+        "AuthenticationError"              => "AuthenticationError",
+        "AuthorizationError"               => "AuthorizationError",
+        "ClientTermsError"                 => "ClientTermsError",
+        "CollectionSizeError"              => "CollectionSizeError",
+        "CurrencyCodeError"                => "CurrencyCodeError",
+        "DateError"                        => "DateError",
+        "DistinctError"                    => "DistinctError",
+        "EntityCountLimitExceeded"         => "EntityCountLimitExceeded",
+        "EntityNotFound"                   => "EntityNotFound",
+        "IdError"                          => "IdError",
+        "InternalApiError"                 => "InternalApiError",
+        "NotEmptyError"                    => "NotEmptyError",
+        "NullError"                        => "NullError",
+        "OfflineConversionError"           => "OfflineConversionError",
+        "OfflineConversionFeed"            => "OfflineConversionFeed",
+        "OfflineConversionFeedOperation"   => "OfflineConversionFeedOperation",
+        "Operation"                        => "Operation",
+        "OperationAccessDenied"            => "OperationAccessDenied",
+        "OperatorError"                    => "OperatorError",
+        "PagingError"                      => "PagingError",
+        "QuotaCheckError"                  => "QuotaCheckError",
+        "RangeError"                       => "RangeError",
+        "RateExceededError"                => "RateExceededError",
+        "ReadOnlyError"                    => "ReadOnlyError",
+        "RegionCodeError"                  => "RegionCodeError",
+        "RejectedError"                    => "RejectedError",
+        "RequestError"                     => "RequestError",
+        "RequiredError"                    => "RequiredError",
+        "SizeLimitError"                   => "SizeLimitError",
+        "SoapHeader"                       => "SoapRequestHeader",
+        "SoapResponseHeader"               => "SoapResponseHeader",
+        "StringFormatError"                => "StringFormatError",
+        "StringLengthError"                => "StringLengthError",
+        "DatabaseError"                    => "DatabaseError",
+        "ApiError"                         => "ApiError",
+        "ApiException"                     => "ApiException",
+        "ApplicationException"             => "ApplicationException",
         "OfflineConversionFeedReturnValue" => "OfflineConversionFeedReturnValue",
-        "ListReturnValue" => "ListReturnValue",
-        "AuthenticationError.Reason" => "AuthenticationErrorReason",
-        "AuthorizationError.Reason" => "AuthorizationErrorReason",
-        "ClientTermsError.Reason" => "ClientTermsErrorReason",
-        "CollectionSizeError.Reason" => "CollectionSizeErrorReason",
-        "CurrencyCodeError.Reason" => "CurrencyCodeErrorReason",
-        "DatabaseError.Reason" => "DatabaseErrorReason",
-        "DateError.Reason" => "DateErrorReason",
-        "DistinctError.Reason" => "DistinctErrorReason",
-        "EntityCountLimitExceeded.Reason" => "EntityCountLimitExceededReason",
-        "EntityNotFound.Reason" => "EntityNotFoundReason",
-        "IdError.Reason" => "IdErrorReason",
-        "InternalApiError.Reason" => "InternalApiErrorReason",
-        "NotEmptyError.Reason" => "NotEmptyErrorReason",
-        "NullError.Reason" => "NullErrorReason",
-        "OfflineConversionError.Reason" => "OfflineConversionErrorReason",
-        "OperationAccessDenied.Reason" => "OperationAccessDeniedReason",
-        "Operator" => "Operator",
-        "OperatorError.Reason" => "OperatorErrorReason",
-        "PagingError.Reason" => "PagingErrorReason",
-        "QuotaCheckError.Reason" => "QuotaCheckErrorReason",
-        "RangeError.Reason" => "RangeErrorReason",
-        "RateExceededError.Reason" => "RateExceededErrorReason",
-        "ReadOnlyError.Reason" => "ReadOnlyErrorReason",
-        "RegionCodeError.Reason" => "RegionCodeErrorReason",
-        "RejectedError.Reason" => "RejectedErrorReason",
-        "RequestError.Reason" => "RequestErrorReason",
-        "RequiredError.Reason" => "RequiredErrorReason",
-        "SizeLimitError.Reason" => "SizeLimitErrorReason",
-        "StringFormatError.Reason" => "StringFormatErrorReason",
-        "StringLengthError.Reason" => "StringLengthErrorReason",
-        "mutate" => "OfflineConversionFeedServiceMutate",
-        "mutateResponse" => "OfflineConversionFeedServiceMutateResponse",
-    );
+        "ListReturnValue"                  => "ListReturnValue",
+        "AuthenticationError.Reason"       => "AuthenticationErrorReason",
+        "AuthorizationError.Reason"        => "AuthorizationErrorReason",
+        "ClientTermsError.Reason"          => "ClientTermsErrorReason",
+        "CollectionSizeError.Reason"       => "CollectionSizeErrorReason",
+        "CurrencyCodeError.Reason"         => "CurrencyCodeErrorReason",
+        "DatabaseError.Reason"             => "DatabaseErrorReason",
+        "DateError.Reason"                 => "DateErrorReason",
+        "DistinctError.Reason"             => "DistinctErrorReason",
+        "EntityCountLimitExceeded.Reason"  => "EntityCountLimitExceededReason",
+        "EntityNotFound.Reason"            => "EntityNotFoundReason",
+        "IdError.Reason"                   => "IdErrorReason",
+        "InternalApiError.Reason"          => "InternalApiErrorReason",
+        "NotEmptyError.Reason"             => "NotEmptyErrorReason",
+        "NullError.Reason"                 => "NullErrorReason",
+        "OfflineConversionError.Reason"    => "OfflineConversionErrorReason",
+        "OperationAccessDenied.Reason"     => "OperationAccessDeniedReason",
+        "Operator"                         => "Operator",
+        "OperatorError.Reason"             => "OperatorErrorReason",
+        "PagingError.Reason"               => "PagingErrorReason",
+        "QuotaCheckError.Reason"           => "QuotaCheckErrorReason",
+        "RangeError.Reason"                => "RangeErrorReason",
+        "RateExceededError.Reason"         => "RateExceededErrorReason",
+        "ReadOnlyError.Reason"             => "ReadOnlyErrorReason",
+        "RegionCodeError.Reason"           => "RegionCodeErrorReason",
+        "RejectedError.Reason"             => "RejectedErrorReason",
+        "RequestError.Reason"              => "RequestErrorReason",
+        "RequiredError.Reason"             => "RequiredErrorReason",
+        "SizeLimitError.Reason"            => "SizeLimitErrorReason",
+        "StringFormatError.Reason"         => "StringFormatErrorReason",
+        "StringLengthError.Reason"         => "StringLengthErrorReason",
+        "mutate"                           => "OfflineConversionFeedServiceMutate",
+        "mutateResponse"                   => "OfflineConversionFeedServiceMutateResponse",
+    ];
 
 
     /**
      * Constructor using wsdl location and options array
-     * @param string $wsdl WSDL location for this service
-     * @param array $options Options for the SoapClient
+     * @param string $wsdl    WSDL location for this service
+     * @param array  $options Options for the SoapClient
      */
     public function __construct($wsdl, $options, $user)
     {
@@ -132,7 +132,7 @@ class OfflineConversionFeedService extends AdWordsSoapClient
     public function mutate($operations)
     {
         $args = new OfflineConversionFeedServiceMutate($operations);
-        $result = $this->__soapCall("mutate", array($args));
+        $result = $this->__soapCall("mutate", [$args]);
         return $result->rval;
     }
 }

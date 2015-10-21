@@ -16,7 +16,7 @@
  * more than one operation.
  * @return The applied {@link Label}s.
  * @throws ApiException when there is at least one error with the request
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class LabelServiceMutate

@@ -10,7 +10,7 @@
  * co-trigger data.
  * @param selector the selector specifying the budget suggestion to return
  * @return budget suggestion identified by the selector
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class BudgetSuggestionServiceGet

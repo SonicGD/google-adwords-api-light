@@ -3,7 +3,7 @@
 
 /**
  * An error resulting from a failure to parse the textual representation of a function.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class FunctionParsingError extends ApiError
@@ -48,8 +48,15 @@ class FunctionParsingError extends ApiError
         return self::XSI_TYPE;
     }
 
-    public function __construct($reason = null, $offendingText = null, $offendingTextIndex = null, $fieldPath = null, $trigger = null, $errorString = null, $ApiErrorType = null)
-    {
+    public function __construct(
+        $reason = null,
+        $offendingText = null,
+        $offendingTextIndex = null,
+        $fieldPath = null,
+        $trigger = null,
+        $errorString = null,
+        $ApiErrorType = null
+    ) {
         parent::__construct();
         $this->reason = $reason;
         $this->offendingText = $offendingText;

@@ -34,7 +34,7 @@ require_once 'ReportUtils.require.php';
 
 /**
  * A collection of utility methods for working with reports.
- * @package GoogleApiAdsAdWords
+ * @package    GoogleApiAdsAdWords
  * @subpackage Util
  */
 class ReportUtils
@@ -76,29 +76,32 @@ class ReportUtils
      * Downloads a new instance of an existing report definition. If the path
      * parameter is specified it will be downloaded to the file at that path,
      * otherwise it will be downloaded to memory and be returned as a string.
-     * @param mixed $reportDefinition the ReportDefinition to download or the id
-     *     of a stored report definition
-     * @param string $path an optional path of the file to download the report to
-     * @param AdWordsUser $user the user that created the ReportDefinition
-     * @param array $options the option to use when downloading the report:
-     *     {boolean} skipReportHeader: if report responses should skip the header
-     *         row containing the report name and date range
-     *     {boolean} skipColumnHeader: if report responses should skip the header
-     *         row containing column names
-     *     {boolean} skipReportSummary: if report responses should skip the
-     *         summary row containing totals
-     *     {boolean} includeZeroImpressions: if report responses should include
-     *         zero impression rows
-     *     {string} server: the server to make the request to. If <var>null</var>,
-     *         then the default server will be used
-     *     {string} version: the version to make the request against. If
-     *         <var>null</var>, then the default version will be used
+     * @param mixed       $reportDefinition the ReportDefinition to download or the id
+     *                                      of a stored report definition
+     * @param string      $path             an optional path of the file to download the report to
+     * @param AdWordsUser $user             the user that created the ReportDefinition
+     * @param array       $options          the option to use when downloading the report:
+     *                                      {boolean} skipReportHeader: if report responses should skip the header
+     *                                      row containing the report name and date range
+     *                                      {boolean} skipColumnHeader: if report responses should skip the header
+     *                                      row containing column names
+     *                                      {boolean} skipReportSummary: if report responses should skip the
+     *                                      summary row containing totals
+     *                                      {boolean} includeZeroImpressions: if report responses should include
+     *                                      zero impression rows
+     *                                      {string} server: the server to make the request to. If <var>null</var>,
+     *                                      then the default server will be used
+     *                                      {string} version: the version to make the request against. If
+     *                                      <var>null</var>, then the default version will be used
      * @return mixed if path isn't specified the contents of the report,
-     *     otherwise the size in bytes of the downloaded report
+     *                                      otherwise the size in bytes of the downloaded report
      */
-    public static function DownloadReport($reportDefinition, $path = null,
-                                          AdWordsUser $user, array $options = null)
-    {
+    public static function DownloadReport(
+        $reportDefinition,
+        $path = null,
+        AdWordsUser $user,
+        array $options = null
+    ) {
         $url = self::GetUrl($user, $options);
         $headers = self::GetHeaders($user, $url, $options);
         $params = self::GetParams($reportDefinition);
@@ -109,21 +112,25 @@ class ReportUtils
      * Downloads a report with AWQL. If the path parameter is specified it will be
      * downloaded to the file at that path, otherwise it will be downloaded to
      * memory and be returned as a string.
-     * @param string $reportQuery the query to use for the report
-     * @param string $path an optional path of the file to download the report to
-     * @param AdWordsUser $user the user to retrieve report with
-     * @param string $reportFormat : the report format to request
-     * @param array $options the option to use when downloading the report:
-     *     {string} server: the server to make the request to. If <var>null</var>,
-     *         then the default server will be used
-     *     {string} version: the version to make the request against. If
-     *         <var>null</var>, then the default version will be used
+     * @param string      $reportQuery  the query to use for the report
+     * @param string      $path         an optional path of the file to download the report to
+     * @param AdWordsUser $user         the user to retrieve report with
+     * @param string      $reportFormat : the report format to request
+     * @param array       $options      the option to use when downloading the report:
+     *                                  {string} server: the server to make the request to. If <var>null</var>,
+     *                                  then the default server will be used
+     *                                  {string} version: the version to make the request against. If
+     *                                  <var>null</var>, then the default version will be used
      * @return mixed if path isn't specified the contents of the report,
-     *     otherwise the size in bytes of the downloaded report
+     *                                  otherwise the size in bytes of the downloaded report
      */
-    public static function DownloadReportWithAwql($reportQuery, $path = null,
-                                                  AdWordsUser $user, $reportFormat, array $options = null)
-    {
+    public static function DownloadReportWithAwql(
+        $reportQuery,
+        $path = null,
+        AdWordsUser $user,
+        $reportFormat,
+        array $options = null
+    ) {
         $url = self::GetUrl($user, $options);
         $headers = self::GetHeaders($user, $url, $options);
         $params = self::GetQueryParams($reportQuery, $reportFormat);
@@ -132,16 +139,19 @@ class ReportUtils
 
     /**
      * Downloads a report using the URL provided.
-     * @param string $url the URL to make the request to
-     * @param array $headers the headers to use in the request
-     * @param array $params the parameters to pass in the request
-     * @param string $path the optional path to download the report to
+     * @param string $url     the URL to make the request to
+     * @param array  $headers the headers to use in the request
+     * @param array  $params  the parameters to pass in the request
+     * @param string $path    the optional path to download the report to
      * @return mixed if path isn't specified the contents of the report,
-     *     otherwise the size in bytes of the downloaded report
+     *                        otherwise the size in bytes of the downloaded report
      */
-    private static function DownloadReportFromUrl($url, $headers, $params,
-                                                  $path = null)
-    {
+    private static function DownloadReportFromUrl(
+        $url,
+        $headers,
+        $params,
+        $path = null
+    ) {
         /*
          * This method should not be static and instantiation of this class should
          * be allowed so we can "inject" CurlUtils, but would break too many things
@@ -153,7 +163,7 @@ class ReportUtils
         $curlUtils->SetOpt($ch, CURLOPT_POST, true);
         $curlUtils->SetOpt($ch, CURLINFO_HEADER_OUT, true);
 
-        $flatHeaders = array();
+        $flatHeaders = [];
         foreach ($headers as $name => $value) {
             $flatHeaders[] = sprintf('%s: %s', $name, $value);
         }
@@ -200,13 +210,19 @@ class ReportUtils
                         $apiError->fieldPath);
                 }
                 $exception = new ReportDownloadException($errorMessage, $code);
-            } else if (preg_match(self::$ERROR_MESSAGE_REGEX, $snippet, $matches)) {
-                $exception = new ReportDownloadException($matches[2], $code);
-            } else if (!empty($error)) {
-                $exception = new ReportDownloadException($error);
-            } else if (isset($code)) {
-                $exception =
-                    new ReportDownloadException('Report download failed.', $code);
+            } else {
+                if (preg_match(self::$ERROR_MESSAGE_REGEX, $snippet, $matches)) {
+                    $exception = new ReportDownloadException($matches[2], $code);
+                } else {
+                    if (!empty($error)) {
+                        $exception = new ReportDownloadException($error);
+                    } else {
+                        if (isset($code)) {
+                            $exception =
+                                new ReportDownloadException('Report download failed.', $code);
+                        }
+                    }
+                }
             }
         }
 
@@ -214,10 +230,12 @@ class ReportUtils
 
         if (isset($exception)) {
             throw $exception;
-        } else if (isset($path)) {
-            return $downloadSize;
         } else {
-            return $response;
+            if (isset($path)) {
+                return $downloadSize;
+            } else {
+                return $response;
+            }
         }
     }
 
@@ -229,7 +247,7 @@ class ReportUtils
      *
      * @param String $responseXml the error response xml
      * @return Object the parsed error object, or null if the response cannot
-     * be parsed.
+     *                            be parsed.
      */
     private static function ParseApiErrorXml($responseXml)
     {
@@ -238,7 +256,7 @@ class ReportUtils
             $doc = XmlUtils::GetDomFromXml($responseXml);
             $retval = XmlUtils::ConvertDocumentToObject($doc);
             if (!is_array($retval->ApiError)) {
-                $retval->ApiError = array($retval->ApiError);
+                $retval->ApiError = [$retval->ApiError];
             }
         } catch (Exception $e) {
             // There was a parse exception and hence this response cannot be
@@ -249,8 +267,8 @@ class ReportUtils
 
     /**
      * Generates the URL to use for the download request.
-     * @param AdWordsUser $user the AdWordsUser to make the request for
-     * @param array $options the options configured for the download
+     * @param AdWordsUser $user    the AdWordsUser to make the request for
+     * @param array       $options the options configured for the download
      * @return string the download URL
      */
     private static function GetUrl($user, array $options = null)
@@ -274,24 +292,26 @@ class ReportUtils
      */
     private static function GetParams($reportDefinition)
     {
-        $params = array();
+        $params = [];
         if (is_numeric($reportDefinition)) {
             $params['__rd'] = $reportDefinition;
-        } else if (is_object($reportDefinition) || is_array($reportDefinition)) {
-            $document = XmlUtils::ConvertObjectToDocument($reportDefinition,
-                'reportDefinition');
-            $document->formatOutput = true;
-            $params['__rdxml'] = XmlUtils::GetXmlFromDom($document);
         } else {
-            throw new ReportDownloadException('Invalid report definition type: '
-                . $reportDefinition);
+            if (is_object($reportDefinition) || is_array($reportDefinition)) {
+                $document = XmlUtils::ConvertObjectToDocument($reportDefinition,
+                    'reportDefinition');
+                $document->formatOutput = true;
+                $params['__rdxml'] = XmlUtils::GetXmlFromDom($document);
+            } else {
+                throw new ReportDownloadException('Invalid report definition type: '
+                    . $reportDefinition);
+            }
         }
         return $params;
     }
 
     /**
      * Generates the parameters to use for the download request with AWQL.
-     * @param string $reportQuery the report query, as string
+     * @param string $reportQuery  the report query, as string
      * @param string $reportFormat the format to request report in, as string
      * @return array the parameters
      */
@@ -302,19 +322,19 @@ class ReportUtils
                 'Invalid parameter supplied, string is expected'
             );
         }
-        return array('__rdquery' => $reportQuery, '__fmt' => $reportFormat);
+        return ['__rdquery' => $reportQuery, '__fmt' => $reportFormat];
     }
 
     /**
      * Gets the HTTP headers for the report download request.
-     * @param AdWordsUser $user the AdWordsUser to get credentials from
-     * @param string $url the URL the request will be made to
-     * @param array $options the options for the download
+     * @param AdWordsUser $user    the AdWordsUser to get credentials from
+     * @param string      $url     the URL the request will be made to
+     * @param array       $options the options for the download
      * @return array and array of strings, which are header names and values
      */
     private static function GetHeaders($user, $url, array $options = null)
     {
-        $headers = array();
+        $headers = [];
         $version = !empty($options['version']) ? $options['version'] :
             $user->GetDefaultVersion();
         // Authorization.
@@ -367,16 +387,19 @@ class ReportUtils
 
     /**
      * Logs the report download request.
-     * @param string $requestHeaders the HTTP request headers
-     * @param integer $responseCode the HTTP response code
-     * @param array $params the parameters that were sent, if any
-     * @param Exception $exception the exception that will be thrown, if any
+     * @param string    $requestHeaders the HTTP request headers
+     * @param integer   $responseCode   the HTTP response code
+     * @param array     $params         the parameters that were sent, if any
+     * @param Exception $exception      the exception that will be thrown, if any
      */
-    private static function LogRequest($requestHeaders, $responseCode,
-                                       $params = null, $exception = null)
-    {
+    private static function LogRequest(
+        $requestHeaders,
+        $responseCode,
+        $params = null,
+        $exception = null
+    ) {
         $level = isset($exception) ? Logger::$ERROR : Logger::$INFO;
-        $messageParts = array();
+        $messageParts = [];
         $messageParts[] = trim($requestHeaders);
         $messageParts[] = ''; // Blank line for readability.
         $messageParts[] = "Parameters:";
@@ -396,14 +419,14 @@ class ReportUtils
 
 /**
  * Exception class for an error that occurs while downloading a report.
- * @package GoogleApiAdsAdWords
+ * @package    GoogleApiAdsAdWords
  * @subpackage Util
  */
 class ReportDownloadException extends Exception
 {
     /**
      * Constructor for ReportDownloadException.
-     * @param string $error an optional error message
+     * @param string $error    an optional error message
      * @param string $httpCode an optional HTTP status code of the response
      */
     public function __construct($error = null, $httpCode = null)
@@ -418,7 +441,7 @@ class ReportDownloadException extends Exception
 if (!class_exists("ReportDefinition", false)) {
     /**
      * Represents a report definition.
-     * @package GoogleApiAdsAdWords
+     * @package    GoogleApiAdsAdWords
      * @subpackage Util
      */
     class ReportDefinition
@@ -486,8 +509,17 @@ if (!class_exists("ReportDefinition", false)) {
             return "ReportDefinition";
         }
 
-        public function __construct($id = null, $selector = null, $reportName = null, $reportType = null, $hasAttachment = null, $dateRangeType = null, $downloadFormat = null, $creationTime = null, $includeZeroImpressions = null)
-        {
+        public function __construct(
+            $id = null,
+            $selector = null,
+            $reportName = null,
+            $reportType = null,
+            $hasAttachment = null,
+            $dateRangeType = null,
+            $downloadFormat = null,
+            $creationTime = null,
+            $includeZeroImpressions = null
+        ) {
             $this->id = $id;
             $this->selector = $selector;
             $this->reportName = $reportName;
@@ -502,22 +534,22 @@ if (!class_exists("ReportDefinition", false)) {
 }
 
 
-
-
 if (!class_exists("ReportDefinitionDateRangeType", false)) {
-/**
- * Enums for date range of report.
- * @package GoogleApiAdsAdWords
- * @subpackage Util
- */
-class ReportDefinitionDateRangeType {
-  /**
-   * Gets the namesapce of this class
-   * @return the namespace of this class
-   */
-  public function getNamespace() {
-    return "";
-  }
+    /**
+     * Enums for date range of report.
+     * @package    GoogleApiAdsAdWords
+     * @subpackage Util
+     */
+    class ReportDefinitionDateRangeType
+    {
+        /**
+         * Gets the namesapce of this class
+         * @return the namespace of this class
+         */
+        public function getNamespace()
+        {
+            return "";
+        }
 
         /**
          * Gets the xsi:type name of this class
@@ -539,7 +571,7 @@ if (!class_exists("DownloadFormat", false)) {
      * Enum class that describes the supported formats for content downloads.
      * The order mimics the order in which download options are presented in the
      * legacy report center.
-     * @package GoogleApiAdsAdWords
+     * @package    GoogleApiAdsAdWords
      * @subpackage Util
      */
     class DownloadFormat
@@ -564,7 +596,9 @@ if (!class_exists("DownloadFormat", false)) {
 
         public function __construct()
         {
-            if (get_parent_class('DownloadFormat')) parent::__construct();
+            if (get_parent_class('DownloadFormat')) {
+                parent::__construct();
+            }
         }
     }
 }

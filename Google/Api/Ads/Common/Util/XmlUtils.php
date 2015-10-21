@@ -29,7 +29,7 @@ require_once 'Google/Api/Ads/Common/Util/MapUtils.php';
 
 /**
  * A collection of utility methods for working with XML.
- * @package GoogleApiAdsCommon
+ * @package    GoogleApiAdsCommon
  * @subpackage Util
  */
 class XmlUtils
@@ -43,7 +43,7 @@ class XmlUtils
      */
     public static function GetDomFromXml($xml)
     {
-        set_error_handler(array('XmlUtils', 'HandleXmlError'));
+        set_error_handler(['XmlUtils', 'HandleXmlError']);
         $dom = new DOMDocument();
         $dom->loadXML($xml,
             LIBXML_DTDLOAD | LIBXML_DTDATTR | LIBXML_NOENT | LIBXML_XINCLUDE);
@@ -75,7 +75,7 @@ class XmlUtils
             return self::GetXmlFromDom($dom);
         } catch (DOMException $e) {
             restore_error_handler();
-            return str_replace(array("\r\n", "\n", "\r"), '', $xml);
+            return str_replace(["\r\n", "\n", "\r"], '', $xml);
         }
     }
 
@@ -98,7 +98,7 @@ class XmlUtils
      */
     private static function ConvertElementToObject($element)
     {
-        $result = array();
+        $result = [];
         if ($element->hasChildNodes()) {
             $numChildNodes = $element->childNodes->length;
             for ($i = 0; $i < $numChildNodes; $i++) {
@@ -108,7 +108,7 @@ class XmlUtils
                     $value = self::ConvertElementToObject($childNode);
                     if (isset($result[$name])) {
                         if (!is_array($result[$name])) {
-                            $result[$name] = array($result[$name]);
+                            $result[$name] = [$result[$name]];
                         }
                         $result[$name][] = $value;
                     } else {
@@ -139,10 +139,12 @@ class XmlUtils
             } else {
                 return $value;
             }
-        } else if (strtolower($value) == 'true' || strtolower($value) == 'false') {
-            return filter_var($value, FILTER_VALIDATE_BOOLEAN);
         } else {
-            return $value;
+            if (strtolower($value) == 'true' || strtolower($value) == 'false') {
+                return filter_var($value, FILTER_VALIDATE_BOOLEAN);
+            } else {
+                return $value;
+            }
         }
     }
 
@@ -151,7 +153,7 @@ class XmlUtils
      * a parameter, and each field of the object becomes a child element. Array
      * values are represented by multiples instances of that element. Methods on
      * the object are ignored. There is no support for XML attributes.
-     * @param Object $object the object to serialize
+     * @param Object $object          the object to serialize
      * @param string $rootElementName the name of the root element
      * @return DOMDocument the document representing the object
      */
@@ -165,19 +167,21 @@ class XmlUtils
 
     /**
      * Converts an object to an DOMElement.
-     * @param Object $object the object to serialize
-     * @param string $elementName the name of the element to serialize
-     * @param DOMDocument $document the document that the element will be added to
+     * @param Object      $object      the object to serialize
+     * @param string      $elementName the name of the element to serialize
+     * @param DOMDocument $document    the document that the element will be added to
      * @return DOMElement the element representing the object
      */
-    private static function ConvertObjectToElement($object, $elementName,
-                                                   $document)
-    {
+    private static function ConvertObjectToElement(
+        $object,
+        $elementName,
+        $document
+    ) {
         if (!isset($object)) {
             return null;
         }
         $element = $document->createElement($elementName);
-        $children = array();
+        $children = [];
         if (is_array($object) && MapUtils::IsMap($object)) {
             $object = (Object)$object;
         }
@@ -217,24 +221,26 @@ class XmlUtils
             } else {
                 return sprintf('%.0f', $object);
             }
-        } else if (is_bool($object)) {
-            return $object ? 'true' : 'false';
         } else {
-            return strval($object);
+            if (is_bool($object)) {
+                return $object ? 'true' : 'false';
+            } else {
+                return strval($object);
+            }
         }
     }
 
     /**
      * Caputures the warnings thrown by the loadXML function to create a proper
      * DOMException.
-     * @param string $errno contains the level of the error raised, as an integer
-     * @param string $errstr contains the error message, as a string
-     * @param string $errfile contains the filename that the error was raised in,
-     *     as a string
+     * @param string  $errno   contains the level of the error raised, as an integer
+     * @param string  $errstr  contains the error message, as a string
+     * @param string  $errfile contains the filename that the error was raised in,
+     *                         as a string
      * @param integer $errline contains the line number the error was raised at,
-     *     as an integer
+     *                         as an integer
      * @return boolean <var>false</var> if the normal error handler should
-     *     continue
+     *                         continue
      */
     public static function HandleXmlError($errno, $errstr, $errfile, $errline)
     {

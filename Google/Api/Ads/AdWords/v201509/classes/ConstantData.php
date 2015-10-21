@@ -4,7 +4,7 @@
 /**
  * Marker interface for ConstantDataService objects. This is primarily required for field
  * catalog generation.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class ConstantData
@@ -18,13 +18,13 @@ class ConstantData
      * @var string
      */
     public $ConstantDataType;
-    private $_parameterMap = array(
+    private $_parameterMap = [
         "ConstantData.Type" => "ConstantDataType",
-    );
+    ];
 
     /**
      * Provided for setting non-php-standard named variables
-     * @param $var Variable name to set
+     * @param $var   Variable name to set
      * @param $value Value to set
      */
     public function __set($var, $value)

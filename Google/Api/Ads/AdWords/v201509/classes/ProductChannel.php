@@ -4,7 +4,7 @@
 /**
  * The product channel dimension, which specifies the locality of an offer. Only supported by
  * campaigns of {@link AdvertisingChannelType#SHOPPING}.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class ProductChannel extends ProductDimension

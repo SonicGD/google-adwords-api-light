@@ -4,7 +4,7 @@
 /**
  * A client defined rule based on custom parameters sent by web sites.
  * It consists of rule item groups that are connected by OR.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class Rule

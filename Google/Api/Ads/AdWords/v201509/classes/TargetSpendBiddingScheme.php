@@ -6,7 +6,7 @@
  * bids for the user based on their daily/monthly budget or optional
  * spend target.
  * <span class="constraint AdxEnabled">This is disabled for AdX.</span>
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class TargetSpendBiddingScheme extends BiddingScheme

@@ -3,7 +3,7 @@
 
 /**
  * Budgets are used for managing the amount of money spent on AdWords.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class Budget
@@ -78,8 +78,16 @@ class Budget
         return self::XSI_TYPE;
     }
 
-    public function __construct($budgetId = null, $name = null, $period = null, $amount = null, $deliveryMethod = null, $referenceCount = null, $isExplicitlyShared = null, $status = null)
-    {
+    public function __construct(
+        $budgetId = null,
+        $name = null,
+        $period = null,
+        $amount = null,
+        $deliveryMethod = null,
+        $referenceCount = null,
+        $isExplicitlyShared = null,
+        $status = null
+    ) {
         $this->budgetId = $budgetId;
         $this->name = $name;
         $this->period = $period;

@@ -4,7 +4,7 @@
 /**
  * Holds information about a changed campaign and any ad groups under
  * that have changed.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class CampaignChangeData
@@ -85,8 +85,17 @@ class CampaignChangeData
         return self::XSI_TYPE;
     }
 
-    public function __construct($campaignId = null, $campaignChangeStatus = null, $changedAdGroups = null, $addedCampaignCriteria = null, $removedCampaignCriteria = null, $addedAdExtensions = null, $removedAdExtensions = null, $changedFeeds = null, $removedFeeds = null)
-    {
+    public function __construct(
+        $campaignId = null,
+        $campaignChangeStatus = null,
+        $changedAdGroups = null,
+        $addedCampaignCriteria = null,
+        $removedCampaignCriteria = null,
+        $addedAdExtensions = null,
+        $removedAdExtensions = null,
+        $changedFeeds = null,
+        $removedFeeds = null
+    ) {
         $this->campaignId = $campaignId;
         $this->campaignChangeStatus = $campaignChangeStatus;
         $this->changedAdGroups = $changedAdGroups;

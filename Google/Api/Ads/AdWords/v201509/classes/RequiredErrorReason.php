@@ -7,7 +7,7 @@
  *
  *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class RequiredErrorReason

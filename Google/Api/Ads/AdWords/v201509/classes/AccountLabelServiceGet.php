@@ -7,7 +7,7 @@
  * @param selector filters the list of labels to return
  * @return response containing lists of labels that meet all the criteria of the selector
  * @throws ApiException if a problem occurs fetching the information requested
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AccountLabelServiceGet

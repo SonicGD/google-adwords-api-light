@@ -4,7 +4,7 @@
 /**
  * Represents a page of {@link AdGroupAd}s resulting from the query done by
  * {@link AdGroupAdService}.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AdGroupAdPage extends Page

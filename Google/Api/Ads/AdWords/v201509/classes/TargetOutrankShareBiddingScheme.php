@@ -6,7 +6,7 @@
  * bids so that the customer's ads appear above a specified competitors' ads for a specified target
  * fraction of the advertiser's eligible impressions on Google.com.
  * <span class="constraint AdxEnabled">This is disabled for AdX.</span>
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class TargetOutrankShareBiddingScheme extends BiddingScheme
@@ -63,8 +63,14 @@ class TargetOutrankShareBiddingScheme extends BiddingScheme
         return self::XSI_TYPE;
     }
 
-    public function __construct($targetOutrankShare = null, $competitorDomain = null, $maxCpcBidCeiling = null, $bidChangesForRaisesOnly = null, $raiseBidWhenLowQualityScore = null, $BiddingSchemeType = null)
-    {
+    public function __construct(
+        $targetOutrankShare = null,
+        $competitorDomain = null,
+        $maxCpcBidCeiling = null,
+        $bidChangesForRaisesOnly = null,
+        $raiseBidWhenLowQualityScore = null,
+        $BiddingSchemeType = null
+    ) {
         parent::__construct();
         $this->targetOutrankShare = $targetOutrankShare;
         $this->competitorDomain = $competitorDomain;

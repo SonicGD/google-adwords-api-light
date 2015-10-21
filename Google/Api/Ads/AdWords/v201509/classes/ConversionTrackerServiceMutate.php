@@ -26,10 +26,10 @@
  *
  * @param operations A list of mutate operations to perform.
  * @return The list of the conversion trackers as they appear after mutation,
- * in the same order as they appeared in the list of operations.
+ *                   in the same order as they appeared in the list of operations.
  * @throws com.google.ads.api.services.common.error.ApiException if problems
- * occurred while updating the data.
- * @package Google_Api_Ads_AdWords_v201509
+ *                   occurred while updating the data.
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class ConversionTrackerServiceMutate

@@ -3,7 +3,7 @@
 
 /**
  * Represents a large mutation job.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class BatchJob
@@ -66,8 +66,14 @@ class BatchJob
         return self::XSI_TYPE;
     }
 
-    public function __construct($id = null, $status = null, $progressStats = null, $uploadUrl = null, $downloadUrl = null, $processingErrors = null)
-    {
+    public function __construct(
+        $id = null,
+        $status = null,
+        $progressStats = null,
+        $uploadUrl = null,
+        $downloadUrl = null,
+        $processingErrors = null
+    ) {
         $this->id = $id;
         $this->status = $status;
         $this->progressStats = $progressStats;

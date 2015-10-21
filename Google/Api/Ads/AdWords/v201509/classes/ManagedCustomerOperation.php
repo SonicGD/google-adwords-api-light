@@ -4,7 +4,7 @@
 /**
  * An operation on a managed customer.
  * <p class="note"><b>Note:</b> only <code>ADD</code> operator is supported.</p>
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class ManagedCustomerOperation extends Operation

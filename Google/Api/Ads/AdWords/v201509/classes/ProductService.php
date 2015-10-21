@@ -5,7 +5,7 @@
  * A {@link Criterion} which describes the product or service an Ad is targeting. A product and
  * service criterion can be used to derive a group of {@link KeywordSet} by AdWords Express.
  * <span class="constraint AdxEnabled">This is disabled for AdX when it is contained within Operators: ADD, SET.</span>
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class ProductService extends Criterion

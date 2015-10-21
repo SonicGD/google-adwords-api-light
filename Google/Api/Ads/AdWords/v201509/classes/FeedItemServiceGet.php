@@ -9,10 +9,10 @@
  * Returns a list of FeedItems that meet the selector criteria.
  *
  * @param selector Determines which FeedItems to return. If empty all
- * FeedItems are returned.
+ *                 FeedItems are returned.
  * @return The list of FeedItems.
  * @throws ApiException Indicates a problem with the request.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class FeedItemServiceGet

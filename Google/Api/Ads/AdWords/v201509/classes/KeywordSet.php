@@ -4,7 +4,7 @@
 /**
  * A keyword set based {@link Criterion}.
  * <span class="constraint AdxEnabled">This is disabled for AdX when it is contained within Operators: ADD, SET.</span>
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class KeywordSet extends Criterion
@@ -49,8 +49,14 @@ class KeywordSet extends Criterion
         return self::XSI_TYPE;
     }
 
-    public function __construct($keywordSetId = null, $name = null, $deprecated = null, $id = null, $type = null, $CriterionType = null)
-    {
+    public function __construct(
+        $keywordSetId = null,
+        $name = null,
+        $deprecated = null,
+        $id = null,
+        $type = null,
+        $CriterionType = null
+    ) {
         parent::__construct();
         $this->keywordSetId = $keywordSetId;
         $this->name = $name;

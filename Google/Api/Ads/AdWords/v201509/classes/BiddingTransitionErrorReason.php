@@ -4,7 +4,7 @@
 /**
  * Reason for bidding transition error.
  * Used by the bidding transition capability service as the denial reason.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class BiddingTransitionErrorReason

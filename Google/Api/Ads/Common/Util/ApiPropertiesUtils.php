@@ -25,7 +25,7 @@
 
 /**
  * A collection of utility methods for reading API property files.
- * @package GoogleApiAdsCommon
+ * @package    GoogleApiAdsCommon
  * @subpackage Util
  */
 class ApiPropertiesUtils

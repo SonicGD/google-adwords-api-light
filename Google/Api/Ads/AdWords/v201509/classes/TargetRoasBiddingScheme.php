@@ -13,7 +13,7 @@
  * eligibility requirements</a> before they can use the <code>TargetRoasBiddingScheme</code>
  * bidding strategy.
  * <span class="constraint AdxEnabled">This is disabled for AdX.</span>
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class TargetRoasBiddingScheme extends BiddingScheme

@@ -6,7 +6,7 @@
  * A call made from the call extension is reported as a conversion if it lasts longer
  * than N seconds. This duration is 60 seconds by default. Each call extension can
  * specify the desired conversion configuration.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AdCallMetricsConversion extends ConversionTracker
@@ -39,8 +39,25 @@ class AdCallMetricsConversion extends ConversionTracker
         return self::XSI_TYPE;
     }
 
-    public function __construct($phoneCallDuration = null, $id = null, $originalConversionTypeId = null, $name = null, $status = null, $category = null, $conversionTypeOwnerCustomerId = null, $viewthroughLookbackWindow = null, $ctcLookbackWindow = null, $countingType = null, $defaultRevenueValue = null, $defaultRevenueCurrencyCode = null, $alwaysUseDefaultRevenueValue = null, $excludeFromBidding = null, $mostRecentConversionDate = null, $lastReceivedRequestTime = null, $ConversionTrackerType = null)
-    {
+    public function __construct(
+        $phoneCallDuration = null,
+        $id = null,
+        $originalConversionTypeId = null,
+        $name = null,
+        $status = null,
+        $category = null,
+        $conversionTypeOwnerCustomerId = null,
+        $viewthroughLookbackWindow = null,
+        $ctcLookbackWindow = null,
+        $countingType = null,
+        $defaultRevenueValue = null,
+        $defaultRevenueCurrencyCode = null,
+        $alwaysUseDefaultRevenueValue = null,
+        $excludeFromBidding = null,
+        $mostRecentConversionDate = null,
+        $lastReceivedRequestTime = null,
+        $ConversionTrackerType = null
+    ) {
         parent::__construct();
         $this->phoneCallDuration = $phoneCallDuration;
         $this->id = $id;

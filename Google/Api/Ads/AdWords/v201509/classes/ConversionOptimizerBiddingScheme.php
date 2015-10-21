@@ -17,7 +17,7 @@
  * <a href="https://support.google.com/adwords/answer/2471188"
  * >Conversion Optimizer help center</a>.</p>
  * <span class="constraint AdxEnabled">This is disabled for AdX.</span>
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class ConversionOptimizerBiddingScheme extends BiddingScheme

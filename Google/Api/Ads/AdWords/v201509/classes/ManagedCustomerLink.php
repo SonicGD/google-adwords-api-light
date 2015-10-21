@@ -3,7 +3,7 @@
 
 /**
  * Represents an AdWords manager-client link.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class ManagedCustomerLink
@@ -60,8 +60,13 @@ class ManagedCustomerLink
         return self::XSI_TYPE;
     }
 
-    public function __construct($managerCustomerId = null, $clientCustomerId = null, $linkStatus = null, $pendingDescriptiveName = null, $isHidden = null)
-    {
+    public function __construct(
+        $managerCustomerId = null,
+        $clientCustomerId = null,
+        $linkStatus = null,
+        $pendingDescriptiveName = null,
+        $isHidden = null
+    ) {
         $this->managerCustomerId = $managerCustomerId;
         $this->clientCustomerId = $clientCustomerId;
         $this->linkStatus = $linkStatus;

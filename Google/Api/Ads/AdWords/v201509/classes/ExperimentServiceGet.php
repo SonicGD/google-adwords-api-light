@@ -12,7 +12,7 @@
  * If selector is empty, all experiments are returned.
  * @return List of experiments meeting all the criteria of each selector.
  * @throws ApiException if problems occurred while fetching experiment information.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class ExperimentServiceGet

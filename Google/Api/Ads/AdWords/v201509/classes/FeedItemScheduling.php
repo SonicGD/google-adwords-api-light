@@ -5,7 +5,7 @@
  * Represents a collection of FeedItem schedules specifying all time intervals for which
  * the feed item may serve. Any time range not covered by the specified FeedItemSchedules will
  * prevent the feed item from serving during those times.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class FeedItemScheduling

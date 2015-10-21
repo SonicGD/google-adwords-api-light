@@ -3,7 +3,7 @@
 
 /**
  * Policy violation for an AdParam.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AdParamPolicyError extends PolicyViolationError
@@ -30,8 +30,14 @@ class AdParamPolicyError extends PolicyViolationError
         return self::XSI_TYPE;
     }
 
-    public function __construct($key = null, $externalPolicyName = null, $externalPolicyUrl = null, $externalPolicyDescription = null, $isExemptable = null, $violatingParts = null)
-    {
+    public function __construct(
+        $key = null,
+        $externalPolicyName = null,
+        $externalPolicyUrl = null,
+        $externalPolicyDescription = null,
+        $isExemptable = null,
+        $violatingParts = null
+    ) {
         parent::__construct();
         $this->key = $key;
         $this->externalPolicyName = $externalPolicyName;

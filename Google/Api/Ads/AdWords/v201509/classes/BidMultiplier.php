@@ -4,7 +4,7 @@
 /**
  * Represents a multiplier to modify a bid. The final value after
  * modification is represented by the multiplied bid value.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class BidMultiplier

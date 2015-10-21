@@ -14,12 +14,12 @@
  * paging {@code startIndex} value by {@code numberResults} with each call.</p>
  *
  * @param selector Query describing the types of results to return when
- * finding matches (similar keyword ideas/placement ideas).
+ *                 finding matches (similar keyword ideas/placement ideas).
  * @return A {@link TargetingIdeaPage} of results, that is a subset of the
- * list of possible ideas meeting the criteria of the
- * {@link TargetingIdeaSelector}.
+ *                 list of possible ideas meeting the criteria of the
+ *                 {@link TargetingIdeaSelector}.
  * @throws ApiException If problems occurred while querying for ideas.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class TargetingIdeaServiceGet

@@ -29,7 +29,7 @@ require_once 'Google/Api/Ads/Common/Lib/AdsUser.php';
 
 /**
  * Base class for all SOAP client factories of Ads client libraries.
- * @package GoogleApiAdsCommon
+ * @package    GoogleApiAdsCommon
  * @subpackage Lib
  */
 abstract class SoapClientFactory
@@ -53,14 +53,18 @@ abstract class SoapClientFactory
 
     /**
      * The constructor called by any sub-class.
-     * @param AdsUser $user the user which the client will use for credentials
-     * @param string $version the version to generate clients for
-     * @param string $server the server to generate clients for
-     * @param string $productName the product name (i.e. adwords)
+     * @param AdsUser $user        the user which the client will use for credentials
+     * @param string  $version     the version to generate clients for
+     * @param string  $server      the server to generate clients for
+     * @param string  $productName the product name (i.e. adwords)
      */
-    protected function __construct(AdsUser $user, $version, $server,
-                                   $productName, $headerOverrides = null)
-    {
+    protected function __construct(
+        AdsUser $user,
+        $version,
+        $server,
+        $productName,
+        $headerOverrides = null
+    ) {
         $this->user = $user;
         $this->version = $version;
         $this->server = $server;
@@ -103,12 +107,13 @@ abstract class SoapClientFactory
     {
         $location = $this->GetServiceLocation($serviceName);
         $wsdl = $location . '?wsdl';
-        $options = array(
-            'trace' => true,
-            'encoding' => 'utf-8',
+        $options = [
+            'trace'              => true,
+            'encoding'           => 'utf-8',
             'connection_timeout' => 0,
-            'features' => SOAP_SINGLE_ELEMENT_ARRAYS);
-        $contextOptions = array();
+            'features'           => SOAP_SINGLE_ELEMENT_ARRAYS
+        ];
+        $contextOptions = [];
 
         // Compression settings.
         if ($this->GetAdsUser()->IsSoapCompressionEnabled()) {
@@ -127,10 +132,12 @@ abstract class SoapClientFactory
         if ($this->GetAdsUser()->GetForceHttpVersion() !== null) {
             $contextOptions['http']['protocol_version'] =
                 $this->GetAdsUser()->GetForceHttpVersion();
-        } else if (version_compare(PHP_VERSION, self::MIN_VER_CHUNKED_HTTP11) <
-            '<'
-        ) {
-            $contextOptions['http']['protocol_version'] = 1.0;
+        } else {
+            if (version_compare(PHP_VERSION, self::MIN_VER_CHUNKED_HTTP11) <
+                '<'
+            ) {
+                $contextOptions['http']['protocol_version'] = 1.0;
+            }
         }
 
         // Proxy settings.

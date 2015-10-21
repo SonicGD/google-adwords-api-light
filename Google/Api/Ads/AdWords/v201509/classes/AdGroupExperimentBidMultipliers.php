@@ -5,7 +5,7 @@
  * Bid multiplier used to modify the bid of an adgroup while running
  * an experiment.
  * <span class="constraint AdxEnabled">This is disabled for AdX.</span>
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AdGroupExperimentBidMultipliers
@@ -19,13 +19,13 @@ class AdGroupExperimentBidMultipliers
      * @var string
      */
     public $AdGroupExperimentBidMultipliersType;
-    private $_parameterMap = array(
+    private $_parameterMap = [
         "AdGroupExperimentBidMultipliers.Type" => "AdGroupExperimentBidMultipliersType",
-    );
+    ];
 
     /**
      * Provided for setting non-php-standard named variables
-     * @param $var Variable name to set
+     * @param $var   Variable name to set
      * @param $value Value to set
      */
     public function __set($var, $value)

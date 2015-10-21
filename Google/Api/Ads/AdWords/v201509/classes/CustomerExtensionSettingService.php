@@ -5,7 +5,7 @@ require_once('CustomerExtensionSettingService.require.php');
 
 /**
  * CustomerExtensionSettingService
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class CustomerExtensionSettingService extends AdWordsSoapClient
@@ -25,123 +25,123 @@ class CustomerExtensionSettingService extends AdWordsSoapClient
      * @access private
      * @var array
      */
-    public static $classmap = array(
-        "AuthenticationError" => "AuthenticationError",
-        "AuthorizationError" => "AuthorizationError",
-        "CallConversionType" => "CallConversionType",
-        "CallFeedItem" => "CallFeedItem",
-        "CalloutFeedItem" => "CalloutFeedItem",
-        "ClientTermsError" => "ClientTermsError",
-        "CollectionSizeError" => "CollectionSizeError",
-        "CustomParameter" => "CustomParameter",
-        "DateError" => "DateError",
-        "DateRange" => "DateRange",
-        "DisapprovalReason" => "DisapprovalReason",
-        "DistinctError" => "DistinctError",
-        "EntityAccessDenied" => "EntityAccessDenied",
-        "EntityCountLimitExceeded" => "EntityCountLimitExceeded",
-        "EntityNotFound" => "EntityNotFound",
-        "ExtensionSettingError" => "ExtensionSettingError",
-        "FeedItemAttributeError" => "FeedItemAttributeError",
-        "FeedItemDevicePreference" => "FeedItemDevicePreference",
-        "FeedItemPolicyData" => "FeedItemPolicyData",
-        "FeedItemSchedule" => "FeedItemSchedule",
-        "FeedItemScheduling" => "FeedItemScheduling",
-        "IdError" => "IdError",
-        "InternalApiError" => "InternalApiError",
-        "NotEmptyError" => "NotEmptyError",
-        "NullError" => "NullError",
-        "OperationAccessDenied" => "OperationAccessDenied",
-        "OrderBy" => "OrderBy",
-        "Paging" => "Paging",
-        "Predicate" => "Predicate",
-        "QueryError" => "QueryError",
-        "QuotaCheckError" => "QuotaCheckError",
-        "RangeError" => "RangeError",
-        "RateExceededError" => "RateExceededError",
-        "ReadOnlyError" => "ReadOnlyError",
-        "RejectedError" => "RejectedError",
-        "RequestError" => "RequestError",
-        "RequiredError" => "RequiredError",
-        "ReviewFeedItem" => "ReviewFeedItem",
-        "SelectorError" => "SelectorError",
-        "SizeLimitError" => "SizeLimitError",
-        "SoapHeader" => "SoapRequestHeader",
-        "SoapResponseHeader" => "SoapResponseHeader",
-        "StringLengthError" => "StringLengthError",
-        "StructuredSnippetFeedItem" => "StructuredSnippetFeedItem",
-        "UrlError" => "UrlError",
-        "UrlList" => "UrlList",
-        "CustomParameters" => "CustomParameters",
-        "DatabaseError" => "DatabaseError",
-        "PolicyData" => "PolicyData",
-        "SitelinkFeedItem" => "SitelinkFeedItem",
-        "ApiError" => "ApiError",
-        "ApiException" => "ApiException",
-        "AppFeedItem" => "AppFeedItem",
-        "ApplicationException" => "ApplicationException",
-        "ExtensionFeedItem" => "ExtensionFeedItem",
-        "ExtensionSetting" => "ExtensionSetting",
-        "Selector" => "Selector",
-        "CustomerExtensionSetting" => "CustomerExtensionSetting",
-        "CustomerExtensionSettingOperation" => "CustomerExtensionSettingOperation",
-        "CustomerExtensionSettingPage" => "CustomerExtensionSettingPage",
+    public static $classmap = [
+        "AuthenticationError"                 => "AuthenticationError",
+        "AuthorizationError"                  => "AuthorizationError",
+        "CallConversionType"                  => "CallConversionType",
+        "CallFeedItem"                        => "CallFeedItem",
+        "CalloutFeedItem"                     => "CalloutFeedItem",
+        "ClientTermsError"                    => "ClientTermsError",
+        "CollectionSizeError"                 => "CollectionSizeError",
+        "CustomParameter"                     => "CustomParameter",
+        "DateError"                           => "DateError",
+        "DateRange"                           => "DateRange",
+        "DisapprovalReason"                   => "DisapprovalReason",
+        "DistinctError"                       => "DistinctError",
+        "EntityAccessDenied"                  => "EntityAccessDenied",
+        "EntityCountLimitExceeded"            => "EntityCountLimitExceeded",
+        "EntityNotFound"                      => "EntityNotFound",
+        "ExtensionSettingError"               => "ExtensionSettingError",
+        "FeedItemAttributeError"              => "FeedItemAttributeError",
+        "FeedItemDevicePreference"            => "FeedItemDevicePreference",
+        "FeedItemPolicyData"                  => "FeedItemPolicyData",
+        "FeedItemSchedule"                    => "FeedItemSchedule",
+        "FeedItemScheduling"                  => "FeedItemScheduling",
+        "IdError"                             => "IdError",
+        "InternalApiError"                    => "InternalApiError",
+        "NotEmptyError"                       => "NotEmptyError",
+        "NullError"                           => "NullError",
+        "OperationAccessDenied"               => "OperationAccessDenied",
+        "OrderBy"                             => "OrderBy",
+        "Paging"                              => "Paging",
+        "Predicate"                           => "Predicate",
+        "QueryError"                          => "QueryError",
+        "QuotaCheckError"                     => "QuotaCheckError",
+        "RangeError"                          => "RangeError",
+        "RateExceededError"                   => "RateExceededError",
+        "ReadOnlyError"                       => "ReadOnlyError",
+        "RejectedError"                       => "RejectedError",
+        "RequestError"                        => "RequestError",
+        "RequiredError"                       => "RequiredError",
+        "ReviewFeedItem"                      => "ReviewFeedItem",
+        "SelectorError"                       => "SelectorError",
+        "SizeLimitError"                      => "SizeLimitError",
+        "SoapHeader"                          => "SoapRequestHeader",
+        "SoapResponseHeader"                  => "SoapResponseHeader",
+        "StringLengthError"                   => "StringLengthError",
+        "StructuredSnippetFeedItem"           => "StructuredSnippetFeedItem",
+        "UrlError"                            => "UrlError",
+        "UrlList"                             => "UrlList",
+        "CustomParameters"                    => "CustomParameters",
+        "DatabaseError"                       => "DatabaseError",
+        "PolicyData"                          => "PolicyData",
+        "SitelinkFeedItem"                    => "SitelinkFeedItem",
+        "ApiError"                            => "ApiError",
+        "ApiException"                        => "ApiException",
+        "AppFeedItem"                         => "AppFeedItem",
+        "ApplicationException"                => "ApplicationException",
+        "ExtensionFeedItem"                   => "ExtensionFeedItem",
+        "ExtensionSetting"                    => "ExtensionSetting",
+        "Selector"                            => "Selector",
+        "CustomerExtensionSetting"            => "CustomerExtensionSetting",
+        "CustomerExtensionSettingOperation"   => "CustomerExtensionSettingOperation",
+        "CustomerExtensionSettingPage"        => "CustomerExtensionSettingPage",
         "CustomerExtensionSettingReturnValue" => "CustomerExtensionSettingReturnValue",
-        "ListReturnValue" => "ListReturnValue",
-        "Operation" => "Operation",
-        "Page" => "Page",
-        "AppFeedItem.AppStore" => "AppFeedItemAppStore",
-        "AuthenticationError.Reason" => "AuthenticationErrorReason",
-        "AuthorizationError.Reason" => "AuthorizationErrorReason",
-        "ClientTermsError.Reason" => "ClientTermsErrorReason",
-        "CollectionSizeError.Reason" => "CollectionSizeErrorReason",
-        "DatabaseError.Reason" => "DatabaseErrorReason",
-        "DateError.Reason" => "DateErrorReason",
-        "DayOfWeek" => "DayOfWeek",
-        "DistinctError.Reason" => "DistinctErrorReason",
-        "EntityAccessDenied.Reason" => "EntityAccessDeniedReason",
-        "EntityCountLimitExceeded.Reason" => "EntityCountLimitExceededReason",
-        "EntityNotFound.Reason" => "EntityNotFoundReason",
-        "ExtensionSetting.Platform" => "ExtensionSettingPlatform",
-        "ExtensionSettingError.Reason" => "ExtensionSettingErrorReason",
-        "FeedItem.Status" => "FeedItemStatus",
-        "FeedItemApprovalStatus" => "FeedItemApprovalStatus",
-        "FeedItemValidationStatus" => "FeedItemValidationStatus",
-        "Feed.Type" => "FeedType",
-        "IdError.Reason" => "IdErrorReason",
-        "InternalApiError.Reason" => "InternalApiErrorReason",
-        "MinuteOfHour" => "MinuteOfHour",
-        "NotEmptyError.Reason" => "NotEmptyErrorReason",
-        "NullError.Reason" => "NullErrorReason",
-        "OperationAccessDenied.Reason" => "OperationAccessDeniedReason",
-        "Operator" => "Operator",
-        "Predicate.Operator" => "PredicateOperator",
-        "QueryError.Reason" => "QueryErrorReason",
-        "QuotaCheckError.Reason" => "QuotaCheckErrorReason",
-        "RangeError.Reason" => "RangeErrorReason",
-        "RateExceededError.Reason" => "RateExceededErrorReason",
-        "ReadOnlyError.Reason" => "ReadOnlyErrorReason",
-        "RejectedError.Reason" => "RejectedErrorReason",
-        "RequestError.Reason" => "RequestErrorReason",
-        "RequiredError.Reason" => "RequiredErrorReason",
-        "SelectorError.Reason" => "SelectorErrorReason",
-        "SizeLimitError.Reason" => "SizeLimitErrorReason",
-        "SortOrder" => "SortOrder",
-        "StringLengthError.Reason" => "StringLengthErrorReason",
-        "UrlError.Reason" => "UrlErrorReason",
-        "get" => "CustomerExtensionSettingServiceGet",
-        "getResponse" => "CustomerExtensionSettingServiceGetResponse",
-        "mutate" => "CustomerExtensionSettingServiceMutate",
-        "mutateResponse" => "CustomerExtensionSettingServiceMutateResponse",
-        "query" => "Query",
-        "queryResponse" => "QueryResponse",
-    );
+        "ListReturnValue"                     => "ListReturnValue",
+        "Operation"                           => "Operation",
+        "Page"                                => "Page",
+        "AppFeedItem.AppStore"                => "AppFeedItemAppStore",
+        "AuthenticationError.Reason"          => "AuthenticationErrorReason",
+        "AuthorizationError.Reason"           => "AuthorizationErrorReason",
+        "ClientTermsError.Reason"             => "ClientTermsErrorReason",
+        "CollectionSizeError.Reason"          => "CollectionSizeErrorReason",
+        "DatabaseError.Reason"                => "DatabaseErrorReason",
+        "DateError.Reason"                    => "DateErrorReason",
+        "DayOfWeek"                           => "DayOfWeek",
+        "DistinctError.Reason"                => "DistinctErrorReason",
+        "EntityAccessDenied.Reason"           => "EntityAccessDeniedReason",
+        "EntityCountLimitExceeded.Reason"     => "EntityCountLimitExceededReason",
+        "EntityNotFound.Reason"               => "EntityNotFoundReason",
+        "ExtensionSetting.Platform"           => "ExtensionSettingPlatform",
+        "ExtensionSettingError.Reason"        => "ExtensionSettingErrorReason",
+        "FeedItem.Status"                     => "FeedItemStatus",
+        "FeedItemApprovalStatus"              => "FeedItemApprovalStatus",
+        "FeedItemValidationStatus"            => "FeedItemValidationStatus",
+        "Feed.Type"                           => "FeedType",
+        "IdError.Reason"                      => "IdErrorReason",
+        "InternalApiError.Reason"             => "InternalApiErrorReason",
+        "MinuteOfHour"                        => "MinuteOfHour",
+        "NotEmptyError.Reason"                => "NotEmptyErrorReason",
+        "NullError.Reason"                    => "NullErrorReason",
+        "OperationAccessDenied.Reason"        => "OperationAccessDeniedReason",
+        "Operator"                            => "Operator",
+        "Predicate.Operator"                  => "PredicateOperator",
+        "QueryError.Reason"                   => "QueryErrorReason",
+        "QuotaCheckError.Reason"              => "QuotaCheckErrorReason",
+        "RangeError.Reason"                   => "RangeErrorReason",
+        "RateExceededError.Reason"            => "RateExceededErrorReason",
+        "ReadOnlyError.Reason"                => "ReadOnlyErrorReason",
+        "RejectedError.Reason"                => "RejectedErrorReason",
+        "RequestError.Reason"                 => "RequestErrorReason",
+        "RequiredError.Reason"                => "RequiredErrorReason",
+        "SelectorError.Reason"                => "SelectorErrorReason",
+        "SizeLimitError.Reason"               => "SizeLimitErrorReason",
+        "SortOrder"                           => "SortOrder",
+        "StringLengthError.Reason"            => "StringLengthErrorReason",
+        "UrlError.Reason"                     => "UrlErrorReason",
+        "get"                                 => "CustomerExtensionSettingServiceGet",
+        "getResponse"                         => "CustomerExtensionSettingServiceGetResponse",
+        "mutate"                              => "CustomerExtensionSettingServiceMutate",
+        "mutateResponse"                      => "CustomerExtensionSettingServiceMutateResponse",
+        "query"                               => "Query",
+        "queryResponse"                       => "QueryResponse",
+    ];
 
 
     /**
      * Constructor using wsdl location and options array
-     * @param string $wsdl WSDL location for this service
-     * @param array $options Options for the SoapClient
+     * @param string $wsdl    WSDL location for this service
+     * @param array  $options Options for the SoapClient
      */
     public function __construct($wsdl, $options, $user)
     {
@@ -158,14 +158,14 @@ class CustomerExtensionSettingService extends AdWordsSoapClient
      * Returns a list of CustomerExtensionSettings that meet the selector criteria.
      *
      * @param selector Determines which CustomerExtensionSettings to return. If empty, all
-     * CustomerExtensionSettings are returned.
+     *                 CustomerExtensionSettings are returned.
      * @return The list of CustomerExtensionSettings specified by the selector.
      * @throws ApiException Indicates a problem with the request.
      */
     public function get($selector)
     {
         $args = new CustomerExtensionSettingServiceGet($selector);
-        $result = $this->__soapCall("get", array($args));
+        $result = $this->__soapCall("get", [$args]);
         return $result->rval;
     }
 
@@ -192,7 +192,7 @@ class CustomerExtensionSettingService extends AdWordsSoapClient
     public function mutate($operations)
     {
         $args = new CustomerExtensionSettingServiceMutate($operations);
-        $result = $this->__soapCall("mutate", array($args));
+        $result = $this->__soapCall("mutate", [$args]);
         return $result->rval;
     }
 
@@ -210,7 +210,7 @@ class CustomerExtensionSettingService extends AdWordsSoapClient
     public function query($query)
     {
         $args = new Query($query);
-        $result = $this->__soapCall("query", array($args));
+        $result = $this->__soapCall("query", [$args]);
         return $result->rval;
     }
 }

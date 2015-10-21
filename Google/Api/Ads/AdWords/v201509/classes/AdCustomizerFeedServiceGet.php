@@ -9,10 +9,10 @@
  * Returns a list of AdCustomizerFeeds that meet the selector criteria.
  *
  * @param selector Determines which AdCustomizerFeeds to return. If empty, all AdCustomizerFeeds
- * are returned.
+ *                 are returned.
  * @return The list of AdCustomizerFeeds.
  * @throws ApiException Indicates a problem with the request.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AdCustomizerFeedServiceGet

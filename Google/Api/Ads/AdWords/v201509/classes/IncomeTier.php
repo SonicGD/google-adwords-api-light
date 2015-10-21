@@ -5,7 +5,7 @@
  * Income tiers that specify the income bracket a household falls under. TIER_1
  * belongs to the highest income bracket. The income bracket range associated with
  * each tier is defined per country and computed based on income percentiles.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class IncomeTier

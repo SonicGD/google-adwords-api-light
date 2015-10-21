@@ -3,7 +3,7 @@
 
 /**
  * Holds information about a changed adgroup
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AdGroupChangeData
@@ -84,8 +84,17 @@ class AdGroupChangeData
         return self::XSI_TYPE;
     }
 
-    public function __construct($adGroupId = null, $adGroupChangeStatus = null, $changedAds = null, $changedCriteria = null, $removedCriteria = null, $changedFeeds = null, $removedFeeds = null, $changedAdGroupBidModifierCriteria = null, $removedAdGroupBidModifierCriteria = null)
-    {
+    public function __construct(
+        $adGroupId = null,
+        $adGroupChangeStatus = null,
+        $changedAds = null,
+        $changedCriteria = null,
+        $removedCriteria = null,
+        $changedFeeds = null,
+        $removedFeeds = null,
+        $changedAdGroupBidModifierCriteria = null,
+        $removedAdGroupBidModifierCriteria = null
+    ) {
         $this->adGroupId = $adGroupId;
         $this->adGroupChangeStatus = $adGroupChangeStatus;
         $this->changedAds = $changedAds;

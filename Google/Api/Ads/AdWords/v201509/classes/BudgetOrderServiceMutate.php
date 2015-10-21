@@ -19,10 +19,10 @@
  * is limited to one operation per mutate request. Any attempt to make more
  * than one operation will result in an <code>ApiException</code>.</p>
  * @param operations A list of operations, <b>however currently we only
- * support one operation per mutate call</b>.
+ *                   support one operation per mutate call</b>.
  * @return BudgetOrders affected by the mutate operation.
  * @throws ApiException
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class BudgetOrderServiceMutate

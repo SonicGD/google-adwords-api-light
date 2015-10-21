@@ -5,7 +5,7 @@
  * An interface for a logical user list operand. A logical user list is a
  * combination of logical rules. Each rule is defined as a logical operator and
  * a list of operands. Those operands can be of type UserList.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class LogicalUserListOperand

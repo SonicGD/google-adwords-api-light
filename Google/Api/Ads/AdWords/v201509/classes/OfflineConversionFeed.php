@@ -3,7 +3,7 @@
 
 /**
  * Represents an entire record in the offline conversions feed that the advertiser uploads.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class OfflineConversionFeed
@@ -60,8 +60,13 @@ class OfflineConversionFeed
         return self::XSI_TYPE;
     }
 
-    public function __construct($googleClickId = null, $conversionName = null, $conversionTime = null, $conversionValue = null, $conversionCurrencyCode = null)
-    {
+    public function __construct(
+        $googleClickId = null,
+        $conversionName = null,
+        $conversionTime = null,
+        $conversionValue = null,
+        $conversionCurrencyCode = null
+    ) {
         $this->googleClickId = $googleClickId;
         $this->conversionName = $conversionName;
         $this->conversionTime = $conversionTime;

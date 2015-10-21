@@ -29,7 +29,7 @@ require_once 'Google/Api/Ads/Common/Util/UrlUtils.php';
 
 /**
  * An abstract class for Google OAuth2 flow.
- * @package GoogleApiAdsCommon
+ * @package    GoogleApiAdsCommon
  * @subpackage Util
  */
 abstract class OAuth2Handler
@@ -59,54 +59,60 @@ abstract class OAuth2Handler
 
     /**
      * Gets the authorization URL to redirect to.
-     * @param array $credentials the credentials, including client_id
-     * @param string $redirectUri optional callback URL
-     * @param boolean $offline whether or not to request offline access (aka a
-     *     refresh token), false by default
-     * @param array $params optional array of additional parameters to include
-     *     in the URL
+     * @param array   $credentials the credentials, including client_id
+     * @param string  $redirectUri optional callback URL
+     * @param boolean $offline     whether or not to request offline access (aka a
+     *                             refresh token), false by default
+     * @param array   $params      optional array of additional parameters to include
+     *                             in the URL
      * @return string an authorization URL to redirect the user to
      * @see https://developers.google.com/accounts/docs/OAuth2WebServer#formingtheurl
      */
-    public function GetAuthorizationUrl(array $credentials,
-                                        $redirectUri = null, $offline = null, array $params = null)
-    {
+    public function GetAuthorizationUrl(
+        array $credentials,
+        $redirectUri = null,
+        $offline = null,
+        array $params = null
+    ) {
         if (empty($credentials['client_id'])) {
             throw new OAuth2Exception('client_id required.');
         }
-        $params = is_null($params) ? array() : $params;
+        $params = is_null($params) ? [] : $params;
         $redirectUri = is_null($redirectUri) ?
             self::DEFAULT_REDIRECT_URI : $redirectUri;
 
-        $params = array_merge($params, array(
+        $params = array_merge($params, [
             'response_type' => 'code',
-            'client_id' => $credentials['client_id'],
-            'redirect_uri' => $redirectUri,
-            'scope' => $this->scope,
-            'access_type' => $offline ? 'offline' : 'online'
-        ));
+            'client_id'     => $credentials['client_id'],
+            'redirect_uri'  => $redirectUri,
+            'scope'         => $this->scope,
+            'access_type'   => $offline ? 'offline' : 'online'
+        ]);
         return $this->GetAuthorizeEndpoint($params);
     }
 
     /**
      * Gets the access token for an authorized request token.
-     * @param array $credentials the credentials, including client_id and
-     *     client_secret
-     * @param string $code the authorization code returned in the response
+     * @param array  $credentials the credentials, including client_id and
+     *                            client_secret
+     * @param string $code        the authorization code returned in the response
      * @param string $redirectUri optional callback URL
      * @return array the credentials passed in plus access_token, expires_in,
-     *     timestamp and optionally refresh_token if offline mode was requested
+     *                            timestamp and optionally refresh_token if offline mode was requested
      * @see https://developers.google.com/accounts/docs/OAuth2WebServer#handlingtheresponse
      */
-    public abstract function GetAccessToken(array $credentials, $code,
-                                            $redirectUri = null);
+    public abstract function GetAccessToken(
+        array $credentials,
+        $code,
+        $redirectUri = null
+    );
 
     /**
      * Get the valid access token or the token if needed and possible.
      * @param array $credentials the credentials, including client_id and
-     *     client_secret
+     *                           client_secret
      * @return array the credentials passed in plus any refreshed credentials
-     *     if they were refreshed
+     *                           if they were refreshed
      */
     public function GetOrRefreshAccessToken(array $credentials)
     {
@@ -121,7 +127,7 @@ abstract class OAuth2Handler
     /**
      * Determines if the access token should be refreshed.
      * @param array $credentials the credentials, including client_id and
-     *     client_secret
+     *                           client_secret
      * @return boolean true if the Access Token should be refreshed
      */
     public function ShouldRefreshAccessToken(array $credentials)
@@ -134,9 +140,9 @@ abstract class OAuth2Handler
      * Determines if the access token is still valid. If expiry information isn't
      * available then this function will assume it is.
      * @param array $credentials the credentials, including access_token,
-     *     timestamp and expires_in
+     *                           timestamp and expires_in
      * @return boolean true if the access token is valid or if expiring
-     *     information isn't available
+     *                           information isn't available
      */
     public function IsAccessTokenValid(array $credentials)
     {
@@ -156,7 +162,7 @@ abstract class OAuth2Handler
     /**
      * Tests if the access token is about to expire or has expired.
      * @param array $credentials the credentials, including access_token,
-     *     timestamp and expires_in
+     *                           timestamp and expires_in
      * @return boolean true if the token has expired
      **/
     public function IsAccessTokenExpiring(array $credentials)
@@ -176,7 +182,7 @@ abstract class OAuth2Handler
     /**
      * Get the expiry of a given credential, or false if none is found.
      * @param array $credentials the credentials, including access_token,
-     *     timestamp and expires_in
+     *                           timestamp and expires_in
      * @return int|boolean utc timestamp if exists or false if none found
      */
     private function GetExpiryTimestamp(array $credentials)
@@ -209,7 +215,7 @@ abstract class OAuth2Handler
     /**
      * Refreshes the access token.
      * @param array $credentials the credentials, including the client_id,
-     *     client_secret, refresh_token
+     *                           client_secret, refresh_token
      * @return array the credentials
      * @see https://developers.google.com/accounts/docs/OAuth2WebServer#offline
      */
@@ -226,7 +232,7 @@ abstract class OAuth2Handler
         if (empty($credentials['access_token'])) {
             throw new OAuth2Exception('access_token required.');
         }
-        $params = array('access_token' => $credentials['access_token']);
+        $params = ['access_token' => $credentials['access_token']];
         return http_build_query($params, null, '&');
     }
 
@@ -270,7 +276,7 @@ abstract class OAuth2Handler
     /**
      * Gets an endpoint using the given server and parameters.
      * @param string $endpoint the base endpoint URL to use
-     * @param array $params the parameters to include in the endpoint
+     * @param array  $params   the parameters to include in the endpoint
      * @return string the endpoint
      */
     private function GetEndpoint($endpoint, $params = null)
@@ -285,7 +291,7 @@ abstract class OAuth2Handler
 
 /**
  * Exception thrown when OAuth2 flow fails.
- * @package GoogleApiAdsCommon
+ * @package    GoogleApiAdsCommon
  * @subpackage Util
  */
 class OAuth2Exception extends Exception

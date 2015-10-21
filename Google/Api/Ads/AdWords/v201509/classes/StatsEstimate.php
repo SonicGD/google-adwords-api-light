@@ -7,7 +7,7 @@
  * <p>{@code averageCpc}, {@code averagePosition} and {@code clickThroughRate} will be
  * {@code null} when not defined and {@code clicksPerDay} or {@code impressionsPerDay}
  * is {@code 0}, respectively.</p>
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class StatsEstimate
@@ -70,8 +70,14 @@ class StatsEstimate
         return self::XSI_TYPE;
     }
 
-    public function __construct($averageCpc = null, $averagePosition = null, $clickThroughRate = null, $clicksPerDay = null, $impressionsPerDay = null, $totalCost = null)
-    {
+    public function __construct(
+        $averageCpc = null,
+        $averagePosition = null,
+        $clickThroughRate = null,
+        $clicksPerDay = null,
+        $impressionsPerDay = null,
+        $totalCost = null
+    ) {
         $this->averageCpc = $averageCpc;
         $this->averagePosition = $averagePosition;
         $this->clickThroughRate = $clickThroughRate;

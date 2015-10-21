@@ -3,7 +3,7 @@
 
 /**
  * Data representing an AdWords campaign.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class Campaign
@@ -144,8 +144,27 @@ class Campaign
         return self::XSI_TYPE;
     }
 
-    public function __construct($id = null, $name = null, $status = null, $servingStatus = null, $startDate = null, $endDate = null, $budget = null, $conversionOptimizerEligibility = null, $adServingOptimizationStatus = null, $frequencyCap = null, $settings = null, $advertisingChannelType = null, $advertisingChannelSubType = null, $networkSetting = null, $labels = null, $biddingStrategyConfiguration = null, $forwardCompatibilityMap = null, $trackingUrlTemplate = null, $urlCustomParameters = null)
-    {
+    public function __construct(
+        $id = null,
+        $name = null,
+        $status = null,
+        $servingStatus = null,
+        $startDate = null,
+        $endDate = null,
+        $budget = null,
+        $conversionOptimizerEligibility = null,
+        $adServingOptimizationStatus = null,
+        $frequencyCap = null,
+        $settings = null,
+        $advertisingChannelType = null,
+        $advertisingChannelSubType = null,
+        $networkSetting = null,
+        $labels = null,
+        $biddingStrategyConfiguration = null,
+        $forwardCompatibilityMap = null,
+        $trackingUrlTemplate = null,
+        $urlCustomParameters = null
+    ) {
         $this->id = $id;
         $this->name = $name;
         $this->status = $status;

@@ -3,7 +3,7 @@
 
 /**
  * Represents the estimate results for a single ad group.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AdGroupEstimate extends Estimate

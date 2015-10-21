@@ -14,7 +14,7 @@
  *
  *
  * Structure to specify an address location.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class Proximity extends Criterion
@@ -65,8 +65,15 @@ class Proximity extends Criterion
         return self::XSI_TYPE;
     }
 
-    public function __construct($geoPoint = null, $radiusDistanceUnits = null, $radiusInUnits = null, $address = null, $id = null, $type = null, $CriterionType = null)
-    {
+    public function __construct(
+        $geoPoint = null,
+        $radiusDistanceUnits = null,
+        $radiusInUnits = null,
+        $address = null,
+        $id = null,
+        $type = null,
+        $CriterionType = null
+    ) {
         parent::__construct();
         $this->geoPoint = $geoPoint;
         $this->radiusDistanceUnits = $radiusDistanceUnits;

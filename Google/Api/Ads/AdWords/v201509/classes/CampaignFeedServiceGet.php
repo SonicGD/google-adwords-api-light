@@ -9,10 +9,10 @@
  * Returns a list of CampaignFeeds that meet the selector criteria.
  *
  * @param selector Determines which CampaignFeeds to return. If empty all
- * Campaign feeds are returned.
+ *                 Campaign feeds are returned.
  * @return The list of CampaignFeeds.
  * @throws ApiException Indicates a problem with the request.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class CampaignFeedServiceGet

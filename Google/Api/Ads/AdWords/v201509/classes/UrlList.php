@@ -4,7 +4,7 @@
 /**
  * Wrapper POJO for a list of URLs.  The list can be cleared if a request contains
  * a UrlList with an empty urls list.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class UrlList

@@ -12,7 +12,7 @@
  * <a href="/adwords/api/docs/appendix/placeholders">
  * https://developers.google.com/adwords/api/docs/appendix/placeholders
  * </a></p>
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class FeedMapping
@@ -75,8 +75,14 @@ class FeedMapping
         return self::XSI_TYPE;
     }
 
-    public function __construct($feedMappingId = null, $feedId = null, $placeholderType = null, $status = null, $attributeFieldMappings = null, $criterionType = null)
-    {
+    public function __construct(
+        $feedMappingId = null,
+        $feedId = null,
+        $placeholderType = null,
+        $status = null,
+        $attributeFieldMappings = null,
+        $criterionType = null
+    ) {
         $this->feedMappingId = $feedMappingId;
         $this->feedId = $feedId;
         $this->placeholderType = $placeholderType;

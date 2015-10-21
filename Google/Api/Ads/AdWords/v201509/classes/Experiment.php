@@ -3,7 +3,7 @@
 
 /**
  * Class representing a experiment for the ExperimentService.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class Experiment
@@ -96,8 +96,19 @@ class Experiment
         return self::XSI_TYPE;
     }
 
-    public function __construct($id = null, $controlId = null, $campaignId = null, $name = null, $status = null, $servingStatus = null, $queryPercentage = null, $startDateTime = null, $endDateTime = null, $lastModifiedDateTime = null, $experimentSummaryStats = null)
-    {
+    public function __construct(
+        $id = null,
+        $controlId = null,
+        $campaignId = null,
+        $name = null,
+        $status = null,
+        $servingStatus = null,
+        $queryPercentage = null,
+        $startDateTime = null,
+        $endDateTime = null,
+        $lastModifiedDateTime = null,
+        $experimentSummaryStats = null
+    ) {
         $this->id = $id;
         $this->controlId = $controlId;
         $this->campaignId = $campaignId;

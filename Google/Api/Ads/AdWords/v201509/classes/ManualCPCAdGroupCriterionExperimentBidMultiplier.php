@@ -4,7 +4,7 @@
 /**
  * AdGroupCriterion level bid multiplier used in manual CPC bidding strategies.
  * <span class="constraint AdxEnabled">This is disabled for AdX.</span>
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class ManualCPCAdGroupCriterionExperimentBidMultiplier extends AdGroupCriterionExperimentBidMultiplier
@@ -43,8 +43,11 @@ class ManualCPCAdGroupCriterionExperimentBidMultiplier extends AdGroupCriterionE
         return self::XSI_TYPE;
     }
 
-    public function __construct($maxCpcMultiplier = null, $multiplierSource = null, $AdGroupCriterionExperimentBidMultiplierType = null)
-    {
+    public function __construct(
+        $maxCpcMultiplier = null,
+        $multiplierSource = null,
+        $AdGroupCriterionExperimentBidMultiplierType = null
+    ) {
         parent::__construct();
         $this->maxCpcMultiplier = $maxCpcMultiplier;
         $this->multiplierSource = $multiplierSource;

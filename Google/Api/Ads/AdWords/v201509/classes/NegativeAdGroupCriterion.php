@@ -3,7 +3,7 @@
 
 /**
  * A negative criterion in an adgroup.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class NegativeAdGroupCriterion extends AdGroupCriterion
@@ -30,8 +30,14 @@ class NegativeAdGroupCriterion extends AdGroupCriterion
         return self::XSI_TYPE;
     }
 
-    public function __construct($adGroupId = null, $criterionUse = null, $criterion = null, $labels = null, $forwardCompatibilityMap = null, $AdGroupCriterionType = null)
-    {
+    public function __construct(
+        $adGroupId = null,
+        $criterionUse = null,
+        $criterion = null,
+        $labels = null,
+        $forwardCompatibilityMap = null,
+        $AdGroupCriterionType = null
+    ) {
         parent::__construct();
         $this->adGroupId = $adGroupId;
         $this->criterionUse = $criterionUse;

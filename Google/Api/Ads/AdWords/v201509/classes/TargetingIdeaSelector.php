@@ -3,7 +3,7 @@
 
 /**
  * A descriptor for finding {@link TargetingIdea}s that match the specified criteria.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class TargetingIdeaSelector
@@ -72,8 +72,15 @@ class TargetingIdeaSelector
         return self::XSI_TYPE;
     }
 
-    public function __construct($searchParameters = null, $ideaType = null, $requestType = null, $requestedAttributeTypes = null, $paging = null, $localeCode = null, $currencyCode = null)
-    {
+    public function __construct(
+        $searchParameters = null,
+        $ideaType = null,
+        $requestType = null,
+        $requestedAttributeTypes = null,
+        $paging = null,
+        $localeCode = null,
+        $currencyCode = null
+    ) {
         $this->searchParameters = $searchParameters;
         $this->ideaType = $ideaType;
         $this->requestType = $requestType;

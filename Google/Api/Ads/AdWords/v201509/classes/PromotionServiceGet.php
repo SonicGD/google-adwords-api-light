@@ -9,7 +9,7 @@
  * Retrieves the promotions that meet the criteria set in the given selector.
  * @param selector the selector specifying the AdWords Express promotion to return
  * @return list of AdWords Express promotion identified by the selector
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class PromotionServiceGet

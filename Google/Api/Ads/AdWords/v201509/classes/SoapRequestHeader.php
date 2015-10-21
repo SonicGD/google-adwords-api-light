@@ -7,7 +7,7 @@
  *
  *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class SoapRequestHeader
@@ -64,8 +64,13 @@ class SoapRequestHeader
         return self::XSI_TYPE;
     }
 
-    public function __construct($clientCustomerId = null, $developerToken = null, $userAgent = null, $validateOnly = null, $partialFailure = null)
-    {
+    public function __construct(
+        $clientCustomerId = null,
+        $developerToken = null,
+        $userAgent = null,
+        $validateOnly = null,
+        $partialFailure = null
+    ) {
         $this->clientCustomerId = $clientCustomerId;
         $this->developerToken = $developerToken;
         $this->userAgent = $userAgent;

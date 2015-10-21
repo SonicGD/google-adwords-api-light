@@ -3,7 +3,7 @@
 
 /**
  * Specifies additional criteria for selecting bulk mutate jobs.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class BulkMutateJobSelector extends JobSelector
@@ -42,8 +42,13 @@ class BulkMutateJobSelector extends JobSelector
         return self::XSI_TYPE;
     }
 
-    public function __construct($jobIds = null, $resultPartIndex = null, $includeHistory = null, $includeStats = null, $JobSelectorType = null)
-    {
+    public function __construct(
+        $jobIds = null,
+        $resultPartIndex = null,
+        $includeHistory = null,
+        $includeStats = null,
+        $JobSelectorType = null
+    ) {
         parent::__construct();
         $this->jobIds = $jobIds;
         $this->resultPartIndex = $resultPartIndex;

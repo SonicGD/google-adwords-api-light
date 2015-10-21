@@ -28,7 +28,7 @@
 
 /**
  * A collection of utility methods for working with URLs.
- * @package GoogleApiAdsCommon
+ * @package    GoogleApiAdsCommon
  * @subpackage Util
  */
 class UrlUtils
@@ -43,7 +43,7 @@ class UrlUtils
 
     /**
      * Replaces the protocol and server portion of a URL with another.
-     * @param string $url the full URL
+     * @param string $url    the full URL
      * @param string $server the protocol and server to replace with
      * @return string the URL with the protocol and server replaced
      */
@@ -62,8 +62,8 @@ class UrlUtils
 
     /**
      * Adds parameters to a URL.
-     * @param string $url the URL
-     * @param array $params the parameters to add
+     * @param string $url    the URL
+     * @param array  $params the parameters to add
      * @return string the new URL with the parameters added
      */
     public static function AddParamsToUrl($url, $params)

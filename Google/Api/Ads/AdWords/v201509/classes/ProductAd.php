@@ -18,7 +18,7 @@
  * recommended, as they will not be used; they should be set at the ad group or
  * campaign level instead.</p>
  * <span class="constraint AdxEnabled">This is disabled for AdX when it is contained within Operators: ADD, SET.</span>
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class ProductAd extends Ad
@@ -51,8 +51,19 @@ class ProductAd extends Ad
         return self::XSI_TYPE;
     }
 
-    public function __construct($promotionLine = null, $id = null, $url = null, $displayUrl = null, $finalUrls = null, $finalMobileUrls = null, $finalAppUrls = null, $trackingUrlTemplate = null, $urlCustomParameters = null, $devicePreference = null, $AdType = null)
-    {
+    public function __construct(
+        $promotionLine = null,
+        $id = null,
+        $url = null,
+        $displayUrl = null,
+        $finalUrls = null,
+        $finalMobileUrls = null,
+        $finalAppUrls = null,
+        $trackingUrlTemplate = null,
+        $urlCustomParameters = null,
+        $devicePreference = null,
+        $AdType = null
+    ) {
         parent::__construct();
         $this->promotionLine = $promotionLine;
         $this->id = $id;

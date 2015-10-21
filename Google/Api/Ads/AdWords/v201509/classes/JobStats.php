@@ -3,7 +3,7 @@
 
 /**
  * Job-handling statistics.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class JobStats
@@ -35,13 +35,13 @@ class JobStats
      * @var string
      */
     public $JobStatsType;
-    private $_parameterMap = array(
+    private $_parameterMap = [
         "JobStats.Type" => "JobStatsType",
-    );
+    ];
 
     /**
      * Provided for setting non-php-standard named variables
-     * @param $var Variable name to set
+     * @param $var   Variable name to set
      * @param $value Value to set
      */
     public function __set($var, $value)
@@ -89,8 +89,12 @@ class JobStats
         return self::XSI_TYPE;
     }
 
-    public function __construct($progressPercent = null, $pendingTimeMillis = null, $processingTimeMillis = null, $JobStatsType = null)
-    {
+    public function __construct(
+        $progressPercent = null,
+        $pendingTimeMillis = null,
+        $processingTimeMillis = null,
+        $JobStatsType = null
+    ) {
         $this->progressPercent = $progressPercent;
         $this->pendingTimeMillis = $pendingTimeMillis;
         $this->processingTimeMillis = $processingTimeMillis;

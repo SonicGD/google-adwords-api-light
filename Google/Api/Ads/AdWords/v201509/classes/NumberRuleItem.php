@@ -3,7 +3,7 @@
 
 /**
  * An atomic rule fragment composing of number operation.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class NumberRuleItem

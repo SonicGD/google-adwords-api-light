@@ -4,7 +4,7 @@
 /**
  * A setting specifying when and which extensions should serve at a given level (customer, campaign,
  * or ad group).
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class ExtensionSetting

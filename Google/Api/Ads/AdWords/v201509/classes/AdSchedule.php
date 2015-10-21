@@ -8,7 +8,7 @@
  * <p><b>Note:</b> An AdSchedule may not have more than <b>six</b> intervals
  * in a day.</p>
  * <span class="constraint AdxEnabled">This is enabled for AdX.</span>
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AdSchedule extends Criterion
@@ -65,8 +65,16 @@ class AdSchedule extends Criterion
         return self::XSI_TYPE;
     }
 
-    public function __construct($dayOfWeek = null, $startHour = null, $startMinute = null, $endHour = null, $endMinute = null, $id = null, $type = null, $CriterionType = null)
-    {
+    public function __construct(
+        $dayOfWeek = null,
+        $startHour = null,
+        $startMinute = null,
+        $endHour = null,
+        $endMinute = null,
+        $id = null,
+        $type = null,
+        $CriterionType = null
+    ) {
         parent::__construct();
         $this->dayOfWeek = $dayOfWeek;
         $this->startHour = $startHour;

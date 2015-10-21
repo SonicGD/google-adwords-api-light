@@ -12,7 +12,7 @@
  * @param serviceSelector The selector specifying the {@link AdGroup}s to return.
  * @return List of adgroups identified by the selector.
  * @throws ApiException when there is at least one error with the request.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AdGroupServiceGet

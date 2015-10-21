@@ -31,7 +31,7 @@
  * (Operand) new GeoTargetOperand(Lists.newArrayList(new CriterionId(2250L))));
  * </code></pre>
  * <span class="constraint AdxEnabled">This is disabled for AdX when it is contained within Operators: ADD, SET.</span>
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class LocationGroups extends Criterion
@@ -70,8 +70,13 @@ class LocationGroups extends Criterion
         return self::XSI_TYPE;
     }
 
-    public function __construct($feedId = null, $matchingFunction = null, $id = null, $type = null, $CriterionType = null)
-    {
+    public function __construct(
+        $feedId = null,
+        $matchingFunction = null,
+        $id = null,
+        $type = null,
+        $CriterionType = null
+    ) {
         parent::__construct();
         $this->feedId = $feedId;
         $this->matchingFunction = $matchingFunction;

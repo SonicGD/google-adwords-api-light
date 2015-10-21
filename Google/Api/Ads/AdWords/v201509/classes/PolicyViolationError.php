@@ -18,7 +18,7 @@
  *
  *
  * Base error class for Ad Group Criterion Service.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class PolicyViolationError extends ApiError
@@ -81,8 +81,18 @@ class PolicyViolationError extends ApiError
         return self::XSI_TYPE;
     }
 
-    public function __construct($key = null, $externalPolicyName = null, $externalPolicyUrl = null, $externalPolicyDescription = null, $isExemptable = null, $violatingParts = null, $fieldPath = null, $trigger = null, $errorString = null, $ApiErrorType = null)
-    {
+    public function __construct(
+        $key = null,
+        $externalPolicyName = null,
+        $externalPolicyUrl = null,
+        $externalPolicyDescription = null,
+        $isExemptable = null,
+        $violatingParts = null,
+        $fieldPath = null,
+        $trigger = null,
+        $errorString = null,
+        $ApiErrorType = null
+    ) {
         parent::__construct();
         $this->key = $key;
         $this->externalPolicyName = $externalPolicyName;

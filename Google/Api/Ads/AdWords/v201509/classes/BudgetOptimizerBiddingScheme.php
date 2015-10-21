@@ -12,7 +12,7 @@
  * solely exists so that advertisers can access campaigns that had specified
  * this strategy.</p>
  * <span class="constraint AdxEnabled">This is disabled for AdX.</span>
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class BudgetOptimizerBiddingScheme extends BiddingScheme

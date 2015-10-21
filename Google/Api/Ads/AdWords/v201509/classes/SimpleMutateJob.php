@@ -5,7 +5,7 @@
  * A mutation job, which was submitted using
  * {@link MutateJobService#mutate}, and will execute asynchronously
  * sometime after submission.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class SimpleMutateJob extends Job
@@ -50,8 +50,15 @@ class SimpleMutateJob extends Job
         return self::XSI_TYPE;
     }
 
-    public function __construct($id = null, $status = null, $history = null, $failureReason = null, $stats = null, $billingSummary = null, $JobType = null)
-    {
+    public function __construct(
+        $id = null,
+        $status = null,
+        $history = null,
+        $failureReason = null,
+        $stats = null,
+        $billingSummary = null,
+        $JobType = null
+    ) {
         parent::__construct();
         $this->id = $id;
         $this->status = $status;

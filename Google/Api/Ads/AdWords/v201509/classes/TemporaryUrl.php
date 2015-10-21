@@ -3,7 +3,7 @@
 
 /**
  * A URL that expires at a particular time.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class TemporaryUrl

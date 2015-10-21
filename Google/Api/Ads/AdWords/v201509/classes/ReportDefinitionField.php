@@ -7,7 +7,7 @@
  * given report type. Consumers of reports will be able use the retrieved
  * fields through the {@link ReportDefinitionService#getReportFields}
  * api and run the corresponding reports.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class ReportDefinitionField
@@ -106,8 +106,20 @@ class ReportDefinitionField
         return self::XSI_TYPE;
     }
 
-    public function __construct($fieldName = null, $displayFieldName = null, $xmlAttributeName = null, $fieldType = null, $fieldBehavior = null, $enumValues = null, $canSelect = null, $canFilter = null, $isEnumType = null, $isBeta = null, $isZeroRowCompatible = null, $enumValuePairs = null)
-    {
+    public function __construct(
+        $fieldName = null,
+        $displayFieldName = null,
+        $xmlAttributeName = null,
+        $fieldType = null,
+        $fieldBehavior = null,
+        $enumValues = null,
+        $canSelect = null,
+        $canFilter = null,
+        $isEnumType = null,
+        $isBeta = null,
+        $isZeroRowCompatible = null,
+        $enumValuePairs = null
+    ) {
         $this->fieldName = $fieldName;
         $this->displayFieldName = $displayFieldName;
         $this->xmlAttributeName = $xmlAttributeName;

@@ -3,7 +3,7 @@
 
 /**
  * Interface that has a reason return an associated service error.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class ApiErrorReason
@@ -414,8 +414,72 @@ class ApiErrorReason
         return self::XSI_TYPE;
     }
 
-    public function __construct($AdCustomizerErrorReason = null, $AdErrorReason = null, $AdExtensionErrorReason = null, $AdGroupAdErrorReason = null, $AdGroupCriterionErrorReason = null, $AdGroupServiceErrorReason = null, $AdxErrorReason = null, $AuthenticationErrorReason = null, $AuthorizationErrorReason = null, $BetaErrorReason = null, $BiddingErrorReason = null, $BiddingErrorsReason = null, $BiddingTransitionErrorReason = null, $BudgetErrorReason = null, $BulkMutateJobErrorReason = null, $CampaignAdExtensionErrorReason = null, $CampaignCriterionErrorReason = null, $CampaignErrorReason = null, $ClientTermsErrorReason = null, $CollectionSizeErrorReason = null, $CriterionErrorReason = null, $DatabaseErrorReason = null, $DateErrorReason = null, $DateRangeErrorReason = null, $DistinctErrorReason = null, $EntityAccessDeniedReason = null, $EntityCountLimitExceededReason = null, $EntityNotFoundReason = null, $ExperimentErrorReason = null, $FeedAttributeReferenceErrorReason = null, $FeedItemErrorReason = null, $ForwardCompatibilityErrorReason = null, $FunctionErrorReason = null, $FunctionParsingErrorReason = null, $IdErrorReason = null, $ImageErrorReason = null, $InternalApiErrorReason = null, $JobErrorReason = null, $MediaBundleErrorReason = null, $MediaErrorReason = null, $MultiplierErrorReason = null, $NewEntityCreationErrorReason = null, $NotEmptyErrorReason = null, $NullErrorReason = null, $OperationAccessDeniedReason = null, $OperatorErrorReason = null, $PagingErrorReason = null, $PolicyViolationErrorReason = null, $QueryErrorReason = null, $QuotaCheckErrorReason = null, $RangeErrorReason = null, $RateExceededErrorReason = null, $ReadOnlyErrorReason = null, $RegionCodeErrorReason = null, $RejectedErrorReason = null, $RequestErrorReason = null, $RequiredErrorReason = null, $SelectorErrorReason = null, $SettingErrorReason = null, $SizeLimitErrorReason = null, $StatsQueryErrorReason = null, $StringFormatErrorReason = null, $StringLengthErrorReason = null, $UrlErrorReason = null)
-    {
+    public function __construct(
+        $AdCustomizerErrorReason = null,
+        $AdErrorReason = null,
+        $AdExtensionErrorReason = null,
+        $AdGroupAdErrorReason = null,
+        $AdGroupCriterionErrorReason = null,
+        $AdGroupServiceErrorReason = null,
+        $AdxErrorReason = null,
+        $AuthenticationErrorReason = null,
+        $AuthorizationErrorReason = null,
+        $BetaErrorReason = null,
+        $BiddingErrorReason = null,
+        $BiddingErrorsReason = null,
+        $BiddingTransitionErrorReason = null,
+        $BudgetErrorReason = null,
+        $BulkMutateJobErrorReason = null,
+        $CampaignAdExtensionErrorReason = null,
+        $CampaignCriterionErrorReason = null,
+        $CampaignErrorReason = null,
+        $ClientTermsErrorReason = null,
+        $CollectionSizeErrorReason = null,
+        $CriterionErrorReason = null,
+        $DatabaseErrorReason = null,
+        $DateErrorReason = null,
+        $DateRangeErrorReason = null,
+        $DistinctErrorReason = null,
+        $EntityAccessDeniedReason = null,
+        $EntityCountLimitExceededReason = null,
+        $EntityNotFoundReason = null,
+        $ExperimentErrorReason = null,
+        $FeedAttributeReferenceErrorReason = null,
+        $FeedItemErrorReason = null,
+        $ForwardCompatibilityErrorReason = null,
+        $FunctionErrorReason = null,
+        $FunctionParsingErrorReason = null,
+        $IdErrorReason = null,
+        $ImageErrorReason = null,
+        $InternalApiErrorReason = null,
+        $JobErrorReason = null,
+        $MediaBundleErrorReason = null,
+        $MediaErrorReason = null,
+        $MultiplierErrorReason = null,
+        $NewEntityCreationErrorReason = null,
+        $NotEmptyErrorReason = null,
+        $NullErrorReason = null,
+        $OperationAccessDeniedReason = null,
+        $OperatorErrorReason = null,
+        $PagingErrorReason = null,
+        $PolicyViolationErrorReason = null,
+        $QueryErrorReason = null,
+        $QuotaCheckErrorReason = null,
+        $RangeErrorReason = null,
+        $RateExceededErrorReason = null,
+        $ReadOnlyErrorReason = null,
+        $RegionCodeErrorReason = null,
+        $RejectedErrorReason = null,
+        $RequestErrorReason = null,
+        $RequiredErrorReason = null,
+        $SelectorErrorReason = null,
+        $SettingErrorReason = null,
+        $SizeLimitErrorReason = null,
+        $StatsQueryErrorReason = null,
+        $StringFormatErrorReason = null,
+        $StringLengthErrorReason = null,
+        $UrlErrorReason = null
+    ) {
         $this->AdCustomizerErrorReason = $AdCustomizerErrorReason;
         $this->AdErrorReason = $AdErrorReason;
         $this->AdExtensionErrorReason = $AdExtensionErrorReason;

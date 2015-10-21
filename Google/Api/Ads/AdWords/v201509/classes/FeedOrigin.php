@@ -3,7 +3,7 @@
 
 /**
  * Used to Specify who manages the {@link FeedAttribute}s for the {@link Feed}.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class FeedOrigin

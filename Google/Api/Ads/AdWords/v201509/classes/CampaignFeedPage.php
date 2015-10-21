@@ -4,7 +4,7 @@
 /**
  * The result of a call to {@link CampaignFeedService#get}. Contains a list of
  * associations between campaign and feeds.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class CampaignFeedPage extends NullStatsPage

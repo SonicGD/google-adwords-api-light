@@ -8,7 +8,7 @@
  *
  * <p>Note that these are not interchangeable with campaign management labels, and are owned
  * by manager customers.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AccountLabel

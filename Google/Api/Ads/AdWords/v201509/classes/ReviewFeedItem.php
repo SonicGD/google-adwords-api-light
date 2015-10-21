@@ -3,7 +3,7 @@
 
 /**
  * Represents a Review extension.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class ReviewFeedItem extends ExtensionFeedItem
@@ -54,8 +54,22 @@ class ReviewFeedItem extends ExtensionFeedItem
         return self::XSI_TYPE;
     }
 
-    public function __construct($reviewText = null, $reviewSourceName = null, $reviewSourceUrl = null, $reviewTextExactlyQuoted = null, $feedId = null, $feedItemId = null, $status = null, $feedType = null, $startTime = null, $endTime = null, $devicePreference = null, $scheduling = null, $policyData = null, $ExtensionFeedItemType = null)
-    {
+    public function __construct(
+        $reviewText = null,
+        $reviewSourceName = null,
+        $reviewSourceUrl = null,
+        $reviewTextExactlyQuoted = null,
+        $feedId = null,
+        $feedItemId = null,
+        $status = null,
+        $feedType = null,
+        $startTime = null,
+        $endTime = null,
+        $devicePreference = null,
+        $scheduling = null,
+        $policyData = null,
+        $ExtensionFeedItemType = null
+    ) {
         parent::__construct();
         $this->reviewText = $reviewText;
         $this->reviewSourceName = $reviewSourceName;

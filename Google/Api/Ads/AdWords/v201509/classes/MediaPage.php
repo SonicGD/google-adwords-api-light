@@ -4,7 +4,7 @@
 /**
  * Page of media returned by the {@link MediaService} which includes
  * the media.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class MediaPage

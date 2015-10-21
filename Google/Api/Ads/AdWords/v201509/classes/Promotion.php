@@ -4,7 +4,7 @@
 /**
  * A promotion for a business. It contains all the user specified data as needed by AdWords Express
  * to generate AdWords campaigns.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class Promotion
@@ -103,8 +103,20 @@ class Promotion
         return self::XSI_TYPE;
     }
 
-    public function __construct($id = null, $name = null, $status = null, $creatives = null, $destinationUrl = null, $phoneNumber = null, $streetAddressVisible = null, $callTrackingEnabled = null, $budget = null, $criteria = null, $campaignIds = null, $remainingBudget = null)
-    {
+    public function __construct(
+        $id = null,
+        $name = null,
+        $status = null,
+        $creatives = null,
+        $destinationUrl = null,
+        $phoneNumber = null,
+        $streetAddressVisible = null,
+        $callTrackingEnabled = null,
+        $budget = null,
+        $criteria = null,
+        $campaignIds = null,
+        $remainingBudget = null
+    ) {
         $this->id = $id;
         $this->name = $name;
         $this->status = $status;

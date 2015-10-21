@@ -4,7 +4,7 @@
 /**
  * Represents an element in a template. Each template element is composed
  * of a list of fields (actual value data).
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class TemplateElement

@@ -7,7 +7,7 @@
  *
  *
  * Errors that are thrown when a non-AdX feature is accessed by an AdX customer.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class NetworkSetting
@@ -58,8 +58,12 @@ class NetworkSetting
         return self::XSI_TYPE;
     }
 
-    public function __construct($targetGoogleSearch = null, $targetSearchNetwork = null, $targetContentNetwork = null, $targetPartnerSearchNetwork = null)
-    {
+    public function __construct(
+        $targetGoogleSearch = null,
+        $targetSearchNetwork = null,
+        $targetContentNetwork = null,
+        $targetPartnerSearchNetwork = null
+    ) {
         $this->targetGoogleSearch = $targetGoogleSearch;
         $this->targetSearchNetwork = $targetSearchNetwork;
         $this->targetContentNetwork = $targetContentNetwork;

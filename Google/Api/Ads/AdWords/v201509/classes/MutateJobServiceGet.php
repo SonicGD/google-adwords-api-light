@@ -9,7 +9,7 @@
  * Query the status of existing jobs, both simple and bulk API.
  * <p>Use a {@link JobSelector} to query and return a list which may
  * contain both {@link BulkMutateJob} and/or {@link SimpleMutateJob}.</p>
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class MutateJobServiceGet

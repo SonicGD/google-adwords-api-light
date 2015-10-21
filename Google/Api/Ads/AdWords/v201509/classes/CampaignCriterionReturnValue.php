@@ -3,7 +3,7 @@
 
 /**
  * A container for return values from the CampaignCriterionService.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class CampaignCriterionReturnValue extends ListReturnValue

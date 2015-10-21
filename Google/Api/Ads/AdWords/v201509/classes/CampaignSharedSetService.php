@@ -5,7 +5,7 @@ require_once('CampaignSharedSetService.require.php');
 
 /**
  * CampaignSharedSetService
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class CampaignSharedSetService extends AdWordsSoapClient
@@ -25,99 +25,99 @@ class CampaignSharedSetService extends AdWordsSoapClient
      * @access private
      * @var array
      */
-    public static $classmap = array(
-        "AuthenticationError" => "AuthenticationError",
-        "AuthorizationError" => "AuthorizationError",
-        "CampaignSharedSet" => "CampaignSharedSet",
-        "CampaignSharedSetError" => "CampaignSharedSetError",
-        "CampaignSharedSetOperation" => "CampaignSharedSetOperation",
-        "CampaignSharedSetPage" => "CampaignSharedSetPage",
-        "CampaignSharedSetReturnValue" => "CampaignSharedSetReturnValue",
-        "ClientTermsError" => "ClientTermsError",
-        "DateError" => "DateError",
-        "DateRange" => "DateRange",
-        "DistinctError" => "DistinctError",
-        "EntityCountLimitExceeded" => "EntityCountLimitExceeded",
-        "EntityNotFound" => "EntityNotFound",
-        "IdError" => "IdError",
-        "InternalApiError" => "InternalApiError",
-        "ListReturnValue" => "ListReturnValue",
-        "NewEntityCreationError" => "NewEntityCreationError",
-        "NotEmptyError" => "NotEmptyError",
-        "NullError" => "NullError",
-        "NullStatsPage" => "NullStatsPage",
-        "Operation" => "Operation",
-        "OperationAccessDenied" => "OperationAccessDenied",
-        "OperatorError" => "OperatorError",
-        "OrderBy" => "OrderBy",
-        "Page" => "Page",
-        "Paging" => "Paging",
-        "PagingError" => "PagingError",
-        "Predicate" => "Predicate",
-        "QueryError" => "QueryError",
-        "QuotaCheckError" => "QuotaCheckError",
-        "RangeError" => "RangeError",
-        "RateExceededError" => "RateExceededError",
-        "ReadOnlyError" => "ReadOnlyError",
-        "RejectedError" => "RejectedError",
-        "RequestError" => "RequestError",
-        "RequiredError" => "RequiredError",
-        "SelectorError" => "SelectorError",
-        "SizeLimitError" => "SizeLimitError",
-        "SoapHeader" => "SoapRequestHeader",
-        "SoapResponseHeader" => "SoapResponseHeader",
-        "StringLengthError" => "StringLengthError",
-        "DatabaseError" => "DatabaseError",
-        "ApiError" => "ApiError",
-        "ApiException" => "ApiException",
-        "ApplicationException" => "ApplicationException",
-        "Selector" => "Selector",
-        "AuthenticationError.Reason" => "AuthenticationErrorReason",
-        "AuthorizationError.Reason" => "AuthorizationErrorReason",
-        "CampaignSharedSet.Status" => "CampaignSharedSetStatus",
-        "CampaignSharedSetError.Reason" => "CampaignSharedSetErrorReason",
-        "ClientTermsError.Reason" => "ClientTermsErrorReason",
-        "DatabaseError.Reason" => "DatabaseErrorReason",
-        "DateError.Reason" => "DateErrorReason",
-        "DistinctError.Reason" => "DistinctErrorReason",
+    public static $classmap = [
+        "AuthenticationError"             => "AuthenticationError",
+        "AuthorizationError"              => "AuthorizationError",
+        "CampaignSharedSet"               => "CampaignSharedSet",
+        "CampaignSharedSetError"          => "CampaignSharedSetError",
+        "CampaignSharedSetOperation"      => "CampaignSharedSetOperation",
+        "CampaignSharedSetPage"           => "CampaignSharedSetPage",
+        "CampaignSharedSetReturnValue"    => "CampaignSharedSetReturnValue",
+        "ClientTermsError"                => "ClientTermsError",
+        "DateError"                       => "DateError",
+        "DateRange"                       => "DateRange",
+        "DistinctError"                   => "DistinctError",
+        "EntityCountLimitExceeded"        => "EntityCountLimitExceeded",
+        "EntityNotFound"                  => "EntityNotFound",
+        "IdError"                         => "IdError",
+        "InternalApiError"                => "InternalApiError",
+        "ListReturnValue"                 => "ListReturnValue",
+        "NewEntityCreationError"          => "NewEntityCreationError",
+        "NotEmptyError"                   => "NotEmptyError",
+        "NullError"                       => "NullError",
+        "NullStatsPage"                   => "NullStatsPage",
+        "Operation"                       => "Operation",
+        "OperationAccessDenied"           => "OperationAccessDenied",
+        "OperatorError"                   => "OperatorError",
+        "OrderBy"                         => "OrderBy",
+        "Page"                            => "Page",
+        "Paging"                          => "Paging",
+        "PagingError"                     => "PagingError",
+        "Predicate"                       => "Predicate",
+        "QueryError"                      => "QueryError",
+        "QuotaCheckError"                 => "QuotaCheckError",
+        "RangeError"                      => "RangeError",
+        "RateExceededError"               => "RateExceededError",
+        "ReadOnlyError"                   => "ReadOnlyError",
+        "RejectedError"                   => "RejectedError",
+        "RequestError"                    => "RequestError",
+        "RequiredError"                   => "RequiredError",
+        "SelectorError"                   => "SelectorError",
+        "SizeLimitError"                  => "SizeLimitError",
+        "SoapHeader"                      => "SoapRequestHeader",
+        "SoapResponseHeader"              => "SoapResponseHeader",
+        "StringLengthError"               => "StringLengthError",
+        "DatabaseError"                   => "DatabaseError",
+        "ApiError"                        => "ApiError",
+        "ApiException"                    => "ApiException",
+        "ApplicationException"            => "ApplicationException",
+        "Selector"                        => "Selector",
+        "AuthenticationError.Reason"      => "AuthenticationErrorReason",
+        "AuthorizationError.Reason"       => "AuthorizationErrorReason",
+        "CampaignSharedSet.Status"        => "CampaignSharedSetStatus",
+        "CampaignSharedSetError.Reason"   => "CampaignSharedSetErrorReason",
+        "ClientTermsError.Reason"         => "ClientTermsErrorReason",
+        "DatabaseError.Reason"            => "DatabaseErrorReason",
+        "DateError.Reason"                => "DateErrorReason",
+        "DistinctError.Reason"            => "DistinctErrorReason",
         "EntityCountLimitExceeded.Reason" => "EntityCountLimitExceededReason",
-        "EntityNotFound.Reason" => "EntityNotFoundReason",
-        "IdError.Reason" => "IdErrorReason",
-        "InternalApiError.Reason" => "InternalApiErrorReason",
-        "NewEntityCreationError.Reason" => "NewEntityCreationErrorReason",
-        "NotEmptyError.Reason" => "NotEmptyErrorReason",
-        "NullError.Reason" => "NullErrorReason",
-        "OperationAccessDenied.Reason" => "OperationAccessDeniedReason",
-        "Operator" => "Operator",
-        "OperatorError.Reason" => "OperatorErrorReason",
-        "PagingError.Reason" => "PagingErrorReason",
-        "Predicate.Operator" => "PredicateOperator",
-        "QueryError.Reason" => "QueryErrorReason",
-        "QuotaCheckError.Reason" => "QuotaCheckErrorReason",
-        "RangeError.Reason" => "RangeErrorReason",
-        "RateExceededError.Reason" => "RateExceededErrorReason",
-        "ReadOnlyError.Reason" => "ReadOnlyErrorReason",
-        "RejectedError.Reason" => "RejectedErrorReason",
-        "RequestError.Reason" => "RequestErrorReason",
-        "RequiredError.Reason" => "RequiredErrorReason",
-        "SelectorError.Reason" => "SelectorErrorReason",
-        "SharedSetType" => "SharedSetType",
-        "SizeLimitError.Reason" => "SizeLimitErrorReason",
-        "SortOrder" => "SortOrder",
-        "StringLengthError.Reason" => "StringLengthErrorReason",
-        "get" => "CampaignSharedSetServiceGet",
-        "getResponse" => "CampaignSharedSetServiceGetResponse",
-        "mutate" => "CampaignSharedSetServiceMutate",
-        "mutateResponse" => "CampaignSharedSetServiceMutateResponse",
-        "query" => "Query",
-        "queryResponse" => "QueryResponse",
-    );
+        "EntityNotFound.Reason"           => "EntityNotFoundReason",
+        "IdError.Reason"                  => "IdErrorReason",
+        "InternalApiError.Reason"         => "InternalApiErrorReason",
+        "NewEntityCreationError.Reason"   => "NewEntityCreationErrorReason",
+        "NotEmptyError.Reason"            => "NotEmptyErrorReason",
+        "NullError.Reason"                => "NullErrorReason",
+        "OperationAccessDenied.Reason"    => "OperationAccessDeniedReason",
+        "Operator"                        => "Operator",
+        "OperatorError.Reason"            => "OperatorErrorReason",
+        "PagingError.Reason"              => "PagingErrorReason",
+        "Predicate.Operator"              => "PredicateOperator",
+        "QueryError.Reason"               => "QueryErrorReason",
+        "QuotaCheckError.Reason"          => "QuotaCheckErrorReason",
+        "RangeError.Reason"               => "RangeErrorReason",
+        "RateExceededError.Reason"        => "RateExceededErrorReason",
+        "ReadOnlyError.Reason"            => "ReadOnlyErrorReason",
+        "RejectedError.Reason"            => "RejectedErrorReason",
+        "RequestError.Reason"             => "RequestErrorReason",
+        "RequiredError.Reason"            => "RequiredErrorReason",
+        "SelectorError.Reason"            => "SelectorErrorReason",
+        "SharedSetType"                   => "SharedSetType",
+        "SizeLimitError.Reason"           => "SizeLimitErrorReason",
+        "SortOrder"                       => "SortOrder",
+        "StringLengthError.Reason"        => "StringLengthErrorReason",
+        "get"                             => "CampaignSharedSetServiceGet",
+        "getResponse"                     => "CampaignSharedSetServiceGetResponse",
+        "mutate"                          => "CampaignSharedSetServiceMutate",
+        "mutateResponse"                  => "CampaignSharedSetServiceMutateResponse",
+        "query"                           => "Query",
+        "queryResponse"                   => "QueryResponse",
+    ];
 
 
     /**
      * Constructor using wsdl location and options array
-     * @param string $wsdl WSDL location for this service
-     * @param array $options Options for the SoapClient
+     * @param string $wsdl    WSDL location for this service
+     * @param array  $options Options for the SoapClient
      */
     public function __construct($wsdl, $options, $user)
     {
@@ -134,13 +134,13 @@ class CampaignSharedSetService extends AdWordsSoapClient
      * Returns a list of CampaignSharedSets based on the given selector.
      * @param selector the selector specifying the query
      * @return a list of CampaignSharedSet entities that meet the criterion specified
-     * by the selector
+     *                 by the selector
      * @throws ApiException
      */
     public function get($selector)
     {
         $args = new CampaignSharedSetServiceGet($selector);
-        $result = $this->__soapCall("get", array($args));
+        $result = $this->__soapCall("get", [$args]);
         return $result->rval;
     }
 
@@ -161,7 +161,7 @@ class CampaignSharedSetService extends AdWordsSoapClient
     public function mutate($operations)
     {
         $args = new CampaignSharedSetServiceMutate($operations);
-        $result = $this->__soapCall("mutate", array($args));
+        $result = $this->__soapCall("mutate", [$args]);
         return $result->rval;
     }
 
@@ -179,7 +179,7 @@ class CampaignSharedSetService extends AdWordsSoapClient
     public function query($query)
     {
         $args = new Query($query);
-        $result = $this->__soapCall("query", array($args));
+        $result = $this->__soapCall("query", [$args]);
         return $result->rval;
     }
 }

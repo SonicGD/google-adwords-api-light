@@ -3,7 +3,7 @@
 
 /**
  * An error indicating a problem with a reference to a feed attribute in an ad.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class FeedAttributeReferenceError extends ApiError
@@ -48,8 +48,15 @@ class FeedAttributeReferenceError extends ApiError
         return self::XSI_TYPE;
     }
 
-    public function __construct($reason = null, $feedName = null, $feedAttributeName = null, $fieldPath = null, $trigger = null, $errorString = null, $ApiErrorType = null)
-    {
+    public function __construct(
+        $reason = null,
+        $feedName = null,
+        $feedAttributeName = null,
+        $fieldPath = null,
+        $trigger = null,
+        $errorString = null,
+        $ApiErrorType = null
+    ) {
         parent::__construct();
         $this->reason = $reason;
         $this->feedName = $feedName;

@@ -8,7 +8,7 @@
  * {@link ConstantDataService#getOperatingSystemVersionCriterion ConstantDataService}.
  * <p>A criterion of this type can only be created using an ID.
  * <span class="constraint AdxEnabled">This is enabled for AdX.</span>
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class OperatingSystemVersion extends Criterion
@@ -59,8 +59,15 @@ class OperatingSystemVersion extends Criterion
         return self::XSI_TYPE;
     }
 
-    public function __construct($name = null, $osMajorVersion = null, $osMinorVersion = null, $operatorType = null, $id = null, $type = null, $CriterionType = null)
-    {
+    public function __construct(
+        $name = null,
+        $osMajorVersion = null,
+        $osMinorVersion = null,
+        $operatorType = null,
+        $id = null,
+        $type = null,
+        $CriterionType = null
+    ) {
         parent::__construct();
         $this->name = $name;
         $this->osMajorVersion = $osMajorVersion;

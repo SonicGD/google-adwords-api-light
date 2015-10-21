@@ -11,7 +11,7 @@
  * @param serviceSelector the selector specifying the {@link Campaign}s to return.
  * @return A list of campaigns.
  * @throws ApiException if problems occurred while fetching campaign information.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class CampaignServiceGet

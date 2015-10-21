@@ -6,7 +6,7 @@
  * values. The list contains the past 12 {@link MonthlySearchVolume}s
  * (excluding the current month). The first item is the data for the most
  * recent month and the last item is the data for the oldest month.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class MonthlySearchVolumeAttribute extends Attribute

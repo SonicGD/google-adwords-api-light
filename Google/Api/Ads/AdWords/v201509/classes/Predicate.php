@@ -3,7 +3,7 @@
 
 /**
  * Specifies how an entity (eg. adgroup, campaign, criterion, ad) should be filtered.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class Predicate

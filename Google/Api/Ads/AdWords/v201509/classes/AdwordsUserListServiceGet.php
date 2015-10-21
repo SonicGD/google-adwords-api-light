@@ -11,7 +11,7 @@
  * @param serviceSelector the selector specifying the {@link UserList}s to return.
  * @return a list of UserList entities which meet the selector criteria.
  * @throws ApiException if problems occurred while fetching UserList information.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AdwordsUserListServiceGet

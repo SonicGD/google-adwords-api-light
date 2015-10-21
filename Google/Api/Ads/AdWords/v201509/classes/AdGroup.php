@@ -3,7 +3,7 @@
 
 /**
  * Represents an ad group.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AdGroup
@@ -108,8 +108,21 @@ class AdGroup
         return self::XSI_TYPE;
     }
 
-    public function __construct($id = null, $campaignId = null, $campaignName = null, $name = null, $status = null, $settings = null, $experimentData = null, $labels = null, $forwardCompatibilityMap = null, $biddingStrategyConfiguration = null, $contentBidCriterionTypeGroup = null, $trackingUrlTemplate = null, $urlCustomParameters = null)
-    {
+    public function __construct(
+        $id = null,
+        $campaignId = null,
+        $campaignName = null,
+        $name = null,
+        $status = null,
+        $settings = null,
+        $experimentData = null,
+        $labels = null,
+        $forwardCompatibilityMap = null,
+        $biddingStrategyConfiguration = null,
+        $contentBidCriterionTypeGroup = null,
+        $trackingUrlTemplate = null,
+        $urlCustomParameters = null
+    ) {
         $this->id = $id;
         $this->campaignId = $campaignId;
         $this->campaignName = $campaignName;

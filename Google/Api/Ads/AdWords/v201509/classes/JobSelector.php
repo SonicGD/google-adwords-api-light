@@ -4,7 +4,7 @@
 /**
  * For selecting jobs whose information will be returned from a get method call
  * of a job service.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class JobSelector
@@ -30,13 +30,13 @@ class JobSelector
      * @var string
      */
     public $JobSelectorType;
-    private $_parameterMap = array(
+    private $_parameterMap = [
         "JobSelector.Type" => "JobSelectorType",
-    );
+    ];
 
     /**
      * Provided for setting non-php-standard named variables
-     * @param $var Variable name to set
+     * @param $var   Variable name to set
      * @param $value Value to set
      */
     public function __set($var, $value)

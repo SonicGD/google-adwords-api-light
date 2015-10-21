@@ -6,7 +6,7 @@
  * <p class="note"><b>Note:</b> The <code>REMOVE</code> operator is not
  * supported. To remove a campaign, set its {@link Campaign#status status}
  * to {@code REMOVED}.</p>
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class CampaignOperation extends Operation

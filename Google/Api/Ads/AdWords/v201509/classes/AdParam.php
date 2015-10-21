@@ -15,7 +15,7 @@
  * <li><code>criterionId</code></li>
  * <li><code>paramIndex</code></li>
  * </ul>
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AdParam

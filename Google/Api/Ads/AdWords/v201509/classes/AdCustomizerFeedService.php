@@ -5,7 +5,7 @@ require_once('AdCustomizerFeedService.require.php');
 
 /**
  * AdCustomizerFeedService
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AdCustomizerFeedService extends AdWordsSoapClient
@@ -25,92 +25,92 @@ class AdCustomizerFeedService extends AdWordsSoapClient
      * @access private
      * @var array
      */
-    public static $classmap = array(
-        "AdCustomizerFeedAttribute" => "AdCustomizerFeedAttribute",
-        "AdCustomizerFeedError" => "AdCustomizerFeedError",
-        "AuthenticationError" => "AuthenticationError",
-        "AuthorizationError" => "AuthorizationError",
-        "ClientTermsError" => "ClientTermsError",
-        "Date" => "Date",
-        "DateRange" => "DateRange",
-        "DistinctError" => "DistinctError",
-        "EntityCountLimitExceeded" => "EntityCountLimitExceeded",
-        "EntityNotFound" => "EntityNotFound",
-        "FeedError" => "FeedError",
-        "IdError" => "IdError",
-        "InternalApiError" => "InternalApiError",
-        "NewEntityCreationError" => "NewEntityCreationError",
-        "NotEmptyError" => "NotEmptyError",
-        "NullError" => "NullError",
-        "OperationAccessDenied" => "OperationAccessDenied",
-        "OrderBy" => "OrderBy",
-        "Paging" => "Paging",
-        "Predicate" => "Predicate",
-        "QuotaCheckError" => "QuotaCheckError",
-        "RangeError" => "RangeError",
-        "RateExceededError" => "RateExceededError",
-        "ReadOnlyError" => "ReadOnlyError",
-        "RejectedError" => "RejectedError",
-        "RequestError" => "RequestError",
-        "RequiredError" => "RequiredError",
-        "SelectorError" => "SelectorError",
-        "SizeLimitError" => "SizeLimitError",
-        "SoapHeader" => "SoapRequestHeader",
-        "SoapResponseHeader" => "SoapResponseHeader",
-        "StringLengthError" => "StringLengthError",
-        "AdCustomizerFeed" => "AdCustomizerFeed",
-        "AdCustomizerFeedOperation" => "AdCustomizerFeedOperation",
-        "AdCustomizerFeedPage" => "AdCustomizerFeedPage",
-        "AdCustomizerFeedReturnValue" => "AdCustomizerFeedReturnValue",
-        "DatabaseError" => "DatabaseError",
-        "ListReturnValue" => "ListReturnValue",
-        "Operation" => "Operation",
-        "Page" => "Page",
-        "ApiError" => "ApiError",
-        "ApiException" => "ApiException",
-        "ApplicationException" => "ApplicationException",
-        "Selector" => "Selector",
-        "AdCustomizerFeedAttribute.Type" => "AdCustomizerFeedAttributeType",
-        "AdCustomizerFeedError.Reason" => "AdCustomizerFeedErrorReason",
-        "AuthenticationError.Reason" => "AuthenticationErrorReason",
-        "AuthorizationError.Reason" => "AuthorizationErrorReason",
-        "ClientTermsError.Reason" => "ClientTermsErrorReason",
-        "DatabaseError.Reason" => "DatabaseErrorReason",
-        "DistinctError.Reason" => "DistinctErrorReason",
+    public static $classmap = [
+        "AdCustomizerFeedAttribute"       => "AdCustomizerFeedAttribute",
+        "AdCustomizerFeedError"           => "AdCustomizerFeedError",
+        "AuthenticationError"             => "AuthenticationError",
+        "AuthorizationError"              => "AuthorizationError",
+        "ClientTermsError"                => "ClientTermsError",
+        "Date"                            => "Date",
+        "DateRange"                       => "DateRange",
+        "DistinctError"                   => "DistinctError",
+        "EntityCountLimitExceeded"        => "EntityCountLimitExceeded",
+        "EntityNotFound"                  => "EntityNotFound",
+        "FeedError"                       => "FeedError",
+        "IdError"                         => "IdError",
+        "InternalApiError"                => "InternalApiError",
+        "NewEntityCreationError"          => "NewEntityCreationError",
+        "NotEmptyError"                   => "NotEmptyError",
+        "NullError"                       => "NullError",
+        "OperationAccessDenied"           => "OperationAccessDenied",
+        "OrderBy"                         => "OrderBy",
+        "Paging"                          => "Paging",
+        "Predicate"                       => "Predicate",
+        "QuotaCheckError"                 => "QuotaCheckError",
+        "RangeError"                      => "RangeError",
+        "RateExceededError"               => "RateExceededError",
+        "ReadOnlyError"                   => "ReadOnlyError",
+        "RejectedError"                   => "RejectedError",
+        "RequestError"                    => "RequestError",
+        "RequiredError"                   => "RequiredError",
+        "SelectorError"                   => "SelectorError",
+        "SizeLimitError"                  => "SizeLimitError",
+        "SoapHeader"                      => "SoapRequestHeader",
+        "SoapResponseHeader"              => "SoapResponseHeader",
+        "StringLengthError"               => "StringLengthError",
+        "AdCustomizerFeed"                => "AdCustomizerFeed",
+        "AdCustomizerFeedOperation"       => "AdCustomizerFeedOperation",
+        "AdCustomizerFeedPage"            => "AdCustomizerFeedPage",
+        "AdCustomizerFeedReturnValue"     => "AdCustomizerFeedReturnValue",
+        "DatabaseError"                   => "DatabaseError",
+        "ListReturnValue"                 => "ListReturnValue",
+        "Operation"                       => "Operation",
+        "Page"                            => "Page",
+        "ApiError"                        => "ApiError",
+        "ApiException"                    => "ApiException",
+        "ApplicationException"            => "ApplicationException",
+        "Selector"                        => "Selector",
+        "AdCustomizerFeedAttribute.Type"  => "AdCustomizerFeedAttributeType",
+        "AdCustomizerFeedError.Reason"    => "AdCustomizerFeedErrorReason",
+        "AuthenticationError.Reason"      => "AuthenticationErrorReason",
+        "AuthorizationError.Reason"       => "AuthorizationErrorReason",
+        "ClientTermsError.Reason"         => "ClientTermsErrorReason",
+        "DatabaseError.Reason"            => "DatabaseErrorReason",
+        "DistinctError.Reason"            => "DistinctErrorReason",
         "EntityCountLimitExceeded.Reason" => "EntityCountLimitExceededReason",
-        "EntityNotFound.Reason" => "EntityNotFoundReason",
-        "Feed.Status" => "FeedStatus",
-        "FeedError.Reason" => "FeedErrorReason",
-        "IdError.Reason" => "IdErrorReason",
-        "InternalApiError.Reason" => "InternalApiErrorReason",
-        "NewEntityCreationError.Reason" => "NewEntityCreationErrorReason",
-        "NotEmptyError.Reason" => "NotEmptyErrorReason",
-        "NullError.Reason" => "NullErrorReason",
-        "OperationAccessDenied.Reason" => "OperationAccessDeniedReason",
-        "Operator" => "Operator",
-        "Predicate.Operator" => "PredicateOperator",
-        "QuotaCheckError.Reason" => "QuotaCheckErrorReason",
-        "RangeError.Reason" => "RangeErrorReason",
-        "RateExceededError.Reason" => "RateExceededErrorReason",
-        "ReadOnlyError.Reason" => "ReadOnlyErrorReason",
-        "RejectedError.Reason" => "RejectedErrorReason",
-        "RequestError.Reason" => "RequestErrorReason",
-        "RequiredError.Reason" => "RequiredErrorReason",
-        "SelectorError.Reason" => "SelectorErrorReason",
-        "SizeLimitError.Reason" => "SizeLimitErrorReason",
-        "SortOrder" => "SortOrder",
-        "StringLengthError.Reason" => "StringLengthErrorReason",
-        "get" => "AdCustomizerFeedServiceGet",
-        "getResponse" => "AdCustomizerFeedServiceGetResponse",
-        "mutate" => "AdCustomizerFeedServiceMutate",
-        "mutateResponse" => "AdCustomizerFeedServiceMutateResponse",
-    );
+        "EntityNotFound.Reason"           => "EntityNotFoundReason",
+        "Feed.Status"                     => "FeedStatus",
+        "FeedError.Reason"                => "FeedErrorReason",
+        "IdError.Reason"                  => "IdErrorReason",
+        "InternalApiError.Reason"         => "InternalApiErrorReason",
+        "NewEntityCreationError.Reason"   => "NewEntityCreationErrorReason",
+        "NotEmptyError.Reason"            => "NotEmptyErrorReason",
+        "NullError.Reason"                => "NullErrorReason",
+        "OperationAccessDenied.Reason"    => "OperationAccessDeniedReason",
+        "Operator"                        => "Operator",
+        "Predicate.Operator"              => "PredicateOperator",
+        "QuotaCheckError.Reason"          => "QuotaCheckErrorReason",
+        "RangeError.Reason"               => "RangeErrorReason",
+        "RateExceededError.Reason"        => "RateExceededErrorReason",
+        "ReadOnlyError.Reason"            => "ReadOnlyErrorReason",
+        "RejectedError.Reason"            => "RejectedErrorReason",
+        "RequestError.Reason"             => "RequestErrorReason",
+        "RequiredError.Reason"            => "RequiredErrorReason",
+        "SelectorError.Reason"            => "SelectorErrorReason",
+        "SizeLimitError.Reason"           => "SizeLimitErrorReason",
+        "SortOrder"                       => "SortOrder",
+        "StringLengthError.Reason"        => "StringLengthErrorReason",
+        "get"                             => "AdCustomizerFeedServiceGet",
+        "getResponse"                     => "AdCustomizerFeedServiceGetResponse",
+        "mutate"                          => "AdCustomizerFeedServiceMutate",
+        "mutateResponse"                  => "AdCustomizerFeedServiceMutateResponse",
+    ];
 
 
     /**
      * Constructor using wsdl location and options array
-     * @param string $wsdl WSDL location for this service
-     * @param array $options Options for the SoapClient
+     * @param string $wsdl    WSDL location for this service
+     * @param array  $options Options for the SoapClient
      */
     public function __construct($wsdl, $options, $user)
     {
@@ -127,14 +127,14 @@ class AdCustomizerFeedService extends AdWordsSoapClient
      * Returns a list of AdCustomizerFeeds that meet the selector criteria.
      *
      * @param selector Determines which AdCustomizerFeeds to return. If empty, all AdCustomizerFeeds
-     * are returned.
+     *                 are returned.
      * @return The list of AdCustomizerFeeds.
      * @throws ApiException Indicates a problem with the request.
      */
     public function get($selector)
     {
         $args = new AdCustomizerFeedServiceGet($selector);
-        $result = $this->__soapCall("get", array($args));
+        $result = $this->__soapCall("get", [$args]);
         return $result->rval;
     }
 
@@ -154,7 +154,7 @@ class AdCustomizerFeedService extends AdWordsSoapClient
     public function mutate($operations)
     {
         $args = new AdCustomizerFeedServiceMutate($operations);
-        $result = $this->__soapCall("mutate", array($args));
+        $result = $this->__soapCall("mutate", [$args]);
         return $result->rval;
     }
 }

@@ -3,7 +3,7 @@
 
 /**
  * Statistics on the progress of a {@code BatchJob}.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class ProgressStats
@@ -54,8 +54,12 @@ class ProgressStats
         return self::XSI_TYPE;
     }
 
-    public function __construct($numOperationsExecuted = null, $numOperationsSucceeded = null, $estimatedPercentExecuted = null, $numResultsWritten = null)
-    {
+    public function __construct(
+        $numOperationsExecuted = null,
+        $numOperationsSucceeded = null,
+        $estimatedPercentExecuted = null,
+        $numResultsWritten = null
+    ) {
         $this->numOperationsExecuted = $numOperationsExecuted;
         $this->numOperationsSucceeded = $numOperationsSucceeded;
         $this->estimatedPercentExecuted = $estimatedPercentExecuted;

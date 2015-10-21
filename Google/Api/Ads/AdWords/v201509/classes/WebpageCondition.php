@@ -8,7 +8,7 @@
  * where {@code operand} is one of the values enumerated in
  * {@link WebpageConditionOperand}, and, based on this value,
  * {@code OP} is either of {@code EQUALS} or {@code CONTAINS}.</p>
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class WebpageCondition

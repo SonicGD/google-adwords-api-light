@@ -5,7 +5,7 @@ require_once('AdwordsUserListService.require.php');
 
 /**
  * AdwordsUserListService
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AdwordsUserListService extends AdWordsSoapClient
@@ -25,123 +25,123 @@ class AdwordsUserListService extends AdWordsSoapClient
      * @access private
      * @var array
      */
-    public static $classmap = array(
-        "AuthenticationError" => "AuthenticationError",
-        "AuthorizationError" => "AuthorizationError",
-        "DateError" => "DateError",
-        "DateRange" => "DateRange",
-        "DistinctError" => "DistinctError",
-        "EntityNotFound" => "EntityNotFound",
-        "InternalApiError" => "InternalApiError",
-        "NotEmptyError" => "NotEmptyError",
-        "NotWhitelistedError" => "NotWhitelistedError",
-        "NullError" => "NullError",
-        "OperationAccessDenied" => "OperationAccessDenied",
-        "OperatorError" => "OperatorError",
-        "OrderBy" => "OrderBy",
-        "Paging" => "Paging",
-        "Predicate" => "Predicate",
-        "QuotaCheckError" => "QuotaCheckError",
-        "RangeError" => "RangeError",
-        "RateExceededError" => "RateExceededError",
-        "ReadOnlyError" => "ReadOnlyError",
-        "RejectedError" => "RejectedError",
-        "RequiredError" => "RequiredError",
-        "SelectorError" => "SelectorError",
-        "SizeLimitError" => "SizeLimitError",
-        "SoapHeader" => "SoapRequestHeader",
-        "SoapResponseHeader" => "SoapResponseHeader",
-        "StringFormatError" => "StringFormatError",
-        "StringLengthError" => "StringLengthError",
-        "DatabaseError" => "DatabaseError",
-        "ApiError" => "ApiError",
-        "ApiException" => "ApiException",
-        "ApplicationException" => "ApplicationException",
-        "Selector" => "Selector",
-        "ListReturnValue" => "ListReturnValue",
-        "Operation" => "Operation",
-        "Page" => "Page",
-        "AuthenticationError.Reason" => "AuthenticationErrorReason",
-        "AuthorizationError.Reason" => "AuthorizationErrorReason",
-        "DatabaseError.Reason" => "DatabaseErrorReason",
-        "DateError.Reason" => "DateErrorReason",
-        "DistinctError.Reason" => "DistinctErrorReason",
-        "EntityNotFound.Reason" => "EntityNotFoundReason",
-        "InternalApiError.Reason" => "InternalApiErrorReason",
-        "NotEmptyError.Reason" => "NotEmptyErrorReason",
-        "NotWhitelistedError.Reason" => "NotWhitelistedErrorReason",
-        "NullError.Reason" => "NullErrorReason",
-        "OperationAccessDenied.Reason" => "OperationAccessDeniedReason",
-        "Operator" => "Operator",
-        "OperatorError.Reason" => "OperatorErrorReason",
-        "Predicate.Operator" => "PredicateOperator",
-        "QuotaCheckError.Reason" => "QuotaCheckErrorReason",
-        "RangeError.Reason" => "RangeErrorReason",
-        "RateExceededError.Reason" => "RateExceededErrorReason",
-        "ReadOnlyError.Reason" => "ReadOnlyErrorReason",
-        "RejectedError.Reason" => "RejectedErrorReason",
-        "RequiredError.Reason" => "RequiredErrorReason",
-        "SelectorError.Reason" => "SelectorErrorReason",
-        "SizeLimitError.Reason" => "SizeLimitErrorReason",
-        "SortOrder" => "SortOrder",
-        "StringFormatError.Reason" => "StringFormatErrorReason",
-        "StringLengthError.Reason" => "StringLengthErrorReason",
-        "CollectionSizeError" => "CollectionSizeError",
-        "UserListConversionType" => "UserListConversionType",
-        "CrmBasedUserList" => "CrmBasedUserList",
-        "DateKey" => "DateKey",
-        "DateRuleItem" => "DateRuleItem",
-        "DateSpecificRuleUserList" => "DateSpecificRuleUserList",
-        "ExpressionRuleUserList" => "ExpressionRuleUserList",
-        "LogicalUserList" => "LogicalUserList",
-        "LogicalUserListOperand" => "LogicalUserListOperand",
-        "MutateMembersError" => "MutateMembersError",
-        "MutateMembersOperand" => "MutateMembersOperand",
-        "MutateMembersOperation" => "MutateMembersOperation",
-        "MutateMembersReturnValue" => "MutateMembersReturnValue",
-        "NumberKey" => "NumberKey",
-        "NumberRuleItem" => "NumberRuleItem",
-        "BasicUserList" => "BasicUserList",
-        "Rule" => "Rule",
-        "RuleBasedUserList" => "RuleBasedUserList",
-        "RuleItem" => "RuleItem",
-        "RuleItemGroup" => "RuleItemGroup",
-        "SimilarUserList" => "SimilarUserList",
-        "StringKey" => "StringKey",
-        "StringRuleItem" => "StringRuleItem",
-        "UserList" => "UserList",
-        "UserListError" => "UserListError",
-        "UserListLogicalRule" => "UserListLogicalRule",
-        "UserListOperation" => "UserListOperation",
-        "UserListPage" => "UserListPage",
-        "UserListReturnValue" => "UserListReturnValue",
-        "AccessReason" => "AccessReason",
-        "AccountUserListStatus" => "AccountUserListStatus",
-        "CollectionSizeError.Reason" => "CollectionSizeErrorReason",
+    public static $classmap = [
+        "AuthenticationError"             => "AuthenticationError",
+        "AuthorizationError"              => "AuthorizationError",
+        "DateError"                       => "DateError",
+        "DateRange"                       => "DateRange",
+        "DistinctError"                   => "DistinctError",
+        "EntityNotFound"                  => "EntityNotFound",
+        "InternalApiError"                => "InternalApiError",
+        "NotEmptyError"                   => "NotEmptyError",
+        "NotWhitelistedError"             => "NotWhitelistedError",
+        "NullError"                       => "NullError",
+        "OperationAccessDenied"           => "OperationAccessDenied",
+        "OperatorError"                   => "OperatorError",
+        "OrderBy"                         => "OrderBy",
+        "Paging"                          => "Paging",
+        "Predicate"                       => "Predicate",
+        "QuotaCheckError"                 => "QuotaCheckError",
+        "RangeError"                      => "RangeError",
+        "RateExceededError"               => "RateExceededError",
+        "ReadOnlyError"                   => "ReadOnlyError",
+        "RejectedError"                   => "RejectedError",
+        "RequiredError"                   => "RequiredError",
+        "SelectorError"                   => "SelectorError",
+        "SizeLimitError"                  => "SizeLimitError",
+        "SoapHeader"                      => "SoapRequestHeader",
+        "SoapResponseHeader"              => "SoapResponseHeader",
+        "StringFormatError"               => "StringFormatError",
+        "StringLengthError"               => "StringLengthError",
+        "DatabaseError"                   => "DatabaseError",
+        "ApiError"                        => "ApiError",
+        "ApiException"                    => "ApiException",
+        "ApplicationException"            => "ApplicationException",
+        "Selector"                        => "Selector",
+        "ListReturnValue"                 => "ListReturnValue",
+        "Operation"                       => "Operation",
+        "Page"                            => "Page",
+        "AuthenticationError.Reason"      => "AuthenticationErrorReason",
+        "AuthorizationError.Reason"       => "AuthorizationErrorReason",
+        "DatabaseError.Reason"            => "DatabaseErrorReason",
+        "DateError.Reason"                => "DateErrorReason",
+        "DistinctError.Reason"            => "DistinctErrorReason",
+        "EntityNotFound.Reason"           => "EntityNotFoundReason",
+        "InternalApiError.Reason"         => "InternalApiErrorReason",
+        "NotEmptyError.Reason"            => "NotEmptyErrorReason",
+        "NotWhitelistedError.Reason"      => "NotWhitelistedErrorReason",
+        "NullError.Reason"                => "NullErrorReason",
+        "OperationAccessDenied.Reason"    => "OperationAccessDeniedReason",
+        "Operator"                        => "Operator",
+        "OperatorError.Reason"            => "OperatorErrorReason",
+        "Predicate.Operator"              => "PredicateOperator",
+        "QuotaCheckError.Reason"          => "QuotaCheckErrorReason",
+        "RangeError.Reason"               => "RangeErrorReason",
+        "RateExceededError.Reason"        => "RateExceededErrorReason",
+        "ReadOnlyError.Reason"            => "ReadOnlyErrorReason",
+        "RejectedError.Reason"            => "RejectedErrorReason",
+        "RequiredError.Reason"            => "RequiredErrorReason",
+        "SelectorError.Reason"            => "SelectorErrorReason",
+        "SizeLimitError.Reason"           => "SizeLimitErrorReason",
+        "SortOrder"                       => "SortOrder",
+        "StringFormatError.Reason"        => "StringFormatErrorReason",
+        "StringLengthError.Reason"        => "StringLengthErrorReason",
+        "CollectionSizeError"             => "CollectionSizeError",
+        "UserListConversionType"          => "UserListConversionType",
+        "CrmBasedUserList"                => "CrmBasedUserList",
+        "DateKey"                         => "DateKey",
+        "DateRuleItem"                    => "DateRuleItem",
+        "DateSpecificRuleUserList"        => "DateSpecificRuleUserList",
+        "ExpressionRuleUserList"          => "ExpressionRuleUserList",
+        "LogicalUserList"                 => "LogicalUserList",
+        "LogicalUserListOperand"          => "LogicalUserListOperand",
+        "MutateMembersError"              => "MutateMembersError",
+        "MutateMembersOperand"            => "MutateMembersOperand",
+        "MutateMembersOperation"          => "MutateMembersOperation",
+        "MutateMembersReturnValue"        => "MutateMembersReturnValue",
+        "NumberKey"                       => "NumberKey",
+        "NumberRuleItem"                  => "NumberRuleItem",
+        "BasicUserList"                   => "BasicUserList",
+        "Rule"                            => "Rule",
+        "RuleBasedUserList"               => "RuleBasedUserList",
+        "RuleItem"                        => "RuleItem",
+        "RuleItemGroup"                   => "RuleItemGroup",
+        "SimilarUserList"                 => "SimilarUserList",
+        "StringKey"                       => "StringKey",
+        "StringRuleItem"                  => "StringRuleItem",
+        "UserList"                        => "UserList",
+        "UserListError"                   => "UserListError",
+        "UserListLogicalRule"             => "UserListLogicalRule",
+        "UserListOperation"               => "UserListOperation",
+        "UserListPage"                    => "UserListPage",
+        "UserListReturnValue"             => "UserListReturnValue",
+        "AccessReason"                    => "AccessReason",
+        "AccountUserListStatus"           => "AccountUserListStatus",
+        "CollectionSizeError.Reason"      => "CollectionSizeErrorReason",
         "UserListConversionType.Category" => "UserListConversionTypeCategory",
-        "DateRuleItem.DateOperator" => "DateRuleItemDateOperator",
-        "MutateMembersError.Reason" => "MutateMembersErrorReason",
-        "MutateMembersOperand.DataType" => "MutateMembersOperandDataType",
-        "NumberRuleItem.NumberOperator" => "NumberRuleItemNumberOperator",
-        "SizeRange" => "SizeRange",
-        "StringRuleItem.StringOperator" => "StringRuleItemStringOperator",
-        "UserListError.Reason" => "UserListErrorReason",
-        "UserListLogicalRule.Operator" => "UserListLogicalRuleOperator",
-        "UserListMembershipStatus" => "UserListMembershipStatus",
-        "UserListType" => "UserListType",
-        "get" => "AdwordsUserListServiceGet",
-        "getResponse" => "AdwordsUserListServiceGetResponse",
-        "mutate" => "AdwordsUserListServiceMutate",
-        "mutateResponse" => "AdwordsUserListServiceMutateResponse",
-        "mutateMembers" => "MutateMembers",
-        "mutateMembersResponse" => "MutateMembersResponse",
-    );
+        "DateRuleItem.DateOperator"       => "DateRuleItemDateOperator",
+        "MutateMembersError.Reason"       => "MutateMembersErrorReason",
+        "MutateMembersOperand.DataType"   => "MutateMembersOperandDataType",
+        "NumberRuleItem.NumberOperator"   => "NumberRuleItemNumberOperator",
+        "SizeRange"                       => "SizeRange",
+        "StringRuleItem.StringOperator"   => "StringRuleItemStringOperator",
+        "UserListError.Reason"            => "UserListErrorReason",
+        "UserListLogicalRule.Operator"    => "UserListLogicalRuleOperator",
+        "UserListMembershipStatus"        => "UserListMembershipStatus",
+        "UserListType"                    => "UserListType",
+        "get"                             => "AdwordsUserListServiceGet",
+        "getResponse"                     => "AdwordsUserListServiceGetResponse",
+        "mutate"                          => "AdwordsUserListServiceMutate",
+        "mutateResponse"                  => "AdwordsUserListServiceMutateResponse",
+        "mutateMembers"                   => "MutateMembers",
+        "mutateMembersResponse"           => "MutateMembersResponse",
+    ];
 
 
     /**
      * Constructor using wsdl location and options array
-     * @param string $wsdl WSDL location for this service
-     * @param array $options Options for the SoapClient
+     * @param string $wsdl    WSDL location for this service
+     * @param array  $options Options for the SoapClient
      */
     public function __construct($wsdl, $options, $user)
     {
@@ -164,7 +164,7 @@ class AdwordsUserListService extends AdWordsSoapClient
     public function get($serviceSelector)
     {
         $args = new AdwordsUserListServiceGet($serviceSelector);
-        $result = $this->__soapCall("get", array($args));
+        $result = $this->__soapCall("get", [$args]);
         return $result->rval;
     }
 
@@ -188,7 +188,7 @@ class AdwordsUserListService extends AdWordsSoapClient
     public function mutate($operations)
     {
         $args = new AdwordsUserListServiceMutate($operations);
-        $result = $this->__soapCall("mutate", array($args));
+        $result = $this->__soapCall("mutate", [$args]);
         return $result->rval;
     }
 
@@ -211,7 +211,7 @@ class AdwordsUserListService extends AdWordsSoapClient
     public function mutateMembers($operations)
     {
         $args = new MutateMembers($operations);
-        $result = $this->__soapCall("mutateMembers", array($args));
+        $result = $this->__soapCall("mutateMembers", [$args]);
         return $result->rval;
     }
 }

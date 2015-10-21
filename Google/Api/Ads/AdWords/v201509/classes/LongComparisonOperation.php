@@ -7,7 +7,7 @@
  * {@link com.google.ads.api.services.targetingideas.search.SearchParameter} to
  * specify the valid values requested for the specific
  * {@link com.google.ads.api.services.common.optimization.attributes.Attribute}.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class LongComparisonOperation

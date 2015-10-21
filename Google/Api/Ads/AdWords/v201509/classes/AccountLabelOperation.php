@@ -3,7 +3,7 @@
 
 /**
  * Operation for adding, updating, or deleting a label.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AccountLabelOperation extends Operation

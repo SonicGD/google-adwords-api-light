@@ -5,7 +5,7 @@
  * Indicates that this instance is a subtype of ApiError.
  * Although this field is returned in the response, it is ignored on input
  * and cannot be selected. Specify xsi:type instead.
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class DateTimeRange

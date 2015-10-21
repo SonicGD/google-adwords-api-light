@@ -37,5 +37,7 @@
       "Google/Api/Ads/Common/Util"
     ]
   },
-  "include-path": ["/"]
+  "include-path": [
+    "/"
+  ]
 }

@@ -4,7 +4,7 @@
 /**
  * Data associated with an advertiser experiment for this adgroup.
  * <span class="constraint AdxEnabled">This is disabled for AdX.</span>
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AdGroupExperimentData
@@ -55,8 +55,12 @@ class AdGroupExperimentData
         return self::XSI_TYPE;
     }
 
-    public function __construct($experimentId = null, $experimentDeltaStatus = null, $experimentDataStatus = null, $experimentBidMultipliers = null)
-    {
+    public function __construct(
+        $experimentId = null,
+        $experimentDeltaStatus = null,
+        $experimentDataStatus = null,
+        $experimentBidMultipliers = null
+    ) {
         $this->experimentId = $experimentId;
         $this->experimentDeltaStatus = $experimentDeltaStatus;
         $this->experimentDataStatus = $experimentDataStatus;

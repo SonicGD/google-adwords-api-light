@@ -11,7 +11,7 @@
  * @param serviceSelector filters the adgroup criteria to be returned.
  * @return a page (subset) view of the criteria selected
  * @throws ApiException when there is at least one error with the request
- * @package Google_Api_Ads_AdWords_v201509
+ * @package    Google_Api_Ads_AdWords_v201509
  * @subpackage v201509
  */
 class AdGroupCriterionServiceGet

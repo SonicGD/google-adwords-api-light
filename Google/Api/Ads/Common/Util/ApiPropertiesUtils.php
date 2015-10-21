@@ -21,12 +21,11 @@
  * @category   WebServices
  * @license    http://www.apache.org/licenses/LICENSE-2.0 Apache License,
  *             Version 2.0
- * @author     Vincent Tsao
  */
 
 /**
  * A collection of utility methods for reading API property files.
- * @package    GoogleApiAdsCommon
+ * @package GoogleApiAdsCommon
  * @subpackage Util
  */
 class ApiPropertiesUtils

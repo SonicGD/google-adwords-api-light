@@ -26,15 +26,13 @@
  * @copyright  2011, Google Inc. All Rights Reserved.
  * @license    http://www.apache.org/licenses/LICENSE-2.0 Apache License,
  *             Version 2.0
- * @author     Eric Koleda
- * @author     Vincent Tsao
  */
 
 /**
  * A collection of utility methods for working with choices. Choices are
  * objects which contain many fields, but any time only one of which will
  * contain a value.
- * @package    GoogleApiAdsCommon
+ * @package GoogleApiAdsCommon
  * @subpackage Util
  */
 class ChoiceUtils

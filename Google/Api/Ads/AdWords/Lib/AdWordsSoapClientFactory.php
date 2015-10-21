@@ -24,7 +24,6 @@
  * @copyright  2011, Google Inc. All Rights Reserved.
  * @license    http://www.apache.org/licenses/LICENSE-2.0 Apache License,
  *             Version 2.0
- * @author     Adam Rogal
  * @see        SoapClientFactory
  */
 require_once dirname(__FILE__) . '/../../Common/Lib/AdsUser.php';
@@ -32,7 +31,7 @@ require_once dirname(__FILE__) . '/../../Common/Lib/SoapClientFactory.php';
 
 /**
  * Factory class for SOAP clients for the AdWords API.
- * @package    GoogleApiAdsAdWords
+ * @package GoogleApiAdsAdWords
  * @subpackage Lib
  */
 class AdWordsSoapClientFactory extends SoapClientFactory
@@ -40,26 +39,22 @@ class AdWordsSoapClientFactory extends SoapClientFactory
 
     /**
      * The constructor for the AdWords API SOAP client factory.
-     * @param AdsUser $user           the user which the client will use for credentials
-     * @param string  $version        the version to generate clients for
-     * @param string  $server         the server to generate clients for
-     * @param bool    $validateOnly   if the clients should be created in validateOnly
-     *                                mode
-     * @param bool    $partialFailure if the service should be created in
-     *                                partialFailure mode
+     * @param AdsUser $user the user which the client will use for credentials
+     * @param string $version the version to generate clients for
+     * @param string $server the server to generate clients for
+     * @param bool $validateOnly if the clients should be created in validateOnly
+     *     mode
+     * @param bool $partialFailure if the service should be created in
+     *     partialFailure mode
      */
-    public function __construct(
-        AdsUser $user,
-        $version,
-        $server,
-        $validateOnly,
-        $partialFailure
-    ) {
+    public function __construct(AdsUser $user, $version, $server, $validateOnly,
+                                $partialFailure)
+    {
         if ($version >= 'v201109' && $user->GetHeaderValue('clientEmail') != null) {
             throw new Exception('The header "clientEmail" is not compatible with '
                 . 'versions v201109 and later. Use clientCustomerId instead.');
         }
-        $headerOverrides = [];
+        $headerOverrides = array();
         if (isset($validateOnly) || isset($partialFailure)) {
             $headerOverrides['validateOnly'] = $validateOnly;
             $headerOverrides['partialFailure'] = $partialFailure;
@@ -73,13 +68,8 @@ class AdWordsSoapClientFactory extends SoapClientFactory
      */
     public function DoRequireOnce($serviceName)
     {
-        require_once implode("/", [
-            dirname(__FILE__),
-            '..',
-            $this->GetVersion(),
-            'classes',
-            $serviceName . '.php'
-        ]);
+        require_once implode("/", array(dirname(__FILE__), '..',
+            $this->GetVersion(), 'classes', $serviceName . '.php'));
     }
 }
 

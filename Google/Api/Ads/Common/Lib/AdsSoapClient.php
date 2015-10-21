@@ -26,7 +26,6 @@
  * @copyright  2011, Google Inc. All Rights Reserved.
  * @license    http://www.apache.org/licenses/LICENSE-2.0 Apache License,
  *             Version 2.0
- * @author     Vincent Tsao
  */
 require_once 'Google/Api/Ads/Common/Lib/AdsUser.php';
 require_once 'Google/Api/Ads/Common/Util/Logger.php';
@@ -39,7 +38,7 @@ require_once 'Google/Api/Ads/Common/Util/DeprecationUtils.php';
  * An extension of the {@link SoapClient} class intended to prepare
  * the XML before making a request as well as perform any book-keeping on
  * the response.
- * @package    GoogleApiAdsCommon
+ * @package GoogleApiAdsCommon
  * @subpackage Lib
  */
 abstract class AdsSoapClient extends SoapClient
@@ -138,21 +137,17 @@ abstract class AdsSoapClient extends SoapClient
 
     /**
      * The constructor intended to be called by all sub-classes.
-     * @param string  $wsdl             URI of the WSDL file or null if working in non-WSDL
-     *                                  mode
-     * @param array   $options          the SOAP client options
-     * @param AdsUser $user             the user which is responsible for this client
-     * @param string  $serviceName      the name of the service which is making this
-     *                                  call
-     * @param string  $serviceNamespace the namespace of the service
+     * @param string $wsdl URI of the WSDL file or null if working in non-WSDL
+     *     mode
+     * @param array $options the SOAP client options
+     * @param AdsUser $user the user which is responsible for this client
+     * @param string $serviceName the name of the service which is making this
+     *     call
+     * @param string $serviceNamespace the namespace of the service
      */
-    public function __construct(
-        $wsdl,
-        array $options,
-        AdsUser $user,
-        $serviceName,
-        $serviceNamespace
-    ) {
+    protected function __construct($wsdl, array $options, AdsUser $user,
+                                   $serviceName, $serviceNamespace)
+    {
         $this->user = $user;
         $this->serviceName = $serviceName;
         $this->serviceNamespace = $serviceNamespace;
@@ -164,10 +159,10 @@ abstract class AdsSoapClient extends SoapClient
     /**
      * Overrides the method SoapClient.__doRequest() to
      * perform a clean up of the request XML before marshalling.
-     * @param string $request  the request XML
+     * @param string $request the request XML
      * @param string $location the URL to request
-     * @param string $action   the SOAP action
-     * @param string $version  the SOAP version
+     * @param string $action the SOAP action
+     * @param string $version the SOAP version
      * @return string the XML SOAP response
      */
     function __doRequest($request, $location, $action, $version, $one_way = 0)
@@ -189,21 +184,17 @@ abstract class AdsSoapClient extends SoapClient
     /**
      * Overrides the method SoapClient.__soapCall() to process the
      * response from the SOAP call.
-     * @param string $function_name  the name of the function being called
-     * @param array  $arguments      the arguments to that function
-     * @param array  $options        the options for the SOAP call
-     * @param array  $input_headers  the optional input headers
-     * @param array  $output_headers the options output headers
+     * @param string $function_name the name of the function being called
+     * @param array $arguments the arguments to that function
+     * @param array $options the options for the SOAP call
+     * @param array $input_headers the optional input headers
+     * @param array $output_headers the options output headers
      * @return mixed the return from the parent __soapCall
      * @throws SOAPFault if there was an exception making the request
      */
-    function __soapCall(
-        $function_name,
-        $arguments,
-        $options = null,
-        $input_headers = null,
-        &$output_headers = null
-    ) {
+    function __soapCall($function_name, $arguments, $options = null,
+                        $input_headers = null, &$output_headers = null)
+    {
         try {
             $input_headers[] = $this->GenerateSoapHeader();
             $this->lastHeaders = $input_headers;
@@ -244,17 +235,14 @@ abstract class AdsSoapClient extends SoapClient
 
     /**
      * Processes the response from the __doRequest call.
-     * @param string    $request  the request to the server
-     * @param string    $response the response from the server
-     * @param string    $method   the method called
-     * @param SoapFault $e        the SOAP fault thrown if any
+     * @param string $request the request to the server
+     * @param string $response the response from the server
+     * @param string $method the method called
+     * @param SoapFault $e the SOAP fault thrown if any
      */
-    private function ProcessResponse(
-        $request,
-        $response,
-        $method,
-        SoapFault $e = null
-    ) {
+    private function ProcessResponse($request, $response, $method,
+                                     SoapFault $e = null)
+    {
         $this->lastSoapFault = $e;
         $this->lastRequestDom = null;
         $this->lastResponseDom = null;
@@ -417,16 +405,14 @@ abstract class AdsSoapClient extends SoapClient
     /**
      * Performs some fixes on the XML request before sending it out.
      *
-     * @param string $request   the request to be modified
-     * @param array  $arguments the arguments passed to the SOAP method
-     * @param array  $headers   the headers used in the request
+     * @param string $request the request to be modified
+     * @param array $arguments the arguments passed to the SOAP method
+     * @param array $headers the headers used in the request
      * @return string the XML request ready to be sent to the server
      */
-    protected function PrepareRequest(
-        $request,
-        array $arguments,
-        array $headers
-    ) {
+    protected function PrepareRequest($request, array $arguments,
+                                      array $headers)
+    {
         $addXsiTypes = $this->user->GetForceAddXsiTypes();
         $fixer = new SoapRequestXmlFixer($addXsiTypes, false, true);
         return $fixer->FixXml($request, $arguments, $headers);
@@ -445,7 +431,7 @@ abstract class AdsSoapClient extends SoapClient
      * Gets the value for a registered request header element.
      * @param string $key the name of the request header element
      * @return string the value of the request header element or <var>null</var>
-     *                    if not found
+     *     if not found
      */
     public function GetHeaderValue($key)
     {
@@ -458,7 +444,7 @@ abstract class AdsSoapClient extends SoapClient
 
     /**
      * Sets the value for a request header.
-     * @param string $key   the name of the request header element
+     * @param string $key the name of the request header element
      * @param string $value the value for the request header element
      */
     public function SetHeaderValue($key, $value)
@@ -480,7 +466,7 @@ abstract class AdsSoapClient extends SoapClient
      */
     protected function GenerateHttpHeaders()
     {
-        $httpHeaders = [];
+        $httpHeaders = array();
         $oAuth2Info = $this->user->GetOAuth2Info();
         $oAuth2Handler = $this->user->GetOAuth2Handler();
         if (!empty($oAuth2Info)) {
@@ -500,7 +486,7 @@ abstract class AdsSoapClient extends SoapClient
      * called after the request has been made and before logging any XML.
      * @param string $request the request just made to the server
      * @return string the request with any sensitive information removed ready to
-     *                        be logged.
+     *     be logged.
      */
     protected abstract function RemoveSensitiveInfo($request);
 
@@ -547,15 +533,14 @@ abstract class AdsSoapClient extends SoapClient
      */
     protected function GetTypemaps()
     {
-        $typemaps = [];
+        $typemaps = array();
         // Convert longs more intelligently, due to overflow issue in 32 bit
         // environments.
-        $typemaps[] = [
-            'type_ns'   => 'http://www.w3.org/2001/XMLSchema',
+        $typemaps[] = array(
+            'type_ns' => 'http://www.w3.org/2001/XMLSchema',
             'type_name' => 'long',
-            'from_xml'  => 'AdsSoapClient::TypemapLongFromXml',
-            'to_xml'    => 'AdsSoapClient::TypemapLongToXml'
-        ];
+            'from_xml' => 'AdsSoapClient::TypemapLongFromXml',
+            'to_xml' => 'AdsSoapClient::TypemapLongToXml');
         return $typemaps;
     }
 
@@ -599,10 +584,10 @@ abstract class AdsSoapClient extends SoapClient
      * When pseudo-namespace support is enabled class names can become very long,
      * and this function provides an alternative way to create objects that is
      * more readable.
-     * @param string $type   the type of object to create
-     * @param array  $params parameters to pass into the constructor, as either
-     *                       flat array in the correct order for the constructor or as an
-     *                       associative array from parameter name to value
+     * @param string $type the type of object to create
+     * @param array $params parameters to pass into the constructor, as either
+     *     flat array in the correct order for the constructor or as an
+     *     associative array from parameter name to value
      * @return mixed a new instance of a class that represents that type
      */
     public function Create($type, $params = null)

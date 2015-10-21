@@ -5,7 +5,9 @@
  * @param $baseClassName
  * @param $dummy
  */
-function parseFile($path, $baseClassName, $dummy)
+
+
+function parseFile($version, $path, $baseClassName, $dummy)
 {
     echo 'Process ' . $path . "\n";
     $require = [];
@@ -35,7 +37,7 @@ function parseFile($path, $baseClassName, $dummy)
                 $require[] = $className;
             }
             echo 'Write class file for ' . $className . "\n";
-            $newPath = 'Google/Api/Ads/AdWords/v201506/classes/' . $className . '.php';
+            $newPath = 'Google/Api/Ads/AdWords/' . $version . '/classes/' . $className . '.php';
             file_put_contents(
                 $newPath,
                 str_ireplace('%code%', $classCode, $result)
@@ -51,19 +53,21 @@ function parseFile($path, $baseClassName, $dummy)
     }
     echo 'Write required file for ' . $baseClassName . "\n";
     file_put_contents(
-        'Google/Api/Ads/AdWords/v201506/classes/' . $baseClassName . '.require.php',
+        'Google/Api/Ads/AdWords/' . $version . '/classes/' . $baseClassName . '.require.php',
         '<?php' . PHP_EOL . $requireCode
     );
     //unlink($path);
 }
 
+$version = 'v201509';
+
 $dummy = file_get_contents('Dummy.php.txt');
 
-$handle = opendir('Google/Api/Ads/AdWords/v201506/');
+$handle = opendir('Google/Api/Ads/AdWords/' . $version . '/');
 $files = readdir($handle);
 while (false !== ($entry = readdir($handle))) {
     if (strpos($entry, 'Service.php')) {
-        $path = 'Google/Api/Ads/AdWords/v201506/' . $entry;
-        parseFile($path, str_ireplace('.php', '', $entry), $dummy);
+        $path = 'Google/Api/Ads/AdWords/' . $version . '/' . $entry;
+        parseFile($version, $path, str_ireplace('.php', '', $entry), $dummy);
     }
 }

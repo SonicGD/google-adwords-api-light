@@ -32,7 +32,7 @@
     "classmap": [
       "Google/Api/Ads/AdWords/Lib",
       "Google/Api/Ads/AdWords/Util",
-      "Google/Api/Ads/AdWords/v201506/classes",
+      "Google/Api/Ads/AdWords/v201509/classes",
       "Google/Api/Ads/Common/Lib",
       "Google/Api/Ads/Common/Util"
     ]

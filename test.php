@@ -12,7 +12,7 @@
 require_once 'vendor/autoload.php';
 $settingsFile = "settings.ini";
 $user = new AdWordsUser(
-    '/var/www/cg2/common/config/adwapi/auth.ini',
+    '',
     null,
     null,
     null,

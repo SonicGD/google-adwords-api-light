@@ -45,6 +45,8 @@ class AdWordsUser extends AdsUser
 
     const OAUTH2_SCOPE = 'https://www.googleapis.com/auth/adwords';
     const OAUTH2_HANDLER_CLASS = 'SimpleOAuth2Handler';
+    const REPORT_LOG_CHANNEL_NAME = 'report';
+    const REPORT_LOG_FILE_NAME = 'report_download.log';
 
     /**
      * The name of the SOAP header that represents the user agent making API
@@ -59,6 +61,7 @@ class AdWordsUser extends AdsUser
     private $libName;
 
     private $userAgent;
+    private $scopes;
 
     /**
      * The AdWordsUser constructor.
@@ -75,21 +78,21 @@ class AdWordsUser extends AdsUser
      * <p>Likewise, if a custom settings INI file is not provided, the default
      * settings INI file will be loaded from the path of "../settings.ini"
      * relative to this file's directory.</p>
-     * @param string $authenticationIniPath the absolute path to the
-     *                                      authentication INI or relative to the current directory (cwd). If
-     *                                      <var>null</var>, the default authentication INI file will attempt to be
-     *                                      loaded
-     * @param string $developerToken        the developer token (required header). Will
-     *                                      overwrite the developer token entry loaded from any INI file
-     * @param string $userAgent             the user agent name (required header). Will
-     *                                      be prepended with the library name and version. Will overwrite the
-     *                                      userAgent entry loaded from any INI file
-     * @param string $clientCustomerId      the client customer ID to make the request
-     *                                      against (optional header). Will overwrite the clientCustomerId entry
-     *                                      loaded from any INI file
-     * @param string $settingsIniPath       the path to the settings INI file. If
-     *                                      <var>null</var>, the default settings INI file will be loaded
-     * @param array  $oauth2Info            the OAuth 2.0 information to use for requests
+     * @param string|null $authenticationIniPath the absolute path to the
+     *                                           authentication INI or relative to the current directory (cwd). If
+     *                                           <var>null</var>, the default authentication INI file will attempt to be
+     *                                           loaded
+     * @param string|null $developerToken        the developer token (required header).
+     *                                           Will overwrite the developer token entry loaded from any INI file
+     * @param string|null $userAgent             the user agent name (required header). Will
+     *                                           be prepended with the library name and version. Will overwrite the
+     *                                           userAgent entry loaded from any INI file
+     * @param string|null $clientCustomerId      the client customer ID to make the
+     *                                           request against (optional header). Will overwrite the clientCustomerId
+     *                                           entry loaded from any INI file
+     * @param string|null $settingsIniPath       the path to the settings INI file. If
+     *                                           <var>null</var>, the default settings INI file will be loaded
+     * @param array|null  $oauth2Info            the OAuth 2.0 information to use for requests
      */
     public function __construct(
         $authenticationIniPath = null,
@@ -127,6 +130,12 @@ class AdWordsUser extends AdsUser
             'clientCustomerId', $authenticationIni);
         $oauth2Info = $this->GetAuthVarValue($oauth2Info, 'OAUTH2',
             $authenticationIni);
+        if (isset($oauth2Info['oAuth2AdditionalScopes'])) {
+            $scopes = explode(',', $oauth2Info['oAuth2AdditionalScopes']);
+        } else {
+            $scopes = [];
+        }
+        $scopes[] = self::OAUTH2_SCOPE;
 
         $clientId = $this->GetAuthVarValue(null, 'clientId', $authenticationIni);
         if ($clientId !== null) {
@@ -137,9 +146,10 @@ class AdWordsUser extends AdsUser
 
         $this->SetOAuth2Info($oauth2Info);
         $this->SetUserAgent($userAgent);
-        $this->SetClientLibraryUserAgent($userAgent);
+        $this->updateClientLibraryUserAgent($userAgent);
         $this->SetClientCustomerId($clientCustomerId);
         $this->SetDeveloperToken($developerToken);
+        $this->SetScopes($scopes);
 
         if ($settingsIniPath === null) {
             $settingsIniPath = dirname(__FILE__) . '/../settings.ini';
@@ -158,9 +168,10 @@ class AdWordsUser extends AdsUser
     protected function InitLogs()
     {
         parent::InitLogs();
-        Logger::LogToFile(ReportUtils::$LOG_NAME,
-            $this->GetLogsDirectory() . "/report_download.log");
-        Logger::SetLogLevel(ReportUtils::$LOG_NAME, Logger::$FATAL);
+        Logger::LogToFile(self::REPORT_LOG_CHANNEL_NAME,
+            $this->GetLogsDirectory() . DIRECTORY_SEPARATOR
+            . self::REPORT_LOG_FILE_NAME);
+        Logger::SetLogLevel(self::REPORT_LOG_CHANNEL_NAME, Logger::$FATAL);
     }
 
     /**
@@ -170,7 +181,7 @@ class AdWordsUser extends AdsUser
     public function LogDefaults()
     {
         parent::LogDefaults();
-        Logger::SetLogLevel(ReportUtils::$LOG_NAME, Logger::$ERROR);
+        Logger::SetLogLevel(self::REPORT_LOG_CHANNEL_NAME, Logger::$ERROR);
     }
 
     /**
@@ -180,7 +191,7 @@ class AdWordsUser extends AdsUser
     public function LogErrors()
     {
         parent::LogErrors();
-        Logger::SetLogLevel(ReportUtils::$LOG_NAME, Logger::$ERROR);
+        Logger::SetLogLevel(self::REPORT_LOG_CHANNEL_NAME, Logger::$ERROR);
     }
 
     /**
@@ -190,22 +201,23 @@ class AdWordsUser extends AdsUser
     public function LogAll()
     {
         parent::LogAll();
-        Logger::SetLogLevel(ReportUtils::$LOG_NAME, Logger::$INFO);
+        Logger::SetLogLevel(self::REPORT_LOG_CHANNEL_NAME, Logger::$INFO);
     }
 
     /**
      * Gets the service by its service name and group.
-     * @param string            $serviceName    the service name
-     * @param string            $version        the version of the service to get. If
-     *                                          <var>null</var>, then the default version will be used
-     * @param string            $server         the server to make the request to. If
-     *                                          <var>null</var>, then the default server will be used
-     * @param SoapClientFactory $serviceFactory the factory to create the client.
-     *                                          If <var>null</var>, then the built-in SOAP client factory will be used
-     * @param bool              $validateOnly   if the service should be created in validateOnly
-     *                                          mode
-     * @param bool              $partialFailure if the service should be created in
-     *                                          partialFailure mode
+     * @param string                 $serviceName    the service name
+     * @param string|null            $version        the version of the service to get. If
+     *                                               <var>null</var>, then the default version will be used
+     * @param string|null            $server         the server to make the request to. If
+     *                                               <var>null</var>, then the default server will be used
+     * @param SoapClientFactory|null $serviceFactory the factory to create the
+     *                                               client. If <var>null</var>, then the built-in SOAP client factory will
+     *                                               be used
+     * @param bool|null              $validateOnly   if the service should be created in
+     *                                               validateOnly mode
+     * @param bool|null              $partialFailure if the service should be created in
+     *                                               partialFailure mode
      * @return SoapClient the instantiated service
      * @throws ServiceException if an error occurred when getting the service
      */
@@ -237,9 +249,9 @@ class AdWordsUser extends AdsUser
     /**
      * Loads the classes within a service, so they can be used before the service
      * is constructed.
-     * @param        $serviceName the service name
-     * @param string $version     the version of the service to get. If
-     *                            <var>null</var>, then the default version will be used
+     * @param string      $serviceName the service name
+     * @param string|null $version     the version of the service to get. If
+     *                                 <var>null</var>, then the default version will be used
      */
     public function LoadService($serviceName, $version = null)
     {
@@ -360,6 +372,24 @@ class AdWordsUser extends AdsUser
     }
 
     /**
+     * Gets OAuth2 scopes.
+     * @return array the list of OAuth2 scopes
+     */
+    public function GetScopes()
+    {
+        return $this->scopes;
+    }
+
+    /**
+     * Sets OAuth2 scopes.
+     * @param array the list of OAuth2 scopes
+     */
+    public function SetScopes($scopes)
+    {
+        $this->scopes = $scopes;
+    }
+
+    /**
      * Validates the user and throws a validation error if there are any errors.
      * @throws ValidationException if there are any validation errors
      */
@@ -395,7 +425,7 @@ class AdWordsUser extends AdsUser
     public function GetDefaultOAuth2Handler($className = null)
     {
         $className = !empty($className) ? $className : self::OAUTH2_HANDLER_CLASS;
-        return new $className($this->GetAuthServer(), self::OAUTH2_SCOPE);
+        return new $className($this->GetAuthServer(), $this->GetScopes());
     }
 
     /**

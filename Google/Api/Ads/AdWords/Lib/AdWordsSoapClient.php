@@ -58,14 +58,7 @@ class AdWordsSoapClient extends AdsSoapClient
     }
 
     /**
-     * Overrides the method __doRequest(). When OAuth2 authentication is used the
-     * URL parameters added.
-     * @param string $request  the request XML
-     * @param string $location the URL to request
-     * @param string $action   the SOAP action
-     * @param string $version  the SOAP version
-     * @param int    $one_way  if set to 1, this method returns nothing
-     * @return string the XML SOAP response
+     * @see SoapClient::__doRequest
      */
     function __doRequest(
         $request,
@@ -88,6 +81,25 @@ class AdWordsSoapClient extends AdsSoapClient
             }
         }
         return parent::__doRequest($request, $location, $action, $version);
+    }
+
+    /**
+     * @see SoapClient::__soapCall
+     */
+    function __soapCall(
+        $function_name,
+        $arguments,
+        $options = null,
+        $input_headers = null,
+        &$output_headers = null
+    ) {
+        $this->GetAdsUser()->updateClientLibraryUserAgent(
+            $this->GetAdsUser()->GetUserAgent());
+        // Copy the updated user agent to the header of this SOAP client, as it
+        // is not copied from AdsUser automatically.
+        $this->SetHeaderValue($this->GetAdsUser()->GetUserAgentHeaderName(),
+            $this->GetAdsUser()->GetClientLibraryUserAgent());
+        return parent::__soapCall($function_name, $arguments);
     }
 
     /**

@@ -59,7 +59,7 @@ function parseFile($version, $path, $baseClassName, $dummy)
     //unlink($path);
 }
 
-$version = 'v201509';
+$version = 'v201605';
 
 $dummy = file_get_contents('Dummy.php.txt');
 

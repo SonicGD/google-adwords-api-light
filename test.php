@@ -10,21 +10,10 @@
  * Time: 22:44
  */
 require_once 'vendor/autoload.php';
-$settingsFile = "settings.ini";
-$user = new AdWordsUser(
-    '',
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    $settingsFile,
-    null
-);
+$user = new AdWordsUser();
 
 $user->SetClientCustomerId(0);
-$campaignService = $user->GetService('CampaignService', 'v201509');
+$campaignService = $user->GetService('CampaignService', 'v201605');
 $selector = new Selector();
 $selector->fields = [
     'Id',

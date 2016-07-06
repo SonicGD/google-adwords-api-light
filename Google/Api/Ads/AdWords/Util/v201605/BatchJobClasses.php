@@ -25,14 +25,14 @@
  * @license    http://www.apache.org/licenses/LICENSE-2.0 Apache License,
  *             Version 2.0
  */
-require_once 'Google/Api/Ads/AdWords/v201605/AdGroupAdService.php';
-require_once 'Google/Api/Ads/AdWords/v201605/AdGroupBidModifierService.php';
-require_once 'Google/Api/Ads/AdWords/v201605/AdGroupCriterionService.php';
-require_once 'Google/Api/Ads/AdWords/v201605/AdGroupService.php';
-require_once 'Google/Api/Ads/AdWords/v201605/BudgetService.php';
-require_once 'Google/Api/Ads/AdWords/v201605/CampaignCriterionService.php';
-require_once 'Google/Api/Ads/AdWords/v201605/CampaignService.php';
-require_once 'Google/Api/Ads/AdWords/v201605/FeedItemService.php';
+require_once 'Google/Api/Ads/AdWords/v201605/classes/AdGroupAdService.php';
+require_once 'Google/Api/Ads/AdWords/v201605/classes/AdGroupBidModifierService.php';
+require_once 'Google/Api/Ads/AdWords/v201605/classes/AdGroupCriterionService.php';
+require_once 'Google/Api/Ads/AdWords/v201605/classes/AdGroupService.php';
+require_once 'Google/Api/Ads/AdWords/v201605/classes/BudgetService.php';
+require_once 'Google/Api/Ads/AdWords/v201605/classes/CampaignCriterionService.php';
+require_once 'Google/Api/Ads/AdWords/v201605/classes/CampaignService.php';
+require_once 'Google/Api/Ads/AdWords/v201605/classes/FeedItemService.php';
 
 if (!class_exists("ErrorList", false)) {
   class ErrorList {
